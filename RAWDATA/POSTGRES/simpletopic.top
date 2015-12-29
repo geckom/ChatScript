@@ -1,0 +1,15 @@
+
+
+outputmacro: ^myfunc(^db)
+	preprint(^db \n)
+
+topic: ~INTRODUCTIONS repeat keep (~emogoodbye ~emohello ~emohowzit name )
+t: ^keep() ready- use  open  close  list
+
+u: (open)  if (^dbinit( dbname = postgres port = 5432 user = postgres password = somepassword  )) {db opened}
+		   else {dbinit failed - $$db_error}
+u: (close)  if (^dbclose()) {db closed}
+		   else {dbclose failed  - $$db_error}
+u: (list) if (^dbexecute(^"SELECT datname from pg_database" '^myfunc )) {completed}
+		   else {dbexecute failed - $$db_error}
+
