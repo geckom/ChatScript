@@ -7,3 +7,8 @@ bwregress
 en
 extraSrc
 link-grammar
+LOGS
+TMP
+USERS
+VS2010/Debug
+VS2010/ipch

@@ -1,0 +1,2 @@
+﻿ ~keywordless.1.0 #! What is the nature of life
+ ~keywordless.2.0 #! yes, if user just says OK or yes or continue, then move along and give control to bot
