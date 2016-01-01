@@ -2221,6 +2221,9 @@ char* English_GetInfinitive(char* word, bool nonew)
         if (D && D->properties & VERB && D->properties & VERB_INFINITIVE) return D->word; //   found it
 		if (D && D->properties & NOUN) return NULL; //   dont move bees to be
 
+		D = FindWord(word,len-1,UPPERCASE_LOOKUP); // if word exists in upper case, this is a plural and NOT a verb with s
+		if (D) return NULL;
+
 		if (!buildDictionary && !nonew)
 		{
 			char wd[MAX_WORD_SIZE];

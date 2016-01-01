@@ -50,7 +50,11 @@
  hr. hour
  min. minute
  min minute
-  Hawaii  Hawai'i
+ hrs hours
+ secs seconds
+ mins minutes
+
+ Hawaii  Hawai'i
  Apr April
  video_game videogame
  tv TV

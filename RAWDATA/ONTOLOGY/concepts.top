@@ -360,6 +360,7 @@ concept: ~dating_friend PROBABLE_NOUN (~girlfriend beau boyfriend ex-boyfriend e
           swain sweetheart trollop )
 concept: ~day_care_center (babysitting child_care day_care_center )
 concept: ~dayname (Friday Monday Saturday Sunday Thursday Tuesday Wednesday )
+concept: ~daynumber DUPLICATE (5 1 6 0 4 2 3 )
 concept: ~decorations NOUN NOUN_SINGULAR (~cosmetics ~jewelry_items bracelet Christmas_tree_ball Christmas_tree_light cologne crayon decoration dye earring eyeliner eyeshadow fragrance 
           glitter gloss lacquer lipstick mascara nail_polish nose_ring ornament paint perfume plaster popcorn_string ring scent stain tinsel varnish wallpaper )
 concept: ~defender NOUN NOUN_SINGULAR PROBABLE_NOUN (angel defender guardian parent protector )

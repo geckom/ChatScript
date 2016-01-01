@@ -450,6 +450,14 @@ char* GetTimeInfo() //   Www Mmm dd hh:mm:ss yyyy Where Www is the weekday, Mmm 
 	if (*utcoffset) // report relative time
 	{
 		ptm = gmtime (&curr); // UTC time reference structure
+
+		// determine leap year status
+		int year = ptm->tm_year + 1900;
+		bool leap = false;
+		if ((year / 400) == 0) leap = true;
+		else if ((year / 100) != 0 && (year / 4) == 0) leap = true;
+
+		// sign of offset
 		int sign = 1;
 		if (*utcoffset == '-') 
 		{
@@ -457,23 +465,69 @@ char* GetTimeInfo() //   Www Mmm dd hh:mm:ss yyyy Where Www is the weekday, Mmm 
 			++utcoffset;
 		}
 		else if (*utcoffset == '+') ++utcoffset;
-		int year = ptm->tm_year + 1900;
-		bool leap = false;
-		if ((year / 400) == 0) leap = true;
-		else if ((year / 100) != 0 && (year / 4) == 0) leap = true;
+
+		// adjust hours, minutes, seconds
 		int offset = atoi(utcoffset) * sign; // hours offset
 		ptm->tm_hour += offset;
-		int daysInMonth = 30;
+		char* colon = strchr(utcoffset,':'); // is there a minutes offset?
+		if (colon)
+		{
+			offset = atoi(colon+1) * sign; // minutes offset
+			ptm->tm_min += offset;
+			colon = strchr(colon+1,':');
+			if (colon) // seconds offset
+			{
+				offset = atoi(colon+1) * sign; // seconds offset
+				ptm->tm_sec += offset;
+			}
+		}
+
+		// correct for over and underflows
+		if (ptm->tm_sec < 0) // sec underflow caused by timezone
+		{ 
+			ptm->tm_sec += 60;
+			ptm->tm_min -= 1;
+		}
+		else if (ptm->tm_sec >= 60) // sec overflow caused by timezone
+		{ 
+			ptm->tm_sec -= 60;
+			ptm->tm_min += 1;
+		}
+
+		if (ptm->tm_min < 0) // min underflow caused by timezone
+		{ 
+			ptm->tm_min += 60;
+			ptm->tm_hour -= 1;
+		}
+		else if (ptm->tm_min >= 60) // min overflow caused by timezone
+		{ 
+			ptm->tm_min -= 60;
+			ptm->tm_hour += 1;
+		}
+
 		if (ptm->tm_hour < 0) // hour underflow caused by timezone
 		{ 
 			ptm->tm_hour += 24;
 			ptm->tm_yday -= 1;
+			ptm->tm_mday -= 1;
+			ptm->tm_wday -= 1;
 		}
-		else if (ptm->tm_hour > 23) // hour overflow caused by timezone
+		else if (ptm->tm_hour >= 24) // hour overflow caused by timezone
 		{ 
 			ptm->tm_hour -= 24;
 			ptm->tm_yday += 1;
+			ptm->tm_mday += 1;
+			ptm->tm_wday += 1;
 		}
+		
+		if (ptm->tm_wday <= 0) ptm->tm_wday += 7; // day of week underflow  0-6  
+		else if (ptm->tm_wday >= 7) ptm->tm_wday -= 7; // day of week overflow  0-6  
+		
+		if (ptm->tm_yday <= 0) ptm->tm_yday += 365; // day of year underflow  0-365  
+		else if (ptm->tm_yday >= 365 && !leap ) ptm->tm_yday -= 365; // day of year overflow  0-365  
+		else if (ptm->tm_yday >= 366) ptm->tm_yday -= 366; // day of year leap overflow  0-365  
+
+		int daysInMonth = 30;
 		if (ptm->tm_mday <= 0) // day of month underflow  1-31  
 		{
 			ptm->tm_mon -= 1;
@@ -501,14 +555,15 @@ char* GetTimeInfo() //   Www Mmm dd hh:mm:ss yyyy Where Www is the weekday, Mmm 
 			else if (ptm->tm_mon == 10 && ptm->tm_mday == 31) {ptm->tm_mon++; ptm->tm_mday = 1;} // nov
 			else if (ptm->tm_mday == 32) {ptm->tm_mon++; ptm->tm_mday = 1;}
 		}
+
 		if (ptm->tm_mon <= 0) // month underflow  0-11
 		{ 
-			ptm->tm_mon = 11; // back to december
+			ptm->tm_mon += 12; // back to december
 			ptm->tm_year -= 1; // prior year
 		}
-		else if (ptm->tm_mon > 11 ) // month overflow  0-11
+		else if (ptm->tm_mon >= 12 ) // month overflow  0-11
 		{ 
-			ptm->tm_mon = 0; //  january
+			ptm->tm_mon -= 12; //  january
 			ptm->tm_year += 1; // on to next year
 		}
 	}

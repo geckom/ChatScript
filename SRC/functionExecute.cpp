@@ -3103,7 +3103,6 @@ FunctionResult MatchCode(char* buffer)
 	{
 		if (word1[0] == FUNCTIONSTRING && word1[1] == '(') strcpy(word,word1+1);
 		else strcpy(word,word1); // otherwise it is what to say (like from idiom table)
-		Convert2Blanks(word);
 	}
 	char* ptr = word;
 	if (*word)  
@@ -5531,6 +5530,7 @@ static FunctionResult FLRCodeSpecific(char* buffer)
 	char word[MAX_ARG_BYTES];
 	GetPossibleFunctionArgument(arg,word); // pass thru or convert
 	arg = word;
+
 	strcpy(ARGUMENT(1),arg); // put it back in case it changed
 	char* arg2 = ARGUMENT(2);
 

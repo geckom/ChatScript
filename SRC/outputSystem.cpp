@@ -768,7 +768,7 @@ static char* Output_Quote(char* word, char* ptr, bool space,char* buffer, unsign
 			}
 		}
 	}
-	else if (word[1] == '$')  //    variable quoted, means dont reeval its content
+	else if (word[1] == '$' || word[1] == '@' || word[1] == '%')  //    variable or factset or system variable quoted, means dont reeval its content
 	{
 		strcpy(buffer,word+1);
 	}

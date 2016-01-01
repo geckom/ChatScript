@@ -2121,6 +2121,7 @@ name of topic  or concept
 
 			char* rhs = comparison+1;
 			if (*rhs == '=' || *rhs == '?') ++rhs;
+			if (*rhs == '^' && IsAlphaUTF8(rhs[1])) BADSCRIPT("%s is not a current function variable",rhs);
 			if (!*rhs && *word == '$'); // allowed member in sentence
 			else if (!*rhs && *word == '_' && IsDigit(word[1])); // allowed member in sentence
 			else if (*rhs == '#') // names a constant #define to replace with number value
@@ -2494,6 +2495,9 @@ pattern:
 		if (*word == '!') BADSCRIPT("IF-4 Cannot do two ! in a row")
 		ReadNextSystemToken(in,ptr,nextToken,false,true); 
 		MakeLowerCase(nextToken);
+		
+		if (*nextToken != '(' && *word == '^' && word[1] != '"' && IsAlphaUTF8(word[1])) BADSCRIPT("%s is not the name of a local function argument",word)
+
 		if (*nextToken == '(')  // function call?
 		{
 			if (*word != '^') //     a call w/o its ^
@@ -2657,8 +2661,10 @@ static char* ReadLoop(char* word, char* ptr, FILE* in, char* &data,char* rejoind
 	*data++ = ' ';
 	if (*word != '(') BADSCRIPT("LOOP-1 count must be ()  or (count) -%s",word)
 	ptr = ReadNextSystemToken(in,ptr,word,false,false); //   counter - 
+	if (*word == '^'  && IsAlphaUTF8(word[1])) BADSCRIPT("%s is not the name of a local function argument",word)
 	if (*word == ')') strcpy(data,"-1"); //   omitted, use -1
-	else if (!IsDigit(*word) && *word != '$' && *word != '_' && *word != '%'  && *word != '^'  && *word != '@') BADSCRIPT("LOOP-2 counter must be $var, _#, %var, @factset or ^fnarg  -%s",word)
+	else if (!IsDigit(*word) && *word != '$' && *word != '_' && *word != '%'  && *word != '^'  && *word != '@') 
+		BADSCRIPT("LOOP-2 counter must be $var, _#, %var, @factset or ^fnarg  -%s",word)
 	else 
 	{
 		strcpy(data,word);

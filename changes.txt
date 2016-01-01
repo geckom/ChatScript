@@ -1,10 +1,13 @@
-Version 5.93
+Version 5.93 12-31-2015
 1. New manual "ChatScript Common Beginner Mistakes"
 2. time.tbl file removed from worlddata, its 2 concepts merged into ontology concepts, whose order of data has changed
 concept: ~month_names (Apr April Aug August Dec December Feb February Jan January Jul July Jun June Mar March May may Nov November Oct October Sep Sept September )
 concept: ~month_names_index DUPLICATE (3 3 7 7 11 11 1 1 0 0 6 6 5 5 2 2 4 4 10 10 9 9 8 8 8  )
 concept: ~daysinmonth DUPLICATE (30 30 31 31 31 31 28 28 31 31 31 31 30 30 31 31 30 30 30 30 31 31 30 30  30) # 0-based
 concept: ~month_proper_names DUPLICATE (April April August August Decemeber December February February January January July July June June March March May May November November October October September September September )
+3. :trace none now also turns off all topic and macro tracing
+4. $cs_utcoffset now accepts time notation as well, like -02:30 to adjust 2.5 hours before utc.
+5. :trace notthis ~topic  will suppress tracing in this topic AND below it
 
 Version 5.92 12-27-2015
 1. Jsondelete now only takes 1 argument, name of json composite to delete

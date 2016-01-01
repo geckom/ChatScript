@@ -1814,15 +1814,18 @@ static void LoadTopicData(const char* name,uint64 build,bool plan)
 			myexit("bad plan alignment");
 		}
 		ptr = ReadCompiledWord(ptr,name);
-		if (!TI(0)->topicName)
+		if (!topicBlockPtr || !TI(0)->topicName)
 		{
 			if (build == BUILD0) 
 			{
 				EraseTopicFiles(BUILD0);
 				printf("\r\n>>>  TOPICS directory bad. Contents erased. :build 0 again.\r\n\r\n");
 			}
-			else printf("\r\n>>> TOPICS directory bad. Build1 Contents erased. :build 1 again.\r\n\r\n");
-			EraseTopicFiles(BUILD1);
+			else 
+			{
+				printf("\r\n>>> TOPICS directory bad. Build1 Contents erased. :build 1 again.\r\n\r\n");
+				EraseTopicFiles(BUILD1);
+			}
 			return;
 		}
 		compiling = true;

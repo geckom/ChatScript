@@ -203,9 +203,15 @@ char* ProbableKnownWord(char* word)
 	// is it simple plural of a noun?
 	if (word[len-1] == 's') 
 	{
-		WORDP E = FindWord(lower,len-1);
+		WORDP E = FindWord(lower,len-1,LOWERCASE_LOOKUP);
 		if (E && E->properties & NOUN) 
 		{
+			return word;	
+		}
+		E = FindWord(lower,len-1,UPPERCASE_LOOKUP);
+		if (E && E->properties & NOUN) 
+		{
+			*word = toUppercaseData[*word];
 			return word;	
 		}
 	}

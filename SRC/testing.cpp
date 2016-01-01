@@ -4557,17 +4557,18 @@ static void C_Queries(char* input)
 	WalkDictionary(ShowQuery,0);
 }
 
-static void TracedFunctions(WORDP D,uint64 junk)
+static void TracedFunction(WORDP D,uint64 junk)
 {
 	if (D->internalBits & MACRO_TRACE) Log(STDUSERLOG,"%s\r\n",D->word);
 }
 
-static void C_TracedFunctions(char* input) 
+static void ClearTracedFunction(WORDP D,uint64 junk)
 {
-	WalkDictionary(TracedFunctions,0);
+	if (D->internalBits & MACRO_TRACE) D->internalBits ^= MACRO_TRACE;
 }
 
-static void TracedTopics(WORDP D,uint64 junk)
+
+static void TracedTopic(WORDP D,uint64 junk)
 {
 	if (D->internalBits & TOPIC) 
 	{
@@ -4576,9 +4577,25 @@ static void TracedTopics(WORDP D,uint64 junk)
 		if (block->topicDebug) Log(STDUSERLOG,"%s %d\r\n",D->word,block->topicDebug);
 	}
 }
+
+static void C_TracedFunctions(char* input) 
+{
+	WalkDictionary(TracedFunction,0);
+}
+
+static void ClearTracedTopic(WORDP D,uint64 junk)
+{
+	if (D->internalBits & TOPIC) 
+	{
+		unsigned int topic = FindTopicIDByName(D->word);
+		topicBlock* block = TI(topic);
+		block->topicDebug = 0;
+	}
+}
+
 static void C_TracedTopics(char* input)
 {
-	WalkDictionary(TracedTopics,0);
+	WalkDictionary(TracedTopic,0);
 }
 
 void C_MemStats(char* input)
@@ -5840,6 +5857,7 @@ static void ShowTrace(unsigned int bits, bool original)
 	unsigned int general = (TRACE_VARIABLE|TRACE_MATCH);
 	unsigned int mild = (TRACE_OUTPUT|TRACE_PREPARE|TRACE_PATTERN);
 	unsigned int deep = (TRACE_JSON|TRACE_TOPIC|TRACE_FACT|TRACE_SAMPLE|TRACE_INFER|TRACE_HIERARCHY|TRACE_SUBSTITUTE|TRACE_VARIABLESET|TRACE_QUERY|TRACE_USER|TRACE_POS| TRACE_TCP|TRACE_USERFN|TRACE_USERCACHE|TRACE_SQL|TRACE_LABEL);
+	if (!original) Log(STDUSERLOG,"  ");
 
 	// general
 	if (bits & general) 
@@ -5848,6 +5866,7 @@ static void ShowTrace(unsigned int bits, bool original)
 		if (bits & TRACE_MATCH) Log(STDUSERLOG,"match ");
 		if (bits & TRACE_VARIABLE) Log(STDUSERLOG,"variables ");
 		Log(STDUSERLOG,"\r\n");
+		if (!original) Log(STDUSERLOG,"  ");
 	}
 
 	// mild detail
@@ -5858,6 +5877,7 @@ static void ShowTrace(unsigned int bits, bool original)
 		if (bits & TRACE_PREPARE) Log(STDUSERLOG,"prepare ");
 		if (bits & TRACE_PATTERN) Log(STDUSERLOG,"pattern ");
 		Log(STDUSERLOG,"\r\n");
+		if (!original) Log(STDUSERLOG,"  ");
 	}
 	// deep detail
 	if (bits & deep) 
@@ -5880,6 +5900,7 @@ static void ShowTrace(unsigned int bits, bool original)
 		if (bits & TRACE_LABEL) Log(STDUSERLOG,"label ");
 		if (bits & TRACE_TOPIC) Log(STDUSERLOG,"topic ");
 		Log(STDUSERLOG,"\r\n");
+		if (!original) Log(STDUSERLOG,"  ");
 	}
 
 	// general
@@ -5889,6 +5910,7 @@ static void ShowTrace(unsigned int bits, bool original)
 		if (!(bits & TRACE_MATCH)) Log(STDUSERLOG,"match ");
 		if (!(bits & TRACE_VARIABLE)) Log(STDUSERLOG,"variables ");
 		Log(STDUSERLOG,"\r\n");
+		if (!original) Log(STDUSERLOG,"  ");
 	}
 
 	// mild detail
@@ -5899,6 +5921,7 @@ static void ShowTrace(unsigned int bits, bool original)
 		if (!(bits & TRACE_PREPARE)) Log(STDUSERLOG,"prepare ");
 		if (!(bits & TRACE_PATTERN)) Log(STDUSERLOG,"pattern ");
 		Log(STDUSERLOG,"\r\n");
+		if (!original) Log(STDUSERLOG,"  ");
 	}
 
 	// deep detail
@@ -5922,6 +5945,7 @@ static void ShowTrace(unsigned int bits, bool original)
 		if (!(bits & TRACE_LABEL)) Log(STDUSERLOG,"label ");
 		if (!(bits & TRACE_TOPIC)) Log(STDUSERLOG,"topic ");
 		Log(STDUSERLOG,"\r\n");
+		if (!original) Log(STDUSERLOG,"  ");
 	}
 	if (original) WalkDictionary(TraceTopicFunction);
 }
@@ -5962,6 +5986,13 @@ static void C_Trace(char* input)
 	unsigned int flags = trace;
 	if (!*input) ShowTrace(trace,true);
 	if (!*input) return;
+
+	ReadCompiledWord(input,word);
+	if (!stricmp(word,"none")) // turn off all topics and macros as well
+	{
+		WalkDictionary(ClearTracedFunction,0);
+		WalkDictionary(ClearTracedTopic,0);
+	}
 
 	while (input) 
 	{
@@ -6042,6 +6073,7 @@ static void C_Trace(char* input)
 		else if (!stricmp(word,"label")) flags |= TRACE_LABEL;
 		else if (!stricmp(word,"topic")) flags |= TRACE_TOPIC;
 		else if (!stricmp(word,"deep")) flags |= (TRACE_JSON|TRACE_TOPIC|TRACE_INPUT|TRACE_USERFN|TRACE_SAMPLE|TRACE_INFER|TRACE_SUBSTITUTE|TRACE_HIERARCHY| TRACE_FACT| TRACE_VARIABLESET| TRACE_QUERY| TRACE_USER|TRACE_POS|TRACE_TCP|TRACE_USERCACHE|TRACE_SQL|TRACE_LABEL); 
+		else if (!stricmp(word,"notthis")) flags |=  TRACE_NOT_THIS_TOPIC;
 
 		else if (!stricmp(word,"0") || !stricmp(word,"clear")) trace = 0;
 		else if (!stricmp(word,"end")) break; // safe end
@@ -6062,7 +6094,7 @@ static void C_Trace(char* input)
 			if (FN) 
 			{
 				FN->internalBits ^= MACRO_TRACE;
-				Log(STDUSERLOG,"Tracing function %s = %d\r\n",word, (FN->internalBits & MACRO_TRACE) ? 1 : 0);
+				Log(STDUSERLOG,"Tracing function %s = %d\r\n",word, (FN->internalBits & MACRO_TRACE) ? -1 : 0);
 			}
 			else Log(STDUSERLOG,"No such function %s\r\n",word);
 		}

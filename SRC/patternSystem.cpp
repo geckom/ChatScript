@@ -216,7 +216,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 				char* at = word;
 				if (*word == '=') at += 2; //   skip = flag and accelerator
 				
-				if (*word == '\'' || *word == '!' || (*word == '_' && !IsDigit(word[1]))) Log(STDUSERLOG,"%c ",*word); // prefix always resumes on rest of its word
+				if (*word == '\'' || *word == '!' || (*word == '_' && !IsDigit(word[1]))) Log(STDUSERLOG,">>> %c ",*word); // prefix always resumes on rest of its word
 				else if (returned) Log(STDUSERTABLOG,"%s ",at); //   restore indent level from before
 				else Log(STDUSERLOG,"%s ",at);
 			}
