@@ -47,6 +47,7 @@ void CloseBuffers();
 
 extern unsigned int currentFileLine;
 extern char currentFilename[MAX_WORD_SIZE];
+extern struct tm* ptm;
 
 void InitFileSystem(char* untouchedPath,char* readablePath,char* writeablePath);
 void C_Directories(char* x);

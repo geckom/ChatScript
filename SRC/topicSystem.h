@@ -127,6 +127,7 @@ FunctionResult ProcessRuleOutput(char* rule, unsigned int id,char* buffer);
 FunctionResult TestRule(int responderID,char* ptr,char* buffer);
 FunctionResult PerformTopic(int active,char* buffer,char* rule = NULL,unsigned int id = 0);
 bool Repeatable(char* rule);
+void CleanOutput(char* word);
 void ResetTopicReply();
 void SetRejoinder(char* rule);
 void SetErase(bool force = false);

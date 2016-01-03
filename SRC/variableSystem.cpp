@@ -57,7 +57,7 @@ static void CompleteWildcard()
 	if (wildcardIndex > MAX_WILDCARDS) wildcardIndex = 0; 
 }
 
-void SetWildCard(unsigned int start, unsigned int end)
+void SetWildCard(unsigned int start, unsigned int end, bool inpattern)
 {
 	if (end < start) end = start;				// matched within a token
 	if (end > wordCount && start != end) end = wordCount; // for start==end we allow being off end, eg _>
@@ -88,7 +88,7 @@ void SetWildCard(unsigned int start, unsigned int end)
 			else 
 				strcat(wildcardCanonicalText[wildcardIndex],word);
 		}
- 		if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDUSERLOG,"_%d=%s/%s ",wildcardIndex,wildcardOriginalText[wildcardIndex],wildcardCanonicalText[wildcardIndex]);
+ 		if (trace & TRACE_OUTPUT && !inpattern && CheckTopicTrace()) Log(STDUSERLOG,"_%d=%s/%s ",wildcardIndex,wildcardOriginalText[wildcardIndex],wildcardCanonicalText[wildcardIndex]);
 		CompleteWildcard();
 	}
 }

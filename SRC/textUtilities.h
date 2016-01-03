@@ -101,6 +101,7 @@ extern char toHex[16];
 #define IsNumberStarter(c) (isAlphabeticDigitData[(unsigned char)c] && isAlphabeticDigitData[(unsigned char)c] <= VALIDDIGIT)
 #define IsComparison(c) (isComparatorData[(unsigned char)c])
 WORDP BUILDCONCEPT(char* word) ;
+void RemoveTilde(char* output);
 void AcquireDefines(char* fileName);
 void AcquirePosMeanings();
 char* FindNameByValue(uint64 val); // properties
@@ -137,7 +138,7 @@ void MakeUpperCase(char* ptr);
 char* MakeLowerCopy(char* to,char* from);
 char* MakeUpperCopy(char* to,char* from);
 void UpcaseStarters(char* ptr);
-void Convert2Underscores(char* buffer,bool upcase,bool removeClasses=true,bool removeBlanks=false);
+void Convert2Underscores(char* buffer,bool upcase,bool removeBlanks=false);
 void Convert2Blanks(char* output);
 void ForceUnderscores(char* ptr);
 char* TrimSpaces(char* msg,bool start = true);
@@ -148,7 +149,7 @@ void InitTextUtilities();
 bool ReadDocument(char* inBuffer,FILE* sourceFile);
 
 // reading functions
-char* ReadFlags(char* ptr,uint64& flags,bool &bad);
+char* ReadFlags(char* ptr,uint64& flags,bool &bad, bool &response);
 char* ReadHex(char* ptr, uint64 & value);
 char* ReadInt(char* ptr, unsigned int & value);
 char* ReadInt64(char* ptr, int64 & w);

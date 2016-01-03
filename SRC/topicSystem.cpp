@@ -103,6 +103,18 @@ static unsigned char uncode[] = {//   letter to value - see code[]
     33,34,35,0,0,0,62,0,0,0,			// 120  122=z 126=~ (62)
 };
 
+void CleanOutput(char* word)
+{
+	char* ptr = word-1;
+	while (*++ptr)
+	{
+		if (ptr == word && *ptr == '=' && ptr[1] != ' ') memmove(ptr,ptr+2,strlen(ptr+1)); // comparison operator - remove header
+		else if (ptr == word  && *ptr == '*' && IsAlphaUTF8(ptr[1])) memmove(ptr,ptr+1,strlen(ptr)); // * partial word match- remove header
+		else if ((*ptr == ' ' || *ptr == '!') && ptr[1] == '=' && ptr[2] != ' ') memmove(ptr+1,ptr+3,strlen(ptr+2)); // comparison operator - remove header
+		else if (*ptr == ' ' && ptr[1] == '*' && IsAlphaUTF8(ptr[2])) memmove(ptr+1,ptr+2,strlen(ptr+1)); // * partial word match- remove header
+	}
+}
+
 char* GetRuleIDFromText(char* ptr, int & id) // passed ptr to or before dot, returns ptr  after dot on rejoinder
 {
 	if (!ptr) return NULL;
@@ -623,12 +635,7 @@ char* ShowRule(char* rule,bool concise)
 	char* at = strchr(word,ENDUNIT);
 	if (at) *at = 0; // truncate at end
 
-	char* ptr = word-1;
-	while (*++ptr)
-	{
-		if ((*ptr == ' ' || *ptr == '!') && ptr[1] == '=' && ptr[2] != ' ') memmove(ptr+1,ptr+3,strlen(ptr+2)); // comparison operator - remove header
-		else if (*ptr == ' ' && ptr[1] == '*' && IsAlphaUTF8(ptr[2])) memmove(ptr+1,ptr+2,strlen(ptr+1)); // * partial word match- remove header
-	}
+	CleanOutput(word);
 
 	strcat(result,label);
 	strcat(result," ");
@@ -970,7 +977,7 @@ FunctionResult ProcessRuleOutput(char* rule, unsigned int id,char* buffer)
 			//   How might this happen? We generate output and then call poptopic to remove us as current topic.
 			//   since we added to the buffer and are a completed pattern, we push the entire message built so far.
 			//   OTHERWISE we'd leave the earlier buffer content (if any) for higher level to push
-			if (!AddResponse(currentOutputBase))
+			if (!AddResponse(currentOutputBase,responseControl))
 			{
 				result = (FunctionResult) (result | FAILRULE_BIT);
  				madeResponse = false;
@@ -1060,6 +1067,13 @@ retry:
 		if (*label) Log(STDUSERTABLOG, "try %d.%d %s: \\",TOPLEVELID(ruleID),REJOINDERID(ruleID),label); //  \\  blocks linefeed on next Log call
 		else  Log(STDUSERTABLOG, "try %d.%d: \\",TOPLEVELID(ruleID),REJOINDERID(ruleID)); //  \\  blocks linefeed on next Log call
 		if (trace & TRACE_SAMPLE && *ptr == '(') TraceSample(currentTopicID,ruleID);// show the sample as well as the pattern
+		if (*ptr == '(')
+		{
+			char pattern[MAX_WORD_SIZE];
+			GetPattern(rule,NULL,pattern);
+			CleanOutput(pattern);
+			Log(STDUSERLOG," %s",pattern);
+		}
 		Log(STDUSERLOG,"\r\n");
 	}
 	int whenmatched;
@@ -1069,8 +1083,11 @@ retry:
 		unsigned int gap = 0;
 		wildcardIndex = 0;
 		bool uppercasem = false;
+		unsigned int positionStart, positionEnd;
 		whenmatched = 0;
- 		if (start > wordCount || !Match(ptr+2,0,start,'(',true,gap,wildcardSelector,start,end,uppercasem,whenmatched)) result = FAIL_MATCH;  // skip paren and blank, returns start as the location for retry if appropriate
+		++globalDepth; // indent pattern
+ 		if (start > wordCount || !Match(ptr+2,0,start,'(',true,gap,wildcardSelector,start,end,uppercasem,whenmatched,positionStart,positionEnd)) result = FAIL_MATCH;  // skip paren and blank, returns start as the location for retry if appropriate
+		--globalDepth;
 		if (clearUnmarks) // remove transient global disables.
 		{
 			clearUnmarks = false;
@@ -1080,18 +1097,18 @@ retry:
 	
 	if (trace & TRACE_LABEL && *label && !(trace & TRACE_PATTERN)  && CheckTopicTrace())
 	{
-		if (result == NOPROBLEM_BIT) Log(STDUSERTABLOG,"**Match: %s\r\n",ShowRule(rule));
-		else Log(STDUSERTABLOG,"**fail: %s\r\n",ShowRule(rule));
+		if (result == NOPROBLEM_BIT) Log(STDUSERTABLOG,"  **Match: %s\r\n",ShowRule(rule));
+		else Log(STDUSERTABLOG,"  **fail: %s\r\n",ShowRule(rule));
 	}
 	if (result == NOPROBLEM_BIT) // generate output
 	{
 		if (trace & (TRACE_PATTERN|TRACE_MATCH|TRACE_SAMPLE)  && CheckTopicTrace() ) //   display the entire matching responder and maybe wildcard bindings
 		{
-			if (!(trace & (TRACE_PATTERN|TRACE_SAMPLE))) Log(STDUSERTABLOG, "try %s",ShowRule(rule)); 
-			Log(STDUSERTABLOG,"**Match: %s",ShowRule(rule)); //   show abstract result we will apply
+			if (!(trace & (TRACE_PATTERN|TRACE_SAMPLE))) Log(STDUSERTABLOG, "Try %s",ShowRule(rule)); 
+			Log(STDUSERTABLOG,"  **Match: %s",ShowRule(rule)); //   show abstract result we will apply
 			if (wildcardIndex)
 			{
-				Log(STDUSERLOG," wildcards: ");
+				Log(STDUSERTABLOG,"  Wildcards: ");
 				for (unsigned int i = 0; i < wildcardIndex; ++i)
 				{
 					if (*wildcardOriginalText[i]) Log(STDUSERLOG,"_%d=%s  /  %s ",i,wildcardOriginalText[i],wildcardCanonicalText[i]);

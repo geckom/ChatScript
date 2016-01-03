@@ -55,8 +55,10 @@ resume:
 	if (call){;} // call happened
 	else if (IsComparison(*op)) //   a comparison test
 	{
+		char word1val[MAX_WORD_SIZE];
+		char word2val[MAX_WORD_SIZE];
 		ptr = ReadCompiledWord(ptr,word2);	
-		result = HandleRelation(word1,op,word2,true,id);
+		result = HandleRelation(word1,op,word2,true,id,word1val,word2val);
 		ptr = ReadCompiledWord(ptr,op);	//   AND, OR, or ) 
 	}
 	else //   existence of non-failure or any content
@@ -240,8 +242,10 @@ char* HandleLoop(char* ptr, char* buffer, FunctionResult &result)
 	return endofloop;
 }  
 
-FunctionResult HandleRelation(char* word1,char* op, char* word2,bool output,unsigned int& id)
+FunctionResult HandleRelation(char* word1,char* op, char* word2,bool output,unsigned int& id, char* word1val, char* word2val)
 { //   word1 and word2 are RAW, ready to be evaluated.
+	*word1val = 0;
+	*word2val = 0;
 	char* val1 = AllocateBuffer();
 	char* val2 = AllocateBuffer();
 	WORDP D;
@@ -445,20 +449,10 @@ FunctionResult HandleRelation(char* word1,char* op, char* word2,bool output,unsi
 	}
 	else if (trace & TRACE_PATTERN && !output && CheckTopicTrace()) 
 	{
-		if (!stricmp(word1,val1))
-		{
-			if (*word1) Log(STDUSERLOG,"%s %s ",word1,op); // dont need to show value
-			else Log(STDUSERLOG,"null %s ",op); 
-		}
-		else if (!*val1) Log(STDUSERTABLOG,"if  %s (null) %s  ",word1,op);
-		else  Log(STDUSERLOG,"%s (%s) %s ",word1,val1,op);
-		if (!(strcmp(word2,val2))) 
-		{
-			if (*val2)  id = Log(STDUSERLOG,"%s ",word2); // dont need to show value
-			else id = Log(STDUSERLOG,"null "); 
-		}
-		else if (!*val2)  id = Log(STDUSERLOG," %s (null) ",word2);
-		else  id = Log(STDUSERLOG," %s (%s) ",word2, val2);
+		if (strlen(val1) >=( MAX_WORD_SIZE-1)) val1[MAX_WORD_SIZE-1] = 0;
+		if (strlen(val2) >=( MAX_WORD_SIZE-1)) val2[MAX_WORD_SIZE-1] = 0;
+		strcpy(word1val,val1);
+		strcpy(word2val,val2);
 	}
 
 	FreeBuffer();

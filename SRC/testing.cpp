@@ -988,7 +988,8 @@ static void C_TestPattern(char* input)
 	bool uppercasem = false;
 	int whenmatched = 0;
 	SetContext(true);
-	bool result =  Match(data+2,0,0,'(',true,gap,wildcardSelector,junk1,junk1,uppercasem,whenmatched);
+	unsigned int positionStart,positionEnd;
+	bool result =  Match(data+2,0,0,'(',true,gap,wildcardSelector,junk1,junk1,uppercasem,whenmatched,positionStart,positionEnd);
 	SetContext(false);
 	trace = oldtrace;
 	if (result) 
@@ -5615,7 +5616,7 @@ static void C_Do(char* input)
 		FunctionResult result;
 		FreshOutput(data,answer,result);
 		Log(STDUSERLOG,"   result: %s  output: %s\r\n",ResultCode(result),answer);
-		AddResponse(answer);
+		AddResponse(answer,responseControl);
 	}
 #else
 	Log(STDUSERLOG,"Script compiler not installed.");
@@ -5952,7 +5953,7 @@ static void ShowTrace(unsigned int bits, bool original)
 
 static void C_Say(char* input)
 {
-	AddResponse(input);
+	AddResponse(input,responseControl);
 	wasCommand = OUTPUTASGIVEN;
 }
 

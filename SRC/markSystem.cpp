@@ -279,7 +279,7 @@ void MarkWordHit(WORDP D, unsigned int start,unsigned int end)
 			Log(STDUSERTABLOG,"");
 		}
 		Log((showMark) ? ECHOSTDUSERLOG : STDUSERLOG,(D->internalBits & TOPIC) ? " +T%s " : " +%s",D->word);
-		Log((showMark) ? ECHOSTDUSERLOG : STDUSERLOG,(start != end) ? "(%d-%d)": "(%d) ",start,end);
+		if (start != end) Log((showMark) ? ECHOSTDUSERLOG : STDUSERLOG,"(%d-%d)",start,end);
 	}
 }
 
@@ -580,7 +580,7 @@ static void SetSequenceStamp() //   mark words in sequence, original and canonic
 	char* buffer2 = AllocateBuffer();
 	if (trace & TRACE_PREPARE || prepareMode == PREPARE_MODE) 
 	{
-		Log(STDUSERLOG,"\r\n    sequences=\r\n");
+		Log(STDUSERLOG,"\r\nSequences:\r\n");
 		usetrace = (unsigned int) -1;
 	}
 
@@ -857,7 +857,7 @@ void MarkAllImpliedWords()
 		sys->inferMark = inferMark; // dont mark these supersets of pos-tagging stuff
 		role->inferMark = inferMark; // dont mark these supersets of pos-tagging stuff
 
- 		if (trace  & (TRACE_HIERARCHY | TRACE_PREPARE) || prepareMode == PREPARE_MODE) Log(STDUSERLOG,"\r\n%d: %s raw= ",i,original);
+ 		if (trace  & (TRACE_HIERARCHY | TRACE_PREPARE) || prepareMode == PREPARE_MODE) Log(STDUSERLOG,"\r\n%d: %s (raw): ",i,original);
 	
 		uint64 flags = posValues[i];
 		//if (flags & ADJECTIVE_NOUN) // transcribe back to adjective
@@ -992,8 +992,8 @@ void MarkAllImpliedWords()
 		
 		if (trace & TRACE_PREPARE || prepareMode == PREPARE_MODE) 
 		{
-			if (CL) Log(STDUSERLOG,"\r\n%d: %s canonical= ", i,CL->word ); //    original meanings lowercase
-			else Log(STDUSERLOG,"\r\n%d: %s canonical= ", i,(CU) ? CU->word : "" ); //    original meanings uppercase
+			if (CL) Log(STDUSERLOG,"\r\n%d: %s (canonical): ", i,CL->word ); //    original meanings lowercase
+			else Log(STDUSERLOG,"\r\n%d: %s (canonical): ", i,(CU) ? CU->word : "" ); //    original meanings uppercase
 		}
 
 		//   canonical word

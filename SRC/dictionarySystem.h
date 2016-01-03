@@ -597,7 +597,6 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 // these change from parsing
 #define SENTENCE_TOKENFLAGS  ( QUOTATION | COMMANDMARK | IMPLIED_YOU | FOREIGN_TOKENS | FAULTY_PARSE  | NOT_SENTENCE | PRESENT | PAST | FUTURE | PRESENT_PERFECT | CONTINUOUS | PERFECT | PASSIVE )
 
-
 // flags to control output processing
 #define    OUTPUT_ONCE			0x00000001 
 #define    OUTPUT_KEEPSET		0x00000002	// don't expand class or set
@@ -620,11 +619,13 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define    OUTPUT_RAW			0x00040000	// there are no special characters, except variable references		
 #define    OUTPUT_RETURNVALUE_ONLY		0x00080000	// just return the buffer, dont print it out		
 
-// flags to control response processing
-#define RESPONSE_UPPERSTART					0x00000001  // start each output sentence with upper case
-#define RESPONSE_REMOVESPACEBEFORECOMMA		0x00000002  // remove spaces before commas
-#define RESPONSE_ALTERUNDERSCORES			0x00000004
-#define ALL_RESPONSES ( 7 ) 
+// flags to control response processing continue from output flags
+#define RESPONSE_NONE						0
+#define RESPONSE_UPPERSTART					0x00100000  // start each output sentence with upper case
+#define RESPONSE_REMOVESPACEBEFORECOMMA		0x00200000  // remove spaces before commas
+#define RESPONSE_ALTERUNDERSCORES			0x00400000
+#define RESPONSE_REMOVETILDE				0x00800000
+#define ALL_RESPONSES ( RESPONSE_UPPERSTART | RESPONSE_REMOVESPACEBEFORECOMMA | RESPONSE_ALTERUNDERSCORES | RESPONSE_REMOVETILDE ) 
 
 struct WORDENTRY;
 typedef WORDENTRY* WORDP;

@@ -407,7 +407,11 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 		while (ptr && *ptr != ')' && *ptr != ENDUNIT) // read arguments
 		{
 			// AVOID TEMPTATION: allocating callarguments in string space would allow bigger arguments, but long-term allocations by document mode compromise string space totals
-			if (info->argumentCount != STREAM_ARG) ptr = ReadCommandArg(ptr,callArgumentList[callArgumentIndex],result,OUTPUT_NOTREALBUFFER|OUTPUT_EVALCODE|OUTPUT_UNTOUCHEDSTRING,MAX_ARG_BYTES);
+			if (info->argumentCount != STREAM_ARG) 
+			{
+				ptr = ReadCommandArg(ptr,callArgumentList[callArgumentIndex],result,OUTPUT_NOTREALBUFFER|OUTPUT_EVALCODE|OUTPUT_UNTOUCHEDSTRING,MAX_ARG_BYTES);
+				ptr = SkipWhitespace(ptr);
+			}
 			else // swallow unevaled arg stream
 			{
 				ptr = BalanceParen(paren,false);  // start after (, point after closing ) if one can, to next token - it may point 2 after )  or it may point 1 after )
@@ -923,7 +927,8 @@ bool RuleTest(char* data) // see if pattern matches
 	unsigned int junk;
 	bool uppercasem = false;
 	int matched = 0;
-	bool answer =  Match(pattern+2,0,0,'(',true,gap,wildcardSelector,junk,junk,uppercasem,matched); // start past the opening paren
+	unsigned int positionStart,positionEnd;
+	bool answer =  Match(pattern+2,0,0,'(',true,gap,wildcardSelector,junk,junk,uppercasem,matched,positionStart,positionEnd); // start past the opening paren
 	return answer;
 }
 
@@ -2607,7 +2612,8 @@ static FunctionResult LogCode(char* buffer)
 	char* stream = ARGUMENT(1);
 	uint64 flags;
 	bool bad = false;
-	stream = ReadFlags(stream,flags,bad); // try for flags
+	bool response = false;
+	stream = ReadFlags(stream,flags,bad,response); // try for flags
 	if (flags && *stream == ')') ++stream; // skip end of flags
 	char name[MAX_WORD_SIZE];
 	*name = 0;
@@ -2725,7 +2731,7 @@ static FunctionResult FlushOutputCode(char* buffer)
 		ReportBug("Illegal to use ^FlushOutput during postprocessing");
 		return FAILRULE_BIT;
 	}
-	if (!AddResponse(currentOutputBase)) return FAILRULE_BIT;
+	if (!AddResponse(currentOutputBase,responseControl)) return FAILRULE_BIT;
 	return NOPROBLEM_BIT;
 }
 
@@ -2734,7 +2740,7 @@ static FunctionResult InsertOutput(char* stream, char* buffer, int index)
 	// add at end, then alter order
 	FunctionResult result;
 	Output(stream,buffer,result,OUTPUT_EVALCODE);
-	if (AddResponse(buffer))
+	if (AddResponse(buffer,responseControl))
 	{
 		memmove(&responseOrder[index+1],&responseOrder[index],responseIndex - index); // shift order out 1
 		responseOrder[index] = (unsigned char)(responseIndex-1);
@@ -2754,7 +2760,8 @@ static FunctionResult InsertPrintCode(char* buffer)
 	char* stream = ARGUMENT(1);
 	uint64 flags;
 	bool bad = false;
-	stream = ReadFlags(stream,flags,bad); // try for flags
+	bool response = false;
+	stream = ReadFlags(stream,flags,bad,response); // try for flags
 	if (flags) ++stream; // skip end of flags
 	FunctionResult result;
 	char beforeIndex[MAX_WORD_SIZE];
@@ -2789,12 +2796,13 @@ static FunctionResult PrintCode(char* buffer)
 	char* stream = ARGUMENT(1);
 	uint64 flags;
 	bool bad = false;
-	stream = ReadFlags(stream,flags,bad); // try for flags
-	if (flags && *stream == ')') ++stream; // skip end of flags
+	bool response = false;
+	stream = ReadFlags(stream,flags,bad,response); // try for flags
+	if ((flags || response) && *stream == ')') ++stream; // skip end of flags
 
 	FunctionResult result;
 	Output(stream,buffer,result,OUTPUT_EVALCODE | (unsigned int) flags);
-	if (!(flags & OUTPUT_RETURNVALUE_ONLY) && !AddResponse(buffer)) result = FAILRULE_BIT;
+	if (!(flags & OUTPUT_RETURNVALUE_ONLY) && !AddResponse(buffer,response ? (unsigned int)flags : responseControl)) result = FAILRULE_BIT;
 	return result;
 }
 
@@ -2809,7 +2817,8 @@ static FunctionResult PrePrintCode(char* buffer)
 	char* stream = ARGUMENT(1); 
 	uint64 flags;
 	bool bad = false;
-	stream = ReadFlags(stream,flags,bad); // try for flags
+	bool response = false;
+	stream = ReadFlags(stream,flags,bad,response); // try for flags
 	if (flags) ++stream; // skip end of flags
 
 	return InsertOutput(stream,buffer,0);
@@ -2967,7 +2976,8 @@ static FunctionResult PostPrintBeforeCode(char* buffer) // only works if post pr
 	char* stream = ARGUMENT(1);		
 	uint64 flags;
 	bool bad = false;
-	stream = ReadFlags(stream,flags,bad); // try for flags
+	bool response = false;
+	stream = ReadFlags(stream,flags,bad,response); // try for flags
 	if (flags) ++stream; // skip end of flags
 
 	FunctionResult result;
@@ -2992,7 +3002,8 @@ static FunctionResult PostPrintAfterCode(char* buffer) // only works if post pro
 	char* stream = ARGUMENT(1);		
 	uint64 flags;
 	bool bad = false;
-	stream = ReadFlags(stream,flags,bad); // try for flags
+	bool response = false;
+	stream = ReadFlags(stream,flags,bad,response); // try for flags
 	if (flags) ++stream; // skip end of flags
 
 	FunctionResult result;
@@ -3071,7 +3082,8 @@ static FunctionResult EvalCode(char* buffer) //  ??? needed with output eval ins
 	char* stream = ARGUMENT(1);
 	uint64 flags;
 	bool bad = false;
-	stream = ReadFlags(stream,flags,bad); // try for flags
+	bool response = false;
+	stream = ReadFlags(stream,flags,bad,response); // try for flags
 	if (flags && *stream == ')') ++stream; // skip end of flags
 	Output(stream,buffer,result,OUTPUT_EVALCODE|(unsigned int)flags); 
 	return result;
@@ -3134,7 +3146,8 @@ FunctionResult MatchCode(char* buffer)
 	if (!*word) return FAILRULE_BIT;	// NO DATA?
 	bool uppercasem = false;
 	int matched = 0;
-     bool match = Match(ptr,0,0,'(',true,gap,wildcardSelector,junk,junk,uppercasem,matched) != 0;  //   skip paren and treat as NOT at start depth, dont reset wildcards- if it does match, wildcards are bound
+	unsigned int positionStart,positionEnd;
+    bool match = Match(ptr,0,0,'(',true,gap,wildcardSelector,junk,junk,uppercasem,matched,positionStart,positionEnd) != 0;  //   skip paren and treat as NOT at start depth, dont reset wildcards- if it does match, wildcards are bound
 	if (!match) return FAILRULE_BIT;
 	return NOPROBLEM_BIT;
 }

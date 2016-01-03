@@ -1,3 +1,8 @@
+Version 6.0 1-02-2016
+1. easier to understand pattern tracing
+2. ^print accepts more flags (RESPONSE_ ) controlling output
+3. %timenumbers for a complete second minute hour dayinweek dateinmonth  month year data
+
 Version 5.93 12-31-2015
 1. New manual "ChatScript Common Beginner Mistakes"
 2. time.tbl file removed from worlddata, its 2 concepts merged into ontology concepts, whose order of data has changed

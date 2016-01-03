@@ -7,7 +7,7 @@ bool logUpdated = false;					// has logging happened
 char* logmainbuffer = 0;					// where we build a log line
 static bool pendingWarning = false;			// log entry we are building is a warning message
 static bool pendingError = false;			// log entry we are building is an error message
-
+struct tm* ptm;
 int userLog = LOGGING_NOT_SET;				// do we log user
 int serverLog = LOGGING_NOT_SET;			// do we log server
 bool serverPreLog = true;					// show what server got BEFORE it works on it
@@ -444,7 +444,7 @@ char* GetTimeInfo() //   Www Mmm dd hh:mm:ss yyyy Where Www is the weekday, Mmm 
 {
     time_t curr = time(0); // local machine time
     if (regression) curr = 44444444; 
-	struct tm* ptm = localtime (&curr);
+	ptm = localtime (&curr);
 
 	char* utcoffset = GetUserVariable("$cs_utcoffset");
 	if (*utcoffset) // report relative time
@@ -520,10 +520,10 @@ char* GetTimeInfo() //   Www Mmm dd hh:mm:ss yyyy Where Www is the weekday, Mmm 
 			ptm->tm_wday += 1;
 		}
 		
-		if (ptm->tm_wday <= 0) ptm->tm_wday += 7; // day of week underflow  0-6  
+		if (ptm->tm_wday < 0) ptm->tm_wday += 7; // day of week underflow  0-6  
 		else if (ptm->tm_wday >= 7) ptm->tm_wday -= 7; // day of week overflow  0-6  
 		
-		if (ptm->tm_yday <= 0) ptm->tm_yday += 365; // day of year underflow  0-365  
+		if (ptm->tm_yday < 0) ptm->tm_yday += 365; // day of year underflow  0-365  
 		else if (ptm->tm_yday >= 365 && !leap ) ptm->tm_yday -= 365; // day of year overflow  0-365  
 		else if (ptm->tm_yday >= 366) ptm->tm_yday -= 366; // day of year leap overflow  0-365  
 
@@ -556,7 +556,7 @@ char* GetTimeInfo() //   Www Mmm dd hh:mm:ss yyyy Where Www is the weekday, Mmm 
 			else if (ptm->tm_mday == 32) {ptm->tm_mon++; ptm->tm_mday = 1;}
 		}
 
-		if (ptm->tm_mon <= 0) // month underflow  0-11
+		if (ptm->tm_mon < 0) // month underflow  0-11
 		{ 
 			ptm->tm_mon += 12; // back to december
 			ptm->tm_year -= 1; // prior year
@@ -785,6 +785,7 @@ unsigned int Log(unsigned int channel,const char * fmt, ...)
 	if ((channel == BUGLOG || channel == SERVERLOG) && server && !serverLog)  return id; // not logging server data
 
 	static char last = 0;
+	static int priordepth = 0;
     char* at = logmainbuffer;
     *at = 0;
     va_list ap; 
@@ -809,23 +810,28 @@ unsigned int Log(unsigned int channel,const char * fmt, ...)
 	//   channels above 100 will indent when prior line not ended
 	if (channel >= STDUSERTABLOG && last != '\\') //   indented by call level and not merged
 	{ //   STDUSERTABLOG 101 is std indending characters  201 = attention getting
-		if (last != '\n') 
+		if (last == 1 && globalDepth == priordepth) {} // we indented already
+		else 
 		{
-			*at++ = '\r'; //   close out this prior thing
-			*at++ = '\n';
-		}
-		while (ptr[1] == '\n' || ptr[1] == '\r') // we point BEFORE the format
-		{
-			*at++ = *++ptr;
-		}
+			if (last != '\n') 
+			{
+				*at++ = '\r'; //   close out this prior thing
+				*at++ = '\n';
+			}
+			while (ptr[1] == '\n' || ptr[1] == '\r') // we point BEFORE the format
+			{
+				*at++ = *++ptr;
+			}
 
-		int n = globalDepth;
-		if (n < 0) n = 0; //   just in case
-		for (int i = 0; i < n; i++)
-		{
-			if (channel == STDUSERATTNLOG) *at++ = (i == 1) ? '*' : ' ';
-			else *at++ = (i == 4 || i == 9) ? ',' : '.';
-			*at++ = ' ';
+			int n = globalDepth;
+			if (n < 0) n = 0; //   just in case
+			for (int i = 0; i < n; i++)
+			{
+				if (channel == STDUSERATTNLOG) *at++ = (i == 1) ? '*' : ' ';
+				else *at++ = (i == 4 || i == 9) ? ',' : '.';
+				*at++ = ' ';
+			}
+			priordepth = globalDepth;
 		}
  	}
 	channel %= 100;
@@ -898,6 +904,7 @@ unsigned int Log(unsigned int channel,const char * fmt, ...)
     va_end(ap); 
 
 	last = *(at-1); //   ends on NL?
+	if (fmt && !*fmt) last = 1; // special marker 
 	if (last == '\\') *--at = 0;	//   dont show it (we intend to merge lines)
 	logUpdated = true; // in case someone wants to see if intervening output happened
 	size_t bufLen = at - logmainbuffer;

@@ -566,6 +566,7 @@ char* EatFact(char* ptr,unsigned int flags,bool attribute)
 	}
 	uint64 fullflags;
 	bool bad = false;
+	bool response = false;
 	char strip[MAX_WORD_SIZE];
 	char* at = ReadCompiledWord(ptr,strip);
 	bool stripquote = false;
@@ -574,7 +575,7 @@ char* EatFact(char* ptr,unsigned int flags,bool attribute)
 		stripquote = true;
 		ptr = at;
 	}
-	ptr = ReadFlags(ptr,fullflags,bad);
+	ptr = ReadFlags(ptr,fullflags,bad,response);
 	flags |= (unsigned int) fullflags;
 	//if (bad) 
 	//	return (*ptr) ? (ptr + 2) : ptr; //   returns after the closing ) if there is one - creates no fact
@@ -999,8 +1000,9 @@ FACT* ReadFact(char* &ptr)
     //   handle the flags on the fact
     uint64 properties = 0;
 	bool bad = false;
+	bool response = false;
     if (!*ptr || *ptr == ')' ); // end of fact
-	else ptr = ReadFlags(ptr,properties,bad);
+	else ptr = ReadFlags(ptr,properties,bad,response);
 	flags |= (unsigned int) properties;
 
     if (flags & FACTSUBJECT) subject = (MEANING) atoi(subjectname);

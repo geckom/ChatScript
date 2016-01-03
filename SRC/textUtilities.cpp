@@ -999,23 +999,26 @@ unsigned int IsMadeOfInitials(char * word,char* end)
 /// READING ROUTINES
 ////////////////////////////////////////////////////////////////////
 
-char* ReadFlags(char* ptr,uint64& flags,bool &bad)
+char* ReadFlags(char* ptr,uint64& flags,bool &bad, bool &response)
 {
 	flags = 0;
+	response = false;
 	char* start = ptr;
 	if (!*ptr) return start;
 	if (*ptr != '(') // simple solo flag
 	{
 		char word[MAX_WORD_SIZE];
 		ptr = ReadCompiledWord(ptr,word);
+		if (!strnicmp(word,"RESPONSE_",9)) response = true; // saw a response flag
 		if (IsDigit(*word)) ReadInt64(word,(int64&)flags);
 		else
 		{
 			flags = FindValueByName(word);
 			if (!flags) flags = FindSystemValueByName(word);
+			if (!flags) flags = FindMiscValueByName(word);
 			if (!flags) bad = true;
 		}
-		return  (!flags) ? start : ptr;	// if found nothing return start, else return end
+		return  (!flags && !IsDigit(*word) && !response) ? start : ptr;	// if found nothing return start, else return end
 	}
 
 	char flag[MAX_WORD_SIZE];
@@ -1039,6 +1042,7 @@ char* ReadFlags(char* ptr,uint64& flags,bool &bad)
 		{
 			uint64 n = FindValueByName(flag);
 			if (!n) n = FindSystemValueByName(flag);
+			if (!n) n = FindMiscValueByName(flag);
 			if (!n) bad = true;
 			flags |= n;
 		}
@@ -1797,7 +1801,7 @@ void Convert2Blanks(char* ptr)
 	}
 }
 
-void Convert2Underscores(char* output,bool alternewline,bool removeClasses,bool removeBlanks)
+void Convert2Underscores(char* output,bool alternewline, bool removeBlanks)
 { 
     char* ptr = output - 1;
 	char c;
@@ -1816,14 +1820,6 @@ void Convert2Underscores(char* output,bool alternewline,bool removeClasses,bool 
 			memmove(ptr,ptr+1,strlen(ptr));
 			--ptr;
 		}
-        else if (removeClasses &&  c == '~' && IsAlphaUTF8(ptr[1])  ) //   REMOVE leading ~ or : in classnames
-        {
-			if (ptr == output || (*(ptr-1)) == ' ') 
-			{
-				memmove(ptr,ptr+1,strlen(ptr)); 
-				--ptr;
-			}
-        }
         else if (!backslash && !removeBlanks &&  c == '_' && ptr[1] != '_') // remove underscores from apostrophe of possession
         {
 			// remove space on possessives
@@ -1835,6 +1831,26 @@ void Convert2Underscores(char* output,bool alternewline,bool removeClasses,bool 
 		}
 		else if (removeBlanks && c == ' ') *ptr = '_';
 		else if (alternewline && (c == '\n' || c == '\r')) *ptr = ' ';
+    }
+}
+
+
+void RemoveTilde(char* output)
+{ 
+    char* ptr = output - 1;
+	char c;
+	if (ptr[1] == '"') // leave this area alone
+	{
+		ptr += 2;
+		while (*++ptr && *ptr != '"');
+	}
+    while ((c = *++ptr)) 
+    {
+		if (c == '~' && IsAlphaUTF8(ptr[1]) && (ptr == output || (*(ptr-1)) == ' ')  ) //   REMOVE leading ~  in classnames
+        {
+			memmove(ptr,ptr+1,strlen(ptr)); 
+			--ptr;
+        }
     }
 }
 

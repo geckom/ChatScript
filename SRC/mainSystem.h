@@ -206,7 +206,7 @@ void OnceCode(const char* var,char* topic = NULL);
 void AddBotUsed(const char* reply,unsigned int len);
 void AddHumanUsed(const char* reply);
 bool HasAlreadySaid(char* msg);
-bool AddResponse(char* msg);
+bool AddResponse(char* msg, unsigned int controls);
 char* ConcatResult();
 
 #endif

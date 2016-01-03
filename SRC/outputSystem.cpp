@@ -621,7 +621,7 @@ static char* Output_Function(char* word, char* ptr,  bool space,char* buffer, un
 		{
 			if (*currentRuleOutputBase && (!strcmp(word,"^gambit") || !strcmp(word,"^respond") || !strcmp(word,"^reuse") || !strcmp(word,"^retry") || !strcmp(word,"^refine")  )) // leaving current rule
 			{
-				if (!AddResponse(currentRuleOutputBase)) result = FAILRULE_BIT;
+				if (!AddResponse(currentRuleOutputBase,responseControl)) result = FAILRULE_BIT;
 				buffer = currentRuleOutputBase;	
 				*buffer = 0;
 			}

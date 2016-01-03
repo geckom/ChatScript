@@ -18,5 +18,5 @@ extern int impliedIf;
 extern unsigned int withinLoop;
 char* HandleIf(char* ptr, char* buffer, FunctionResult &result);
 char* HandleLoop(char* ptr, char* buffer, FunctionResult &result);
-FunctionResult HandleRelation(char* word1,char* op, char* word2,bool iflog,unsigned int& id);
+FunctionResult HandleRelation(char* word1,char* op, char* word2,bool iflog,unsigned int& id,char* word1val, char* word2val);
 #endif

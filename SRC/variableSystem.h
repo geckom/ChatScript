@@ -38,7 +38,7 @@ extern char wildcardSeparator[2];
 // wildcard accessors
 char* GetwildcardText(unsigned int i, bool canon);
 void SetWildCard(char* value,char* canonicalVale,const char* index,unsigned int position);
-void SetWildCard(unsigned int start, unsigned int end);
+void SetWildCard(unsigned int start, unsigned int end, bool inpattern = false);
 void SetWildCardIndexStart(unsigned int);
 int GetWildcardID(char* x);
 

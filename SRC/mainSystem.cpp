@@ -1,6 +1,6 @@
 #include "common.h"
 #include "evserver.h"
-char* version = "5.93";
+char* version = "6.0";
 
 #define MAX_RETRIES 20
 clock_t startTimeInfo;							// start time of current volley
@@ -1512,7 +1512,7 @@ static void SaveResponse(char* msg)
 	if (showWhy) Log(ECHOSTDUSERLOG,"\n  => %s %s %d.%d  %s\r\n",(!UsableRule(currentTopicID,currentRuleID)) ? "-" : "", GetTopicName(currentTopicID,false),TOPLEVELID(currentRuleID),REJOINDERID(currentRuleID),ShowRule(currentRule));
 }
 
-bool AddResponse(char* msg)
+bool AddResponse(char* msg, unsigned int responseControl)
 {
 	if (!msg || !*msg) return true;
 	char* buffer = AllocateBuffer();
@@ -1525,6 +1525,7 @@ bool AddResponse(char* msg)
 	}
 
     strcpy(buffer,msg);
+	if (responseControl & RESPONSE_REMOVETILDE) RemoveTilde(buffer);
 	if (responseControl & RESPONSE_ALTERUNDERSCORES)
 	{
 		Convert2Underscores(buffer,false); // leave new lines alone
