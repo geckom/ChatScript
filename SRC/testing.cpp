@@ -285,9 +285,9 @@ static void C_Prepare(char* input)
 static void MemorizeRegress(char* input)
 {
 	char word[MAX_WORD_SIZE];
-	input = ReadCompiledWord(input,word);
+	input = ReadCompiledWord(input,word);  // file to read
 	char outputfile[MAX_WORD_SIZE];
-	ReadCompiledWord(input,outputfile);
+	ReadCompiledWord(input,outputfile); // file to write
 	FILE* in = FopenReadNormal(word); // source full name given
 	char file[MAX_WORD_SIZE];
 	if (!in)
@@ -2001,7 +2001,7 @@ reloop:
 		if (!raw && !ambig && !showUsed) tokenControl |= DO_PARSE;
 		ReturnToFreeze();
 		PrepareSentence(buffer,true,true);	
-		if (sentenceLengthLimit && wordCount != sentenceLengthLimit) continue; // looking for easy sentences to fix
+		if (sentenceLengthLimit && (int)wordCount != sentenceLengthLimit) continue; // looking for easy sentences to fix
 		unsigned int actualLen = len;
 		if (*tags[len] == '.' || *tags[len] == '?' || *tags[len] == '!') 
 		{
@@ -2023,7 +2023,7 @@ reloop:
 				totalAmbigs += bitCounts[i]; // total ambiguity choices
 				++ambigItems;
 			}
-			if (ambig && bad && (!ambigLocation || loc == ambigLocation) ) 
+			if (ambig && bad && (!ambigLocation || loc == (int)ambigLocation) ) 
 				Log(STDUSERLOG,"** AMBIG %d: line: %d %s\r\n",++ambigSentences,currentFileLine,answer1);
 		}
 

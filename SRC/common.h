@@ -104,14 +104,9 @@ typedef signed long long  int64;
 	#define _CRT_SECURE_NO_WARNINGS 1
 	#define _CRT_NONSTDC_NO_DEPRECATE
 	#define _CRT_NONSTDC_NO_WARNINGS 1
-	#include <conio.h>
-	#include <direct.h>
-	#include <io.h>
-	#include <process.h>
 #ifndef WIN32_LEAN_AND_MEAN
 	#define WIN32_LEAN_AND_MEAN
 #endif
-	#include <windows.h>
 	#include <winsock2.h> // needs to compile before any refs to winsock.h
 	#include <ws2tcpip.h>
 	#include <iphlpapi.h>

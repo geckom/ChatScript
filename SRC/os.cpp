@@ -51,6 +51,40 @@ int jumpIndex = -1;
 unsigned int randIndex = 0;
 unsigned int oldRandIndex = 0;
 
+#ifdef WIN32
+#include <conio.h>
+#include <direct.h>
+#endif
+
+/////////////////////////////////////////////////////////
+/// KEYBOARD
+/////////////////////////////////////////////////////////
+
+bool KeyReady()
+{
+	if (sourceFile) return true;
+#ifdef WIN32
+	return _kbhit() ? true : false;
+#else
+	bool ready = false;
+	struct termios oldSettings, newSettings;
+    if (tcgetattr( fileno( stdin ), &oldSettings ) == -1) return false; // could not get terminal attributes
+    newSettings = oldSettings;
+    newSettings.c_lflag &= (~ICANON & ~ECHO);
+    tcsetattr( fileno( stdin ), TCSANOW, &newSettings );    
+    fd_set set;
+	struct timeval tv;
+	tv.tv_sec = 0;
+	tv.tv_usec = 0;
+	FD_ZERO( &set );
+    FD_SET( fileno( stdin ), &set );
+    int res = select( fileno( stdin )+1, &set, NULL, NULL, &tv );
+	ready = ( res > 0 );
+    tcsetattr( fileno( stdin ), TCSANOW, &oldSettings );
+	return ready;
+#endif
+}
+
 /////////////////////////////////////////////////////////
 /// EXCEPTION/ERROR
 /////////////////////////////////////////////////////////
@@ -149,6 +183,15 @@ void FreeBuffer()
 /////////////////////////////////////////////////////////
 /// FILE SYSTEM
 /////////////////////////////////////////////////////////
+
+int MakeDirectory(char* directory)
+{
+#ifdef WIN32
+	return _mkdir("VERIFY");
+#else 
+	return mkdir("VERIFY", 0777); 
+#endif
+}
 
 void C_Directories(char* x)
 {
@@ -811,6 +854,15 @@ unsigned int Log(unsigned int channel,const char * fmt, ...)
 	if (channel >= STDUSERTABLOG && last != '\\') //   indented by call level and not merged
 	{ //   STDUSERTABLOG 101 is std indending characters  201 = attention getting
 		if (last == 1 && globalDepth == priordepth) {} // we indented already
+		else if (last == 1 && globalDepth > priordepth) // we need to indent a bit more
+		{
+			for (int i = priordepth+1; i < globalDepth; i++)
+			{
+				*at++ = (i == 4 || i == 9) ? ',' : '.';
+				*at++ = ' ';
+			}
+			priordepth = globalDepth;
+		}
 		else 
 		{
 			if (last != '\n') 

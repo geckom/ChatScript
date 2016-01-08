@@ -215,7 +215,8 @@ char* GetSetEnd(char* x)
 void TraceFact(FACT* F,bool ignoreDead)
 {
 	char* word = AllocateBuffer();
-	Log(STDUSERLOG,"%d: %s",Fact2Index(F),WriteFact(F,false,word,ignoreDead,true));
+	Log(STDUSERLOG,"%d: %s\r\n",Fact2Index(F),WriteFact(F,false,word,ignoreDead,false));
+	Log(STDUSERTABLOG,"");
 	FreeBuffer();
 }
 
@@ -466,7 +467,10 @@ FACT* CreateFact(MEANING subject, MEANING verb, MEANING object, unsigned int pro
 	if (currentFact) return currentFact;
 	currentFact = CreateFastFact(subject,verb,object,properties);
 	if (trace & TRACE_FACT && currentFact && CheckTopicTrace())  
+	{
 		Log(STDUSERLOG," Created %d\r\n", Fact2Index(currentFact));
+		Log(STDUSERTABLOG,"");
+	}
 
 	return  currentFact;
 }

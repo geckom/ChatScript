@@ -364,6 +364,7 @@ restart: // start with user
 #ifdef WIN32
   #pragma warning(push,1)
   #pragma warning(disable: 4290) 
+  #include <process.h>
 #endif
 #include <cstdio>
 #include <errno.h>  

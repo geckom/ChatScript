@@ -876,7 +876,7 @@ void MarkAllImpliedWords()
 		if (flags & ADJECTIVE_BITS) flags |= ADJECTIVE  | (allOriginalWordBits[i] & (MORE_FORM|MOST_FORM));
 		if (flags & NOUN_ADJECTIVE) flags |=  (allOriginalWordBits[i] & (MORE_FORM|MOST_FORM)) | ADJECTIVE_NORMAL | ADJECTIVE; // what actress is the *prettiest  -- be NOUN OR ADJECTIVE
 		if (flags & ADVERB) flags |= ADVERB |  (allOriginalWordBits[i] & (MORE_FORM|MOST_FORM));
-		if (D->systemFlags & ORDINAL) 
+		if (D && D->systemFlags & ORDINAL) 
 		{
 			flags |= PLACE_NUMBER;
 			AddParseBits(D,QUANTITY_NOUN);

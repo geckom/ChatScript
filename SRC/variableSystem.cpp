@@ -401,30 +401,30 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 	result = NOPROBLEM_BIT;
 	impliedSet = (*word == '@') ? GetSetID(word) : ALREADY_HANDLED;			// if a set save location
 	impliedWild = (*word == '_') ? GetWildcardID(word) : ALREADY_HANDLED;	// if a wildcard save location
-	int setToImply = impliedSet;
-	int setToWild = impliedWild;
+	int setToImply = impliedSet; // what he originally requested
+	int setToWild = impliedWild; // what he originally requested
 	bool otherassign = (*word != '@') && (*word != '_');
 
 	if (*word == '^' && word[1] != '^') // function variable must be changed to actual value. can never replace a function variable binding  --- CHANGED nowadays are allowed to write on the function binding itself (done with ^^ref)
 	{
-		ReadShortCommandArg(word,word1,result,OUTPUT_NOTREALBUFFER);
+		ReadShortCommandArg(word,word1,result,OUTPUT_NOTREALBUFFER|ASSIGNMENT);
 		if (result & ENDCODES) goto exit; // failed
 		strcpy(word,word1);
 	}
 
 	// Get assignment operator
-    ptr = ReadCompiledWord(ptr,op); // assignment operator = += -= /= *= %= 
+    ptr = ReadCompiledWord(ptr,op); // assignment operator = += -= /= *= %= ^= |= &=
 	impliedOp = *op;
 	if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDUSERTABLOG,"%s %s ",word,op);
-	char original[MAX_WORD_SIZE];
-	ReadCompiledWord(ptr,original);
+	char originalWord1[MAX_WORD_SIZE];
+	ReadCompiledWord(ptr,originalWord1);
 
 	// get the from value
 	assignFromWild =  (*ptr == '_' && IsDigit(ptr[1])) ? GetWildcardID(ptr)  : -1;
 	if (assignFromWild >= 0 && *word == '_') ptr = ReadCompiledWord(ptr,word1); // assigning from wild to wild. Just copy across
 	else
 	{
-		ptr = ReadCommandArg(ptr,word1,result,OUTPUT_NOTREALBUFFER|OUTPUT_NOCOMMANUMBER); // need to see null assigned -- store raw numbers, not with commas, lest relations break
+		ptr = ReadCommandArg(ptr,word1,result,OUTPUT_NOTREALBUFFER|OUTPUT_NOCOMMANUMBER|ASSIGNMENT); // need to see null assigned -- store raw numbers, not with commas, lest relations break
 		if (*word1 == '#') // substitute a constant? user type-in :set command for example
 		{
 			uint64 n = FindValueByName(word1+1);
@@ -443,11 +443,16 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 		// assigning to a var is simple
 		// A fact was created but not used up by retrieving some field of it. Convert to a reference to fact.
 		// if we already did a conversion into a set or wildcard, dont do it here. Otherwise do it now into those or $uservars.
-		// DO NOT CHANGE TO add if settowild != IMPLIED_WILD. that introduces a bug assigning to $vars.
-		if (currentFact && otherassign) sprintf(word1,"%d",currentFactIndex());
-		else  if (currentFact && setToImply == impliedSet && setToWild == impliedWild) sprintf(word1,"%d",currentFactIndex());
+		// DO NOT CHANGE TO add: if settowild != IMPLIED_WILD. that introduces a bug assigning to $vars.
+
+		// if he original requested to assign to and the assignment has been done, then we dont need to do anything
+		if ((setToImply != impliedSet && setToImply != ALREADY_HANDLED) || (setToWild != impliedWild  && setToWild != ALREADY_HANDLED) ) currentFact = NULL; // used up
+	//	else if (currentFact && otherassign) sprintf(word1,"%d",currentFactIndex()); WHY DID WE WANT THIS?
+		// A fact was created but not used up by retrieving some field of it. Convert to a reference to fact.
+		else if (currentFact && setToImply == impliedSet && setToWild == impliedWild && (setToWild != ALREADY_HANDLED || setToImply != ALREADY_HANDLED)) sprintf(word1,"%d",currentFactIndex());
+
 		if (!currentFact) currentFact = F; // revert current fact to what it was before now
-}
+	}
    	if (!stricmp(word1,"null")) *word1 = 0;
 
 	//   now sort out who we are assigning into and if its arithmetic or simple assign
@@ -456,7 +461,7 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 	{
 		if (!*word1 && *op == '=') // null assign to set as a whole
 		{
-			if (*original == '^') {;} // presume its a factset function and it has done its job - @0 = next(fact @1fact)
+			if (*originalWord1 == '^') {;} // presume its a factset function and it has done its job - @0 = next(fact @1fact)
 			else
 			{
 				SET_FACTSET_COUNT(impliedSet,0);
@@ -502,7 +507,7 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 			ReadInt(word1,index);
 			FACT* F = Index2Fact(index);
 			unsigned int impliedCount =  FACTSET_COUNT(impliedSet); 
-			if (*op == '+' && op[1] == '=' && !stricmp(original,"^query") ) {;} // add to set done directly @2 += ^query()
+			if (*op == '+' && op[1] == '=' && !stricmp(originalWord1,"^query") ) {;} // add to set done directly @2 += ^query()
 			else if (*op == '+') AddFact(impliedSet,F); // add to set
 			else if (*op == '-') // remove from set
 			{
@@ -529,9 +534,10 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 		}
 		factSetNext[impliedSet] = 0; // all changes requires a reset of next ptr
 		impliedSet = ALREADY_HANDLED;
+		currentFact = NULL;
 	}
 	else if (IsArithmeticOperator(op)) 
-		Add2UserVariable(word,word1,op,original);
+		Add2UserVariable(word,word1,op,originalWord1);
 	else if (*word == '_') //   assign to wild card
 	{
 		if (impliedWild != ALREADY_HANDLED) // no one has actually done the assignnment yet
@@ -561,15 +567,15 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 	while (ptr && IsArithmeticOperator(ptr))
 	{
 		ptr = ReadCompiledWord(ptr,op);
-		ReadCompiledWord(ptr,original);
-		ptr = ReadCommandArg(ptr,word1,result); 
+		ReadCompiledWord(ptr,originalWord1);
+		ptr = ReadCommandArg(ptr,word1,result,ASSIGNMENT); 
 		if (!stricmp(word1,word)) 
 		{
 			result = FAILRULE_BIT;
 			Log(STDUSERLOG,"variable assign %s has itself as a term\r\n",word);
 		}
 		if (result & ENDCODES) goto exit; // failed next value
-		Add2UserVariable(word,word1,op,original);
+		Add2UserVariable(word,word1,op,originalWord1);
 	}
 
 	// debug

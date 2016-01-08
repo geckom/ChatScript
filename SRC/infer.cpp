@@ -136,7 +136,8 @@ static bool SetContains1(MEANING set,MEANING M, unsigned int depth)
 			{
 				if (trace & TRACE_INFER && CheckTopicTrace()) // show the path from set back to word
 				{
-					Log(STDUSERLOG,"\r\nwithin: %s ",D1->word);
+					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG,"within: %s ",D1->word);
 					WORDP path = Meaning2Word(F->subject); 
 					while (path)
 					{
@@ -145,6 +146,7 @@ static bool SetContains1(MEANING set,MEANING M, unsigned int depth)
 						path = (prior) ? Meaning2Word(prior->subject) : 0;
 					}
 					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG,"");
 				}
 
 				return true;
@@ -167,7 +169,11 @@ static bool SetContains1(MEANING set,MEANING M, unsigned int depth)
 		}
 		F = GetSubjectNondeadNext(F);
 	}
-	if (trace & TRACE_INFER && depth == 0 && CheckTopicTrace()) Log(STDUSERLOG," not within\r\n ");
+	if (trace & TRACE_INFER && depth == 0 && CheckTopicTrace())
+	{
+		Log(STDUSERLOG," not within\r\n ");
+		Log(STDUSERTABLOG,"");
+	}
 	return false;
 }
 
@@ -304,7 +310,8 @@ static bool AddWord2Scan(int flags,MEANING M,MEANING from,int depth,unsigned int
 			char* mean = WriteMeaning(from);
 			if (stricmp(last,mean))
 			{
-				Log(STDUSERLOG,"\r\n(%s=>) ",mean);
+				Log(STDUSERLOG,"\r\n");
+				Log(STDUSERTABLOG,"(%s=>) ",mean);
 				strcpy(last,mean);
 			}
 		}
@@ -571,6 +578,7 @@ unsigned int Query(char* kind, char* subjectword, char* verbword, char* objectwo
 		if (*propogate != '?') Log(STDUSERLOG,"propogate:%s",propogate);   
 		if (*match != '?') Log(STDUSERLOG,"match:%s",match);   
 		Log(STDUSERLOG,"\r\n");   
+		Log(STDUSERTABLOG,"");
 	}
 
 	//   handle what sets are involved
@@ -640,6 +648,7 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 		if (colon) *colon = 0;
 		Log(STDUSERLOG,"@@@ Control1 mark/queue: %s\r\n",control);
 		if (colon) *colon = ':';
+		Log(STDUSERTABLOG,"");
 	}
 	--control;
 	bool facttype = false;
@@ -758,7 +767,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			else if (choice[0] == '%' && choice[1]) choice = SystemVariable(choice,NULL);
 			else if (choice[0] == '@' )
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace())  Log(STDUSERLOG,"\r\n FactField: %c(%d) ",saveMark-baseMark+'0',saveMark);
+				if (trace & TRACE_QUERY  && CheckTopicTrace())  
+				{
+					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG,"FactField: %c(%d) ",saveMark-baseMark+'0',saveMark);
+				}
 				choice = NULL;
 				for (unsigned int j = 1; j <= FACTSET_COUNT(whichset); ++j) 
 				{
@@ -806,20 +819,32 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			if (trace & TRACE_QUERY  && CheckTopicTrace()) sprintf(buf,"%s #%c(%d)",choice,saveMark-baseMark+'0',saveMark);
 			if (*control == 'q') 
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n Tag+Queue: %s ",buf);
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG,"Tag+Queue: %s ",buf);
+				}
 				qMark = saveMark;	//   if we q more later, use this mark by default
 				if (*choice) AddWordOrSet2Scan(QUEUE|flags,choice,0); //   mark and queue items
 			}
 			else  if (*control == 't') 
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n Tag: %s ",buf);
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG,"Tag: %s ",buf);
+				}
 				if (!*choice);
 				else if (*choice == '\'') AddWord2Scan(flags, ReadMeaning(choice+1,true,true),0,0,0); // ignore unneeded quote
 				else AddWord2Scan(flags, ReadMeaning(choice,true,true),0,0,0);
 			}
 			else  if (*control == 'e') 
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n ExpandTag: %s ",buf);
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG," ExpandTag: %s ",buf);
+				}
 				if (*choice) AddWordOrSet2Scan(flags,choice,0); // tag but dont queue
 			}
 			else if (*control == '<' || *control == '>') //   chase hierarchy (exclude VERB hierarchy-- we infer on nouns)
@@ -841,7 +866,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 				ReportBug("bad follow argument %s",control)
 				return 0;
 			}
-			if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n");
+			if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+			{
+				Log(STDUSERLOG,"\r\n");
+				Log(STDUSERTABLOG,"");
+			}
 		}
 		else if (baseFlags & USERFACTS) // transfer over user flags
 		{
@@ -864,7 +893,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 	{
 		char* colon = strchr(control+1,':');
 		if (colon) *colon = 0;
-		if (control[1]) Log(STDUSERLOG,"@@@ Control2 queue use: %s\r\n",control+1);
+		if (control[1]) 
+		{
+			Log(STDUSERLOG,"@@@ Control2 queue use: %s\r\n",control+1);
+			Log(STDUSERTABLOG,"");
+		}
 		if (colon) *colon = ':';
 	}
 	if (*control && --control) while (*++control && *control != ':' )
@@ -917,7 +950,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 	{
 		char* colon = strchr(control+1,':');
 		if (colon) *colon = 0;
-		if (control[1]) Log(STDUSERLOG,"@@@ Control3 match requirements: %s\r\n",control+1); // if there is data
+		if (control[1]) 
+		{
+			Log(STDUSERLOG,"@@@ Control3 match requirements: %s\r\n",control+1); // if there is data
+			Log(STDUSERTABLOG,"");
+		}
 		if (colon) *colon = ':';
 	}
 	bool noSystemFlag = false;
@@ -1030,7 +1067,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 	{
 		char* colon = strchr(control+1,':');
 		if (colon) *colon = 0;
-		if (control[1]) Log(STDUSERLOG,"@@@ Control4 riccochet: %s\r\n",control+1);
+		if (control[1]) 
+		{
+			Log(STDUSERLOG,"@@@ Control4 riccochet: %s\r\n",control+1);
+			Log(STDUSERTABLOG,"");
+		}
 		if (colon) *colon = ':';
 	}
 	if (*control && --control) while (*++control && *control != '|')
@@ -1068,7 +1109,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			return 0;
 		}
 	}
-	if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"Start processing loop\r\n");
+	if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+	{
+		Log(STDUSERLOG,"Start processing loop\r\n");
+		Log(STDUSERTABLOG,"");
+	}
 	
 	//   now perform the query
 	FACT* F;
@@ -1238,7 +1283,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			//   if propogation is enabled, queue appropriate choices
 			if (match && baseFlags & FINDTOPIC && OTHER->internalBits & TOPIC) // supposed to find a topic
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n propogate ");
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n propogate ");
+					Log(STDUSERTABLOG,"");
+				}
 				AddFact(whichset,G); 
 				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
 				{
@@ -1257,7 +1306,11 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			}
 			else if (match && baseFlags & FINDCONCEPT && OTHER->internalBits & CONCEPT && !(OTHER->internalBits & TOPIC)) // supposed to find a concept
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n propogate ");
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n propogate ");
+					Log(STDUSERTABLOG,"");
+				}
 				AddFact(whichset,G); 
 				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
 				{
@@ -1276,10 +1329,18 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			}
 			else if (!match && propogateVerb && V->inferMark == propogateVerb) // this is not a fact to check, this is a fact to propogate on
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n propogate ");
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n propogate ");
+					Log(STDUSERTABLOG,"");
+				}
 				if (G->flags & MARKED_FACT) {;} // stored this fact, stop propogation
 				else if (AddWord2Scan(QUEUE,OUTGOING,INCOMING,0,0)) SetFactBack(OTHER,INCOMING);  // add object onto queue and provide traceback
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG,"\r\n");
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG,"");
+				}
 			}
 			if (baseOffset == 3) break; // resume with next fact in q rather than any chaining
 		} // end loop on facts
@@ -1294,6 +1355,7 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 		char word[MAX_WORD_SIZE];
 		if (counter) Log(STDUSERTABLOG," result: @%d[%d] e.g. %s\r\n",whichset,counter,WriteFact(factSet[whichset][1],false,word));
 		else Log(STDUSERTABLOG," result: @%d none found \r\n",whichset);
+		Log(STDUSERTABLOG,"");
 	}
 	ClearBacktracks();
 

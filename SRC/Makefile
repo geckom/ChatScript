@@ -2,14 +2,14 @@ debugserver: DEFINES+= -DLOCKUSERFILE=1 -DEVSERVER=1 -DEVSERVER_FORK=1 -DDISCARD
 debugserver: PGLOAD= -pthread
 debugserver: INCLUDEDIRS=-Ievserver
 debugserver: all
-debugserver: EXECUTABLE=ChatScript
+debugserver: EXECUTABLE=ChatScriptDebug
 debugserver: CFLAGS=-c -Wall  -funsigned-char  -Wno-write-strings -Wno-char-subscripts -Wno-strict-aliasing -g
 
 debugpgserver: DEFINES+= -DLOCKUSERFILE=1 -DEVSERVER=1 -DEVSERVER_FORK=1 
 debugpgserver: PGLOAD= -lpq -pthread
 debugpgserver: INCLUDEDIRS=-Ievserver
 debugpgserver: all
-debugpgserver: EXECUTABLE=ChatScriptpg
+debugpgserver: EXECUTABLE=ChatScriptpgDebug
 debugpgserver: CFLAGS=-c -Wall  -funsigned-char  -Wno-write-strings -Wno-char-subscripts -Wno-strict-aliasing -g
 
 server: DEFINES+= -DLOCKUSERFILE=1 -DEVSERVER=1 -DEVSERVER_FORK=1 -DDISCARDDATABASE=1

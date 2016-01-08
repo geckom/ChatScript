@@ -1,3 +1,10 @@
+Version 6.01 1-7-2016
+1. easier to follow output tracing
+2. jsonopen now supports PUT as a type (with arguments just like POST)
+3. ^length now accepts the name of a json object or array, and returns the number of elements it has
+4. ^match can take a rule tag instead of a pattern, using the pattern of that rule.
+
+
 Version 6.0 1-02-2016
 1. easier to understand pattern tracing
 2. ^print accepts more flags (RESPONSE_ ) controlling output

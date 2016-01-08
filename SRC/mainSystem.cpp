@@ -1,6 +1,6 @@
 #include "common.h"
 #include "evserver.h"
-char* version = "6.0";
+char* version = "6.01";
 
 #define MAX_RETRIES 20
 clock_t startTimeInfo;							// start time of current volley
@@ -758,7 +758,7 @@ void ProcessInputFile()
 			*ourMainInputBuffer = ' '; // leave space at start to confirm NOT a null init message, even if user does only a cr
 			ourMainInputBuffer[1] = 0;
 inputRetry:
-			if (ProcessInputDelays(ourMainInputBuffer+1,kbhit() ? true : false)) goto inputRetry; // use our fake callback input? loop waiting if no user input found
+			if (ProcessInputDelays(ourMainInputBuffer+1,KeyReady())) goto inputRetry; // use our fake callback input? loop waiting if no user input found
 	
 			if (ourMainInputBuffer[1]){;} // callback in progress, data put into buffer, read his input later, but will be out of date
 			else if (documentMode)

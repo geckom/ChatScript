@@ -1082,11 +1082,7 @@ static void WriteVerify()
 	static bool init = true;
 	if (!valid && init) 
 	{
-#ifdef WIN32
-		_mkdir("VERIFY");
-#else 
-		mkdir("VERIFY", 0777); 
-#endif
+		MakeDirectory("VERIFY");
 		init = false;
 		valid  = FopenUTF8WriteAppend(name);
 	}
@@ -2693,6 +2689,8 @@ char* ReadOutput(char* ptr, FILE* in,char* &data,char* rejoinders,char* suppleme
 	char* original = data;
 	*data = 0;
 	char word[MAX_WORD_SIZE];
+	char assignlhs[MAX_WORD_SIZE];
+	*assignlhs = 0;
 	*assignKind = 0;
 	int paren = 0;
 	int insert = 0;
@@ -2779,6 +2777,19 @@ char* ReadOutput(char* ptr, FILE* in,char* &data,char* rejoinders,char* suppleme
 				if (!stricmp(nextToken,"+=") || !stricmp(nextToken,"-=") ) insert = 2;
 				break;
 		}
+		if (*assignlhs) // during continued assignment?
+		{
+			if (!stricmp(word,"^") || !stricmp(word,"|") || !stricmp(word,"&") || (!stricmp(word,"+") || !stricmp(word,"-") || !stricmp(word,"*") || !stricmp(word,"/")))
+			{
+				if (!stricmp(nextToken,assignlhs)) 
+				{
+					WARNSCRIPT("Possibly faulty assignment. %s has changed value during prior assignment.",assignlhs)
+					*assignlhs = 0;
+				}
+			}
+			else if (!stricmp(nextToken,"^") || !stricmp(nextToken,"|") || !stricmp(nextToken,"&") || !stricmp(nextToken,"+") || !stricmp(nextToken,"-") || !stricmp(nextToken,"*") || !stricmp(nextToken,"/"))  {}
+			else *assignlhs = 0;
+		}
 	
 		char* nakedNext = nextToken;
 		if (*nakedNext == '^') ++nakedNext;	// word w/o ^ 
@@ -2787,6 +2798,9 @@ char* ReadOutput(char* ptr, FILE* in,char* &data,char* rejoinders,char* suppleme
 		
 		if (*word == '^' && *nextToken != '(' && word[1] != '^' && word[1] != '$' && word[1] != '_' && word[1] != '"' && !IsDigit(word[1])) BADSCRIPT("%s either references a function w/o arguments or names a function variable that doesn't exist",word)
 	
+		// note left hand of assignment
+		if (!stricmp(nextToken,"|^=") || !stricmp(nextToken,"&=") || !stricmp(nextToken,"|=") || !stricmp(nextToken,"^=") || !stricmp(nextToken,"=") || !stricmp(nextToken,"+=") || !stricmp(nextToken,"-=") || !stricmp(nextToken,"/=") || !stricmp(nextToken,"*="))  strcpy(assignlhs,word);
+
 		if (*nextToken == '=' && !nextToken[1]) // simple assignment
 		{
 			*assignKind = 0;

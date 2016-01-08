@@ -627,6 +627,8 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define RESPONSE_REMOVETILDE				0x00800000
 #define ALL_RESPONSES ( RESPONSE_UPPERSTART | RESPONSE_REMOVESPACEBEFORECOMMA | RESPONSE_ALTERUNDERSCORES | RESPONSE_REMOVETILDE ) 
 
+#define ASSIGNMENT				0x01000000 //used by performassignment
+
 struct WORDENTRY;
 typedef WORDENTRY* WORDP;
 

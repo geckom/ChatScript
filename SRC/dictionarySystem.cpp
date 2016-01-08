@@ -332,11 +332,7 @@ void BuildDictionary(char* label)
 	}
 
 	// insure language subdirectory exists
-#ifdef WIN32
-	_mkdir(UseDictionaryFile(NULL));
-#else 
-	mkdir(UseDictionaryFile(NULL), 0777); 
-#endif
+	MakeDirectory(UseDictionaryFile(NULL)); 
 		
 	if (*lang) MakeUpperCopy(language,lang); // localized version of dict. otherwise its of the current language
 

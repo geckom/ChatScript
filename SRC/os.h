@@ -42,6 +42,8 @@ char* AllocateAlignedBuffer();
 char* AllocateBuffer();
 void FreeBuffer();
 void CloseBuffers();
+bool KeyReady();
+int MakeDirectory(char* directory);
 
 // FILE SYSTEM
 

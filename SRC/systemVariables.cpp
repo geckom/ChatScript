@@ -843,7 +843,7 @@ SYSTEMVARIABLE sysvars[] =
 	{"%daylightsavings",Sdaylightsavings,"Boolean is daylight savings in effect"}, 
 	{"%second",Ssecond,"Numeric 2-digit current second"}, 
 	{"%time",Stime,"Current military time (e.g., 21:07)"}, 
-	{"%timenumbers",Stimenumbers,"numbers, separated by blanks, of sec,min,hr,dayinweek,dayinmonth,year"}, 
+	{"%timenumbers",Stimenumbers,"numbers, separated by blanks, of sec,min,hr,dayinweek,dayinmonth,month,year"}, 
 	{"%week",SweekOfMonth,"Numeric week of month (1..5)"}, 
 	{"%volleytime",Svolleytime,"Numeric milliseconds since volley start"}, 
 	{"%year",Syear,"Numeric current 4-digit year"},

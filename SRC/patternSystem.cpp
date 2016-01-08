@@ -233,8 +233,9 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
         unsigned int oldStart = positionStart; //  allows us to restore if we fail, and confirm legality of position advance.
         unsigned int oldEnd = positionEnd;
 		unsigned int id;
-
-		ptr = ReadCompiledWord(ptr,word);
+		char* nexTokenStart = SkipWhitespace(ptr);
+		ptr = ReadCompiledWord(nexTokenStart,word);
+		nexTokenStart = SkipWhitespace(nexTokenStart+1);	// ignore blanks after if token is a simple single thing like !
 
 		if (trace & TRACE_PATTERN  && CheckTopicTrace())
 		{
@@ -242,14 +243,12 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 		}
 
 		char c = *word;
-
 		if (deeptrace) Log(STDUSERLOG," token:%s ",word);
         switch(c) 
         {
 			// prefixs on tokens
             case '!': //   NOT condition - not a stand-alone token, attached to another token
-				ptr -= strlen(word); // back up to remove rest of token
-				if (*ptr == '!') ++ptr; // normally ptr points past a space after token. But if end of input then it wont.
+				ptr = nexTokenStart;
 				statusBits |= NOT_BIT;
 				if (trace & TRACE_PATTERN  && CheckTopicTrace()) Log(STDUSERLOG,"!");
 				continue;
@@ -265,8 +264,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 				else
 				{
 					statusBits |= QUOTE_BIT;
-					ptr -= strlen(word); 
-					if (*ptr == '\'') ++ptr; // normally ptr points past a space after token. But if end of input then it wont.
+					ptr = nexTokenStart;
 					if (trace & TRACE_PATTERN  && CheckTopicTrace()) Log(STDUSERLOG,"'");
 					continue;
 				}
@@ -278,15 +276,14 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					matched = GetwildcardText(GetWildcardID(word),false)[0] != 0; // simple _2  means is it defined
 					break;
 				}
-				
+				ptr = nexTokenStart;
+			
 				// if we are going to memorize something AND we previously matched inside a phrase, we need to move to after...
 				if ((positionStart - positionEnd) == 1) positionEnd = positionStart; // If currently matched a phrase, move to end. 
 				uppercasematch = false;
 				if (word[1] != '*' || IsDigit(word[2]) || word[2] == '-' || (word[2] && word[3] != '*' && word[2] != '~' )) wildcardSelector |= WILDSPECIFIC; // no gap or specific gap
 				else if (word[1] == '*' && IsAlphaUTF8(word[2]))  wildcardSelector |= WILDSPECIFIC; // *dda* pattern
 				else wildcardSelector |=  WILDGAP;
-				ptr -= strlen(word); 
-				if (*ptr == '_') ++ptr; // normally ptr points past a space after token. But if end of input then it wont.
 				if (trace & TRACE_PATTERN  && CheckTopicTrace()) Log(STDUSERLOG,"_");
 				continue;
 			case '@': // factset ref
@@ -354,6 +351,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 				}
                 else 
 				{
+					ptr = nexTokenStart;
 					if (gap && !reverse) // cannot memorize going forward to  start of sentence
 					{
 						gap = 0;  
@@ -375,6 +373,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					positionStart = positionEnd = INFINITE_MATCH; //   INFINITE_MATCH means we are in initial startup, allows us to match ANYWHERE forward to start
 					continue;
 				}
+				ptr = nexTokenStart;
 				if (gap && reverse) // cannot memorize going backward to  end of sentence
 				{
 					gap = 0;  
@@ -597,7 +596,8 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 				}
                 break;
             case '(': case '[':  case '{': // nested condition (required or optional) (= consecutive  [ = choice   { = optional
-                hold = wildcardIndex;
+				ptr = nexTokenStart;
+				hold = wildcardIndex;
 				{
 					int oldgap = gap;
 					unsigned int returnStart = positionStart;
@@ -658,6 +658,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
                 else if (wildcardSelector > 0)  wildcardIndex = hold; //   drop back to this index so we can save on it 
                 break;
             case ')': case ']': case '}' :  //   end sequence/choice/optional
+				ptr = nexTokenStart;
 				matched = (kind == '('); //   [] and {} must be failures if we are here
 				if (gap) //   pending gap  -  [ foo fum * ] and { foo fot * } are pointless but [*3 *2] is not 
                 {
@@ -685,6 +686,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
                 else matched = SysVarExists(word);
                 break;
             case '?': //  question sentence? 
+				ptr = nexTokenStart;
 				if (!word[1]) matched = (tokenFlags & QUESTIONMARK) ? true : false;
 				else matched = false;
 	            break;
@@ -968,14 +970,14 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 	//		else if (*word == '<' || *word == '>') {} 
 			else
 			{
-				if (success) Log(STDUSERLOG,"%s+",word);
-				else  Log(STDUSERLOG,"%s-",word);
+				Log(STDUSERLOG,"%s",word);
 				if (*word == '~' && matched) 
 				{
-					if (positionStart != positionEnd) Log(STDUSERLOG,"(%s-%s)",wordStarts[positionStart],wordStarts[positionEnd]);
+					if (positionStart <= 0 || positionStart > wordCount || positionEnd <= 0 || positionEnd > wordCount) {;} // still in init startup?
+					else if (positionStart != positionEnd) Log(STDUSERLOG,"(%s-%s)",wordStarts[positionStart],wordStarts[positionEnd]);
 					else Log(STDUSERLOG,"(%s)",wordStarts[positionStart]);
 				}
-				Log(STDUSERLOG," ",word);
+				Log(STDUSERLOG,(success) ? "+ " : "- ");
 			}
 		}
 	

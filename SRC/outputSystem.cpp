@@ -93,16 +93,24 @@ static bool IsAssignmentOperator(char* word)
 
 char* ReadCommandArg(char* ptr, char* buffer,FunctionResult& result,unsigned int control, unsigned int limit) // handles various sizes of buffers
 {
+	int oldImpliedSet = impliedSet; // so @0object will decode
+	if (!(control & ASSIGNMENT)) impliedSet = ALREADY_HANDLED;
 	if (control == 0) control |= OUTPUT_KEEPSET | OUTPUT_NOTREALBUFFER | OUTPUT_ONCE | OUTPUT_NOCOMMANUMBER;
 	else control |= OUTPUT_ONCE | OUTPUT_NOCOMMANUMBER;
-	return FreshOutput(ptr,buffer,result,control, limit);
+	char* answer = FreshOutput(ptr,buffer,result,control, limit);
+	impliedSet = oldImpliedSet;
+	return answer;
 }
 
 char* ReadShortCommandArg(char* ptr, char* buffer,FunctionResult& result,unsigned int control) // always word size or less
 {
+	int oldImpliedSet = impliedSet; // so @0object will decode
+	if (!(control & ASSIGNMENT)) impliedSet = ALREADY_HANDLED;
 	if (control == 0) control |= OUTPUT_KEEPSET | OUTPUT_NOTREALBUFFER | OUTPUT_ONCE | OUTPUT_NOCOMMANUMBER;
 	else control |= OUTPUT_ONCE | OUTPUT_NOCOMMANUMBER;
-	return FreshOutput(ptr,buffer,result,control,MAX_WORD_SIZE);
+	char* answer = FreshOutput(ptr,buffer,result,control,MAX_WORD_SIZE);
+	impliedSet = oldImpliedSet;
+	return answer;
 }
 
 static char* AddFormatOutput(char* what, char* output,unsigned int controls)
