@@ -27,8 +27,7 @@ size_t maxFacts = MAX_FACT_NODES;	// how many facts we can create at max
 
 FACT* factBase = NULL;			// start of all facts
 FACT* factEnd = NULL;			// end of all facts
-FACT* wordnetFacts = NULL;		// end of facts after dictionary load
-FACT* build0Facts = NULL;		// end of build0 facts, start of build1 facts
+FACT* factsPreBuild[NUMBER_OF_LAYERS+1];		// end of build0 facts, start of build1 facts
 FACT* factFree = NULL;			// currently next fact we can reuse for allocation
 FACT* currentFact = NULL;		// current fact
 
@@ -1073,7 +1072,13 @@ void ReadFacts(const char* name,uint64 build,bool user) //   a facts file may ha
 		}
 		else if (*word == '$') // variable
 		{
-			ReportBug("Bad fact file user var assignment")
+			char* eq = strchr(word,'=');
+			if (!eq) ReportBug("Bad fact file user var assignment %s",word)
+			else 
+			{
+				*eq = 0;
+				SetUserVariable(word,eq+1);
+			}
 		}
         else 
 		{

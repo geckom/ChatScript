@@ -509,7 +509,7 @@ void LogChat(clock_t starttime,char* user,char* bot,char* IP, int turn,char* inp
 	char* activeTopic = why + strlen(why) + 1;
 	clock_t endtime = ElapsedMilliseconds(); 
 	if (*input) Log(SERVERLOG,"Respond: user:%s bot:%s ip:%s (%s) %d %s  ==> %s  When:%s %dms %s\n", user,bot,IP,activeTopic,turn,input,Purify(output),date,(int)(endtime - starttime),why);
-	else Log(SERVERLOG,"Start: user:%s bot:%s ip:%s (%s) %d ==> %s  When:%s %dms Version:%s Build0:%s Build1:%s %s\n", user,bot,IP,activeTopic,turn,Purify(output),date,(int)(endtime - starttime),version,timeStamp0,timeStamp1,why);
+	else Log(SERVERLOG,"Start: user:%s bot:%s ip:%s (%s) %d ==> %s  When:%s %dms Version:%s Build0:%s Build1:%s %s\n", user,bot,IP,activeTopic,turn,Purify(output),date,(int)(endtime - starttime),version,timeStamp[0],timeStamp[1],why);
 }
 
 #ifndef EVSERVER
@@ -944,7 +944,7 @@ static void* HandleTCPClient(void *sock1)  // individual client, data on STACK..
 				return Done(sock,memory);
 			}
 
-			ReportBug("%s %s bot: %s msg: %s  NO USER ID \r\n",IP,GetTimeInfo()+SKIPWEEKDAY,bot,msg)
+			//ReportBug("%s %s bot: %s msg: %s  NO USER ID \r\n",IP,GetTimeInfo()+SKIPWEEKDAY,bot,msg)
 			strcpy(output,"[you have no user id]\r\n"); 
 			return Done(sock,memory);
 		}

@@ -31,7 +31,7 @@
     Dante_Alighieri~1n 
  Dawit ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Daganya ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- day ( meanings=9 glosses=8 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:NOUN TIMEWORD (null) ) 
+ day ( meanings=9 glosses=8 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:NOUN TIMEWORD ) 
     day~1nz (^opportunity~1) a period of opportunity
     day~2nz (^time~5) some point or period in time
     day~3nz (^work_time~1) the recurring hours when you are not sleeping 
@@ -112,6 +112,7 @@
     double-crossing~1n 
     double_cross~2vz betray by double-dealing
  Donahue ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Durkin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  duck-billed_platypus ( meanings=1 NOUN NOUN_SINGULAR ) 
     duckbilled_platypus~1n 
  Duran ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -133,7 +134,7 @@
     dun~4vz make a dun color
     dun~5vz cure by salting
     dun~6vz persistently ask for overdue payment
-    rag~11v 
+    torment~9v 
  Dunmor ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Daggett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dehaan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
@@ -141,7 +142,7 @@
  division_Heterokontophyta ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Heterokontophyta~1nz (^division~11) algae having chlorophyll a and usually c, and flagella of unequal lengths
  Darelene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- detail ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ detail ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     point~8n 
     detail~2nz (^discussion~1) extended treatment of particulars
     detail~3nz (^gang~2) a crew of workers selected for a particular task
@@ -188,7 +189,6 @@
  Davita ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dowden ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dannon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Durwood ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dashawn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  deprecation ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     denigration~1nz (^disparagement~1) the act of expressing disapproval
@@ -309,6 +309,8 @@
     stay~7v 
     delay~6vz act later than planned, scheduled, or required
  Dimarco ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ doxastic_logic ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    doxastic_logic~1nz (^modal_logic~1) the modal logic of belief and disbelief
  Docia ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  disparagement ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     dispraise~1nz (^disapproval~1) the act of speaking contemptuously of
@@ -424,7 +426,7 @@
     detoxification~2nz (^treatment~1) a treatment for addiction to drugs or alcohol intended to remove the physiological effects of the addictive substances
  Deems ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON4 ) 
  Donnelly ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- dry ( meanings=19 glosses=19 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=dryest 
+ dry ( meanings=19 glosses=19 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=dryest 
     prohibitionist~1nz (^social_reformer~1) a reformer who opposes the use of intoxicating beverages
     teetotal~1az practicing complete abstinence from alcoholic beverages
     dry~3az lacking warmth or emotional involvement
@@ -511,8 +513,7 @@
  Dorn ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Deleo ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dorothy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- diagnostic_procedure ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    diagnostic_technique~1nz (^process~2) a procedure followed in making a medical diagnosis
+ Diahann ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dromaius ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Dromaius~1n 
  Dev ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
@@ -704,7 +705,7 @@
     defusing~1nz (^conclusion~2) the act of deactivating or making ineffective
     inactivation~1nz (^sack~1) breaking up a military unit
  Deegan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- dream ( meanings=8 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=dreamed 
+ dream ( meanings=8 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=dreamed 
     pipe_dream~1nz (^phantasy~1) a fantastic but vain hope 
     dream~2nz (^reverie~1) a state of mind characterized by abstraction and release from reality
     dreaming~1nz (^mental_imagery~1) a series of mental images and emotions occurring during sleep
@@ -796,7 +797,7 @@
  desperate_measure ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     desperate_measure~1nz (^agency~1) desperate actions taken as a means to an end
  Dung ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- due ( meanings=8 glosses=7 NOUN_ABSTRACT PARTICLE NOUN ADJECTIVE ADVERB PREPOSITION ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ due ( meanings=8 glosses=7 NOUN_ABSTRACT PARTICLE NOUN ADJECTIVE ADVERB PREPOSITION ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:ADJECTIVE ) 
     due~1nz (^right~4) that which is deserved or owed
     due~2nz (^fixed_charge~1) a payment that is due 
     due~3az owed and payable immediately or on demand
@@ -807,7 +808,7 @@
     due~8z 
  declinometer ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     transit_declinometer~1n 
- deliberate ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ deliberate ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     careful~2a 
     calculated~1az carefully thought out in advance
     deliberate~3az 
@@ -824,7 +825,7 @@
     Jack_Dempsey~1n 
  discount_business ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     discount_business~1nz (^business~3) the business of selling merchandise at a discount
- drive ( meanings=34 glosses=33 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=driven 
+ drive ( meanings=34 glosses=33 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=driven 
     thrust~1nz (^propulsion~1) the act of applying force to propel something
     ride~1nz (^journey~1) a journey in a vehicle 
     drive~3nz (^transportation~2) the act of driving a herd of animals overland
@@ -906,6 +907,7 @@
  devilry ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     mischievousness~1n 
     deviltry~2n 
+ Darnetta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Damario ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dubhain ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Danise ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -913,19 +915,19 @@
  dabbling_duck ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     dabbler~1nz (^duck~1) any of numerous shallow-water ducks that feed by upending and dabbling
  Daniachew ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- do ( meanings=13 glosses=12 VERB_PRESENT VERB_INFINITIVE AUX_DO VERB COMMON4 COMMON2 KINDERGARTEN GRADE3_4 posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=doing 
-    behave~1vz behave in a certain manner
-    coiffe~1vz arrange attractively
-    make~22vz create or design, often in a certain way
-    cause~7vz give rise to
+ do ( meanings=13 glosses=4 VERB_PRESENT VERB_INFINITIVE AUX_DO VERB COMMON4 COMMON2 KINDERGARTEN posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=doing 
+    act~6v 
+    coiffure~2v 
+    make~22v 
+    cause~7v 
     perform~1vz carry out or perform an action
     do~6vz travel or traverse 
     manage~5vz carry on or function
-    make~42vz engage in
+    make~42v 
     perform~4vz get done
-    make_out~10vz proceed or get along
-    suffice~1vz be sufficient
-    serve~16vz spend time in prison or in a labor camp
+    fare~6v 
+    serve~12v 
+    serve~16v 
     do~13vz 
  Dione ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Duayna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1061,7 +1063,6 @@
  Dain ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dovie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Dervorgilla ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Dominga ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Dicy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Desmidium ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Desmidium~1n 
@@ -1070,7 +1071,7 @@
     disqualification~2nz (^unfitness~1) unfitness that bars you from participation
  Demothi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Devlyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- dead ( meanings=22 glosses=20 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ dead ( meanings=22 glosses=20 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     dead~1nz (^people~1) people who are no longer living
     dead~2nz (^time~5) a time when coldness is intense
     dead~3az devoid of activity
@@ -1134,8 +1135,6 @@
  Doty ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  drainage ( meanings=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     drain~1n 
- deep_kiss ( meanings=1 NOUN NOUN_SINGULAR ) 
-    soul_kiss~1n 
  dinner ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN TIMEWORD ) 
     dinner~1nz (^meal~2) the main meal of the day served in the evening or at midday
     dinner_party~1nz (^party~2) a party of people assembled to have dinner together
@@ -1180,7 +1179,7 @@
  daisy ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:NOUN ) 
     daisy~1nz (^flower~2) any of numerous composite plants having flower heads with well-developed ray flowers usually arranged in a single whorl
  Daisy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- dangerous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ dangerous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     life-threatening~1az causing fear or anxiety by threatening great harm
     unsafe~1az involving or causing danger or risk
     dangerous~3az 
@@ -1202,7 +1201,6 @@
  Donatello ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Donato_di_Betto_Bardi~1n 
  Dinkins ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Debroah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dowdle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Demasone ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dasyatidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -1227,7 +1225,7 @@
  Dru ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Dulcinea ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dupre ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- dashing ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE1_2 posdefault:VERB (null) ) 
+ dashing ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE1_2 posdefault:VERB ) 
     spiffy~1az marked by up-to-dateness in dress and manners
     gallant~6az lively and spirited
     dashing~3az 
@@ -1246,7 +1244,7 @@
  Dacian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  division_Schizophyta ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Schizophyta~1nz (^division~11) former term for the Cyanophyta
- dumb ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ dumb ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     silent~1a 
     dumb~2az lacking the power of human speech
     speechless~1az temporarily incapable of speaking
@@ -1363,7 +1361,6 @@
     Don~3nz (^Celtic_deity~1) Celtic goddess
     Don~4nz (^gentleman~1) a Spanish gentleman or nobleman
  Dugger ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Dressler ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Darah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Diehl ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  dutifulness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -1417,12 +1414,11 @@
  dessert_spoon ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     dessert_spoon~1nz (^spoon~1) a spoon larger than a teaspoon and smaller than a tablespoon
  Delatorre ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Danielson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  drosky ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     droshky~1n 
  Dory ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- dare ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE AUX_VERB_PRESENT NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN GRADE3_4 posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
-    daring~2nz (^challenge~4) a challenge to do something dangerous or foolhardy
+ dare ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE AUX_VERB_PRESENT NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+    daring~2n 
     defy~1vz challenge
     make_bold~1vz take upon oneself
     dare~4vz to be courageous enough to try or do something
@@ -1585,7 +1581,7 @@
  Donohue ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Donne ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     John_Donne~1n 
- disabled ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB (null) ) 
+ disabled ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB ) 
     handicapped~1n 
     handicapped~2a 
     disabled~3az 
@@ -1599,7 +1595,7 @@
     genus_Dasyurus~1n 
  Desalvo ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  ddC ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
-    zalcitabine~1n 
+    dideoxycytosine~1n 
  disinfection ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     disinfection~1nz (^medical_care~1) treatment to destroy harmful microorganisms
  Doretha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -1780,7 +1776,7 @@
     detective_work~1n 
     sensing~2nz (^perception~2) the perception that something has occurred or some state exists
     signal_detection~1n 
- drain ( meanings=8 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ drain ( meanings=8 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     drainage~1nz (^evacuation~2) emptying something accomplished by allowing liquid to run out of it
     drain~2nz (^depletion~1) a gradual depletion of energy or resources
     waste_pipe~1nz (^pipe~2) a pipe through which liquid is carried away
@@ -1847,7 +1843,7 @@
     duct_tape~1nz (^adhesive_tape~1) a wide silvery adhesive tape intended to seal joints in sheet metal duct work but having many other uses
  deportation ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     deportation~1nz (^exclusion~1) the expulsion from a country of an undesirable alien
-    transportation~1n 
+    exile~1n 
  decoration ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN ) 
     decoration~1nz (^change_of_state~1) the act of decorating something
     ornament~1nz (^artifact~1) something used to beautify
@@ -1882,7 +1878,7 @@
     Liposcelis_divinatorius~1n 
  dark-eyed_junco ( meanings=1 NOUN NOUN_SINGULAR ) 
     slate-colored_junco~1n 
- deltoid ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:NOUN (null) ) 
+ deltoid ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     deltoid_muscle~1n 
     deltoid~2az triangular or suggesting a capital delta, with a point at the apex
  Decarlo ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -2017,7 +2013,7 @@
     frock~1nz (^woman_'s_clothing~1) a one-piece garment for a woman
     full-dress~2az requiring formal clothes
     full-dress~3az suitable for formal occasions
-    do~2v 
+    arrange~1v 
     primp~1vz dress or groom with elaborate care
     dress_up~2vz dress in a certain manner
     groom~5vz give a neat appearance to
@@ -2137,7 +2133,7 @@
     dog_breeding~1nz (^breeding~2) breeding dogs
  Diondra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Delcine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- debate ( meanings=6 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ debate ( meanings=6 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     argumentation~2n 
     public_debate~1nz (^oral_presentation~1) the formal presentation of a stated proposition and the opposition to it
     debate~3vz argue with one another
@@ -2148,7 +2144,6 @@
     decoupage~1nz (^art~1) the art of decorating a surface with shapes or pictures and then coating it with vanish or lacquer
     decoupage~2nz (^art~2) art produced by decorating a surface with cutouts and then coating it with several layers of varnish or lacquer
  Dowan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Derrek ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Doris ( meanings=2 glosses=2 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
     Doris~1nz (^part~9) a small region of ancient Greece where the Doric dialect was spoken
     Doris~2nz (^Greek_deity~1) wife of Nereus and mother of the Nereids
@@ -2157,6 +2152,9 @@
  Devontae ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  dustup ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     row~4n 
+ dosage ( meanings=2 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
+    dose~2n 
+    dose~3n 
  Deke ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Domhnall ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Delrosario ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2377,7 +2375,7 @@
  Dori ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  diagnosis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 ) plural=diagnoses 
     diagnosing~1nz (^identification~1) identifying the nature or cause of some phenomenon
- dark ( meanings=17 glosses=8 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ dark ( meanings=17 glosses=8 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE ) 
     darkness~3n 
     shadow~5n 
     darkness~5n 
@@ -2413,7 +2411,6 @@
  Downey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  detective_agency ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     detective_agency~1nz (^agency~2) an agency that makes inquiries for its clients
- Doug ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dizon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  default ( meanings=5 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_NOOBJECT ) 
     default~1nz (^absence~1) loss due to not showing up
@@ -2542,6 +2539,13 @@
     dance_lesson~1nz (^lesson~2) a lesson in dancing
  Destiney ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Drees ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ discourse ( meanings=6 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+    discourse~1nz (^linguistic_unit~1) extended verbal expression in speech or writing
+    discussion~1n 
+    preaching~2nz (^address~7) an address of a religious nature
+    hold_forth~1v 
+    converse~4vz carry on a conversation
+    discuss~2v 
  Demetra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Daniell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  disjunction ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -2565,8 +2569,6 @@
  deviationism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     deviationism~1nz (^abandonment~1) ideological defection from the party line
  Darryl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- division_Chlorophyta ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Chlorophyta~1nz (^division~11) large division of chiefly freshwater eukaryotic algae that possess chlorophyll a and b, store food as starch, and cellulose cell walls
  Dary ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dulcie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  dodo ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) plural=dodoes 
@@ -2753,6 +2755,7 @@
  doyley ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     doyly~1nz (^linen~1) a small round piece of linen placed under a dish or bowl
  Derforgal ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Daileass ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Darylene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  dickey-seat ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     dicky-seat~1nz (^backseat~1) a small third seat in the back of an old-fashioned two-seater
@@ -3101,7 +3104,7 @@
  Destrey ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dameon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Daughtery ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- dirty ( meanings=14 glosses=13 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=dirtiest 
+ dirty ( meanings=14 glosses=13 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=dirtiest 
     dirty~1az unpleasantly stormy
     unclean~1az soiled or likely to soil with dirt or grime
     dirty~3az characterized by obscenity or indecency
@@ -3129,8 +3132,6 @@
     demise~1nz (^end~14) the time when something ends
  dairy_farming ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     dairying~1nz (^farming~2) the business of a dairy
- detente ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
-    detente~1nz (^relief~1) the easing of tensions or strained relations
  demonetization ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     demonetisation~1nz (^conclusion~2) ending something as no longer the legal tender of a country
  Diaz ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3224,7 +3225,6 @@
     disparagement~1n 
  Danila ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dandrea ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Duwayne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Delena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  double_stitch ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     double_crochet~1n 
@@ -3403,6 +3403,7 @@
  Dancy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dang ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Daniels ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Danielson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Davis ( meanings=6 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Bette_Davis~1n 
     Dwight_Davis~1n 
@@ -3435,12 +3436,12 @@
  Doucette ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dougherty ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dozier ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Dressler ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Duckett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Duley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dunkley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Dunleavy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Duque ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Durkin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Durr ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Durrant ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dutra ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3456,7 +3457,6 @@
  Daesgesage ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dagoberto ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Daguenet ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Daileass ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Daimh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Daina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Daisey ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3514,7 +3514,6 @@
  Darleane ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Darlena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Darnel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Darnetta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Darrance ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Darrence ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Darrill ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3583,6 +3582,7 @@
  Derik ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Derorice ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Derrance ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Derrek ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Derrian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Derrill ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dervla ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3616,7 +3616,6 @@
  Devyna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Devynn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dhoire ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Diahann ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dianda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Diandra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Diandre ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3632,6 +3631,7 @@
  Doloris ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Dolphus ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Domevlo ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Dominga ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Dominic ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     St_._Dominic~1n 
  Dominica ( meanings=2 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3662,6 +3662,7 @@
  Dorran ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dorrance ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dosne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Doug ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dougal ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Doune ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dov ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -3687,7 +3688,9 @@
  Dulcina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Dunleigh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dunstan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Durwood ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Duston ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Duwayne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dwain ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dwayne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Dyami ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3699,6 +3702,7 @@
  Danyel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Deadra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Debera ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Debroah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Deetta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Deliah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Delina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3898,6 +3902,8 @@
     dropkick~1nz (^kick~1) kicking (as for a field goal) in which the football is dropped and kicked as it touches the ground
     drop-kick~1v 
     drop-kick~2v 
+ deep_kiss ( meanings=1 NOUN NOUN_SINGULAR ) 
+    French_kiss~1n 
  deep ( meanings=22 glosses=18 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB ) 
     deep~1nz (^ocean~1) literary term for an ocean
     oceanic_abyss~1nz (^natural_depression~1) a long steep-sided depression in the ocean floor
@@ -3957,6 +3963,8 @@
     downshift~3vz 
  dint ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     dint~1nz (^agency~1) interchangeable with `means' in the expression `by means of'
+ diagnostic_procedure ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    diagnostic_technique~1nz (^process~2) a procedure followed in making a medical diagnosis
  diagnostic_technique ( meanings=1 NOUN NOUN_SINGULAR ) 
     diagnostic_procedure~1n 
  double-blind_procedure ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -4218,6 +4226,8 @@
     devitalization~1n 
  de-escalation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR posdefault:NOUN ) 
     de-escalation~1nz (^decrease~1) a reduction in intensity (of a crisis or a war)
+ detente ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
+    detente~1nz (^relief~1) the easing of tensions or strained relations
  depletion ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     depletion~1nz (^decrease~1) the act of decreasing something markedly
     depletion~2nz (^temporary_state~1) the state of being depleted
@@ -4357,7 +4367,7 @@
     refine~4vz improve or perfect by pruning or polishing
     down~22vz bring down or defeat
     devour~2vz eat immoderately
-    kill~8v 
+    pop~11v 
     pull_down~1vz cause to come or go down
     land~14v 
  ducks_and_drakes ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -4382,7 +4392,7 @@
  double_Dutch ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     double_Dutch~1nz (^jump_rope~1) the difficult version of jump rope in which players jump over two ropes that are swung in a crisscross manner by two turners
     double_Dutch~2nz (^gibberish~1) an incomprehensible talk
- dummy ( meanings=6 glosses=6 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:NOUN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) (null) (null) ) 
+ dummy ( meanings=6 glosses=6 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:NOUN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     blank_shell~1nz (^cartridge~1) a cartridge containing an explosive charge but no bullet
     dummy~2nz (^figure~3) a figure representing the human form
     boob~2nz (^simple~1) an ignorant or foolish person
@@ -4698,7 +4708,7 @@
     study~7n 
     correct~12v 
     check~35v 
- drill ( meanings=9 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+ drill ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     drill~1nz (^preparation~3) the training of soldiers to march (as in ceremonial parades) or to perform the manual of arms
     exercise~3n 
     Mandrillus_leucophaeus~1nz (^baboon~1) similar to the mandrill but smaller and less brightly colored
@@ -4707,7 +4717,7 @@
     drill~6vz undergo military training or do military exercises
     exercise~8v 
     drill~8vz teach by repetition
-    bore~5v 
+    bore~5vz make a hole, especially with a pointed power or hand tool
  dress_rehearsal ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     dress_rehearsal~1nz (^rehearsal~2) a full uninterrupted rehearsal in costumes shortly before the first performance
  diagramming ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
@@ -4821,7 +4831,7 @@
     duplicate~1n 
  dynamic_headroom ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     headroom~1nz (^high_fidelity~1) the capacity of a system to reproduce loud sounds without distortion
- dynamic ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE (null) ) 
+ dynamic ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     moral_force~1n 
     active~11a 
     dynamical~1a 
@@ -5104,6 +5114,8 @@
     Phaeophyta~1nz (^division~11) coextensive with class Phaeophyceae
  division_Euglenophyta ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Euglenophyta~1nz (^division~11) free-swimming flagellate algae
+ division_Chlorophyta ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
+    Chlorophyta~1nz (^division~11) large division of chiefly freshwater eukaryotic algae that possess chlorophyll a and b, store food as starch, and cellulose cell walls
  Desmidiaceae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Desmidiaceae~1nz (^protoctist_family~1) unicellular algae
  desmid ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -5272,8 +5284,8 @@
     Acanthophis_antarcticus~1n 
  diamondback_rattlesnake ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Crotalus_adamanteus~1nz (^rattlesnake~1) large deadly rattlesnake with diamond-shaped markings
- daddy ( meanings=1 NOUN_HUMAN NOUN_HE NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
-    pop~4n 
+ daddy ( meanings=1 glosses=1 NOUN_HUMAN NOUN_HE NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
+    pappa~1nz (^father~2) an informal term for a father
  deer_tick ( meanings=1 NOUN NOUN_SINGULAR ) 
     Ixodes_dammini~1n 
  Dermacentor_variabilis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -5469,7 +5481,7 @@
     Drosophilidae~1nz (^arthropod_family~1) fruit flies
  drosophila ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) plural=drosophilae 
     Drosophila_melanogaster~1n 
- drone ( meanings=7 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_NOOBJECT (null) (null) ) 
+ drone ( meanings=7 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_NOOBJECT ) 
     drone~1nz (^bee~1) stingless male bee in a colony of social bees whose sole function is to mate with the queen
     drone_pipe~1n 
     pilotless_aircraft~1n 
@@ -5873,7 +5885,7 @@
     damp-proof~1az 
  damp_course ( meanings=1 NOUN NOUN_SINGULAR ) 
     damp-proof_course~1n 
- damp ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=damper 
+ damp ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=damper 
     moistness~1nz (^wetness~1) a slight wetness
     moist~1az slightly wet
     damp~3az 
@@ -6284,7 +6296,7 @@
  dibucaine ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     dibucaine~1nz (^intravenous_anesthetic~1) a local anesthetic that is administered by injection
  dideoxycytosine ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
-    ddC~1nz (^antiviral_agent~1) an antiviral drug used to combat HIV infection
+    zalcitabine~1nz (^antiviral_agent~1) an antiviral drug used to combat HIV infection
  dideoxyinosine ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     didanosine~1nz (^antiviral_agent~1) an antiviral drug used to combat HIV infection
  ddI ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
@@ -6739,7 +6751,7 @@
     dome~4nz (^concave_shape~1) a concave shape whose distinguishing characteristic is that the concavity faces downward
  domed_stadium ( meanings=1 NOUN NOUN_SINGULAR ) 
     covered_stadium~1n 
- domed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ domed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     vaulted~1a 
  domino ( meanings=3 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) plural=dominoes 
     domino~1nz (^block~3) a small rectangular block used in playing the game of dominoes
@@ -6803,9 +6815,6 @@
     dormitory~2n 
  dorm_room ( meanings=1 NOUN NOUN_SINGULAR ) 
     dormitory_room~1n 
- dosage ( meanings=2 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
-    dose~2n 
-    dose~3n 
  dosemeter ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     dosimeter~1nz (^measuring_instrument~1) a measuring instrument for measuring doses of ionizing radiation
  dosimeter ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -7585,7 +7594,7 @@
     decision~2n 
  demonstrability ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     provability~1nz (^unquestionableness~1) capability of being demonstrated or logically proved
- doubt ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT (null) (null) ) 
+ doubt ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     doubtfulness~1n 
     dubiety~1nz (^cognitive_state~1) the state of being unsure of something
     doubt~3vz consider unlikely or have doubts about
@@ -7646,9 +7655,9 @@
     intrepidity~1n 
  Dutch_courage ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Dutch_courage~1nz (^courage~1) courage resulting from intoxication
- daring ( meanings=6 glosses=3 NOUN_ABSTRACT VERB_PRESENT_PARTICIPLE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB (null) ) 
+ daring ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT_PARTICIPLE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB ) 
     hardiness~1nz (^fearlessness~1) the trait of being willing to undertake things that involve risk or danger
-    dare~1n 
+    dare~1nz (^challenge~4) a challenge to do something dangerous or foolhardy
     venturous~1az disposed to venture or take risks
     avant-garde~2az radically new or original
     daring~5az 
@@ -7775,7 +7784,7 @@
     density~1n 
     density~2n 
     dumbness~1n 
- desire ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT (null) ) 
+ desire ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT ) 
     desire~1nz (^tendency~1) an inclination to want things
     desire~2nz (^feeling~1) the feeling that accompanies an unsatisfied state
     desire~3nz (^arousal~4) something that is desired
@@ -7801,7 +7810,7 @@
     navy~1n 
  deep_brown ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     coffee~1n 
- drab ( meanings=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE (null) ) comparative=drabbest 
+ drab ( meanings=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE ) comparative=drabbest 
     olive_drab~3n 
     sorry~1a 
     olive-drab~1a 
@@ -7959,7 +7968,7 @@
  demerit ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     fault~4n 
     demerit~2nz (^brand~3) a mark against a person for misconduct or failure
- damn ( meanings=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL INTERJECTION NOUN_SINGULAR COMMON4 COMMON2 COMMON1 posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ damn ( meanings=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL INTERJECTION NOUN_SINGULAR COMMON4 COMMON2 COMMON1 posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     darn~2n 
     infernal~2a 
     goddamn~2a 
@@ -8089,7 +8098,7 @@
     Golgi_complex~1n 
  dominant_gene ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     dominant_gene~1nz (^cistron~1) gene that produces the same phenotype in the organism whether or not its allele identical
- dominant ( meanings=6 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ dominant ( meanings=6 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     dominant_allele~1nz (^allelomorph~1) an allele that produces the same phenotype whether its paired allele is identical or different
     dominant~2nz (^note~5) the fifth note of the diatonic scale
     dominant~3az exercising influence or control
@@ -8230,7 +8239,7 @@
     determinant~4a 
  decisive_factor ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     clincher~2nz (^determining_factor~1) a point or fact or remark that settles something conclusively
- decisive ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ decisive ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     critical~5a 
     decisive~2az determining or having the power to determine an outcome
     decisive~3az characterized by decision and firmness
@@ -8387,7 +8396,7 @@
     inner_product~1n 
  divine_law ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     divine_law~1nz (^law~2) a law that is believed to come directly from God
- dictate ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ dictate ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     dictate~1nz (^principle~2) a guiding principle
     dictate~2nz (^rule~8) an authoritative rule
     dictate~3vz say out loud for the purpose of recording
@@ -8546,8 +8555,6 @@
     dialectical~1a 
  deontic_logic ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     deontic_logic~1nz (^modal_logic~1) the modal logic of obligation and permissibility
- doxastic_logic ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    doxastic_logic~1nz (^modal_logic~1) the modal logic of belief and disbelief
  dialect_geography ( meanings=1 NOUN NOUN_SINGULAR ) 
     linguistic_geography~1n 
  dialect ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -8578,7 +8585,7 @@
     disapproval~2n 
     disfavor~2nz (^rejection~4) the state of being out of favor
     disfavor~3v 
- dislike ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_DIRECTOBJECT (null) ) 
+ dislike ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_DIRECTOBJECT ) 
     disfavor~1nz (^disposition~4) an inclination to withhold approval from some person or group
     dislike~2nz (^feeling~1) a feeling of aversion or antipathy
     dislike~3vz have or feel a dislike or distaste for
@@ -8619,13 +8626,6 @@
     demodulation~1nz (^reception~3) the reception of a signal by extracting it from the carrier wave
  dead_language ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     dead_language~1nz (^language~3) a language that is no longer learned as a native language
- discourse ( meanings=6 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
-    discourse~1nz (^linguistic_unit~1) extended verbal expression in speech or writing
-    discussion~1n 
-    preaching~2nz (^address~7) an address of a religious nature
-    hold_forth~1v 
-    converse~4vz carry on a conversation
-    discuss~2v 
  deictic ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     deictic_word~1n 
     deictic~2az relating to or characteristic of a word whose reference depends on the circumstances of its use
@@ -8845,7 +8845,7 @@
     dilatory_plea~1nz (^plea~2) a plea that delays the action without settling the cause of action
  dilatory ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     laggard~2az wasting time
- defective ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ defective ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     bad~4a 
     defective~2az markedly subnormal in structure or function or intelligence or behavior
     faulty~2a 
@@ -9080,7 +9080,7 @@
     downstroke~1nz (^stroke~5) a stroke normally made in a downward direction
  dotted_line ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     dotted_line~1nz (^line~15) a line made up of dots or dashes
- dotted ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ dotted ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     dashed~1az having gaps or spaces
     speckled~1a 
     dotted~3az 
@@ -9150,7 +9150,7 @@
     daleth~1nz (^letter~3) the 4th letter of the Hebrew alphabet
  double_quotes ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     double_quotes~1nz (^quote~2) a pair of quotation marks
- diagonal ( meanings=8 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ diagonal ( meanings=8 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     virgule~1n 
     diagonal~2nz (^set~9) a set of entries in a square matrix running diagonally either from the upper left to lower right entry or running from the upper right to lower left entry
     diagonal~3nz (^line~21) an oblique line of squares of the same color on a checkerboard
@@ -9298,7 +9298,7 @@
     dental~1n 
  dickens ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     deuce~2n 
- drawl ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ drawl ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     drawl~1nz (^speech_pattern~1) a slow speech pattern with prolonged vowels
     drawl~2vz lengthen and slow down or draw out
  discussion ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN ) 
@@ -9603,7 +9603,7 @@
     despising~1n 
  despising ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:VERB ) 
     despisal~1nz (^hate~1) a feeling of scornful hatred
- dainty ( meanings=6 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:ADJECTIVE (null) ) comparative=daintiest 
+ dainty ( meanings=6 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:ADJECTIVE ) comparative=daintiest 
     delicacy~7n 
     exquisite~2az delicately beautiful
     nice~2a 
@@ -9616,7 +9616,7 @@
     dietary_supplement~1nz (^diet~3) something added to complete a diet or to make up for a dietary deficiency
  dim_sum ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     dim_sum~1nz (^culinary_art~1) traditional Chinese cuisine
- dim ( meanings=10 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=dimer 
+ dim ( meanings=10 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=dimer 
     subdued~1az lacking in light
     dimmed~1az made dim or less bright
     dumb~4a 
@@ -9825,7 +9825,7 @@
     deaf~2az lacking or deprived of the sense of hearing wholly or in part
     indifferent~2az unwilling or refusing to pay heed
     deafen~2vz make or render deaf
- defeated ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB (null) ) 
+ defeated ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     discomfited~1n 
     defeated~2az beaten or overcome
     foiled~1a 
@@ -10135,7 +10135,7 @@
     art_deco~1n 
  dada ( meanings=2 glosses=1 NOUN_HUMAN NOUN_HE NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     dadaism~1nz (^artistic_movement~1) a nihilistic art movement that flourished in Europe early in the 20th century
-    daddy~1n 
+    pop~4n 
  dadaism ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     dada~1n 
  Dagestani ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -10643,7 +10643,7 @@
     habitant~1n 
  disagreeable_person ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     unpleasant_person~1nz (^persona_non_grata~1) a person who is not pleasant or agreeable
- disagreeable ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ disagreeable ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     disagreeable~1az not to your liking
     unsympathetic~1a 
     disagreeable~3az unpleasant to interact with
@@ -11154,7 +11154,7 @@
     docent~1nz (^teacher~2) a teacher at some universities
  doc ( meanings=1 NOUN NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN ) 
     MD~3n 
- Dr. ( meanings=2 NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR KINDERGARTEN GRADE1_2 ) 
+ Dr. ( meanings=2 NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
     physician~1n 
     doctor~3n 
  Doctor_of_the_Church ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -11903,7 +11903,7 @@
  David_Low ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Sir_David_Alexander_Cecil_Low~1n 
  Douglas_MacArthur ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Macarthur~1nz (^general~2) United States general who served as chief of staff and commanded Allied forces in the South Pacific during World War II
+    MacArthur~1nz (^general~2) United States general who served as chief of staff and commanded Allied forces in the South Pacific during World War II
  David_Mamet ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Mamet~1nz (^playwright~1) United States playwright
  Dame_Alicia_Markova ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -12420,7 +12420,7 @@
     Liatris_punctata~1nz (^button_snakeroot~1) herb with many stems bearing narrow slender wands of crowded rose-lavender flowers
  dense_blazing_star ( meanings=1 NOUN NOUN_SINGULAR ) 
     Liatris_pycnostachya~1n 
- dense ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ dense ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     dim~3a 
     dense~2az having high relative density or specific gravity
     thick~8a 
@@ -13972,7 +13972,7 @@
     dog_bite~1nz (^bite~8) a bite inflicted by a dog
  depressed_fracture ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     depressed_fracture~1nz (^break~15) fracture of the skull where the bone is pushed in
- depressed ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ depressed ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     gloomy~3a 
     down~8a 
     depressed~3az flattened downward as if pressed from above or flattened along the dorsal and ventral surfaces
@@ -14511,7 +14511,7 @@
     rest_day~1nz (^day_of_the_week~1) a day set aside for rest
  day_off ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     day_off~1nz (^time_off~1) a day when you are not required to work
- dying ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 posdefault:VERB (null) ) 
+ dying ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 posdefault:VERB ) 
     death~7n 
     dying~2az in or associated with the process of passing from life or ceasing to be
     anxious~1a 
@@ -14792,12 +14792,12 @@
  doggone ( INTERJECTION ) 
  drat ( INTERJECTION ) 
  duh ( INTERJECTION ) 
- deem ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) (null) ) 
+ deem ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     hold~13v 
  discrete ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     distinct~5az constituting a separate entity or part
     discrete~2az 
- discreet ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ discreet ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     discreet~1az marked by prudence or modesty and wise self-restraint
     circumspect~1a 
     discerning~4a 
@@ -14820,7 +14820,7 @@
     deskbound~1az restricted to working in an office rather than in an active physical capacity
  deskbound ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     desk-bound~1a 
- dull ( meanings=20 glosses=15 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ dull ( meanings=20 glosses=15 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     sluggish~2a 
     dull~2az emitting or reflecting very little light
     dull~3az very low in saturation
@@ -14847,7 +14847,7 @@
     dysfunctional~3az 
  drug-addicted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     dependant~2a 
- deficient ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ deficient ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     lacking~1a 
     substandard~1az falling short of some prescribed norm
     insufficient~1az of a quantity not able to fulfill a need or requirement
@@ -14905,7 +14905,7 @@
  double-edged ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     double-edged~1az capable of being interpreted in two usually contradictory ways
     double-edged~2az 
- determined ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) (null) ) 
+ determined ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     compulsive~2a 
     determined~2az having been learned or found or determined especially by investigation
     determined~3az characterized by great determination
@@ -14987,7 +14987,7 @@
     dark-haired~1a 
  dishy ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=dishiest 
     dishy~1az sexually attractive
- disfigured ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ disfigured ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     disfigured~1az having the appearance spoiled
  despiteful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     vindictive~1az showing malicious ill will and a desire to hurt
@@ -15024,7 +15024,7 @@
  darkened ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     darkened~1az become or made dark by lack of light
     darkened~2az grown dark in color over time
- dazzling ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ dazzling ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     blinding~1a 
     eye-popping~1a 
     dazzling~3az 
@@ -15046,7 +15046,7 @@
     boned~2az having had the bones removed
  denumerable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     numerable~1az that can be counted
- detailed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) ) 
+ detailed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     elaborate~1a 
     detailed~2az 
  decentralizing ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:VERB ) 
@@ -15086,7 +15086,7 @@
     dead~7a 
     drained~2az emptied or exhausted of 
     knackered~1a 
- debonair ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ debonair ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     chipper~1a 
     debonaire~2a 
     debonair~3az 
@@ -15096,7 +15096,7 @@
  depressing ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     uncheerful~1az causing sad feelings of gloom and inadequacy
     depressing~2az 
- dingy ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=dingiest 
+ dingy ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=dingiest 
     grim~2a 
     begrimed~1a 
     dirty~11a 
@@ -15105,7 +15105,7 @@
     dingy~1a 
     inconsolable~1a 
     disconsolate~3az 
- dismal ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ dismal ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     disconsolate~1a 
     dismal~2az 
  drear ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE5_6 ) 
@@ -15174,7 +15174,7 @@
     distinguishable~2a 
     discrete~1a 
     distinct~6az 
- dazed ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ dazed ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     stupid~2a 
     foggy~4a 
     dazed~3az 
@@ -15184,7 +15184,7 @@
  dopy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     anserine~1a 
     dopy~2az 
- dopey ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) comparative=dopiest 
+ dopey ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=dopiest 
     dopy~1a 
     dopey~2az 
  duncical ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -15193,7 +15193,7 @@
  duncish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL ) 
     duncical~1a 
     duncish~2az 
- doltish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE (null) ) 
+ doltish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     cloddish~1a 
     doltish~2az 
  dextrorotary ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -15391,7 +15391,7 @@
  disaffected ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     ill-affected~1a 
     disaffected~2az 
- disgruntled ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 (null) ) 
+ disgruntled ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     dissatisfied~1a 
  dissatisfied ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:VERB ) 
     disgruntled~1az in a state of sulky dissatisfaction
@@ -15544,7 +15544,7 @@
     declared~1az made known or openly avowed
     stated~1az declared as fact
     declared~3az 
- decorous ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ decorous ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     decorous~1az characterized by propriety and dignity and good taste in manners and conduct
     comely~2a 
     decorous~3az 
@@ -15559,7 +15559,7 @@
  defeasible ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     defeasible~1az capable of being annulled or voided or terminated
     defeasible~2az 
- defiant ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ defiant ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     noncompliant~2a 
     defiant~2az 
  defined ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
@@ -15594,7 +15594,7 @@
     delicate~6az marked by great skill especially in meticulous technique
     soft~18a 
     delicate~8az 
- demanding ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ demanding ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     demanding~1az requiring more than usually expected or thought due
     demanding~2az 
  dictatorial ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -15689,7 +15689,7 @@
     differentiated~2az exhibiting biological specialization
  dedifferentiated ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     dedifferentiated~1az having experienced or undergone dedifferentiation or the loss of specialization in form or function
- difficult ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) 
+ difficult ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     hard~1az not easy
     unmanageable~2az hard to control
     difficult~3az 
@@ -15707,7 +15707,7 @@
     humbling~1a 
  dicotyledonous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     dicotyledonous~1az having two cotyledons in the seed
- diligent ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ diligent ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     diligent~1az characterized by care and perseverance in carrying out tasks
     persevering~1a 
  diluted ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -15757,7 +15757,7 @@
  documented ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     documented~1az furnished with or supported by documents
     attested~1a 
- domineering ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ domineering ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     domineering~1az tending to domineer
     domineering~2az 
  dominating ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -15822,7 +15822,7 @@
     dismissed~1a 
  dismissed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     fired~1a 
- delighted ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ delighted ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     charmed~1a 
     delighted~2az greatly pleased
     delighted~3az 
@@ -15831,7 +15831,7 @@
     disenchanted~1az freed from enchantment
  disabused ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 posdefault:VERB ) 
     undeceived~1a 
- disillusioned ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ disillusioned ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     disillusioned~1az freed from illusion
     disillusioned~2az 
  discouraging ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -16007,7 +16007,7 @@
  distressing ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     deplorable~1a 
     troubling~1az causing distress or worry or anxiety
- demonic ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ demonic ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     diabolical~1a 
     demonic~2az 
  diabolic ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -16076,13 +16076,13 @@
     low-necked~1a 
  devalued ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     degraded~1az lowered in value
- degraded ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ degraded ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     debased~2a 
     riotous~2a 
     degraded~3az 
  double-bass ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     contrabass~2az pitched an octave below normal bass instrumental or vocal range
- deceitful ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ deceitful ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     ambidextrous~1a 
     fallacious~2a 
     deceitful~3az 
@@ -16151,7 +16151,7 @@
  disinclined ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     disinclined~1az unwilling because of mild dislike or disapproval
     disinclined~2az 
- designate ( meanings=6 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 ADJECTIVE_POSTPOSITIVE posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) ) 
+ designate ( meanings=6 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 ADJECTIVE_POSTPOSITIVE posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     designate~1az appointed but not yet installed in office
     specify~2v 
     doom~2v 
@@ -16306,7 +16306,7 @@
     deific~2az 
  dyed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     bleached~2a 
- disturbed ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ disturbed ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     maladjusted~3a 
     disturbed~2az having the place or position changed
     unbalanced~3a 
@@ -16320,7 +16320,7 @@
     detected~2az perceived or discerned
  disregarded ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     forgotten~1a 
- dutiful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ dutiful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     duteous~1az willingly obedient out of a sense of duty and respect
     dutiful~2az 
  duteous ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -16435,7 +16435,7 @@
  dissuasive ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     dissuasive~1az deterring from action
     dissuasive~2az 
- devout ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ devout ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     god-fearing~1a 
     earnest~4a 
     devout~3az 
@@ -16457,7 +16457,7 @@
     sick~4a 
     disgusted~2az 
     disgusted~3az 
- delightful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ delightful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     delicious~1a 
     delightful~2az 
  delicious ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
@@ -16597,7 +16597,7 @@
     various~3a 
     divers~1az many and different
     diverse~3az 
- divers ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 GRADE5_6 posdefault:NOUN (null) ) 
+ divers ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 GRADE5_6 posdefault:NOUN ) 
     diverse~2a 
  demoniacal ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     amok~1a 
@@ -16607,7 +16607,7 @@
  demented ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     brainsick~1a 
     demented~2az 
- deranged ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ deranged ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     half-crazed~1a 
     deranged~2az 
  disappointing ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -16731,7 +16731,7 @@
     gentle~7a 
     teachable~1a 
     docile~4az 
- disappointed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:VERB (null) ) 
+ disappointed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:VERB ) 
     discomfited~2a 
     disappointed~2az 
  depleted ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -17540,7 +17540,7 @@
  devastate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     devastate~1vz overwhelm or overpower
     desolate~4v 
- disappoint ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ disappoint ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     let_down~1vz fail to meet the hopes or expectations of
  discourage ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     monish~1vz admonish or counsel in terms of someone's behavior
@@ -18472,7 +18472,7 @@
     die_down~2v 
  die_away ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     slack_off~1v 
- derive ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ derive ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     educe~1vz develop or evolve from a latent or potential state
     derive~2vz come from
     deduct~1vz reason by deduction
@@ -18544,7 +18544,7 @@
  de-escalate ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     step_down~1vz reduce the level or intensity or size or scope of
     de-escalate~2vz diminish in size, scope, or intensity
- dispose ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) ) 
+ dispose ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     qualify~3vz make fit or prepared
     incline~3v 
     dispose~3vz place or put in a particular order
@@ -18921,7 +18921,7 @@
  do_justice ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     do_justice~1vz show due and full appreciation
     do_justice~2vz bring out fully or to advantage
- discover ( meanings=8 glosses=8 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ discover ( meanings=8 glosses=8 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     see~3vz get to know or become aware of, usually accidentally
     describe~1vz identify as in botany or biology, for example
     find~6vz make a discovery
@@ -18948,7 +18948,7 @@
  decipher ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     trace~7v 
     decrypt~1vz convert code into ordinary language
- deduce ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ deduce ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     infer~3v 
     infer~4vz conclude by reasoning
  deduct ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -18967,7 +18967,7 @@
     identify~3v 
     signalise~1vz make conspicuous or noteworthy
     make_out~8v 
- describe ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) (null) ) 
+ describe ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     key_out~1v 
     report~8v 
     draw~19v 
@@ -18978,14 +18978,14 @@
     dichotomize~1v 
  double-check ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     double-check~1vz check once more to be absolutely sure
- demonstrate ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) ) 
+ demonstrate ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     show~5v 
     certify~1vz provide evidence for
     demo~2v 
     march~12v 
- disprove ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) conjugate=disproven 
+ disprove ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) conjugate=disproven 
     confute~1vz prove to be false
- disapprove ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ disapprove ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     disapprove~1vz consider bad or wrong
     reject~5vz deem wrong or inappropriate
  dedicate ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
@@ -19034,7 +19034,7 @@
     coquette~2v 
     dawdle~2v 
     toy~6v 
- depend ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ depend ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     calculate~3v 
     depend~2vz be contingent upon 
  demarcate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -19088,7 +19088,7 @@
  differ ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_NOOBJECT ) 
     dissent~5v 
     differ~2vz be different
- discuss ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ discuss ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     talk_over~1vz speak with others about 
     discourse~6vz to consider or examine in speech or writing
  dissertate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 ) 
@@ -19103,7 +19103,7 @@
     deny~7vz refuse to grant, as of a petition or request
  disavow ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     disavow~1vz refuse to acknowledge
- declare ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) (null) (null) ) 
+ declare ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     declare~1vz state firmly
     adjudge~1vz declare to be
     announce~1v 
@@ -19117,37 +19117,37 @@
     bemoan~1vz regret strongly
  debrief ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_DIRECTOBJECT ) 
     debrief~1vz put someone through a debriefing and make him report
- dissemble ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ dissemble ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     feign~1v 
     act~11v 
     cloak~5v 
- denounce ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ denounce ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     denounce~1vz speak out against
     tell_on~2v 
     denounce~3vz announce the termination of, as of treaties
     stigmatise~2v 
- disparage ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ disparage ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     belittle~2v 
- defame ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ defame ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     smear~5v 
- denigrate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ denigrate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     asperse~1v 
     minimize~3v 
  drag_through_the_mud ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     traduce~1v 
- diss ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ diss ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     insult~3v 
- deride ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ deride ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     deride~1vz treat or speak of with contempt
  debunk ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     expose~3v 
- deceive ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ deceive ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     lead_astray~1vz cause someone to believe an untruth
     delude~1vz be false to
- deprecate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ deprecate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     depreciate~3v 
     deprecate~2vz express strong disapproval of
- decry ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ decry ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     reprobate~4v 
  derogate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     denigrate~2v 
@@ -19183,10 +19183,10 @@
     refer~3v 
     denote~2vz be a sign or indication of
     announce~3v 
- disclose ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ disclose ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     unwrap~1v 
     expose~9v 
- divulge ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ divulge ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     reveal~1v 
  deconstruct ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     deconstruct~1vz interpret by the method of deconstructing
@@ -19229,7 +19229,7 @@
     distribute~10vz spread throughout a given area
  disseminate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     distribute~1v 
- depict ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ depict ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     describe~3v 
     render~9v 
     portray~2v 
@@ -19520,7 +19520,7 @@
  destruct ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     destroy~4v 
     destruct~2vz destroy 
- dream_up ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB SEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 (null) (null) ) 
+ dream_up ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB SEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     think_up~1v 
  disincarnate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     disincarnate~1vz make immaterial
@@ -19574,7 +19574,7 @@
     debauch~2v 
  dissatisfy ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     dissatisfy~1vz fail to satisfy
- displease ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ displease ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     displease~1vz give displeasure to
  disenchant ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     disillusion~2v 
@@ -19926,11 +19926,11 @@
     merit~3vz be worthy or deserving
  die_hard ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     prevail~4v 
- depend_on ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 (null) ) 
+ depend_on ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     rely_on~1vz be dependent on, as for support or maintenance
     rely_on~2v 
     turn_on~7v 
- depend_upon ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 (null) ) 
+ depend_upon ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     rely_upon~1vz put trust in with confidence
     depend_on~3v 
  drag_in ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 

@@ -602,6 +602,8 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					int oldgap = gap;
 					unsigned int returnStart = positionStart;
 					unsigned int returnEnd = positionEnd;
+					unsigned int rStart = positionStart;
+					unsigned int rEnd = positionEnd;
 					unsigned int oldselect = wildcardSelector;
 					wildcardSelector = 0;
 					bool uppercasemat = false;
@@ -631,9 +633,13 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					{
 						gap = oldgap; // restore any pending gap we didnt plug  (eg *~2 {xx yy zz} a )
 					}
+					else // no match for ( or [ means we have to restore old positions regardless of what happened inside
+					{ // but we should check why the positions were not properly restored from the match call...BUG
+						positionStart = rStart;
+						positionEnd = rEnd;
+					}
 				}
-				if (*word == '(' && matched) {;} // WE ALREADY saw and swallowed the paren
-				else ptr = BalanceParen(ptr); // skip over the material including closer 
+				ptr = BalanceParen(ptr); // skip over the material including closer 
        			returned = true;
 				if (!matched) // failed, revert wildcard index - if ! was used, we will need this
                 {
@@ -858,6 +864,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 						{
 							strcpy(wildcardOriginalText[wildcardIndex-1],D->word);
 							strcpy(wildcardCanonicalText[wildcardIndex-1],D->word);
+							*wildcardConceptText[wildcardIndex-1] = 0;
 						}
 						else
 						{
@@ -870,6 +877,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 							{
 								strcpy(wildcardOriginalText[wildcardIndex-1],D->word);
 								strcpy(wildcardCanonicalText[wildcardIndex-1],D->word);
+								*wildcardConceptText[wildcardIndex-1] = 0;
 							}
 						}
 						uppercasematch = false;
@@ -977,6 +985,12 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					else if (positionStart != positionEnd) Log(STDUSERLOG,"(%s-%s)",wordStarts[positionStart],wordStarts[positionEnd]);
 					else Log(STDUSERLOG,"(%s)",wordStarts[positionStart]);
 				}
+				if (*word == '@' && word[1] == '_')
+				{
+					if (positionStart <= 0 || positionStart > wordCount || positionEnd <= 0 || positionEnd > wordCount) Log(STDUSERLOG, "(index:%d)",positionEnd);
+					else Log(STDUSERLOG,"(word:%s index:%d)",wordStarts[positionEnd],positionEnd);
+				}
+
 				Log(STDUSERLOG,(success) ? "+ " : "- ");
 			}
 		}
@@ -1000,6 +1014,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 						Log(STDUSERTABLOG,"");
 					}
 					//   reset to initial conditions, mostly 
+					reverse = false;
 					ptr = orig;
 					wildcardIndex = 0; 
 					basicStart = positionEnd = firstMatched;  //   THIS is different from inital conditions

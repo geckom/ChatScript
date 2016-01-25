@@ -35,7 +35,7 @@
  single-leaf_pine ( meanings=1 NOUN NOUN_SINGULAR ) 
     single-leaf~1n 
  Schimmel ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- simple ( meanings=10 glosses=9 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE (null) ) 
+ simple ( meanings=10 glosses=9 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE ) 
     simpleton~1nz (^individual~1) a person lacking intelligence or common sense
     simple~2nz (^herbaceous_plant~1) any herbaceous plant having medicinal properties
     unproblematic~1az easy and not involved or complicated
@@ -201,6 +201,8 @@
  shoestring ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     shoe_lace~1n 
     shoe_string~2n 
+ self-mortification ( meanings=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
+    self-abasement~1n 
  sleep_deprivation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     sleep_deprivation~1nz (^torture~1) a form of psychological torture inflicted by depriving the victim of sleep
  subfamily_Melolonthidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -374,6 +376,9 @@
     Battle_of_the_Somme~2n 
  secondhand_car ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     used-car~1nz (^automobile~1) a car that has been previously owned
+ startup ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
+    inauguration~1n 
+    startup~2nz (^beginning~1) the act of setting in operation
  self-love ( meanings=2 NOUN NOUN_SINGULAR NOUN_NODETERMINER posdefault:NOUN ) 
     narcism~1n 
     vanity~4n 
@@ -402,7 +407,7 @@
     siren~2nz (^acoustic_device~1) an acoustic device producing a loud often wailing sound as a signal or warning
     siren~3nz (^alarm~3) a warning signal that is a loud wailing sound
     Delilah~1n 
- state ( meanings=10 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) (null) ) 
+ state ( meanings=10 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     state~1nz (^attribute~1) the way something is with respect to its main attributes
     land~3n 
     state~3nz (^government~4) the group of people comprising the government of a sovereign state
@@ -589,12 +594,12 @@
     supernumerary~2nz (^individual~1) a person serving no apparent function
     excess~5a 
  Scheid ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- smell ( meanings=10 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN GRADE5_6 posdefault:NOUN VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=smelt 
+ smell ( meanings=10 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=smelt 
     smelling~1nz (^perception~1) the act of perceiving the odor of something
     scent~1nz (^property~2) any property detected by the olfactory system
     olfactory_modality~1nz (^sensory_system~2) the faculty that enables us to distinguish scents
     olfactory_perception~1nz (^sense_experience~1) the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form
-    flavour~3nz (^atmosphere~6) the general atmosphere of a place or situation and the effect that it has on people
+    feeling~6n 
     smell_out~1vz become aware of not through the senses but instinctively
     smell~7vz emit an odor
     smell~8vz smell bad
@@ -927,7 +932,6 @@
  sheika ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     sheikha~1n 
  Schweiger ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Sigmon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  seller ( meanings=1 NOUN NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN ) 
     vender~1n 
  saurian ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:ADJECTIVE ) 
@@ -949,7 +953,7 @@
  Shila ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  soupfin ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     soupfin_shark~1n 
- smack ( meanings=12 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=smacker 
+ smack ( meanings=12 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=smacker 
     slap~1n 
     smooch~1n 
     thunder~1n 
@@ -1052,7 +1056,7 @@
     half-pint~1nz (^small_person~1) disparaging terms for small people
     shrimp~4vz fish for shrimp
  Segulah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- signal ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=signaller 
+ signal ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=signaller 
     sign~3nz (^communication~1) any nonverbal action or gesture that encodes a message
     signal~2nz (^provocation~3) any incitement to action
     signal~3nz (^electrical_energy~1) an electric quantity whose modulation represents coded information about the source from which it comes
@@ -1094,6 +1098,13 @@
  Seymour ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Jane_Seymour~1n 
  Swilley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ stampede ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+    stampede~1nz (^group_action~1) a headlong rush of people on a common impulse
+    stampede~2nz (^travel~3) a wild headlong rush of frightened animals
+    stampede~3vz run away in a stampede
+    stampede~4vz cause to run in panic
+    stampede~5vz act, usually en masse, hurriedly or on an impulse
+    stampede~6vz cause a group or mass of people to act on an impulse or hurriedly and impulsively
  solenogaster ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     aplacophoran~1nz (^gastropod~1) deep-water wormlike mollusks lacking calcareous plates on the body but having fine slimy spicules on the covering mantle
  Sora ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -1109,7 +1120,7 @@
     shoe~3nz (^footwear~1) footwear shaped to fit the foot with a flexible upper of leather or plastic and a sole and heel of heavier material
     shoe~4nz (^case~2) a case from which playing cards are dealt one at a time
     shoe~5vz furnish with shoes
- squeak ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ squeak ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT ) 
     squeaker~1nz (^accomplishment~1) something achieved by a narrow margin
     squeak~2nz (^noise~5) a short high-pitched noise
     skreak~2vz make a high-pitched, screeching noise
@@ -1399,7 +1410,7 @@
  Salomeaexl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Scaphiopus_bombifrons ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     plains_spadefoot~1nz (^spadefoot_toad~1) this spadefoot toad lives in plains and hills and river bottoms in areas of low rainfall east of the Rocky Mountains
- sob ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) ) 
+ sob ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) 
     sobbing~1nz (^crying~1) convulsive gasp made while weeping
     sob~2vz weep convulsively
  Savara ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -1632,7 +1643,7 @@
     soymilk~1nz (^milk~3) a milk substitute containing soybean flour and water
  scalpel ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     scalpel~1nz (^surgical_knife~1) a thin straight surgical knife used in dissection and surgery
- shy ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=shyest 
+ shy ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=shyest 
     shy~1nz (^throw~1) a quick throw
     shy~2az wary and distrustful
     diffident~1az lacking self-confidence
@@ -1678,7 +1689,7 @@
  Shipp ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  sectionalization ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     division~2n 
- stroke ( meanings=16 glosses=15 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ stroke ( meanings=16 glosses=15 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     stroking~1nz (^touching~1) a light touch with the hands
     stroke~2nz (^motion~2) a single complete movement
     shot~3nz (^play~6) the act of swinging or striking at a ball with a club or racket or bat or cue or hand
@@ -1778,7 +1789,7 @@
     skip_distance~1nz (^length~4) the shortest distance that permits radio signals to travel from the transmitter to the receiver by reflection from the ionosphere
  semester_hour ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     credit_hour~1nz (^credit~2) a unit of academic credit
- soft ( meanings=21 glosses=16 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ soft ( meanings=21 glosses=16 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     subdued~2az not brilliant or glaring
     balmy~1az mild and pleasant
     cushy~1az not burdensome or demanding
@@ -1850,7 +1861,7 @@
  Smythe ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Schmitz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  silvertip ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
-    Ursus_arctos_horribilis~1n 
+    Ursus_horribilis~1n 
  Sheila ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  Sal ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  shocker ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -1901,8 +1912,6 @@
     syndicator~1nz (^businessman~1) a businessman who forms a syndicate
  Sunderland ( meanings=1 glosses=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Sunderland~1nz (^town~2) a port and industrial city in northeastern England
- Stamp_Act ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Stamp_Act~1nz (^legislative_act~1) an act passed by the British Parliament in 1756 that raised revenue from the American Colonies by a duty in the form of a stamp required on all newspapers and legal or commercial documents
  symbolizing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     symbolising~1nz (^figuration~2) the act of representing something with a symbol
  Serihilde ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1955,6 +1964,17 @@
     he-man~1n 
     stud~6vz provide with or construct with studs
     dot~7v 
+ special ( meanings=10 glosses=9 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) 
+    special~1nz (^television_program~1) a television production that features a particular person or work or topic
+    special~2nz (^offer~2) a special offering that is featured in advertising
+    exceptional~1az surpassing what is common or usual or expected
+    limited~4az having a specific function or scope
+    peculiar~4az unique or specific to a person or thing or category
+    special~6az for a special service or occasion
+    particular~9az first and most important
+    special~8az adapted to or reserved for a particular purpose
+    extra~6az added to a regular schedule
+    special~10az 
  Scarlett ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  soapiness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     soapiness~1nz (^quality~1) the quality of being soap or being covered with soap
@@ -2189,6 +2209,7 @@
  Sprowle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  skipjack_tuna ( meanings=1 NOUN NOUN_SINGULAR ) 
     skipjack~3n 
+ Strother ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  sea_squirt ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     sea_squirt~1nz (^ascidian~1) ascidian that can contract its body and eject streams of water
  Stephany ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -2218,6 +2239,7 @@
  Sharron ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  superfamily_Muscoidea ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Muscoidea~1nz (^arthropod_family~1) two-winged flies especially the families: Muscidae
+ Sylvester ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  slide ( meanings=10 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=slid 
     coast~1nz (^motion~1) the act of moving smoothly along a surface while remaining in contact with it
     slideway~1nz (^gutter~1) sloping channel through which things can descend
@@ -2241,7 +2263,7 @@
     strident~2a 
     sharp~10a 
     pipe~6v 
- sulphur ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ sulphur ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
     S~5nz (^element~6) an abundant tasteless odorless multivalent nonmetallic element
     sulfur~3vz treat with sulphur in order to preserve
  spiral ( meanings=10 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:NOUN VERB_NOOBJECT ) 
@@ -2300,7 +2322,7 @@
     barbarism~1n 
     brutality~2n 
     savageness~1n 
- small ( meanings=14 glosses=9 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=smaller 
+ small ( meanings=14 glosses=9 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) comparative=smaller 
     small~1nz (^size~1) a garment size for a small person
     small~2nz (^body_part~1) the slender part of the back
     belittled~1az made to seem smaller or less 
@@ -2432,6 +2454,8 @@
  Seeger ( meanings=2 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Alan_Seeger~1n 
     Pete_Seeger~1n 
+ space_travel ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    spacefaring~1nz (^voyage~1) a voyage outside the Earth's atmosphere
  servant_'s_entrance ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     service_door~1nz (^entranceway~1) an entrance intended for the use of servants or for delivery of goods and removal of refuse
  superintendence ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -2441,6 +2465,8 @@
  Sergent ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  segmentation_cavity ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     cleavage_cavity~1nz (^bodily_cavity~1) the fluid-filled cavity inside a blastula
+ swimming_costume ( meanings=1 NOUN NOUN_SINGULAR ) 
+    swimwear~1n 
  Silurus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Silurus~1n 
  someone ( meanings=2 PRONOUN_SUBJECT PRONOUN_OBJECT NOUN NOUN_SINGULAR COMMON4 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE PRONOUN_SINGULAR ANIMATE_BEING ) 
@@ -2548,6 +2574,8 @@
     choreography~1nz (^dance~1) a show involving artistic dancing
  startle_response ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     startle_reaction~1nz (^start~3) a complicated involuntary reaction to a sudden unexpected stimulus 
+ superhigh_frequency ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
+    SHF~1nz (^radio_frequency~1) 3 to 30 gigahertz
  streptobacillus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     streptobacillus~1nz (^rod~1) any of various rod-shaped Gram-negative bacteria
  Sabb ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2815,6 +2843,7 @@
  Scheer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Shanae ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Skelton ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Storer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sigmund ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Seger ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Selman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3082,8 +3111,6 @@
  Stillwell ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  stoning ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     lapidation~1n 
- skull_and_crossbones ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
-    skull_and_crossbones~1nz (^emblem~1) emblem warning of danger or death
  sensitization ( meanings=3 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     sensitisation~1n 
     sensitisation~2n 
@@ -3419,7 +3446,7 @@
  Stotts ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  spy_satellite ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     spy_satellite~1nz (^artificial_satellite~1) a satellite with sensors to detect nuclear explosions
- snuffle ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ snuffle ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     snivel~1nz (^external_respiration~1) the act of breathing heavily through the nose
     blub~1vz cry or whine with snuffling
     snivel~4vz snuff up mucus through the nose
@@ -3674,14 +3701,14 @@
     shielding~1nz (^protection~2) the act of shielding from harm
     shielding~2nz (^shield~3) a shield of lead or concrete intended as a barrier to radiation emitted in nuclear decay
     shielding~3nz (^shield~3) shield consisting of an arrangement of metal mesh or plates designed to protect electronic equipment from ambient electromagnetic interference
- snigger ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ snigger ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     snicker~1nz (^laugh~3) a disrespectful laugh
     snicker~2vz laugh quietly
  semiautomatic ( meanings=3 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 ) 
     semiautomatic_pistol~1n 
     self-loading~1az capable of automatic loading and firing continuously
     semiautomatic~3az partially automatic
- shoot ( meanings=22 glosses=21 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=shot 
+ shoot ( meanings=22 glosses=21 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=shot 
     shoot~1nz (^shot~2) the act of shooting at targets
     shoot~2nz (^sprout~2) a new branch
     inject~1vz give an injection to
@@ -3724,7 +3751,7 @@
     resolution~7n 
     root~4n 
     solution~5nz (^mixture~5) a homogeneous mixture of two or more substances
- splutter ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ splutter ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
     sputter~1nz (^vocalization~1) an utterance with spitting sounds (as in rage)
     spattering~2n 
     spit_out~2vz spit up in an explosive manner
@@ -3785,7 +3812,7 @@
     shillyshally~3vz be uncertain and vague
  sympathy_strike ( meanings=1 NOUN NOUN_SINGULAR ) 
     sympathetic_strike~1n 
- slight ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ slight ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     rebuff~1nz (^offense~3) a deliberate discourteous act
     svelte~1az being of delicate or slender build
     little~7a 
@@ -3868,6 +3895,7 @@
     succor~2vz help in a difficult situation
  Scirloc ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Shanika ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
+ Stockhard ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Sive ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  superior_pulmonary_vein ( meanings=1 NOUN NOUN_SINGULAR ) 
     vena_pulmonalis_superior~1n 
@@ -3934,7 +3962,7 @@
  Shryock ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Stubbs ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     William_Stubbs~1n 
- stationary ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ stationary ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     stationary~1az not capable of being moved
     stationary~2az standing still
     stationary~3az 
@@ -3942,6 +3970,8 @@
     climbing_hydrangea~3nz (^bush~4) climbing shrub with adhesive aerial roots having opposite leaves and small white flowers in terminal cymes
  string_of_beads ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     string_of_beads~1nz (^string~6) several beads threaded together on a string
+ screw_jack ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
+    jackscrew~1nz (^jack~3) screw-operated jack
  settlement ( meanings=7 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     liquidation~2n 
     colonization~1n 
@@ -4089,8 +4119,6 @@
  Shelton ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stripling ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Shuey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- skewness ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
-    lopsidedness~1n 
  sexploitation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     sexploitation~1nz (^using~1) the commercial exploitation of sex or sexuality or explicit sexual material
  sharp-tailed_grouse ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -4242,7 +4270,6 @@
  Sundberg ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  subway_train ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     subway_train~1nz (^train~2) a train that runs in a subway system
- Sigenert ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  small_stuff ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     small_stuff~1nz (^rope~2) any light rope used on shipboard
  softball_game ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -4465,6 +4492,7 @@
  Shipman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  supping ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
     supping~1nz (^feeding~1) ingestion of liquid food with a spoon or by drinking
+ Synder ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sebring ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Section_Eight ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Section_Eight~1nz (^sack~1) a discharge from the US Army based on unfitness or character traits deemed undesirable
@@ -4743,6 +4771,7 @@
     sulphur~1n 
     sulfur~2az 
     sulphur~2v 
+ Stovall ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Shimshon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Spitz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  sobbing ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
@@ -4857,7 +4886,6 @@
  snowshoe_hare ( meanings=1 NOUN NOUN_SINGULAR ) 
     snowshoe_rabbit~1n 
  Sword ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Stefon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  suffocation ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     asphyxiation~1n 
     asphyxiation~2n 
@@ -4883,7 +4911,7 @@
     stencil~2vz mark or print with a stencil
  Saddler ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Studer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- spoke ( meanings=2 glosses=2 VERB_PAST NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN GRADE1_2 posdefault:VERB ) conjugate=speak 
+ spoke ( meanings=2 glosses=2 VERB_PAST NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=speak 
     rung~1nz (^crosspiece~1) one of the crosspieces that form the steps of a ladder
     radius~1nz (^support~6) support consisting of a radial member of a wheel joining the hub to the rim
  strand_wolf ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -4893,7 +4921,6 @@
  Sumpter ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  subconscious_mind ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     subconscious~1nz (^mind~1) psychic activity just below the level of awareness
- Steadman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Santiago_de_Cuba ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Santiago~1nz (^naval_battle~1) a naval battle in the Spanish-American War 
     Santiago~3nz (^city~2) a port city in southeastern Cuba
@@ -5084,7 +5111,7 @@
  Steven ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  sciarid ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     fungus_gnat~2n 
- short ( meanings=24 glosses=22 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR EXTENT_ADVERB ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) (null) ) 
+ short ( meanings=24 glosses=22 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR EXTENT_ADVERB ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     shortstop~1nz (^position~4) the fielding position of the player on a baseball team who is stationed between second and third base
     short~2nz (^parcel~4) the location on a baseball field where the shortstop is stationed
     short_circuit~1nz (^contact~3) accidental contact between two points in an electric circuit that have a potential difference
@@ -5233,7 +5260,7 @@
     Swedish_massage~1nz (^massage~1) massage combined with a system of active and passive exercises for the muscles and joints
  Shania ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Stlaurent ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- sixth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN (null) ) 
+ sixth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN ) 
  Schuler ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Stennett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  sterilizer ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -5460,7 +5487,6 @@
  Schindler ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Scur ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sherrard ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Seale ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  squamous_cell ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     squamous_cell~1nz (^epithelial_cell~1) an epithelial cell that is flat like a plate and form a single layer of epithelial tissue
  staple ( meanings=7 glosses=6 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT ) comparative=stapler 
@@ -5569,7 +5595,7 @@
     likeable~2az evoking empathic or sympathetic feelings
     sympathetic~6az of or relating to the sympathetic nervous system
     sympathetic~7az 
- snowy ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=snowiest 
+ snowy ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=snowiest 
     snow-white~1az of the white color of snow
     snow-covered~1az covered with snow
     white~15a 
@@ -5745,6 +5771,7 @@
  spitting_cobra ( meanings=1 NOUN NOUN_SINGULAR ) 
     black-necked_cobra~1n 
  Salazar ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Sanford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  secretaryship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     secretaryship~1nz (^position~2) the position of secretary
  shag_rug ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -5767,6 +5794,7 @@
  sonata_form ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     sonata_form~1nz (^art_form~1) a musical form having 3 sections
  Shoemaker ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Sirois ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  salsilla ( meanings=2 NOUN NOUN_SINGULAR COMMON1 ) 
     Bomarea_edulis~1n 
     Bomarea_salsilla~1n 
@@ -5799,6 +5827,7 @@
     excite~8v 
  sweepstakes ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     sweepstakes~1nz (^drawing~3) a lottery in which the prize consists of the money paid by the participants
+ Sherril ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Sherbourn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  stopper_knot ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     stopper_knot~1nz (^knot~2) a knot that prevents a rope from passing through a hole
@@ -5889,7 +5918,7 @@
     scrimmage~3vz practice playing
  striped_killifish ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Fundulus_majalis~1nz (^killifish~1) black-barred fish of bays and coastal marshes of the Atlantic and Gulf Coast of the United States
- surprise ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) (null) ) 
+ surprise ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     surprisal~1nz (^perturbation~1) the act of surprising someone
     surprise~2nz (^change~5) a sudden unexpected event
     surprise~3nz (^amazement~1) the astonishment you feel when something totally unexpected happens to you
@@ -5898,7 +5927,7 @@
     surprise~6vz come upon or take unawares
  Selina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Sistrunk ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- superior ( meanings=12 glosses=10 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ superior ( meanings=12 glosses=10 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     superscript~1nz (^character~6) a character or symbol set or printed or written above and immediately to one side of another character
     superior~2nz (^religious~1) the head of a religious community
     higher-up~1nz (^leader~2) one of greater rank or station or quality
@@ -6057,7 +6086,7 @@
     shrimp-fish~1n 
  subfamily_Pythoninae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Pythoninae~1nz (^reptile_family~1) Old World boas: pythons
- steal ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) ) conjugate=stolen 
+ steal ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) conjugate=stolen 
     steal~1nz (^baseball~1) a stolen base
     buy~1nz (^purchase~4) an advantageous purchase
     steal~3vz steal a base
@@ -6147,7 +6176,7 @@
  Sinjin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sellers ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Peter_Sellers~1n 
- show ( meanings=16 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=shown 
+ show ( meanings=16 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) conjugate=shown 
     show~1nz (^entertainment~1) the act of publicly exhibiting or entertaining
     appearance~2n 
     show~3nz (^social_event~1) a social event involving a public performance or entertainment
@@ -6373,9 +6402,6 @@
     reaping_hook~1n 
  Stratford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sheshebens ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- sericulture ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    sericulture~1nz (^production~4) the production of raw silk by raising silkworms
-    sericulture~2nz (^activity~4) raising silkworms in order to obtain raw silk
  Stange ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Stok ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Sigfreda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -6416,7 +6442,7 @@
  Sallee ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sluss ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sturgeon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- sanction ( meanings=7 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ sanction ( meanings=7 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT ) 
     sanction~1nz (^social_control~1) a mechanism of social control for enforcing a society's standards
     sanction~2nz (^authorization~1) the act of final authorization
     authorisation~2n 
@@ -6428,7 +6454,7 @@
     smack~3n 
  Siusan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Stauffer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- stocker ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 GRADE1_2 GRADE3_4 GRADE5_6 posdefault:NOUN ) comparative=stock 
+ stocker ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 KINDERGARTEN posdefault:NOUN ) comparative=stock 
     stocker~1nz (^domesticated_animal~1) a domestic animal kept as stock until fattened or matured and suitable for a breeding establishment
  Stocker ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  stock_exchange ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -6510,11 +6536,11 @@
  shoveler ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     Anas_clypeata~1n 
     shoveller~2n 
- spoken ( meanings=1 glosses=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN GRADE1_2 posdefault:VERB ) conjugate=spoke 
+ spoken ( meanings=1 glosses=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN posdefault:VERB ) conjugate=spoke 
     spoken~1az uttered through the medium of speech or characterized by speech
  Southern_Cross ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Crux_Australis~1nz (^constellation~2) a small conspicuous constellation in the southern hemisphere in the Milky Way near Centaurus
- sulky ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:ADJECTIVE (null) ) comparative=sulkiest 
+ sulky ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:ADJECTIVE ) comparative=sulkiest 
     sulky~1nz (^horse-drawn_vehicle~1) a light two-wheeled vehicle for one person
     gloomy~1a 
     sluggish~3a 
@@ -6529,6 +6555,11 @@
     soft-shelled_crab~2n 
  Serefina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Shelbi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
+ solace ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
+    comfort~2n 
+    consolation~2n 
+    solacement~2n 
+    comfort~9v 
  Shick ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sani ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  screamer ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -6592,15 +6623,13 @@
     scuff~5vz get or become scuffed
     drag~13v 
  Stahl ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- steel ( meanings=6 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ steel ( meanings=6 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     steel~1nz (^sharpener~1) knife sharpener consisting of a ridged steel rod
     brand~1nz (^weapon~1) a cutting or thrusting weapon that has a long metal blade and a hilt with a hand guard
     steel~3nz (^metal~1) an alloy of iron with small amounts of carbon
     steel~4az 
     steel~5vz cover, plate, or edge with steel
     nerve~4vz get ready for something difficult or unpleasant
- stoicism ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
-    stolidness~1n 
  seal_off ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB SEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     blockade~3vz impose a blockade on
     seal~13v 
@@ -6671,7 +6700,7 @@
  Schilling ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Shaunta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Stumpf ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- sapphire ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ sapphire ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     lazuline~1n 
     sapphire~2nz (^gem~2) a transparent piece of sapphire that has been cut and polished and is valued as a precious gem
     sapphire~3nz (^corundom~1) a precious transparent stone of rich blue corundum valued as a gemstone
@@ -6760,6 +6789,7 @@
     thin~8a 
     slender~6az 
  Shortridge ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Scarbrough ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Social_Security ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
     Social_Security~1nz (^social_insurance~1) social welfare program in the U.S.
  Stacee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -6801,7 +6831,6 @@
  Sanders ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
  Sanderson ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sandoval ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Sanford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sanger ( meanings=2 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Margaret_Sanger~1n 
     Frederick_Sanger~1n 
@@ -6820,7 +6849,6 @@
  Scalf ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Scalise ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Scanlan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Scarbrough ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Schacht ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Schaeffer ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Schafer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -6843,6 +6871,7 @@
  Scully ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Seabolt ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Seabrook ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Seale ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sears ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
  Sebastian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Segovia ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -6890,6 +6919,7 @@
  Sieber ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Siegel ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sigman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ Sigmon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Silverman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Simmonds ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Simmons ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -6898,7 +6928,6 @@
  Singh ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Singley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sipple ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Sirois ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sites ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON4 COMMON2 COMMON1 ) 
  Skaggs ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Slagle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -6948,6 +6977,7 @@
     Leland_Stanford~1n 
  Stansberry ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Staples ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
+ Steadman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stedman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Steffen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Steffey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -6964,8 +6994,6 @@
  Stivers ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Stoddard ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stoltz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Storer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Stovall ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Stover ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Stowers ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Strachan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -6978,7 +7006,6 @@
  Stringfellow ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Strom ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Strope ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Strother ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Stroud ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Strouse ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Strunk ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -7013,7 +7040,6 @@
  Swinford ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Switzer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Sykes ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Synder ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Saadya ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sabastian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sabih ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -7186,6 +7212,7 @@
  Sibyl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Sicheii ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sigehere ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Sigenert ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sigfriede ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Sigrid ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Sigwald ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -7249,6 +7276,7 @@
  Stefano ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stefford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stefn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Stefon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stella ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
     Frank_Philip_Stella~1nz (^painter~3) United States minimalist painter
  Stephania ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -7265,7 +7293,6 @@
  Stewert ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stille ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stoc ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Stockhard ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Stockhart ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Stocwiella ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Stodd ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -7301,7 +7328,6 @@
  Syed ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sying ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sylvana ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Sylvester ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Sylvonna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Symontun ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Samatha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -7347,7 +7373,6 @@
  Sherill ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Sherley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Sherly ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Sherril ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Shery ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Shirely ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Shirl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -7646,7 +7671,7 @@
     pocket~7n 
     best~9v 
     take_up~5v 
- spit ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=spat 
+ spit ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=spat 
     expectoration~1nz (^projection~1) the act of spitting
     spit~2nz (^skewer~1) a skewer for holding meat over a fire
     saliva~1nz (^secretion~1) a clear liquid secreted into the mouth by the salivary glands and mucous glands of the mouth
@@ -7655,7 +7680,7 @@
     spit_out~3vz utter with anger or contempt
     skewer~2vz drive a skewer through
     patter~4v 
- snap ( meanings=26 glosses=16 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ snap ( meanings=26 glosses=16 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     centering~1nz (^pass~2) putting the ball in play by passing it (between the legs) to a back
     grab~1n 
     snap~3nz (^motion~2) the act of snapping the fingers
@@ -7685,7 +7710,7 @@
  shooting ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     shot~2n 
     shooting~2nz (^homicide~1) killing someone by gunfire
- snipe ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ snipe ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     snipe~1nz (^gunfire~1) a gunshot from a concealed location
     snipe~2nz (^limicoline_bird~1) Old or New World straight-billed game bird of the sandpiper family
     round~24v 
@@ -7746,7 +7771,7 @@
     smack~2nz (^kiss~2) an enthusiastic kiss
     spoon~4v 
  soul_kiss ( meanings=1 NOUN NOUN_SINGULAR ) 
-    French_kiss~1n 
+    deep_kiss~1n 
  stroking ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     stroke~1n 
  spying ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
@@ -7965,7 +7990,7 @@
     spontaneous~3az 
  stillbirth ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     miscarriage~1n 
- start ( meanings=22 glosses=15 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT PRESENTATION_VERB ) 
+ start ( meanings=22 glosses=16 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT PRESENTATION_VERB ) 
     commencement~1n 
     starting~1nz (^play~4) a turn to be a starter 
     startle~1nz (^physiological_reaction~1) a sudden involuntary movement
@@ -7983,14 +8008,11 @@
     get_going~2vz begin or set in motion
     startle~3vz move or jump suddenly, as if in surprise or alarm
     depart~3vz leave
-    pop~16v 
+    bug_out~1vz bulge outward
     take_up~11vz begin work or acting in a certain capacity, office or job
     begin~6vz begin an event that is implied and limited by the nature or inherent function of the direct object
     begin~7vz have a beginning, in a temporal, spatial, or evaluative sense
     begin~8vz have a beginning characterized in some specified way
- startup ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
-    inauguration~1n 
-    startup~2nz (^beginning~1) the act of setting in operation
  starting ( meanings=3 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB ) 
     start~2n 
     starting~2az appropriate to the beginning or start of an event
@@ -8158,8 +8180,6 @@
     shlep~1nz (^journey~1) a tedious or difficult journey
     schlepper~1n 
     pull_along~1v 
- space_travel ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    spacefaring~1nz (^voyage~1) a voyage outside the Earth's atmosphere
  serving ( meanings=2 NOUN NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB ) 
     service_of_process~1n 
     portion~3n 
@@ -8352,7 +8372,7 @@
     spread_out~3vz move away from each other
     dispel~2vz to cause to separate and go in different directions
     spread~22v 
- scattering ( meanings=5 glosses=1 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB (null) ) 
+ scattering ( meanings=5 glosses=1 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     scatter~1n 
     dispersion~3n 
     sprinkle~2n 
@@ -8403,7 +8423,7 @@
     partition~1n 
  second_nature ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     second_nature~1nz (^habit~1) acquired behavior that is practiced so long it seems innate
- second ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NUMBER NOUN_NUMBER COMMON4 COMMON2 COMMON1 ORDINAL KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT TIMEWORD (null) (null) ) comparative=seconder 
+ second ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NUMBER NOUN_NUMBER COMMON4 COMMON2 COMMON1 ORDINAL KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT TIMEWORD ) comparative=seconder 
     secondly~1bz in the second place
     second~2vz transfer an employee to a different, temporary assignment
     indorse~4vz give support or one's approval to
@@ -8651,7 +8671,7 @@
  square_dance ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR VERB_NOOBJECT VERB_CONJUGATE1 ) 
     square_dancing~1n 
     square_dance~2vz dance in formation
- square ( meanings=26 glosses=22 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ square ( meanings=26 glosses=22 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     square~1nz (^hand_tool~1) a hand tool consisting of two straight arms at right angles
     square~2nz (^artifact~1) any artifact having a shape similar to a plane geometric figure with four equal sides and four right angles
     public_square~2nz (^parcel~4) an open area at the meeting of two or more streets
@@ -8706,7 +8726,7 @@
     safety_squeeze~1nz (^squeeze_play~1) the runner on third base waits to start home until the batter has bunted successfully
  safety_squeeze ( meanings=1 NOUN NOUN_SINGULAR ) 
     safety_squeeze_play~1n 
- serve ( meanings=16 glosses=11 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
+ serve ( meanings=16 glosses=12 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     service~4n 
     serve~2vz put the ball into play
     serve~3vz do duty or hold offices
@@ -8718,11 +8738,11 @@
     wait_on~1vz work for or be a servant to
     service~17v 
     serve~11vz devote one's life or efforts to, as of countries, institutions, or ideas
-    do~11v 
+    answer~14v 
     serve~13vz contribute or conduce to
     serve_well~1vz promote, benefit, or be useful or beneficial to
     function~10vz serve a purpose, role, or function
-    do~12v 
+    do~12vz spend time in prison or in a labor camp
  swimming_stroke ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     swimming_stroke~1nz (^stroke~4) a method of moving the arms and legs to push against the water and propel the swimmer forward
  shank ( meanings=9 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
@@ -8930,7 +8950,7 @@
     segment~4vz divide into segments
  surgical_incision ( meanings=1 NOUN NOUN_SINGULAR ) 
     section~1n 
- selective ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ selective ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     selective~1az tending to select
     selective~2az characterized by very careful or fastidious selection
     selective~3az 
@@ -9066,7 +9086,7 @@
     transgress~2vz commit a sin
     drop_the_ball~1vz commit a faux pas or a fault or make a serious mistake
  sloth ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
-    laziness~1nz (^mortal_sin~1) apathy and inactivity in the practice of virtue
+    acedia~1nz (^mortal_sin~1) apathy and inactivity in the practice of virtue
     tree_sloth~1nz (^edentate~1) any of several slow-moving arboreal mammals of South America and Central America
     slothfulness~1nz (^disinclination~1) a disinclination to work or exert yourself
  sexual_assault ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -9215,7 +9235,7 @@
     snuffle~1n 
     sniff~2v 
     snuffle~2v 
- snivel ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ snivel ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     sniffle~1n 
     sniveling~1n 
     sniffle~3v 
@@ -9299,7 +9319,7 @@
     self-stimulation~1n 
  sleeping_around ( meanings=1 NOUN NOUN_SINGULAR ) 
     promiscuity~1n 
- sleeping ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB (null) ) 
+ sleeping ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB ) 
     sleeping~1nz (^activity~3) the suspension of consciousness and decrease in metabolic rate
     dormancy~1nz (^rest~1) quiet and inactive restfulness
     sleeping~3nz (^sleep~2) the state of being asleep
@@ -9365,7 +9385,7 @@
     mass~6n 
     spy~7vz catch sight of
     sight~9vz take aim by looking through the sights of a gun
- sniff ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ sniff ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     snuff~1nz (^smell~1) sensing an odor by inhaling through the nose
     sniffle~2vz inhale audibly through the nose
     whiff~8vz perceive by inhaling through the nose
@@ -9432,6 +9452,9 @@
     starter~7nz (^contestant~1) a contestant in a team sport who is in the game at the beginning
  strip_mining ( meanings=1 NOUN NOUN_SINGULAR ) 
     opencast_mining~1n 
+ sericulture ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    sericulture~1nz (^production~4) the production of raw silk by raising silkworms
+    sericulture~2nz (^activity~4) raising silkworms in order to obtain raw silk
  shaping ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     formation~2n 
     defining~1n 
@@ -9714,7 +9737,7 @@
     head_trip~1nz (^gratification~1) the act of satisfying your own desires and giving yourself pleasure
     incontinence~1nz (^indiscipline~1) indiscipline with regard to sensuous pleasures
  splurge ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
-    binge~2nz (^indulgence~3) any act of immoderate indulgence
+    orgy~3nz (^indulgence~3) any act of immoderate indulgence
     splurge~2nz (^flash~7) an ostentatious display
     splurge~3vz be showy or ostentatious
     fling~7vz indulge oneself
@@ -9805,13 +9828,6 @@
     cut-rate_sale~1n 
  selloff ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
     selloff~1nz (^sale~3) a sale of a relatively large number of assets at a low price typically done to dispose of them rather than as normal trade
- stampede ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
-    stampede~1nz (^group_action~1) a headlong rush of people on a common impulse
-    stampede~2nz (^travel~3) a wild headlong rush of frightened animals
-    stampede~3vz run away in a stampede
-    stampede~4vz cause to run in panic
-    stampede~5vz act, usually en masse, hurriedly or on an impulse
-    stampede~6vz cause a group or mass of people to act on an impulse or hurriedly and impulsively
  social_control ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     social_control~1nz (^group_action~1) control exerted by group action
  subordination ( meanings=5 glosses=5 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -9869,8 +9885,6 @@
     adhere~5vz be a devoted follower or supporter
     stick~21vz endure
     stick~22vz be or become fixed
- self-mortification ( meanings=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
-    self-abasement~1n 
  submission ( meanings=7 glosses=7 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     compliance~1nz (^group_action~1) the act of submitting
     submission~2nz (^contention~2) a contention presented by a lawyer to a judge or jury as part of the case he is arguing
@@ -9912,17 +9926,6 @@
     summary_judgment~1n 
  special_verdict ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     special_verdict~1nz (^finding_of_fact~1) a verdict rendered on certain specific factual issues posed by the court without finding for one party or the other
- special ( meanings=10 glosses=9 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) 
-    special~1nz (^television_program~1) a television production that features a particular person or work or topic
-    special~2nz (^offer~2) a special offering that is featured in advertising
-    exceptional~1az surpassing what is common or usual or expected
-    limited~4az having a specific function or scope
-    peculiar~4az unique or specific to a person or thing or category
-    special~6az for a special service or occasion
-    particular~9az first and most important
-    special~8az adapted to or reserved for a particular purpose
-    extra~6az added to a regular schedule
-    special~10az 
  Scopes ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
     John_Scopes~1n 
  show_trial ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -9946,11 +9949,6 @@
  seating ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:VERB ) 
     seating~1nz (^service~10) the service of ushering people to their seats
     seating_room~1n 
- solace ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
-    consolation~1n 
-    consolation~2n 
-    solacement~2n 
-    comfort~9v 
  sustenance ( meanings=3 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     upkeep~2n 
     nutriment~1nz (^food~1) a source of materials to nourish the body
@@ -9961,7 +9959,7 @@
     shape-up~1nz (^engagement~3) a way of hiring longshoremen by the day
  sentimentalisation ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     sentimentalization~1n 
- slander ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ slander ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT ) 
     defamation~1nz (^attack~6) an abusive attack on a person's character or good name
     slander~2nz (^calumniation~1) words falsely spoken that damage the reputation of another
     besmirch~1vz charge falsely or with malicious intent
@@ -9972,7 +9970,7 @@
  scandalisation ( meanings=2 NOUN NOUN_SINGULAR COMMON1 ) 
     outrage~2n 
     scandalization~2n 
- snub ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ snub ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) 
     cut~9n 
     repulse~1n 
     snub~3az unusually short
@@ -9980,7 +9978,7 @@
     disregard~5v 
  silent_treatment ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     silent_treatment~1nz (^slight~1) an aloof refusal to speak to someone you know
- silent ( meanings=6 glosses=6 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ silent ( meanings=6 glosses=6 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     mute~3az unable to speak because of hereditary deafness
     silent~2az having a frequency below or above the range of human audibility
     unsounded~1az not made to sound
@@ -10029,7 +10027,7 @@
     swerving~1n 
     yaw~1nz (^turn~8) an erratic deflection from an intended course
     trend~5v 
- smooth ( meanings=13 glosses=11 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=smoother 
+ smooth ( meanings=13 glosses=11 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=smoother 
     smooth~1nz (^accomplishment~1) the act of smoothing
     unruffled~1az free from disturbance by heavy waves
     smooth~3az lacking obstructions or difficulties
@@ -10115,7 +10113,7 @@
     variola~1n 
  slow_virus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     slow_virus~1nz (^virus~1) a virus that remains dormant in the body for a long time before symptoms appear
- slow ( meanings=12 glosses=9 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=slowest 
+ slow ( meanings=12 glosses=9 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=slowest 
     dull~1az not active or brisk
     dull~4az slow to learn or understand
     slow~3az not moving quickly
@@ -10232,13 +10230,13 @@
  silverfish ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) plural=silverfishes 
     silverfish~1nz (^goldfish~1) a silvery variety of Carassius auratus
     Lepisma_saccharina~1n 
- striped ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ striped ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     stripy~1az marked or decorated with stripes
     striped~2az 
  soldierfish ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     soldier-fish~1n 
- stickleback ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    prickleback~1nz (^spiny-finned_fish~1) small pugnacious mostly scaleless spiny-backed fishes of northern fresh and littoral waters having elaborate courtship
+ stickleback ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    prickleback~1n 
  Syngnathidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Syngnathidae~1nz (^fish_family~1) pipefishes
  Syngnathus_hildebrandi ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -10331,7 +10329,7 @@
     Pristis_pectinatus~1nz (^sawfish~1) commonly found in tropical bays and estuaries
  spotted_eagle_ray ( meanings=1 NOUN NOUN_SINGULAR ) 
     spotted_ray~1n 
- spotted ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ spotted ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     patched~2az having spots or patches 
     spotted~2az 
  spotted_ray ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -10538,7 +10536,7 @@
     tawny_owl~1nz (^owl~1) reddish-brown European owl having a round head with black eyes
  Strix_varia ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     barred_owl~1nz (^owl~1) large owl of eastern North America having its breast and abdomen streaked with brown
- screech ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ screech ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     scream~2n 
     scream~3n 
     squawk~4v 
@@ -10829,7 +10827,7 @@
     slick_up~2v 
  sage_grouse ( meanings=1 NOUN NOUN_SINGULAR ) 
     Centrocercus_urophasianus~1n 
- sage ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ sage ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     sage~1nz (^herb~1) aromatic fresh or dried grey-green leaves used widely as seasoning for meats and fowl and game etc
     sage~2nz (^wise_man~1) a mentor in spiritual and philosophical topics who is renowned for profound wisdom
     salvia~1n 
@@ -11388,7 +11386,7 @@
     Scottie~1nz (^terrier~1) old Scottish breed of small long-haired usually black terrier with erect tail and ears
  silky_terrier ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Sydney_silky~1nz (^terrier~1) Australian breed of toy dogs having a silky blue coat
- silky ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) comparative=silkiest 
+ silky ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) comparative=silkiest 
     slick~6a 
     silky~2az 
  Sydney_silky ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -11472,7 +11470,7 @@
     Crocuta_crocuta~1n 
  silver_fox ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     silver_fox~1nz (^Vulpes_vulpes~1) red fox in the color phase when its pelt is tipped with white
- silver ( meanings=13 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ silver ( meanings=13 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     flatware~1nz (^silverware~1) silverware eating utensils
     silver_medal~1nz (^prize~1) a trophy made of silver that is usually awarded for winning second place in a competition
     silver_gray~1nz (^gray~3) a light shade of grey
@@ -11880,7 +11878,7 @@
     Spalacidae~1nz (^mammal_family~1) mole rats
  Spalax ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Spalax~1n 
- stable ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ stable ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     horse_barn~1nz (^farm_building~1) a farm building for housing horses or other livestock
     unchanging~1az showing little if any change
     stable~3az maintaining equilibrium
@@ -11923,7 +11921,7 @@
     high_stepper~1n 
     stepping_motor~1n 
     hoofer~1nz (^dancer~1) a professional dancer
- sorrel ( meanings=6 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ sorrel ( meanings=6 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     sorrel~1nz (^horse~1) a horse of a brownish orange to light brown color
     common_sorrel~1n 
     Jamaica_sorrel~1n 
@@ -12138,7 +12136,7 @@
     Salmonidae~1nz (^fish_family~1) salmon and trout
  salmonid ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
     salmonid~1nz (^soft-finned_fish~1) soft-finned fishes of cold and temperate waters
- salmon ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN (null) ) 
+ salmon ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     salmon~1nz (^food_fish~1) any of various large food and game fishes of northern waters
     salmon~2nz (^chromatic_colour~1) a pale pinkish orange color
     salmon~3nz (^fish~2) flesh of any of various marine or freshwater fish of the family Salmonidae
@@ -12371,7 +12369,7 @@
  sergeant_major ( meanings=2 NOUN NOUN_SINGULAR ) 
     Abudefduf_saxatilis~1n 
     command_sergeant_major~1n 
- slippery ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ slippery ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     slippy~1az causing or tending to cause things to slip or slide
     tricky~3az not to be trusted
     slippery~3az 
@@ -13069,8 +13067,6 @@
     iron~1n 
  Sporanox ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     itraconazole~1n 
- screw_jack ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
-    jackscrew~1nz (^jack~3) screw-operated jack
  spillikin ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     jackstraw~1n 
  scroll_saw ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -13100,7 +13096,7 @@
     peaked_cap~1n 
  suede_glove ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     kid_glove~1nz (^glove~3) a glove made of fine soft leather
- suede ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ suede ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     suede_cloth~1n 
     suede_leather~1n 
     suede~3az 
@@ -13220,7 +13216,7 @@
     noose~1n 
  silk_stocking ( meanings=1 NOUN NOUN_SINGULAR ) 
     rayon_stocking~1n 
- sweet ( meanings=16 glosses=14 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ sweet ( meanings=16 glosses=14 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE ) 
     sweetness~3nz (^taste_property~1) the property of tasting as if it contains sugar
     sugariness~2nz (^taste~3) the taste experience when sugar dissolves in the mouth
     confection~2nz (^treat~2) a food rich in sugar
@@ -13256,7 +13252,7 @@
     shroud~4vz wrap in a shroud
     hide~4v 
     shroud~6vz form a cover like a shroud
- scanty ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) comparative=scantiest 
+ scanty ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) comparative=scantiest 
     step-in~1nz (^underpants~1) short underpants for women or children
     bare~2a 
  step-in ( meanings=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
@@ -13359,8 +13355,8 @@
     pool_table~1n 
  soda_bottle ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     pop_bottle~1nz (^bottle~1) a bottle for holding soft drinks
- soda ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
-    pop~3n 
+ soda ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
+    soda_water~1nz (^soft_drink~1) a sweet drink containing carbonated water and flavoring
     soda_ash~1nz (^salt~3) a sodium salt of carbonic acid
  saw ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) conjugate=sawn 
     sawing_machine~1nz (^power_tool~1) a power tool for cutting wood
@@ -13656,7 +13652,7 @@
     satchel~1nz (^baggage~1) luggage consisting of a small case with a flat bottom and a shoulder strap
  sateen ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     sateen~1nz (^material~1) a cotton fabric with a satiny finish
- satellite ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ satellite ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) 
     artificial_satellite~1n 
     satellite~2nz (^celestial_body~1) any celestial body orbiting around a planet or star
     planet~3n 
@@ -13765,7 +13761,7 @@
     scenery~2nz (^neighborhood~2) the appearance of a place
  scenic_railway ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     scenic_railway~1nz (^railroad~2) small railway in an amusement park
- scenic ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ scenic ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     scenic~1az used of locations
     scenic~2az of or relating to the stage or stage scenery
  schematic ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
@@ -13860,7 +13856,7 @@
     screwtop~1nz (^cover~8) the top of a container that must be screwed off and on
  screw_wrench ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     screw_wrench~1nz (^adjustable_spanner~1) adjustable wrench that has one jaw that can be adjusted by turning a screw
- scribble ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ scribble ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     scrabble~1n 
     scratch~3n 
     scrabble~2v 
@@ -14006,7 +14002,7 @@
     peanut_gallery~1nz (^area~1) rearmost or uppermost area in the balcony containing the least expensive seats
  second_gear ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     second_gear~1nz (^gear~3) the gear that has the second lowest forward gear ratio in the gear box of a motor vehicle
- second_hand ( meanings=3 glosses=3 NOUN ADVERB NOUN_SINGULAR (null) ) 
+ second_hand ( meanings=3 glosses=3 NOUN ADVERB NOUN_SINGULAR ) 
     second_hand~1nz (^hand~3) hand marking seconds on a timepiece
     second_hand~2nz (^intermediator~1) an intermediate person
     second_hand~3bz from a source of previously owned goods
@@ -14110,7 +14106,7 @@
  selvedge ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     selvage~1nz (^edge~2) the edge of a fabric that is woven so that it will not ravel or fray
     selvage~2nz (^border~1) border consisting of an ornamental fringe at either end of an oriental carpet
- semaphore ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ semaphore ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     semaphore~1nz (^apparatus~1) an apparatus for visual signaling with lights or mechanically moving arms
     semaphore~2vz convey by semaphore, of information
     semaphore~3vz send signals by or as if by semaphore
@@ -14361,7 +14357,7 @@
     fragment~1n 
  sharkskin ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     sharkskin~1nz (^material~1) a smooth crisp fabric
- sharp ( meanings=16 glosses=15 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=sharper 
+ sharp ( meanings=16 glosses=15 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=sharper 
     sharp~1nz (^sewing_needle~2) a long thin sewing needle with a sharp point
     sharp~2nz (^musical_notation~1) a musical notation indicating one half step higher than the note named
     shrewd~1az marked by practical hardheaded intelligence
@@ -14747,7 +14743,7 @@
     signal~1n 
  signboard ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     sign~1n 
- sign ( meanings=20 glosses=16 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=signer 
+ sign ( meanings=20 glosses=16 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=signer 
     signboard~1nz (^structure~1) structure displaying a board on which advertisements can be posted
     mark~6n 
     signaling~1n 
@@ -15002,6 +14998,8 @@
     ski_tow~1n 
  Skivvies ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
     Skivvies~1nz (^underwear~1) men's underwear consisting of cotton T-shirt and shorts
+ skull_and_crossbones ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
+    skull_and_crossbones~1nz (^emblem~1) emblem warning of danger or death
  skullcap ( meanings=3 glosses=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     skullcap~1nz (^cap~1) rounded brimless cap fitting the crown of the head
     calvaria~1nz (^bone~2) the dome of the skull
@@ -15225,7 +15223,7 @@
     small_stores~1nz (^commissary~1) personal items conforming to regulations that are sold aboard ship or at a naval base and charged to the person's pay
  smart_bomb ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     smart_bomb~1nz (^bomb~1) a bomb that can be guided to its target
- smart ( meanings=10 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_NOOBJECT (null) ) 
+ smart ( meanings=10 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_NOOBJECT ) 
     smarting~1nz (^pain~5) a kind of pain such as that caused by a wound or a burn or a sore
     smart~2az capable of independent and apparently intelligent action
     sassy~1az improperly forward or bold
@@ -15897,7 +15895,7 @@
     squash_racket~1n 
  squawk_box ( meanings=1 NOUN NOUN_SINGULAR ) 
     intercom_speaker~1n 
- squawk ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ squawk ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     beef~2n 
     squawk~2nz (^noise~5) the noise of squawking
     beef~4v 
@@ -15981,7 +15979,7 @@
     stairwell~1nz (^well~3) a vertical well around which there is a stairway
  stall_bar ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     stall_bar~1nz (^gymnastic_apparatus~1) a gymnastic apparatus used for strengthening exercises
- stammel ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 (null) ) 
+ stammel ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     stammel~1nz (^material~1) a coarse woolen cloth formerly used for undergarments and usually dyed bright red
  stamp_album ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     stamp_album~1nz (^album~1) an album for stamps
@@ -16170,7 +16168,7 @@
     stele~2nz (^vascular_tissue~1) the usually cylindrical central vascular portion of the axis of a vascular plant
  stela ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     stele~1n 
- stemmer ( meanings=5 glosses=3 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN (null) ) 
+ stemmer ( meanings=5 glosses=3 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     stemmer~1nz (^device~2) a device for removing stems from fruit
     stemmer~2nz (^tamping_bar~1) a miner's tamping bar for ramming packing in over a blasting charge
     stemming_algorithm~1n 
@@ -16301,7 +16299,7 @@
     fireroom~1nz (^chamber~2) chamber or compartment in which the furnaces of a ship are stoked or fired
  stokehole ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     stokehold~1n 
- stole ( meanings=1 glosses=1 VERB_PAST NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN GRADE3_4 posdefault:VERB ) conjugate=steal 
+ stole ( meanings=1 glosses=1 VERB_PAST NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB ) conjugate=steal 
     stole~1nz (^scarf~1) a wide scarf worn about their shoulders by women
  stomacher ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     stomacher~1nz (^garment~1) garment consisting of a V-shaped panel of stiff material worn over the chest and stomach in the 16th century
@@ -16928,10 +16926,8 @@
  swimming_trunks ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     bathing_trunks~1nz (^bathing_suit~1) swimsuit worn by men while swimming
  swimsuit ( meanings=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
-    swimwear~1n 
- swimwear ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     bathing_suit~1n 
- swimming_costume ( meanings=1 NOUN NOUN_SINGULAR ) 
+ swimwear ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     swimsuit~1n 
  swing_door ( meanings=1 NOUN NOUN_SINGULAR ) 
     swinging_door~1n 
@@ -17125,6 +17121,8 @@
  sentimentalism ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     sentimentalism~1nz (^sentimentality~1) a predilection for sentimentality
     sentimentalism~2nz (^expression~6) the excessive expression of tender feelings, nostalgia, or sadness in any form
+ stoicism ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
+    stolidness~1n 
  stolidness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     stolidity~1nz (^emotionlessness~1) an indifference to pleasure or pain
  sunniness ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -17406,7 +17404,7 @@
     stigma~2nz (^spiracle~1) an external tracheal aperture in a terrestrial arthropod
     stain~3n 
     stigma~4nz (^reproductive_structure~1) the apical end of the style where deposited pollen enters the pistil
- strawberry ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN (null) ) 
+ strawberry ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
     hemangioma_simplex~1nz (^birthmark~1) a soft red birthmark
     strawberry~2nz (^berry~1) sweet fleshy red fruit
     strawberry~3nz (^herbaceous_plant~1) any of various low perennial herbs with many runners and bearing white flowers followed by edible fruits having many small achenes scattered on the surface of an enlarged red pulpy berry
@@ -17970,7 +17968,7 @@
     florid~1a 
     sanguine~3az confidently optimistic and cheerful
     sanguine~4az 
- saffron ( meanings=3 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ saffron ( meanings=3 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     orange_yellow~1n 
     saffron~2nz (^seasoning~2) dried pungent stigmas of the Old World saffron crocus
     saffron_crocus~1n 
@@ -17980,11 +17978,11 @@
     cerulean~1n 
     cerulean~2a 
     sky-blue~3az 
- solferino ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ solferino ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     purplish_pink~1n 
  salmon_pink ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     apricot~1n 
- sepia ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ sepia ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     reddish_brown~1n 
     sepia~2nz (^pigment~2) rich brown pigment prepared from the ink of cuttlefishes
     sepia~3az 
@@ -18200,8 +18198,6 @@
     lead~7n 
  sempiternity ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     perpetuity~1nz (^permanence~1) the property of being perpetual
- superhigh_frequency ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
-    SHF~1nz (^radio_frequency~1) 3 to 30 gigahertz
  SHF ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     superhigh_frequency~1n 
  swiftness ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
@@ -18221,6 +18217,8 @@
     spatial_property~1n 
  symmetricalness ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     symmetry~2n 
+ skewness ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
+    lopsidedness~1n 
  sinistrality ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     left-handedness~1n 
  slope ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_NOOBJECT ) 
@@ -18266,7 +18264,7 @@
     fair_chance~1nz (^chance~2) a reasonable probability of success
  slim_chance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     fat_chance~1nz (^chance~2) little or no chance of success
- slim ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE VERB_NOOBJECT (null) ) comparative=slimmest 
+ slim ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE VERB_NOOBJECT ) comparative=slimmest 
     slender~1a 
     slender~3a 
     slim~3az 
@@ -18367,7 +18365,7 @@
  strong_suit ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     speciality~3n 
     strong_suit~2nz (^long_suit~2) a long suit including high cards
- strong ( meanings=11 glosses=10 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=strongest 
+ strong ( meanings=11 glosses=10 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=strongest 
     firm~2az strong and sure
     warm~6az freshly made or left
     hard~9az being distilled rather than fermented
@@ -18518,7 +18516,7 @@
     Attilio~1nz (^beard~3) a small patch of facial hair just below the lower lip and above the chin
  solid_body_substance ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     solid_body_substance~1nz (^body_substance~1) the solid parts of the body
- solid ( meanings=19 glosses=14 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ solid ( meanings=19 glosses=14 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE ) 
     solid~1nz (^shape~1) a three-dimensional shape
     solid_state~1nz (^state~7) the state in which a substance has no tendency to flow under moderate stress
     solid~3nz (^matter~1) matter that is solid at room temperature and pressure
@@ -18876,7 +18874,7 @@
     abducens~1nz (^cranial_nerve~1) a small motor nerve supplying the lateral rectus muscle of the eye
  seventh_cranial_nerve ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     facial~2nz (^cranial_nerve~1) cranial nerve that supplies facial muscles
- seventh ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN (null) ) 
+ seventh ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN ) 
  spinal_accessory ( meanings=1 NOUN NOUN_SINGULAR ) 
     eleventh_cranial_nerve~1n 
  systema_nervosum_centrale ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -19278,7 +19276,7 @@
     subconsciousness~1nz (^cognitive_state~1) a state of mind not immediately available to consciousness
  snoopiness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     nosiness~1nz (^inquisitiveness~1) offensive inquisitiveness
- snarl ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ snarl ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     maze~2nz (^perplexity~1) something jumbled or confused
     snarl~2nz (^facial_expression~2) an angry vicious expression
     snarl~3nz (^vocalization~1) a vicious angry growl
@@ -19534,7 +19532,7 @@
     dot_product~1nz (^real~3) a real number that is the product of two vectors
  strange_attractor ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     chaotic_attractor~1nz (^attractor~2) an attractor for which the approach to its final point in phase space is chaotic
- strange ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=stranger 
+ strange ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=stranger 
     unknown~5az not known before
     unusual~3az being definitely out of the ordinary and unexpected
     foreign~1a 
@@ -20078,7 +20076,7 @@
  shorthand ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     stenography~2n 
     shorthand~2az written in abbreviated or symbolic form
- script ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ script ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT ) 
     script~1nz (^writing_system~1) a particular orthography or writing system
     handwriting~2n 
     book~6n 
@@ -20148,7 +20146,7 @@
     subsequence~2n 
  single-spacing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     single-spacing~1nz (^typewriting~1) typing that does not leave lines blank
- scrawl ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ scrawl ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     scribble~2n 
     scribble~4v 
  squiggle ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -20372,6 +20370,8 @@
     surrebutter~1n 
  surrejoinder ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     surrejoinder~1nz (^pleading~1) a pleading by the plaintiff in reply to the defendant's rejoinder
+ Stamp_Act ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
+    Stamp_Act~1nz (^legislative_act~1) an act passed by the British Parliament in 1756 that raised revenue from the American Colonies by a duty in the form of a stamp required on all newspapers and legal or commercial documents
  special_act ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     special_act~1nz (^legislative_act~1) a legislative act that applies only to a particular person or particular district
  software_program ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -20539,7 +20539,7 @@
  send-off ( meanings=2 NOUN NOUN_SINGULAR ) 
     bon_voyage~1n 
     start-off~1n 
- salute ( meanings=9 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ salute ( meanings=9 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     salute~1nz (^salutation~2) an act of greeting with friendly words and gestures like bowing or lifting the hat
     military_greeting~1n 
     salutation~3n 
@@ -20642,18 +20642,18 @@
     compunction~1n 
  self-reproof ( meanings=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
     self-reproach~1n 
- scorn ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ scorn ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
     contempt~3n 
     contempt~4n 
     reject~4v 
     contemn~1v 
- scoff ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ scoff ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     scoffing~1nz (^derision~2) showing your contempt by derision
     flout~1vz treat with contemptuous disregard
     flout~2vz laugh at with contempt and derision
  scoffing ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
     mockery~2n 
- sneer ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ sneer ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     leer~2nz (^contempt~3) a facial expression of contempt or scorn
     sneer~2nz (^contempt~3) a contemptuous or scornful remark
     sneer~3vz smile contemptuously
@@ -20717,7 +20717,7 @@
     irony~2n 
  satire ( meanings=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     sarcasm~1n 
- scream ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ scream ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     wow~1nz (^laugh~1) a joke that seems extremely funny
     screeching~1nz (^shout~1) sharp piercing cry
     screeching~2nz (^noise~5) a high-pitched noise resembling a human cry
@@ -20831,7 +20831,7 @@
     single_quote~1nz (^quote~2) a single quotation mark
  scare_quote ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     scare_quote~1nz (^quote~2) the use of quotation marks to indicate that it is not the authors preferred terminology
- scare ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ scare ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
     panic_attack~1nz (^fear~1) a sudden attack of fear
     panic~2nz (^anxiety~2) sudden mass fear and anxiety over anticipated events
     frighten~1vz cause fear in
@@ -20885,7 +20885,7 @@
     whole_note~1n 
  sixteenth_note ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     semiquaver~1nz (^note~5) a musical note having the time value of a sixteenth of a whole note
- sixteenth ( ADJECTIVE ADJECTIVE_NUMBER COMMON2 COMMON1 ORDINAL GRADE1_2 posdefault:NOUN (null) ) 
+ sixteenth ( ADJECTIVE ADJECTIVE_NUMBER COMMON2 COMMON1 ORDINAL GRADE1_2 posdefault:NOUN ) 
  semiquaver ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     sixteenth_note~1n 
  sixty-fourth_note ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -20904,21 +20904,21 @@
     signing~1nz (^language~3) language expressed by visible hand gestures
  signing ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     sign_language~1n 
- scowl ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ scowl ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:NOUN VERB_NOOBJECT ) 
     frown~1n 
     scowl~2vz frown with displeasure
- simper ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ simper ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     simper~1nz (^smile~1) a silly self-conscious smile
     smirk~2vz smile affectedly or derisively
- smile ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ smile ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     grinning~1nz (^facial_expression~2) a facial expression characterized by turning up the corners of the mouth
     smile~2vz change one's facial expression by spreading the lips, often to signal pleasure
     smile~3vz express with a smile
- smiling ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:VERB (null) ) 
+ smiling ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:VERB ) 
     smile~1n 
     twinkly~1az smiling with happiness or optimism
     smiling~3az 
- smirk ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ smirk ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     smirk~1nz (^smile~1) a smile expressing smugness or scorn instead of pleasure
     simper~2v 
  straight_face ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -21169,7 +21169,7 @@
     soliloquy~4nz 
  screenplay ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     screenplay~1nz (^book~6) a script for a film including dialogue and descriptions of characters and sets
- spiel ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ spiel ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     patter~1n 
     spiel~2vz speak at great length
     play~42v 
@@ -21188,7 +21188,7 @@
     shadow_show~1n 
  serious_music ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     classical~1nz (^musical_genre~1) traditional genre of music conforming to an established form and appealing to critical interest and developed musical taste
- serious ( meanings=7 glosses=5 ADJECTIVE ADJECTIVE_NORMAL EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ serious ( meanings=7 glosses=5 ADJECTIVE ADJECTIVE_NORMAL EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     grievous~1a 
     serious~2az requiring effort or concentration
     serious~3az of great consequence
@@ -21327,7 +21327,7 @@
  sonant ( meanings=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     voiced_sound~1n 
     soft~17a 
- shout ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ shout ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     vociferation~1nz (^vocalization~1) a loud utterance
     clapperclaw~1vz use foul or abusive language towards
     outcry~2v 
@@ -21339,7 +21339,7 @@
     hilarious~1a 
     screaming~4az so extremely intense as to evoke screams
     screaming~5az resembling a scream in effect
- shriek ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ shriek ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     screaming~1n 
     screaming~2n 
     shrill~4v 
@@ -21352,7 +21352,7 @@
  shouting ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     yelling~1nz (^shout~1) uttering a loud inarticulate cry as of pain or excitement
     cheering~1nz (^encouragement~2) encouragement in the form of cheers from spectators
- snort ( meanings=6 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ snort ( meanings=6 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     razz~1n 
     snigger~1n 
     snort~3vz make a snorting sound by exhaling hard
@@ -21361,13 +21361,13 @@
     huff~3vz inhale recreational drugs
  swearword ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     expletive~1n 
- snicker ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ snicker ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     snort~2n 
     snigger~2v 
  sibilation ( meanings=2 NOUN NOUN_SINGULAR COMMON1 ) 
     assibilation~1n 
     hiss~2n 
- sigh ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB INTERJECTION NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ sigh ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB INTERJECTION NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     suspiration~1nz (^vocalization~1) an utterance made by exhaling audibly
     sigh~2nz (^sound~5) a sound like a person sighing
     suspire~2vz heave or utter a sigh
@@ -21398,7 +21398,7 @@
     sandhi~1nz (^articulation~4) the articulatory process whereby the pronunciation of a word or morpheme changes when it is followed immediately by another
  social_intercourse ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     intercourse~2nz (^intercommunication~1) communication between individuals
- schmooze ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ schmooze ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     confab~1n 
     shmoose~1vz talk idly or casually and in a friendly way
  schmoose ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON1 VERB_NOOBJECT ) 
@@ -21474,7 +21474,7 @@
     sackcloth_and_ashes~1nz (^display~6) a display of extreme remorse or repentance or grief
  self-condemnation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR posdefault:NOUN ) 
     self-accusation~1nz (^confession~5) an admission that you have failed to do or be something you know you should do or be
- skinny ( meanings=6 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=skinniest 
+ skinny ( meanings=6 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=skinniest 
     skinny~1nz (^information~3) confidential information about a topic or person
     weedy~1az being very thin
     cheeseparing~1az giving or spending with reluctance
@@ -21542,7 +21542,7 @@
  scepter ( meanings=2 NOUN NOUN_SINGULAR COMMON2 ) 
     verge~3n 
     sceptre~2n 
- shrug ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ shrug ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     shrug~1nz (^motion~3) a gesture involving the shoulders
     shrug~2vz raise one's shoulders to indicate indifference or resignation
  sign_of_the_cross ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -21589,7 +21589,7 @@
     smolder~3vz have strong suppressed feelings
  surface_fire ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     surface_fire~1nz (^forest_fire~1) a forest fire that burns only the surface litter and undergrowth
- shame ( meanings=7 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ shame ( meanings=7 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     pity~2nz (^misfortune~1) an unfortunate development
     shame~2nz (^feeling~1) a painful emotion resulting from an awareness of inadequacy or guilt
     ignominy~1nz (^dishonour~2) a state of dishonor
@@ -21703,7 +21703,7 @@
     slop~7v 
  sputtering ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     splatter~1n 
- squeal ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ squeal ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     squeal~1nz (^howl~2) a high-pitched howl
     fink~2v 
     oink~2v 
@@ -21746,7 +21746,7 @@
  sideswipe ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     sideswipe~1nz (^bump~1) a glancing blow from or on the side of something
     sideswipe~2vz strike from the side
- sparkling ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB (null) ) 
+ sparkling ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     twinkle~2n 
     effervescent~3a 
     sparkling~3az shining with brilliant points of light like stars
@@ -21808,7 +21808,7 @@
     social_occasion~1n 
  sky_burial ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     sky_burial~1nz (^funeral~1) a traditional Tibetan funeral ritual in which the corpse is exposed to the open air to be eaten by sacred vultures
- sky ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ sky ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     sky~1nz (^atmosphere~3) the atmosphere and outer space as viewed from the earth
     flip~14v 
  sleepover ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
@@ -21954,7 +21954,7 @@
     self-doubt~1n 
  sinking_feeling ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     sinking~3nz (^anxiety~1) a feeling caused by uneasiness or apprehension
- self-complacency ( meanings=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
+ self-complacency ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER posdefault:NOUN ) 
     complacence~1n 
  self-satisfaction ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR posdefault:NOUN ) 
     complacency~1nz (^satisfaction~2) the feeling you have when you are satisfied with yourself
@@ -21969,7 +21969,7 @@
     self-pity~1nz (^sorrow~2) a feeling of sorrow over your own sufferings
  sanguineness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     sanguinity~1nz (^optimism~2) feeling sanguine
- sulk ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ sulk ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     sulkiness~3n 
     brood~5v 
  short_temper ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -22262,7 +22262,7 @@
     coffee_roll~1n 
  sticky_bun ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     caramel_bun~1n 
- sticky ( meanings=6 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ sticky ( meanings=6 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     viscous~1az having the sticky properties of an adhesive
     sticky~2az covered with an adhesive material
     embarrassing~1az hard to deal with
@@ -23362,7 +23362,7 @@
     secretariat~1nz (^administrative_unit~1) an administrative unit responsible for maintaining records and other secretarial duties
  select_committee ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     select_committee~1nz (^committee~1) a parliamentary committee appointed for some special purpose
- select ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE3_4 posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ select ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE3_4 posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     blue-ribbon~1az selected or chosen for special qualifications
     prize~4a 
     select~3az 
@@ -23681,7 +23681,7 @@
     hangout~1n 
  sensible_horizon ( meanings=1 NOUN NOUN_SINGULAR ) 
     visible_horizon~1n 
- sensible ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ sensible ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     sensible~1az aware intuitively or intellectually of something sensed
     sensible~2az readily perceived by the senses
     reasonable~3a 
@@ -25125,7 +25125,7 @@
     Serbian~1n 
  schoolman ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     academician~2n 
- suspect ( meanings=7 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ suspect ( meanings=7 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     defendant~1n 
     suspect~2nz (^individual~1) someone who is under suspicion
     funny~4a 
@@ -25211,7 +25211,7 @@
     tripper~3nz (^walker~4) a walker or runner who trips and almost falls
  sad_sack ( meanings=1 NOUN NOUN_SINGULAR ) 
     stumbler~1n 
- sad ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) comparative=saddest 
+ sad ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=saddest 
     sorry~2a 
     sad~2az experiencing or showing sorrow or unhappiness
     sad~3az of things that make you feel sad
@@ -25350,7 +25350,7 @@
     scout~1n 
     spotter~3nz (^employee~1) a worker employed to apply spots
     spotter~4nz (^employee~1) a worker employed at a dry-cleaning establishment to remove spots
- snitch ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ snitch ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     fink~1n 
     shit~8v 
     cop~3v 
@@ -25486,7 +25486,7 @@
     mason~1nz (^journeyman~1) a craftsman who works with stone or brick
  sea_captain ( meanings=1 NOUN NOUN_SINGULAR ) 
     skipper~2n 
- sensitive ( meanings=7 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:ADJECTIVE (null) ) 
+ sensitive ( meanings=7 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:ADJECTIVE ) 
     spiritualist~1n 
     sensitive~2az of or pertaining to classified information or matters affecting national security
     tender~10a 
@@ -25886,7 +25886,7 @@
     gorger~1nz (^eater~2) someone who eats food rapidly and greedily
  scofflaw ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     scofflaw~1nz (^crook~2) one who habitually ignores the law and does not answer court summonses
- scold ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ scold ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     nag~2n 
     reprimand~3v 
     grumble~4vz show one's unhappiness or critical attitude
@@ -26023,7 +26023,7 @@
     selectwoman~1nz (^elected_official~1) an elected member of a board of officials who run New England towns
  selfish_person ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     selfish_person~1nz (^disagreeable_person~1) a person who is unusually selfish
- selfish ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ selfish ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     selfish~1az concerned chiefly or only with yourself and your advantage to the exclusion of others
     selfish~2az 
  selling_agent ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -26284,7 +26284,7 @@
     sleeping_partner~1n 
  sleeping_partner ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     silent_partner~1nz (^partner~2) a partner whose association with the enterprise is not public knowledge
- silly ( meanings=6 glosses=5 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) (null) (null) ) comparative=silliest 
+ silly ( meanings=6 glosses=5 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=silliest 
     silly~1nz (^child~1) a word used for misbehaving children
     slaphappy~1az dazed from or as if from repeated blows
     ridiculous~1az inspiring scornful pity
@@ -26640,7 +26640,7 @@
  spender ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     disburser~1n 
     spendthrift~1n 
- spendthrift ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:NOUN (null) ) 
+ spendthrift ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     scattergood~1nz (^profligate~1) someone who spends money prodigally
     profligate~4a 
     spendthrift~3az 
@@ -28524,7 +28524,7 @@
     sou'easter~1nz (^wind~8) a strong wind from the southeast
  squall_line ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     squall_line~1nz (^polar_front~1) a cold front along which squalls or thunderstorms are likely
- squall ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ squall ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     squall~1nz (^wind~8) sudden violent winds
     hollo~2v 
     wawl~1vz make high-pitched, whiney noises
@@ -30111,7 +30111,7 @@
     Lyonia_mariana~1n 
  shiny_lyonia ( meanings=1 NOUN NOUN_SINGULAR ) 
     fetter_bush~1n 
- shiny ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) comparative=shiniest 
+ shiny ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) comparative=shiniest 
     sheeny~2a 
     glazed~2a 
     shining~3a 
@@ -31738,7 +31738,7 @@
     Stropharia_rugoso-annulata~1nz (^agaric~1) a large gilled fungus with a broad cap and a long stalk
  sandy_mushroom ( meanings=1 NOUN NOUN_SINGULAR ) 
     Tricholoma_populinum~1n 
- sandy ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:NOUN posdefault:ADJECTIVE (null) ) comparative=sandiest 
+ sandy ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:NOUN posdefault:ADJECTIVE ) comparative=sandiest 
     arenaceous~1a 
     flaxen~1a 
     sandy~3az 
@@ -32112,7 +32112,7 @@
     seigniory~2n 
  stolen_property ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     stolen_property~1nz (^transferred_possession~1) property that has been stolen
- stolen ( meanings=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN GRADE3_4 posdefault:VERB ) conjugate=stole 
+ stolen ( meanings=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN posdefault:VERB ) conjugate=stole 
     stolen~1az 
  subsidy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     subsidy~1nz (^grant~5) a grant paid by a government to an enterprise that benefits the public
@@ -32612,6 +32612,10 @@
     scale_factor~1nz (^multiplier~1) a number used as a multiplier in scaling
  sixteenth_part ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     one-sixteenth~1nz (^common_fraction~1) one part in sixteen equal parts
+ sixtieth ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
+    one-sixtieth~1n 
+    sixtieth~2nz (^rank~5) position 60 in a countable series of things
+    sixtieth~3az the ordinal number of sixty in counting order
  sweet_Fanny_Adams ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Fanny_Adams~2nz (^nothing~1) little or nothing at all
  significant_digit ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -32826,6 +32830,9 @@
     synchrony~1n 
  synchroneity ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     synchronicity~1n 
+ seventieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
+    seventieth~1nz (^rank~5) position 70 in a countable series of things
+    seventieth~2az the ordinal number of seventy in counting order
  scale_of_measurement ( meanings=1 NOUN NOUN_SINGULAR ) 
     scale~10n 
  sliding_scale ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -33148,7 +33155,7 @@
     gastroenteritis~1n 
  sore_throat ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     raw_throat~1nz (^inflammatory_disease~1) inflammation of the fauces and pharynx
- sore ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ sore ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE1_2 posdefault:ADJECTIVE ) 
     sore~1nz (^infection~7) an open skin infection
     mad~1a 
     sensitive~3a 
@@ -33489,10 +33496,10 @@
     tropical_sprue~1n 
  spastic_bladder ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     spastic_bladder~1nz (^bladder_disorder~1) a urinary bladder disorder resulting from spinal cord lesion or multiple sclerosis or trauma
- stammer ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ stammer ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     stutter~1n 
     stutter~2v 
- stutter ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ stutter ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     stammer~1nz (^defect_of_speech~1) a speech disorder involving hesitations and involuntary repetitions of certain sounds
     bumble~1vz speak haltingly
  swither ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -33543,7 +33550,7 @@
     state~7n 
  solid_state ( meanings=1 NOUN NOUN_SINGULAR ) 
     solidness~4n 
- say ( meanings=12 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) ) conjugate=said 
+ say ( meanings=12 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) conjugate=said 
     say~1nz (^opportunity~1) the chance to speak
     order~20v 
     suppose~5v 
@@ -33858,12 +33865,12 @@
  soluble ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     soluble~1az capable of being dissolved in some solvent (usually water)
     soluble~2az susceptible of solution or of being solved or explained
- sienna ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ sienna ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     sienna~1nz (^earth_color~1) an earth color containing ferric oxides
     sienna~2az 
  sinopis ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     sinoper~1nz (^ocher~2) a red ocher formerly used as a pigment
- sinopia ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER (null) ) 
+ sinopia ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     sinopis~1n 
  sinoper ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     sinopia~1n 
@@ -34921,6 +34928,8 @@
     Stratego~1nz 
  shinjutsu ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     shinjutsu~1nz 
+ surrogacy ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
+    surrogacy~1nz 
  shelf-bra ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     shelf-bra~1nz 
  skort ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
@@ -35166,7 +35175,7 @@
  seen ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=see 
  seel ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     seel~1vz sew up the eyelids of hawks and falcons
- seem ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ seem ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT ) 
     appear~5v 
     appear~6v 
     seem~3vz appear to one's own mind or opinion
@@ -35191,7 +35200,7 @@
  sew ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB SPELLING_EXCEPTION COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=sewn 
     sew_together~1vz fasten by sewing
     tailor-make~2vz create with cloth
- sheer ( meanings=9 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ sheer ( meanings=9 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     absolute~4a 
     bluff~5a 
     plain~9a 
@@ -35212,7 +35221,7 @@
     sold~1az disposed of to a purchaser
  soled ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     soled~1az having a sole or soles especially as specified
- some ( meanings=7 glosses=4 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE ADVERB DETERMINER ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE PRONOUN_PLURAL posdefault:ADVERB OMITTABLE_TIME_PREPOSITION (null) ) 
+ some ( meanings=7 glosses=4 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE ADVERB DETERMINER ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE PRONOUN_PLURAL posdefault:ADVERB OMITTABLE_TIME_PREPOSITION ) 
     some~1az relatively many but unspecified in number
     some~2az relatively much but unspecified in amount or extent
     some~3az remarkable
@@ -35250,7 +35259,7 @@
     absorbefacient~1a 
  shock-absorbent ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     shock-absorbent~1az having the capacity to absorb the energy of an impact
- spongy ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=spongiest 
+ spongy ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=spongiest 
     spongelike~1a 
     squashy~1a 
     spongy~3az 
@@ -35269,7 +35278,7 @@
     swinish~3az 
  superabundant ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     superabundant~1az most excessively abundant
- scarce ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ scarce ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     scarce~1az deficient in quantity or number compared with the demand
     scarcely~1b 
  saltlike ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -35288,7 +35297,7 @@
     showy~2a 
     sporting~2a 
     sporty~4az 
- sluggish ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ sluggish ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     torpid~1az slow and apathetic
     slow~1a 
     sulky~3az moving slowly
@@ -35367,7 +35376,7 @@
     strained~5az 
  stilted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     hokey~1a 
- shocked ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ shocked ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     dismayed~1a 
     shocked~2az 
  scared ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -35406,7 +35415,7 @@
     self-absorbed~1a 
  shiftless ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     shiftless~1az lacking or characterized by lack of ambition or initiative
- stingy ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=stingiest 
+ stingy ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=stingiest 
     meager~1a 
     ungenerous~1a 
     stingy~3az 
@@ -35499,7 +35508,7 @@
     speech-endowed~1az capable of speech
  speechless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     dumb~3a 
- shamed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ shamed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     dishonored~1a 
     hangdog~2a 
  shamefaced ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -35523,7 +35532,7 @@
     retiring~1az reluctant to draw attention to yourself
  stalkless ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     sessile~1az attached directly by the base
- stuck ( meanings=3 glosses=2 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN GRADE1_2 posdefault:VERB ) conjugate=stick 
+ stuck ( meanings=3 glosses=2 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN posdefault:VERB ) conjugate=stick 
     stuck~1az caught or fixed
     stuck~2az baffled
     stuck~3az 
@@ -35597,7 +35606,7 @@
     sinister~4az 
  scarey ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     chilling~2a 
- scary ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) comparative=scariest 
+ scary ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) comparative=scariest 
     scarey~1a 
     scary~2az 
  shivery ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -35624,7 +35633,7 @@
  saucy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) comparative=sauciest 
     overbold~1a 
     impertinent~3a 
- sassy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=sassiest 
+ sassy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=sassiest 
     saucy~1a 
     sassy~2az 
  short-beaked ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -35666,7 +35675,7 @@
  sightly ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADVERB ) comparative=sightliest 
     comely~1a 
     sightly~2az 
- splendid ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ splendid ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     glorious~1a 
     glorious~3a 
     excellent~1a 
@@ -35674,7 +35683,7 @@
  splendiferous ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     splendid~1a 
     splendiferous~2az 
- stunning ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ stunning ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     stunning~1az strikingly beautiful or attractive
     arresting~1a 
     stunning~3az causing or capable of causing bewilderment or shock or insensibility
@@ -35719,7 +35728,7 @@
     marred~1az blemished by injury or rough wear
     scarred~2az deeply affected or marked by mental or physical pain or injury
     scarred~3az 
- sanguineous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 (null) ) 
+ sanguineous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     gory~2a 
  slaughterous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     butcherly~1az accompanied by bloodshed
@@ -35795,7 +35804,7 @@
  sparkly ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADVERB ) 
     scintillant~1a 
     scintillating~2a 
- satiny ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ satiny ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     silky~1a 
     satiny~2az 
  sleek ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
@@ -35875,7 +35884,7 @@
  scrupulous ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     conscientious~1az characterized by extreme care and great effort
     scrupulous~2az having scruples
- studious ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ studious ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     studious~1az marked by care and effort
     bookish~1az characterized by diligent study and fondness for reading
     studious~3az 
@@ -35930,10 +35939,10 @@
  sure_as_shooting ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     sure_as_shooting~1az absolutely certain
     certainly~1b 
- self-assured ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ self-assured ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     self-confident~1a 
     self-assured~2az 
- self-confident ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ self-confident ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     self-assured~1az showing poise and confidence in your own worth
  set_in_stone ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     carved_in_stone~1a 
@@ -35949,10 +35958,10 @@
  sluttish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     promiscuous~1a 
     blowzy~1a 
- sunny ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=sunniest 
+ sunny ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=sunniest 
     gay~2az bright and pleasant
     sunny~2az 
- sorry ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=sorriest 
+ sorry ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=sorriest 
     dreary~1az causing dejection
     lamentable~1az bad
     regretful~1az feeling or expressing regret or sorrow or a sense of loss over something done or undone
@@ -36096,7 +36105,7 @@
     dazed~1a 
     out~3a 
     astonied~1a 
- stupefied ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB (null) ) 
+ stupefied ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     stunned~1a 
     dumfounded~1a 
  slaphappy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=slaphappiest 
@@ -36105,7 +36114,7 @@
  spaced-out ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     spaced-out~1az confused or disoriented as if intoxicated through taking a drug
     spacey~1az stupefied by some narcotic drug
- shrewd ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ shrewd ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     astute~1a 
     scheming~2a 
     shrewd~3az 
@@ -36114,7 +36123,7 @@
     streetwise~2az 
  street_smart ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     with-it~1az 
- senseless ( meanings=5 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ senseless ( meanings=5 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     soft-witted~1a 
     insensible~1a 
     mindless~3a 
@@ -36199,14 +36208,14 @@
     suppressed~3az manifesting or subjected to suppression
  squelched ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     quenched~1az subdued or overcome
- spacious ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ spacious ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     roomy~2az having ample space
     wide~4a 
     spacious~3az 
- self-conscious ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ self-conscious ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     self-conscious~1az excessively and uncomfortably conscious of your appearance or behavior
     self-aware~1az aware of yourself as an individual or of your own being and actions and thoughts
- several ( meanings=5 glosses=3 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE DETERMINER ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE PRONOUN_INDIRECTOBJECT KINDERGARTEN DETERMINER_PLURAL PRONOUN_PLURAL (null) ) 
+ several ( meanings=5 glosses=3 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE DETERMINER ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE PRONOUN_INDIRECTOBJECT KINDERGARTEN DETERMINER_PLURAL PRONOUN_PLURAL ) 
     various~1az considered individually
     several~2az distinct and individual
     several~3az of an indefinite number more than 2 or 3 but not many
@@ -36225,7 +36234,7 @@
     Siouan-speaking~1az able to communicate in a Siouan language
  Spanish-speaking ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     Spanish-speaking~1az able to communicate in Spanish
- secretive ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ secretive ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     closemouthed~1a 
     secretive~2az 
  serried ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -36279,7 +36288,7 @@
  spaced ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     separated~1a 
     spaced~2az arranged with spaces between
- sparse ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ sparse ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     thin~1a 
     sparse~2az 
  splashed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -36288,7 +36297,7 @@
  straggly ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE posdefault:ADVERB ) 
     straggly~1az growing or spreading sparsely or irregularly
     straggling~1a 
- succinct ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ succinct ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     summary~2a 
     succinct~2az 
  sententious ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -36343,7 +36352,7 @@
     scratchy~2a 
     spotted~1a 
     spotty~3az 
- steadfast ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ steadfast ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     staunch~1a 
     steady~4a 
     steadfast~3az 
@@ -36369,7 +36378,7 @@
     shakeable~1a 
  shakeable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     shakable~1az capable of being weakened
- sporadic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ sporadic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     sporadic~1az recurring in scattered and irregular or unpredictable instances
     sporadic~2az 
  sustained ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -36421,7 +36430,7 @@
  sold-out ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     sold-out~1az having taken a bribe or bribes
     sold-out~2az sold completely in advance
- sizable ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ sizable ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     respectable~1a 
     ample~3a 
     sizable~3az 
@@ -36510,7 +36519,7 @@
     cliff-hanging~1a 
  self-proclaimed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     self-proclaimed~1az proclaimed to be or described as such by oneself, without endorsement by others
- sedate ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ sedate ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     staid~1az characterized by dignity and propriety
     sober~3a 
     sedate~3az 
@@ -36548,7 +36557,7 @@
  stringent ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     rigorous~1a 
     stringent~2az 
- strict ( meanings=6 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ strict ( meanings=6 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     stern~3a 
     rigorous~2a 
     nonindulgent~1a 
@@ -36794,7 +36803,7 @@
  soulful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     soulful~1az full of or expressing deep emotion
     soulful~2az 
- stolid ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ stolid ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     impassive~2a 
  stoical ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     stoic~2az seeming unaffected by pleasure or pain
@@ -36943,7 +36952,7 @@
  slow-moving ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     slow-moving~1az moving slowly
     slow-moving~2az 
- squeamish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ squeamish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     prissy~1a 
     squeamish~2az 
  sunken-eyed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -37122,7 +37131,7 @@
     acceptable~3a 
     satisfactory~2az giving satisfaction
     satisfactory~3az 
- superb ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ superb ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     superb~1az surpassingly good
     brilliant~6a 
     superb~3az 
@@ -37224,7 +37233,7 @@
     good~16a 
  sun-loving ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     sun-loving~1az flourishing in strong sunlight
- sickly ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=sickliest 
+ sickly ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=sickliest 
     sallow~2a 
     under_the_weather~1a 
     sickly~3az 
@@ -37297,7 +37306,7 @@
     opprobrious~1a 
     disgraceful~2a 
     shameful~3az 
- shabby ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=shabbiest 
+ shabby ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=shabbiest 
     shabby~1az mean and unworthy and despicable
     moth-eaten~3a 
     shabby~3az 
@@ -37308,7 +37317,7 @@
     slanted~1a 
  sloped ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     slanting~1a 
- skewed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ skewed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     skew~1az having an oblique or slanting direction or position
  semi-climbing ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     semi-climbing~1az of plants that are semi-climbers
@@ -37444,7 +37453,7 @@
     relieved~1a 
  strong-growing ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     aggressive~3az tending to spread quickly
- stimulating ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ stimulating ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     exhilarating~2a 
     stimulating~2az rousing or quickening activity or the senses
     stimulant~3az that stimulates
@@ -37942,7 +37951,7 @@
  slow-witted ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     half-witted~1a 
     slow-witted~2az 
- simple-minded ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ simple-minded ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     dim-witted~1a 
     simple-minded~2az lacking subtlety and insight
     simple-minded~3az 
@@ -37950,7 +37959,7 @@
     spur-of-the-moment~1az in response to an unforeseen need
  second-string ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) comparative=second-stringer 
     second-string~1az being a replacement or substitute for a regular member of a team
- snobbish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ snobbish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     clubby~1a 
     snobbish~2az 
  snobby ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -37976,7 +37985,7 @@
     skin-deep~1az penetrating no deeper than the skin:
  state-of-the-art ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     state-of-the-art~1az the highest level of development at a particular time 
- seemly ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADVERB (null) ) comparative=seemliest 
+ seemly ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADVERB ) comparative=seemliest 
     comme_il_faut~1a 
     seemly~2az 
  straitlaced ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -38022,13 +38031,13 @@
  self-conceited ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     egotistical~1a 
     self-conceited~2az 
- swollen ( meanings=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 GRADE3_4 posdefault:VERB (null) ) conjugate=swelled 
+ swollen ( meanings=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 GRADE3_4 posdefault:VERB ) conjugate=swelled 
     self-conceited~1a 
  swollen-headed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     swollen~1a 
  shabby-genteel ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     shabby-genteel~1az trying to maintain dignity and self respect despite shabbiness
- shortsighted ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ shortsighted ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     short~10a 
     ill-considered~1a 
     nearsighted~1az unable to see distant objects clearly
@@ -38204,7 +38213,7 @@
     satisfiable~1a 
  satisfiable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     satiable~1az capable of being sated
- sarcastic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ sarcastic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     sarcastic~1az expressing or expressive of ridicule that wounds
     sarcastic~2az 
  sardonic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -38223,7 +38232,7 @@
  seaworthy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     seaworthy~1az fit for a sea voyage
     seaworthy~2az 
- sneaky ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ sneaky ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     surreptitious~2a 
     underhand~1a 
     sneaky~3az 
@@ -38276,7 +38285,7 @@
     sensory~2az involving or derived from the senses
  set-apart ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     isolated~4a 
- sincere ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ sincere ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     solemn~1az characterized by a firm and humorless belief in the validity of your opinions
     sincere~2az open and genuine
     sincere~3az 
@@ -38303,7 +38312,7 @@
  sexy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE ) comparative=sexiest 
     sexy~1az marked by or tending to arouse sexual desire or interest
     aphrodisiacal~1a 
- steamy ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=steamiest 
+ steamy ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=steamiest 
     ruttish~1a 
     sticky~4a 
     steaming~1a 
@@ -38500,7 +38509,7 @@
     shrew-sized~1az having the approximate size of a shrew
  squirrel-sized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     squirrel-sized~1az having the approximate size of a squirrel
- skilful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ skilful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     proficient~1a 
     skilful~2az 
  sure-handed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -38551,7 +38560,7 @@
  sinuate ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     sinuate~1az having a strongly waved margin alternately concave and convex
     wiggly~2a 
- scalloped ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ scalloped ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     crenate~1az having a margin with rounded scallops
  saw-toothed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     serrated~1az notched like a saw with teeth pointing toward the apex
@@ -38683,7 +38692,7 @@
  strengthened ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     reinforced~2az given added strength or support
     strengthened~2az 
- stubborn ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ stubborn ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     unregenerate~3az tenaciously unwilling or marked by tenacious unwillingness to yield
     refractory~4az not responding to treatment
     stubborn~3az 
@@ -38696,7 +38705,7 @@
     strong-willed~2az 
  sheeplike ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     sheepish~2az like or suggestive of a sheep in docility or stupidity or meekness or timidity
- successful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ successful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     successful~1az having succeeded or being marked by a favorable outcome
     successful~2az 
  self-made ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -38714,7 +38723,7 @@
  skimpy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=skimpiest 
     lean~5a 
     skimpy~2az 
- scant ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ scant ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     light~36a 
     stint~4v 
     skimp~3vz limit in quality or quantity
@@ -38776,7 +38785,7 @@
     substantiating~1a 
  superable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     conquerable~2a 
- surprised ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ surprised ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     surprised~1az taken unawares or suddenly and feeling wonder or astonishment
     surprised~2az 
  startled ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -40547,7 +40556,7 @@
     sicken~2vz make sick or ill
     revolt~2v 
     nauseate~2v 
- scarcely ( meanings=2 glosses=2 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB (null) ) 
+ scarcely ( meanings=2 glosses=2 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
     just~6bz only a very short time before
     hardly~2bz almost not
  simply ( meanings=4 glosses=3 ADVERB EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
@@ -40613,7 +40622,7 @@
     sportively~1bz in a merry sportive manner
  stormily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
     turbulently~1b 
- seldom ( meanings=1 ADVERB COMMON4 GRADE3_4 posdefault:ADVERB (null) ) 
+ seldom ( meanings=1 ADVERB COMMON4 GRADE3_4 posdefault:ADVERB ) 
     rarely~2b 
  somewhat ( meanings=2 glosses=2 ADVERB EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
     passably~1bz to a moderately sufficient extent or degree
@@ -41678,7 +41687,7 @@
  stimulate ( meanings=7 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     arouse~3v 
     excite~1v 
-    cause~6v 
+    have~6v 
     provoke~1vz provide the needed stimulus for
     rush~12v 
     stir~6v 
@@ -41755,7 +41764,7 @@
  soothe ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     soothe~1vz cause to feel better
     console~5v 
- suffer ( meanings=11 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ suffer ( meanings=11 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     hurt~10v 
     get~2v 
     suffer~3vz feel unwell or uncomfortable
@@ -41977,7 +41986,7 @@
     sustain~2v 
     realize~3v 
     body_forth~1vz represent in bodily form
- stultify ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ stultify ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     cripple~3vz deprive of strength or efficiency
     stultify~2vz cause to appear foolish
     stultify~3vz prove to be of unsound mind or demonstrate someone's incompetence
@@ -42327,7 +42336,7 @@
     specify~1vz select something or someone for a specific purpose
  seclude ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     sequestrate~2v 
- stigmatize ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ stigmatize ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     stigmatise~1vz mark with a stigma or stigmata
     mark~28v 
  stigmatise ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -42446,12 +42455,12 @@
     lipread~1vz interpret by lipreading
  subedit ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     copyread~1v 
- speculate ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT (null) ) 
+ speculate ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     ruminate~1v 
     suppose~2v 
     speculate~3vz talk over conjecturally, or review in an idle or casual way and with an element of doubt or without sufficient reason to reach a conclusion
     job~11v 
- suppose ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) (null) ) 
+ suppose ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     reckon~1vz expect, believe, or suppose
     hypothecate~1vz to believe especially on uncertain or tentative grounds
     presuppose~1vz require as a necessary antecedent or precondition
@@ -42528,7 +42537,7 @@
     cream_off~2v 
  sieve_out ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     pick_over~1vz separate or remove
- specify ( meanings=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ specify ( meanings=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     assign~1v 
     intend~2v 
     nail_down~2v 
@@ -42560,7 +42569,7 @@
     shrug_off~1vz minimize the importance of, brush aside
  send_a_message ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     send_a_message~1vz give or constitute a signal, not necessarily verbally
- send ( meanings=8 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT (null) ) conjugate=sent 
+ send ( meanings=8 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT ) conjugate=sent 
     transmit~1vz broadcast over the airwaves, as in radio or television
     mail~6v 
     send_off~1vz transfer
@@ -42581,7 +42590,7 @@
     supplicate~3vz make a humble, earnest petition
  square_off ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     settle~10v 
- sweet-talk ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB (null) (null) ) 
+ sweet-talk ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ) 
     inveigle~1vz influence or urge by gentle urging, caressing, or flattering
  soft-soap ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT ) 
     soft-soap~1vz use flattering talk on somebody
@@ -42634,9 +42643,9 @@
     hold_firm~1v 
  shoot_one_'s_mouth_off ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     lip_off~1vz speak spontaneously and without restraint
- sermonize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_NOOBJECT (null) (null) ) 
+ sermonize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     preachify~1vz speak as if delivering a sermon
- sermonise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_NOOBJECT (null) (null) ) 
+ sermonise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     moralize~2v 
  suborn ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     suborn~1vz induce to commit perjury or give false testimony
@@ -42650,7 +42659,7 @@
     symbolize~2v 
  soft-pedal ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT ) 
     soft-pedal~1vz play down or obscure
- sully ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ sully ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     calumniate~1v 
     maculate~4v 
     corrupt~7v 
@@ -42665,7 +42674,7 @@
     lampoon~2v 
  send_word ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     give_notice~1v 
- suggest ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ suggest ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     propose~3v 
     hint~6v 
     indicate~5vz suggest the necessity of an intervention
@@ -42677,7 +42686,7 @@
     cotton_up~1v 
  speak_of_the_devil ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     speak_of_the_devil~1vz mention someone's name who just then appears
- speak ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) (null) (null) ) conjugate=spoken 
+ speak ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=spoken 
     verbalise~3v 
     talk~10v 
     talk~11v 
@@ -42750,7 +42759,7 @@
     liquidize~2v 
  spill_the_beans ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     tattle~2v 
- sing ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=sung 
+ sing ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=sung 
     blab~1v 
     whistle~8vz make a whining, ringing, or whistling sound
     sing~3vz to make melodious sounds
@@ -43282,7 +43291,7 @@
     sight-sing~1v 
  sight-sing ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     sightsing~1vz sing from a score without having seen it before
- simulate ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ simulate ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     sham~5v 
     model~13v 
     imitate~2v 
@@ -43518,7 +43527,7 @@
  supervise ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     monitor~7vz keep tabs on
     oversee~1v 
- stridulate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ stridulate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     clitter~1vz make a shrill creaking noise by rubbing together special bodily structures
  swosh ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT ) 
     swoosh~2v 
@@ -43744,7 +43753,7 @@
  stay_away ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     stand_back~2v 
  suffice ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_NOOBJECT ) 
-    answer~14v 
+    do~11v 
  serve_well ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     serve~14v 
  shine_at ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_TAKES_GERUND VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
@@ -43798,7 +43807,7 @@
  sat ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=sit 
  slept ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN posdefault:VERB ) conjugate=sleep 
  slayed ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 GRADE3_4 ) conjugate=slay 
- slid ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN GRADE3_4 posdefault:VERB ) conjugate=slide 
+ slid ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=slide 
  slung ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 posdefault:VERB ) conjugate=sling 
  slunk ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 posdefault:VERB ) conjugate=slink 
  slinked ( VERB_PAST VERB_PAST_PARTICIPLE VERB COMMON2 posdefault:VERB ) conjugate=slunk 
@@ -43815,8 +43824,8 @@
  spoon-fed ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE ) conjugate=spoon-feed 
  sprang ( VERB_PAST VERB COMMON2 COMMON1 posdefault:VERB ) conjugate=spring 
  stood ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 GRADE1_2 posdefault:VERB ) conjugate=stand 
- stank ( VERB_PAST VERB COMMON2 GRADE1_2 GRADE5_6 posdefault:VERB ) conjugate=stink 
- stunk ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 GRADE1_2 GRADE5_6 posdefault:VERB ) conjugate=stank 
+ stank ( VERB_PAST VERB COMMON2 posdefault:VERB ) conjugate=stink 
+ stunk ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 posdefault:VERB ) conjugate=stank 
  strewed ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 posdefault:VERB ) conjugate=strew 
  strewn ( VERB_PAST_PARTICIPLE VERB COMMON2 COMMON1 posdefault:VERB ) conjugate=strewed 
  strode ( VERB_PAST VERB COMMON2 COMMON1 posdefault:VERB ) conjugate=stride 

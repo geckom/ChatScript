@@ -104,7 +104,6 @@
  Waites ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  William_Inge ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Inge~1nz (^playwright~1) United States playwright
- Welford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  warehouse ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT ) 
     storage_warehouse~1n 
     warehouse~2vz store in a warehouse
@@ -196,7 +195,7 @@
  Wainscott ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wolfcot ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Whorton ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- wire ( meanings=9 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) ) 
+ wire ( meanings=9 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     wire~1nz (^ligament~1) ligament made of metal and used to fasten things or make cages or fences etc
     conducting_wire~1nz (^conductor~1) a metal conductor that carries electricity over a distance
     telegram~1n 
@@ -211,9 +210,6 @@
  Weiland ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  water_faucet ( meanings=1 NOUN NOUN_SINGULAR ) 
     tap~6n 
- Webb ( meanings=2 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
-    Sidney_James_Webb~1n 
-    Martha_Beatrice_Potter_Webb~1n 
  Wilderness_Campaign ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Wilderness_Campaign~1nz (^campaign~3) American Civil War
  Wigley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -316,6 +312,7 @@
     wing~10nz (^position~12) a position to the side and just to the rear of another aircraft
     wing~11nz (^ice-hockey_player~1) a hockey player stationed in a forward position on either side
     fly~16vz travel through the air
+ Wolter ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wegland ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  wild-goose_chase ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     wild-goose_chase~1nz (^quest~2) the fruitless pursuit of something unattainable
@@ -356,7 +353,6 @@
  Woodyard ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  waxiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL GRADE5_6 ) comparative=waxier 
  Westlund ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Wattesone ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Winfred ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     St_._Boniface~1n 
  Walser ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -457,7 +453,7 @@
     leg~5n 
  Wankel_engine ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Wankel_rotary_engine~1n 
- working ( meanings=7 glosses=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 GRADE1_2 posdefault:VERB (null) ) 
+ working ( meanings=7 glosses=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 GRADE1_2 posdefault:VERB ) 
     working~1nz (^excavation~3) a mine or quarry that is being or has been worked
     working~2az serving to permit or facilitate further work or activity
     on_the_job~1az actively engaged in paid work
@@ -536,7 +532,7 @@
     wall~8nz (^difficulty~4) a difficult or awkward situation
     fence~4v 
  Wallis ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- whistle ( meanings=11 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ whistle ( meanings=11 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     tin_whistle~1nz (^recorder~1) an inexpensive fipple flute
     whistle~2nz (^acoustic_device~1) acoustic device that forces air or steam against an edge or into a cavity and so produces a loud shrill sound
     whistle~3nz (^wind~4) a small wind instrument that produces a whistling sound by blowing into it
@@ -659,7 +655,7 @@
     stick_insect~1nz (^phasmid_insect~1) any of various mostly tropical insects having long twiglike bodies
     walking_stick~2nz (^stick~1) a stick carried in the hand for support in walking
  Wickam ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- wipe ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ wipe ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     rub~1nz (^contact~2) the act of rubbing or wiping
     pass_over~2vz rub with a circular motion
  weight_gaining ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -729,6 +725,7 @@
     unlawful~3az having no legally established claim
     wrongful~4az 
  Walther ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Wanita ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Walden ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Wilbart ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Wertz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -835,6 +832,7 @@
     Wollaston~1nz (^chemist~1) English chemist and physicist who discovered palladium and rhodium and demonstrated that static and current electricity are the same
  Western_ax ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     double-bitted_ax~1n 
+ Waterman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Whitmer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  whipping ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     flagellation~1n 
@@ -967,7 +965,7 @@
  water_vascular_system ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     water_vascular_system~1nz (^vascular_system~1) system of fluid-filled tubes used by echinoderms in locomotion and feeding and respiration
  Weyland ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- wince ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ wince ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     flinch~1n 
     wince~2nz (^facial_expression~2) the facial expression of sudden pain
     wince~3vz make a face indicating disgust or dislike
@@ -1050,7 +1048,7 @@
  Weathersby ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wahchinksapa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Winebrenner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- white ( meanings=18 glosses=17 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ white ( meanings=18 glosses=17 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     tweed~1nz (^trouser~2) trousers made of flannel or gabardine or tweed or white cloth
     white~2nz (^piece~2) the lighter pieces
     whiteness~1nz (^achromatic_colour~1) the quality or state of the achromatic color of greatest lightness
@@ -1117,6 +1115,19 @@
  Weiss ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  worked_up ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     excited~1az 
+ wear ( meanings=12 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=worn 
+    wearing~1nz (^act~1) the act of having on your person as a covering or adornment
+    clothing~1n 
+    wear~3nz (^deterioration~2) impairment resulting from long use
+    wear~4vz have or show an appearance of
+    bear~3vz have on one's person
+    assume~1vz put clothing on one's body
+    have_on~1vz be dressed in
+    fag_out~1vz exhaust or get tired through overuse or great strain or stress
+    wear_thin~1vz deteriorate through use or stress
+    break~46v 
+    endure~6vz last and be usable
+    wear~12vz have in one's aspect
  Wolverton ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  W._E._B._Du_Bois ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Du_Bois~1n 
@@ -1156,7 +1167,7 @@
  Winona ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  whitetail_prairie_dog ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Cynomys_gunnisoni~1nz (^prairie_marmot~1) tail is white tipped
- warble ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ warble ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     warble~1nz (^animal_disease~1) a lumpy abscess under the hide of domestic mammals caused by larvae of a botfly or warble fly
     descant~3v 
     quaver~3vz sing or play with trills, alternating with the half note above or below
@@ -1198,7 +1209,6 @@
     winepress~1nz (^press~3) a press that is used to extract the juice from grapes
  Willa_Sibert_Cather ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Willa_Cather~1nz (^writer~1) United States writer who wrote about frontier life
- Warman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Whitfield ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Wendall ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Warwyk ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1377,7 +1387,7 @@
  warbler ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     warbler~1nz (^oscine_bird~1) a small active songbird
     warbler~2nz (^singer~1) a singer
- winged ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ winged ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     winged~1az very fast
     winged~2az having wings or as if having wings of a specified kind
     winged~3az 
@@ -1408,7 +1418,7 @@
  Walford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Whitlow ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Waed ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- welcome ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=welcomer 
+ welcome ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=welcomer 
     welcome~1nz (^salutation~2) a greeting or reception
     welcome~2nz (^acceptance~7) the state of being welcome
     welcome~3az giving pleasure or satisfaction or received with pleasure or freely granted
@@ -1471,7 +1481,7 @@
     Tylenchus_tritici~1n 
  Whalen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wacuman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- willing ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB (null) (null) ) 
+ willing ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB ) 
     volition~1n 
     unforced~2a 
     willing~3az disposed or inclined toward
@@ -1517,7 +1527,7 @@
  whitelash ( meanings=1 NOUN NOUN_SINGULAR ) 
     white_backlash~1n 
  Wilcox ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- woof ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 (null) ) 
+ woof ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
     filling~3n 
  Wareine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Whiteley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1551,7 +1561,6 @@
  word_game ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     word_game~1nz (^parlour_game~1) any game involving the formation or alteration or discovery of words
  Wagoner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Wyche ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  wall_panel ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     wall_panel~1nz (^panelling~1) paneling that forms part of a wall
  Wrenn ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1566,7 +1575,7 @@
  Willia ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Wiser ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
  Weldon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- weight ( meanings=10 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ weight ( meanings=10 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     weight~1nz (^artifact~1) an artifact that is heavy
     exercising_weight~1nz (^sports_equipment~1) sports equipment used in calisthenic exercises and weightlifting
     weight~3nz (^physical_property~1) the vertical force exerted by a mass as a result of gravity
@@ -1589,12 +1598,12 @@
  wedding_licence ( meanings=1 NOUN NOUN_SINGULAR ) 
     marriage_license~1n 
  Wiens ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- whey ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ whey ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     whey~1nz (^dairy_product~1) watery part of milk produced when raw milk sours and coagulates
     milk_whey~1n 
  Wenzel ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Walsh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- wheeze ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ wheeze ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT ) 
     wheeze~1nz (^external_respiration~1) breathing with a husky or whistling sound
     wheeze~2nz (^scheme~2) a clever or amusing scheme or trick
     wheeze~3vz breathe with difficulty
@@ -1634,10 +1643,10 @@
  Wanner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wardlow ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Warfield ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Warman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Warnke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Warrick ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Warriner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Waterman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Watson ( meanings=3 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     James_Watson~1n 
     John_Broadus_Watson~1n 
@@ -1645,6 +1654,9 @@
  Wayman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Waymire ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Weatherly ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Webb ( meanings=2 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+    Sidney_James_Webb~1n 
+    Martha_Beatrice_Potter_Webb~1n 
  Wegner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Weinberger ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Weinstein ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1721,7 +1733,6 @@
  Wojcik ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wold ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Wolfgang ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Wolter ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wong ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Woodard ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Woodberry ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1742,6 +1753,7 @@
  Wotring ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wrigley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wulff ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Wyche ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wysocki ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Wacian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Wacleah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1777,6 +1789,7 @@
  Watelford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Watt ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     James_Watt~1n 
+ Wattesone ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Wattson ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Waylin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Waylon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1789,6 +1802,7 @@
     Wei_dynasty~1n 
  Weirley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Welda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Welford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Welles ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
     Orson_Welles~1n 
  Wendy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -1842,7 +1856,6 @@
  Wynter ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Wynton ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Waltraud ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Wanita ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Wava ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Williemae ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Wonda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1873,7 +1886,7 @@
     winning~4az 
  wild_pitch ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     wild_pitch~1nz (^pitch~2) an errant pitch that the catcher cannot be expected to catch and that allows a base runner to advance a base
- wild ( meanings=18 glosses=13 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ wild ( meanings=18 glosses=13 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     wilderness~2nz (^geographical_region~1) a wild and uninhabited area left in its natural condition
     state_of_nature~1nz (^state~1) a wild primitive state untouched by civilization
     angry~2a 
@@ -1987,7 +2000,7 @@
  washup ( meanings=2 NOUN NOUN_SINGULAR COMMON1 ) 
     bathing~1n 
     dishwashing~1n 
- wash ( meanings=19 glosses=16 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ wash ( meanings=19 glosses=16 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     washing~1n 
     wash~2nz (^commercial_activity~1) any enterprise in which losses and gains cancel out
     washing~2n 
@@ -2048,7 +2061,7 @@
     wander~3vz to move or cause to move in a sinuous, spiral, or circular course
     nose~13v 
     curve~10v 
- wave ( meanings=13 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ wave ( meanings=13 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     wave~1nz (^motion~2) a movement like that of a sudden occurrence or increase in a specified phenomenon
     wave~2nz (^hair_style~1) a hairdo that creates undulations in the hair
     wafture~1nz (^motion~3) the act of signaling by a movement of the hand
@@ -2130,7 +2143,7 @@
     water_polo~1nz (^athletic_game~1) a game played in a swimming pool by two teams of swimmers who try to throw an inflated ball into the opponents' goal
  wrong_'un ( meanings=1 NOUN NOUN_SINGULAR ) 
     bosie~1n 
- wrong ( meanings=13 glosses=13 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ wrong ( meanings=13 glosses=13 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     legal_injury~1nz (^injury~1) any harm or injury resulting from a violation of a legal right
     wrongfulness~1nz (^injustice~2) that which is contrary to the principles of justice or law
     incorrect~1az characterized by errors
@@ -2238,7 +2251,7 @@
     wrath~2nz (^rage~2) intense anger
  war_crime ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     war_crime~1nz (^crime~1) a crime committed in wartime
- written ( VERB_PAST_PARTICIPLE VERB COMMON4 COMMON1 KINDERGARTEN GRADE5_6 posdefault:VERB ) conjugate=wrote 
+ written ( VERB_PAST_PARTICIPLE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=wrote 
  writing_assignment ( meanings=1 NOUN NOUN_SINGULAR ) 
     written_assignment~1n 
  whispering_campaign ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -2249,19 +2262,6 @@
     susurrant~1az making a low continuous indistinct sound
  wrestling_hold ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     wrestling_hold~1nz (^grip~1) a hold used in the sport of wrestling
- wear ( meanings=12 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=worn 
-    wearing~1nz (^act~1) the act of having on your person as a covering or adornment
-    clothing~1n 
-    wear~3nz (^deterioration~2) impairment resulting from long use
-    wear~4vz have or show an appearance of
-    bear~3v 
-    assume~1vz put clothing on one's body
-    have_on~1vz be dressed in
-    fag_out~1vz exhaust or get tired through overuse or great strain or stress
-    wear_thin~1vz deteriorate through use or stress
-    bust~7v 
-    endure~6vz last and be usable
-    wear~12vz have in one's aspect
  withdrawal_method ( meanings=1 NOUN NOUN_SINGULAR ) 
     onanism~1n 
  wank ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -2823,7 +2823,7 @@
     Arilus_cristatus~1n 
  wax_insect ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     wax_insect~1nz (^scale_insect~1) any of various insects that secrete a waxy substance
- woolly ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=woolliest 
+ woolly ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=woolliest 
     lanate~1az covered with dense cottony hairs or hairlike filaments
     wooly-haired~1a 
     muzzy~1a 
@@ -3202,7 +3202,7 @@
     anorak~1nz (^jacket~2) a kind of heavy jacket
  windcheater ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     parka~1n 
- wooden ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ wooden ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     wooden~1az lacking ease or grace
     wooden~2az made or consisting of or employing wood
     wooden~3az 
@@ -3225,7 +3225,7 @@
     weed~4vz clear of weeds
  wash_room ( meanings=1 NOUN NOUN_SINGULAR ) 
     toilet_facility~1n 
- wireless ( meanings=5 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ wireless ( meanings=5 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     radio~1n 
     radio~2n 
     wireless~3nz (^telecommunication~2) transmission by radio waves
@@ -3729,7 +3729,7 @@
     lash~6v 
  Weston_cell ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     cadmium_cell~1n 
- wet ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) ) conjugate=wetted comparative=wettest 
+ wet ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) conjugate=wetted comparative=wettest 
     moisture~1nz (^wetness~1) wetness caused by water
     stiff~3a 
     wet~3az consisting of or trading in alcoholic liquor
@@ -3856,7 +3856,7 @@
     wide-angle~2az 
  wide_area_network ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Wan~1nz (^computer_network~1) a computer network that spans a wider area than does a local area network
- wide ( meanings=12 glosses=7 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) 
+ wide ( meanings=12 glosses=7 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     wide_of_the_mark~1az not on target
     full~2a 
     broad~4a 
@@ -4264,7 +4264,7 @@
     whimsy~2n 
  worn_spot ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     fret~3nz (^spot~6) a spot that has been worn away by abrasion or erosion
- worn ( meanings=2 glosses=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN posdefault:VERB (null) ) conjugate=wore 
+ worn ( meanings=2 glosses=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 KINDERGARTEN posdefault:VERB ) conjugate=wore 
     drawn~2a 
     worn~2az affected by wear
  winsomeness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -4339,7 +4339,7 @@
     willfulness~1n 
  wave-particle_duality ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     duality~2nz (^property~2) the property of matter and electromagnetic radiation that is characterized by the fact that some properties can be explained best by wave theory and others by particle theory
- wise ( meanings=6 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ wise ( meanings=6 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     wise~1nz (^fashion~3) a way of doing or being
     smart~3a 
     knowing~3az evidencing the possession of inside information
@@ -4392,7 +4392,7 @@
     wiriness~1nz (^spareness~1) the property of being lean and tough and sinewy
  weak_part ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     soft_spot~1nz (^weakness~1) a place of especial vulnerability
- weak ( meanings=13 glosses=11 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ weak ( meanings=13 glosses=11 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     weak~1az deficient in intelligence or mental power
     watery~1az overly diluted
     weak~3az likely to fail under stress or pressure
@@ -4536,7 +4536,7 @@
     wakefulness~1nz (^waking~1) a periodic state during which you are conscious and aware of the world
     vigilance~2n 
     sleeplessness~1n 
- wonder ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ wonder ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     curiosity~2nz (^cognitive_state~1) a state in which you want to learn more about something
     marvel~1nz (^natural_event~1) something that causes feelings of wonder
     wonderment~1nz (^amazement~1) the feeling aroused by something strange and surprising
@@ -4560,7 +4560,7 @@
     working_memory~1nz (^memory~3) memory for intermediate results that must be held during thinking
  wet_dream ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     wet_dream~1nz (^dream~3) an erotic dream accompanied by the (nocturnal) emission of semen
- wish ( meanings=10 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) (null) (null) (null) ) 
+ wish ( meanings=10 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     wish~1nz (^preference~2) the particular preference that you have
     regard~5n 
     indirect_request~1nz (^request~2) an expression of some desire or inclination
@@ -4571,7 +4571,7 @@
     wish~8vz hope for
     wish_well~1vz feel or express a desire or hope concerning the future or fortune of
     care~9v 
- worry ( meanings=8 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ worry ( meanings=8 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB ) 
     concern~2n 
     trouble~5n 
     worry~3vz touch or rub constantly
@@ -4807,7 +4807,7 @@
     news_report~1n 
     write_up~2vz bring to public notice by writing, with praise or condemnation
     write_out~2v 
- write ( meanings=10 glosses=10 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) conjugate=written 
+ write ( meanings=10 glosses=10 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=written 
     write~1vz communicate or express by writing
     save~4vz record data on a computer
     drop_a_line~1vz communicate in writing
@@ -4974,7 +4974,7 @@
     literary_genre~1n 
  wellerism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     wellerism~1nz (^rhetorical_device~1) a comparison comprising a well-known quotation followed by a facetious sequel
- whoop ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ whoop ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     whoop~1nz (^shout~1) a loud hooting cry of exultation or excitement
     hack~7vz cough spasmodically
     whoop~3vz shout, as if with joy or enthusiasm
@@ -4983,7 +4983,7 @@
     watchword~2n 
  war_whoop ( meanings=1 NOUN NOUN_SINGULAR ) 
     rallying_cry~1n 
- whisper ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ whisper ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     susurration~1nz (^speech_production~1) speaking softly without vibration of the vocal cords
     rustle~1nz (^noise~5) a light noise, like the noise of silk clothing or leaves blowing in the wind
     whisper~3vz speak softly
@@ -5005,16 +5005,16 @@
     characterisation~2n 
  word-painting ( meanings=1 NOUN NOUN_SINGULAR ) 
     word_picture~1n 
- whimper ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ whimper ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     whine~1nz (^complaint~3) a complaint uttered in a plaintive whining way
     pule~1vz cry weakly or softly
- whine ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ whine ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     whimper~1n 
     grizzle~2v 
     snivel~5v 
     whine~4vz move with a whining sound
     screech~4v 
- wail ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ wail ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     plaint~1n 
     whimper~2v 
     howl~6v 
@@ -5036,13 +5036,13 @@
     parole~3n 
  want_ad ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     want_ad~1nz (^classified_advertisement~1) a newspaper advertisement stating what is wanted
- want ( meanings=9 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) (null) ) 
+ want ( meanings=9 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     wishing~1n 
     need~2n 
     lack~1n 
     privation~2nz (^poverty~1) a state of extreme poverty
     want~5vz wish or demand the presence of
-    need~5v 
+    require~3v 
     want~7vz hunt or look for
     desire~4v 
     want~9vz be without, lack
@@ -5122,7 +5122,7 @@
  whicker ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     whinny~1nz (^cry~5) the characteristic sounds made by a horse
     whinny~2vz make a characteristic sound, of a horse
- whinny ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ whinny ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT ) 
     neigh~1n 
     neigh~2v 
  whoosh ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -5266,7 +5266,7 @@
     wedge_bone~1nz (^cut_of_beef~1) part of the sirloin nearest the rump
  walnut_oil ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     walnut_oil~1nz (^oil~2) oil from walnuts
- walnut ( meanings=3 glosses=3 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN (null) ) 
+ walnut ( meanings=3 glosses=3 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN ) 
     walnut~1nz (^edible_nut~1) nut of any of various walnut trees having a wrinkled two-lobed seed with a hard shell
     walnut_tree~1nz (^nut_tree~1) any of various trees of the genus Juglans
     walnut~3nz (^wood~4) hard dark-brown wood of any of various walnut trees
@@ -5820,7 +5820,7 @@
     itchy_feet~1nz (^impulse~6) very strong or irresistible impulse to travel
  wee_small_voice ( meanings=1 NOUN NOUN_SINGULAR ) 
     small_voice~1n 
- wee ( meanings=5 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE VERB_NOOBJECT (null) ) 
+ wee ( meanings=5 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE VERB_NOOBJECT ) 
     wee~1nz (^time~5) a short time
     wee~2az very early
     bitty~1a 
@@ -7086,7 +7086,7 @@
     electric_power~1n 
  warm_front ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     warm_front~1nz (^front~9) the front of an advancing mass of warmer air
- warm ( meanings=14 glosses=10 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=warmer 
+ warm ( meanings=14 glosses=10 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=warmer 
     warm~1az of a seeker
     warm~2az uncomfortable because of possible danger or trouble
     warm~3az characterized by liveliness or excitement or disagreement
@@ -8567,7 +8567,7 @@
     bygone~1nz (^past~2) past events to be put aside
  workweek ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
     week~1n 
- week ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE posdefault:NOUN TIMEWORD (null) ) 
+ week ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE posdefault:NOUN TIMEWORD ) 
     workweek~1nz (^work_time~1) hours or days of work in a calendar week
     calendar_week~1nz (^period~3) a period of seven consecutive days starting on Sunday
     hebdomad~1nz (^period~3) any period of seven consecutive days
@@ -8712,7 +8712,7 @@
  whee ( INTERJECTION ) 
  whoa ( INTERJECTION KINDERGARTEN ) 
  whoo ( INTERJECTION ) 
- whoops ( INTERJECTION COMMON2 COMMON1 GRADE1_2 ) 
+ whoops ( INTERJECTION COMMON2 COMMON1 GRADE1_2 posdefault:NOUN ) 
  whoopsey ( INTERJECTION ) 
  woops ( INTERJECTION ) 
  wuzzup ( INTERJECTION ) 
@@ -8725,11 +8725,11 @@
     wrapped~4az 
  wrest ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     wrest~1vz obtain by seizing forcibly or violently, also metaphorically
- wrote ( VERB_PAST VERB COMMON4 COMMON1 KINDERGARTEN GRADE5_6 posdefault:VERB ) conjugate=write 
+ wrote ( VERB_PAST VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=write 
  wrung ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 GRADE5_6 posdefault:VERB ) conjugate=wring 
  wade ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     wade~1vz walk 
- warn ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ warn ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     warn~1vz notify, usually in advance
     warn~2vz ask to go away
     warn~3vz notify of danger, potential harm, or risk
@@ -8737,7 +8737,7 @@
  waive ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     forfeit~5v 
     relinquish~4v 
- weigh ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ weigh ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     count~9v 
     count~10v 
     press~22v 
@@ -8826,7 +8826,7 @@
     well-spoken~1az speaking or spoken fittingly or pleasingly
  wordless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     mute~4a 
- wary ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) comparative=wariest 
+ wary ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) comparative=wariest 
     wary~1az marked by keen caution and watchful prudence
     leery~1a 
     wary~3az 
@@ -8847,7 +8847,7 @@
     worrisome~3az 
  wiry-coated ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     wire-haired~1a 
- wiry ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=wiriest 
+ wiry ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=wiriest 
     wiry~1az of hair that resembles wire in stiffness
     stringy~2a 
     wiry~3az of or relating to wire
@@ -8894,7 +8894,7 @@
     slothful~1a 
  windless ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     windless~1az without or almost without wind
- windy ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=windiest 
+ windy ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=windiest 
     blowy~1az abounding in or exposed to the wind or breezes
     wordy~1az using or containing too many words
     windy~3az resembling the wind in speed, force, or variability
@@ -8923,7 +8923,7 @@
     wine-red~1az of something having the dark red color of red wine
  white-flowered ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     white-flowered~1az having white flowers
- whitish ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ whitish ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     off-white~2a 
     milky~1a 
     whitish~3az 
@@ -8939,7 +8939,7 @@
     waxy~4a 
  waxlike ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     waxy~1a 
- waxy ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) comparative=waxiest 
+ waxy ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) comparative=waxiest 
     waxen~1az having the paleness of wax
     bendable~1a 
     impressible~1az easily impressed or influenced
@@ -8947,7 +8947,7 @@
     waxy~5az 
  whitened ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     white~9a 
- washed ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:VERB (null) ) 
+ washed ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:VERB ) 
     water-washed~1az clean by virtue of having been washed in water
     washed~2az wet as from washing
  water-washed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -8964,7 +8964,7 @@
  wooden-headed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL ) 
     thick-skulled~1a 
     wooden-headed~2az 
- witless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ witless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     nitwitted~1a 
     witless~2az 
  walk-to ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
@@ -8973,7 +8973,7 @@
     without_a_stitch~1az 
  without ( meanings=1 PARTICLE PREPOSITION COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     without~1z 
- wretched ( meanings=6 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ wretched ( meanings=6 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     miserable~2a 
     miserable~4a 
     vile~1a 
@@ -9025,7 +9025,7 @@
     welfare-statist~1a 
  welfare-statist ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     welfarist~1az of or relating to a welfare state
- wasteful ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ wasteful ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     wasteful~1az laying waste
     uneconomical~1a 
     wasteful~3az tending to squander and waste
@@ -9107,7 +9107,7 @@
     wormlike~1a 
     vermiculate~2a 
     wormy~3az 
- worried ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:VERB (null) ) 
+ worried ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:VERB ) 
     apprehensive~2az mentally upset over possible misfortune or danger etc
     upset~9a 
     worried~3az 
@@ -9144,7 +9144,7 @@
  weighed_down ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     loaded_down~2a 
     heavy~11a 
- wavy ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=waviest 
+ wavy ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=waviest 
     crinkly~1a 
     wavy~2az having waves
     wavy~3az 
@@ -9213,7 +9213,7 @@
     well_behaved~1az someone who behaves in a manner that the speaker believes is correct
  well_behaved ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     well-behaved~1a 
- worthless ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ worthless ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     unworthy~1a 
     worthless~2az lacking in usefulness or value
     worthless~3az 
@@ -9265,7 +9265,7 @@
     winter-blooming~1az of plants that bloom during the winter
  waggish ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     waggish~1az witty or joking
- witty ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) comparative=wittiest 
+ witty ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) comparative=wittiest 
     witty~1az combining clever conception and facetious expression
     witty~2az 
  well-intentioned ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -9275,7 +9275,7 @@
  wearisome ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     tiresome~1a 
     wearisome~2az 
- wrinkled ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ wrinkled ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     unironed~1a 
     wrinkly~1az marked by wrinkles
     wrinkled~3az 
@@ -9299,7 +9299,7 @@
     woebegone~1a 
     deplorable~3a 
     woeful~3az 
- whopping ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB (null) ) 
+ whopping ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     humongous~1a 
     whopping~2bz extremely
  weeny ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=weeniest 
@@ -9339,7 +9339,7 @@
     womanly~2az 
  well-mined ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     well-mined~1az well known and commonly used
- wicked ( meanings=6 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 (null) ) 
+ wicked ( meanings=6 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 ) 
     severe~4a 
     repellant~4a 
     sinful~2az having committed unrighteous acts
@@ -9391,7 +9391,7 @@
     well-conducted~1az characterized by good organization and control
  workaday ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     unremarkable~1a 
- wonderful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ wonderful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     tremendous~2a 
     wonderful~2az 
  wondrous ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -9431,7 +9431,7 @@
     white-ribbed~1az having white ribs
  white-streaked ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     white-streaked~1az having white streaks
- workable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ workable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     practicable~1a 
  white-shoe ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     white-shoe~1az denoting a company or law firm owned and run by members of the WASP elite who are generally conservative
@@ -9595,7 +9595,7 @@
  well-dressed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     well-groomed~2a 
     well-dressed~2az 
- weary ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=weariest 
+ weary ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=weariest 
     aweary~1a 
     weary~2az 
     tire~2v 
@@ -10184,7 +10184,7 @@
     warm_up~3vz become more friendly or open
     warm~14v 
     warm_up~5vz run until the normal working temperature is reached
- weep ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT (null) ) conjugate=wept 
+ weep ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT ) conjugate=wept 
     cry~6v 
  wee-wee ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT ) 
     spend_a_penny~1v 
@@ -10193,7 +10193,7 @@
  wear_out ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     tire_out~1v 
     wear~9v 
-    wear~10v 
+    bust~7v 
  wear_down ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     outwear~1v 
     wear_out~2v 
@@ -10326,7 +10326,7 @@
     strike~25v 
  winnow_out ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     rule_out~1v 
- wheedle ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB (null) (null) ) 
+ wheedle ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB ) 
     palaver~4v 
  win_over ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB SEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     convert~9v 

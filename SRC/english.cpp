@@ -612,6 +612,7 @@ uint64 GetPosData(unsigned int at, char* original,WORDP &entry,WORDP &canonical,
 
 		if (kind == PLACETYPE_NUMBER)
 		{
+			entry = StoreWord(original,properties);
 			sprintf(number,"%d",(int)Convert2Integer(original));
 			sysflags |= ORDINAL;
 			properties = ADVERB|ADJECTIVE|ADJECTIVE_NUMBER|NOUN|NOUN_NUMBER| (baseflags & TAG_TEST); // place numbers all all potential adverbs:  "*first, he wept"  but not in front of an adjective or noun, only as verb effect
@@ -666,7 +667,19 @@ uint64 GetPosData(unsigned int at, char* original,WORDP &entry,WORDP &canonical,
 		}
 		else
 		{
-			if (strchr(original,'.')) sprintf(number,"%1.2f",atof(original));
+			if (strchr(original,'.')) 
+			{
+				float val = (float) atof(original);
+				if (IsDigitWithNumberSuffix(original)) // 10K  10M 10B
+				{
+					len = strlen(original);
+					char d = original[len-1];
+					if (d == 'k' || d == 'K') val *= 1000;
+					else if (d == 'm' || d == 'M') val *= 1000000;
+					else if (d == 'B' || d == 'b' || d == 'G' || d == 'g') val *= 1000000000;
+				}
+				sprintf(number,"%1.2f",val);
+			}
 			else 
 			{
 				int64 val = Convert2Integer(original);
@@ -709,17 +722,17 @@ uint64 GetPosData(unsigned int at, char* original,WORDP &entry,WORDP &canonical,
 			{
 				properties ^= NOUN_SINGULAR;
 				properties |= NOUN_NUMBER|NOUN;
-				if (tokenControl & TOKEN_AS_IS) canonical = entry;
+				if (tokenControl & TOKEN_AS_IS && !canonical) canonical = entry;
 			}
 			if (val & ADVERB) 
 			{
 				properties |= entry->properties & (ADVERB);
-				if (tokenControl & TOKEN_AS_IS) canonical = entry;
+				if (tokenControl & TOKEN_AS_IS  && !canonical) canonical = entry;
 			}
 			if (val & PREPOSITION) 
 			{
 				properties |= PREPOSITION; // like "once"
-				if (tokenControl & TOKEN_AS_IS) canonical = entry;
+				if (tokenControl & TOKEN_AS_IS  && !canonical) canonical = entry;
 			}
 			if (val & PRONOUN_BITS)  // in Penntags this is CD always but "no one is" is NN or PRP
 			{
@@ -727,13 +740,13 @@ uint64 GetPosData(unsigned int at, char* original,WORDP &entry,WORDP &canonical,
 				//if (at > 1 && !stricmp(wordStarts[at-1],"no"))
 				//{
 					//properties |= val & PRONOUN_BITS; // like "one"
-					if (tokenControl & TOKEN_AS_IS) canonical = entry;
+					if (tokenControl & TOKEN_AS_IS  && !canonical) canonical = entry;
 				//}
 			}
 			if (val & VERB) 
 			{
 				properties |= entry->properties & ( VERB_BITS | VERB); // like "once"
-				if (tokenControl & TOKEN_AS_IS) canonical = FindWord(English_GetInfinitive(original,false),0,LOWERCASE_LOOKUP);
+				if (tokenControl & TOKEN_AS_IS  && !canonical) canonical = FindWord(English_GetInfinitive(original,false),0,LOWERCASE_LOOKUP);
 			}
 			if (val & POSSESSIVE && tokenControl & TOKEN_AS_IS && !stricmp(original,"'s") && at > start) // internal expand of "it 's" and "What 's" and capitalization failures that contractions.txt wouldn't have handled 
 			{

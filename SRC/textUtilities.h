@@ -123,6 +123,7 @@ bool IsArithmeticOperator(char* word);
 unsigned IsNumber(char* word,bool placeAllowed = true); // returns kind of number
 bool IsPlaceNumber(char* word);
 bool IsDigitWord(char* word);
+bool IsDigitWithNumberSuffix(char* number);
 bool IsUrl(char* word, char* end);
 unsigned int IsMadeOfInitials(char * word,char* end);
 bool IsNumericDate(char* word,char* end);

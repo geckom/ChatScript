@@ -58,6 +58,8 @@
     Sir_Ronald_Ross~1n 
     James_Clark_Ross~1n 
     John_Ross~1n 
+ rain_dance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    rain_dance~1nz (^ceremonial_dance~1) a ritual dance intended to bring rain
  rustling ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     rustling~1nz (^stealing~1) the stealing of cattle
     whispering~2n 
@@ -364,6 +366,8 @@
     regress~1n 
     retroversion~2nz (^version~5) translation back into the original language
     retroflection~3n 
+ reef_squirrelfish ( meanings=1 NOUN NOUN_SINGULAR ) 
+    Holocentrus_coruscus~1n 
  Rood ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  reverse ( meanings=14 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     turnaround~1n 
@@ -389,7 +393,7 @@
  Rhode_Island_bent ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Agrostis_canina~1nz (^bent~4) common grass with slender stems and narrow leaves
  Richardo ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- relay ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT (null) (null) ) conjugate=relaid 
+ relay ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT ) conjugate=relaid 
     relay~1nz (^passage~3) the act of passing something along from one person or group to another
     electrical_relay~1n 
     relay_race~1n 
@@ -434,7 +438,7 @@
     make_over~2v 
  Roux ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Rademacher ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- russet ( meanings=3 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:ADJECTIVE (null) ) 
+ russet ( meanings=3 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     russet~1nz (^homespun~1) a reddish brown homespun fabric
     russet~2az of brown with a reddish tinge
     russet~3az 
@@ -462,6 +466,7 @@
     physiological_reaction~1n 
     automatic~5a 
  Riles ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
+ Rozomund ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Rosa ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
     genus_Rosa~1nz (^rosid_dicot_genus~1) large genus of erect or climbing prickly shrubs including roses
  Rikkard ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -484,6 +489,8 @@
     roller~5nz (^cylinder~3) a cylinder that revolves
     roller~6nz (^wheel~5) a small wheel without spokes
     roll~9nz (^wave~5) a long heavy sea wave as it advances towards the shore
+ Rodgers ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+    Richard_Rodgers~1n 
  road ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     road~1nz (^agency~1) a way or means to achieve something
     route~1nz (^way~4) an open way for travel or transportation
@@ -582,8 +589,6 @@
  righteousness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 ) 
     righteousness~1nz (^morality~1) adhering to moral principles
  Ressie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- railroad_car ( meanings=1 NOUN NOUN_SINGULAR ) 
-    car~3n 
  Reatha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Rushton ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Renaud ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -689,18 +694,6 @@
  Ringer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Roseau ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Roseau~1nz (^national_capital~1) the capital and largest city of Dominica
- rag ( meanings=11 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
-    rag~1nz (^practical_joke~1) a boisterous practical joke
-    tatter~1nz (^piece_of_material~1) a small piece of cloth or paper
-    sheet~6n 
-    ragtime~1nz music with a syncopated melody
-    rag_week~1nz (^week~3) a week at British universities during which side-shows and processions of floats are organized to raise money for charities
-    rag~6vz break into lumps before sorting
-    lambast~1vz censure severely or angrily
-    taunt~2v 
-    rag~9vz play in ragtime
-    get_at~1vz cause annoyance in
-    crucify~3vz treat cruelly
  Ripley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Romie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  religious_text ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -890,6 +883,22 @@
  Reyna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  rock_sunfish ( meanings=1 NOUN NOUN_SINGULAR ) 
     rock_bass~1n 
+ rail ( meanings=15 glosses=14 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+    rail~1nz (^wading_bird~1) any of numerous widely distributed small wading birds of the family Rallidae having short wings and very long toes for running on soft mud
+    rail~2nz (^bar~2) a horizontal bar
+    rail~3nz (^railroad~2) short for railway
+    railing~1nz (^barrier~1) a barrier consisting of a horizontal bar and supports
+    track~4n 
+    fulminate~4vz criticize severely
+    vituperate~1vz spread negative information about
+    inveigh~2vz complain bitterly
+    rail~9vz fish with a handline over the rails of a boat
+    rail~10vz lay with rails
+    train~13vz travel by rail or train
+    rail~12vz convey by rails
+    rail_off~1vz separate with a railing
+    rail~14vz provide with rails
+    rail_in~1vz enclose with rails
  Rummel ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  ruling ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     opinion~1n 
@@ -1186,6 +1195,7 @@
  rapine ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
     rape~2nz (^plundering~1) the act of despoiling a country in warfare
  Renz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Rong ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Rowden ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rothman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Raglin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1196,8 +1206,9 @@
  Rasheed ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Robson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rossman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- RV ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
+ RV ( meanings=2 NOUN NOUN_PROPER_SINGULAR COMMON2 NOUN_NODETERMINER ) 
     recreational_vehicle~1n 
+    RV~2nz 
  Rasheeda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Rolland ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rowland ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1352,7 +1363,6 @@
     retainer~1nz (^dental_appliance~1) a dental appliance that holds teeth in position after orthodontic treatment
     servant~1n 
     consideration~6n 
- Reardon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  real-estate_business ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     real-estate_business~1nz (^business~3) the business of selling real estate
  Rives ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
@@ -1481,6 +1491,7 @@
     Neofiber_alleni~1nz (^rodent~1) of Florida wetlands
  reclusiveness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     reclusiveness~1nz (^lonesomeness~1) a disposition to prefer seclusion or isolation
+ Ranon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Rockett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rabinowitz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  repressor_gene ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -1605,7 +1616,6 @@
  Raymundo ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rubin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rosamaria ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Radcliffe ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Ronnie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  reovirus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 ) 
     reovirus~1nz (^animal_virus~1) any of a group of non-arboviruses including the rotavirus causing infant enteritis
@@ -1630,7 +1640,6 @@
  right_hemisphere ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     right_brain~1nz (^hemisphere~1) the cerebral hemisphere to the right of the corpus callosum that controls the left half of the body
  Rose ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- Ruano ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rossie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  respirator ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     gas_helmet~1nz (^mask~3) a protective mask with a filter
@@ -1655,8 +1664,6 @@
  Richards ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     I._A._Richards~1n 
  Ryne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- retrobulbar_neuritis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    retrobulbar_neuritis~1nz (^neuritis~1) inflammation of the optic nerve behind the eye
  Robb ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  redevelopment ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     overhaul~1nz (^improvement~1) the act of improving by renewing and restoring
@@ -1707,7 +1714,7 @@
     review~9n 
  Rynchopidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Rynchopidae~1nz (^bird_family~1) coextensive with the genus Rynchops: skimmers
- rust ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ rust ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     rust_fungus~1nz (^fungus~1) any of various fungi causing rust disease in plants
     rusting~1nz (^erosion~1) the formation of reddish-brown ferric oxides on iron by low-temperature oxidation in the presence of water
     rust~3nz (^plant_disease~1) a plant disease that produces a reddish-brown discoloration of leaves and stems
@@ -1784,12 +1791,11 @@
     backsliding~1n 
     regress~3v 
     get_worse~1v 
- Reidy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rosio ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  rhabdovirus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     rhabdovirus~1nz (^animal_virus~1) any of a group of arboviruses including those causing rabies
  Rube ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- rumble ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ rumble ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_NOOBJECT ) 
     gang_fight~1nz (^fight~3) a fight between rival gangs of adolescents
     rumble~2nz (^seat~1) a servant's seat in the rear of a carriage
     rumbling~1nz (^noise~5) a loud low dull continuous noise
@@ -1944,8 +1950,6 @@
  Rosaline ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Rambert ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rousset ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- RICO_Act ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Racketeer_Influenced_and_Corrupt_Organizations_Act~1n 
  recollective ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     long~7a 
  redundancy ( meanings=4 glosses=4 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -1955,7 +1959,7 @@
     redundancy~4nz (^repetitiousness~1) repetition of messages to reduce the probability of errors in transmission
  Ryley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rhett ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- rub ( meanings=5 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ rub ( meanings=5 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     wipe~1n 
     snag~1nz (^obstacle~2) an unforeseen obstacle
     rub~3vz move over something with pressure
@@ -1985,6 +1989,12 @@
     funny~3a 
  rickrack ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     ricrac~1nz (^trim~2) a narrow zigzag ribbon used as trimming
+ rebate ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+    rabbet~1nz (^channel~8) a rectangular groove made to hold two pieces together
+    discount~3n 
+    rebate~3vz join with a rebate
+    rebate~4vz cut a rebate in
+    rebate~5vz give a reduction in the price during a sale
  Rubinstein ( meanings=2 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Anton_Gregor_Rubinstein~1n 
     Arthur_Rubinstein~1n 
@@ -2002,7 +2012,6 @@
     reportage~1nz (^news~5) the news as presented by reporters for newspapers or radio or television
  Raedleah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Redamann ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Rueben ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rearick ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  resource ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN ) 
     resource~1nz (^plus~2) a source of aid or support that may be drawn upon when needed
@@ -2215,7 +2224,7 @@
     reconnaissance~1nz (^intelligence~1) the act of reconnoitring 
  Reynolds ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Sir_Joshua_Reynolds~1n 
- round ( meanings=26 glosses=22 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE PARTICLE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT TIMEWORD (null) ) comparative=rounder 
+ round ( meanings=26 glosses=22 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE PARTICLE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT TIMEWORD ) comparative=rounder 
     daily_round~1nz (^habitude~1) the usual activities in your day
     round_of_golf~1nz (^golf~1) the activity of playing 18 holes of golf
     round~3nz (^call~3) a series of professional calls (usually in a set order)
@@ -2278,7 +2287,7 @@
  Russel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  rough-legged_hawk ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Buteo_lagopus~1nz (^hawk~1) large hawk of the northern hemisphere that feeds chiefly on small rodents and is beneficial to farmers
- remark ( meanings=4 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) (null) ) 
+ remark ( meanings=4 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     remark~1nz (^notice~1) explicit notice
     input~3n 
     note~10v 
@@ -2491,6 +2500,7 @@
  ridley ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     ridley~1nz (^marine_turtle~1) a marine turtle
  Ridley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Rines ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  read/write_memory ( meanings=1 NOUN NOUN_SINGULAR ) 
     Ram~1n 
  roller_skating ( meanings=1 glosses=1 NOUN_ABSTRACT VERB_PRESENT_PARTICIPLE NOUN VERB ADJECTIVE ADJECTIVE_PARTICIPLE NOUN_SINGULAR NOUN_NODETERMINER VERB_CONJUGATE1 ) conjugate=roller_skated 
@@ -2545,8 +2555,6 @@
  Roman_basilica ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     basilica~1nz (^Roman_building~1) a Roman building used for public administration
  Rosser ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- retarded_depression ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    retarded_depression~1nz (^depressive_disorder~1) a state of clinical depression in which the individual is lethargic and slow to initiate action
  rum ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) comparative=rummer 
     rummy~1nz (^card_game~1) a card game based on collecting sets and sequences
     rum~2nz (^John_Barleycorn~1) liquor distilled from fermented molasses
@@ -2587,7 +2595,7 @@
  Rodger ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Roddy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rayder ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- raspberry ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN (null) ) 
+ raspberry ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
     snort~1nz (^shout~1) a cry or noise made to express displeasure or contempt
     raspberry~2nz (^berry~1) red or black edible aggregate berries usually smaller than the related blackberries
     raspberry_bush~1nz (^bramble_bush~1) woody brambles bearing usually red but sometimes black or yellow fruits that separate from the receptacle when ripe and are rounder and smaller than blackberries
@@ -2797,7 +2805,7 @@
  radiotelephony ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     radiotelephone~2n 
  Raedwald ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- religious ( meanings=7 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 (null) ) 
+ religious ( meanings=7 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 ) 
     religious~1nz (^religious_person~1) a member of a religious order who is bound by vows of poverty and chastity and obedience
     religious~2az of or relating to clergy bound by monastic vows
     religious~3az having or showing belief in and reverence for a deity
@@ -2894,7 +2902,6 @@
  riding_breeches ( meanings=1 NOUN NOUN_SINGULAR ) 
     jodhpur_breeches~1n 
  Rumsey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Reynoso ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  RU ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 NOUN_NODETERMINER ) 
     ruthenium~1n 
  Rhiannon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -2971,6 +2978,7 @@
     Racine~1nz (^city~2) a city in southeastern Wisconsin on Lake Michigan to the south of Milwaukee
     Jean_Racine~1n 
  Radcliff ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Radcliffe ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rader ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Radley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Radtke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2993,6 +3001,7 @@
  Reagan ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
     Ronald_Reagan~1n 
  Reames ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ Reardon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Reavis ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Redd ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Redding ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3007,6 +3016,7 @@
     Steve_Reich~1n 
     Wilhelm_Reich~1n 
  Reichert ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Reidy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Reiff ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Reimers ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Reinhart ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3016,6 +3026,7 @@
  Restrepo ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rettig ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Revels ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
+ Reynoso ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rhea ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
     Rhea~1nz (^Titaness~1) fertility goddess in ancient Greek mythology
  Rheaume ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3026,7 +3037,6 @@
  Riendeau ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rine ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rinehart ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Rines ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rios ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rippy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rittenhouse ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3044,8 +3054,6 @@
     Rochester~2nz (^city~2) a city in western New York
  Rodarte ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Roden ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Rodgers ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
-    Richard_Rodgers~1n 
  Rodrigues ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rodriquez ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Roehl ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3073,6 +3081,7 @@
  Roy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  Royce ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Royston ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Ruano ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Ruben ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ruble ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Rueda ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3127,7 +3136,6 @@
  Rangford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rangley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ranice ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Ranon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Rasha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Rashad ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rathnait ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3225,7 +3233,6 @@
  Rona ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Ronaldo ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ronell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Rong ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ronit ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ronna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Ronnell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3259,11 +3266,11 @@
  Roxbury ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Royan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Royse ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Rozomund ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ruanaidh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rubye ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Ruck ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rudella ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Rueben ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ruelle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Rufa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ruffe ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3354,7 +3361,7 @@
     paying_back~1nz (^group_action~1) a reciprocal group action
     return_key~1nz (^key~2) the key on electric typewriters or computer keyboards that causes a carriage return and a line feed
     income_tax_return~1nz (^instrument~5) document giving the tax collector information about the taxpayer's tax liability
-    riposte~2n 
+    comeback~2n 
     recurrence~1nz (^repeat~1) happening again 
     coming_back~1nz (^turn~8) the occurrence of a change in direction back in the opposite direction
     proceeds~1nz (^income~1) the income or profit arising from such transactions as the sale of land or other property
@@ -3576,7 +3583,7 @@
     rolling~2nz (^robbery~1) the act of robbing a helpless person
     roll~11n 
     rolled~2a 
- rap ( meanings=10 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ rap ( meanings=10 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     whack~1n 
     blame~1n 
     hip-hop~1nz (^African-American_music~1) genre of African-American music of the 1980s and 1990s in which rhyming lyrics are chanted to a musical accompaniment
@@ -3609,7 +3616,7 @@
     artifice~1n 
  royal_road ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     royal_road~1nz (^road~1) an auspicious way or means to achieve something
- royal ( meanings=9 glosses=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE (null) ) 
+ royal ( meanings=9 glosses=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE ) 
     royal_stag~1nz (^stag~1) stag with antlers of 12 or more branches
     royal~2nz (^sheet~1) a sail set next above the topgallant on a royal mast
     royal~3az invested with royal power as symbolized by a crown
@@ -3867,7 +3874,7 @@
     flick~8vz twitch or flutter
     undulate~4v 
     thumb~6v 
- reach ( meanings=13 glosses=11 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) ) 
+ reach ( meanings=13 glosses=11 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     reaching~2nz (^motion~2) the act of physically reaching or thrusting out
     ambit~1nz (^extent~1) an area in which something acts or operates or has power or control:
     compass~4nz (^potentiality~1) the limit of capability
@@ -3909,14 +3916,14 @@
     red_herring~1nz (^diversion~1) any diversion intended to distract attention from the main issue
     preliminary_prospectus~1n 
     smoked_herring~1n 
- red ( meanings=6 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=reddest 
+ red ( meanings=6 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE ) comparative=reddest 
     redness~1nz (^chromatic_colour~1) red color or pigment
     bolshy~1nz (^radical~3) emotionally charged terms used to refer to extreme radicals or revolutionaries
     loss~6n 
     crimson~2az characterized by violence or bloodshed
     cherry~5a 
     flushed~1az reddened or suffused with or as if with blood from emotion or exertion
- right ( meanings=37 glosses=28 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ right ( meanings=37 glosses=28 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     right~1nz (^turn~4) a turn toward the side of the body that is on the south when the person is facing east
     rightfield~2nz (^parcel~4) the piece of ground in the outfield on the catcher's right
     rightfulness~1nz (^justness~2) anything in accord with principles of justice
@@ -4084,7 +4091,7 @@
  revelry ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     revel~1nz (^jollification~1) unrestrained merrymaking
  riot ( meanings=6 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN VERB_NOOBJECT ) 
-    orgy~1n 
+    bacchanalia~1n 
     public_violence~1n 
     howler~3n 
     rioting~1n 
@@ -4097,6 +4104,18 @@
     romp~4vz win easily
     frolic~2v 
     romp~6vz run easily and fairly fast
+ rag ( meanings=11 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
+    rag~1nz (^practical_joke~1) a boisterous practical joke
+    tatter~1nz (^piece_of_material~1) a small piece of cloth or paper
+    sheet~6n 
+    ragtime~1nz music with a syncopated melody
+    rag_week~1nz (^week~3) a week at British universities during which side-shows and processions of floats are organized to raise money for charities
+    rag~6vz break into lumps before sorting
+    lambast~1vz censure severely or angrily
+    tease~5v 
+    rag~9vz play in ragtime
+    get_at~1vz cause annoyance in
+    crucify~3vz treat cruelly
  Royal_National_Eisteddfod ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Royal_National_Eisteddfod~1nz (^eisteddfod~1) an eisteddfod with competitions in music and drama and poetry and the fine arts
  raree-show ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -4129,8 +4148,6 @@
     resound~2vz ring or echo with sound
  ritual_dancing ( meanings=1 NOUN NOUN_SINGULAR ) 
     ritual_dance~1n 
- rain_dance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    rain_dance~1nz (^ceremonial_dance~1) a ritual dance intended to bring rain
  reenactment ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     reenactment~1nz (^playacting~1) performing a role in an event that occurred at an earlier time
  roleplaying ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
@@ -4190,7 +4207,7 @@
     roundup~3nz (^summary~1) a summary list
  rhinoscopy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     rhinoscopy~1nz (^examination~1) examination of the nasal passages
- recount ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ recount ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     recount~1nz (^count~1) an additional count
     recount~2vz count again
     recite~3v 
@@ -4198,7 +4215,7 @@
     face_lifting~2n 
  rhytidoplasty ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     rhytidectomy~1n 
- radical ( meanings=12 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:ADJECTIVE (null) ) 
+ radical ( meanings=12 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     stem~5n 
     radical~2nz (^character~6) a character conveying the lexical meaning of a logogram
     radical~3nz (^individual~1) a person who has radical ideas or opinions
@@ -4376,7 +4393,7 @@
     refresher_course~1n 
     refresher~2nz (^drink~3) a drink that refreshes
     refresher~3nz (^legal_fee~1) a fee paid to counsel in a case that lasts more than one day
- required ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON2 posdefault:VERB (null) ) 
+ required ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON2 posdefault:VERB ) 
     compulsory~1a 
     requisite~2a 
     required~3az 
@@ -4445,22 +4462,6 @@
     recycling~1nz (^exercise~4) the act of processing used or abandoned materials for use in creating new products
  rail_technology ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     railroading~1nz (^technology~1) the activity of designing and constructing and operating railroads
- rail ( meanings=15 glosses=14 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
-    rail~1nz (^wading_bird~1) any of numerous widely distributed small wading birds of the family Rallidae having short wings and very long toes for running on soft mud
-    rail~2nz (^bar~2) a horizontal bar
-    rail~3nz (^railroad~2) short for railway
-    railing~1nz (^barrier~1) a barrier consisting of a horizontal bar and supports
-    track~4n 
-    fulminate~4vz criticize severely
-    vituperate~1vz spread negative information about
-    inveigh~2vz complain bitterly
-    rail~9vz fish with a handline over the rails of a boat
-    rail~10vz lay with rails
-    train~13vz travel by rail or train
-    rail~12vz convey by rails
-    rail_off~1vz separate with a railing
-    rail~14vz provide with rails
-    rail_in~1vz enclose with rails
  railroading ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     rail_technology~1n 
  repulsion ( meanings=3 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -4507,7 +4508,7 @@
     registration_fire~1nz (^fire~1) fire delivered to obtain accurate data for subsequent effective engagement of targets
  radioactive_dating ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     radioactive_dating~1nz (^measure~3) measurement of the amount of radioactive material that an object contains
- radioactive ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ radioactive ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     radioactive~1az exhibiting or caused by radioactivity
     radioactive~2az 
  Rorschach ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -4560,7 +4561,7 @@
     replica~1n 
     echo~3n 
     replication~5nz (^pleading~1) a pleading made by a plaintiff in reply to the defendant's plea or answer
-    comeback~2n 
+    return~10n 
     replication~7nz (^biological_process~1) the process whereby DNA makes a copy of itself before cell division
  replay ( meanings=6 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) 
     instant_replay~1n 
@@ -4835,7 +4836,7 @@
     reinforce~2vz strengthen and support with rewards
     pay_back~2vz act or give recompense in recognition of someone's behavior or actions
     honor~7v 
- ridicule ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ ridicule ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
     derision~1n 
     ridicule~2nz (^disrespect~3) language or behavior intended to mock or humiliate
     guy~4v 
@@ -4859,7 +4860,7 @@
     recusancy~1nz (^direct_action~1) refusal to submit to established authority
  racial_extermination ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     race_murder~1nz (^kill~2) systematic killing of a racial or cultural group
- radio ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) ) 
+ radio ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     wireless~1nz (^communication_system~2) a communication system based on broadcasting electromagnetic waves
     tuner~1nz (^receiving_system~1) an electronic receiver that detects and demodulates and amplifies transmitted signals
     radiocommunication~1nz (^broadcasting~2) medium for communication
@@ -4869,7 +4870,7 @@
     readmission~1nz (^admission~1) the act of admitting someone again
  resettlement ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     relocation~2nz (^transportation~2) the transportation of people to a new settlement (as after an upheaval of some kind)
- recall ( meanings=12 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ recall ( meanings=12 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     recall~1nz (^repeal~1) the act of removing an official by petition
     reminiscence~1nz (^memory~3) the process of remembering 
     recall~3nz (^bugle_call~1) a bugle call that signals troops to return
@@ -4999,12 +5000,10 @@
     redhorse~1nz (^sucker~1) North American sucker with reddish fins
  rainbow_fish ( meanings=1 NOUN NOUN_SINGULAR ) 
     Lebistes_reticulatus~1n 
- rainbow ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN (null) ) 
+ rainbow ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN ) 
     rainbow~1nz (^promise~1) an illusory hope
     rainbow~2nz (^bow~9) an arc of colored light in the sky caused by refraction of the sun's rays by rain
     rainbow~3az 
- reef_squirrelfish ( meanings=1 NOUN NOUN_SINGULAR ) 
-    Holocentrus_coruscus~1n 
  reef ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     reef~1nz (^strip~3) one of several strips across a sail that can be taken in or rolled up to lessen the area of the sail that is exposed to the wind
     reef~2nz (^ridge~3) a submerged ridge of rock or coral near the surface of the water
@@ -5400,7 +5399,7 @@
  rose_chafer ( meanings=2 NOUN NOUN_SINGULAR ) 
     Macrodactylus_subspinosus~1n 
     Cetonia_aurata~1n 
- rose ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PAST NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB (null) ) conjugate=rise 
+ rose ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PAST NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB ) conjugate=rise 
     rosiness~1nz (^pink~1) a dusty pink color
     rose_wine~1nz (^wine~2) pinkish table wine from red grapes whose skins were removed after fermentation began
     rosebush~1nz (^bush~4) any of many shrubs of the genus Rosa that bear roses
@@ -5751,9 +5750,11 @@
  round_shot ( meanings=1 NOUN NOUN_SINGULAR ) 
     cannonball~1n 
  railcar ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    railroad_car~1n 
+    car~3n 
  railway_car ( meanings=1 NOUN NOUN_SINGULAR ) 
     railcar~1n 
+ railroad_car ( meanings=1 NOUN NOUN_SINGULAR ) 
+    railway_car~1n 
  rug_beater ( meanings=1 NOUN NOUN_SINGULAR ) 
     carpet_beater~1n 
  rug ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN ) 
@@ -5927,11 +5928,11 @@
     rayon~2az 
  rabbet_plane ( meanings=1 NOUN NOUN_SINGULAR ) 
     openside_plane~1n 
- rabbet ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 VERB_DIRECTOBJECT ) 
-    rebate~1nz (^channel~8) a rectangular groove made to hold two pieces together
+ rabbet ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 VERB_DIRECTOBJECT ) 
+    rebate~1n 
     rabbet~2vz cut a rectangular groove into
     rabbet~3vz join with a rabbet joint
- rectory ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN (null) ) 
+ rectory ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     vicarage~1n 
  rowlock ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     tholepin~1n 
@@ -5959,12 +5960,6 @@
     rebato~1nz (^collar~4) a wired or starched collar of intricate lace
  rebato ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     rabato~1n 
- rebate ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
-    rabbet~1n 
-    discount~3n 
-    rebate~3vz join with a rebate
-    rebate~4vz cut a rebate in
-    rebate~5vz give a reduction in the price during a sale
  rabbet_joint ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     rabbet_joint~1nz (^joint~2) a joint formed by fitting together two rabbeted boards
  rabbit_hutch ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -6192,14 +6187,14 @@
     Zantac~1nz (^histamine_blocker~1) a histamine blocker and antacid used to treat peptic ulcers and gastritis and esophageal reflux
  rapid_transit ( meanings=1 NOUN NOUN_SINGULAR ) 
     mass_rapid_transit~1n 
- rapid ( meanings=4 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ rapid ( meanings=4 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     rapid~1nz (^waterway~2) a part of a river where the current is very fast
     rapid~2az done or occurring in a brief period of time
     speedy~2az characterized by speed
     rapid~4az 
  rapier ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     tuck~1n 
- rasp ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ rasp ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     wood_file~1n 
     rasping~1n 
     rasp~3vz utter in a grating voice
@@ -6520,7 +6515,7 @@
  reticulation ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     reticulation~1nz (^network~4) an arrangement resembling a net or network
     reticulation~2nz (^formation~7) the formation of a network of cracks or wrinkles in a photographic emulsion
- retort ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ retort ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     retort~1nz (^vessel~2) a vessel where substances are distilled or decomposed by heat
     replication~6n 
     riposte~3v 
@@ -7306,7 +7301,7 @@
  redness ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER ) 
     red~1n 
     inflammation~4n 
- ruby ( meanings=5 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ ruby ( meanings=5 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     crimson~1n 
     ruby~2nz (^gem~2) a transparent piece of ruby that has been cut and polished and is valued as a precious gem
     ruby~3nz (^corundom~1) a transparent deep red variety of corundum
@@ -7314,7 +7309,7 @@
     ruby~5az 
  reddish_orange ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     reddish_orange~1nz (^orange~1) an orange color closer to red than to yellow
- reddish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ reddish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     ruby~4a 
     reddish~2az 
  royal_blue ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -7391,7 +7386,7 @@
     reporting_weight~1nz (^body_weight~1) a person's body weight at the beginning of the season (when first reporting for practice)
  radio_frequency ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     radio_frequency~1nz (^frequency~3) an electromagnetic wave frequency between audio and infrared
- rate ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) ) 
+ rate ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     pace~2nz (^temporal_property~1) the relative speed of progress or change
     charge_per_unit~1nz (^charge~14) amount of a charge or payment relative to some basis
     rate~3nz (^proportion~4) a quantity or amount or measure considered as a proportion of another quantity or amount or measure
@@ -7771,7 +7766,7 @@
  rustiness ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     rustiness~1nz (^maladroitness~1) ineptitude or awkwardness as a consequence of age or lack of practice
     rustiness~2nz (^status~1) the condition of being coated or clogged with rust
- reason ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) ) 
+ reason ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) 
     understanding~1nz (^mental_faculty~1) the capacity for rational thought or inference or discrimination
     reason~2nz (^fact~1) a fact that logically justifies some premise or conclusion
     reason~3nz (^explanation~2) an explanation of the cause of some phenomenon
@@ -7852,7 +7847,7 @@
  Rubicon ( meanings=2 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     point_of_no_return~1n 
     Rubicon~2nz (^boundary~2) the boundary in ancient times between Italy and Gaul
- rage ( meanings=8 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ rage ( meanings=8 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_NOOBJECT ) 
     furor~2nz (^fashion~4) an interest followed with exaggerated zeal
     madness~3nz (^anger~2) a feeling of intense anger
     rage~3nz (^violence~3) violent state of the elements
@@ -8122,7 +8117,7 @@
     report~1n 
     repute~1n 
     reputation~3nz (^notoriety~1) notoriety for some particular characteristic
- report ( meanings=13 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) (null) (null) ) 
+ report ( meanings=13 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     reputation~1nz (^estimate~3) the general estimation that the public has for a person
     theme~3n 
     story~4n 
@@ -8233,7 +8228,7 @@
     cursive_script~1n 
  round_hand ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     round_hand~1nz (^cursive_script~1) a clearly written style of longhand with large round curves
- rewrite ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) conjugate=rewritten 
+ rewrite ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) conjugate=rewritten 
     revision~2n 
     rewrite~2vz write differently
     rewrite~3vz rewrite so as to make fit to suit a new or different purpose
@@ -8257,7 +8252,7 @@
     rondeau~1n 
  rondelet ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     rondelet~1nz (^rondeau~1) a shorter form of rondeau
- rhyme ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ rhyme ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_NOOBJECT ) 
     verse~1n 
     rime~1nz (^versification~2) correspondence in the sounds of two or more lines
     rime~3vz compose rhymes
@@ -8292,7 +8287,7 @@
     calculator~2n 
  ready_reckoner ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     reckoner~1nz (^enchiridion~1) a handbook of tables used to facilitate computation
- ready ( meanings=8 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) ) comparative=readiest 
+ ready ( meanings=8 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT ) comparative=readiest 
     ready~1az immediately available
     quick~7a 
     ready~3az made suitable and available for immediate use
@@ -8333,7 +8328,7 @@
     Ramayana~1nz (^Sanskrit_literature~1) one of two classical Hindu epics telling of the banishment of Rama from his kingdom and the abduction of his wife by a demon and Rama's restoration to the throne
  Rig-Veda ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Rig-Veda~1nz (^Samhita~1) a Veda consisting of a collection of Hindu poems dating from before 2000 BC
- resume ( meanings=6 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ resume ( meanings=6 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     CV~1n 
     sketch~2n 
     restart~1v 
@@ -8394,7 +8389,9 @@
     reorder~2vz assign a new order to
     reorder~3vz make a new request to be supplied with
  Racketeer_Influenced_and_Corrupt_Organizations_Act ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Rico~1nz (^law~5) law intended to eradicate organized crime by establishing strong sanctions and forfeiture provisions
+    RICO_Act~1nz (^law~5) law intended to eradicate organized crime by establishing strong sanctions and forfeiture provisions
+ RICO_Act ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+    Rico~1n 
  Roman_law ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     jus_civile~1n 
  Riot_Act ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -8524,18 +8521,18 @@
     gush~3vz praise enthusiastically
     jabber~2v 
     rave~5vz participate in an all-night techno dance party
- rebuke ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ rebuke ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) 
     reprehension~1n 
     jaw~4v 
  reproval ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     rebuke~1n 
  reprehension ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     reprimand~1nz (^criticism~3) an act or expression of criticism and censure
- reprimand ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ reprimand ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
     reproof~1n 
     censure~3v 
     rebuke~2v 
- reproach ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ reproach ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
     reproach~1nz (^reprehension~1) a mild rebuke or criticism
     reproach~2nz (^shame~3) disgrace or shame
     upbraid~1v 
@@ -8549,7 +8546,7 @@
     recursive_definition~1nz (^definition~2) a definition of a function from which values of the function can be calculated in a finite number of steps
  redefinition ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     redefinition~1nz (^definition~2) the act of giving a new definition
- reply ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ reply ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     response~5n 
     response~6nz (^speech_act~1) the speech act of continuing a conversational exchange
     answer~11v 
@@ -8557,7 +8554,7 @@
     racecard~1nz (^program~8) a program for a race meeting
  rhetorical_question ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     rhetorical_question~1nz (^statement~4) a statement that is formulated as a question but that is not supposed to be answered
- rhetorical ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ rhetorical ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     rhetorical~1az given to rhetoric, emphasizing style at the expense of thought
     rhetorical~2az of or relating to rhetoric
  restatement ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -8728,7 +8725,7 @@
     reggae~1nz (^popular_music_genre~1) popular music originating in the West Indies
  recitative ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     recitative~1nz (^passage~9) a vocal passage of narrative text that a singer delivers with natural rhythms of speech
- rant ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ rant ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     bombast~1n 
     harangue~1n 
     rave~4v 
@@ -8749,7 +8746,7 @@
     rhyme_royal~1nz (^stanza~1) a stanza form having seven lines of iambic pentameter
  rhetorical_device ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     rhetorical_device~1nz (^device~5) a use of language that creates a literary effect
- roar ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) ) 
+ roar ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) 
     yowl~1nz (^shout~1) a very loud utterance 
     thunder~2n 
     roar~3nz (^cry~5) the sound made by a lion
@@ -8901,7 +8898,7 @@
     depredation~2nz (^destruction~2) a destructive action
     scourge~4v 
     ravage~3vz make a pillaging or destructive raid on , as in wartimes
- repeat ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ repeat ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     repetition~3nz (^recurrent_event~1) an event that repeats
     recur~1vz happen or occur again
     echo~6vz to say again or imitate
@@ -9024,7 +9021,7 @@
     inconsistency~2n 
  ruthfulness ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     mournfulness~1n 
- regret ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT (null) ) 
+ regret ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT ) 
     ruefulness~1nz (^sadness~2) sadness associated with some wrong done or some disappointment
     regret~2vz express with regret
     regret~3vz decline formally or politely
@@ -9429,7 +9426,7 @@
     rogue_state~1n 
  rich_people ( meanings=1 NOUN NOUN_SINGULAR ) 
     rich~1n 
- rich ( meanings=14 glosses=11 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ rich ( meanings=14 glosses=11 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     rich_people~1nz (^people~1) people who have possessions and wealth 
     plentiful~1a 
     deep~5a 
@@ -9594,7 +9591,7 @@
     rainforest~1nz (^forest~1) a forest with heavy annual rainfall
  rainforest ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
     rain_forest~1n 
- rash ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:NOUN posdefault:ADJECTIVE (null) ) comparative=rasher 
+ rash ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:NOUN posdefault:ADJECTIVE ) comparative=rasher 
     blizzard~1n 
     efflorescence~3n 
     foolhardy~1a 
@@ -9604,7 +9601,7 @@
     raw_data~1nz (^information~5) unanalyzed data
  romantic_realism ( meanings=1 NOUN NOUN_SINGULAR ) 
     Hudson_River_school~1n 
- romantic ( meanings=7 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE (null) ) 
+ romantic ( meanings=7 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
     romantic~1nz (^idealist~1) a soulful or amorous idealist
     romanticist~1n 
     amorous~2a 
@@ -9983,7 +9980,7 @@
     Great_Sandy_Desert~2n 
  rational_motive ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     rational_motive~1nz (^need~1) a motive that can be defended by reasoning or logical argument
- rational ( meanings=7 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE (null) ) 
+ rational ( meanings=7 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
     rational_number~1n 
     rational~2az having its source in or being guided by the intellect 
     intellectual~3a 
@@ -11159,7 +11156,7 @@
  Ramon_Lully ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Lully~2n 
  Robert_MacGregor ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Macgregor~1nz (^crook~2) Scottish clan leader and outlaw who was the subject of a 1817 novel by Sir Walter Scott
+    MacGregor~1nz (^crook~2) Scottish clan leader and outlaw who was the subject of a 1817 novel by Sir Walter Scott
  Rene_Magritte ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Magritte~1nz (^painter~3) Belgian surrealist painter
  Rabbi_Moses_Ben_Maimon ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -11513,7 +11510,7 @@
     Zsigmondy~1nz (^chemist~1) German chemist honored for his research on colloidal solutions (1865-1929)
  repulsive_force ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     repulsion~3nz (^force~10) the force by which bodies repel one another
- repulsive ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ repulsive ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     repulsive~1az possessing the ability to repel
     hideous~1az so extremely ugly as to be terrifying
     repugnant~1az offensive to the mind
@@ -13049,7 +13046,7 @@
     ratio~2nz (^quantitative_relation~1) the relative magnitudes of two quantities
  reflective_power ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     albedo~1nz (^ratio~2) the ratio of reflected to incident light
- reflective ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ reflective ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     reflective~1az devoted to matters of the mind
     reflective~2az capable of physically reflecting light or sound
     broody~2a 
@@ -13176,7 +13173,7 @@
     reflex_epilepsy~1nz (^epilepsy~1) a form of epilepsy in which attacks are induced by peripheral stimulation
  receptive_aphasia ( meanings=1 NOUN NOUN_SINGULAR ) 
     fluent_aphasia~1n 
- receptive ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ receptive ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     receptive~1az able to absorb liquid 
     sensory~1a 
     receptive~3az open to arguments, ideas, or change
@@ -13356,6 +13353,8 @@
     redness~2n 
  rubella_panencephalitis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     rubella_panencephalitis~1nz (^panencephalitis~1) a rare loss of mental and physical skills in adolescents
+ retrobulbar_neuritis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    retrobulbar_neuritis~1nz (^neuritis~1) inflammation of the optic nerve behind the eye
  radiculitis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     radiculitis~1nz (^inflammation~4) inflammation of the radicle of a nerve
  retinitis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
@@ -13367,6 +13366,8 @@
  reactive ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     reactive~1az participating readily in reactions
     responsive~2a 
+ retarded_depression ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    retarded_depression~1nz (^depressive_disorder~1) a state of clinical depression in which the individual is lethargic and slow to initiate action
  rhinopathy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     rhinopathy~1nz (^pathology~2) any disease or malformation of the nose
  rhinophyma ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
@@ -13692,7 +13693,7 @@
     spinel_ruby~1n 
  rubicelle ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     rubicelle~1nz (^spinel_ruby~1) a yellow or orange variety of ruby spinel
- render ( meanings=14 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) ) 
+ render ( meanings=14 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     render~1nz (^stucco~1) a substance similar to stucco but exclusively applied to masonry walls
     render~2vz cause to become
     try~3v 
@@ -13715,7 +13716,7 @@
     tile~3n 
  raw_umber ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     raw_umber~1nz (^umber~2) greenish brown pigment
- rhodopsin ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN (null) ) 
+ rhodopsin ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     retinal_purple~1n 
  retinal_purple ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     visual_purple~1nz (^photopigment~1) a red photopigment in the retinal rods of vertebrates
@@ -13805,7 +13806,7 @@
     regulation_time~1nz (^period~3) the normal prescribed duration of a game
  rainy_season ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     rainy_season~1nz (^season~1) one of the two seasons in tropical climates
- rainy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=rainiest 
+ rainy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=rainiest 
     showery~1az wet by periods of rain
     rainy~2az 
  Reign_of_Terror ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -14045,7 +14046,7 @@
  rede ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     advise~1v 
     interpret~3v 
- recite ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ recite ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     recite~1vz repeat aloud from memory
     itemise~1vz specify individually
     tell~5v 
@@ -14057,7 +14058,7 @@
  roil ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     rile~1vz make turbid by stirring up the sediments of
     churn~3v 
- rude ( meanings=6 glosses=4 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ rude ( meanings=6 glosses=4 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     unmannerly~1az socially incorrect in behavior
     uncivil~1az lacking civility or good manners
     primitive~6az belonging to an early stage of technical development
@@ -14065,8 +14066,8 @@
     raw~13a 
     rude~6az 
  Rev ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- recently ( meanings=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
-    lately~1b 
+ recently ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
+    latterly~1bz in the recent past
  resistant ( meanings=6 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     repellent~4a 
     insubordinate~1a 
@@ -14091,7 +14092,7 @@
     profligate~3a 
     turbulent~2a 
     riotous~4az 
- rife ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ rife ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     plethoric~1a 
     prevailing~1a 
  reachable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -14118,7 +14119,7 @@
     tarry~1az having the characteristics of pitch or tar
  resiny ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     pitchy~1a 
- ruffled ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:VERB (null) ) 
+ ruffled ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:VERB ) 
     frilled~1az having decorative ruffles or frills
     rippled~1az shaken into waves or undulations as by wind
  rejective ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -14235,9 +14236,9 @@
     raging~2az very severe
     hot~19a 
     raging~4az 
- resourceful ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ resourceful ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     resourceful~1az having inner resources
- responsible ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ responsible ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE ) 
     responsible_for~1az being the agent or cause
     responsible~2az worthy of or requiring responsibility or trust
     creditworthy~1az having an acceptable credit rating
@@ -14394,7 +14395,7 @@
     blasting~1a 
     catastrophic~1a 
     ruinous~3az 
- rebellious ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ rebellious ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     malcontent~2a 
     rebellious~2az participating in organized resistance to a constituted government
     rebellious~3az resisting control or authority
@@ -14466,7 +14467,7 @@
  riddled ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     riddled~1az damaged throughout by numerous perforations or holes
     riddled~2az spread throughout
- resolute ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ resolute ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     unhesitating~1a 
     resolute~2az firm in purpose or belief
  reefy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -14485,7 +14486,7 @@
     refutable~2az 
  referential ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     referential~1az referring or pointing to something
- reliable ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ reliable ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     dependable~1a 
     authentic~2az conforming to fact and therefore worthy of belief
     true~12a 
@@ -14538,7 +14539,7 @@
     roughshod~3az having horseshoes with projecting nails to prevent slipping
  raring ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 ) 
     impatient~1a 
- reluctant ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ reluctant ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     reluctant~1az not eager
     reluctant~2az disinclined to become involved
     loth~2az unwillingness to do something contrary to your custom
@@ -14548,7 +14549,7 @@
  resilient ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     bouncy~2a 
     resilient~2az recovering readily from adversity, depression, or the like
- rubbery ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ rubbery ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     rubberlike~1a 
     cartilaginous~1a 
     rubbery~3az 
@@ -14581,7 +14582,7 @@
  round-eyed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     saucer-eyed~1a 
     simple~9a 
- rotund ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ rotund ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE5_6 posdefault:ADJECTIVE ) 
     corpulent~1az excessively fat
     round~16a 
     rotund~3az spherical in shape
@@ -14602,7 +14603,7 @@
  rough-cut ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL ) 
     roughhewn~1a 
     vulgar~4a 
- rigid ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ rigid ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     stiff~4a 
     rigid~2az designating an airship or dirigible having a form maintained by a stiff unyielding frame or structure
     inflexible~4a 
@@ -14740,7 +14741,7 @@
     red-handed~2bz doing something reprehensible or showing clear evidence of having done something reprehensible
  rolled_into_one ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     rolled_into_one~1az 
- relieved ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ relieved ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     protruding~1a 
     alleviated~1a 
     relieved~3az 
@@ -14822,7 +14823,7 @@
  remorseless ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     unpitying~1az without mercy or pity
     remorseless~2az 
- ruthless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ ruthless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     pitiless~2a 
  racy ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=raciest 
     racy~1az designed or suitable for competing in a race
@@ -14838,7 +14839,7 @@
     rotatable~2az 
  red-brick ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     redbrick~1az of or relating to British universities founded in the late 19th century or the 20th century
- righteous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ righteous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     righteous~1az morally justified
     righteous~2az characterized by or proceeding from accepted standards of morality or justice
     righteous~3az 
@@ -14913,7 +14914,7 @@
     rouged~1az marked by the use of various kinds of red makeup
  represented ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     delineate~1az represented accurately or precisely
- rectangular ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ rectangular ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     orthogonal~1az having a set of mutually perpendicular axes
     rectangular~2az having four right angles
     rectangular~3az 
@@ -14953,7 +14954,7 @@
     ladder-proof~1a 
  run-resistant ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     runproof~1az resistant to runs or (in Britain) ladders
- reverent ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ reverent ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     worshipful~1a 
     reverent~2az feeling or showing profound respect or veneration
     reverent~3az 
@@ -15010,7 +15011,7 @@
     restful~1a 
  ready_and_waiting ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     waiting~2a 
- realistic ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ realistic ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     realistic~1az aware or expressing awareness of things as they really are
     naturalistic~1a 
     realistic~3az of or relating to the philosophical doctrine of realism
@@ -15108,7 +15109,7 @@
     resolvable~1az capable of being settled or resolved
     solvable~1az capable of being solved
     resolvable~3az 
- reserved ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON2 posdefault:VERB (null) ) 
+ reserved ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON2 posdefault:VERB ) 
     reserved~1az marked by self-restraint and reticence
     reserved~2az set aside for the use of a particular person or party
     reserved~3az 
@@ -15117,7 +15118,7 @@
  resolved ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     single-minded~1a 
     solved~1az explained or answered
- respectful ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ respectful ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     respectful~1az full of or exhibiting respect
     reverential~1a 
     respectful~3az 
@@ -15305,7 +15306,7 @@
     rifled~1az of a firearm
  runny ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=runniest 
     fluid~7a 
- rotted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ rotted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     decayed~1a 
  rock-steady ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     dependable~3a 
@@ -15336,7 +15337,7 @@
     rateable~1a 
  rateable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     ratable~1az liable to payment of locally assessed property taxes
- relaxed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ relaxed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     relaxed~1az without strain or anxiety
     relaxed~2az 
  ribbonlike ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -15531,7 +15532,7 @@
     robot-like~1az 
  rotary-dial ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     rotary-dial~1az 
- rarely ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADVERB (null) ) 
+ rarely ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADVERB ) 
     rarely~1az 
     seldom~1bz not often
  riderless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -16437,7 +16438,7 @@
     refracture~1vz break that was previously broken but mended in an abnormal way
  rasterize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     rasterize~1vz convert into pixels
- receive ( meanings=13 glosses=9 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+ receive ( meanings=13 glosses=10 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     receive~1vz convert into sounds or pictures
     incur~1vz receive a specified treatment 
     receive~3vz regard favorably or with disapproval
@@ -16446,9 +16447,9 @@
     receive~6vz partake of the Holy Eucharist sacrament
     take_in~8vz express willingness to have in one's home or environs
     pick_up~11v 
-    get~29v 
+    have~9v 
     get~30vz receive as a retribution or punishment
-    have~13v 
+    have~13vz get something
     receive~12vz have or give a reception
     meet~15vz experience as a reaction
  reconvert ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -16697,7 +16698,7 @@
  refrigerate ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     refrigerate~1vz cool or chill in or as if in a refrigerator
     refrigerate~2vz preserve by chilling
- represent ( meanings=15 glosses=15 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ represent ( meanings=15 glosses=15 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     map~3vz to establish a mapping
     lay_out~3vz bring forward and present to the mind
     represent~3vz point out or draw attention to in protest or remonstrance
@@ -16782,7 +16783,7 @@
     reorient~1vz set or arrange in a new or different determinate position
     reorient~2vz cause to turn
     reorientate~1v 
- rationalize ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ rationalize ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     prune~2v 
     rationalise~2vz remove irrational quantities from
     rationalise~3vz think rationally
@@ -16847,7 +16848,7 @@
     recede~1vz become faint or more distant
     fall_back~2v 
     retreat~9v 
- recommend ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ recommend ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT ) 
     recommend~1vz make attractive or acceptable
     urge~5vz push for something
     commend~3vz express a good opinion of
@@ -16858,7 +16859,7 @@
     suppress~3v 
     stifle~5v 
     subdue~6v 
- realize ( meanings=6 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ realize ( meanings=6 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     realise~1vz perceive mentally
     realise~2v 
     actualise~2vz make real or concrete
@@ -16875,7 +16876,7 @@
  resonate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     come_across~1vz be received or understood
     vibrate~4v 
- recognize ( meanings=9 glosses=9 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ recognize ( meanings=9 glosses=9 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     recognise~1vz accept to be what is claimed or accept his power and authority
     recognise~2vz perceive to be the same
     agnise~1vz be fully aware or cognizant of
@@ -16906,7 +16907,7 @@
  ram_down ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     drill_in~1v 
     ram~6v 
- remember ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ remember ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     call_up~2v 
     think_of~1vz keep in mind for attention or consideration
     think_back~1vz recapture the past
@@ -16927,7 +16928,7 @@
     hold~30v 
     keep~15v 
     retain~4vz hold back within
- remind ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) ) 
+ remind ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     remind~1vz put in the mind of someone
     prompt~7v 
  reminisce ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT ) 
@@ -16954,7 +16955,7 @@
  ruminate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT ) 
     mull_over~1v 
     ruminate~2vz chew the cuds
- reckon ( meanings=6 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) ) 
+ reckon ( meanings=6 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     imagine~1v 
     work_out~6v 
     see~6v 
@@ -17007,7 +17008,7 @@
     reject~2v 
     rule_in~1vz include or exclude by determining judicially or in agreement with rules
     close_out~3v 
- repudiate ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ repudiate ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     repudiate~1vz refuse to acknowledge, ratify, or recognize as valid
     renounce~1vz cast off
     repudiate~3vz reject as untrue, unfounded, or unjust
@@ -17030,13 +17031,13 @@
  reshape ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     reshape~1vz shape anew or differently
     remold~2vz shape again or shape differently
- relate ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ relate ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     tie_in~1v 
     relate~2vz give an account of
     relate~3vz have or establish a relationship to
     refer~7v 
     interrelate~2vz be in a relationship with
- respond ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ respond ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     react~2vz show a response or a reaction to something
     respond~2vz respond favorably or as hoped
     reply~3v 
@@ -17062,11 +17063,11 @@
     reach_out~1vz attempt to communicate
     reach~7v 
     extend~17v 
- require ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
+ require ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     command~8vz make someone do something
     expect~6vz consider obligatory
-    want~6v 
-    involve~3v 
+    need~5vz have need of
+    necessitate~1vz require as useful, just, or proper
  renounce ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     disown~1v 
     quit~3v 
@@ -17116,23 +17117,23 @@
  rejoin ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     repay~1v 
     rejoin~2vz join again
- reprove ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ reprove ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     admonish~1v 
- remonstrate ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ remonstrate ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     bawl_out~1v 
     remonstrate~2vz argue in protest or opposition
     point_out~2vz present and urge reasons in opposition
- reprehend ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT (null) ) 
+ reprehend ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     reprehend~1vz express strong disapproval of
  re-emphasise ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB posdefault:VERB VERB_DIRECTOBJECT ) 
     re-emphasize~1vz emphasize anew
  re-emphasize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB posdefault:VERB VERB_DIRECTOBJECT ) 
     re-emphasise~1v 
- recriminate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT (null) ) 
+ recriminate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     recriminate~1vz return an accusation against someone or engage in mutual accusations
- revile ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ revile ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     vilify~1v 
- rejoice ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ rejoice ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     exult~1v 
     joy~4v 
     wallow~5v 
@@ -17179,7 +17180,7 @@
     redevelop~2vz formulate or develop again, of an improved theory or hypothesis
  rip_out ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     rip_out~1vz burst out with a violent or profane utterance
- reveal ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ reveal ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     let_on~1v 
     unveil~3vz make visible
     reveal~3vz disclose directly or through prophets
@@ -17201,7 +17202,7 @@
     reecho~1vz repeat back like an echo
     reecho~2vz repeat or return an echo again or repeatedly
     reecho~3vz echo repeatedly, echo again and again
- reiterate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ reiterate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     iterate~2v 
  restate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     ingeminate~1v 
@@ -17253,7 +17254,7 @@
     rename~2vz name again or anew
  rattle_on ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     yack_away~1v 
- rabbit_on ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 (null) (null) ) 
+ rabbit_on ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     spout~2v 
  run_off ( meanings=7 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     run_off~1vz decide by a runoff
@@ -17464,7 +17465,7 @@
     reconstruct~4v 
  reassemble ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     reassemble~1vz assemble once again, after taking something apart
- recast ( meanings=3 glosses=1 VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) conjugate=recast 
+ recast ( meanings=3 glosses=1 VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) conjugate=recast 
     remodel~2v 
     remold~3v 
     recast~3vz cast again, in a different role
@@ -17792,7 +17793,7 @@
     repose~9v 
  repose_on ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     build_upon~1v 
- rely_on ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 (null) ) 
+ rely_on ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     depend_on~1v 
     depend_upon~1v 
  rely_upon ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 

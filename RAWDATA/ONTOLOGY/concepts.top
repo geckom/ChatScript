@@ -1,4 +1,4 @@
-concept: ~cartoon_character ( )
+ï»¿concept: ~cartoon_character ( )
  concept: ~architect ( )
 concept: ~athlete UPPERCASE_MATCH()
 concept: ~author UPPERCASE_MATCH()
@@ -116,6 +116,7 @@ concept: ~appliances (~electronic_items ~kitchen_appliances air_conditioner barb
 concept: ~architecture_styles (Art_Deco Art_Nouveau Baroque Byzantine Georgian Gothic Greek Roman Victorian )
 concept: ~area_quantity (acre hectare square_centimeter square_cubit square_foot square_inch square_kilometer square_meter square_yard )
 concept: ~areafield (the_area_of the_concept_of the_field_of the_study_of )
+concept: ~armed_services (Army Navy Air_Force Marines Coast_Guard)
 concept: ~art_gallery (art picture picture_frame sculpture )
 concept: ~art_history (Cubism Cubist Dada Fauvism Hyperrealism Hyperrealist Impressionism Impressionist Minimalism Objectivism Objectivist Postmodern Postmodernism Postmodernist Realism 
           Realist Relativism Relativist Rococo Surrealism Surrealist )
@@ -220,8 +221,8 @@ concept: ~caffinated_drinks (~coffees chai Coca_Cola Dr._Pepper energy_drink ice
 concept: ~candy NOUN NOUN_SINGULAR (candy~1 )
 concept: ~car (auto automobile car limo limousine SUV truck vehicle )
 concept: ~car_brands (Acura Alfa_Romeo American_Motors Aston_Martin Audi Bentley BMW Bugatti Buick Cadillac Chevrolet Chevy Chrysler Citroen Daewoo Daihatsu Dodge Ferrari Fiat Ford 
-          General_Motors GM GMC Honda Hummer Hyundai Infiniti Invicta Isuzu Jaguar Jeep Kia Lamborghini Land_Rover Lexus Lincoln Lotus Maserati Mazda Mercedes Mercedes_Benz Mercury 
-          Mitsubishi Nissan Oldsmobile Opel Peugeot Pontiac Porsche Renault Rolls_Royce Saab Saturn Scion Shelby Subaru Suzuki Tata Tesla Toyota Vauxhall Volkswagen Volvo )
+          General_Motors GM GMC Honda Hummer Hyundai Infiniti Invicta Isuzu Jaguar Jeep jeep Kia Lamborghini Land_Rover Lexus Lincoln Lotus Maserati Mazda Mercedes Mercedes_Benz Mercury 
+          Mitsubishi Nissan Oldsmobile Opel Peugeot Pontiac Porsche Renault Rolls_Royce Saab Saturn Scion Shelby Subaru Suzuki Tata Tesla Toyota Vauxhall Volkswagen VW Volvo )
 concept: ~car_vehicles NOUN NOUN_SINGULAR (4WD aerial_ladder_truck ambulance amphibious_vehicle armored_car armored_combat_vehicle armored_personnel_carrier armored_vehicle armoured_car 
           armoured_combat_vehicle armoured_personnel_carrier armoured_vehicle army_tank articulated_lorry ATV auto autobus automobile automotive_vehicle~1 bloodmobile bookmobile bus 
           cab Cabriolet Cadillac camper camper_trailer camping_bus car car_transporter caravan cement_truck compact_car convertible coupe cruiser delivery_truck delivery_van dump_truck 
@@ -247,9 +248,9 @@ concept: ~ceo (CEO )
 concept: ~chatbotlist (AI AIML Alicebot artificial artificial_intelligence automaton bot chat-program chat_bot chat_box chatbot chatbox chatterbot chatterbox nonhuman NPC program robot 
           Smarterchild talk_bot unhuman Verbot )
 concept: ~cheeses NOUN NOUN_SINGULAR (blue_cheese Boursin Brie Cambozola Camembert cheddar Colby cream_cheese Danish_blue feta Gorgonzola Gouda Gruyere havarti Limburger Monterey_Jack 
-          mozzarella Muenster munster Parmesan pepper_jack provolone quark ricotta Rochefort Roquefort Stilton Swiss_cheese Tilsit blue_cheese Boursin Brie Brie_de_Meaux Cambozola Camembert cheddar Chevre Chèvre Colby cream_cheese Danish_blue Epoisses feta fromage Gorgonzola Gouda Gruyere 
-          havarti Limburger Monterey_Jack mozzarella muenster munster Parmesan pepper_jack Pont_l'Eveque Pont_l'Évêque provolone quark Reblochon ricotta Rochefort Roquefort Stilton 
-          Swiss_cheese Tilsit Tomme_de_Savoie yogurt Époisses)
+          mozzarella Muenster munster Parmesan pepper_jack provolone quark ricotta Rochefort Roquefort Stilton Swiss_cheese Tilsit blue_cheese Boursin Brie Brie_de_Meaux Cambozola Camembert cheddar Chevre ChÃ¨vre Colby cream_cheese Danish_blue Epoisses feta fromage Gorgonzola Gouda Gruyere 
+          havarti Limburger Monterey_Jack mozzarella muenster munster Parmesan pepper_jack Pont_l'Eveque Pont_l'Ã‰vÃªque provolone quark Reblochon ricotta Rochefort Roquefort Stilton 
+          Swiss_cheese Tilsit Tomme_de_Savoie yogurt Ã‰poisses)
 concept: ~chemicals (chemical compound~3 organic_compound~1 )
 concept: ~chinese_cooking_styles (Cantonese Chinese Hunan Mongolian Sichuan Szechuan )
 concept: ~christmas_words (Christmas Christmas_Day Christmas_Eve Xmas )
@@ -360,7 +361,7 @@ concept: ~dating_friend PROBABLE_NOUN (~girlfriend beau boyfriend ex-boyfriend e
           swain sweetheart trollop )
 concept: ~day_care_center (babysitting child_care day_care_center )
 concept: ~dayname (Friday Monday Saturday Sunday Thursday Tuesday Wednesday )
-concept: ~daynumber DUPLICATE (5 1 6 0 4 2 3 )
+concept: ~dayindex DUPLICATE (5 1 6 0 4 2 3 )
 concept: ~decorations NOUN NOUN_SINGULAR (~cosmetics ~jewelry_items bracelet Christmas_tree_ball Christmas_tree_light cologne crayon decoration dye earring eyeliner eyeshadow fragrance 
           glitter gloss lacquer lipstick mascara nail_polish nose_ring ornament paint perfume plaster popcorn_string ring scent stain tinsel varnish wallpaper )
 concept: ~defender NOUN NOUN_SINGULAR PROBABLE_NOUN (angel defender guardian parent protector )
@@ -440,7 +441,7 @@ concept: ~entertainment_stuff (~art_stuff ~dance_stuff ~film_stuff ~hobby ~music
 concept: ~entirety_words (complete deficient entire entirety incomplete partial piecemeal whole wholesale )
 concept: ~equals (are equals gives is sold_for was were will_be yields )
 concept: ~equestrian_sports (dressage harness_racing horse_racing polo riding show_jumping )
-concept: ~ethnichate NOUN NOUN_SINGULAR (abbo ago border_hopper border_jumper border_nigger Bounty_bar Buddhahead bug_eater bunga burrhead cab_nigger camel_cowboy camel_humper camel_jacker 
+concept: ~ethnichate NOUN NOUN_SINGULAR (abbo  border_hopper border_jumper border_nigger Bounty_bar Buddhahead bug_eater bunga burrhead cab_nigger camel_cowboy camel_humper camel_jacker 
           camel_jockey can_eater carpet_pilot chee_chee chi_chi chili_shitter Chinese_wetback ching_chong chinig chink_a_billy chonky cocolo coolie coon coon_ass cotton_picker cowboy_killer 
           curry_muncher curry_slurper curry_stinker Cushi Cushite dago darkey darkie darky dego diaper_head dinge dink dot_head dune_coon dune_nigger eurotrash eyetie fog_nigger gator_bait 
           gew ghetto_hamster gin_jockey ginzo gipp gippo house_nigger Hunkie hymie ice_nigger ikey ikey_mo iky injun island_nigger Jap japie jigaboo jigarooni jigg jigga jiggabo Jihadi 
@@ -487,7 +488,7 @@ concept: ~family_children NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING (~famil
 concept: ~family_children_female NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING (~sister daughter granddaughter grandniece niece sister sister-in-law step-daughter step-sister stepdaughter 
           stepsister )
 concept: ~family_children_generic NOUN_HUMAN NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING (baby child cousin grandchild grandkid infant kid offspring progeny sibling step-child stepchild 
-          teen teenager toddler tot twin ward youth )
+          teen teenager toddler tot twin ward youth nephling)
 concept: ~family_children_male NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING (~brother brother grandnephew grandson nephew scion son sstep-son step-brother stepson )
 concept: ~family_grandfather NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING (granddad granddaddy grandfather grandpa grandpaw grandpop )
 concept: ~family_members NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING (~family_adult ~family_children relative twin )
@@ -1396,8 +1397,9 @@ concept: ~occupation_generic PROBABLE_NOUN (~dangerous_job ~occupation_animals ~
 concept: ~occupation_insurance PROBABLE_NOUN (actuary insurance_broker statistician )
 concept: ~occupation_inventor PROBABLE_NOUN (inventor tinkerer )
 concept: ~occupation_jobless PROBABLE_NOUN (bum hobo jobless unemployed vagrant )
-concept: ~occupation_law PROBABLE_NOUN (advocate arbitrator attorney bail_agent beat_cop civil_investigator cop correctional_services detective guard investigator judge jurist law lawyer 
-          magistrate patent_attorney patrolman police police_officer policeman policewoman security_officer sheriff traffic_officer )
+concept: ~occupation_law PROBABLE_NOUN (~occupation_lawyer  bail_agent beat_cop civil_investigator cop correctional_services detective guard investigator judge law 
+          magistrate  patrolman police police_officer policeman policewoman security_officer sheriff traffic_officer )
+concept: ~occupation_lawyer (advocate arbitrator attorney jurist lawyer   mediator patent_attorney  barrister solictor )
 concept: ~occupation_magic PROBABLE_NOUN (astrologer psychic soothsayer thaumaturgist warlock witch wizard )
 concept: ~occupation_male PROBABLE_NOUN (air_host airline_steward bachelor barman businessman chairman Chairman clergyman coachman comedian congressman conquistador cowboy doorman gunman 
           headmaster heir hero horseman host hunter milkman millionaire proprietor salesman schoolboy sorcerer steward taskmaster testator traitor villain waiter warlock workman )

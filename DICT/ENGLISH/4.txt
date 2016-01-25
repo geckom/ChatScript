@@ -19,8 +19,6 @@
     four-dimensional~1a 
  4-membered ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     four-membered~1a 
- 42nd ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    42nd~1az the ordinal number of forty-two in counting order
  4-star ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     4-star~1az 
  4 ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ) 

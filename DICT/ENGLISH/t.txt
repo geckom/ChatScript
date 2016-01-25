@@ -71,7 +71,7 @@
  Tatianna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  topgallant_sail ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     topgallant~2nz (^sheet~1) a sail set on a yard of a topgallant mast
- throw ( meanings=20 glosses=17 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) conjugate=thrown 
+ throw ( meanings=20 glosses=18 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) conjugate=thrown 
     throw~1nz (^propulsion~1) the act of throwing 
     throw~2nz (^play~2) casting an object in order to determine an outcome randomly
     throw~3nz (^bed_clothing~1) bedclothes consisting of a lightweight cloth covering that is casually thrown over something
@@ -88,7 +88,7 @@
     throw~14vz cause to fall off
     contrive~2vz put or send forth
     throw~16vz make on a potter's wheel
-    hold~26v 
+    have~8vz organize or be responsible for
     bemuse~1vz cause to be confused emotionally
     throw~19vz move violently, energetically, or carelessly
     throw~20vz to put into a state or activity hastily, suddenly, or carelessly
@@ -248,7 +248,7 @@
     temperance~1nz (^combination~1) the act of tempering
     sobriety~1nz (^abstinence~1) abstaining from excess
     moderation~2n 
- talk ( meanings=11 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) (null) (null) ) 
+ talk ( meanings=11 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     talk~1nz (^lecture~1) the act of giving a talk to an audience
     talking~1nz (^conversation~1) an exchange of ideas via conversation
     talk~3nz (^discussion~1) discussion
@@ -439,8 +439,6 @@
     infection~4n 
     transmittance~1n 
  Tamica ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- treasurership ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
-    treasurership~1nz (^position~2) the position of treasurer
  Tiffani ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  tonsure ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     tonsure~1nz (^shave~1) shaving the crown of the head by priests or members of a monastic order
@@ -552,7 +550,7 @@
  Tsai ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  tiddlywinks ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     tiddlywinks~1nz (^child_'s_game~1) a game in which players try to flip plastic disks into a cup by pressing them on the side sharply with a larger disk
- tall ( meanings=6 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) 
+ tall ( meanings=6 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     tall~1nz (^size~1) a garment size for a tall person
     marvellous~1az too improbable to admit of belief
     tall~3az impressively difficult
@@ -699,7 +697,7 @@
  Tom ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     Uncle_Tom~2n 
  Tanisha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- tender ( meanings=19 glosses=12 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) ) 
+ tender ( meanings=19 glosses=12 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     supply_ship~1nz (^ship~1) ship that usually provides supplies to other ships
     cutter~3n 
     tender~3nz (^car~3) car attached to a locomotive to carry fuel and water
@@ -869,7 +867,7 @@
     T-network~1nz (^electrical_circuit~1) a circuit formed by two equal series circuits with a shunt between them
  Trula ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  taking_hold ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    prehension~1nz (^control~1) the act of gripping something firmly with the hands
+    seizing~1nz (^control~1) the act of gripping something firmly with the hands
  tightrope ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     tightrope~1nz (^rope~2) tightly stretched rope or wire on which acrobats perform high above the ground
  Tweedledee_and_Tweedledum ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -878,7 +876,7 @@
     transplant~1nz (^movement~2) the act of removing something from one location and introducing it in another location
     organ_transplant~1n 
  Tevis ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- teal ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ teal ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     teal~1nz (^duck~1) any of various small short-necked dabbling river ducks of Europe and America
     bluish_green~1n 
     blue-green~1a 
@@ -1046,7 +1044,7 @@
     step~7n 
     note~5n 
     tone_of_voice~1nz (^speech~4) the quality of a person's voice
-    feeling~6n 
+    smell~5n 
     tonus~1nz (^tension~6) the elastic tension of living muscles, arteries, etc. that facilitate response to stimuli
     strengthen~1vz give a healthy elasticity to
     tone~12vz change to a color image
@@ -1152,7 +1150,7 @@
  Thurle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  tabulator ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     counter~4n 
- telephone ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ telephone ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     telephone_set~1nz (^electronic_equipment~1) electronic equipment that converts sound into electrical signals that can be transmitted over distances and then converts received signals back into sounds
     telephony~1nz (^telecommunication~2) transmitting speech at a distance
     call_up~3vz get or try to get into communication by telephone
@@ -1392,7 +1390,7 @@
  Treoweman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  tibial ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     tibial~1az relating to or located near a tibia
- tape ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ tape ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     magnetic_tape~1nz (^storage_device~1) memory device consisting of a long thin plastic strip coated with iron oxide
     tape~2nz (^strip~3) a long thin piece of cloth or paper as used for binding or fastening
     tape_recording~1nz (^recording~3) a recording made on magnetic tape
@@ -1451,11 +1449,10 @@
     tropic~3az relating to or situated in or characteristic of the tropics 
     tropical~4az of or relating to the tropics, or either tropic
     tropical~5az 
- Treise ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  tombola ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     tombola~1nz (^drawing~3) a lottery in which tickets are drawn from a revolving drum
  Tran ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- thunder ( meanings=7 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ thunder ( meanings=7 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_NOOBJECT ) 
     scag~1nz (^diacetylmorphine~1) street names for heroin
     boom~3n 
     thunder~3nz (^noise~5) a booming or crashing noise caused by air expanding along the path of a bolt of lightning
@@ -1525,7 +1522,7 @@
  Thu ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  tape_recording ( meanings=1 NOUN NOUN_SINGULAR ) 
     taping~1n 
- tangerine ( meanings=5 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ tangerine ( meanings=5 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE ) 
     tangerine~1nz (^reddish_orange~1) a reddish to vivid orange color
     tangerine~2nz (^mandarin_orange~1) any of various deep orange mandarins grown in the United States and southern Africa
     tangerine_tree~1n 
@@ -1653,8 +1650,6 @@
  television_camera ( meanings=1 NOUN NOUN_SINGULAR ) 
     camera~2n 
  Triggs ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Thor ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
-    Thor~1nz (^Norse_deity~1) god of thunder and rain and farming
  Twyford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Troiano ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Timoteo ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1927,6 +1922,7 @@
     Western_box_turtle~1n 
  Tijuana ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
     Tijuana~1nz (^city~2) a Mexican city just to the south of San Diego on the Lower California peninsula
+ Tolar ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Tindall ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Thorne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  tunny ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -2054,8 +2050,6 @@
     lust_for_learning~1nz (^wonder~1) curiosity that motivates investigation and study
  television_monitor ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     tv_monitor~1nz (^monitor~3) monitor used in a studio for monitoring the program being broadcast
- tercel ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    tiercel~1n 
  trail_riding ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     trail_riding~1nz (^horseback_riding~1) riding along a roughly blazed path
  Texas_longhorn ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -2148,7 +2142,6 @@
     tracheotomy~1nz (^operation~4) a surgical operation that creates an opening into the trachea with a tube inserted to provide a passage for air
  Traver ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Tarpley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Tittle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  thin-shelled_mussel ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     thin-shelled_mussel~1nz (^freshwater_mussel~1) mussel with thin fragile shells having only rudimentary hinge teeth
  theater ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
@@ -2173,7 +2166,7 @@
     comb-footed_spider~1n 
  Triglidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Triglidae~1nz (^fish_family~1) in some classifications restricted to the gurnards and subdivided into the subfamilies Triglinae and Peristediinae (armored sea robins)
- trill ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ trill ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     shake~4n 
     trill~2nz (^articulation~4) the articulation of a consonant with a rapid flutter of the tongue against the palate or uvula
     warble~3v 
@@ -2290,7 +2283,7 @@
  Tiara ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Tachinidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Tachinidae~1nz (^arthropod_family~1) parasites on other insects
- third ( meanings=1 glosses=1 NOUN ADJECTIVE ADVERB ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN (null) ) 
+ third ( meanings=1 glosses=1 NOUN ADJECTIVE ADVERB ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN ) 
     thirdly~1bz in the third place
  Timo ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Tallin ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -2415,7 +2408,7 @@
  tarsal_gland ( meanings=1 NOUN NOUN_SINGULAR ) 
     Meibomian_gland~1n 
  Tresa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- tenth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN (null) ) 
+ tenth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN ) 
  Thoraldtun ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Tylere ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  tormentor ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -2435,6 +2428,7 @@
     tickle_pink~1vz fill with sublime emotion
     shiver~4v 
     thrill~7vz cause to be thrilled by some perceptual input
+ Tish ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  tenting ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     camping~1n 
  tube_well ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -2563,7 +2557,6 @@
     titillate~2vz touch lightly so as to excite the surface nerves and cause uneasiness, laughter, or spasmodic movements
  Toscano ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Tighearnach ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Thibodeaux ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Thelen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  tool_cabinet ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     tool_chest~1nz (^chest~1) a box or chest or cabinet for holding hand tools
@@ -2806,6 +2799,11 @@
     Louis_Comfort_Tiffany~1nz (^artist~1) United States artist who developed Tiffany glass
  Tashkent ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Taskent~1nz (^national_capital~1) the capital of Uzbekistan
+ tattoo ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT ) 
+    tattoo~1nz (^decoration~1) the practice of making a design on the skin by pricking and staining
+    tattoo~2nz (^figure~2) a design on the skin made by tattooing
+    tattoo~3nz (^bugle_call~1) a drumbeat or bugle call that signals the military to return to their quarters
+    tattoo~4vz stain with indelible color
  tailed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     tailed~1az having a tail of a specified kind
  Tomika ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2869,7 +2867,7 @@
     transsexual~3az overwhelmingly desirous of being, or completely identifying with, the opposite sex
  tie_beam ( meanings=1 NOUN NOUN_SINGULAR ) 
     tie~4n 
- type ( meanings=8 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ type ( meanings=8 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     type~1nz (^block~3) a small metal block bearing a raised character on one end
     type~2nz (^form~9) a subdivision of a particular kind of thing
     type~3nz (^symbol~2) all of the tokens of the same symbol
@@ -2894,7 +2892,7 @@
  Talisha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Tenisha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Twana ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- test ( meanings=13 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ test ( meanings=13 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     run~6n 
     trial~2n 
     mental_test~1nz (^mental_measurement~1) any standardized procedure for measuring sensitivity or memory or intelligence or aptitude or personality etc
@@ -3057,10 +3055,13 @@
  Teter ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Thaxton ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Theisen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Thibodeaux ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Thigpen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Thom ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Thompkins ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Thomsen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Thor ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+    Thor~1nz (^Norse_deity~1) god of thunder and rain and farming
  Thornhill ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Thorson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Throop ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3074,11 +3075,11 @@
  Timberlake ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Timmins ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Timms ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Tittle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Tobey ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Mark_Tobey~1n 
  Tobias ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Toland ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Tolar ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Toles ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Toliver ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Tomlinson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -3314,6 +3315,7 @@
  Treasach ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Treasigh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Treddian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Treise ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Trena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Trentin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Trenton ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3398,7 +3400,6 @@
  Thomasina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Tien ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Tiffaney ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Tish ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Toccara ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Toi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Tonda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3647,11 +3648,6 @@
  Turkish ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
     Turkish~1nz (^Turkic_language~1) a Turkic language spoken by the Turks
     Turkish~2az of or relating to or characteristic of Turkey or its people or language
- tattoo ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT ) 
-    tattoo~1nz (^decoration~1) the practice of making a design on the skin by pricking and staining
-    tattoo~2nz (^figure~2) a design on the skin made by tattooing
-    tattoo~3nz (^bugle_call~1) a drumbeat or bugle call that signals the military to return to their quarters
-    tattoo~4vz stain with indelible color
  tinting ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     tinting~1nz (^coloring~1) the act of adding a tinge of color
  travel ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR SPELLING_EXCEPTION COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -3675,7 +3671,7 @@
     trample~4v 
     step~16v 
     tread~10vz apply to a tire
- turn ( meanings=38 glosses=27 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ turn ( meanings=38 glosses=27 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     turn~1nz (^walk~3) taking a short walk out and back
     twist~3n 
     turn~3nz (^change_of_direction~1) the act of turning away or in the opposite direction
@@ -3890,7 +3886,7 @@
     torture~5n 
     torture~6v 
     torture~7v 
-    dun~7v 
+    rag~11v 
  tease ( meanings=12 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     ribbing~1nz (^molestation~1) the act of harassing someone playfully or maliciously 
     prickteaser~1nz (^woman~3) a seductive woman who uses her sex appeal to exploit men
@@ -4042,6 +4038,8 @@
     toilet~3n 
     enthrone~2vz put a monarch on the throne
     throne~5vz sit on the throne as a ruler
+ treasurership ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
+    treasurership~1nz (^position~2) the position of treasurer
  treadmill ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     salt_mine~1nz (^occupation~2) a job involving drudgery and confinement
     tread-wheel~1n 
@@ -4266,7 +4264,7 @@
     testcross~1nz (^cross~1) a cross between an organism whose genotype for a certain trait is unknown and an organism that is homozygous recessive for that trait so the unknown genotype can be determined from that of the offspring
  tribadism ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     tribadism~1nz (^lesbianism~1) a form of lesbianism that simulates heterosexual intercourse
- tremble ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_NOOBJECT (null) ) 
+ tremble ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_NOOBJECT ) 
     shake~2n 
     tremble~2vz move or jerk quickly and involuntarily up and down or sideways
  taste ( meanings=13 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -4348,7 +4346,7 @@
     fill~10v 
     take~38vz develop a habit
     take~39vz carry out
-    need~7v 
+    require~4v 
     contain~5v 
     pack~22v 
     accept~11v 
@@ -4507,7 +4505,7 @@
     telephone_order~1nz (^telemarketing~1) receiving orders via telephone
  trust_busting ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     trust_busting~1nz (^government~1) government activities seeking to dissolve corporate trusts and monopolies (especially under the United States antitrust laws)
- trust ( meanings=12 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ trust ( meanings=12 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     trustfulness~1nz (^trait~1) the trait of believing in the honesty and reliability of others
     reliance~1nz (^certainty~2) certainty based on past experience
     faith~2n 
@@ -4561,7 +4559,7 @@
  twit ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) 
     taunting~1n 
     twerp~1n 
-    tease~5v 
+    rag~8v 
  the_way_of_the_world ( meanings=1 NOUN NOUN_SINGULAR ) 
     the_ways_of_the_world~1n 
  the_ways_of_the_world ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -4672,9 +4670,9 @@
     swordtail~1n 
     poeciliid_fish~1n 
  three-spined_stickleback ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
-    Gasterosteus_aculeatus~1nz (^stickleback~1) of rivers and coastal regions
+    Gasterosteus_aculeatus~1nz (^prickleback~1) of rivers and coastal regions
  ten-spined_stickleback ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
-    Gasterosteus_pungitius~1nz (^stickleback~1) confined to rivers
+    Gasterosteus_pungitius~1nz (^prickleback~1) confined to rivers
  tusk ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     tusk~1nz (^tooth~5) a long pointed tooth specialized for fighting or digging
     ivory~2n 
@@ -4790,7 +4788,7 @@
     tit~1nz (^oscine_bird~1) small insectivorous birds
  tufted_titmouse ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Parus_bicolor~1nz (^titmouse~1) crested titmouse of eastern and midwestern United States
- tufted ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ tufted ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     topknotted~1a 
     tufted~2az having or adorned with tufts
     caespitose~1a 
@@ -4803,7 +4801,9 @@
     Thraupidae~1nz (^bird_family~1) tanagers
  tanager ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     tanager~1nz (^oscine_bird~1) any of numerous New World woodland birds having brightly colored males
- tawny ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ tercel ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    tiercel~1n 
+ tawny ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     tawny-brown~1a 
  turkey_buzzard ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Cathartes_aura~1nz (^New_World_vulture~1) a New World vulture that is common in South America and Central America and the southern United States
@@ -5442,7 +5442,7 @@
     long-tailed_porcupine~1n 
  typical_jerboa ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     typical_jerboa~1nz (^jerboa~1) small nocturnal jumping rodent with long hind legs
- typical ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ typical ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE3_4 posdefault:ADJECTIVE ) 
     distinctive~1az of a feature that helps to distinguish a person or thing
     typical~2az conforming to a type
     typical~3az exhibiting the qualities or characteristics that identify a group or kind or category
@@ -5723,7 +5723,7 @@
     hogchoker~1nz (^sole~1) useless as food
  thick_skin ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     thick_skin~1nz (^skin~4) skin that is very thick
- thick ( meanings=14 glosses=13 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) 
+ thick ( meanings=14 glosses=13 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     midst~1nz (^inside~2) the location of something surrounded by other things
     thick~2az abounding
     wooden-headed~1az stupid
@@ -5931,7 +5931,7 @@
  turning_point ( meanings=2 NOUN NOUN_SINGULAR ) 
     street_corner~1n 
     landmark~3n 
- trumpet ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ trumpet ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     cornet~1n 
     trumpet~2vz utter in trumpet-like sounds
     trumpet~3vz proclaim on, or as if on, a trumpet
@@ -6384,7 +6384,7 @@
     luge~2vz move along on a luge or toboggan
  triangular_bandage ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     sling~1nz (^bandage~1) bandage to support an injured forearm
- triangular ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ triangular ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     trilateral~2a 
     triangular~2az having three angles
  tinsnips ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -6813,7 +6813,7 @@
     telex_machine~1nz (^character-at-a-time_printer~1) a character printer connected to a telegraph that operates like a typewriter
  teletype ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     teletype~1nz 
- telex ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) ) 
+ telex ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     teletypewriter~1n 
     telex~2vz communicate by telex
  telex_machine ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -7294,7 +7294,7 @@
     tinware~1nz (^article_of_commerce~1) articles of commerce made of tin plate
  tippet ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     tippet~1nz (^cape~1) a woman's fur shoulder cape with hanging ends
- tire ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ tire ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB ) 
     tyre~1nz (^ring~2) hoop that covers a wheel
     jade~7v 
     weary~4vz lose interest or become bored with something or somebody
@@ -7446,7 +7446,7 @@
  tonic ( meanings=9 glosses=7 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN ) 
     restorative~2nz (^medicine~3) a medicine that strengthens and invigorates
     keynote~2nz (^note~5) the first note of a diatonic scale
-    soda~1n 
+    pop~3n 
     quinine_water~1nz (^soft_drink~1) lime- or lemon-flavored carbonated water containing quinine
     fresh~6a 
     accented~2az used of syllables
@@ -8407,21 +8407,21 @@
     alizarine_red~1n 
  Turkey ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Republic_of_Turkey~1n 
- turquoise ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE (null) ) 
+ turquoise ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     aquamarine~1n 
     turquoise~2nz (^mineral~1) a blue to grey green mineral consisting of copper aluminum phosphate
     turquoise~3az 
  Tyrian_purple ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
     Tyrian_purple~1nz (^reddish_purple~1) a vivid purplish-red color
     Tyrian_purple~2nz (^dye~1) a red-purple to deep purple dye obtained from snails or made synthetically
- tan ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=tannest 
+ tan ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=tannest 
     topaz~1nz (^light_brown~1) a light brown the color of topaz
     tangent~1nz (^trigonometric_function~1) ratio of the opposite to the adjacent side of a right-angled triangle
     suntan~1n 
     tan~4az of a light yellowish-brown color
     bronze~7vz get a tan, from wind or sun
     tan~6vz treat skins and hides with tannic acid so as to convert them into leather
- taupe ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ taupe ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     taupe~1nz (^brown~1) a greyish brown
     fuscous~1a 
     taupe~3az 
@@ -8762,7 +8762,7 @@
     vagus~1n 
  twelfth_cranial_nerve ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     hypoglossal~1nz (^cranial_nerve~1) supplies intrinsic muscles of the tongue and other tongue muscles
- twelfth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER COMMON2 COMMON1 ORDINAL KINDERGARTEN (null) ) 
+ twelfth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER COMMON2 COMMON1 ORDINAL KINDERGARTEN ) 
  temporal_gyrus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     temporal_gyrus~1nz (^convolution~2) any of the convolutions of the outer surface of the temporal lobe of the cerebrum
  temporal_lobe ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -8805,7 +8805,7 @@
     eminence~1nz (^process~3) a protuberance on a bone especially for attachment of a muscle or ligament
  tubular_cavity ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     tubular_cavity~1nz (^bodily_cavity~1) a cavity having the shape of a tube
- tubular ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ tubular ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     tube-shaped~1a 
  torso ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) plural=torsi 
     body~7n 
@@ -9033,7 +9033,7 @@
     theorization~1n 
  trend_analysis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     trend_analysis~1nz (^analysis~3) analysis of changes over time
- think ( meanings=14 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) (null) (null) (null) (null) ) conjugate=thought 
+ think ( meanings=14 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=thought 
     think~1nz (^deliberation~3) an instance of deliberate thinking
     think~2vz bring into a given condition by mental preoccupation
     recall~6v 
@@ -9327,7 +9327,7 @@
     manner_name~1n 
  third_person ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     third_person~1nz (^person~3) pronouns and verbs that are used to refer to something other than the speaker or addressee of the language in which they occur
- tense ( meanings=9 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ tense ( meanings=9 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     tense~1nz (^grammatical_category~1) a grammatical category of verbs used to express distinctions of time
     tense~2az taut or rigid
     tense~3az pronounced with relatively tense tongue muscles
@@ -9558,7 +9558,7 @@
     TV_program~1n 
  tetralogy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     tetralogy~1nz (^serial~2) a series of four related works
- telecast ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_PARTICIPLE NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) conjugate=telecast 
+ telecast ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_PARTICIPLE NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) conjugate=telecast 
     telecast~1nz (^broadcast~1) a television broadcast
     televise~1v 
  telegram ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN ) 
@@ -9983,7 +9983,7 @@
  thematic ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     thematic~1az relating to or constituting a topic of discourse
     thematic~2az of or relating to a melodic subject
- titter ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE5_6 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ titter ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE5_6 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     titter~1nz (^laugh~3) a nervous restrained laugh
     giggle~2v 
  tongue_twister ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -10034,7 +10034,7 @@
     betrothal~2n 
  thank_you ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR KINDERGARTEN ) 
     thank_you~1nz (^thanks~2) a conversational expression of gratitude
- thank ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ thank ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     give_thanks~1vz express gratitude or show appreciation to
  tirade ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     broadside~4n 
@@ -10149,7 +10149,7 @@
     total_eclipse~1nz (^eclipse~1) an eclipse as seen from a place where the eclipsed body is completely obscured
  tribulation ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     visitation~3n 
- twitter ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ twitter ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT ) 
     chirrup~1n 
     chitter~1vz make high-pitched sounds, as of birds
  tintinnabulation ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -10200,7 +10200,7 @@
     tread~8vz tread or stomp heavily or roughly
  trampling ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     trample~1nz (^sound~5) the sound of heavy treading or stomping
- tweet ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ tweet ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     tweet~1nz (^chirp~1) a weak chirping sound as of a small bird
     twinge~3v 
     twirp~2vz make a weak, chirping sound
@@ -10221,7 +10221,7 @@
     tide~5vz cause to float with the tide
     surge~6vz rise or move forward
  tidal_bore ( meanings=1 NOUN NOUN_SINGULAR ) 
-    bore~3n 
+    eager~1n 
  tidal_flow ( meanings=1 NOUN NOUN_SINGULAR ) 
     tidal_current~1n 
  tidal_current ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -10298,7 +10298,7 @@
     appreciativeness~1n 
  trepidation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     trepidation~1nz (^dread~1) a feeling of alarm or dread
- timidness ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
+ timidness ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     timidity~2n 
  togetherness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER ) 
     togetherness~1nz (^closeness~6) affectionate closeness
@@ -10424,7 +10424,7 @@
     turkey_stuffing~1nz (^dressing~6) stuffing for turkey
  tea_bread ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     tea_bread~1nz (^roll~13) sweetened buns to be eaten with tea
- toast ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ toast ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     toast~1nz (^bread~1) slices of bread that have been toasted
     pledge~2nz (^drink~4) a drink in honor of or to the health of a person or event
     goner~1nz (^desperate~1) a person in desperate straits
@@ -10596,7 +10596,7 @@
     tap_water~1nz (^water~4) water directly from the spigot
  trichotomy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     trichotomy~1nz (^classification~4) being threefold
- timid ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ timid ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     cautious~1n 
     timid~2az showing fear and lack of confidence
     faint~2a 
@@ -11619,7 +11619,7 @@
     thespian~2az of or relating to drama
  theatrical_agent ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     actor_'s_agent~1nz (^business_agent~1) a business agent for an actor
- teenager ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN (null) ) comparative=teenage 
+ teenager ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN ) comparative=teenage 
     teen~1nz (^juvenile_person~1) a juvenile between the onset of puberty and maturity
  teen ( meanings=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:NOUN ) 
     adolescent~1n 
@@ -11658,7 +11658,7 @@
  taker ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     taker~1nz (^better~4) one who takes a bet or wager
     taker~2nz (^customer~1) one who accepts an offer
- tough ( meanings=13 glosses=12 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ tough ( meanings=13 glosses=12 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     yobbo~1nz (^attacker~1) a cruel and brutal fellow
     strong-armer~1nz (^crook~2) an aggressive and violent young criminal
     street_fighter~1nz (^belligerent~1) someone who learned to fight in the streets rather than being formally trained in the sport of boxing
@@ -12133,7 +12133,7 @@
     thinker~2nz (^intellectual~1) someone who exercises the mind
  thin_person ( meanings=1 NOUN NOUN_SINGULAR ) 
     skin_and_bones~1n 
- thin ( meanings=14 glosses=11 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) comparative=thinnest 
+ thin ( meanings=14 glosses=11 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=thinnest 
     sparse~1az not dense
     lean~2a 
     thin~3az lacking resonance or volume
@@ -12169,7 +12169,7 @@
     tier~3nz (^worker~2) a worker who ties something
  tight_end ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     tight_end~1nz (^end~12) an offensive end who lines up close to the tackle
- tight ( meanings=16 glosses=13 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ tight ( meanings=16 glosses=13 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     tight~1az affected by scarcity and expensive to borrow
     tight~2az packed closely together
     stringent~1az demanding strict attention to rules and procedures
@@ -12801,7 +12801,7 @@
     Jacopo_Robusti~1n 
  Tirso_de_Molina ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Gabriel_Tellez~1nz (^playwright~1) Spanish dramatist who wrote the first dramatic treatment of the legend of Don Juan
- Titian ( meanings=1 NOUN NOUN_PROPER_SINGULAR (null) ) 
+ Titian ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Tiziano_Vecellio~1n 
  Tiziano_Vecellio ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Titian~1nz (^old_master~1) old master of the Venetian school
@@ -14163,7 +14163,7 @@
     tapa~2nz (^bark~4) the thin fibrous bark of the paper mulberry and Pipturus albidus
  tree_branch ( meanings=1 NOUN NOUN_SINGULAR ) 
     limb~6n 
- twig ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ twig ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:NOUN VERB_NOOBJECT ) 
     sprig~2nz (^branch~5) a small branch or division of a branch 
     twig~2vz branch out in a twiglike manner
     tumble~7v 
@@ -14582,8 +14582,8 @@
     xxv~1az being five more than twenty
  three-fourths ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     three-fourths~1nz (^common_fraction~1) three of four equal parts
- twenty_percent ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    one-fifth~1nz (^common_fraction~1) one part in five equal parts
+ twenty_percent ( meanings=1 NOUN NOUN_SINGULAR ) 
+    fifth_part~1n 
  tenth_part ( meanings=1 NOUN NOUN_SINGULAR ) 
     ten_percent~1n 
  ten_percent ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -14712,6 +14712,12 @@
     time_sharing~1nz (^sharing~4) the use of a central computer by many users simultaneously
  temporal_relation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     temporal_relation~1nz (^relation~1) a relation involving time
+ twentieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN ) 
+    twentieth~1nz (^rank~5) position 20 in a countable series of things
+    twentieth~2az coming next after the nineteenth in position
+ thirtieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN ) 
+    thirtieth~1nz (^rank~5) position 30 in a countable series of things
+    thirtieth~2az coming next after the twenty-ninth in position
  temperature_scale ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     temperature_scale~1nz (^metric~1) a system of measuring temperature
  tertium_quid ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -15286,7 +15292,7 @@
     tetrose~1nz (^monosaccharide~1) any monosaccharide sugar containing four atoms of carbon per molecule
  transparent_quartz ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     rock_crystal~1nz (^quartz~1) a clear quartz used in making electronic and optical equipment
- transparent ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ transparent ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     crystal_clear~2az transmitting light
     transparent~2az easily understood or seen through 
     guileless~1az free of deceit
@@ -15572,7 +15578,7 @@
     translucent_substance~1nz (^stuff~7) a material having the property of admitting light diffusely
  translucent_substance ( meanings=1 NOUN NOUN_SINGULAR ) 
     transparent_substance~1n 
- translucent ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ translucent ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     semitransparent~1a 
     translucent~2az 
  triamcinolone ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
@@ -15762,7 +15768,6 @@
     year~3n 
  twentieth_century ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     twentieth_century~1nz (^century~2) the century from 1901 to 2000
- twentieth ( ADJECTIVE ADJECTIVE_NUMBER COMMON4 COMMON2 ORDINAL KINDERGARTEN (null) ) 
  Tishri ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Tishri~1nz (^Jewish_calendar_month~1) the first month of the civil year
  Tebet ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -16117,7 +16122,7 @@
     tut-tut~1v 
  tut-tut ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB INTERJECTION posdefault:VERB VERB_NOOBJECT ) 
     tsk~1vz utter `tsk,' `tut,' or `tut-tut,' as in disapproval
- taught ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN GRADE5_6 posdefault:VERB ) conjugate=teach 
+ taught ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=teach 
  taut ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     tight~13a 
     taut~2az subjected to great tension
@@ -16147,7 +16152,7 @@
  toed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     toed~1az having a toe or toes of a specified kind
  told ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=tell 
- thirsty ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=thirstiest 
+ thirsty ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=thirstiest 
     thirsty~1az able to take in large quantities of moisture
     hungry~1az extremely desirous
     thirsty~3az feeling a need or desire to drink
@@ -16155,7 +16160,7 @@
     thirsty~5az 
  too-greedy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     overgreedy~1a 
- teeming ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ teeming ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     teeming~1az abundantly filled with especially living things
  torrential ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     torrential~1az pouring in abundance
@@ -16208,7 +16213,7 @@
  triskaidekaphobic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     triskaidekaphobic~1az suffering from triskaidekaphobia
     triskaidekaphobic~2az 
- truculent ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ truculent ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     truculent~1az defiantly aggressive
  trial-and-error ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     trial-and-error~1az relating to solving problems by experience rather than theory
@@ -16230,7 +16235,7 @@
  tricksy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=tricksiest 
     sly~1a 
     tricksy~2az 
- tricky ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) comparative=trickiest 
+ tricky ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) comparative=trickiest 
     wily~1az marked by skill in deception
     catchy~2az having concealed difficulty
     slippery~2a 
@@ -16251,13 +16256,13 @@
  thunderous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     thunderous~1az extremely ominous
     thundery~2a 
- terrible ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ terrible ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     frightening~2az causing fear or dread or terror
     unspeakable~2az exceptionally bad or displeasing
     wicked~1az intensely or extremely bad or unpleasant in degree or quality
     tremendous~3az extreme in degree or extent or amount or impact
     terrible~5az 
- threatening ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ threatening ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     forbidding~2a 
     lowering~3a 
     threatening~3az 
@@ -16358,7 +16363,7 @@
     tenebrious~1az dark and gloomy
  tenebrious ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     tenebrous~1a 
- tolerant ( meanings=6 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ tolerant ( meanings=6 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     large-minded~1a 
     kind~2a 
     patient_of~1a 
@@ -16447,7 +16452,7 @@
     togged~1az dressed especially in smart clothes
  turned_out ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     turned_out~1az 
- turned ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:VERB (null) ) 
+ turned ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) 
     sour~8az in an unpalatable state
     turned~2az moved around an axis or center
  tuxedoed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -16521,14 +16526,14 @@
     traveled~2az traveled over or through
  travelled ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     traveled~1az familiar with many parts of the world
- thoughtful ( meanings=6 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ thoughtful ( meanings=6 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     thoughtful~1az considerate of the feelings or well-being of others
     paying_attention~2az taking heed
     thoughtful~3az having intellectual depth
     serious-minded~1az acting with or showing thought and good sense
     thoughtful~5az exhibiting or characterized by careful thought
     thoughtful~6az 
- thoughtless ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ thoughtless ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     uncaring~1az without care or thought for others
     thoughtless~2az showing lack of careful thought
     thoughtless~3az 
@@ -16592,7 +16597,7 @@
  troublesome ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     troublesome~1az difficult to deal with
     troublesome~2az 
- tireless ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ tireless ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     industrious~1a 
     unflagging~2a 
     tireless~3az 
@@ -16644,7 +16649,7 @@
     theory-based~1az based in theory rather than experiment
  transfixed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     fascinated~1a 
- tepid ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ tepid ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     half-hearted~1a 
     lukewarm~2a 
  tantamount ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -16660,7 +16665,7 @@
  thrillful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     thrillful~1az full of excitement
     thrillful~2az 
- thrilling ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ thrilling ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     electrifying~1a 
     thrilling~2az causing quivering or shivering as by cold or fear or electric shock
     thrilling~3az 
@@ -16779,12 +16784,12 @@
     unsparing~2a 
  tightfisted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     hardfisted~1a 
- talented ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ talented ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     gifted~1az endowed with talent or talents
     talented~2az 
  talentless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     untalented~1a 
- testy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 (null) ) comparative=testiest 
+ testy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) comparative=testiest 
     petulant~1a 
     testy~2az 
  tetchy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=tetchiest 
@@ -16853,12 +16858,12 @@
  time-honoured ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     time-honored~1az honored because of age or long usage
     time-honored~2az acceptable for a long time
- tilted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ tilted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     canted~1a 
  tipped ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:VERB ) 
     leaning~5az departing or being caused to depart from the true vertical or horizontal
     tipped~2az having a tip
- torrid ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ torrid ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     torrid~1az extremely hot
     torrid~2az emotionally charged and vigorously energetic
     perfervid~1az characterized by intense emotion
@@ -16876,7 +16881,7 @@
     tragicomic~2az manifesting both tragic and comic aspects
  transeunt ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     transient~3a 
- trivial ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ trivial ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     picayune~1a 
     trivial~2az concerned with trivialities
     superficial~2az of little substance or significance
@@ -16917,12 +16922,12 @@
  tightly ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
     tightly~1bz securely fixed or fastened
     tightly~2bz in a tight or constricted manner
- tiresome ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ tiresome ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     irksome~1a 
     tiresome~2az 
  trespassing ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:VERB ) 
     invasive~1a 
- tantalizing ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ tantalizing ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     tempting~1az very pleasantly inviting
     tantalising~2az arousing desire or expectation for something unattainable or mockingly out of reach
     tantalizing~3az 
@@ -16957,7 +16962,7 @@
     tremendous~4az 
  too_large ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     overlarge~1a 
- tiny ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=tiniest 
+ tiny ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=tiniest 
     bantam~2az very small
     tiny~2az 
  teensy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -17108,7 +17113,7 @@
     threadbare~3az 
  timeworn ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     threadbare~1a 
- tired ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:VERB (null) ) 
+ tired ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) 
     well-worn~1az repeated too often
     tired~2az depleted of strength or energy
     tired~3az 
@@ -17173,7 +17178,7 @@
     tutelary~1a 
  too_big_for_one_'s_breeches ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     uppish~1az 
- thrifty ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=thriftiest 
+ thrifty ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=thriftiest 
     careful~3a 
     thrifty~2az careful and diligent in the use of resources
     thrifty~3az 
@@ -17192,7 +17197,7 @@
     potty-trained~1az trained to use the toilet
  three-figure ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     three-figure~1az written with three figures
- troubled ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ troubled ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     disruptive~1a 
     troubled~2az characterized by or indicative of distress or affliction or danger or need
     troubled~3az 
@@ -17213,7 +17218,7 @@
  tangential ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     digressive~2a 
     tangential~2az of or relating to or acting along or in the direction of a tangent
- trustworthy ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ trustworthy ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     trustworthy~1az taking responsibility for one's conduct and obligations
     trusty~2az worthy of trust or belief
     trustworthy~3az 
@@ -17236,7 +17241,7 @@
     tolerable~2az capable of being borne or endured
  thin-skinned ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     feisty~1az quick to take offense
- thick-skinned ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ thick-skinned ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     tough-skinned~1az insensitive to criticism
  tough-skinned ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     thick-skinned~1a 
@@ -17386,7 +17391,7 @@
     cannular~1a 
  tippy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     cranky~2a 
- top-heavy ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ top-heavy ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     top-heavy~1az unstable by being overloaded at the top
  tottering ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     tottering~1az having lost stability
@@ -17447,7 +17452,7 @@
  trigonal ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     rhombohedral~1a 
     trigonal~2az 
- taciturn ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 (null) ) 
+ taciturn ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     taciturn~1az habitually reserved and uncommunicative
  talky ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) comparative=talkiest 
     chatty~2a 
@@ -17468,7 +17473,7 @@
     tasteless~1az lacking aesthetic or social taste
     tasteless~2az lacking flavor
     tasteless~3az 
- tacky ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=tackiest 
+ tacky ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=tackiest 
     garish~1a 
     tacky~2az not completely dried and slightly sticky to the touch
     tacky~3az 
@@ -17570,7 +17575,7 @@
  trustful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     trusting~1az inclined to believe or confide readily
     trustful~2az 
- trusting ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ trusting ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     trustful~1a 
     trusting~2az 
  trusted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -17652,7 +17657,7 @@
     tentacled~1az having tentacles
  teratogenic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     teratogenic~1az of or relating to substances or agents that can interfere with normal embryonic development
- testaceous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 (null) ) 
+ testaceous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     testaceous~1az relating to or possessing a testa or hard shell
  thenal ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     thenar~3a 
@@ -17823,7 +17828,7 @@
     text-based~1az 
  time-wasting ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     time-wasting~1az 
- terracotta ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 (null) ) 
+ terracotta ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     terracotta~1az 
  turned-on ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     turned-on~1az 
@@ -18114,7 +18119,7 @@
  tweediest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL ) comparative=tweedier 
  twiggier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL ) comparative=twiggy 
  twiggiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL ) comparative=twiggier 
- tempt ( meanings=6 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ tempt ( meanings=6 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     influence~7v 
     entice~1v 
     tempt~3vz try presumptuously
@@ -18208,7 +18213,7 @@
     thermodynamically~2bz 
  this_evening ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
     tonight~2b 
- this ( meanings=3 PRONOUN_SUBJECT PRONOUN_OBJECT PREDETERMINER DETERMINER COMMON4 COMMON2 COMMON1 KINDERGARTEN DETERMINER_SINGULAR PRONOUN_SINGULAR OMITTABLE_TIME_PREPOSITION (null) ) 
+ this ( meanings=3 PRONOUN_SUBJECT PRONOUN_OBJECT PREDETERMINER DETERMINER COMMON4 COMMON2 COMMON1 KINDERGARTEN DETERMINER_SINGULAR PRONOUN_SINGULAR OMITTABLE_TIME_PREPOSITION ) 
     this~1z 
     this~2z 
     this~3z 
@@ -18894,7 +18899,7 @@
  tell_on ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     tell_on~1vz produce an effect or strain on somebody
     snitch~2v 
- tell ( meanings=8 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) (null) (null) ) conjugate=told 
+ tell ( meanings=8 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) conjugate=told 
     differentiate~5v 
     tell~2vz discern or comprehend
     say~2v 
@@ -18963,9 +18968,9 @@
     tumefy~1v 
  take_in_water ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     bilge~3vz take in water at the bilge
- trouble-shoot ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ trouble-shoot ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     troubleshoot~1vz solve problems
- troubleshoot ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ troubleshoot ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     trouble-shoot~1v 
  turn_down ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     lower~3vz make lower or quieter
@@ -18973,7 +18978,7 @@
     disdain~3v 
     decline~11v 
     reject~7v 
- teach ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) (null) ) conjugate=taught 
+ teach ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) conjugate=taught 
     teach~1vz accustom gradually to some action or attitude
     instruct~2vz impart skills or knowledge to
  tidy_up ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
@@ -19146,7 +19151,7 @@
  turn_to ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     turn_to~1vz direct one's interest or attention towards
     address~10v 
- transcribe ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ transcribe ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     transcribe~1vz convert the genetic information in into a strand of RNA, especially messenger RNA
     transliterate~1vz rewrite in a different script
     transcribe~3vz make a phonetic transcription of
@@ -19196,11 +19201,11 @@
     theologize~2v 
  take_for_granted ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     assume~3v 
- theorize ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ theorize ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     theorize~1vz form or construct theories
     theorize~2vz construct a theory about
     conjecture~4v 
- theorise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB (null) (null) ) 
+ theorise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB ) 
     theorize~3v 
  take_apart ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     dissect~1v 
@@ -19233,8 +19238,8 @@
  tie_in ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     colligate~2v 
     tie_in~2vz be in connection with something relevant
- take_into_account ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
-    allow~1v 
+ take_into_account ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
+    allow~1vz allow or plan for a certain possibility
  take_one_'s_lumps ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     get_one_'s_lumps~1vz suffer the results or consequences of one's behavior or actions
  talk_down ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
@@ -19260,7 +19265,7 @@
     tweedle~1vz entice through the use of music
     tweedle~2vz play negligently on a musical instrument
     chirp~3v 
- telecommunicate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT (null) ) 
+ telecommunicate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT ) 
     telecommunicate~1vz communicate over long distances, as via the telephone or e-mail
  throw_out ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     dismiss~3v 
@@ -19303,15 +19308,15 @@
     take_a_dive~1vz pretend to be knocked out, as of a boxer
  talk_through_one_'s_hat ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     bullshit~2v 
- trivialize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ trivialize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     trivialise~1vz make trivial or insignificant
- trivialise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ trivialise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     trivialize~1v 
  tear_apart ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     pan~3v 
- traduce ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ traduce ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     badmouth~1v 
- tantalize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ tantalize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     razz~2v 
  tantalise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     tantalize~1v 
@@ -19349,7 +19354,7 @@
     take_a_dare~2vz be dared to do something and not attempt it
  talk_turkey ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     talk_turkey~1vz discuss frankly, often in a business context
- televise ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ televise ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     telecast~2vz broadcast via television
  transmit ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     air~13v 
@@ -19369,17 +19374,17 @@
     telepathize~1v 
  transliterate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     transcribe~2v 
- tape_record ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT VERB_CONJUGATE1 (null) ) 
+ tape_record ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT VERB_CONJUGATE1 ) 
     tape_record~1vz record with a tape recorder
- typewrite ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=typewritten 
+ typewrite ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=typewritten 
     type~8v 
  triple-space ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT ) 
     triple-space~1vz type with two empty spaces between lines
- touch-type ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT (null) ) 
+ touch-type ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT ) 
     touch-type~1vz type without looking at the keyboard
  topicalize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     topicalize~1vz emphasize by putting heavy stress on or by moving to the front of the sentence
- testify ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ testify ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     attest~4v 
     show~10v 
  take_the_stand ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 

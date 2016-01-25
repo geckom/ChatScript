@@ -732,7 +732,8 @@ static char* Output_AtSign(char* word, char* ptr, bool space,char* buffer, unsig
 		}
 		else  answer = Meaning2Word(T)->word;
 		CONDITIONAL_SPACE();
- 		Output(answer,buffer,result,controls|OUTPUT_NOTREALBUFFER|OUTPUT_EVALCODE);
+ 		strcpy(buffer,answer);
+		// Output(answer,buffer,result,controls|OUTPUT_NOTREALBUFFER|OUTPUT_EVALCODE);
 	}
 	else 
 	{
@@ -909,7 +910,8 @@ char* Output(char* ptr,char* buffer,FunctionResult &result,int controls)
 	}
 
     bool quoted = false;
-    char word[MAX_ARG_BYTES]; // must survive TCPOPEN data return
+	char word[MAX_WORD_SIZE]; // must survive TCPOPEN data return maybe--- but cant be max arg size because stack will blow. Would have to allocate via
+	// nested depth assignments from our string space
 	int paren = 0;
 
     while (ptr)

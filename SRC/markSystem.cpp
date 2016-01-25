@@ -867,16 +867,15 @@ void MarkAllImpliedWords()
 	//		if (originalLower[i]) flags |= originalLower[i]->properties & (NOUN_SINGULAR|NOUN_PLURAL|NOUN_PROPER_SINGULAR|NOUN_PROPER_PLURAL);
 		//}
 		WORDP D = originalLower[i] ? originalLower[i] : originalUpper[i]; // one of them MUST have been set
-		if (!D) {
-			int xx = 0;
-		}
+		if (!D) D = StoreWord(original); // just so we can't fail later
+		
 		// put back non-tagger generalized forms of bits
 		if (flags & NOUN_BITS) flags |= NOUN;
 		if (flags & (VERB_BITS | NOUN_INFINITIVE| NOUN_GERUND)) flags |= VERB;
 		if (flags & ADJECTIVE_BITS) flags |= ADJECTIVE  | (allOriginalWordBits[i] & (MORE_FORM|MOST_FORM));
 		if (flags & NOUN_ADJECTIVE) flags |=  (allOriginalWordBits[i] & (MORE_FORM|MOST_FORM)) | ADJECTIVE_NORMAL | ADJECTIVE; // what actress is the *prettiest  -- be NOUN OR ADJECTIVE
 		if (flags & ADVERB) flags |= ADVERB |  (allOriginalWordBits[i] & (MORE_FORM|MOST_FORM));
-		if (D && D->systemFlags & ORDINAL) 
+		if (D->systemFlags & ORDINAL) 
 		{
 			flags |= PLACE_NUMBER;
 			AddParseBits(D,QUANTITY_NOUN);
@@ -948,11 +947,11 @@ void MarkAllImpliedWords()
 				char tmp[MAX_WORD_SIZE];
 				strcpy(tmp,currency);
 				MarkFacts(Mmoney,i,i); 
-				if (*currency == '$') tmp[1] = 0;
-				else if (*currency == 0xe2 && currency[1] == 0x82 && currency[2] == 0xac) tmp[3] = 0;
-				else if (*currency == 0xc2 && currency[1] == 0xa5 ) tmp[2] = 0;
-				else if (*currency == 0xc2 && currency[1] == 0xa3 ) tmp[2] = 0;
-				MarkFacts(MakeMeaning(StoreWord(tmp)),i,i);
+				if (*currency == '$' || !strnicmp(currency,"usd",3)) MarkFacts(Musd,i,i);
+				else if ((*currency == 0xe2 && currency[1] == 0x82 && currency[2] == 0xac) || !strnicmp(currency,"eur",3)) MarkFacts(Meur,i,i);
+				else if ((*currency == 0xc2 && currency[1] == 0xa5) || !strnicmp(currency,"yen",3)) MarkFacts(Myen,i,i);
+				else if ((*currency == 0xc2 && currency[1] == 0xa3 ) || !strnicmp(currency,"gbp",3)) MarkFacts(Mgbp,i,i);
+				else if (!strnicmp(currency,"cny",3) ) MarkFacts(Mcny,i,i);
 			}
 		}
 	
@@ -1075,13 +1074,15 @@ void MarkAllImpliedWords()
 		}
 		
 		D = (CL) ? CL : CU; //   best recognition
+		if (!D) D = StoreWord(original); // just so we can't fail later
 		char* last;
-		if (D && D->properties & NOUN && !(D->internalBits & UPPERCASE_HASH) && (last = strrchr(D->word,'_')) && finalPosValues[i] & NOUN) StdMark(MakeMeaning(FindWord(last+1,0)), i, i,true); //   composite noun, store last word as referenced also
+		if ( D->properties & NOUN && !(D->internalBits & UPPERCASE_HASH) && (last = strrchr(D->word,'_')) && finalPosValues[i] & NOUN) StdMark(MakeMeaning(FindWord(last+1,0)), i, i,true); //   composite noun, store last word as referenced also
 
 		// ALL Foreign words detectable by utf8 char
 		D = (OL) ? OL : OU;
-		if (D && D->internalBits & UTF8) MarkFacts(MakeMeaning(StoreWord("~utf8")),i,i);
-		if (D && D->internalBits & UPPERCASE_HASH && D->length > 1)  MarkFacts(MakeMeaning(Dpropername),i,i);  // historical - internal is uppercase
+		if (!D) D = StoreWord(original); // just so we can't fail later
+		if (D->internalBits & UTF8) MarkFacts(MakeMeaning(StoreWord("~utf8")),i,i);
+		if (D->internalBits & UPPERCASE_HASH && D->length > 1)  MarkFacts(MakeMeaning(Dpropername),i,i);  // historical - internal is uppercase
 
         if (trace & TRACE_PREPARE || prepareMode == PREPARE_MODE) Log(STDUSERLOG,"\r\n");
     }

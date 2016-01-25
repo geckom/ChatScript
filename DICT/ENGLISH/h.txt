@@ -100,10 +100,10 @@
  hammertoe ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     hammertoe~1nz (^toe~3) a deformed toe which is bent in a clawlike arch
  Holston ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- hang ( meanings=18 glosses=17 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=hung 
+ hang ( meanings=18 glosses=18 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=hung 
     hang~1nz (^gymnastic_exercise~2) a gymnastic exercise performed on the rings or horizontal bar or parallel bars when the gymnast's weight is supported by the arms
     hang~2nz (^fit~2) the way a garment hangs
-    knack~1n 
+    bent~1nz (^talent~1) a special way of doing something
     hang~4vz suspend in order to get a gamey taste
     cling~2vz hold on tightly or tenaciously
     hang_up~3vz cause to be hanging or suspended
@@ -155,7 +155,6 @@
     horn~10nz (^alarm~3) a noise made by the driver of an automobile to give warning
     horn~11nz (^animal_material~1) the material that covers the horns of ungulates and forms hooves and claws and nails
     tusk~4vz stab or pierce with a horn or tusk
- Hammons ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hanne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Humayd ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  hobble_skirt ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -247,7 +246,7 @@
  Hans ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  hand_calculator ( meanings=1 NOUN NOUN_SINGULAR ) 
     pocket_calculator~1n 
- helpful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ helpful ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     helpful~1az providing assistance or serving a useful function
     helpful~2az 
  Hocker ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -268,6 +267,7 @@
     Saddam_Hussein~1n 
  hierolatry ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     hagiolatry~1nz (^worship~1) the worship of saints
+ Hoeft ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hewes ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Hartman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hinto ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -318,6 +318,7 @@
  Hinayana_Buddhism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Hinayana~1nz (^Theravada_Buddhism~1) an offensive name for the early conservative Theravada Buddhism
  Henke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Hesson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  hosepipe ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     hose~1n 
  highland_fling ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -550,8 +551,6 @@
     Dustin_Hoffman~1n 
     Malvina_Hoffman~1n 
  Hutchison ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- house-raising ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    house-raising~1nz (^building~1) construction by a group of neighbors
  Hennig ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  horned_lizard ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     horny_frog~1nz (^iguanid_lizard~1) insectivorous lizard with hornlike spines on the head and spiny scales on the body
@@ -607,7 +606,6 @@
  horse_racing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     horse_racing~1nz (^racing~1) the sport of racing horses
  Hamden ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Huberta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Hominoidea ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     superfamily_Hominoidea~1n 
  Heterokontae ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -693,7 +691,7 @@
     heterology~1nz (^dissimilarity~1) the lack of correspondence of apparently similar body parts
  H._pylori ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Heliobacter_pylori~1n 
- hyoid ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:ADJECTIVE (null) ) 
+ hyoid ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:ADJECTIVE ) 
     hyoid_bone~1n 
     hyoid~2az of or relating to the hyoid bone
  harvesting ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
@@ -721,7 +719,6 @@
  Habib ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  hen_yard ( meanings=1 NOUN NOUN_SINGULAR ) 
     fowl_run~1n 
- Harford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  helleri ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     topminnow~1n 
  Hollowell ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -762,6 +759,7 @@
  Hanisi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  hog_molly ( meanings=1 NOUN NOUN_SINGULAR ) 
     Hypentelium_nigricans~1n 
+ Heiden ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  heterosexuality ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     heterosexualism~1n 
  Hubert ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -803,7 +801,7 @@
     half_nelson~1nz (^nelson~1) a wrestling hold in which the holder puts an arm under the opponent's arm and exerts pressure on the back of the neck
  horned_viper ( meanings=1 NOUN NOUN_SINGULAR ) 
     horned_asp~1n 
- honorable ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ honorable ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     honest~3a 
     honourable~1az worthy of being honored
     good~22a 
@@ -977,6 +975,9 @@
  hyena_dog ( meanings=1 NOUN NOUN_SINGULAR ) 
     African_hunting_dog~1n 
  Haskell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ helmet ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:NOUN ) 
+    helmet~1nz (^headdress~1) a protective headgear made of hard material to resist blows
+    helmet~2nz (^armor_plating~1) armor plate that protects the head
  ha-ha ( meanings=2 NOUN INTERJECTION NOUN_SINGULAR posdefault:NOUN ) 
     sunk_fence~1n 
     hee-haw~1n 
@@ -1116,7 +1117,6 @@
     hominy_grits~1nz (^hot_cereal~1) coarsely ground hulled corn boiled as a breakfast dish in the southern United States
  Handley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hrothnerta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Hallam ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hohn ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Healey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  halter ( meanings=6 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) plural=halteres comparative=halt 
@@ -1270,8 +1270,6 @@
  handlebar ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     handlebar~1nz (^bar~2) the shaped bar used to steer a bicycle
  Hewitt ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Haemoproteidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Haemoproteidae~1nz (^protoctist_family~1) bird parasites
  hasty_defense ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     hasty_defence~1nz (^defense~3) a defense organized while in contact with the enemy or when time is limited
  Hardnett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1432,8 +1430,6 @@
  horseshit ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     bull~4n 
  Hocking ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
- honor_killing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    honor_killing~1nz (^homicide~1) an ancient tradition still sometimes observed
  Haesel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Haberman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  high_jinx ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -1885,7 +1881,7 @@
  health_care ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     healthcare~1nz (^attention~1) the preservation of mental and physical health by preventing or treating illness through services offered by the health profession
     health_care~2nz (^social_insurance~1) social insurance for the ill and injured
- honor ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ honor ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     pureness~1nz (^chastity~2) a woman's virtue or chastity
     honour~2nz (^righteousness~1) the quality of being honorable and having a good name
     accolade~1nz (^symbol~2) a tangible symbol signifying approval or distinction
@@ -1996,7 +1992,7 @@
     James_Hutton~1n 
     Sir_Leonard_Hutton~1n 
  Hearn ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- hug ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ hug ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     squeeze~3nz (^embracement~1) a tight or amorous embrace
     hug~2vz fit closely or tightly
     squeeze~10vz squeeze tightly in your arms, usually with fondness
@@ -2206,7 +2202,6 @@
  Harrold ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hirst ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hodgdon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Hacket ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hemphill ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  homeotic_gene ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     homeotic_gene~1nz (^cistron~1) one the genes that are involved in embryologic development
@@ -2299,8 +2294,6 @@
  Hagerman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Haemulon_parra ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     sailor's-choice~1n 
- Homo_habilis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Homo_habilis~1nz (^human~1) extinct species of upright East African hominid having some advanced humanlike characteristics
  hiding ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     concealment~1n 
     hiding~2nz (^privacy~2) the state of being hidden
@@ -2329,7 +2322,7 @@
     Ericaceae~1nz (^dilleniid_dicot_family~1) heathers
  hartebeest ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 ) 
     hartebeest~1nz (^antelope~1) a large African antelope with lyre-shaped horns that curve backward
- hold ( meanings=45 glosses=20 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) (null) ) conjugate=held 
+ hold ( meanings=45 glosses=20 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) conjugate=held 
     clutches~1n 
     storage_area~1nz (^enclosure~2) the space in a ship or aircraft for storing cargo
     handle~1n 
@@ -2515,6 +2508,8 @@
     Townsend_Harris~1n 
     Zellig_Harris~1n 
     Joel_Harris~1n 
+ high_life ( meanings=1 NOUN NOUN_SINGULAR ) 
+    extravagance~1n 
  Hanks ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
     Tom_Hanks~1n 
  heavy_metal ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -2751,6 +2746,7 @@
  Haack ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hagerty ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Haight ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Hallam ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Haller ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hallett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Halliburton ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2762,6 +2758,7 @@
     Alice_Hamilton~1n 
     Lady_Emma_Hamilton~1n 
     William_Rowan_Hamilton~1n 
+ Hammons ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hancock ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     John_Hancock~2n 
  Hanley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2778,7 +2775,6 @@
  Headley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Heflin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hegarty ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Heiden ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Heil ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Heise ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Helgeson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2801,7 +2797,6 @@
     Herr~2nz (^man~4) a German man
  Herrmann ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hersey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Hesson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Higginbotham ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hinckley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hiner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2810,7 +2805,6 @@
  Hock ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hodges ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hodgson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Hoeft ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hoelscher ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hogan ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Ben_Hogan~1n 
@@ -2846,6 +2840,7 @@
  Hutter ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hwang ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Hysell ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Hacket ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hadara ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Hadarah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Hadya ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2877,6 +2872,7 @@
  Harb ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hardwyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hareleah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Harford ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Harland ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Harmonie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Harmony ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2967,6 +2963,7 @@
  Hrocesburh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hrychleah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Hrypanleah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Huberta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Hughette ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Hugo ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Victor_Hugo~1n 
@@ -3091,6 +3088,8 @@
     hibernation~1nz (^retirement~2) the act of retiring into inactivity
     hibernation~2nz (^quiescence~2) cessation from or slowing of activity during the winter
     hibernation~3nz (^torpidity~2) the torpid or resting state in which some animals pass the winter
+ honor_killing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    honor_killing~1nz (^homicide~1) an ancient tradition still sometimes observed
  habitual ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     accustomed~2a 
     habitual~2az 
@@ -3098,7 +3097,7 @@
     hypnogenesis~1nz (^induction~2) the induction of sleep or hypnosis
  housing_start ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     housing_start~1nz (^beginning~1) the act of starting to construct a house
- high ( meanings=19 glosses=18 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) comparative=higher 
+ high ( meanings=19 glosses=18 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) comparative=higher 
     high_gear~1nz (^gear~3) a forward gear with a gear ratio that gives the greatest vehicle velocity for a given engine speed
     high~2nz (^degree~1) a lofty level or position or degree
     high_school~1nz (^secondary_school~1) a public secondary school usually including grades 9 through 12
@@ -3181,7 +3180,7 @@
     impairment~3nz (^change~5) the occurrence of a change for the worse
     hurt~5n 
     harm~4vz cause or do harm to
- hurt ( meanings=15 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=hurt 
+ hurt ( meanings=15 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=hurt 
     scathe~1nz (^change_of_integrity~1) the act of damaging something or someone
     detriment~1nz (^harm~2) a damage or loss
     suffering~1nz (^pain~3) feelings of mental or physical pain
@@ -3314,7 +3313,7 @@
     speed~8v 
  heavy_lifting ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     heavy_lifting~1nz (^work~1) difficult work
- heavy ( meanings=31 glosses=27 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=heaviest 
+ heavy ( meanings=31 glosses=27 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=heaviest 
     heavy~1nz (^character~4) a serious role in a play
     heavy~2nz (^player~1) an actor who plays villainous roles
     large~2a 
@@ -3357,7 +3356,7 @@
  headship ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     headship~1nz (^position~2) the position of head
     headship~2nz (^position~2) the position of headmaster or headmistress
- hot ( meanings=22 glosses=20 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=hottest 
+ hot ( meanings=22 glosses=20 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=hottest 
     hot~1az marked by excited activity
     live~4a 
     hot~3az having or dealing with dangerously high levels of radioactivity
@@ -3445,8 +3444,6 @@
     prep~1n 
  highlife ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     lavishness~1n 
- high_life ( meanings=1 NOUN NOUN_SINGULAR ) 
-    highlife~1n 
  humbug ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB INTERJECTION NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     put-on~2n 
     snake_oil~1n 
@@ -3555,6 +3552,8 @@
     earreach~1nz (^reach~4) the range within which a voice can be heard
     audience~4n 
     hearing~7az able to perceive sound
+ house-raising ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    house-raising~1nz (^building~1) construction by a group of neighbors
  horse_breeding ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     horse_breeding~1nz (^breeding~2) breeding horses
  husbandry ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -3654,7 +3653,7 @@
     home_banking~1nz (^banking~1) banking in which transactions are conducted by means of electronic communication
  hard_sell ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     hard_sell~1nz (^advertising~1) forceful and insistent advertising
- hard ( meanings=23 glosses=15 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB (null) (null) ) comparative=hardest 
+ hard ( meanings=23 glosses=15 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB ) comparative=hardest 
     difficult~1a 
     heavy~8a 
     hard~3az dried out
@@ -3691,7 +3690,7 @@
     heterosexism~1nz (^discrimination~1) discrimination in favor of heterosexual and against homosexual people
  horsewhipping ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:VERB ) 
     horsewhipping~1nz (^flagellation~1) the act of whipping with a horsewhip
- hammer ( meanings=9 glosses=9 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ hammer ( meanings=9 glosses=9 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     hammer~1nz (^hand_tool~1) a hand tool with a heavy rigid head and a handle
     power_hammer~1nz (^power_tool~1) a power tool for drilling rocks
     hammer~3nz (^striker~1) a striker that is covered in felt and that causes the piano strings to vibrate
@@ -3715,7 +3714,7 @@
     truancy~1n 
  horizontal_integration ( meanings=1 NOUN NOUN_SINGULAR ) 
     horizontal_combination~1n 
- horizontal ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ horizontal ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE ) 
     horizontal~1nz (^orientation~6) something that is oriented horizontally
     horizontal~2az parallel to or in the plane of the horizon or a base line
     horizontal~3az 
@@ -3848,6 +3847,8 @@
     order_Haemosporidia~1n 
  haemosporidian ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     haemosporidian~1nz (^sporozoan~1) minute protozoans parasitic at some stage of the life cycle in blood cells of vertebrates including many pathogens
+ Haemoproteidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
+    Haemoproteidae~1nz (^protoctist_family~1) bird parasites
  haemoproteid ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     haemoproteid~1nz (^sporozoan~1) related to malaria parasite and having a phase in the viscera of various birds
  Haemoproteus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -3892,7 +3893,7 @@
     hammerhead~1nz (^shark~1) medium-sized live-bearing shark with eyes at either end of a flattened hammer-shaped head
  honey_eater ( meanings=1 NOUN NOUN_SINGULAR ) 
     honeysucker~1n 
- honey ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ honey ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     honey~1nz (^sweetening~3) a sweet yellow liquid produced by bees
     dear~1nz (^lover~1) a beloved person
     honey~3az of something having the color of honey
@@ -3970,7 +3971,7 @@
     beak~3n 
  horned_owl ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     horned_owl~1nz (^owl~1) large owls having prominent ear tufts
- hoot ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) ) 
+ hoot ( meanings=5 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) 
     tinker_'s_dam~1nz (^worthlessness~1) something of little value
     hoot~2nz (^shout~1) a loud raucous cry
     bird~3n 
@@ -4386,7 +4387,7 @@
     hispid~1az having stiff coarse hairs or bristles
  hazel_mouse ( meanings=1 NOUN NOUN_SINGULAR ) 
     Muscardinus_avellanarius~1n 
- hazel ( meanings=5 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ hazel ( meanings=5 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     hazel~1nz (^brown~1) a shade of brown that is yellowish or reddish
     hazelnut~2n 
     hazel~3nz (^wood~4) the fine-grained wood of a hazelnut tree and the hazel tree (Australian genus Pomaderris)
@@ -4396,7 +4397,7 @@
     eastern_chipmunk~1n 
  hoary_marmot ( meanings=1 NOUN NOUN_SINGULAR ) 
     whistler~3n 
- hoary ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=hoariest 
+ hoary ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=hoariest 
     canescent~1a 
     rusty~2a 
     grizzly~2a 
@@ -4518,6 +4519,8 @@
     Homo_erectus~1nz (^human~1) extinct species of primitive hominid with upright stature but small brain
  Homo_soloensis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Homo_soloensis~1nz (^human~1) extinct primitive hominid of late Pleistocene
+ Homo_habilis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
+    Homo_habilis~1nz (^human~1) extinct species of upright East African hominid having some advanced humanlike characteristics
  Homo_sapiens ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Homo_sapiens~1nz (^human~1) the only surviving hominid
  Homo_sapiens_neanderthalensis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -5286,9 +5289,6 @@
     heliograph~2vz signal by means of a mirror and the using the sun's rays
  heliport ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     heliport~1nz (^airport~1) an airport for helicopters
- helmet ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:NOUN ) 
-    helmet~1nz (^headdress~1) a protective headgear made of hard material to resist blows
-    helmet~2nz (^armor_plating~1) armor plate that protects the head
  hem ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     hem~1nz (^edge~2) the edge of a piece of cloth
     ahem~1nz (^vocalization~1) the utterance of a sound similar to clearing the throat
@@ -5587,7 +5587,7 @@
     Hoover_Dam~1nz (^dam~2) a large dam built in 1933 on the Colorado River in Nevada
  hope_chest ( meanings=1 NOUN NOUN_SINGULAR ) 
     wedding_chest~1n 
- hope ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ hope ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     hope~1nz (^supernatural_virtue~1) one of the three Christian virtues
     promise~1n 
     hope~3nz (^anticipation~3) a specific instance of feeling hopeful
@@ -5700,7 +5700,7 @@
     hourglass~1nz (^sandglass~1) a sandglass that runs for sixty minutes
  hour_hand ( meanings=1 NOUN NOUN_SINGULAR ) 
     little_hand~1n 
- hour ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN TIMEWORD (null) ) 
+ hour ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN TIMEWORD ) 
     minute~1n 
     hr~1nz (^unit_of_time~1) a period of time equal to 1/24th of a day
     time_of_day~1nz (^time~6) clock time
@@ -6906,7 +6906,7 @@
     home_movie~1nz (^picture~7) a film made at home by an amateur photographer
  horse_opera ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Western~1nz (^feature~6) a film about life in the western United States during the period of exploration and development
- hail ( meanings=8 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ hail ( meanings=8 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     hail~1nz (^salutation~2) enthusiastic greeting
     hail~2nz (^object~1) many objects thrown forcefully through the air
     hail~3nz (^precipitation~4) precipitation of ice pellets when there are strong rising air currents
@@ -6940,7 +6940,7 @@
  high-level ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     high-altitude~1a 
     high-ranking~1a 
- hint ( meanings=6 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) (null) ) 
+ hint ( meanings=6 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) 
     confidential_information~1n 
     clue~2n 
     intimation~2n 
@@ -7016,7 +7016,7 @@
  harbinger ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) 
     predecessor~1n 
     herald~5v 
- herald ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ herald ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT ) 
     precursor~1nz (^indication~3) something that precedes and indicates the approach of something or someone
     trumpeter~3nz (^messenger~1) a person who announces important news
     hail~4vz praise vociferously
@@ -7224,7 +7224,7 @@
     exaggeration~3n 
  holla ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     bellowing~1n 
- holler ( meanings=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ holler ( meanings=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     holla~1n 
     hollow~2n 
     squawk~3v 
@@ -7247,14 +7247,14 @@
     halloo~3vz urge on with shouts
  hosanna ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     hosanna~1nz (^shout~1) a cry of praise or adoration
- hiss ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ hiss ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     Bronx_cheer~1n 
     hushing~1nz (^noise~5) a fricative sound 
     boo~2v 
     sibilate~1vz make a sharp hissing sound, as if to show disapproval
     sibilate~2vz express or utter with a hiss
     whoosh~3vz move with a whooshing sound
- howl ( meanings=7 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ howl ( meanings=7 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     howling~1n 
     howl~2nz (^noise~5) a loud sustained noise resembling the cry of a hound
     howl~3nz (^cry~5) the long plaintive cry of a hound or a wolf
@@ -7265,7 +7265,7 @@
  howling ( meanings=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:VERB ) 
     ululation~1n 
     fantastic~2a 
- hee-haw ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR posdefault:NOUN VERB_NOOBJECT (null) ) 
+ hee-haw ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR posdefault:NOUN VERB_NOOBJECT ) 
     haw-haw~2n 
     bray~4vz braying characteristic of donkeys
  horselaugh ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -7318,7 +7318,7 @@
     happen~1v 
  happy_chance ( meanings=1 NOUN NOUN_SINGULAR ) 
     good_luck~1n 
- happy ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) comparative=happiest 
+ happy ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=happiest 
     well-chosen~1az well expressed and to the point
     felicitous~2az marked by good fortune
     happy~3az enjoying or showing or marked by joy or pleasure
@@ -7339,7 +7339,7 @@
     fizzle~2n 
  hushing ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
     hissing~1n 
- honk ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ honk ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     honk~1nz (^cry~5) the cry of a goose
     sick~10v 
     cronk~1vz cry like a goose
@@ -7347,7 +7347,7 @@
     blare~3v 
  hubbub ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     katzenjammer~1n 
- hum ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB INTERJECTION NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ hum ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB INTERJECTION NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     humming~2nz (^noise~5) a humming noise
     busyness~1nz (^activity~5) the state of being or appearing to be actively engaged in an activity
     hum~3vz sing with closed lips
@@ -7727,7 +7727,7 @@
  homebound ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     homebound~1nz (^people~1) people who are confined to their homes
     housebound~1a 
- homeless ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 (null) ) 
+ homeless ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 ) 
     homeless~1nz (^poor~1) poor people who unfortunately do not have a home to live in
     homeless_person~1nz (^unfortunate~1) someone unfortunate without housing
     roofless~1az physically or spiritually homeless or deprived of security
@@ -7793,7 +7793,7 @@
  Hollywood ( meanings=5 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_PROPER_SINGULAR ) 
     Hollywood~1nz (^movie_industry~1) the film industry of the United States
     Hollywood~2nz (^city_district~1) a district of Los Angeles long associated with the American film industry
-    Hollywood~3nz (^smell~5) a flashy vulgar tone or atmosphere believed to be characteristic of the American film industry
+    Hollywood~3nz (^feeling~6) a flashy vulgar tone or atmosphere believed to be characteristic of the American film industry
     Hollywood~4az flashy and vulgar
     Hollywood~5az of or relating to the film industry in the United States
  hedge_fund ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -7944,7 +7944,7 @@
     High_Commission~1nz (^embassy~2) an embassy of one British Commonwealth country to another
  headquarters_staff ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     headquarters_staff~1nz (^staff~5) military staff stationed at headquarters
- headquarters ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_SINGULAR NOUN_PLURAL ORDINAL GRADE5_6 (null) ) 
+ headquarters ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_SINGULAR NOUN_PLURAL ORDINAL GRADE5_6 ) 
  high_command ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     high_command~1nz (^leadership~3) the highest leaders in an organization
  hard_core ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -8358,7 +8358,7 @@
     Hindu_Kush~1nz (^chain~8) a mountain range extending to the west of the Himalayas
  hogback ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     horseback~2n 
- hollow ( meanings=9 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ hollow ( meanings=9 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     hole~5n 
     holler~2nz (^valley~1) a small valley between mountains
     hollow~3nz (^enclosed_space~1) a cavity or space in something
@@ -8554,7 +8554,7 @@
     jade~3n 
  hostile_witness ( meanings=1 NOUN NOUN_SINGULAR ) 
     adverse_witness~1n 
- hopeful ( meanings=4 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ hopeful ( meanings=4 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     wannabee~1nz (^applicant~1) an ambitious and aspiring young person
     promising~1az full or promise
     hopeful~3az having or manifesting hope
@@ -8995,7 +8995,7 @@
     manikin~3nz (^small_person~1) a person who is very small but who is not otherwise deformed or abnormal
  honest_woman ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     honest_woman~1nz (^wife~1) a wife who has married a man with whom she has been living for some time 
- honest ( meanings=8 glosses=7 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ honest ( meanings=8 glosses=7 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     fair~10az gained or earned without cheating or stealing
     good~13az not forged
     honorable~1az not disposed to cheat or defraud
@@ -9232,22 +9232,22 @@
     fixture~4n 
  Homo_rhodesiensis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Rhodesian_man~1nz (^human~1) a primitive hominid resembling Neanderthal man but living in Africa
- have ( meanings=19 glosses=18 VERB_PRESENT VERB_INFINITIVE AUX_HAVE VERB COMMON4 COMMON2 COMMON1 KINDERGARTEN GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) ) conjugate=having 
-    deliver~1vz cause to be born
+ have ( meanings=19 glosses=10 VERB_PRESENT VERB_INFINITIVE AUX_HAVE VERB COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) conjugate=having 
+    bear~4v 
     have~2vz suffer from
     sustain~1vz undergo 
     let~2vz cause to move
-    experience~4vz undergo
-    induce~2vz cause to do
+    experience~4v 
+    get~13v 
     ingest~2vz serve oneself to, or consume regularly
-    throw~17vz organize or be responsible for
-    receive~9vz go through 
+    hold~26v 
+    get~29v 
     have_got~1vz have or possess, either in a concrete or an abstract sense
     possess~1vz have ownership or possession of
     have~12vz have left
-    receive~11vz get something
-    accept~8vz receive willingly something given or offered
-    make~40vz achieve a point or goal
+    receive~11v 
+    accept~8v 
+    get~35v 
     have~16vz have a personal or business relationship with someone
     feature~7vz have as a feature
     have~18vz be confronted with
@@ -10154,7 +10154,7 @@
     courbaril~1nz (^locust~2) West Indian locust tree having pinnate leaves and panicles of large white or purplish flowers
  hairy_darling_pea ( meanings=1 NOUN NOUN_SINGULAR ) 
     Swainsona_greyana~1n 
- hairy ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE (null) ) comparative=hairiest 
+ hairy ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE ) comparative=hairiest 
     hairy~1az hazardous and frightening
     haired~1a 
     hairy~3az 
@@ -10163,7 +10163,7 @@
     nonesuch_clover~1n 
  humble_plant ( meanings=1 NOUN NOUN_SINGULAR ) 
     live-and-die~1n 
- humble ( meanings=7 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ humble ( meanings=7 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     base~23a 
     humble~2az marked by meekness or modesty
     lowly~3az used of unskilled work
@@ -12337,7 +12337,7 @@
     bicarbonate~1nz (^carbonate~1) a salt of carbonic acid in which one hydrogen atom has been replaced
  hydrogen_peroxide ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     peroxide~1nz (^oxidizing_agent~1) a viscous liquid with strong oxidizing properties
- heliotrope ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ heliotrope ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     bloodstone~1n 
  hexanoic_acid ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     caproic_acid~1nz (^saturated_fatty_acid~1) a fatty acid found in animal oils and fats or made synthetically
@@ -13010,7 +13010,7 @@
     whole~6a 
     haul~4v 
     squeeze~17v 
- hear ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) (null) ) conjugate=heard 
+ hear ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=heard 
     discover~1v 
     hear~2vz receive a communication from someone
     hear~3vz perceive via the auditory sense
@@ -13020,13 +13020,13 @@
     heard~1az detected or perceived by the sense of hearing
  hie ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 VERB_NOOBJECT ) conjugate=hying 
     race~8v 
- him ( meanings=1 PRONOUN_OBJECT COMMON4 COMMON2 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN PRONOUN_SINGULAR ANIMATE_BEING (null) ) 
+ him ( meanings=1 PRONOUN_OBJECT COMMON4 COMMON2 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN PRONOUN_SINGULAR ANIMATE_BEING ) 
     him~1z 
  hoarse ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     gruff~1a 
  holey ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     porous~2a 
- hence ( meanings=3 glosses=2 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB TIMEWORD (null) ) 
+ hence ( meanings=3 glosses=2 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
     thus~1b 
     hence~2bz from this time
     hence~3bz from this place
@@ -13095,7 +13095,7 @@
     hard-hitting~1az aggressively and persistently persuasive
  hectic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     feverish~1a 
- harsh ( meanings=7 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ harsh ( meanings=7 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     abrasive~2az sharply disagreeable
     harsh~2az severe
     rough~8a 
@@ -13155,7 +13155,7 @@
  horrifying ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     frightful~1a 
     horrifying~2az 
- horrible ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ horrible ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     horrifying~1a 
     horrible~2az 
  horrendous ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -13195,11 +13195,11 @@
     hirsute~1a 
  hirsute ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     hairy~2az having or covered with hair
- handsome ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ handsome ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     well-favoured~1az pleasing in appearance especially by reason of conformity to ideals of form and proportion
     liberal~6a 
     handsome~3az 
- hideous ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ hideous ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     repulsive~2a 
     outrageous~2a 
     hideous~3az 
@@ -13302,7 +13302,7 @@
     stonyhearted~1a 
     heartless~1az lacking in feeling or pity or warmth
     hardhearted~3az 
- harmonious ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ harmonious ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     harmonious~1az existing together in harmony
     harmonious~2az suitable and fitting
     proportionate~3a 
@@ -13346,10 +13346,10 @@
     tralatitious~1a 
  hard-baked ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     hard-baked~1az baked until hard
- half-baked ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ half-baked ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     underdone~1az insufficiently cooked
     screwball~3a 
- healthy ( meanings=6 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=healthiest 
+ healthy ( meanings=6 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=healthiest 
     sizeable~1az large in amount or extent or degree
     healthy~2az having or indicating good health in body or mind
     level-headed~1az exercising or showing good judgment
@@ -13398,7 +13398,7 @@
     hearing-impaired~1a 
  hearing-impaired ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     hard-of-hearing~1az having a hearing loss
- hesitant ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) (null) ) 
+ hesitant ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     hesitating~1a 
     hesitant~2az 
  hesitating ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -13407,7 +13407,7 @@
     hard_to_please~1az 
  hard_to_please ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     hard-to-please~1a 
- helpless ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ helpless ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     helpless~1az unable to manage independently
     lost~2a 
     incapacitated~1az lacking in or deprived of strength or power
@@ -13493,7 +13493,7 @@
     tepid~1a 
  half-hearted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     lukewarm~1a 
- hungry ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=hungriest 
+ hungry ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=hungriest 
     athirst~1a 
     hungry~2az feeling hunger
     hungry~3az 
@@ -13745,12 +13745,12 @@
     human-centred~1az marked by humanistic values and devotion to human welfare
  human-centred ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     humanistic~1a 
- humorous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ humorous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     humourous~1az full of or characterized by humor
     humorous~2az 
  humourous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     humorous~1a 
- hilarious ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ hilarious ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     uproarious~1a 
     hilarious~2az 
  humorless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -13793,7 +13793,7 @@
  heartrending ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     grievous~4a 
     heartrending~2az 
- huge ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ huge ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     Brobdingnagian~1az unusually great in size or amount or degree or especially extent or scope
     huge~2az 
  hulking ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
@@ -13831,7 +13831,7 @@
  hexed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     jinxed~1a 
     hexed~2az 
- hermaphroditic ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ hermaphroditic ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     hermaphrodite~2az of animal or plant
     hermaphroditic~2az of or relating to monoclinous plants
  hoydenish ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -13863,7 +13863,7 @@
     high-principled~1az having high principles
  hardly_a ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_NOT_PREDICATE  poscondition=?=A ) 
     hardly_a~1az 
- hardly ( meanings=2 ADVERB EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB (null) ) 
+ hardly ( meanings=2 ADVERB EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
     scarce~2b 
     scarcely~2b 
  heartwarming ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -13923,7 +13923,7 @@
     high-tension~1az subjected to or capable of operating under relatively high voltage
  high-potential ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     high-voltage~2az operating on or powered by a high voltage
- half-witted ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ half-witted ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     feebleminded~1a 
     half-witted~2az 
  hifalutin ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -14298,7 +14298,7 @@
  hexangular ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     hexagonal~1az having six sides or divided into hexagons
     hexangular~2az 
- hexagonal ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ hexagonal ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     hexangular~1a 
     hexagonal~2az 
  hidrotic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -14338,7 +14338,7 @@
     haematic~1a 
  hematic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     haemic~1a 
- haematic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 (null) ) 
+ haematic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     hemic~1az relating to or containing or affecting blood
  hemiparasitic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     hemiparasitic~1az of or relating to plants that are hemiparasites
@@ -14578,7 +14578,7 @@
     hard-featured~1az 
  hard-headed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     hard-headed~1az 
- hard-working ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ hard-working ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     hard-working~1az 
  harlequinesque ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     harlequinesque~1az 
@@ -14862,7 +14862,7 @@
  hungriest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) comparative=hungrier 
  huskier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) comparative=husky 
  huskiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) comparative=huskier 
- horrify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ horrify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     dismay~3v 
  humiliate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     chagrin~2v 
@@ -15524,11 +15524,11 @@
     beat_in~1vz teach by drills and repetition
  hit_the_books ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT VERB_CONJUGATE1 ) 
     study~12v 
- hypothesize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB (null) (null) ) 
+ hypothesize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB ) 
     theorise~1v 
- hypothesise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB (null) (null) ) 
+ hypothesise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB ) 
     hypothesize~1v 
- hypothecate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ hypothecate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     hypothesise~1v 
     hypothecate~2vz pledge without delivery or title of possession
  halve ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -15562,7 +15562,7 @@
     squat~6v 
  have_words ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     chew_up~1v 
- hoodwink ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ hoodwink ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     bamboozle~1v 
     juggle~7v 
  hyperbolize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 

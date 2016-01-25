@@ -233,6 +233,7 @@ static void SetCanonicalValue(unsigned int start,unsigned int end)
 		if (canon && IsUpperCase(*canon)) canonicalUpper[i] = FindWord(canon);
 		else if (canon) canonicalLower[i] = FindWord(canon);
 		else if (pos & NUMBER_BITS); // must occur before verbs and nouns, since "second" is a verb and a noun
+		else if (canonicalLower[i] && canonicalLower[i]->properties & (NOUN_NUMBER|ADJECTIVE_NUMBER)); // dont change canonical numbers like December second
 		else if (allOriginalWordBits[i] & NOUN_GERUND) // because singing is a dict word, we might prefer noun over gerund. We shouldned
 		{
 			canonicalLower[i] = FindWord(English_GetInfinitive(original,false));
@@ -1005,6 +1006,9 @@ resume:
 					return;
 				}
 				val = FindValueByName(word+1);
+				if ( val == 0) val = FindParseValueByName(word+1);
+				if ( val == 0) val = FindMiscValueByName(word+1);
+				if ( val == 0) val = FindSystemValueByName(word+1);
 				if ( val == 0)
 				{
 					printf("Bad notted control word %s rule: %d comment: %s at line %d in %s\r\n",word,tagRuleCount,comment,currentFileLine,currentFilename);
@@ -1025,6 +1029,8 @@ resume:
 			else
 			{
 				val = FindValueByName(word);
+				if (val == 0) val = FindParseValueByName(word);
+				if (val == 0) val = FindMiscValueByName(word);
 				if ( val == 0 || val > LASTCONTROL || val > 63)
 				{
 					printf("Bad control word %s rule: %d comment: %s at line %d in %s\r\n",word,tagRuleCount,comment,currentFileLine,currentFilename);
@@ -1051,7 +1057,7 @@ resume:
 					uint64 baseval = flags >> OP_SHIFT;
 					if (baseval == ISCANONICAL || baseval == ISORIGINAL  || baseval == PRIORCANONICAL  || baseval == PRIORORIGINAL  || baseval == POSTORIGINAL) 
 					{
-						if (FindValueByName(word) && stricmp(word,"not") && !once) 
+						if ((FindValueByName(word) || FindParseValueByName(word)) && stricmp(word,"not") && !once) 
 						{
 							printf("Did you intend to use HASORIGINAL for %s rule: %d %s at line %d in %s?\r\n",word,tagRuleCount,comment,currentFileLine,currentFilename);
 							once = true;
@@ -1103,6 +1109,7 @@ resume:
 						{
 							v = FindSystemValueByName(word);
 							if ( v == 0) v = FindParseValueByName(word);
+							if ( v == 0) v = FindMiscValueByName(word);
 							if (!v)
 							{
 								printf("Bad flag word %s rule: %d %s at line %d in %s\r\n",word,tagRuleCount,comment,currentFileLine,currentFilename);
@@ -2982,17 +2989,26 @@ void MarkTags(unsigned int i)
 	}
 		
 	// system flags we allow
-	bit = START_BIT;
-	for (int j = 63; j >= 0; --j)
+	if (originalLower[i]) 
 	{
-		if (bit & WEB_URL && originalLower[i] && originalLower[i]->systemFlags & bit && strchr(originalLower[i]->word,'@'))
+		bit = START_BIT;
+		for (int j = 63; j >= 0; --j)
 		{
-			MarkFacts(MakeMeaning(StoreWord("~email_url")),start,stop);
+			if (!(originalLower[i]->systemFlags & bit)) {;}
+			else if (bit & WEB_URL && strchr(originalLower[i]->word,'@'))
+			{
+				MarkFacts(MakeMeaning(StoreWord("~email_url")),start,stop);
+			}
+			else if (bit & MARK_FLAGS)  MarkFacts(sysMeanings[j],start,stop);
+			bit >>= 1;
 		}
-		else if (bit & MARK_FLAGS && originalLower[i] && originalLower[i]->systemFlags & bit)  MarkFacts(sysMeanings[j],start,stop);
-		bit >>= 1;
+		unsigned int age = originalLower[i]->systemFlags & AGE_LEARNED;
+		if (!age){;}
+		else if (age == KINDERGARTEN)  MarkFacts(MakeMeaning(StoreWord("~KINDERGARTEN")),start,stop);
+		else if (age == GRADE1_2)  MarkFacts(MakeMeaning(StoreWord("~GRADE1_2")),start,stop);
+		else if (age == GRADE3_4)  MarkFacts(MakeMeaning(StoreWord("~GRADE3_4")),start,stop);
+		else if (age == GRADE5_6)  MarkFacts(MakeMeaning(StoreWord("~GRADE5_6")),start,stop);
 	}
-
 	if (bits & AUX_VERB ) finalPosValues[i] |= VERB;	// lest it report "can" as untyped, and thus become a noun -- but not ~verb from system view
 
 }

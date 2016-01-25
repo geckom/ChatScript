@@ -186,7 +186,20 @@ char* ProbableKnownWord(char* word)
 		// are there facts using this word?
 		if (GetSubjectNondeadHead(D) || GetObjectNondeadHead(D) || GetVerbNondeadHead(D)) return D->word;
 	}
-	
+
+	// do we know the word in upper case?
+	char upper[MAX_WORD_SIZE];
+	MakeLowerCopy(upper,word);
+	upper[0] = GetUppercaseData(upper[0]);
+	D = FindWord(upper,0,UPPERCASE_LOOKUP);
+	if (D) // direct recognition
+	{
+		if (D->properties & FOREIGN_WORD || *D->word == '~' || D->systemFlags & PATTERN_WORD) return D->word;	// we know this word clearly or its a concept set ref emotion
+		if (D->properties & PART_OF_SPEECH && !IS_NEW_WORD(D)) return D->word; // old word we know
+		// are there facts using this word?
+		if (GetSubjectNondeadHead(D) || GetObjectNondeadHead(D) || GetVerbNondeadHead(D)) return D->word;
+	}
+
 	// interpolate to lower case words 
 	uint64 expectedBase = 0;
 	if (ProbableAdjective(word,len,expectedBase) && expectedBase) return word;
@@ -858,8 +871,8 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
 		return NULL; 
 	}
 
-	// take our guesses, and pick the most common (earliest learned) word
-    uint64 agemin = 0;
+	// take our guesses, and pick the most common (earliest learned or most frequently used) word
+    uint64 commonmin = 0;
     bestGuess[0] = NULL;
 	for (unsigned int j = 0; j < index; ++j) RemoveInternalFlag(choices[j],BEEN_HERE);
     if (index == 1) 
@@ -869,12 +882,12 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
 	}
     for (unsigned int j = 0; j < index; ++j) 
     {
-        uint64 val = choices[j]->systemFlags & AGE_LEARNED;
-        if (val < agemin) continue;
+        uint64 common = choices[j]->systemFlags & COMMONNESS;
+        if (common < commonmin) continue;
 		if (choices[j]->internalBits & UPPERCASE_HASH && index > 1) continue;	// ignore proper names for spell better when some other choice exists
-        if (val > agemin)
+        if (common > commonmin)
         {
-            agemin = val;
+            commonmin = common;
             bestGuessindex = 0;
         }
         bestGuess[bestGuessindex++] = choices[j];
@@ -884,10 +897,10 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
 		if (trace == TRACE_SPELLING) Log(STDUSERLOG,"    Pick of 2 spell: %s\r\n",bestD->word);
 		return choices[0]->word;	// pick one, what do we have to lose
 	}
-	if (bestGuessindex == 1) 
+	if (bestGuessindex) 
 	{
 		if (trace == TRACE_SPELLING) Log(STDUSERLOG,"    Pick spell: %s\r\n",bestD->word);
-		return bestGuess[0]->word; //   dont accept multiple choices at same grade level
+		return bestGuess[0]->word; 
 	}
 	return NULL;
 }

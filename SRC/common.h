@@ -136,6 +136,8 @@ typedef signed long long  int64;
 #else
 #include <malloc.h>
 #endif
+	
+#define NUMBER_OF_LAYERS 3
 
 #ifdef BIG_DICTIONARY
 typedef uint64 MEANING;							//   a flagged indexed dict ptr

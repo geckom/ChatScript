@@ -70,6 +70,8 @@
 + Blenniidae NOUN_SINGULAR 
 + Mendeleyev NOUN_HUMAN NOUN_HE 
 + Chelydra_serpentina NOUN_SINGULAR 
++ Carcharhinus_leucas NOUN_SINGULAR 
++ Felis_concolor NOUN_SINGULAR 
 + Conan NOUN_TITLE_OF_WORK 
 + Cynocephalus_variegatus NOUN_SINGULAR 
 + Fundulus_majalis NOUN_SINGULAR 
@@ -108,6 +110,7 @@
 + Anguidae NOUN_SINGULAR 
 + Alice NOUN_TITLE_OF_WORK 
 + boolean NOUN NOUN_SINGULAR 
++ Fyodor_Dostoevsky NOUN_HUMAN NOUN_HE 
 + Arthur_Conan_Doyle NOUN_HUMAN NOUN_HE 
 + Bufo_microscaphus NOUN_SINGULAR 
 + Apatura_iris NOUN_SINGULAR 
@@ -216,7 +219,6 @@
 + Mobula_hypostoma NOUN_SINGULAR 
 + Lucas NOUN_TITLE_OF_WORK 
 + Barbary_ape NOUN_SINGULAR 
-+ Commonwealth_of_Dominica ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Andrew_Johnson NOUN_HUMAN NOUN_HE 
 + Aegyptopithecus NOUN_SINGULAR 
 + Jorge_Luis_Borges NOUN_HUMAN NOUN_HE 
@@ -276,12 +278,12 @@
 + Aegisthus NOUN_SINGULAR 
 + Malaclemys_centrata NOUN_SINGULAR 
 + James_Knox_Polk NOUN_HUMAN NOUN_HE 
-+ Oryx_gazella NOUN_SINGULAR 
 + Polygonia_comma NOUN_SINGULAR 
 + Actias_luna NOUN_SINGULAR 
 + Dactylopteridae NOUN_SINGULAR 
 + pubic NOUN NOUN_SINGULAR 
 + Cyclopes_didactylus NOUN_SINGULAR 
++ Callorhinus_ursinus NOUN_SINGULAR 
 + Edlin NOUN_TITLE_OF_WORK 
 + Greenland ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Bren NOUN_SINGULAR 
@@ -447,6 +449,7 @@
 + Neurotrichus_gibbsii NOUN_SINGULAR 
 + Canis_lupus_tundrarum NOUN_SINGULAR 
 + Afghanistan ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
++ Blenheim_spaniel NOUN_SINGULAR 
 + Castor_fiber NOUN_SINGULAR 
 + Lepomis_punctatus NOUN_SINGULAR 
 + Lewis_Carroll NOUN_HUMAN NOUN_HE 
@@ -544,7 +547,6 @@
 + American_smelt NOUN_SINGULAR 
 + Bufo_canorus NOUN_SINGULAR 
 + Lake_Michigan ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Eudora NOUN_SINGULAR 
 + Islamic_Republic_of_Iran ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Hungary ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Chicago NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -571,6 +573,7 @@
 + Atlantic_cod NOUN_SINGULAR 
 + Parascalops_breweri NOUN_SINGULAR 
 + Bemisia_tabaci NOUN_SINGULAR 
++ Flo NOUN_TITLE_OF_WORK 
 + Andre_Gide NOUN_HUMAN NOUN_HE 
 + genus_Acarus NOUN_SINGULAR 
 + Isurus_glaucus NOUN_SINGULAR 
@@ -689,6 +692,7 @@
 + Holstein NOUN_SINGULAR 
 + Cetorhinus_maximus NOUN_SINGULAR 
 + Dolichotis_patagonum NOUN_SINGULAR 
++ Annie_Oakley NOUN_TITLE_OF_WORK 
 + Marx NOUN_HE 
 + Odontaspis_taurus NOUN_SINGULAR 
 + Manchester_terrier NOUN_SINGULAR 
@@ -867,6 +871,7 @@
 + Cape_hunting_dog NOUN_SINGULAR 
 + Sialis_lutaria NOUN_SINGULAR 
 + Horace_Walpole NOUN_HUMAN NOUN_HE 
++ Tuvalu NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Oregon ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Diphylla_ecaudata NOUN_SINGULAR 
 + Crotalus_adamanteus NOUN_SINGULAR 
@@ -930,7 +935,6 @@
 + Bibos_frontalis NOUN_SINGULAR 
 + Manta_birostris NOUN_SINGULAR 
 + Gia NOUN_TITLE_OF_WORK 
-+ Ascaphidae NOUN_SINGULAR 
 + Acipenser_transmontanus NOUN_SINGULAR 
 + German_bee NOUN_SINGULAR 
 + Lynx_lynx NOUN_SINGULAR 
@@ -1043,7 +1047,6 @@
 + Kingdom_of_Bhutan ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Fenusa_pusilla NOUN_SINGULAR 
 + Alectis_ciliaris NOUN_SINGULAR 
-+ Cameroon ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Nycticebus_pygmaeus NOUN_SINGULAR 
 + Bruchus_pisorum NOUN_SINGULAR 
 + Belgian_hare NOUN_SINGULAR 
@@ -1136,6 +1139,7 @@
 + Squalus_acanthias NOUN_SINGULAR 
 + Jean_Harlow NOUN_HUMAN NOUN_SHE 
 + Pseudechis_porphyriacus NOUN_SINGULAR 
++ Pomolobus_pseudoharengus NOUN_SINGULAR 
 + Aina NOUN_TITLE_OF_WORK 
 + rooster NOUN_HE 
 + Ivar NOUN_TITLE_OF_WORK 
@@ -1401,6 +1405,7 @@
 + Robert_Burns NOUN_HUMAN NOUN_HE 
 + European_wood_mouse NOUN_SINGULAR 
 + Johannes_Brahms NOUN_HUMAN NOUN_HE 
++ Franz_Ferdinand NOUN_HUMAN NOUN_THEY NOUN_TITLE_OF_WORK 
 + colly NOUN NOUN_SINGULAR 
 + Tony_Blair NOUN_HUMAN NOUN_HE 
 + Caproidae NOUN_SINGULAR 
@@ -1423,6 +1428,7 @@
 + Arabella NOUN_TITLE_OF_WORK 
 + Aryan NOUN_TITLE_OF_WORK 
 + Ambystoma_maculatum NOUN_SINGULAR 
++ Ascaphidae NOUN_SINGULAR 
 + Atlantic_ridley NOUN_SINGULAR 
 + Anguis_fragilis NOUN_SINGULAR 
 + African_chameleon NOUN_SINGULAR 
@@ -1430,7 +1436,6 @@
 + Argiope_aurantia NOUN_SINGULAR 
 + Dermacentor_variabilis NOUN_SINGULAR 
 + American_shrew_mole NOUN_SINGULAR 
-+ Callorhinus_ursinus NOUN_SINGULAR 
 + Angora_cat NOUN_SINGULAR 
 + Alaskan_brown_bear NOUN_SINGULAR 
 + Ursus_middendorffi NOUN_SINGULAR 
@@ -1451,7 +1456,6 @@
 + Cercopithecus_aethiops_sabaeus NOUN_SINGULAR 
 + African_elephant NOUN_SINGULAR 
 + Ameiuridae NOUN_SINGULAR 
-+ Pomolobus_pseudoharengus NOUN_SINGULAR 
 + Argentinidae NOUN_SINGULAR 
 + Anabantidae NOUN_SINGULAR 
 + Atlantic_sea_bream NOUN_SINGULAR 
@@ -1484,7 +1488,6 @@
 + Alessandro_Manzoni NOUN_HUMAN NOUN_HE 
 + Modigliani NOUN_TITLE_OF_WORK 
 + Admiral_Nimitz NOUN_HUMAN NOUN_HE 
-+ Annie_Oakley NOUN_TITLE_OF_WORK 
 + Arnold_Palmer NOUN_HUMAN NOUN_HE 
 + anybody NOUN_HUMAN NOUN NOUN_SINGULAR 
 + bull NOUN_HE 
@@ -1544,7 +1547,6 @@
 + Balaenoptera_physalus NOUN_SINGULAR 
 + Balaenoptera_borealis NOUN_SINGULAR 
 + Balaenoptera_acutorostrata NOUN_SINGULAR 
-+ Blenheim_spaniel NOUN_SINGULAR 
 + Russian_wolfhound NOUN_SINGULAR 
 + Bedlington_terrier NOUN_SINGULAR 
 + Boston_bull NOUN_SINGULAR 
@@ -1644,7 +1646,6 @@
 + Rachel_Carson NOUN_HUMAN NOUN_SHE 
 + California ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Coluber_hippocrepis NOUN_SINGULAR 
-+ Carcharhinus_leucas NOUN_SINGULAR 
 + ward NOUN_HUMAN 
 + Cromwell NOUN_TITLE_OF_WORK 
 + Oliver_Cromwell NOUN_HUMAN NOUN_HE 
@@ -1781,7 +1782,6 @@
 + Canis_dingo NOUN_SINGULAR 
 + Cuon_alpinus NOUN_SINGULAR 
 + Crocuta_crocuta NOUN_SINGULAR 
-+ Felis_concolor NOUN_SINGULAR 
 + Cryptoprocta NOUN_SINGULAR 
 + genus_Cryptoprocta NOUN_SINGULAR 
 + Colorado_potato_beetle NOUN_SINGULAR 
@@ -1895,11 +1895,13 @@
 + Cambodia ALWAYS_PROPER_NAME_MERGE 
 + Kingdom_of_Cambodia ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Phnom_Penh ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
++ Cameroon ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Central_African_Republic ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Juarez NOUN_TITLE_OF_WORK 
 + Cuba NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Havana NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Cyprus ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
++ Commonwealth_of_Dominica ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Oslo ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Palestine ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Montenegro ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -1973,7 +1975,6 @@
 + Dien_Bien_Phu NOUN_TITLE_OF_WORK 
 + descendent NOUN_HUMAN 
 + Joe_DiMaggio NOUN_HUMAN NOUN_HE 
-+ Doug NOUN_TITLE_OF_WORK 
 + Doomsday_Book NOUN_TITLE_OF_WORK 
 + Diapheromera_femorata NOUN_SINGULAR 
 + Dover ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -1991,7 +1992,9 @@
 + Damia NOUN_TITLE_OF_WORK 
 + Daria NOUN_TITLE_OF_WORK 
 + Destry NOUN_TITLE_OF_WORK 
++ Doug NOUN_TITLE_OF_WORK 
 + drugs VERB_PRESENT_3PS NOUN VERB NOUN_PLURAL GRADE1_2 
++ French_kiss NOUN_TITLE_OF_WORK 
 + dominoes NOUN_SINGULAR 
 + Holocentrus_bullisi NOUN_SINGULAR 
 + Stizostedion_vitreum NOUN_SINGULAR 
@@ -2083,7 +2086,6 @@
 + Duchesse NOUN NOUN_SINGULAR 
 + Denis_Diderot NOUN_HUMAN NOUN_HE 
 + John_Dos_Passos NOUN_HUMAN NOUN_HE 
-+ Fyodor_Dostoevsky NOUN_HUMAN NOUN_HE 
 + Theodore_Dreiser NOUN_HUMAN NOUN_HE 
 + Daphne_du_Maurier NOUN_HUMAN NOUN_SHE 
 + Dwight_Eisenhower NOUN_HUMAN NOUN_HE 
@@ -2134,13 +2136,11 @@
 + Eveline NOUN_TITLE_OF_WORK 
 + Evita NOUN_TITLE_OF_WORK 
 + Eva NOUN_TITLE_OF_WORK 
-+ Emile NOUN_TITLE_OF_WORK 
 + Empire_State_Building ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Enos NOUN_TITLE_OF_WORK 
 + Edinburgh NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Ed NOUN_TITLE_OF_WORK 
 + Sciurus_niger NOUN_SINGULAR 
-+ Ralph_Ellison NOUN_HUMAN NOUN_HE 
 + Exmoor NOUN_SINGULAR 
 + Edward_II NOUN_TITLE_OF_WORK 
 + George_Eliot NOUN_HUMAN NOUN_HE 
@@ -2154,10 +2154,13 @@
 + Eskimo_dog NOUN_SINGULAR 
 + Eskimo NOUN_TITLE_OF_WORK 
 + Sciurus_carolinensis NOUN_SINGULAR 
++ Ralph_Ellison NOUN_HUMAN NOUN_HE 
 + Eddie NOUN_TITLE_OF_WORK 
 + Ellen NOUN_TITLE_OF_WORK 
 + Ellie NOUN_TITLE_OF_WORK 
++ Emile NOUN_TITLE_OF_WORK 
 + Esperanza NOUN_TITLE_OF_WORK 
++ Eudora NOUN_SINGULAR 
 + Excalibur NOUN_TITLE_OF_WORK NOUN_SINGULAR 
 + Notropis_atherinoides NOUN_SINGULAR 
 + Electrophoridae NOUN_SINGULAR 
@@ -2263,7 +2266,6 @@
 + Eritrea ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Ethiopia ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Rome NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Tuvalu NOUN_TITLE_OF_WORK ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + England ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Egypt ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Hokkaido ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -2321,13 +2323,11 @@
 + Mustela_putorius NOUN_SINGULAR 
 + tribe NOUN_HUMAN 
 + Hyphantria_cunea NOUN_SINGULAR 
-+ Flo NOUN_TITLE_OF_WORK 
 + Florinda NOUN_TITLE_OF_WORK 
 + Ford_Madox_Ford NOUN_HUMAN NOUN_HE 
 + John_Ford NOUN_HUMAN NOUN_HE 
 + Freddie NOUN_TITLE_OF_WORK 
 + Frederica NOUN_TITLE_OF_WORK 
-+ French_kiss NOUN_TITLE_OF_WORK 
 + Fundulus_heteroclitus NOUN_SINGULAR 
 + Fistulariidae NOUN_SINGULAR 
 + Ptychozoon_homalocephalum NOUN_SINGULAR 
@@ -2353,6 +2353,7 @@
 + Friesian NOUN_SINGULAR 
 + Holstein-Friesian NOUN_SINGULAR 
 + Pseudoryx_nghetinhensis NOUN_SINGULAR 
++ Martes_pennanti NOUN_SINGULAR 
 + Florida_pompano NOUN_SINGULAR 
 + Fraulein NOUN_TITLE_OF_WORK 
 + Fibonacci NOUN_HUMAN NOUN_HE NOUN NOUN_PROPER_SINGULAR 
@@ -2386,7 +2387,6 @@
 + Fermat NOUN_HUMAN NOUN_HE 
 + Richard_Feynman NOUN_HUMAN NOUN_HE 
 + Gustave_Flaubert NOUN_HUMAN NOUN_HE 
-+ Franz_Ferdinand NOUN_HUMAN NOUN_THEY NOUN_TITLE_OF_WORK 
 + Sigmund_Freud NOUN_HUMAN NOUN_HE 
 + Robert_Frost NOUN_HUMAN NOUN_HE 
 + Francisco_de_Goya NOUN_HUMAN NOUN_HE 
@@ -2444,6 +2444,7 @@
 + Pithecanthropus_erectus NOUN_SINGULAR 
 + Giraffidae NOUN_SINGULAR 
 + Gulo_luscus NOUN_SINGULAR 
++ Oryx_gazella NOUN_SINGULAR 
 + Galloway NOUN_SINGULAR 
 + Genevieve NOUN_TITLE_OF_WORK 
 + Ulysses_S._Grant NOUN_HUMAN NOUN_HE 
@@ -2479,6 +2480,7 @@
 + German_shepherd_dog NOUN_SINGULAR 
 + Greater_Swiss_Mountain_dog NOUN_SINGULAR 
 + Great_Dane NOUN_SINGULAR 
++ Ursus_arctos_horribilis NOUN_SINGULAR 
 + Mexican_freetail_bat NOUN_SINGULAR 
 + Gasterophilus_intestinalis NOUN_SINGULAR 
 + Vespa_crabro NOUN_SINGULAR 
@@ -2604,6 +2606,7 @@
 + George_Washington NOUN_HUMAN NOUN_HE 
 + Musa NOUN_TITLE_OF_WORK 
 + Germinal NOUN_TITLE_OF_WORK 
++ Gmail NOUN_SINGULAR 
 + Russian_Orthodox NOUN NOUN_SINGULAR 
 + Hyaenidae NOUN_SINGULAR 
 + human NOUN_HUMAN 
@@ -2663,7 +2666,6 @@
 + Highlander NOUN_TITLE_OF_WORK 
 + Hippotragus_niger NOUN_SINGULAR 
 + Haemulon_parra NOUN_SINGULAR 
-+ Homo_habilis NOUN_SINGULAR 
 + Sherlock_Holmes NOUN_TITLE_OF_WORK 
 + Hyaena_brunnea NOUN_SINGULAR 
 + Nathaniel_Hawthorne NOUN_HUMAN NOUN_HE 
@@ -2714,6 +2716,7 @@
 + Mellivora_capensis NOUN_SINGULAR 
 + Hominidae NOUN_SINGULAR 
 + Homo_soloensis NOUN_SINGULAR 
++ Homo_habilis NOUN_SINGULAR 
 + Homo_sapiens_neanderthalensis NOUN_SINGULAR 
 + Neanderthal_man NOUN_SINGULAR 
 + Homo_sapiens_sapiens NOUN_SINGULAR 
@@ -3386,7 +3389,6 @@
 + subfamily_Melinae NOUN_SINGULAR 
 + Martes_zibellina NOUN_SINGULAR 
 + Martes_foina NOUN_SINGULAR 
-+ Martes_pennanti NOUN_SINGULAR 
 + Mickey_Mouse NOUN_HUMAN NOUN_HE 
 + Minnie_Mouse NOUN_HUMAN NOUN_SHE 
 + Mighty_Mouse NOUN_HUMAN NOUN_HE 
@@ -4050,7 +4052,7 @@
 + Sir_Barton NOUN_SINGULAR 
 + Shadrach NOUN_TITLE_OF_WORK 
 + Scaphiopus_multiplicatus NOUN_SINGULAR 
-+ Ursus_arctos_horribilis NOUN_SINGULAR 
++ Ursus_horribilis NOUN_SINGULAR 
 + Sunderland ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Scarlett NOUN_TITLE_OF_WORK 
 + Sacramento ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -4099,6 +4101,7 @@
 + Salome NOUN_TITLE_OF_WORK 
 + Sanaa ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + St_._Nick NOUN_SINGULAR 
++ Sanford NOUN_TITLE_OF_WORK 
 + Synaptomys_cooperi NOUN_SINGULAR 
 + Sapporo ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Salamandridae NOUN_SINGULAR 
@@ -4110,7 +4113,6 @@
 + Suidae NOUN_SINGULAR 
 + Shirley NOUN_TITLE_OF_WORK 
 + Strasbourg ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Sanford NOUN_TITLE_OF_WORK 
 + Scully NOUN_TITLE_OF_WORK 
 + Sebastian NOUN_TITLE_OF_WORK 
 + Sykes NOUN_TITLE_OF_WORK 
@@ -4409,7 +4411,6 @@
 + tribble NOUN_PROPER_SINGULAR 
 + trekkie NOUN_PROPER_SINGULAR 
 + Utah ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
-+ Ursus_horribilis NOUN_SINGULAR 
 + Unguiculata NOUN_SINGULAR 
 + Ursidae NOUN_SINGULAR 
 + Umbrina_roncador NOUN_SINGULAR 
@@ -4441,13 +4442,13 @@
 + Vishnu NOUN_TITLE_OF_WORK NOUN_SINGULAR 
 + Valentine NOUN_TITLE_OF_WORK 
 + Vicugna_vicugna NOUN_SINGULAR 
++ Vermont ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Villette NOUN_TITLE_OF_WORK 
 + Veta NOUN_TITLE_OF_WORK 
 + VCR NOUN_SINGULAR 
 + Viviana NOUN_TITLE_OF_WORK 
 + Valkyrie NOUN_TITLE_OF_WORK NOUN_SINGULAR 
 + Volund NOUN_SINGULAR 
-+ Vermont ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
 + Valentino NOUN_TITLE_OF_WORK 
 + Vesta NOUN_SINGULAR 
 + Vietnam ALWAYS_PROPER_NAME_MERGE LOCATIONWORD 
@@ -4819,15 +4820,15 @@
 + Tilsit NOUN NOUN_SINGULAR 
 + Brie_de_Meaux NOUN NOUN_SINGULAR 
 + Chevre NOUN NOUN_SINGULAR 
-+ Chèvre NOUN NOUN_SINGULAR 
++ ChÃ¨vre NOUN NOUN_SINGULAR 
 + Epoisses NOUN NOUN_SINGULAR 
 + fromage NOUN NOUN_SINGULAR 
 + muenster NOUN NOUN_SINGULAR 
 + Pont_l'Eveque NOUN NOUN_SINGULAR 
-+ Pont_l'Évêque NOUN NOUN_SINGULAR 
++ Pont_l'Ã‰vÃªque NOUN NOUN_SINGULAR 
 + Reblochon NOUN NOUN_SINGULAR 
 + Tomme_de_Savoie NOUN NOUN_SINGULAR 
-+ Époisses NOUN NOUN_SINGULAR 
++ Ã‰poisses NOUN NOUN_SINGULAR 
 + bitter-clinger NOUN NOUN_SINGULAR 
 + chink_a_billy NOUN NOUN_SINGULAR 
 + hoosier NOUN NOUN_SINGULAR 
@@ -5210,6 +5211,7 @@
 + step-father NOUN NOUN_SINGULAR 
 + step-sister NOUN NOUN_SINGULAR 
 + grandkid NOUN_HUMAN NOUN NOUN_SINGULAR 
++ nephling NOUN_HUMAN NOUN NOUN_SINGULAR 
 + sstep-son NOUN NOUN_SINGULAR 
 + fried_chicken 
 + pappy NOUN NOUN_SINGULAR 
@@ -5989,9 +5991,9 @@
 + beat_cop 
 + civil_investigator 
 + correctional_services 
-+ patent_attorney 
 + security_officer 
 + traffic_officer 
++ patent_attorney 
 + chief_finance_officer 
 + chief_technology_officer 
 + ambulance_emergency_care_worker 
@@ -6762,7 +6764,6 @@
 + The_Pirate_bay NOUN_TITLE_OF_WORK NOUN NOUN_SINGULAR NOUN_PROPER_SINGULAR 
 + Thepiratebay NOUN NOUN_SINGULAR NOUN_PROPER_SINGULAR 
 + AOL NOUN NOUN_SINGULAR NOUN_PROPER_SINGULAR 
-+ Gmail NOUN NOUN_SINGULAR NOUN_PROPER_SINGULAR 
 + Gmail.com NOUN NOUN_SINGULAR NOUN_PROPER_SINGULAR 
 + Hotmail NOUN NOUN_SINGULAR NOUN_PROPER_SINGULAR 
 + Hotmail.com NOUN NOUN_SINGULAR NOUN_PROPER_SINGULAR 
@@ -23498,6 +23499,7 @@
 + Young_Mr_Lincoln NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + The_Big_Hit NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + 42nd_Street NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
++ 42nd 
 + The_Jimmy_Stewart_Show NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + Under_The_Umbrella_Tree NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 
 + Belly_Of_The_Beast NOUN_TITLE_OF_WORK NOUN NOUN_PROPER_SINGULAR 

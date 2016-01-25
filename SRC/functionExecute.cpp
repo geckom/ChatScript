@@ -954,6 +954,17 @@ unsigned int Callback(WORDP D,char* arguments)
 
 void ResetUser(char* input)
 {
+	if (globalDepth ) // in midst of execution, being safe
+	{
+		inputCounter = 0;
+		totalCounter = 0;
+		itAssigned = theyAssigned = 0;
+		inputSentenceCount = 0;
+		ReadNewUser();
+		userFirstLine = 1;
+		return;
+	}
+
 	unsigned int oldtopicid = currentTopicID;
 	char* oldrule = currentRule;
 	int oldruleid = currentRuleID;
@@ -1886,7 +1897,6 @@ FunctionResult KeywordTopicsCode(char* buffer)
 	bool onlyGambits =  (!stricmp(ARGUMENT(1),"gambit")); 
 
     //   now consider topics in priority order
-	SET_FACTSET_COUNT(set,0);
 	unsigned int index;
     unsigned int matches[MAX_TOPIC_KEYS];
 	NextInferMark();
@@ -2013,12 +2023,14 @@ static FunctionResult MarkCode(char* buffer)
 
 	if (*word == '*') // enable all - mark (* _0)
 	{
+		if (trace) Log(STDUSERLOG,"mark * %d...%d words: ",startPosition,endPosition);
 		for (unsigned int i = startPosition; i <= endPosition; ++i) 
 		{
 			if (showMark) Log(ECHOSTDUSERLOG,"Mark * $d(%s_: \r\n",i,wordStarts[i]);
-			if (trace) Log(STDUSERLOG,"mark all @word %s(%d) ",wordStarts[i],i);
+			if (trace) Log(STDUSERLOG,"%s ",wordStarts[i]);
 			unmarked[i] = 0;
 		}
+		if (trace) Log(STDUSERLOG,"\r\n");
 		return NOPROBLEM_BIT;
 	}
 
@@ -2294,12 +2306,13 @@ static FunctionResult UnmarkCode(char* buffer)
 	if (*word == '*') // set unmark EVERYTHING in range 
 	{
 		unmarked[startPosition] = 1;
-		if (trace) Log(STDUSERLOG,"unmark all = (%d %s) ",startPosition,wordStarts[startPosition]);
-		for (unsigned int i = startPosition+1; i <= endPosition; ++i) 
+		if (trace) Log(STDUSERLOG,"unmark * %d...%d words: ",startPosition,endPosition);
+		for (unsigned int i = startPosition; i <= endPosition; ++i) 
 		{
-			if (trace) Log(STDUSERLOG,"unmark=(%d %s) ",i,wordStarts[i]);
+			if (trace) Log(STDUSERLOG,"%s ",wordStarts[i]);
 			unmarked[i] = 1;
 		}
+		if (trace) Log(STDUSERLOG,"\r\n");
 	}
 	else
 	{
@@ -3170,12 +3183,17 @@ FunctionResult MatchCode(char* buffer)
 	#ifdef DISCARDSCRIPTCOMPILER 
 		base = ptr;	// do the best you can, may not be laid out properly
 	#else
+		int oldDepth = globalDepth;
 		if (setjmp(scriptJump[++jumpIndex])) // return on script compiler error
 		{
 			--jumpIndex;
+			globalDepth = oldDepth;
 			return FAILRULE_BIT;
 		}
+		char junk[MAX_WORD_SIZE];
+		ReadNextSystemToken(NULL,NULL,junk,false,false); // flush cache
 		ReadPattern(ptr, NULL, at,false); // compile the pattern
+		strcat(at," )");
 		--jumpIndex;
 	#endif
 	}
@@ -3311,6 +3329,23 @@ FunctionResult InContextCode(char* buffer)
 	if (turn == 0) return FAILRULE_BIT;
 	sprintf(buffer,"%d",turn);
 	return NOPROBLEM_BIT;
+}
+
+FunctionResult LoadCode(char* buffer)
+{
+	FunctionResult answer;
+	char* arg1 = ARGUMENT(1);
+	if (!stricmp(arg1,"null")) // unload
+	{
+		if (!topicBlockPtrs[2]) return FAILRULE_BIT;	// nothing is loaded
+		ReturnToLayer(1,false);	// drop 2 info.. but dictionary is now unlocked. Need to relock it.
+		answer = NOPROBLEM_BIT;
+	}
+	else answer = LoadLayer(2,arg1,BUILD2);
+	dictionaryLocked = dictionaryPreBuild[2];
+	stringLocked = stringsPreBuild[2];
+	factLocked = factsPreBuild[2]; // unlock
+	return answer;
 }
 
 FunctionResult ArgumentCode(char* buffer)
@@ -3479,7 +3514,7 @@ void PGUserFilesCloseCode()
 
 	conn = usersconn;
 	FunctionResult result = DBCloseCode(NULL);
-	memset((void*)&userFileSystem,0,sizeof(userFileSystem)); // drop user file system override
+	InitUserFiles(); // default back to normal filesystem
 	usersconn = NULL;
 	free(pgfilesbuffer);
 	pgfilesbuffer = 0;
@@ -3668,8 +3703,14 @@ void PGUserFilesCode()
 		}
 	}
 	
-	static USERFILESYSTEM pgfiles = { pguserCreate, pguserOpen, pguserClose, pguserRead, pguserWrite, pguserSize};
-	memcpy((void*)&userFileSystem,(void*)&pgfiles,sizeof(userFileSystem)); // switch user system from file system to postgres
+	// these are dynamically stored, so CS can be a DLL.
+	userFileSystem.userCreate = pguserCreate;
+	userFileSystem.userOpen = pguserOpen;
+	userFileSystem.userClose = pguserClose;
+	userFileSystem.userRead = pguserRead;
+	userFileSystem.userWrite = pguserWrite;
+	userFileSystem.userSize = pguserSize;
+	
 	pgfilesbuffer = (char*) malloc((maxBufferSize * 2) + 100); // double whatever current capacity is and leave slack
 	// user file table
     PGresult   *res  = PQexec(usersconn, "CREATE TABLE userfiles (username varchar(100) PRIMARY KEY, mydata bytea);");
@@ -3838,7 +3879,7 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 	}
 	bool once = false;
 
-	if (!stricmp(ptr,"^count")) 
+	if (!stricmp(ptr,"count")) 
 	{
 		count = true;
 		strcpy(ARGUMENT(1),ARGUMENT(2));
@@ -3957,7 +3998,8 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 		else if (count) ++counter;
 		if (trace) Log(STDUSERLOG,"burst: %s ",ptr);
 		//   store piece before scan marker
-		if (impliedWild != ALREADY_HANDLED)  SetWildCard(ptr,ptr,0,0);
+		if (count) {;}
+		else if (impliedWild != ALREADY_HANDLED)  SetWildCard(ptr,ptr,0,0);
 		else if (impliedSet != ALREADY_HANDLED)
 		{
 			if (*ptr)
@@ -4881,6 +4923,8 @@ static FunctionResult SubstituteCode(char* buffer)
 		++find;
 		findLen -= 2; 
 	}
+	if (findLen == 0) // can never make headway
+		return FAILRULE_BIT;
 
     char* found;
 	bool changed = false;
@@ -4902,7 +4946,7 @@ static FunctionResult SubstituteCode(char* buffer)
 		}
 		changed = true;
 		char buf[8000];
-		strcpy(buf,found+findLen);
+		strcpy(buf,found+findLen); // preserve what comes after the match
 		strcpy(found,substituteValue);
 		strcat(found,buf);
 		target = found+subslen;
@@ -5588,21 +5632,22 @@ static FunctionResult FLRCodeR(char* buffer)
 	else return FAILRULE_BIT;
 }
 
-static FunctionResult FLRCodeSpecific(char* buffer)
+static FunctionResult NthCode(char* buffer)
 {
 	char* arg = ARGUMENT(1);
-	char word[MAX_ARG_BYTES];
-	GetPossibleFunctionArgument(arg,word); // pass thru or convert
-	arg = word;
+	char arg1[MAX_WORD_SIZE];
+	char arg2[MAX_WORD_SIZE];
+	arg = GetPossibleFunctionArgument(arg,arg1); // pass thru or convert
+	FunctionResult result;
+	ReadCommandArg(arg,arg2,result,OUTPUT_NOTREALBUFFER|OUTPUT_NOCOMMANUMBER|ASSIGNMENT); 
+	if (result != NOPROBLEM_BIT) return result;
 
-	strcpy(ARGUMENT(1),arg); // put it back in case it changed
-	char* arg2 = ARGUMENT(2);
-
-	if (*arg == '$') arg = GetUserVariable(arg);
-	else if (*arg == '_') arg =  GetwildcardText(GetWildcardID(arg), true);
-	else if (*arg == '~') // nth member of set, counting from 0
+	if (*arg1 == '$') strcpy(arg1,GetUserVariable(arg1));
+	else if (*arg1 == '_') strcpy(arg1, GetwildcardText(GetWildcardID(arg1), true));
+	
+	if (*arg1 == '~') // nth member of set, counting from 0
 	{
-		WORDP D = FindWord(arg);
+		WORDP D = FindWord(arg1);
 		int n = atoi(arg2);
 		FACT* F = GetObjectNondeadHead(D);
 		int count = 0;
@@ -5618,7 +5663,8 @@ static FunctionResult FLRCodeSpecific(char* buffer)
 		strcpy(buffer,Meaning2Word(F->subject)->word);
 		return NOPROBLEM_BIT;
 	}
-	if (*arg == '@') return FLR(buffer,arg2);
+	strcpy(ARGUMENT(1),arg1); // put it back in case it changed
+	if (*arg1 == '@') return FLR(buffer,arg2);
 	else return FAILRULE_BIT;
 }
 
@@ -6566,7 +6612,6 @@ static FunctionResult FindMarkedFactCode(char* buffer)
 
 static FunctionResult FLRCodeF(char* buffer)
 {
-
 	return FLR(buffer,"f");
 }
 
@@ -7131,15 +7176,17 @@ static char* IsJsonNumber(char* str)
 	return NULL;
 }
 
-int buildFactsFromJsonHelper(char *jsontext, jsmntok_t *tokens, int currToken, MEANING *retMeaning, int* flags, bool key) {
+int factsPreBuildFromJsonHelper(char *jsontext, jsmntok_t *tokens, int currToken, MEANING *retMeaning, int* flags, bool key) {
 	// Always build with duplicate on. create a fresh copy of whatever
 	jsmntok_t curr = tokens[currToken];
 	char namebuff[256];
 	*flags = 0;
 	int retToken = currToken + 1;
-	char str[MAX_WORD_SIZE];
+	char str[MAX_WORD_SIZE ];
 	*str = 0;
 	int size = curr.end - curr.start;
+	if (size >= (MAX_WORD_SIZE )) 
+		size = (MAX_WORD_SIZE ) - 4;
 	switch (curr.type) {
 	case JSMN_PRIMITIVE: { //  true  false, numbers, null 
 		strncpy(str,jsontext + curr.start,size);
@@ -7218,10 +7265,10 @@ int buildFactsFromJsonHelper(char *jsontext, jsmntok_t *tokens, int currToken, M
 		for (int i = 0; i < curr.size / 2; i++) { // each entry takes an id and a value
 			MEANING keyMeaning = 0;
 			int flags = 0;
-			retToken = buildFactsFromJsonHelper(jsontext, tokens, retToken, &keyMeaning, &flags,true);
+			retToken = factsPreBuildFromJsonHelper(jsontext, tokens, retToken, &keyMeaning, &flags,true);
 			if (retToken == 0) return 0;
 			MEANING valueMeaning = 0;
-			retToken = buildFactsFromJsonHelper(jsontext, tokens, retToken, &valueMeaning, &flags,false);
+			retToken = factsPreBuildFromJsonHelper(jsontext, tokens, retToken, &valueMeaning, &flags,false);
 			if (retToken == 0) return 0;
 			CreateFact(objectName, keyMeaning, valueMeaning, jsonPermanent|FACTDUPLICATE|flags|JSON_OBJECT_FACT); // only the last value of flags matters. 5 means object fact in subject
 		}
@@ -7238,7 +7285,7 @@ int buildFactsFromJsonHelper(char *jsontext, jsmntok_t *tokens, int currToken, M
 			MEANING index = MakeMeaning(StoreWord(namebuff,AS_IS));
 			MEANING arrayMeaning = 0;
 			int flags = 0;
-			retToken = buildFactsFromJsonHelper(jsontext, tokens, retToken, &arrayMeaning, &flags,false);
+			retToken = factsPreBuildFromJsonHelper(jsontext, tokens, retToken, &arrayMeaning, &flags,false);
 			if (retToken == 0) return 0;
 			CreateFact(arrayName, index, arrayMeaning, jsonPermanent|FACTDUPLICATE|flags|JSON_ARRAY_FACT); // flag6 means subject is arrayfact
 		}
@@ -7246,16 +7293,16 @@ int buildFactsFromJsonHelper(char *jsontext, jsmntok_t *tokens, int currToken, M
 		break;
 	}
 	default: 
-		myexit("(buildFactsFromJsonHelper) Unknown JSON type encountered.");
+		myexit("(factsPreBuildFromJsonHelper) Unknown JSON type encountered.");
 	} 
 	currentFact = NULL;
 	return retToken;
 }
 
-MEANING buildFactsFromJson(char *jsontext, jsmntok_t *tokens) {
+MEANING factsPreBuildFromJson(char *jsontext, jsmntok_t *tokens) {
 	MEANING retToken = 0;
 	int flags = 0;
-	buildFactsFromJsonHelper(jsontext, tokens, 0, &retToken, &flags,false);
+	factsPreBuildFromJsonHelper(jsontext, tokens, 0, &retToken, &flags,false);
 	return retToken;
 }
 
@@ -7695,7 +7742,7 @@ static FunctionResult ParseJson(char* buffer, char* message, size_t size)
 		jsmntok_t *tokens = (jsmntok_t *)AllocateString(NULL,sizeof(jsmntok_t) * ret,1,false);
 		jsmn_init(&parser);
 		ret = jsmn_parse(&parser, message, size, tokens, ret);
-		MEANING ret = buildFactsFromJson(message, tokens);
+		MEANING ret = factsPreBuildFromJson(message, tokens);
 		if (ret == 0) return FAILRULE_BIT;
 		WORDP D = Meaning2Word(ret);
 		strcpy(buffer,D->word);
@@ -7861,6 +7908,12 @@ static FunctionResult JSONpath(char* buffer, char* path, char* jsonstructure)
 		return FAILRULE_BIT;
 	}
 	MEANING M;
+	if (trace & TRACE_JSON) 
+	{
+		Log(STDUSERLOG,"\r\n");
+		Log(STDUSERTABLOG,"");
+	}
+
 	// aid[4] .hable
 	while(1)
 	{
@@ -8048,7 +8101,7 @@ static void jsonGather(WORDP D, int subject )
 	if (!(F->flags & JSON_FLAGS)) return;	// not a json fact
 	while (F) // flip the order
 	{
-		factSet[jsonStore][jsonIndex++] = F;
+		factSet[jsonStore][++jsonIndex] = F;
 		if (F->flags & JSON_ARRAY_FACT)  jsonGather( Meaning2Word(F->object),F->flags & JSON_FLAGS);
 		else if (F->flags & JSON_OBJECT_FACT)  jsonGather( Meaning2Word(F->object),F->flags & JSON_FLAGS);
 		F = GetSubjectNondeadNext(F);
@@ -8413,20 +8466,21 @@ SystemFunctionInfo systemFunctionSet[] =
 	{"^postprintafter",PostPrintAfterCode,STREAM_ARG,0,"add to end of output stream"}, 
 
 	{"\r\n---- Control Flow",0,0,0,""},
-	{"^argument",ArgumentCode,VARIABLE_ARG_COUNT,0,"returns the calling scope's nth argument (given n and possible fn name)"},
 	{"^addcontext",AddContextCode,2,0,"set topic and label as a context"},
+	{"^argument",ArgumentCode,VARIABLE_ARG_COUNT,0,"returns the calling scope's nth argument (given n and possible fn name)"},
 	{"^command",CommandCode,STREAM_ARG,0,"execute a : command"}, 
 	{"^end",EndCode,1,SAMELINE,"cease current processing thru this level"}, 
 	{"^eval",EvalCode,STREAM_ARG,0,"evaluate stream"}, 
 	{"^fail",FailCode,1,SAMELINE,"return a return code of some kind - allowed to erase facts on sentence fail"}, 
+	{"^incontext",InContextCode,1,0,"returns normally if given label or topic.label have output recently else fails"},
+	{"^load",LoadCode,1,0,"Dynamic load of a layer as layer 2"},
 	{"^match",MatchCode,STREAM_ARG,0,"Perform given pattern match"},
+	{"^memoryfree",MemoryFreeCode,0,0,"release dict,fact,text allocated since last memorymark"},
+	{"^memorymark",MemoryMarkCode,0,0,"note memory information for later memory free"}, 
 	{"^nofail",NoFailCode,STREAM_ARG,0,"execute script but ignore all failures thru some level"}, 
 	{"^notnull",NotNullCode,STREAM_ARG,0,"tests that output of stream argument is not null, fails otherwise"}, 
 	{"^result",ResultCode,STREAM_ARG,0,"executes the stream and returns the result code (never fails) "}, 
 	{"^retry",RetryCode,VARIABLE_ARG_COUNT,SAMELINE,"reexecute a rule with a later match or retry  input"},
-	{"^memorymark",MemoryMarkCode,0,0,"note memory information for later memory free"}, 
-	{"^memoryfree",MemoryFreeCode,0,0,"release dict,fact,text allocated since last memorymark"},
-	{"^incontext",InContextCode,1,0,"returns normally if given label or topic.label have output recently else fails"},
 
 #ifndef DISCARDDATABASE
 	{"\r\n---- Database",0,0,0,""},
@@ -8484,7 +8538,7 @@ SystemFunctionInfo systemFunctionSet[] =
 	{"^intersectfacts",IntersectFactsCode,STREAM_ARG,0,"find facts common to two factsets, based on fields"},
 	{"^iterator",IteratorCode,3,0,"walk facts of some thing"},
 	{"^makereal",MakeRealCode,0,0,"make all transient facts non-transient"},
-	{"^nth",FLRCodeSpecific,2,0,"from factset get nth element (kept) or from set get nth element"},
+	{"^nth",NthCode,STREAM_ARG,0,"from factset get nth element (kept) or from set get nth element"},
 	{"^revisefact",ReviseFactCode,4,0,"revise a triple"}, 
 	{"^uniquefacts",UniqueFactsCode,STREAM_ARG,0,"find facts in first set not found in second"},
 	{"^last",FLRCodeL,STREAM_ARG,0,"get last element of a factset and remove it"},

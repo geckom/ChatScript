@@ -1,4 +1,4 @@
-﻿ yelp ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+﻿ yelp ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     yip~1n 
     yap~2v 
  Yung ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -18,7 +18,7 @@
  Yardly ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Yamamoto ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Isoroku_Yamamoto~1n 
- yellowish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ yellowish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     yellow~3a 
     yellowish~2az 
  Yolonda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -175,7 +175,7 @@
     relent~1vz give in, as to influence or pressure
  yard_sale ( meanings=1 NOUN NOUN_SINGULAR ) 
     garage_sale~1n 
- yard ( meanings=9 glosses=8 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN (null) ) 
+ yard ( meanings=9 glosses=8 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN ) 
     yard~1nz (^enclosure~2) an enclosure for animals
     yard~2nz (^spar~2) a long horizontal spar tapered at the end and used to support and spread a square sail or lateen
     curtilage~1nz (^field~12) the enclosed land around a house or other building
@@ -195,7 +195,7 @@
     Yorktown~2nz (^village~2) a historic village in southeastern Virginia to the north of Newport News
  Yom_Kippur_War ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Arab-Israeli_War~2n 
- young ( meanings=8 glosses=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) comparative=youngest 
+ young ( meanings=8 glosses=6 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE ) comparative=youngest 
     offspring~1nz (^animal~1) any immature animal
     youth~2n 
     new~3az harvested at an early stage of development
@@ -220,7 +220,7 @@
     Dendroica_petechia~1n 
  yellow_bunting ( meanings=1 NOUN NOUN_SINGULAR ) 
     Emberiza_citrinella~1n 
- yellow ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_NOOBJECT (null) ) 
+ yellow ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_NOOBJECT ) 
     yellowness~1nz (^chromatic_colour~1) yellow color or pigment
     chicken~5a 
     xanthous~1az of the color intermediate between green and orange in the color spectrum
@@ -263,7 +263,7 @@
     yellow_jacket~1n 
  yellowbelly_marmot ( meanings=1 NOUN NOUN_SINGULAR ) 
     Marmota_flaviventris~1n 
- yak ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ yak ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     Bos_grunniens~1n 
     chatter~1n 
     gab~2v 
@@ -372,7 +372,7 @@
     yellow_bone_marrow~1n 
  yellow_bone_marrow ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     yellow_marrow~1nz (^bone_marrow~1) bone marrow that is yellow with fat
- yap ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ yap ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     maw~1n 
     yip~2v 
  yellow_bile ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -468,18 +468,18 @@
  Yoruba ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Aku~1nz (^Kwa~1) a Kwa language spoken by the Yoruba in southwestern Nigeria
     Yoruba~2nz (^Nigerian~1) a member of a West African people living chiefly in southwestern Nigeria
- yell ( meanings=4 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ yell ( meanings=4 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     outcry~1n 
     cry~3nz (^vocalization~1) a loud utterance of emotion 
     scream~4v 
     cry~9v 
- yowl ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ yowl ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT ) 
     roaring~1n 
     caterwaul~2v 
     howl~7v 
  yelling ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     shouting~1n 
- yodel ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ yodel ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT ) 
     yodel~1nz (^shout~1) a songlike cry in which the voice fluctuates rapidly between the normal voice and falsetto
     warble~2v 
  yack ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 VERB_NOOBJECT ) 
@@ -503,7 +503,7 @@
     yeah~1b 
  yellow_pages ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     yellow_pages~1nz (^telephone_directory~1) a telephone directory or section of a directory where business products and services are listed alphabetically by field along with classified advertising
- yip ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) ) 
+ yip ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) 
     yelping~1nz (^cry~5) a sharp high-pitched cry
     yelp~2vz bark in a high-pitched tone
  yelping ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
@@ -570,7 +570,7 @@
  yakuza ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     yakuza~1nz (^organized_crime~1) organized crime in Japan
     yakuza~2nz (^gangster~1) a Japanese gangster
- year ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE posdefault:NOUN TIMEWORD (null) ) 
+ year ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE posdefault:NOUN TIMEWORD ) 
     class~7n 
     year~2nz (^period~3) the period of time that it takes for a planet to make a complete revolution around the sun
     yr~1nz (^period~3) a period of time containing 365 days
@@ -1178,7 +1178,7 @@
  yoo-hoo ( INTERJECTION ) 
  yow ( INTERJECTION ) 
  yum ( INTERJECTION ) 
- yummy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL INTERJECTION COMMON2 COMMON1 GRADE1_2 posdefault:ADJECTIVE (null) ) comparative=yummiest 
+ yummy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL INTERJECTION COMMON2 COMMON1 GRADE1_2 posdefault:ADJECTIVE ) comparative=yummiest 
     toothsome~3a 
     yummy~2az 
  yellow-brown ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -1302,7 +1302,7 @@
     youthfully~1bz in a youthful manner
  yarn-dye ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT ) 
     impress~2v 
- yammer ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT (null) ) 
+ yammer ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT ) 
     whine~2v 
     wrawl~1vz cry loudly, as of animals
  yawp ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT ) 

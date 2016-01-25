@@ -13,8 +13,6 @@
     II_Maccabees~1n 
  2nd_lieutenant ( meanings=1 NOUN NOUN_SINGULAR ) 
     second_lieutenant~1n 
- 2nd ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    2d~1az coming next after the first in position in space or time or degree or magnitude
  2-methylpropenoic_acid ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     methacrylic_acid~1nz (^acid~2) an unsaturated acid used to make resins and plastics
  22-karat_gold ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -27,10 +25,8 @@
     twenty-four_hour_period~1n 
  2-dimensional ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     two-dimensional~2a 
- 2d ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    2nd~1a 
- 22nd ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    22nd~1az coming next after the twenty-first in position
+ 2d ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
+    2d~1az coming next after the first in position in space or time or degree or magnitude
  2-star ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     2-star~1az 
  2/3 ( NOUN NOUN_NUMBER KINDERGARTEN ) 

@@ -37,7 +37,7 @@ static unsigned int overflowLimit = 0;
 unsigned int overflowIndex = 0;
 
 
-USERFILESYSTEM userFileSystem = {FopenBinaryWrite,FopenReadWritten,fclose,fread,fwrite,FileSize};
+USERFILESYSTEM userFileSystem;
 static char staticPath[MAX_WORD_SIZE]; // files that never change
 static char readPath[MAX_WORD_SIZE];   // readonly files that might be overwritten from outside
 static char writePath[MAX_WORD_SIZE];  // files written by app
@@ -54,6 +54,10 @@ unsigned int oldRandIndex = 0;
 #ifdef WIN32
 #include <conio.h>
 #include <direct.h>
+#include <io.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+
 #endif
 
 /////////////////////////////////////////////////////////
@@ -184,13 +188,36 @@ void FreeBuffer()
 /// FILE SYSTEM
 /////////////////////////////////////////////////////////
 
+void InitUserFiles()
+{ 
+	// these are dynamically stored, so CS can be a DLL.
+	userFileSystem.userCreate = FopenBinaryWrite;
+	userFileSystem.userOpen = FopenReadWritten;
+	userFileSystem.userClose = fclose;
+	userFileSystem.userRead = fread;
+	userFileSystem.userWrite = fwrite;
+	userFileSystem.userSize = FileSize;
+}
+
 int MakeDirectory(char* directory)
 {
+	int result;
+
 #ifdef WIN32
-	return _mkdir("VERIFY");
+	char word[MAX_WORD_SIZE];
+	char* path = _getcwd(word,MAX_WORD_SIZE);
+	strcat(word,"/");
+	strcat(word,directory);
+    if( _access( path, 0 ) == 0 ){ // does directory exist, yes
+        struct stat status;
+        stat( path, &status );
+        if ((status.st_mode & S_IFDIR) != 0) return -1;
+    }
+	result = _mkdir(directory);
 #else 
-	return mkdir("VERIFY", 0777); 
+	result = mkdir(directory, 0777); 
 #endif
+	return result;
 }
 
 void C_Directories(char* x)
@@ -233,6 +260,8 @@ void InitFileSystem(char* untouchedPath,char* readablePath,char* writeablePath)
 	else *writePath = 0;
 	if (untouchedPath) strcpy(staticPath,untouchedPath);
 	else *staticPath = 0;
+
+	InitUserFiles(); // default init all the io operations to file routines
 }
 
 void StartFile(const char* name)
@@ -284,7 +313,8 @@ FILE* FopenBinaryWrite(const char* name) // writeable file path
 	if (*writePath) sprintf(path,"%s/%s",writePath,name);
 	else strcpy(path,name);
 	FILE* out = fopen(path,"wb");
-	if (out == NULL && !inLog) ReportBug("Error opening file %s: %s\n",path,strerror(errno));
+	if (out == NULL && !inLog) 
+		ReportBug("Error opening binary write file %s: %s\n",path,strerror(errno));
 	return out;
 }
 
@@ -312,7 +342,7 @@ FILE* FopenUTF8Write(const char* filename) // insure file has BOM for UTF8
 		bom[2] = 0xBF;
 		fwrite(bom,1,3,out);
 	}
-	else ReportBug("Error opening file %s: %s\n",path,strerror(errno));
+	else ReportBug("Error opening utf8 write file %s: %s\n",path,strerror(errno));
 	return out;
 }
 
@@ -333,7 +363,8 @@ FILE* FopenUTF8WriteAppend(const char* filename,const char* flags)
 		bom[2] = 0xBF;
 		fwrite(bom,1,3,out);
 	}
-	else if (!out && !inLog) ReportBug("Error opening file %s: %s\n",path,strerror(errno));
+	else if (!out && !inLog) 
+		ReportBug("Error opening utf8writeappend file %s: %s\n",path,strerror(errno));
 	return out;
 }
 

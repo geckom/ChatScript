@@ -36,8 +36,7 @@ typedef struct FACT
 extern FACT* factBase;		//   start of fact space
 extern FACT* factEnd;		//   end of fact space
 extern FACT* currentFact;	//   most recent fact found or created
-extern FACT* wordnetFacts;	//   end of wordnet facts (before topic facts)
-extern FACT* build0Facts;	//   end of build0 facts (start of build1 facts)
+extern FACT* factsPreBuild[NUMBER_OF_LAYERS+1];	//   end of build0 facts (start of build1 facts)
 extern FACT* factFree;		//   end of facts - most recent fact allocated (ready for next allocation)
 
 // pre-reserved verb types

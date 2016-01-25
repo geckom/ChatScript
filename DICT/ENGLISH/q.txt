@@ -16,7 +16,6 @@
  quarter_note ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     crotchet~3nz (^note~5) a musical note having the time value of a quarter of a whole note
  Qiao ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Quinton ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  quarter-tone ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR posdefault:NOUN ) 
     quarter_tone~1nz (^interval~3) half of a semitone
  Quentrell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -144,6 +143,7 @@
  Quade ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Quan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Quinonez ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Quinton ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Quiroga ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Qaseem ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Qochata ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -168,7 +168,7 @@
     quenching~2az 
  quick_fix ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     quicky~1nz (^fix~3) hurried repair
- quick ( meanings=9 glosses=7 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=quickest 
+ quick ( meanings=9 glosses=7 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=quickest 
     quick~1nz (^area~3) any area of the body that is highly sensitive to pain
     spry~1az moving quickly and lightly
     warm~5az easily aroused or excited
@@ -278,7 +278,7 @@
     queen_bee~1nz fertile egg-laying female bee
  quarter_horse ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     quarter_horse~1nz (^mount~2) a small powerful horse originally bred for sprinting in quarter-mile races in Virginia
- quarter ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER COMMON4 COMMON1 ORDINAL KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT TIMEWORD (null) ) 
+ quarter ( meanings=4 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER COMMON4 COMMON1 ORDINAL KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT TIMEWORD ) 
     quarter~1vz divide by four
     quarter~2vz divide into quarters
     draw_and_quarter~1vz pull apart with four horses tied to his extremities, so as to execute him
@@ -426,7 +426,7 @@
     queerness~2nz (^unfamiliarity~1) a strange attitude or habit
  quotability ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     quotability~1nz (^worthiness~1) the quality of being worthy of being quoted
- quiet ( meanings=13 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ quiet ( meanings=13 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     tranquility~1nz (^calm~1) a disposition free from stress or emotion
     silence~3n 
     tranquility~3nz (^order~13) an untroubled state
@@ -600,7 +600,7 @@
     quarter-tone~1n 
  quarter_rest ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     quarter_rest~1nz (^rest~3) a musical rest having one-fourth the time value of a whole rest
- quaver ( meanings=4 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ quaver ( meanings=4 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     eighth_note~1n 
     quaver~2nz (^sound~5) a tremulous sound
     trill~3v 
@@ -655,7 +655,7 @@
     fivesome~1nz (^assemblage~4) five people considered as a unit
     quintuplet~1n 
     quintet~4nz (^musical_organization~1) five performers or singers who perform together
- questioning ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB (null) ) 
+ questioning ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     inquiring~1nz (^request~2) a request for information
     wondering~1az showing curiosity
     quizzical~1az perplexed 
@@ -667,7 +667,7 @@
  quantum_jump ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     quantum_leap~1n 
     quantum_jump~2nz (^jump~5) an abrupt transition of an electron or atom or molecule from one quantum state to another with the emission or absorption of a quantum
- quack ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ quack ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     quack~1nz (^sound~5) the harsh sound of a duck
     quack~2nz (^doctor~2) an untrained person who pretends to be a physician and who dispenses medical advice
     quack~3az medically unqualified
@@ -1306,7 +1306,7 @@
     quiescent~3az not active or activated
     quiescent~4az marked by a state of tranquil repose
     quiescent~5az 
- quick-witted ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE (null) ) 
+ quick-witted ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     quick-witted~1az mentally nimble and resourceful
     quick-witted~2az 
  quadripartite ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -1330,7 +1330,7 @@
     qualified~4az limited or restricted
     certified~2a 
     qualified~6az 
- quarrelsome ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ quarrelsome ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     quarrelsome~1az given to quarreling
     quarrelsome~2az 
  quirky ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 

@@ -444,7 +444,7 @@ static char* FindWordEnd(char* ptr,char* priorToken,char** words,int &count,bool
 	if (oobStart) // support JSON parsing
 	{
 		if (*ptr == '(' || *ptr == ')' || *ptr == '[' || *ptr == ']' || *ptr == '{' || *ptr == '}'  || *ptr == ',' ) return ptr + 1;
-		while (*++ptr != ' ' &&  *ptr != '(' && *ptr != ')' && *ptr != '[' && *ptr != ']'  && *ptr != '{' && *ptr != '}');
+		while (*++ptr && *ptr != ' ' &&  *ptr != '(' && *ptr != ')' && *ptr != '[' && *ptr != ']'  && *ptr != '{' && *ptr != '}');
 		return ptr;
 	}
 
@@ -458,16 +458,7 @@ static char* FindWordEnd(char* ptr,char* priorToken,char** words,int &count,bool
 
 	// Things that are normally separated as single character tokens
 	char next = ptr[1];
-	if (kind & BRACKETS && ( (c != '>' && c != '<') || next != '=') ) 
-	{
-		if (c == '<' && next == '/') return ptr + 2; // keep html together  </
-		if (c == '[' && next == '[') return ptr + 2; // keep html together  [[
-		if (c == ']' && next == ']') return ptr + 2; // keep html together  ]]
-		if (c == '{' && next == '{') return ptr + 2; // keep html together  {{
-		if (c == '}' && next == '}') return ptr + 2; // keep html together  }}
-		return ptr+1; // keep all brackets () [] {} <> separate but  <= and >= are operations
-	}
-	else if (c == '=' && next == '=') // swallow headers == ==== ===== etc
+	if (c == '=' && next == '=') // swallow headers == ==== ===== etc
 	{
 		while (*++ptr == '='){;}
 		return ptr;
@@ -498,6 +489,32 @@ static char* FindWordEnd(char* ptr,char* priorToken,char** words,int &count,bool
 	}
 	else if (*ptr == ',') return ptr+1; 
  	else if (kind & (ENDERS|PUNCTUATIONS) && ((unsigned char)IsPunctuation(ptr[1]) == SPACES || ptr[1] == 0)) return ptr+1; 
+	
+	// read an emoticon
+	char emote[MAX_WORD_SIZE];
+	int index = 0;
+	int letters = 0;
+	char* at = ptr-1;
+	while (*++at && *at != ' ')
+	{
+		emote[index++] = *at;
+		if (IsAlphaUTF8(*at) || IsDigit(*at)) ++letters;
+		if (letters > 1) break; // to many to be emoticon
+	}
+	if (letters < 2 && (at-ptr) >= 2 && emote[0] != '.' && emote[0] != ',' && emote[0] != '?' && emote[0] != '!' ) // presumed emoticon
+	{
+		return at;
+	}
+
+	if (kind & BRACKETS && ( (c != '>' && c != '<') || next != '=') ) 
+	{
+		if (c == '<' && next == '/') return ptr + 2; // keep html together  </
+		if (c == '[' && next == '[') return ptr + 2; // keep html together  [[
+		if (c == ']' && next == ']') return ptr + 2; // keep html together  ]]
+		if (c == '{' && next == '{') return ptr + 2; // keep html together  {{
+		if (c == '}' && next == '}') return ptr + 2; // keep html together  }}
+		return ptr+1; // keep all brackets () [] {} <> separate but  <= and >= are operations
+	}
 
 	//   find "normal" word end, including all touching nonwhitespace, keeping periods (since can be part of word) but not ? or ! which cant
  	end = ptr;
@@ -521,7 +538,8 @@ static char* FindWordEnd(char* ptr,char* priorToken,char** words,int &count,bool
 	}
 	if (end == ptr) ++end;	// must shift at least 1
 	WORDP X = FindWord(ptr,end-ptr);
-	if (X && (X->properties & PART_OF_SPEECH || X->systemFlags & PATTERN_WORD || X->internalBits & HAS_SUBSTITUTE)) // we know this word (with exceptions)
+	// avoid punctuation so we can detect emoticons
+	if (X && !(X->properties & PUNCTUATION) && (X->properties & PART_OF_SPEECH || X->systemFlags & PATTERN_WORD || X->internalBits & HAS_SUBSTITUTE)) // we know this word (with exceptions)
 	{
 		// if ' follows a number, make it feet
 		if (*ptr == '\'' && (end-ptr) == 1)
@@ -560,6 +578,9 @@ static char* FindWordEnd(char* ptr,char* priorToken,char** words,int &count,bool
 	if (W && (W->properties & PART_OF_SPEECH || W->systemFlags & PATTERN_WORD))  return stopper; // recognize word at more splits
 
 	char* start = ptr;
+
+
+
 	char next2;
 	while (++ptr && !IsWordTerminator(*ptr)) // now scan to find end of token one by one, stopping where appropriate
     {
@@ -588,7 +609,7 @@ static char* FindWordEnd(char* ptr,char* priorToken,char** words,int &count,bool
 				}
 				// ' as particle ellision
 				if ((ptr-start) == 1 && (*start == 'd' || *start == 'j' || *start == 'l' || *start == 's'  || *start == 't')) return ptr + 1;  // break off d' argent and other foreign particles
-			
+	
 				//   12'6" or 12'. or 12' 
 				if (IsDigit(*start) && !IsAlphaUTF8(next)) return ptr + 1;  //   12' swallow ' into number word
 			}
@@ -618,8 +639,12 @@ static char* FindWordEnd(char* ptr,char* priorToken,char** words,int &count,bool
 				else if (next == '-' ) 
 					break; // the anyways-- break 
 			}
-			if (( c == ']' || c == ')')) 
-				break; //closers
+			// number before common things?
+			if (IsDigit(*start) && IsDigit(*(ptr-1)))
+			{
+				if (!strnicmp(ptr,"min",3) || !strnicmp(ptr,"hr",2) || !strnicmp(ptr,"sec",3) || !strnicmp(ptr,"yr",2)) return ptr;
+			}
+			if ( c == ']' || c == ')') break; //closers
 			if (c == '&') break; // must represent "and" 
 			if (ptr != start && IsDigit(*(ptr-1)) && IsWordTerminator(ptr[1]) && (c == '"' || c == '\'' || c == '%')) break; // special markers on trailing end of numbers get broken off. 50' and 50" and 50%
 			if ((c == 'x' || c== 'X') && IsDigit(*start) && IsDigit(next)) break; // break  4x4
@@ -711,6 +736,7 @@ char* Tokenize(char* input,unsigned int &mycount,char** words,bool all,bool nomo
 		if (!(tokenControl & TOKEN_AS_IS)) while (*ptr == ptr[1] && !IsAlphaUTF8OrDigit(*ptr)  && *ptr != '-' && *ptr != '.' && *ptr != '[' && *ptr != ']' && *ptr != '(' && 
 			*ptr != ')' && *ptr != '{' && *ptr != '}') ++ptr; // ignore repeated non-alpha non-digit characters -   - but NOT -- and not ...
 		if (count == 0 && *ptr != '[' ) oobStart = false;
+		if (*ptr == '"' && !strchr(ptr+1,'"')) ++ptr; // ignore single starting quote?  "hi   -- but if it next sentence line was part like POS tagging, would be a problem
 
 		// find end of word 
 		int oldCount = count;
@@ -729,9 +755,6 @@ char* Tokenize(char* input,unsigned int &mycount,char** words,bool all,bool nomo
 		if (*priorToken == '(') ++paren;
 		else if (*priorToken && paren) --paren;
 
-		// alter 's standalone to is
-		if (!stricmp(priorToken,"'s") && *(ptr-1) == ' ') 
-			priorToken[0] = 'i';
 
 		// adjust am and AM if used as a time reference and not the verb "am"
 		if (!stricmp(priorToken,"am") && count && IsDigit(words[count][0])) 

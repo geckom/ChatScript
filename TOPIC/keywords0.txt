@@ -2,7 +2,6 @@
     Qatari_rial kina balboa zlotych Pakistani_rupee nuevo_sol guarani Gold_cordoba Surinamese_dollar Nepalese_rupee Norwegian_kroner naira vatu New_Zealand_dollar meticai ringgit Mexican_peso rufiyaa Omani_rial Maltese_liri Ouguiya Mauritian_rupee Moroccan_dirham Macedonian_denar Malawian_kwacha togrog lei Malagasy_ariary Libyan_dinar maloti Swiss_franc Liberian_dollar litai lati Lebanese_pound kip tenge Kuwaiti_dinar South_Korean_won Bustralian_dollar North_Korean_won som Kenyan_shilling Jordanian_dinar 
     Jamaican_dollar yen New_Iraqi_dinar New_Israeli_shekel rial Indian_rupee Indonesian_rupiah Icelandic_kronur forint kuna lempira Hong_Kong_dollar gourde Guyanese_dollar Guinean_franc quetzale Gibraltar_pound cedi lari dalasi Fijian_dollar koruny birr nakfa krooni Egyptian_pound Dominican_peso Djiboutian_franc Danish_kroner Cypriot_pound Cape_Verdean_escudos Convertible_peso Costa_Rican_colone Colombian_peso Comoran_franc Chilean_peso yuan Congolese_franc Sri_Lankan_rupee riel Canadian_dollar Burundi_franc 
     Bruneian_dollar leva ngultrum real Belarusian_ruble Communaute_Financiere_Africaine_franc kyat boliviano Konvertibilna_maraka Belizean_dollar taka Bahamian_dollar Bermudian_dollar pula Barbadian_dollar Bahraini_dinar Australian_dollar Argentine_peso kwanza dram leke Azerbaijani_manat Algerian_dinar afghani Emirati_dirham East_Caribbean_dollar Aruban_florin Serbian_dinar euro pence shilling pound kroner ruble centime franc peso dollar dinar lira )
-~daynumber ( 3 2 4 0 6 1 5 )
 ~timeadjmodifier ( young old )
 ~pretimeadjmodifier ( prior last this next )
 ~color_adjectives PROBABLE_PREPOSITION ( transparent ~colors )
@@ -1604,6 +1603,7 @@
 ~architecture_styles ( Victorian Roman Greek Gothic Georgian Byzantine Baroque Art_Nouveau Art_Deco )
 ~area_quantity ( square_yard square_meter square_kilometer square_inch square_foot square_cubit square_centimeter hectare acre )
 ~areafield ( the_study_of the_field_of the_concept_of the_area_of )
+~armed_services ( Coast_Guard Marines Air_Force Navy Army )
 ~art_gallery ( sculpture picture_frame picture art )
 ~art_history ( Surrealist Surrealism Rococo Relativist Relativism Realist Realism Postmodernist Postmodernism Postmodern Objectivist Objectivism Minimalism Impressionist Impressionism Hyperrealist Hyperrealism Fauvism Dada Cubist Cubism )
 ~art_kinds ( watercolor sculpture sculpt painting paint installation glassblowing drawing draw decollage collage calligraphy assemblage )
@@ -1747,7 +1747,7 @@
 ~coffees ( Starbucks moccacino moccachino macchiato latte iced_coffee espresso cup_of_joe cup_of_jo coffee cappuccino )
 ~candy NOUN NOUN_SINGULAR ( candy~1 )
 ~car ( vehicle truck SUV limousine limo car automobile auto )
-~car_brands ( Volvo Volkswagen Vauxhall Toyota Tesla Tata Suzuki Subaru Shelby Scion Saturn Saab Rolls_Royce Renault Porsche Pontiac Peugeot Opel Oldsmobile Nissan Mitsubishi Mercury Mercedes_Benz Mercedes Mazda Maserati Lotus Lincoln Lexus Land_Rover Lamborghini Kia Jeep Jaguar Isuzu Invicta Infiniti Hyundai Hummer Honda GMC GM General_Motors Ford Fiat Ferrari Dodge Daihatsu Daewoo Citroen Chrysler Chevy Chevrolet Cadillac Buick Bugatti BMW Bentley Audi Aston_Martin American_Motors Alfa_Romeo Acura )
+~car_brands ( Volvo VW Volkswagen Vauxhall Toyota Tesla Tata Suzuki Subaru Shelby Scion Saturn Saab Rolls_Royce Renault Porsche Pontiac Peugeot Opel Oldsmobile Nissan Mitsubishi Mercury Mercedes_Benz Mercedes Mazda Maserati Lotus Lincoln Lexus Land_Rover Lamborghini Kia jeep Jeep Jaguar Isuzu Invicta Infiniti Hyundai Hummer Honda GMC GM General_Motors Ford Fiat Ferrari Dodge Daihatsu Daewoo Citroen Chrysler Chevy Chevrolet Cadillac Buick Bugatti BMW Bentley Audi Aston_Martin American_Motors Alfa_Romeo Acura )
 ~car_vehicles NOUN NOUN_SINGULAR ( vehiclewrecker van used-car trucking_rig truck trailer_truck tow_truck tow_car touring_car tourer tipper_truck tipper_lorry tip_truck taxicab taxi tank_truck tandem_trailer SUV subcompact_car subcompact stockcar stock_car sport_utility_vehicle sport_utility sport_car sound_truck shuttle_bus self-propelled_vehicle sedan secondhand_car recreational_vehicle reconnaissance_vehicle rally_car racing_car race_car prowl_car police_wagon police_van police_cruiser police_car passenger_vehicle passenger_van 
     passenger_car paddy_wagon off-roader moving_van moving_truck motortruck motorcycle motorcross_bike motorcoach motorcar motorbus motorbike motor_vehicle motor_scooter motor_home motor_bike moped monster_truck Model_T minivan minicar minicab minibus limousine limo laundry_truck landrover ladder_truck jeep jaunty_car ice_wagon ice_cream_truck ice-wagon Humvee house_trailer hot_rod hot-rod hearse hatchback gas_guzzler garbage_truck flying_car fire_truck fire_engine estate_car electric_car electric_automobile 
     dump_truck delivery_van delivery_truck cruiser coupe convertible compact_car cement_truck caravan car_transporter car camping_bus camper_trailer camper Cadillac Cabriolet cab bus bookmobile bloodmobile automotive_vehicle~1 automobile autobus auto ATV articulated_lorry army_tank armoured_vehicle armoured_personnel_carrier armoured_combat_vehicle armoured_car armored_vehicle armored_personnel_carrier armored_combat_vehicle armored_car amphibious_vehicle ambulance aerial_ladder_truck 4WD )
@@ -1762,7 +1762,7 @@
 ~celestial_observation ( telescope stargazing planetarium Perseid observatory eclipse constellation )
 ~ceo ( Ted_Turner Steve_Jobs Steve_Case Larry_Ellison Jeff_Bezos Bill_Gates Andy_Grove CEO )
 ~chatbotlist ( Verbot unhuman talk_bot Smarterchild robot program NPC nonhuman chatterbox chatterbot chatbox chatbot chat_box chat_bot chat-program bot automaton artificial_intelligence artificial Alicebot AIML AI )
-~cheeses NOUN NOUN_SINGULAR ( Époisses yogurt Tomme_de_Savoie Reblochon Pont_l'Évêque Pont_l'Eveque muenster fromage Epoisses Chèvre Chevre Brie_de_Meaux Tilsit Swiss_cheese Stilton Roquefort Rochefort ricotta quark provolone pepper_jack Parmesan munster Muenster mozzarella Monterey_Jack Limburger havarti Gruyere Gouda Gorgonzola feta Danish_blue cream_cheese Colby cheddar Camembert Cambozola Brie Boursin blue_cheese )
+~cheeses NOUN NOUN_SINGULAR ( Ã‰poisses yogurt Tomme_de_Savoie Reblochon Pont_l'Ã‰vÃªque Pont_l'Eveque muenster fromage Epoisses ChÃ¨vre Chevre Brie_de_Meaux Tilsit Swiss_cheese Stilton Roquefort Rochefort ricotta quark provolone pepper_jack Parmesan munster Muenster mozzarella Monterey_Jack Limburger havarti Gruyere Gouda Gorgonzola feta Danish_blue cream_cheese Colby cheddar Camembert Cambozola Brie Boursin blue_cheese )
 ~chemicals ( organic_compound~1 compound~3 chemical )
 ~chinese_cooking_styles ( Szechuan Sichuan Mongolian Hunan Chinese Cantonese )
 ~christmas_words ( Xmas Christmas_Eve Christmas_Day Christmas )
@@ -1873,6 +1873,7 @@
 ~girlfriend NOUN NOUN_SINGULAR PROBABLE_NOUN ( sweetheart lover heartthrob girlfriend concubine companion )
 ~day_care_center ( day_care_center child_care babysitting )
 ~dayname ( Wednesday Tuesday Thursday Sunday Saturday Monday Friday )
+~dayindex ( 3 2 4 0 6 1 5 )
 ~defender NOUN NOUN_SINGULAR PROBABLE_NOUN ( protector parent guardian defender angel )
 ~medium_degrees ( MSc Ms Masters Master MA M.Sc M.S M.A. )
 ~deli NOUN NOUN_SINGULAR ( soup meat deli cheese ~sandwich )
@@ -1947,10 +1948,10 @@
 ~entirety_words ( wholesale whole piecemeal partial incomplete entirety entire deficient complete )
 ~equals ( yields will_be were was sold_for is gives equals are )
 ~equestrian_sports ( show_jumping riding polo horse_racing harness_racing dressage )
-~ethnichate NOUN NOUN_SINGULAR ( yids wops wop wetbacks wetback w0p towel_heads spook spics sandnigger sand_nigger ruski ragheads raghead porchmonkey porcH_monkey pollock polacks polack paki niigr niiger nigur niglet nigguhs niggers niggas nigaboo nazis nazi n1gr mick kraut kikes junglebunny jews Jews jap honky honkies honkey heeb gypsies guido gringo gook fags fagoots faggot faggits faggit fag deggo cracker chink chinc camel_jockies beaner assnigger zippohead zipperhead zigabo yokel yid wagon_burner Uncle_Tom uncircumcised_baboon 
+~ethnichate NOUN NOUN_SINGULAR ( ago yids wops wop wetbacks wetback w0p towel_heads spook spics sandnigger sand_nigger ruski ragheads raghead porchmonkey porcH_monkey pollock polacks polack paki niigr niiger nigur niglet nigguhs niggers niggas nigaboo nazis nazi n1gr mick kraut kikes junglebunny jews Jews jap honky honkies honkey heeb gypsies guido gringo gook fags fagoots faggot faggits faggit fag deggo cracker chink chinc camel_jockies beaner assnigger zippohead zipperhead zigabo yokel yid wagon_burner Uncle_Tom uncircumcised_baboon 
     tynkere tynker tynkare tynkard tynekere tyncar tunnel_digger towel_head touch_of_the_tar_brush tinkere tinkard tinkar tincker timber_nigger thicklips tenker tar_baby sucker_fish sub_human squinty squaw squarehead spink spik spigotty spigger spig spickaboo spick Spice_nigger spic spear_chucker smoked_Irishman smoked_Irish slopy slopey slopehead slanty_eye slant_eye pointy_head nigguh niggress niggor nigglet nigger niggar niggah nigga nigette niger nigar nig_nog nig nidge net_head negro neejee neechee 
     neche munter munt mulignan mulato muktuk muk mud_person mud_duck moulinyan moulignon moulie mosshead moss_eater Moor moky moke mocky mockie mockey moch mangia_cake ling_ling lemonhead lawn_jockey latrino kyke Kushite Kushi kotiya kike khazar jungle_bunny Jim_Fish jijjiboo Jihadi jiggabo jigga jigg jigarooni jigaboo japie Jap island_nigger injun iky ikey_mo ikey ice_nigger hymie Hunkie house_nigger gippo gipp ginzo gin_jockey ghetto_hamster gew gator_bait fog_nigger eyetie eurotrash dune_nigger dune_coon 
-    dot_head dink dinge diaper_head dego darky darkie darkey dago Cushite Cushi curry_stinker curry_slurper curry_muncher cowboy_killer cotton_picker coon_ass coon coolie cocolo chonky chink_a_billy chinig ching_chong Chinese_wetback chili_shitter chi_chi chee_chee carpet_pilot can_eater camel_jockey camel_jacker camel_humper camel_cowboy cab_nigger burrhead bunga bug_eater Buddhahead Bounty_bar border_nigger border_jumper border_hopper ago abbo )
+    dot_head dink dinge diaper_head dego darky darkie darkey dago Cushite Cushi curry_stinker curry_slurper curry_muncher cowboy_killer cotton_picker coon_ass coon coolie cocolo chonky chink_a_billy chinig ching_chong Chinese_wetback chili_shitter chi_chi chee_chee carpet_pilot can_eater camel_jockey camel_jacker camel_humper camel_cowboy cab_nigger burrhead bunga bug_eater Buddhahead Bounty_bar border_nigger border_jumper border_hopper abbo )
 ~example ( such_as specimen sample name_one more like_who like_where like_what instance go_on for_instance for_example exemplar example citation case an_instance an_example )
 ~excrement NOUN ( turd smeg shiznit shiz shitstain shit sh1t sh!t dookie crap bullshit )
 ~exerciselist ( workout swimming skating running roller_skating karate judo jogging hiking gym dancing boxing aikido aerobics )
@@ -1965,7 +1966,7 @@
 ~family_grandfather NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( grandpop grandpaw grandpa grandfather granddaddy granddad )
 ~family_children NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( ~family_children_male ~family_children_generic ~family_children_female )
 ~family_children_female NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( stepsister stepdaughter step-sister step-daughter sister-in-law sister niece grandniece granddaughter daughter ~sister )
-~family_children_generic NOUN_HUMAN NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( youth ward twin tot toddler teenager teen stepchild step-child sibling progeny offspring kid infant grandkid grandchild cousin child baby )
+~family_children_generic NOUN_HUMAN NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( nephling youth ward twin tot toddler teenager teen stepchild step-child sibling progeny offspring kid infant grandkid grandchild cousin child baby )
 ~family_children_male NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( stepson step-brother sstep-son son scion nephew grandson grandnephew brother ~brother )
 ~sister NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( sister sis )
 ~farm_animals NOUN NOUN_SINGULAR PROBABLE_NOUN ANIMATE_BEING ( stallion rooster ram piglet pig mare hen gosling goose foal ewe duckling duck cow chick calf bull boar )
@@ -2353,7 +2354,7 @@
 ~occupation_insurance PROBABLE_NOUN ( statistician insurance_broker actuary )
 ~occupation_inventor PROBABLE_NOUN ( tinkerer inventor )
 ~occupation_jobless PROBABLE_NOUN ( vagrant unemployed jobless hobo bum )
-~occupation_law PROBABLE_NOUN ( traffic_officer sheriff security_officer policewoman policeman police_officer police patrolman patent_attorney magistrate lawyer law jurist judge investigator guard detective correctional_services cop civil_investigator beat_cop bail_agent attorney arbitrator advocate )
+~occupation_law PROBABLE_NOUN ( traffic_officer sheriff security_officer policewoman policeman police_officer police patrolman magistrate law judge investigator guard detective correctional_services cop civil_investigator beat_cop bail_agent ~occupation_lawyer )
 ~occupation_magic PROBABLE_NOUN ( wizard witch warlock thaumaturgist soothsayer psychic astrologer )
 ~occupation_manager PROBABLE_NOUN ( VP vice_president supervisor project_manager president managing_director manager executive_director director CTO chief_technology_officer chief_financial_officer chief_finance_officer chief_executive_officer Chief_Executive chief CFO CEO boss )
 ~occupation_medical PROBABLE_NOUN ( social_worker social_psychologist shaman medical_doctor funeral_director veterinary_nurse veterinarian surgeon stretcher-bearer speech_therapist radiographer psychometrist psychologist psychiatrist podiatrist plastic_surgeon physiotherapist physiologist physician physical_therapist pharmacist_assistant pharmacist oral_hygienist optometrist optical_technician occupational_therapist nutritionist nurse neuroscientist medical_orthotist_prosthetist masseur language_therapist hospital_porter homoeopath 
@@ -2374,6 +2375,7 @@
 ~occupation_spy PROBABLE_NOUN ( spymaster spy secret_agent )
 ~occupation_transport PROBABLE_NOUN ( yard_official vehicle_driver trucker taximan taxi_driver switchman stoker steersman stationmaster skipper sea_transport_worker sea_captain sailor road_construction_plant_operator railroad_executive navigator navigating_officer motor_mechanic mechanic light_delivery_van_driver driver_and_stacker driver diesel_mechanic diesel_locomotive_driver diesel_fitter cabin_attendant busdriver bus_driver automotive_trimmer automotive_mechinist automotive_electrician automotive_body_repairer )
 ~occupation_writer PROBABLE_NOUN ( writer technical_writer technical_illustrator sports_writer speechwriter screenwriter science_fiction_writer reporter publisher poet photojournalist novelist military_writer librarian journalist editor copywriter copy_writer bookbinder biographer author art_editor )
+~occupation_lawyer ( solictor barrister patent_attorney mediator lawyer jurist attorney arbitrator advocate )
 ~royalty PROBABLE_NOUN ( ~royalty_male ~royalty_female )
 ~oldlist ( vintage used start second-hand quaint original old historical first archaic antique ancient )
 ~omnivore ( you yellow_jacket woodpecker whale wasp swan starling squirrel sloth skunk shark seagull robin roadrunner raven rat raccoon pig person otter ostrich oriole opossum mouse magpiecrow lemur I hummingbird human hedgehog goose fox fly flamingo emu dolphin crane coyote cockroach chipmunk chicken catfish bluejay bear badger aardvark )

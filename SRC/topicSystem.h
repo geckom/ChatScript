@@ -61,10 +61,9 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 extern bool stats;
 extern unsigned int ruleCount;
 
-extern char timeStamp0[20];
-extern char timeStamp1[20];
-extern char buildStamp0[150];
-extern char buildStamp1[150];
+extern char timeStamp[NUMBER_OF_LAYERS][20];
+
+extern char buildStamp[NUMBER_OF_LAYERS][150];
 
 extern bool ruleErased;
 	
@@ -108,7 +107,7 @@ typedef struct topicBlock
 	unsigned short int topicBytesRules;
 } topicBlock;
 
-#define TI(x) (topicBlockPtr+x)
+topicBlock* TI(int topicid);
 
 #define MAX_RECENT 100
 extern unsigned short topicContext[MAX_RECENT + 1];
@@ -116,7 +115,8 @@ extern char labelContext[100][MAX_RECENT+ 1];
 extern int inputContext[MAX_RECENT+ 1];
 extern unsigned int contextIndex;
 
-extern topicBlock* topicBlockPtr;
+extern unsigned int numberOfTopicsInLayer[NUMBER_OF_LAYERS+1];
+extern  topicBlock* topicBlockPtrs[NUMBER_OF_LAYERS+1];
 extern unsigned int numberOfTopics;
 extern unsigned int topicIndex,pendingTopicIndex,originalPendingTopicIndex;
 extern unsigned int topicStack[MAX_TOPIC_STACK+1];
@@ -128,6 +128,7 @@ FunctionResult TestRule(int responderID,char* ptr,char* buffer);
 FunctionResult PerformTopic(int active,char* buffer,char* rule = NULL,unsigned int id = 0);
 bool Repeatable(char* rule);
 void CleanOutput(char* word);
+FunctionResult LoadLayer(int layer, char* name,int build);
 void ResetTopicReply();
 void SetRejoinder(char* rule);
 void SetErase(bool force = false);
@@ -204,7 +205,7 @@ bool ReadUserTopics();
 
 // general topic system control
 void LoadTopicSystem();
-void ResetTopicSystem();
+void ResetTopicSystem(bool safe);
 void ResetTopics();
 void ResetTopic(unsigned int id);
 void InitKeywords(const char* name,uint64 build,bool mark=false,bool concept=true);

@@ -1,9 +1,25 @@
+Version 6.1b 1/25/2016
+1. variables owned by the bot can be defined (always resident unchanged accessable to all users) - see Advanced Variables in
+	advanced manual
+2. $cs_trace enables and tracks traces by user
+3. right hand side of a comparison in a pattern may now be a double-quoted string, looks at the inside of the quotes
+
+Version 6.1a 1/21/2016
+
+Version 6.1 1/17/2016
+1. concept from ontology concepts: ~daynumber renamed to ~dayindex so as not to collide with engine concept.
+2. ~common7 redacted
+3. ^load(name) to dynamically load a layer of topics (analogous to layers 0 and 1 that load on startup)
+
+Version 6.01a 1-9-2016
+1. DICT/BASIC has a small dictionary of words thru grade 6, suitable for use on mobile devices seeking
+to minimize CS memory use. See end of Finalizing a bot: Mobile size issues
+
 Version 6.01 1-7-2016
 1. easier to follow output tracing
 2. jsonopen now supports PUT as a type (with arguments just like POST)
 3. ^length now accepts the name of a json object or array, and returns the number of elements it has
 4. ^match can take a rule tag instead of a pattern, using the pattern of that rule.
-
 
 Version 6.0 1-02-2016
 1. easier to understand pattern tracing

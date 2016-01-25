@@ -72,6 +72,7 @@ static unsigned int flagsRedefines = 0;		// systemflags changes on locked dictio
 bool buildDictionary = false;				// indicate when building a dictionary
 char dictionaryTimeStamp[20];		// indicate when dictionary was built
 char language[40];							// indicate current language used
+char* mini = "";
 
 static unsigned int rawWords = 0;	
 
@@ -155,14 +156,9 @@ char* stringBase;					// start of string space (runs backward)
 char* stringFree;					// current free string ptr
 char* stringEnd;
 
-// return-to values after WordNet loaded, before topic system loaded
-WORDP dictionaryPreBuild0;
-static char* stringSpacePreBuild0 = 0;
-// wordnetFacts
-
-// return-to values after build0 topic data loaded, before build1 topic data loaded
-WORDP dictionaryPreBuild1;
-static char* stringSpacePrebuild1;
+// return-to values for layers
+WORDP dictionaryPreBuild[NUMBER_OF_LAYERS+1];
+char* stringsPreBuild[NUMBER_OF_LAYERS+1];
 // build0Facts 
 	
 // return-to values after build1 loaded, before user is loaded
@@ -194,7 +190,7 @@ MEANING Mburst;
 MEANING Mpending;
 MEANING Mkeywordtopics;
 MEANING Mconceptlist;
-MEANING Mmoney;
+MEANING Mmoney,Musd,Meur,Mgbp,Myen,Mcny;
 MEANING Mintersect;
 MEANING MgambitTopics;
 MEANING MadjectiveNoun;
@@ -247,9 +243,16 @@ void DictionaryRelease(WORDP until,char* stringUsed)
 char* UseDictionaryFile(char* name)
 {
 	static char junk[100];
-	if (!*language) sprintf(junk,"DICT/%s",name);
+	if (*mini) sprintf(junk,"DICT/%s",mini);
+	else if (!*language) sprintf(junk,"DICT");
 	else if (!name) sprintf(junk,"DICT/%s",language);
-	else sprintf(junk,"DICT/%s/%s",language,name);
+	else sprintf(junk,"DICT/%s",language);
+	if (name && *name) 
+	{
+		strcat(junk,"/");
+		strcat(junk,name);
+	}
+	else MakeDirectory(junk); // if it doesnt exist
 	return junk;
 }
 
@@ -286,20 +289,26 @@ WORDP GetSubstitute(WORDP D)
 
 void BuildShortDictionaryBase();
 
+static void EraseFile(char* file)
+{
+	FILE* out = FopenUTF8Write(UseDictionaryFile(file));
+	if (out) fclose(out);
+}
+
 static void ClearDictionaryFiles()
 {
 	char buffer[MAX_BUFFER_SIZE];
-	fclose(FopenUTF8Write(UseDictionaryFile("other.txt"))); //   create but empty file
+	EraseFile("other.txt"); //   create but empty file
     unsigned int i;
 	for (i = 'a'; i <= 'z'; ++i)
 	{
 		sprintf(buffer,"%c.txt",i);
-		fclose(FopenUTF8Write(UseDictionaryFile(buffer))); //   create but empty file
+		EraseFile(buffer); //   create but empty file
 	}
 	for (i = '0'; i <= '9'; ++i)
 	{
 		sprintf(buffer,"%c.txt",i);
-		fclose(FopenUTF8Write(UseDictionaryFile(buffer))); //   create but empty file
+		EraseFile(buffer); //   create but empty file
 	}
 }
 
@@ -309,32 +318,35 @@ void BuildDictionary(char* label)
 	int miniDict = 0;
 	char word[MAX_WORD_SIZE];
 	char lang[MAX_WORD_SIZE];
-	strcpy(lang,"ENGLISH");
+	mini = "ENGLISH";
 	char* ptr = ReadCompiledWord(label,word);
 	bool makeBaseList = false;
 	if (!stricmp(word,"wordnet")) // the FULL wordnet dictionary w/o synset removal
 	{
 		miniDict = -1;
 		ReadCompiledWord(ptr,word);
+		mini = "WORDNET";
 	}
-	else if (!stricmp(word,"short")) // a mini dictionary
+	else if (!stricmp(word,"basic"))
 	{
-		ReadCompiledWord(ptr,word);
-		if (!stricmp(word,"init")) 
-		{
-			makeBaseList = true;
-			fclose(FopenUTF8Write("RAWDICT/basicwordlist.txt"));
-		}
 		miniDict = 1;
-		strcpy(lang,"mini");
+		makeBaseList = true;
+		fclose(FopenUTF8Write("RAWDICT/basicwordlist.txt"));
+		maxHashBuckets = 10000;
+		setMaxHashBuckets = true;
+		mini = "BASIC";
+	}
+	else if (!stricmp(word,"layer0") || !stricmp(word,"layer1")) // a mini dictionary
+	{
+		miniDict = !stricmp(word,"layer0") ? 2 : 3;
+		mini = (miniDict == 2) ? (char*)"LAYER0" : (char*)"LAYER1";
 		maxHashBuckets = 10000;
 		setMaxHashBuckets = true;
 	}
-
+	strcpy(lang,mini);
 	// insure language subdirectory exists
-	MakeDirectory(UseDictionaryFile(NULL)); 
-		
-	if (*lang) MakeUpperCopy(language,lang); // localized version of dict. otherwise its of the current language
+	MakeUpperCopy(language,lang); // localized version of dict. otherwise its of the current language
+	UseDictionaryFile(NULL); 
 
 	InitFacts(); 
 	InitDictionary();
@@ -417,8 +429,8 @@ void InitDictionary()
 #endif
 	//   The bucket list is threaded thru WORDP nodes, and consists of indexes, not addresses.
 
-	dictionaryPreBuild0 = 0;				// in initial dictionary
-	build0Facts = wordnetFacts = factFree;	// last fact in dictionary 
+	dictionaryPreBuild[0] = dictionaryPreBuild[1] = dictionaryPreBuild[2] = 0;	// in initial dictionary
+	factsPreBuild[0] = factsPreBuild[1] = factsPreBuild[2] = factFree;	// last fact in dictionary 
 	propertyRedefines = flagsRedefines = 0;
 }
 
@@ -815,7 +827,7 @@ WORDP StoreWord(char* word, uint64 properties)
     //   not found, add entry 
 	char* wordx = AllocateString(word,len); // storeword
     if (!wordx) return StoreWord("x.x",properties|AS_IS); // fake it
-	if (base->word == 0 && !dictionaryPreBuild0) D = base; // add into hash zone initial dictionary entries (nothing allocated here yet) if and only if loading the base system
+	if (base->word == 0 && !dictionaryPreBuild[0]) D = base; // add into hash zone initial dictionary entries (nothing allocated here yet) if and only if loading the base system
 	else  
 	{
 		D = AllocateEntry();
@@ -917,90 +929,16 @@ void ShowStats(bool reset)
 
 }
 
-void ReturnToFreeze() 
-{ 
-	if (!dictionaryLocked)
-	{
-		 ReturnDictionaryToWordNet();
-		 return;
-	}
-	ClearUserVariables();
-	ClearTemps();
-	ResetFactSystem(factLocked);
-	DictionaryRelease(dictionaryLocked,stringLocked);
-	// system doesnt track changes to properties after freeze
-}
-
-void WordnetLockDictionary() // dictionary before build0 layer 
-{
-    dictionaryPreBuild0 = dictionaryFree;		
-	stringSpacePreBuild0 = stringFree;		//   mark point for mark release
-	build0Facts = wordnetFacts = factFree;
-
 #ifndef DISCARDSCRIPTCOMPILER
-	// memorize dictionary values for backup to pre build locations :build0 operations (reseting word to dictionary state)
-	FILE* out = FopenBinaryWrite("TMP/prebuild0.bin"); // binary file, no BOM
-	if (!out)  ReportBug("Cant generate tmp backups of dict values. Guessing folder isn't writeable.")
-	else
-	{
-		for (WORDP D = dictionaryBase+1; D < dictionaryFree; ++D) 
-		{
-			unsigned int offset = D - dictionaryBase;
-			fwrite(&offset,1,4,out);
-			fwrite(&D->properties,1,8,out);
-			fwrite(&D->systemFlags,1,8,out);
-			fwrite(&D->internalBits,1,4,out);
-			unsigned char head = GETMULTIWORDHEADER(D);
-			fwrite(&head,1,1,out);
-			char x = 0;
-			fwrite(&x,1,1,out);
-		}
-		fclose(out);
-	}
-#endif
-}
-
-void ReturnDictionaryToWordNet() // drop all non-fact memeory allocated after the wordnet freeze
+static void WriteDictDetailsBeforeLayer(int layer)
 {
-	ClearTemps();
-	while (factFree > wordnetFacts) FreeFact(factFree--); // restore to end of dictionary load
-	DictionaryRelease(dictionaryPreBuild0,stringSpacePreBuild0);
-#ifndef DISCARDSCRIPTCOMPILER
-	FILE* in = FopenReadWritten("TMP/prebuild0.bin"); // binary file, no BOM
-	if (in)
-	{
-		unsigned int xoffset;
-		for (WORDP D = dictionaryBase+1; D < dictionaryFree; ++D) 
-		{
-			fread(&xoffset,1,4,in); 
-			unsigned int offset = D - dictionaryBase;
-			if (xoffset != offset) ReportBug("Bad return to build1\r\n");
-			fread(&D->properties,1,8,in);
-			fread(&D->systemFlags,1,8,in);
-			fread(&D->internalBits,1,4,in);
-			unsigned char c;
-			fread(&c,1,1,in);
-			SETMULTIWORDHEADER(D,c);
-			fread(&c,1,1,in);
-			if (c != 0) myexit("bad return to wordnet");
-		}
-		fclose(in);
-	}
-#endif
-	dictionaryLocked = 0;
-}
-
-void Build0LockDictionary() // dictionary after build0 and before build1 layers 
-{
-    dictionaryPreBuild1 = dictionaryFree;		
-	stringSpacePrebuild1 = stringFree;	
-    build0Facts = factFree; 
-#ifndef DISCARDSCRIPTCOMPILER
-	FILE* out = FopenBinaryWrite("TMP/prebuild1.bin"); // binary file, no BOM
+	char word[MAX_WORD_SIZE];
+	sprintf(word,"TMP/prebuild%d.bin",layer);
+	FILE* out = FopenBinaryWrite(word); // binary file, no BOM
 	if (out)
 	{
 		char x = 0;
-		for (WORDP D = dictionaryBase+1; D < dictionaryPreBuild1; ++D) 
+		for (WORDP D = dictionaryBase+1; D < dictionaryPreBuild[layer]; ++D) 
 		{
 			unsigned int offset = D - dictionaryBase;
 			fwrite(&offset,1,4,out);
@@ -1013,50 +951,140 @@ void Build0LockDictionary() // dictionary after build0 and before build1 layers
 		}
 		fclose(out);
 	}
-#endif
 }
 
-void ReturnDictionaryToBuild0() 
+static void ReadDictDetailsBeforeLayer(int layer)
 {
-	while (factFree > build0Facts) FreeFact(factFree--); //   restore back to facts alone
-	DictionaryRelease(dictionaryPreBuild1,stringSpacePrebuild1);
-#ifndef DISCARDSCRIPTCOMPILER
-	FILE* in = FopenReadWritten("TMP/prebuild1.bin");
+	char word[MAX_WORD_SIZE];
+	sprintf(word,"TMP/prebuild%d.bin",layer);
+	FILE* in = FopenReadWritten(word); // binary file, no BOM
 	if (in)
 	{
 		unsigned int xoffset;
-		for (WORDP D = dictionaryBase+1; D < dictionaryFree; ++D) 
+		for (WORDP D = dictionaryBase+1; D < dictionaryPreBuild[layer]; ++D) 
 		{
-			unsigned int offset = D - dictionaryBase;
 			fread(&xoffset,1,4,in); 
-			if (xoffset != offset) ReportBug("Bad return to build0\r\n");
-			fread(&D->properties,1,8,in); 
-			fread(&D->systemFlags,1,8,in); 
-			fread(&D->internalBits,1,4,in); 
+			unsigned int offset = D - dictionaryBase;
+			if (xoffset != offset) ReportBug("Bad return to build\r\n");
+			fread(&D->properties,1,8,in);
+			fread(&D->systemFlags,1,8,in);
+			fread(&D->internalBits,1,4,in);
 			unsigned char c;
 			fread(&c,1,1,in);
 			SETMULTIWORDHEADER(D,c);
 			fread(&c,1,1,in);
-			if (c != 0) myexit("bad return to build0");
+			if (c != 0) myexit("bad return to build");
 		}
 		fclose(in);
 	}
+}
+#endif
+
+void WordnetLockDictionary() // dictionary and facts before build0 layer 
+{
+    dictionaryPreBuild[0] = dictionaryPreBuild[1] = dictionaryPreBuild[2] = dictionaryFree;		// end of wordnet data
+	stringsPreBuild[0] = stringsPreBuild[1] = stringsPreBuild[2] = stringFree;		// mark point for mark release
+	factsPreBuild[0] = factsPreBuild[1] = factsPreBuild[2] = factFree;
+
+#ifndef DISCARDSCRIPTCOMPILER
+	// memorize dictionary values for backup to pre build locations :build0 operations (reseting word to dictionary state)
+	WriteDictDetailsBeforeLayer(0);
+#endif
+}
+
+void ReturnDictionaryToWordNet() // drop all memory allocated after the wordnet freeze
+{
+	ClearTemps();
+	while (factFree > factsPreBuild[0]) FreeFact(factFree--); // restore to end of dictionary load
+	DictionaryRelease(dictionaryPreBuild[0],stringsPreBuild[0]);
+#ifndef DISCARDSCRIPTCOMPILER
+	ReadDictDetailsBeforeLayer(0);
+#endif
+	dictionaryLocked = 0;
+	numberOfTopics = 0;
+	// all layer data
+	factsPreBuild[2] = factsPreBuild[1] = factsPreBuild[0];
+	dictionaryPreBuild[2] = dictionaryPreBuild[1] = dictionaryPreBuild[0];
+	stringsPreBuild[2] = stringsPreBuild[1] = stringsPreBuild[0];
+	numberOfTopicsInLayer[0] = numberOfTopicsInLayer[1] = numberOfTopicsInLayer[2] = 0;
+	topicBlockPtrs[0] = topicBlockPtrs[1] = topicBlockPtrs[2] = NULL;
+}
+
+void LockLevel()
+{
+	dictionaryLocked = dictionaryFree;		
+	stringLocked = stringFree;		
+	factLocked = factFree; 
+}
+
+void UnlockLevel()
+{
+	dictionaryLocked = 0;		
+	stringLocked = 0;		
+	factLocked = 0; 
+}
+
+void LockLayer(int layer)
+{
+	// stores the results of the layer as the starting point of the next layers (hence size of arrays are +1)
+	for (int i = layer+1; i < NUMBER_OF_LAYERS; ++i)
+	{
+		numberOfTopicsInLayer[i] = numberOfTopicsInLayer[layer];
+		dictionaryPreBuild[i] = dictionaryFree;		
+		stringsPreBuild[i] = stringFree;	
+		factsPreBuild[i] = factFree; 
+		topicBlockPtrs[i] = NULL;
+		buildStamp[i][0] = 0;
+	}
+	
+	if (layer < 2) // permanent layers
+	{
+		WORDP D = dictionaryPreBuild[layer] - 1;
+		while (++D < dictionaryFree)
+		{
+			if (D->properties & (PART_OF_SPEECH|TAG_TEST)) AddInternalFlag(D, BASE_DEFINED); // word has known pos meanings before entering user volley
+		}
+
+	#ifndef DISCARDSCRIPTCOMPILER
+		WriteDictDetailsBeforeLayer(layer+1);
+	#endif
+
+		// lock dictionary system  at layer 2 or earlier
+		LockLevel();
+	}
+}
+
+void ReturnToLayer(int layer, bool unlocked) 
+{
+	if (layer == 1)
+	{
+		ClearUserVariables();
+		ClearTemps();
+	}
+	while (factFree > factsPreBuild[layer+1]) FreeFact(factFree--); //   restore back to facts alone
+	DictionaryRelease(dictionaryPreBuild[layer+1],stringsPreBuild[layer+1]);
+
+#ifndef DISCARDSCRIPTCOMPILER
+	if (!server) ReadDictDetailsBeforeLayer(layer+1);// on server we assume scripts will not damage level0 or earlier data of dictionary
 #endif
 
 	// canonical map in layer 1 is now garbage- 
-	dictionaryLocked = 0;
-}
-
-void FreezeBasicData()
-{
-	WORDP D = dictionaryBase - 1;
-	while (++D < dictionaryFree)
+	if (unlocked)
 	{
-		if (D->properties & (PART_OF_SPEECH|TAG_TEST)) AddInternalFlag(D, BASE_DEFINED); // word has known pos meanings before entering user volley
+		dictionaryLocked = NULL;
+		stringLocked = NULL;
+		factLocked = NULL; // unlock
 	}
-    dictionaryLocked = dictionaryFree;		
-	stringLocked = stringFree;		
-    factLocked = factFree; 
+	numberOfTopics = numberOfTopicsInLayer[layer];
+	for (int i = layer+1; i < NUMBER_OF_LAYERS; ++i)
+	{
+		numberOfTopicsInLayer[i] = numberOfTopicsInLayer[layer];
+		topicBlockPtrs[i] = NULL;
+		factsPreBuild[i] = factsPreBuild[layer+1]; // start of next layer is set for all
+		dictionaryPreBuild[i] = dictionaryPreBuild[layer+1];  // start of next layer is set for all
+		stringsPreBuild[i] = stringsPreBuild[layer+1];  // start of next layer is set for all
+		buildStamp[i][0] = 0;
+	}
 }
 
 void CloseDictionary()
@@ -1490,7 +1518,6 @@ bool ReadBinaryDictionary()
 void WriteDictionaryFlags(WORDP D, FILE* out)
 {
 	if (D->internalBits & DEFINES) return; // they dont need explaining, loaded before us
- 
 	uint64 properties = D->properties;
 	uint64 bit = START_BIT;	
 	while (properties)
@@ -1499,25 +1526,43 @@ void WriteDictionaryFlags(WORDP D, FILE* out)
 		{
 			properties ^= bit;
 			char* label = FindNameByValue(bit);
-			fprintf(out,"%s ",label);
+			if (label) fprintf(out,"%s ",label);
 		}
 		bit >>= 1;
 	}
 
 	properties = D->systemFlags;
 	bit = START_BIT;
+	bool posdefault = false;
+	bool agedefault = false;
 	while (properties)
 	{
 		if (properties & bit)
 		{
 			char* label = NULL;
-			if (bit & ESSENTIAL_FLAGS)
+			if (bit & ESSENTIAL_FLAGS) 
 			{
-				if (bit & NOUN) label = "posdefault:NOUN";
-				else if (bit & VERB) label = "posdefault:VERB";
-				else if (bit & ADJECTIVE) label = "posdefault:ADJECTIVE";
-				else if (bit & ADVERB) label = "posdefault:ADVERB";
-				else if (bit & PREPOSITION) label = "posdefault:PREPOSITION";
+				if (!posdefault)
+				{
+					if (D->systemFlags & NOUN) fprintf(out,"posdefault:NOUN ");
+					if (D->systemFlags & VERB) fprintf(out,"posdefault:VERB "); 
+					if (D->systemFlags & ADJECTIVE) fprintf(out,"posdefault:ADJECTIVE "); 
+					if (D->systemFlags & ADVERB) fprintf(out,"posdefault:ADVERB "); 
+					if (D->systemFlags & PREPOSITION) fprintf(out,"posdefault:PREPOSITION ");
+					posdefault = true;
+				}
+			}
+			else if (bit & AGE_LEARNED) 
+			{
+				if (!agedefault)
+				{
+					agedefault = true;
+					uint64 age = D->systemFlags & AGE_LEARNED;
+					if (age == KINDERGARTEN) fprintf(out,"KINDERGARTEN ");
+					else if (age == GRADE1_2) fprintf(out,"GRADE1_2 ");
+					else if (age == GRADE3_4) fprintf(out,"GRADE3_4 ");
+					else if (age == GRADE5_6) fprintf(out,"GRADE5_6 ");
+				}
 			}
 			else label = FindSystemNameByValue(bit);
 			properties ^= bit;
@@ -1534,7 +1579,7 @@ void WriteDictionaryFlags(WORDP D, FILE* out)
 		{
 			properties ^= bit;
 			char* label = FindParseNameByValue(bit);
-			fprintf(out,"%s ",label);
+			if (label) fprintf(out,"%s ",label);
 		}
 		bit >>= 1;
 	}
@@ -1578,6 +1623,8 @@ void WriteDictionary(WORDP D,uint64 data)
     else if (!IsLowerCase(c)) sprintf(name,"other.txt"); //   main real dictionary
     else sprintf(name,"%c.txt",c);//   main real dictionary
     FILE* out = FopenUTF8WriteAppend(UseDictionaryFile(name));
+	if (!out) 
+		myexit("Dict write failed");
 
 	//   write out the basics (name meaningcount idiomcount)
 	fprintf(out," %s ( ",D->word);
@@ -2112,7 +2159,7 @@ void ReadSubstitutes(char* name,unsigned int fileFlag, bool filegiven)
 			if (strchr(replacement,'_'))
 				printf("Warning-- substitution replacement %s of %s in %s at line %d has _ in it\r\n",replacement,original,name,currentFileLine);
 			D->w.substitutes = S = StoreWord(replacement,AS_IS);  //   the valid word
-			AddInternalFlag(S,SUBSTITUTE_RECIPIENT);
+			AddSystemFlag(S,SUBSTITUTE_RECIPIENT);
 			// for the emotions (like ~emoyes) we want to be able to reverse access, so make them a member of the set
 			if (*S->word == '~') CreateFact(MakeMeaning(D),Mmember,MakeMeaning(S));
 		}
@@ -2538,6 +2585,11 @@ void ExtendDictionary()
 	Mkeywordtopics = MakeMeaning(StoreWord("^keywordtopics"));
 	Mconceptlist = MakeMeaning(StoreWord("^conceptlist"));
  	Mmoney = MakeMeaning(BUILDCONCEPT("~moneynumber"));
+	Musd = MakeMeaning(BUILDCONCEPT("~usd"));
+	Myen = MakeMeaning(BUILDCONCEPT("~yen"));
+	Mcny = MakeMeaning(BUILDCONCEPT("~cny"));
+	Meur = MakeMeaning(BUILDCONCEPT("~eur"));
+	Mgbp = MakeMeaning(BUILDCONCEPT("~gbp"));
 	Mnumber = MakeMeaning(BUILDCONCEPT("~number"));
 	MadjectiveNoun  = MakeMeaning(BUILDCONCEPT("~adjective_noun"));
 	Mpending = MakeMeaning(StoreWord("^pending"));
@@ -2782,8 +2834,9 @@ void DumpDictionaryEntry(char* word,unsigned int limit)
 	if (D->internalBits & TOPIC) Log(STDUSERLOG,"topic ");
 	if (D->internalBits & BUILD0) Log(STDUSERLOG,"build0 ");
 	if (D->internalBits & BUILD1) Log(STDUSERLOG,"build1 ");
+	if (D->internalBits & BUILD2) Log(STDUSERLOG,"build2 ");
 	if (D->internalBits & HAS_EXCLUDE) Log(STDUSERLOG,"has_exclude ");
-	if (D->internalBits & SUBSTITUTE_RECIPIENT) Log(STDUSERLOG,"substituteRecipient ");
+	if (D->systemFlags & SUBSTITUTE_RECIPIENT) Log(STDUSERLOG,"substituteRecipient ");
 	if (D->internalBits & HAS_SUBSTITUTE) 
 	{
 		Log(STDUSERLOG,"substitute=");

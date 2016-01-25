@@ -93,7 +93,7 @@ typedef struct USERFILESYSTEM //  how to access user topic data
 } USERFILESYSTEM;
 
 extern USERFILESYSTEM userFileSystem;
-
+void InitUserFiles();
 void WalkDirectory(char* directory,FILEWALK function, uint64 flags);
 
 char* GetUserPath(char* name);

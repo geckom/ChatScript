@@ -325,7 +325,8 @@ static char* Sscript(char* value)
 	static char hold[50] = ".";
 	if (value) return AssignValue(hold,value);
 	if (*hold != '.') return hold;
-	sprintf(systemValue,"Script1: %s Script0: %s",timeStamp1,timeStamp0);
+	if (topicBlockPtrs[2]) sprintf(systemValue,"Script1: %s Script0: %s Script2: %s",timeStamp[1],timeStamp[0],timeStamp[2]);
+	else sprintf(systemValue,"Script1: %s Script0: %s",timeStamp[1],timeStamp[0]);
     return systemValue;
 }
 

@@ -1,11 +1,12 @@
 #include "common.h"
 #include "evserver.h"
-char* version = "6.01";
+char* version = "6.1b";
 
 #define MAX_RETRIES 20
 clock_t startTimeInfo;							// start time of current volley
 char revertBuffer[MAX_BUFFER_SIZE];			// copy of user input so can :revert if desired
- 
+static int argc;
+static char ** argv;
 char* postProcessing = 0;						// copy of output generated during MAIN control. Postprocessing can prepend to it
 unsigned int tokenCount;						// for document performc
 bool callback = false;						// when input is callback,alarm,loopback, dont want to enable :retry for that...
@@ -143,14 +144,6 @@ void CreateSystem()
 #else
 	os = "LINUX";
 #endif
-	char data[MAX_WORD_SIZE];
-#ifdef EVSERVER
-	sprintf(data,"EVSERVER ChatScript Version %s  %ld bit %s compiled %s\r\n",version,(long int)(sizeof(char*) * 8),os,compileDate);
-#else
-	sprintf(data,"ChatScript Version %s  %ld bit %s compiled %s\r\n",version,(long int)(sizeof(char*) * 8),os,compileDate);
-#endif
-	if (server)  Log(SERVERLOG,"Server %s",data);
-	printf("%s",data);
 
 	if (!buffers) // restart asking for new memory allocations
 	{
@@ -170,6 +163,14 @@ void CreateSystem()
 		newBuffer = AllocateBuffer();
 		baseBufferIndex = bufferIndex;
 	}
+	char data[MAX_WORD_SIZE];
+#ifdef EVSERVER
+	sprintf(data,"EVSERVER ChatScript Version %s  %ld bit %s compiled %s\r\n",version,(long int)(sizeof(char*) * 8),os,compileDate);
+#else
+	sprintf(data,"ChatScript Version %s  %ld bit %s compiled %s\r\n",version,(long int)(sizeof(char*) * 8),os,compileDate);
+#endif
+	if (server)  Log(SERVERLOG,"Server %s",data);
+	printf("%s",data);
 
 	int old = trace; // in case trace turned on by default
 	trace = 0;
@@ -191,6 +192,34 @@ void CreateSystem()
 	computerID[0] = 0;
 	loginName[0] = loginID[0] = 0;
 	*botPrefix = *userPrefix = 0;
+
+	char word[MAX_WORD_SIZE];
+	for (int i = 1; i < argc; ++i)
+	{
+		strcpy(word,argv[i]);
+		if (*word == '"' && word[1] == 'V') 
+		{
+			memmove(word,word+1,strlen(word));
+			size_t len = strlen(word);
+			if (word[len-1] == '"') word[len-1] = 0;
+		}
+		if (*word == 'V') // predefined bot variable
+		{
+			char* eq = strchr(word,'=');
+			if (eq) 
+			{
+
+				*eq = 0;
+				ReturnToLayer(1,true);
+				*word = '$';
+				SetUserVariable(word,eq+1);
+				if (server) Log(SERVERLOG,"botvariable: %s = %s\r\n",word,eq+1);
+				else printf("botvariable: %s = %s\r\n",word,eq+1);
+  				NoteBotVariables();
+				LockLayer(1);
+			}
+		}
+	}
 
 	unsigned int factUsedMemKB = ( factFree-factBase) * sizeof(FACT) / 1000;
 	unsigned int factFreeMemKB = ( factEnd-factFree) * sizeof(FACT) / 1000;
@@ -328,13 +357,15 @@ void ReloadSystem()
 	WordnetLockDictionary();
 }
 
-unsigned int InitSystem(int argc, char * argv[],char* unchangedPath, char* readablePath, char* writeablePath, USERFILESYSTEM* userfiles)
+unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* readablePath, char* writeablePath, USERFILESYSTEM* userfiles)
 { // this work mostly only happens on first startup, not on a restart
+	argc = argcx;
+	argv = argvx;
 	InitFileSystem(unchangedPath,readablePath,writeablePath);
 	if (userfiles) memcpy((void*)&userFileSystem,userfiles,sizeof(userFileSystem));
 	for (unsigned int i = 0; i <= MAX_WILDCARDS; ++i)
 	{
-		*wildcardOriginalText[i] =  *wildcardCanonicalText[i] = 0; 
+		*wildcardOriginalText[i] =  *wildcardCanonicalText[i] = *wildcardConceptText[i] = 0; 
 		wildcardPosition[i] = 0;
 	}
 	strcpy(users,"USERS");
@@ -522,11 +553,10 @@ unsigned int InitSystem(int argc, char * argv[],char* unchangedPath, char* reada
 #endif
 
 	if (volleyLimit == -1) volleyLimit = DEFAULT_VOLLEY_LIMIT;
-	CreateSystem(); // only if we can start a port. If system is already started, we just quit.
+	CreateSystem();
 
 	for (int i = 1; i < argc; ++i)
 	{
-		Log(STDUSERLOG,"%s\r\n",argv[i]); // echo the command param
 #ifndef DISCARDSCRIPTCOMPILER
 		if (!strnicmp(argv[i],"build0=",7))
 		{
@@ -571,12 +601,17 @@ unsigned int InitSystem(int argc, char * argv[],char* unchangedPath, char* reada
 	return 0;
 }
 
-void CloseSystem()
+void PartiallyCloseSystem()
 {
 	FreeAllUserCaches(); // user system
     CloseDictionary();	// dictionary system
     CloseFacts();		// fact system
 	CloseBuffers();		// memory system
+}
+
+void CloseSystem()
+{
+	PartiallyCloseSystem();
 
 #ifndef DISCARDSERVER
 	CloseServer();
@@ -832,10 +867,10 @@ void ResetToPreUser() // prepare for multiple sentences being processed - data l
 	memset(wordStarts,0,sizeof(char*)*MAX_SENTENCE_LENGTH); // reinit for new volley - sharing of word space can occur throughout this volley
 
 	//  Revert to pre user-loaded state, fresh for a new user
-	ReturnToFreeze();  // dict/fact/strings reverted and any extra topic loaded info
+	ReturnToLayer(1,false);  // dict/fact/strings reverted and any extra topic loaded info
 	ReestablishBotVariables(); // any changes user made to a variable will be reset
-	ResetTopicSystem();
-	ResetUser();
+	ResetTopicSystem(false);
+	ResetUserChat();
 	ResetFunctionSystem();
 	ResetTokenSystem();
 	ResetTopicReply();
@@ -938,7 +973,7 @@ void FinishVolley(char* incoming,char* output,char* postvalue)
 			if (*incoming && regression == NORMAL_REGRESSION) Log(STDUSERLOG,"(%s) %s ==> %s %s\r\n",activeTopic,TrimSpaces(incoming),Purify(output),buff); // simpler format for diff
 			else if (!*incoming) 
 			{
-				Log(STDUSERLOG,"Start: user:%s bot:%s ip:%s rand:%d (%s) %d ==> %s  When:%s Version:%s Build0:%s Build1:%s 0:%s F:%s P:%s %s\r\n",loginID,computerID,callerIP,randIndex,activeTopic,volleyCount,Purify(output),when,version,timeStamp0,timeStamp1,timeturn0,timeturn15,timePrior,buff); // conversation start
+				Log(STDUSERLOG,"Start: user:%s bot:%s ip:%s rand:%d (%s) %d ==> %s  When:%s Version:%s Build0:%s Build1:%s 0:%s F:%s P:%s %s\r\n",loginID,computerID,callerIP,randIndex,activeTopic,volleyCount,Purify(output),when,version,timeStamp[0],timeStamp[1],timeturn0,timeturn15,timePrior,buff); // conversation start
 			}
 			else 
 			{
@@ -980,6 +1015,7 @@ int PerformChatGivenTopic(char* user, char* usee, char* incoming,char* ip,char* 
 
 int PerformChat(char* user, char* usee, char* incoming,char* ip,char* output)
 { //   primary entrypoint for chatbot -- null incoming treated as conversation start.
+	
 	if (!documentMode)
 	{
 		docTime = ElapsedMilliseconds();

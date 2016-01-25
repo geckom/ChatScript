@@ -865,7 +865,7 @@ static void DoAssigns(char* ptr)  // find variable assignments
 		else if (percent) at = percent;
 		else while ((underscore = strchr(spot,'_')))  // may not be real yet, might be like New_year's_eve 
 		{
-			if (IsDigit(underscore[1])) 
+			if (IsDigit(underscore[1]) && *(underscore-1) != '@') 
 			{
 				at = underscore;
 				break;
@@ -898,6 +898,23 @@ static void DoAssigns(char* ptr)  // find variable assignments
 		if (ptr) memset(at,' ',ptr-at);
 	}
 
+	// do all positional locators
+	char* posn = ptr;
+	while ((posn = strchr(posn,'@')))
+	{
+		if (*(posn-1) == ' ' && posn[1] == '_' && IsDigit(posn[2]))
+		{
+			if (!first) first = posn; // end with this test
+			int matchvar = atoi(posn+2);
+			// at is the soonest assignment
+			char* eq = strchr(posn,'='); // has an assignment
+			if (!eq) break; // no assignment
+			int pos = atoi(eq+1); 
+			wildcardPosition[matchvar] = pos;	// do the assignment
+		}
+		++posn;
+	}
+
 	// do all word memberships
 	char* mem = ptr;
 	while ((mem = strchr(mem,'?'))) 
@@ -919,8 +936,33 @@ static void DoAssigns(char* ptr)  // find variable assignments
 		++mem;
 	}
 	
+	// do all positional marks  2+=xxx 
+	mem = ptr;
+	while ((mem = strstr(mem,"+="))) 
+	{
+		if (IsDigit(*(mem-1)))
+		{
+			char* at = mem;
+			while (*--at != ' ')
+			{
+				if (!IsDigit(*(mem-1))) break; // not a number
+			}
+			/// NOT COMPLETE CODE
+			if (*at == ' ')
+			{
+				char var[MAX_WORD_SIZE];
+				*mem = 0;
+				ReadCompiledWord(at,var);
+				if (!first) first = at; // end with this test
+				char set[MAX_WORD_SIZE];
+				int posn = atoi(at+1); // the position of the word
+				ReadCompiledWord(mem+1,set); // the mark to make
+				*mem = '+';
+			}
+		}
+		++mem;
+	}
 	if (first)  *first = 0; // remove all assignments
-
 }
 
 static void C_TestPattern(char* input)
@@ -1852,7 +1894,7 @@ reloop:
 	unsigned int parseBad = 0;
 	unsigned int ambigSentences = 0;
 
-	ReturnToFreeze();
+	ReturnToLayer(1,true);
 	StoreWord("NN");
 	StoreWord("NNS");
 	StoreWord("NNP");
@@ -1885,8 +1927,7 @@ reloop:
 	StoreWord("CD");
 	StoreWord("EX");
 	StoreWord("FW");
-
-	FreezeBasicData();
+	LockLayer(1);
 	ambiguousWords = 0;
 
 	FILE* oldin = NULL;
@@ -1999,7 +2040,7 @@ reloop:
 		char* answer1;
 		tokenControl = STRICT_CASING | DO_ESSENTIALS | DO_POSTAG | DO_CONTRACTIONS | NO_HYPHEN_END | NO_COLON_END | NO_SEMICOLON_END | TOKEN_AS_IS;
 		if (!raw && !ambig && !showUsed) tokenControl |= DO_PARSE;
-		ReturnToFreeze();
+		ReturnToLayer(1,false);
 		PrepareSentence(buffer,true,true);	
 		if (sentenceLengthLimit && (int)wordCount != sentenceLengthLimit) continue; // looking for easy sentences to fix
 		unsigned int actualLen = len;
@@ -2595,7 +2636,7 @@ static void C_VerifyPos(char* file)
 			DoCommand(ptr,output);
 			continue;
 		}
-		ReturnToFreeze(); // dont let dictionary tamper affect this. A problem with ANY multiple sentence input...
+		ReturnToLayer(1,false); // dont let dictionary tamper affect this. A problem with ANY multiple sentence input...
 	
 		++count;
 		strcpy(sentence,ptr);
@@ -3709,7 +3750,9 @@ static void C_Build(char* input)
 
 		char word[MAX_WORD_SIZE];
 		sprintf(word,"files%s.txt",file);
-		buildId = (file[len-1] == '0') ? BUILD0 : BUILD1; // global so SaveCanon can work
+		if (file[len-1] == '0') buildId = BUILD0;
+		else if  (file[len-1] == '2') buildId = BUILD2;
+		else buildId = BUILD1; // global so SaveCanon can work
 		ReadTopicFiles(word,buildId,spell); 
 		if (!stricmp(computerID,"anonymous")) *computerID = 0;	// use default
 		CreateSystem();
@@ -3736,7 +3779,7 @@ static void C_Restart(char* input)
 	*initialInput = 0;
 	trace = 0;
 	ClearUserVariables();
-	CloseSystem();
+	PartiallyCloseSystem();
 	CreateSystem();
 	InitStandalone();
 	if (!server)
@@ -4549,6 +4592,7 @@ static void ShowQuery(WORDP D,uint64 junk)
 	{
 		if (D->internalBits & BUILD0) Log(STDUSERLOG,"BUILD0 ");
 		if (D->internalBits & BUILD1) Log(STDUSERLOG,"BUILD1 ");
+		if (D->internalBits & BUILD2) Log(STDUSERLOG,"BUILD2 ");
 		Log(STDUSERLOG,"Query: %s \"%s\"\n",D->word,D->w.userValue);
 	}
 }
@@ -5091,7 +5135,7 @@ static void C_TopicInfo(char* input)
 		input = ptr;
 	}
 	else if (*word == '~')  input = ptr;
-	
+
 	size_t len = 0;
 	char* x = strchr(word,'*');
 	if (x) len = x - word;
@@ -5099,11 +5143,13 @@ static void C_TopicInfo(char* input)
 
 	for (unsigned int topicid = 1; topicid <= numberOfTopics; ++topicid) 
 	{
-		if (!*GetTopicName(topicid)) continue;
-		if (len && strnicmp(GetTopicName(topicid),word,len)) continue;
+		char* tname = GetTopicName(topicid);
+		if (!*tname) continue;
+		if (len && strnicmp(tname,word,len)) continue;
 		topicBlock* block = TI(topicid);
 
-		WORDP D = FindWord(GetTopicName(topicid));
+		WORDP D = FindWord(tname);
+		Log(STDUSERLOG,"\r\nTopic: %s  ",D->word);
 		int rejoinderOffset = -1;
 		if ((int)topicid == inputRejoinderTopic) rejoinderOffset = inputRejoinderRuleID;
 		bool used = true;
@@ -5136,29 +5182,29 @@ static void C_TopicInfo(char* input)
 		{
 			Log(STDUSERLOG,"%s",DisplayTopicFlags(topicid));
 			Log(STDUSERLOG,"Bot: %s\r\n",block->topicRestriction ? block->topicRestriction : (char*)"all");
-			if (block->topicLastGambitted == 0 && block->topicLastRespondered == 0 && block->topicLastRejoindered == 0) Log(STDUSERLOG,"Seen: never visited");
-			else Log(STDUSERLOG,"Seen: last gambit %d   last rejoinder %d  lastresponder\r\n", block->topicLastGambitted,block->topicLastRespondered,block->topicLastRejoindered);
+			if (block->topicLastGambitted == 0 && block->topicLastRespondered == 0 && block->topicLastRejoindered == 0) Log(STDUSERLOG,"  Seen: never visited");
+			else Log(STDUSERLOG,"  Seen: last gambit %d   last rejoinder %d  lastresponder\r\n", block->topicLastGambitted,block->topicLastRespondered,block->topicLastRejoindered);
 		}
 
 		if (keys) // display all keys (execpt recursive wordnet)
 		{
-			Log(STDUSERLOG,"\r\nTopic Keys: %s\r\n",D->word);
+			Log(STDUSERLOG,"\r\n  Keys:\r\n");
 			NextInferMark();
 			if (D->internalBits & HAS_EXCLUDE) MarkExclude(D);
 			FACT* F = GetObjectNondeadHead(D);
 			size_t length = 2;
-			Log(STDUSERLOG,"  ");
+			Log(STDUSERLOG,"    ");
 			while (F)
 			{
 				shownItem = false;
 				if (F->verb == Mmember) TrackFactsDown(F->subject,F,1,length,true); 
 				F = GetObjectNondeadNext(F);
 			}
-			Log(STDUSERLOG,"\r\n");
 		}
 		shownItem = false;
 		if (overlap)
 		{
+			if (GetObjectNondeadHead(D)) Log(STDUSERLOG,"\r\n");
 			FACT* F = GetObjectNondeadHead(D);
 			NextInferMark();
 			D->inferMark = inferMark;
@@ -5171,7 +5217,7 @@ static void C_TopicInfo(char* input)
 				{
 					if (!started)
 					{
-						Log(STDUSERLOG,"\r\nTopic Key Overlap: %s\r\n",D->word);
+						Log(STDUSERLOG,"\r\nKey Overlap: %s\r\n",D->word);
 						started = true;
 					}
 					if (shownItem) 
@@ -5183,7 +5229,6 @@ static void C_TopicInfo(char* input)
 				}
 				F = GetObjectNondeadNext(F);
 			}
-			Log(STDUSERLOG,"\r\n");
 		}
 
 		if ((used || available) && !gambit && !rejoinder && !responder) rejoinder = gambit = responder = true;
@@ -5198,7 +5243,7 @@ static void C_TopicInfo(char* input)
 		char* name = GetTopicName(topicid);
 		char* data = GetTopicData(topicid);
 		bool access = true;
-
+		Log(STDUSERLOG,"\r\n  Rules:\r\n");
 		while (data && *data) // walk data
 		{
 			char* rule = ShowRule(data);
@@ -5238,7 +5283,7 @@ static void C_TopicInfo(char* input)
 			}
 			data = FindNextRule(NEXTRULE,data,id);
 		}
-		if (all) Log(STDUSERLOG,"%s(%d)  gambits: %d  responders: %d (?:%d s:%d u:%d)  rejoinders: %d\r\n", name,topicid,gambits,statements+questions+dual,statements, questions, dual,rejoinders);
+		if (all) Log(STDUSERLOG,"  gambits: %d  responders: %d (?:%d s:%d u:%d)  rejoinders: %d\r\n", gambits,statements+questions+dual,statements, questions, dual,rejoinders);
 	}
 }
 
@@ -7547,7 +7592,7 @@ CommandInfo commandSet[] = // NEW
 	
 	{"\r\n---- internal support",0,""}, 
 	{":topicdump",C_TopicDump,"Dump topic data suitable for inclusion as extra topics into TMP/tmp.txt (:extratopic or PerformChatGivenTopic)"},
-	{":builddict",BuildDictionary," short, short init, or wordnet are options instead of default full"}, 
+	{":builddict",BuildDictionary," basic, layer0, layer1, or wordnet are options instead of default full"}, 
 	{":clean",C_Clean,"Convert source files to NL instead of CR/LF for unix"},
 #ifndef DISCARDDATABASE
 	{":endpguser",C_EndPGUser,"Switch from postgres user topic to file system"},
@@ -7611,13 +7656,13 @@ bool VerifyAuthorization(FILE* in) //   is he allowed to use :commands
 
 void SortTopic(WORDP D,uint64* junk)
 {
-	if (!(D->internalBits & (BUILD0|BUILD1))) return; // ignore internal system topics (of which there are none)
+	if (!(D->internalBits & (BUILD0|BUILD1|BUILD2))) return; // ignore internal system topics (of which there are none)
 	if (D->internalBits & TOPIC) Sortit(D->word,(int)(long long)junk);
 }
 
 void SortTopic0(WORDP D,uint64 junk)
 {
-	if (!(D->internalBits & (BUILD0|BUILD1))) return; // ignore internal system concepts
+	if (!(D->internalBits & (BUILD0|BUILD1|BUILD2))) return; // ignore internal system concepts
 	if (!(D->internalBits & TOPIC)) return;
 	CreateFact(MakeMeaning(D),Mmember,MakeMeaning(StoreWord("~_dummy",AS_IS)));
 }

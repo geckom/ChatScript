@@ -223,8 +223,6 @@
     Upupidae~1nz (^bird_family~1) hoopoes
  Underground_Railway ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Underground_Railroad~1n 
- Ursus_arctos_horribilis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Ursus_horribilis~1nz (^Ursus_arctos~1) powerful brownish-yellow bear of the uplands of western North America
  usance ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     usage~1n 
     use~6n 
@@ -473,13 +471,13 @@
     underachievement~1nz (^performance~1) poorer than expected performance
  unauthorized_absence ( meanings=1 NOUN NOUN_SINGULAR ) 
     absence_without_leave~1n 
- unauthorized ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ unauthorized ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     unauthorised~1az not endowed with authority
     wildcat~5a 
     unauthorized~3az 
  Underground_Railroad ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Underground_Railway~1nz (^flight~1) secret aid to escaping slaves that was provided by abolitionists in the years before the American Civil War
- upset ( meanings=18 glosses=15 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) (null) ) conjugate=upset comparative=upsetter 
+ upset ( meanings=18 glosses=15 NOUN_ABSTRACT VERB_PRESENT VERB_PAST VERB_PAST_PARTICIPLE VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) conjugate=upset comparative=upsetter 
     overturn~1nz (^success~1) an improbable and unexpected victory
     turnover~1nz (^inversion~2) the act of upsetting something
     overthrow~2nz (^disturbance~1) the act of disturbing the mind or body
@@ -719,6 +717,8 @@
     Syrian_bear~1nz (^Ursus_arctos~1) yellowish-grey Syrian brown bear
  Ursus_horribilis ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     silver-tip~1n 
+ Ursus_arctos_horribilis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
+    silvertip~1nz (^Ursus_arctos~1) powerful brownish-yellow bear of the uplands of western North America
  Ursus_middendorffi ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Kodiak~1n 
  Ursus_arctos_middendorffi ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -764,7 +764,7 @@
     genus_Urophycis~1n 
  Uranoscopidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Uranoscopidae~1nz (^fish_family~1) stargazers
- upper ( meanings=7 glosses=5 MORE_FORM NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) comparative=up 
+ upper ( meanings=7 glosses=5 MORE_FORM NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=up 
     pep_pill~1n 
     upper~2nz (^piece_of_leather~1) piece of leather or synthetic material that forms the part of a shoe or boot above the sole that encases the foot
     upper_berth~1nz (^built_in_bed~1) the higher of two berths
@@ -1260,11 +1260,11 @@
     tinge~1nz (^shade~3) a pale or subdued color
     undercurrent~1n 
     undertone~3nz (^tone~8) a quiet or hushed tone of voice
- umber ( meanings=3 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ umber ( meanings=3 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     deep_brown~1n 
     umber~2nz (^earth_color~1) an earth pigment
     umber~3az of the color of any of various natural brown earth pigments
- ultramarine ( meanings=4 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ ultramarine ( meanings=4 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE ) 
     ultramarine~1nz (^blue~1) a vivid blue to purple-blue color
     ultramarine_blue~1n 
     ultramarine~3az of a brilliant pure blue to purplish blue color
@@ -1467,7 +1467,7 @@
     unskillfulness~1nz (^inability~2) a lack of cognitive skill
  uncreativeness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     uncreativeness~1nz (^inability~2) a lack of creativity
- understanding ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB (null) ) 
+ understanding ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:VERB ) 
     intellect~2n 
     savvy~1nz (^knowing~1) the cognitive condition of someone who understands
     sympathy~1n 
@@ -1641,7 +1641,7 @@
     service_program~1nz (^program~5) a program designed for general support of the processes of a computer
  utility_routine ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     service_routine~1nz (^function~3) a routine that can be used as needed
- update ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ update ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
     update~1nz (^word~2) news that updates your information
     update~2vz modernize or bring up to date
     update~3vz bring to the latest state of technology
@@ -1734,7 +1734,7 @@
     Ugaritic~1nz (^Canaanitic_language~1) an extinct Semitic language of northern Syria
  Umbundu ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Umbundu~1nz (^Bantoid_language~1) a Bantu language spoken in Angola
- upbeat ( meanings=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE (null) ) 
+ upbeat ( meanings=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
     offbeat~1n 
     well-being~1n 
     cheerful~2a 
@@ -1816,7 +1816,7 @@
     ulceration~2n 
  upside-down_cake ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     skillet_cake~1nz (^cake~2) batter baked atop a layer of sweetened fruit then turned upside down so fruit is on top
- upside-down ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADVERB (null) ) 
+ upside-down ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADVERB ) 
     inverted~2az being in such a position that top and bottom are reversed
  unleavened_bread ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     matzo~1nz (^bread~1) brittle flat bread eaten at Passover
@@ -2300,7 +2300,7 @@
     Uncle_Sam~1nz (^character~7) a personification of the United States government
  unusual_person ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     anomaly~2nz (^individual~1) a person who is unusual
- unusual ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ unusual ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     unusual~1az not commonly encountered
     unusual~2az not usual or common or ordinary
     strange~2a 
@@ -2439,7 +2439,7 @@
     unionist~1n 
  ugly_duckling ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     ugly_duckling~1nz (^unusual_person~1) an ugly or unpromising child who grows into a beautiful or worthy person
- ugly ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=ugliest 
+ ugly ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=ugliest 
     horrible~1az provoking horror
     ugly~2az displeasing to the senses
     worthless~1az morally reprehensible
@@ -2463,7 +2463,7 @@
  understudy ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT ) 
     standby~2nz (^player~1) an actor able to replace a regular performer when required
     alternate~9vz be an understudy or alternate for a role
- undesirable ( meanings=4 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE (null) ) 
+ undesirable ( meanings=4 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
     undesirable~1nz (^persona_non_grata~1) one whose presence is undesirable
     unwanted~1az not wanted
     unsuitable~1az not worthy of being chosen
@@ -2902,7 +2902,7 @@
     ubiquitousness~1n 
  unanimity ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     unanimity~1nz (^accord~4) everyone being of one mind
- umbra ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN (null) ) plural=umbrae 
+ umbra ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) plural=umbrae 
     umbra~1nz (^shadow~9) a region of complete shadow resulting from total obstruction of light
  unbalance ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     instability~4n 
@@ -3163,7 +3163,7 @@
  until ( meanings=2 PREPOSITION CONJUNCTION_SUBORDINATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION TIMEWORD ) 
     until~1z 
     until~2z 
- unable ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ unable ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 GRADE3_4 posdefault:ADJECTIVE ) 
     unable~1az not having the necessary means or skill or know-how
     unable~2az lacking necessary physical or mental ability
     ineffectual~2az lacking in power or forcefulness
@@ -3236,7 +3236,7 @@
     unfaithful~5az 
  used_to ( meanings=1 VERB_PAST VERB_PAST_PARTICIPLE AUX_VERB_PAST VERB ADJECTIVE_ONLY_PREDICATE KINDERGARTEN VERB_CONJUGATE1 ) 
     used_to~1vz 
- used ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON2 COMMON1 GRADE1_2 posdefault:VERB (null) ) 
+ used ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON2 COMMON1 GRADE1_2 posdefault:VERB ) 
     secondhand~1az previously used or owned by another
     used~2az employed in accomplishing something
     victimised~1az of persons
@@ -3746,7 +3746,7 @@
  unbuttoned ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     unfastened~2a 
     unlaced~2az not under constraint in action or expression
- uncounted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ uncounted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     numberless~1a 
  unnumberable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     uncounted~1a 
@@ -3783,7 +3783,7 @@
  up_in_the_air ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     up_in_the_air~1az 
     up_in_the_air~2az 
- unsure ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ unsure ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     uncertain~3a 
     timid~4a 
     unsure~3az 
@@ -3937,7 +3937,7 @@
  unsparing ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     unsparing~1az not forbearing
     munificent~1a 
- unthinking ( meanings=5 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ unthinking ( meanings=5 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     lumpish~1az mentally sluggish
     thoughtless~1a 
     unreflective~1a 
@@ -4018,7 +4018,7 @@
     usual~1az occurring or encountered or experienced or observed frequently or in accordance with regular practice or procedure
     common~4a 
     usual~3az 
- unique ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ unique ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     unique~1az highly unusual or rare but not the single instance
     alone~1a 
     unique~3az applying exclusively to a given category or condition or locality
@@ -4048,7 +4048,7 @@
     odd~6a 
  unmatchable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     unmatched~1a 
- unrivaled ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 (null) ) 
+ unrivaled ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     unmatchable~1a 
     unrivaled~2az 
  unrivalled ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -4089,7 +4089,7 @@
     undecided~4az 
  undedicated ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     undedicated~1az not dedicated
- utter ( meanings=6 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) comparative=utterer 
+ utter ( meanings=6 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=utterer 
     dead~8a 
     stark~3a 
     express~7v 
@@ -4536,7 +4536,7 @@
     underage~3az 
  unaffiliated ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     unaffiliated~1az not affiliated
- unbiased ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ unbiased ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     unbiassed~1a 
     indifferent~7a 
     unbiased~3az 
@@ -4635,7 +4635,7 @@
     unsubmissive~1a 
  unsubmissive ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     unservile~1az not servile or submissive
- under ( meanings=11 glosses=10 PARTICLE ADJECTIVE ADVERB PREPOSITION ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB posdefault:PREPOSITION (null) ) 
+ under ( meanings=11 glosses=10 PARTICLE ADJECTIVE ADVERB PREPOSITION ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB posdefault:PREPOSITION ) 
     under~1az lower in rank, power, or authority
     nether~1az located below or beneath something else
     below~5bz further down
@@ -4721,7 +4721,7 @@
  unpolished ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     gauche~1az lacking social polish
     unpolished~2az not carefully reworked or perfected or made smooth by polishing
- unsuitable ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ unsuitable ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     undesirable~3a 
     unsuitable~2az not meant or adapted for a particular purpose
     unsuitable~3az not conducive to good moral development
@@ -4802,7 +4802,7 @@
     unflattering~1az showing or representing unfavorably
  unflattering ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     uncomplimentary~2a 
- unhappy ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) comparative=unhappiest 
+ unhappy ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=unhappiest 
     dysphoric~1az generalized feeling of distress
     infelicitous~2az marked by or producing unhappiness
     unhappy~3az experiencing or marked by or causing sadness or sorrow or discontent
@@ -4976,7 +4976,7 @@
  unfastidious ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     unfastidious~1az marked by an absence of due or proper care or attention to detail
     unfastidious~2az not exacting in nutritional requirements
- underweight ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ underweight ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE3_4 posdefault:ADJECTIVE ) 
     scrawny~1a 
     underweight~2az 
  unsoundable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -5061,7 +5061,7 @@
  unliterary ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     nonliterary~1a 
     unliterary~2az 
- unlucky ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ unlucky ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE3_4 posdefault:ADJECTIVE ) 
     doomed~4az marked by or promising bad fortune
     luckless~1az having or bringing misfortune
     unlucky~3az 
@@ -5154,7 +5154,7 @@
     too-generous~1a 
  unstinting ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     unstinted~1a 
- unselfish ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ unselfish ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     unselfish~1az not greedy
     unselfish~2az disregarding your own advantages and welfare over those of others
     unselfish~3az 
@@ -5436,7 +5436,7 @@
     lowbrow~2az characteristic of a person who is not cultivated or does not have intellectual tastes
     uncultivated~2az not prepared for raising crops
     uncultured~1az lacking art or knowledge
- unintelligent ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ unintelligent ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     stupid~4a 
     unintelligent~2az 
  unintended ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -5529,7 +5529,7 @@
     unlaureled~1az not crowned with laurel
  undersize ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     undersized~1a 
- undersized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ undersized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     undersize~1az smaller than normal for its kind
  uncaulked ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     uncaulked~1az not caulked or sealed
@@ -5557,7 +5557,7 @@
     unlike~3z 
  unalike ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     dissimilar~2a 
- unlikely ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ unlikely ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     unlikely~1az has little chance of being the case or coming about
     improbable~2az not likely to be true or to occur or to have occurred
     improbable~3a 
@@ -5786,7 +5786,7 @@
  univalent ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     monovalent~1a 
     univalent~2az used of a chromosome that is not paired or united with its homologous chromosome during synapsis
- umpteen ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 (null) ) 
+ umpteen ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     umteen~1az innumerable but many
  umteen ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     umpteen~1a 
@@ -6867,7 +6867,7 @@
     tax-free~1a 
  unratable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     unratable~1az not subject to locally assessed property taxes
- uptight ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ uptight ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     jittery~1a 
     uptight~2az 
  unrelaxed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -6885,14 +6885,14 @@
     unthoughtful~1az not exhibiting or characterized by careful thought
  unthoughtful ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     unthinking~3a 
- uneconomic ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ uneconomic ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     uneconomical~2a 
     uneconomic~2az 
  uncluttered ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     unlittered~1az having nothing extraneous
  unlittered ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     uncluttered~1a 
- untidy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) comparative=untidiest 
+ untidy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) comparative=untidiest 
     untidy~1az not neat and tidy
     untidy~2az 
  unkempt ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
@@ -7069,7 +7069,7 @@
  unwilled ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     unwilled~1az without deliberate volition
     unintentional~2a 
- unwilling ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ unwilling ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     unwilling~1az in spite of contrary volition
     unwilling~2az not disposed or inclined toward
     unwilling~3az 
@@ -8685,7 +8685,7 @@
     uniformize~1v 
  unsanctify ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     unsanctify~1vz remove the sanctification from or make unsanctified
- understand ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=understood 
+ understand ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=understood 
     understand~1vz know and comprehend the nature or meaning of
     realize~1v 
     infer~1vz believe to be the case
@@ -8701,7 +8701,7 @@
     pep_up~2v 
  unsay ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     take_back~2v 
- upbraid ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ upbraid ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     reproach~3vz express criticism towards
  unteach ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     unteach~1vz cause to disbelieve

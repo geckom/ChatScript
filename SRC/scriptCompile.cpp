@@ -17,6 +17,7 @@ uint64 buildId; // current build
 #define MAX_WARNINGS 150
 static char warnings[MAX_WARNINGS][MAX_WORD_SIZE];
 static unsigned int warnIndex = 0;
+static char baseName[MAX_WORD_SIZE];
 
 #define MAX_ERRORS 150
 static char errors[MAX_ERRORS][MAX_WORD_SIZE];
@@ -32,16 +33,16 @@ uint64 buildID = 0;
 
 static char* topicFiles[] = //   files created by a topic refresh from scratch 
 {
-	"TOPIC/describex.txt",		//   document variables functions concepts topics etc
-	"TOPIC/factsx.txt",			//   hold facts	
-	"TOPIC/keywordsx.txt",		//   holds topic and concepts keywords
-	"TOPIC/macrosx.txt",		//   holds macro definitions
-	"TOPIC/scriptx.txt",		//   hold topic definitions
-	"TOPIC/plansx.txt",			//   hold plan definitions
-	"TOPIC/patternWordsx.txt",	//   things we want to detect in patterns that may not be normal words
-	"TOPIC/dictx.txt",			//   dictionary changes	
-	"TOPIC/privatex.txt",		//   private substitutions changes	
-	"TOPIC/canonx.txt",			//   private canonical values 	
+	"TOPIC/describe",		//   document variables functions concepts topics etc
+	"TOPIC/facts",			//   hold facts	
+	"TOPIC/keywords",		//   holds topic and concepts keywords
+	"TOPIC/macros",			//   holds macro definitions
+	"TOPIC/script",			//   hold topic definitions
+	"TOPIC/plans",			//   hold plan definitions
+	"TOPIC/patternWords",	//   things we want to detect in patterns that may not be normal words
+	"TOPIC/dict",			//   dictionary changes	
+	"TOPIC/private",		//   private substitutions changes	
+	"TOPIC/canon",			//   private canonical values 	
 
 	"TOPIC/missingLabel.txt",	//   reuse/unerase needing delayed testing for label
 	"TOPIC/missingSets.txt",	//   sets needing delayed testing
@@ -87,15 +88,14 @@ void ScriptError()
 	}
 }
 
-void EraseTopicFiles(uint64 build)
+void EraseTopicFiles(uint64 build,char* name)
 {
 	int i = -1;
 	while (topicFiles[++i])
 	{
-		strcpy(tmpWord,topicFiles[i]);
-		char* ptr = strchr(tmpWord,'.') - 1;
-		if (*ptr == 'x') *ptr = (build == BUILD0) ? '0' : '1'; // unique name per file build
-		remove(tmpWord);
+		char word[MAX_WORD_SIZE];
+		sprintf(word,"%s%s.txt",topicFiles[i],name);
+		remove(word);
 	}
 }
 
@@ -413,7 +413,7 @@ char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore) //   how w
 					strcpy(tmp,at); // protect chunk
 					sprintf(hat+1,"%d%s",(unsigned int)D->properties,tmp);
 				}
-				else if (!renameInProgress)
+				else if (!renameInProgress && false) // too unreliable
 				{
 					char c = *at;
 					*at = 0;
@@ -481,7 +481,7 @@ char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore) //   how w
 #endif		
 						}
 					}
-					else if (!renameInProgress)  
+					else if (!renameInProgress && false)  
 					{
 						char c = *at;
 						*at = 0;
@@ -527,8 +527,14 @@ char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore) //   how w
 	}
 
 	// the normal composite token
-	while (*ptr && *ptr != ' ' && *ptr != '\t' && *ptr != ENDUNIT) 
+	bool quote = false;
+	while (*ptr) 
 	{
+		if (*ptr == ENDUNIT) break;
+		if (patternContext && quote) {} // allow stuff in comparison quote
+		else if (*ptr == ' ' || *ptr == '\t') break;
+		if (patternContext && *ptr == '"') quote = !quote;
+
 		char c = *ptr++;
 		*word++ = c;
 		*word = 0;
@@ -611,7 +617,7 @@ char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore) //   how w
 	{
 		WORDP D = FindWord(word);
 		if (D && D->internalBits & RENAMED) sprintf(word+1,"%d",(unsigned int)D->properties); // remap match var convert to number
-		else if (!renameInProgress && !patternContext)  // patterns can underscore ANYTING
+		else if (false && !renameInProgress && !patternContext)  // patterns can underscore ANYTING
 			WARNSCRIPT("%s is not a recognized _rename. Is it one?\r\n",word)
 	}
 	if (*word == '\'' &&  word[1] == '_' && (IsAlphaUTF8(word[2]) ) ) // is this a rename _ with '
@@ -630,6 +636,19 @@ char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore) //   how w
 			char tmp[MAX_WORD_SIZE];
 			strcpy(tmp,at); // protect chunk
 			sprintf(word+1,"%d%s",(unsigned int)D->properties,tmp);
+		}
+		else if (!renameInProgress)  WARNSCRIPT("%s is not a recognized @rename. Is it intended to be?\r\n",word)
+	}
+	if ( *word == '@' && word[1] == '_' && IsAlphaUTF8(word[2])) // is this a rename @_0+
+	{
+		size_t len = strlen(word);
+		char c = word[len-1];
+		word[len-1] = 0;
+		WORDP D = FindWord(word+1,len-2);
+		word[len-1] = c;
+		if (D && D->internalBits & RENAMED) 
+		{
+			sprintf(word+2,"%d%c",(unsigned int)D->properties,c); // remap @set in string
 		}
 		else if (!renameInProgress)  WARNSCRIPT("%s is not a recognized @rename. Is it intended to be?\r\n",word)
 	}
@@ -1178,7 +1197,7 @@ static void WritePatternWord(char* word)
 	WORDP upper = FindWord(word,0,UPPERCASE_LOOKUP);
 	if (!strcmp(tmp,word))  {;} // came in as lower case
 	else if (upper && GetMeaningCount(upper) > 0){;} // clearly known as upper case
-	else if (lower && lower->properties & (QWORD | FINITE_SET_WORDS) && !(lower->properties & (DETERMINER|AUX_VERB))) WARNSCRIPT("Keyword %s should not be uppercase - did prior rule fail to close\r\n",word)
+	else if (lower && lower->properties & NORMAL_WORD && !(lower->properties & (DETERMINER|AUX_VERB))) WARNSCRIPT("Keyword %s should not be uppercase - did prior rule fail to close\r\n",word)
 	else if (spellCheck && lower && lower->properties & VERB && !(lower->properties & NOUN)) 
 		WARNSCRIPT("Uppercase keyword %s is usually a verb.  Did prior rule fail to close\r\n",word)
 	
@@ -1428,7 +1447,7 @@ static char* ReadCall(char* name, char* ptr, FILE* in, char* &data,bool call)
 		info = &systemFunctionSet[D->x.codeIndex];
 		if (info->argumentCount == STREAM_ARG) isStream = true;
 	}
-	else if (patternContext && !(D->internalBits & IS_PATTERN_MACRO)) BADSCRIPT("CALL-2 Can nly call patternmacro or dual macro from pattern area - %s",name)
+	else if (patternContext && !(D->internalBits & IS_PATTERN_MACRO)) BADSCRIPT("CALL-2 Can only call patternmacro or dual macro from pattern area - %s",name)
 	else if (!patternContext && !(D->internalBits &  (IS_OUTPUT_MACRO | IS_TABLE_MACRO))) BADSCRIPT("CALL-3 Cannot call pattern or table macro from output area - %s",name)
 	
 	for (unsigned int i = 0; i <= 9; ++i) *argset[i] = 0; //   default EVERYTHING before we test it later
@@ -1767,7 +1786,7 @@ static char* ReadDescribe(char* ptr, FILE* in,uint64 build)
 		}
 		ptr = ReadNextSystemToken(in,ptr,description,false);
 		char file[MAX_WORD_SIZE];
-		sprintf(file,"TOPIC/describe%d.txt",(build == BUILD0) ? 0 : 1);
+		sprintf(file,"TOPIC/describe%s.txt",baseName);
 		FILE* out = FopenUTF8WriteAppend(file);
 		fprintf(out," %s %s\r\n",word,description);
 		fclose(out);
@@ -1900,6 +1919,7 @@ name of topic  or concept
 			case '<':	//   sentence start <  or  unordered start <<
 				if (quoteSeen) BADSCRIPT("PATTERN-12 Cannot use ' before < or <<")
 				if (notSeen) BADSCRIPT("PATTERN-13 Cannot use ! before < or <<")
+				if (memorizeSeen) BADSCRIPT("PATTERN-13 Cannot use _ before < or <<")
 				if (word[1] == '<')  //   <<  unordered start
 				{
 					if (memorizeSeen) BADSCRIPT("PATTERN-14 Cannot use _ before << ")
@@ -1933,6 +1953,7 @@ name of topic  or concept
 				break;
 			case '>':	//   sentence end > or unordered end >>
 				if (quoteSeen) BADSCRIPT("PATTERN-21 Cannot use ' before > or >>")
+				if (memorizeSeen) BADSCRIPT("PATTERN-13 Cannot use _ before > or >>")
 				if (word[1] == '>') //   >>
 				{
 					if (memorizeSeen) BADSCRIPT("PATTERN-22 Cannot use _ before  >> ")
@@ -2145,6 +2166,7 @@ name of topic  or concept
 			else if (!*rhs && *comparison == '?' && !comparison[1]);
 			else if (*rhs == '\'' && (rhs[1] == '$' || rhs[1]== '_')); //   unevaled user variable or raw match variable
 			else if (!comparison[2] && *word == '$'); // find in sentence
+			else if (*rhs == '"' && rhs[strlen(rhs)-1] == '"'){;} // quoted string
 			else BADSCRIPT("PATTERN-64 Illegal comparison %s or failed to close prior rule starting at %s",word, GetRuleElipsis(start))
 			int len = (comparison - word) + 2; //   include the = and jump code in length
 
@@ -2812,6 +2834,8 @@ char* ReadOutput(char* ptr, FILE* in,char* &data,char* rejoinders,char* suppleme
 			++data;
 			*data++ = ' ';
 			ReadNextSystemToken(in,ptr,nextToken,false,true); //   aim lookahead at followup
+			if (!stricmp(nextToken,"^respond") || !stricmp(nextToken,"^gambit") ||  !stricmp(nextToken,"^reuse") ||  !stricmp(nextToken,"^refine"))
+					BADSCRIPT("%s always returns null, so assignment is pointless",nextToken)
 			if (!stricmp(nakedNext,"first") || !stricmp(nakedNext,"last") || !stricmp(nakedNext,"random") || !stricmp(nakedNext,"nth") ) 
 				strcpy(assignKind,word); // verify usage fact retrieved from set
 			if (*nextToken == '=' || *nextToken == '<' || *nextToken == '>')
@@ -3189,8 +3213,10 @@ static char* ReadMacro(char* ptr,FILE* in,char* kind,uint64 build)
 
 	if (!table) // tables are not real macros, they are temporary
 	{
+		char filename[MAX_WORD_SIZE];
+		sprintf(filename,"TOPIC/macros%s.txt",baseName);
 		//   write out definition -- this is the real save of the data
-		FILE* out = FopenUTF8WriteAppend(build == BUILD0 ? (char*)"TOPIC/macros0.txt" : (char*)"TOPIC/macros1.txt");
+		FILE* out = FopenUTF8WriteAppend(filename);
 		if ((D->internalBits & FUNCTION_BITS) ==  IS_TABLE_MACRO) fprintf(out,"%s T %d %d %s\r\n",macroName,D->x.macroFlags,functionArgumentCount,data);
 		else if ((D->internalBits & FUNCTION_BITS) == (IS_OUTPUT_MACRO|IS_PATTERN_MACRO))  fprintf(out,"%s %c %d %d %s\r\n",macroName,'D',D->x.macroFlags,functionArgumentCount,data);
 		else fprintf(out,"%s %c %d %d %s\r\n",macroName,((D->internalBits & FUNCTION_BITS) == IS_OUTPUT_MACRO) ? 'O' : 'P',D->x.macroFlags,functionArgumentCount,data);
@@ -3542,6 +3568,7 @@ static char* ReadKeyword(char* word,char* ptr,bool &notted, bool &quoted, MEANIN
 			unsigned int flags = quoted ? ORIGINAL_ONLY : 0;
 			if (duplicate) flags |= FACTDUPLICATE;
 			if (build & BUILD1) flags |= FACTBUILD1; // concept facts from build 1
+			else if (build & BUILD2) flags |= FACTBUILD2; // concept facts from build 1
 			CreateFact(M,(notted) ? Mexclude : Mmember,concept, flags); 
 			quoted = false;
 			notted = false;
@@ -3584,7 +3611,7 @@ static char* ReadTopic(char* ptr, FILE* in,uint64 build)
 	unsigned int toplevelrules = 0; // does not include rejoinders
 	currentRuleID = 0;	// reset rule notation
 	verifyIndex = 0;	
-
+	bool stayRequested = false;
 	if (setjmp(scriptJump[++jumpIndex])) 
 	{
 		ptr = FlushToTopLevel(in,ptr,holdDepth,data); //   if error occurs lower down, flush to here
@@ -3601,7 +3628,8 @@ static char* ReadTopic(char* ptr, FILE* in,uint64 build)
 			strcpy(currentTopicName,word);
 			Log(STDUSERLOG,"Reading topic %s\r\n",currentTopicName);
 			topicName = FindWord(currentTopicName);
-			if (topicName && topicName->internalBits & CONCEPT && !(topicName->internalBits & TOPIC) && topicName->internalBits & (BUILD0|BUILD1)) BADSCRIPT("TOPIC-1 Concept already defined with this topic name %s",currentTopicName)
+			if (topicName && topicName->internalBits & CONCEPT && !(topicName->internalBits & TOPIC) && topicName->internalBits & (BUILD0|BUILD1|BUILD2)) 
+				BADSCRIPT("TOPIC-1 Concept already defined with this topic name %s",currentTopicName)
 			topicName = StoreWord(currentTopicName);
 			if (!IsLegalName(currentTopicName)) BADSCRIPT("TOPIC-2 Illegal characters in topic name %s",currentTopicName)
 			topic = MakeMeaning(topicName);
@@ -3672,9 +3700,17 @@ static char* ReadTopic(char* ptr, FILE* in,uint64 build)
 				else if (!stricmp(word,"repeat")) flags |= TOPIC_REPEAT; 
 				else if (!stricmp(word,"safe")) flags |= -1 ^TOPIC_SAFE;
 				else if (!stricmp(word,"share")) flags |= TOPIC_SHARE;
-				else if (!stricmp(word,"stay")) flags &= -1 ^TOPIC_NOSTAY;
+				else if (!stricmp(word,"stay")) 
+				{
+					flags &= -1 ^TOPIC_NOSTAY;
+					stayRequested = true;
+				}
 				else if (!stricmp(word,"erase")) flags &= -1 ^TOPIC_KEEP;
-				else if (!stricmp(word,"system")) flags |= TOPIC_SYSTEM | TOPIC_KEEP | TOPIC_NOSTAY;
+				else if (!stricmp(word,"system")) 
+				{
+					flags |= TOPIC_SYSTEM | TOPIC_KEEP | TOPIC_NOSTAY;
+					if (stayRequested) BADSCRIPT("TOPIC-4 Topic %s cannot be both STAY and SYSTEM",currentTopicName)
+				}
 				else if (!stricmp(word,"user"));
                 else BADSCRIPT("Bad topic flag %s for topic %s",word,currentTopicName)
 			}
@@ -3717,7 +3753,9 @@ static char* ReadTopic(char* ptr, FILE* in,uint64 build)
 	//   trailing blank after jump code
     SetJumpOffsets(data); 
 	if (len >= (MAX_TOPIC_SIZE-100)) BADSCRIPT("TOPIC-7 Too much data in one topic")
-	FILE* out = FopenUTF8WriteAppend(build == BUILD0 ? "TOPIC/script0.txt" : "TOPIC/script1.txt");
+	char filename[MAX_WORD_SIZE];
+	sprintf(filename,"TOPIC/script%s.txt",baseName);
+	FILE* out = FopenUTF8WriteAppend(filename);
 	
 	// write out topic data
 	char* restriction = (topicName->w.botNames) ? topicName->w.botNames : (char*)"all";
@@ -3910,9 +3948,10 @@ static char* ReadPlan(char* ptr, FILE* in,uint64 build)
 	//   write how many plans were found (for when we preload during normal startups)
 	if (hasPlans == 0)
 	{
-		
+		char filename[MAX_WORD_SIZE];
+		sprintf(filename,"TOPIC/plans%s.txt",baseName);
 		// init the plan output file
-		FILE* out = FopenUTF8Write(build == BUILD0 ? (char*)"TOPIC/plans0.txt" : (char*)"TOPIC/plans1.txt");
+		FILE* out = FopenUTF8Write(filename);
 		fprintf(out,"0     \r\n"); //   reserve 5-digit count for number of plans
 		fclose(out);
 	}
@@ -3972,9 +4011,9 @@ static char* ReadReplace(char* ptr, FILE* in, uint64 build)
 			break; 
 		}
 		ptr = ReadNextSystemToken(in,ptr,replace,false);
-		char file[MAX_WORD_SIZE];
-		sprintf(file,"TOPIC/private%d.txt",(build == BUILD0) ? 0 : 1);
-		FILE* out = FopenUTF8WriteAppend(file);
+		char filename[MAX_WORD_SIZE];
+		sprintf(filename,"TOPIC/private%s.txt",baseName);
+		FILE* out = FopenUTF8WriteAppend(filename);
 		fprintf(out," %s %s\r\n",word,replace);
 		fclose(out);
 	}
@@ -3983,9 +4022,9 @@ static char* ReadReplace(char* ptr, FILE* in, uint64 build)
 
 void SaveCanon(char* word, char* canon)
 {
-	char file[MAX_WORD_SIZE];
-	sprintf(file,"TOPIC/canon%d.txt",(buildId == BUILD0) ? 0 : 1);
-	FILE* out = FopenUTF8WriteAppend(file);
+	char filename[MAX_WORD_SIZE];
+	sprintf(filename,"TOPIC/canon%s.txt",baseName);
+	FILE* out = FopenUTF8WriteAppend(filename);
 	fprintf(out," %s %s\r\n",word,canon);
 	fclose(out);
 	WritePatternWord(word);		// must recognize this word for spell check
@@ -4116,7 +4155,7 @@ static char* ReadConcept(char* ptr, FILE* in,uint64 build)
 			undeclared = false; // dont test this again
 			if (!more)
 			{
-				if (D->internalBits & CONCEPT && D->internalBits & (BUILD0|BUILD1))
+				if (D->internalBits & CONCEPT && D->internalBits & (BUILD0|BUILD1|BUILD2))
 					BADSCRIPT("CONCEPT-3 Concept/topic already defined %s",conceptName)
 			}
 			AddInternalFlag(D,(unsigned int)(build|CONCEPT));
@@ -4236,10 +4275,13 @@ static void WriteConcepts(WORDP D, uint64 build)
 {
 	char* name = D->word;
 	if (*name != '~' || !(D->internalBits & build)) return; // not a topic or concept or not defined this build
-	RemoveInternalFlag(D,(BUILD0|BUILD1));
+	RemoveInternalFlag(D,(BUILD0|BUILD1|BUILD2));
 		
 	// write out keywords 
-	FILE* out = FopenUTF8WriteAppend(build == BUILD0 ? "TOPIC/keywords0.txt" : "TOPIC/keywords1.txt");
+	FILE* out = NULL;
+	char filename[MAX_WORD_SIZE];
+	sprintf(filename,"TOPIC/keywords%s.txt",baseName);
+	out = FopenUTF8WriteAppend(filename);
 	fprintf(out,(D->internalBits & TOPIC) ? "T%s " : "%s ", D->word);
 
 	uint64 properties = D->properties;	
@@ -4280,6 +4322,7 @@ static void WriteConcepts(WORDP D, uint64 build)
 		while (F) 
 		{
 			if (build == BUILD1 && !(F->flags & FACTBUILD1)) {;} // defined by earlier level
+			else if (build == BUILD2 && !(F->flags & FACTBUILD2)) {;} // defined by earlier level
 			else if (F->verb == Mmember|| F->verb == Mexclude) // the only relevant facts
 			{
 				char word[MAX_WORD_SIZE];
@@ -4335,16 +4378,22 @@ static void WriteConcepts(WORDP D, uint64 build)
 static void WriteDictionaryChange(FILE* dictout, uint64 build)
 {
 	// Note that topic labels (topic.name) and pattern words  will not get written
-	FILE* in;
+	FILE* in = NULL;
 	if ( build == BUILD0) in = FopenReadWritten("TMP/prebuild0.bin");
-	else in = FopenReadWritten("TMP/prebuild1.bin");
-	if (!in) ReportBug("4se file")
+	else if ( build == BUILD1) in = FopenReadWritten("TMP/prebuild1.bin");
+	else if ( build == BUILD2) in = FopenReadWritten("TMP/prebuild2.bin");
+	if (!in) 
+	{
+		ReportBug("prebuild bin not found")
+		myexit("Dictionary Change not determinable");
+	}
 	for (WORDP D = dictionaryBase+1; D < dictionaryFree; ++D) 
 	{
 		uint64 oldproperties = 0;
 		uint64 oldflags = 0;
 		bool notPrior = false;
-		if ( (build == BUILD0 && D < dictionaryPreBuild0 ) || (build == BUILD1 && D < dictionaryPreBuild1))
+		if ( (build == BUILD0 && D < dictionaryPreBuild[0] ) || (build == BUILD1 && D < dictionaryPreBuild[1]) || 
+			 (build == BUILD2 && D < dictionaryPreBuild[2])) // word preexisted this level, so see if it changed
 		{
 			unsigned int offset = D - dictionaryBase;
 			unsigned int xoffset;
@@ -4372,7 +4421,10 @@ static void WriteDictionaryChange(FILE* dictout, uint64 build)
 
 		uint64 prop = D->properties;
 		uint64 flags = D->systemFlags;
-		if ((*D->word == '_' || *D->word == '@' ) && D->internalBits & RENAMED) {;}
+		if ((*D->word == '_' || *D->word == '@' ) && D->internalBits & RENAMED) 
+		{
+			if (!notPrior) continue;	// written out before
+		}
 		else if (D->properties & AS_IS) 
 		{
 			RemoveProperty(D,AS_IS); // fact field value
@@ -4381,12 +4433,14 @@ static void WriteDictionaryChange(FILE* dictout, uint64 build)
 			uint64 sys1 = flags;
 			sys1 &= -1LL ^ oldflags;
 			sys1 &= -1LL ^ (NO_EXTENDED_WRITE_FLAGS); // we dont need these- concepts will come from keywords file
-			if ( (build == BUILD0 && D < dictionaryPreBuild0 ) || (build == BUILD1 && D < dictionaryPreBuild1))
+			if ( (build == BUILD0 && D < dictionaryPreBuild[0] ) ||
+				(build == BUILD1 && D < dictionaryPreBuild[1]) ||
+				(build == BUILD2 && D < dictionaryPreBuild[2]))
 			{
 				if (!prop1 && !sys1) continue;	// no need to write out, its in the prior world (though flags might be wrong)
 			}
 		}
-		else if (D->internalBits & SUBSTITUTE_RECIPIENT) continue; // ignore pattern words, etc EXCEPT when field of a fact
+		else if (D->systemFlags & SUBSTITUTE_RECIPIENT) continue; // ignore pattern words, etc EXCEPT when field of a fact
 		else if (D->systemFlags & NO_EXTENDED_WRITE_FLAGS && !GetSubjectNondeadHead(D) && !GetVerbNondeadHead(D) && !GetObjectNondeadHead(D)) continue; // ignore pattern words, etc EXCEPT when field of a fact
 		else if (D->properties & (NOUN_NUMBER|ADJECTIVE_NUMBER)  && IsDigit(*D->word)) continue; // no numbers
 		else if (!D->properties && D->internalBits & UPPERCASE_HASH && !D->systemFlags) continue; // boring uppercase pattern word, just not marked as pattern word because its uppercase
@@ -4400,7 +4454,7 @@ static void WriteDictionaryChange(FILE* dictout, uint64 build)
 		D->systemFlags &= -1 ^  oldflags; // remove the old flags
 
 		// if the ONLY change is an existing word got made into a concept, dont write it out anymore
-		if (!D->properties && !D->systemFlags && D->internalBits & CONCEPT && D <= dictionaryPreBuild0 ) {;}  // preexisting word a concept
+		if (!D->properties && !D->systemFlags && D->internalBits & CONCEPT && D <= dictionaryPreBuild[0] ) {;}  // preexisting word a concept
 		else if (D->properties || D->systemFlags || notPrior ||  ((*D->word == '_' || *D->word == '@') && D->internalBits & RENAMED))  // there were changes
 		{
 			fprintf(dictout,"+ %s ",D->word);
@@ -4436,20 +4490,21 @@ static void WriteExtendedFacts(FILE* factout,FILE* dictout,uint64 build)
 	char* buffer = AllocateBuffer();
 	bool oldshared = shared;
 	shared = false;
-	char* ptr = WriteUserVariables(buffer,false);
+	char* ptr = WriteUserVariables(buffer,false,true);
 	shared = oldshared;
 	fwrite(buffer,ptr-buffer,1,factout);
 	FreeBuffer();
 
 	WriteDictionaryChange(dictout,build);
-
-	WriteFacts(factout,(build == BUILD0) ? wordnetFacts : build0Facts);
+	if (build == BUILD0) WriteFacts(factout,factsPreBuild[0]);
+	else if (build == BUILD1) WriteFacts(factout,factsPreBuild[1]);
+	else if (build == BUILD2) WriteFacts(factout,factsPreBuild[2]);
 }
 
 static void ClearTopicConcept(WORDP D, uint64 build)
 {
 	unsigned int k = (ulong_t) build;
-	if ((D->internalBits & (TOPIC | CONCEPT)) & k)   RemoveInternalFlag(D,CONCEPT|BUILD0|BUILD1|TOPIC);
+	if ((D->internalBits & (TOPIC | CONCEPT)) & k)   RemoveInternalFlag(D,CONCEPT|BUILD0|BUILD1|BUILD2|TOPIC);
 }
 
 static void DumpErrors()
@@ -4487,6 +4542,15 @@ static void EmptyVerify(char* name, uint64 junk)
 
 void ReadTopicFiles(char* name,uint64 build,int spell)
 {
+	if (build == BUILD2) // for dynamic segment, we are allowed full names
+	{
+		strcpy(baseName,name+5);
+		char* dot = strchr(baseName,'.');
+		*dot = 0;
+	}
+	else if (build == BUILD1) strcpy(baseName,"1");
+	else strcpy(baseName,"0");
+
 	char* output = testOutput;
 	testOutput = NULL;
 	FILE* in = FopenReadNormal(name); // default was top level chatscript
@@ -4497,7 +4561,7 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 		in = FopenReadNormal(file);
 		if (!in)
 		{
-			sprintf(file,"RAWDATA/PRIVATE/%s",name); // 3rd default is rawdata / private
+			sprintf(file,"private/%s",name); // 3rd default is private
 			in = FopenReadNormal(file);
 			if (!in)
 			{
@@ -4521,10 +4585,11 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 	spellCheck = spell;			// what spell checking to perform
 
 	//   erase facts and dictionary to appropriate level
-	if (build == BUILD1) ReturnDictionaryToBuild0(); // rip dictionary back to start of build (but props and systemflags can be wrong)
+	if (build == BUILD2) ReturnToLayer(1,false); // rip dictionary back to start of build (but props and systemflags can be wrong)
+	else if (build == BUILD1) ReturnToLayer(0,true); // rip dictionary back to start of build (but props and systemflags can be wrong)
 	else  ReturnDictionaryToWordNet();
 	WalkDictionary(ClearTopicConcept,build);				// remove concept/topic flags from prior defined by this build
-	EraseTopicFiles(build);
+	EraseTopicFiles(build,baseName);
 
 	WalkDirectory("VERIFY",EmptyVerify,0); // clear verification of this level
 
@@ -4534,7 +4599,9 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 	echo = true;
 	
 	//   store known pattern words in pattern file that we want to recognize (not spellcorrect on input)
-	patternFile = FopenUTF8Write(build == BUILD0 ? "TOPIC/patternWords0.txt" : "TOPIC/patternWords1.txt");
+	char filename[MAX_WORD_SIZE];
+	sprintf(filename,"TOPIC/patternWords%s.txt",baseName);
+	patternFile = FopenUTF8Write(filename);
 	if (!patternFile)
 	{
 		printf("Unable to create patternfile  in the TOPIC subdirectory? Make sure this directory exists and is writable.\r\n");
@@ -4544,9 +4611,12 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 	AllocateOutputBuffer();
 
 	// init the script output file
-	FILE* out = FopenUTF8Write(build == BUILD0 ? (char*)"TOPIC/script0.txt" : (char*)"TOPIC/script1.txt");
+	sprintf(filename,"TOPIC/script%s.txt",baseName);
+	FILE* out = FopenUTF8Write(filename);
 	if (strlen(name) > 100) name[99] = 0;
 	if (!strnicmp(name,"files",5)) name += 5; // dont need the prefix
+	char* at = strchr(name,'.');
+	*at = 0;
 	fprintf(out,"0     %s %s\r\n",GetMyTime(time(0)),name); //   reserve 5-digit count for number of topics + timestamp  (AFTER BOM)
 	fclose(out);
 	
@@ -4585,7 +4655,8 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 	// write out compiled data
 
 	//   write how many topics were found (for when we preload during normal startups)
-	out = FopenUTF8WriteAppend(build == BUILD0 ? "TOPIC/script0.txt" : "TOPIC/script1.txt","rb+");
+	sprintf(filename,"TOPIC/script%s.txt",baseName);
+	out = FopenUTF8WriteAppend(filename,"rb+");
 	if (out)
 	{
 		fseek(out,0,SEEK_SET);
@@ -4601,7 +4672,8 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 
 	if (hasPlans)
 	{
-		out = FopenUTF8WriteAppend(build == BUILD0 ? "TOPIC/plans0.txt" : "TOPIC/plans1.txt","rb+");
+		sprintf(filename,"TOPIC/plans%s.txt",baseName);
+		out = FopenUTF8WriteAppend(filename,"rb+");
 		if (out)
 		{
 			char word[MAX_WORD_SIZE];
@@ -4617,7 +4689,10 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 	WalkDictionary(ClearBeenHere,0);
 
 	// dump variables, dictionary changes, topic facts
-	WriteExtendedFacts(FopenUTF8Write(build == BUILD0 ? "TOPIC/facts0.txt" : "TOPIC/facts1.txt"), FopenUTF8Write(build == BUILD0 ? "TOPIC/dict0.txt" : "TOPIC/dict1.txt"),  build); 
+	sprintf(filename,"TOPIC/facts%s.txt",baseName);
+	char filename1[MAX_WORD_SIZE];
+	sprintf(filename1,"TOPIC/dict%s.txt",baseName);
+	WriteExtendedFacts(FopenUTF8Write(filename), FopenUTF8Write(filename1),  build); 
 	
 	// cleanup
 	buildID = 0;
@@ -4631,7 +4706,7 @@ void ReadTopicFiles(char* name,uint64 build,int spell)
 	testOutput = output; // allow summary to go out the server
 	if (hasErrors) 
 	{
-		EraseTopicFiles(build);
+		EraseTopicFiles(build,baseName);
 		DumpErrors();
 		if (missingFiles) Log(STDUSERLOG,"%d topic files were missing.\r\n",missingFiles);
 		Log(STDUSERLOG,"r\n%d errors - press Enter to quit. Then fix and try again.\r\n",hasErrors);

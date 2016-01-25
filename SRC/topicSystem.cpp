@@ -3,8 +3,10 @@
 #define MAX_NO_ERASE 300
 #define MAX_REPEATABLE 300
 #define TOPIC_LIMIT 10000								// max toplevel rules in a RANDOM topic
-topicBlock* topicBlockPtr;
 unsigned int numberOfTopics = 0;
+
+unsigned int numberOfTopicsInLayer[NUMBER_OF_LAYERS+1];
+topicBlock* topicBlockPtrs[NUMBER_OF_LAYERS+1];
 
 // current operating data
 bool shared = false;
@@ -39,12 +41,9 @@ static unsigned int disableIndex = 0;
 int sampleRule = 0;
 unsigned int sampleTopic = 0;
 
-char timeStamp0[20];	// when build0 was compiled
-char timeStamp1[20];	// when build1 was compiled
-char numberTimeStamp0[20];	// when build0 was compiled
-char numberTimeStamp1[20];	// when build1 was compiled
-char buildStamp0[150];	// compile command
-char buildStamp1[150];	// compile command
+char timeStamp[NUMBER_OF_LAYERS][20];	// when build0 was compiled
+char numberTimeStamp[NUMBER_OF_LAYERS][20];	// when build0 was compiled
+char buildStamp[NUMBER_OF_LAYERS][150];	// compile command name of build
 
 // rejoinder info
 int outputRejoinderRuleID  = NO_REJOINDER;
@@ -216,7 +215,7 @@ void TraceSample(unsigned int topic, unsigned int ruleID,unsigned int how)
 				{
 					char junk[MAX_WORD_SIZE];
 					ptr = ReadCompiledWord(ptr,junk); // skip the marker
-					Log(how,"#! %s",ptr);
+					Log(how,"  sample: #! %s",ptr);
 					break;
 				}
 			}
@@ -1064,15 +1063,15 @@ retry:
 	}
 	if (trace & (TRACE_PATTERN | TRACE_SAMPLE )  && CheckTopicTrace())
 	{
-		if (*label) Log(STDUSERTABLOG, "try %d.%d %s: \\",TOPLEVELID(ruleID),REJOINDERID(ruleID),label); //  \\  blocks linefeed on next Log call
-		else  Log(STDUSERTABLOG, "try %d.%d: \\",TOPLEVELID(ruleID),REJOINDERID(ruleID)); //  \\  blocks linefeed on next Log call
+		if (*label) Log(STDUSERTABLOG, "try %c:%d.%d %s: \\",*rule,TOPLEVELID(ruleID),REJOINDERID(ruleID),label); //  \\  blocks linefeed on next Log call
+		else  Log(STDUSERTABLOG, "try %c:%d.%d: \\",*rule,TOPLEVELID(ruleID),REJOINDERID(ruleID)); //  \\  blocks linefeed on next Log call
 		if (trace & TRACE_SAMPLE && *ptr == '(') TraceSample(currentTopicID,ruleID);// show the sample as well as the pattern
 		if (*ptr == '(')
 		{
 			char pattern[MAX_WORD_SIZE];
 			GetPattern(rule,NULL,pattern);
 			CleanOutput(pattern);
-			Log(STDUSERLOG," %s",pattern);
+			Log(STDUSERLOG,"       pattern: %s",pattern);
 		}
 		Log(STDUSERLOG,"\r\n");
 	}
@@ -1384,14 +1383,18 @@ char* WriteUserTopics(char* ptr,bool sharefile)
 
      //   current location in topic system -- written by NAME, so topic data can be added (if change existing topics, must kill off lastquestion)
     *word = 0;
-	if (outputRejoinderTopic == NO_REJOINDER) sprintf(ptr,"%d %d 0 # flags, start, input#, no rejoinder\r\n",userFirstLine,volleyCount);
+	if (!*buildStamp[2]) strcpy(buildStamp[2],"0"); // none
+
+	if (outputRejoinderTopic == NO_REJOINDER) sprintf(ptr,"%d %d 0 DY %d %d %d %s # start, input#, no rejoinder, #0topics, #1topics, layer2\r\n",userFirstLine,volleyCount
+		, numberOfTopicsInLayer[0], numberOfTopicsInLayer[1], numberOfTopicsInLayer[2], buildStamp[2]);
 	else 
 	{
 		sprintf(ptr,"%d %d %s ",userFirstLine,volleyCount,GetTopicName(outputRejoinderTopic));
 		ptr += strlen(ptr);
 		ptr = FullEncode(outputRejoinderRuleID,ptr); 
 		ptr = FullEncode(TI(outputRejoinderTopic)->topicChecksum,ptr);
-		sprintf(ptr," # flags, start, input#, rejoindertopic,rejoinderid (%s),checksum\r\n",ShowRule(GetRule(outputRejoinderTopic,outputRejoinderRuleID)));
+		sprintf(ptr," DY %d %d %d %s # start, input#, rejoindertopic,rejoinderid (%s),checksum\r\n",
+			numberOfTopicsInLayer[0], numberOfTopicsInLayer[1], numberOfTopicsInLayer[2], buildStamp[2],ShowRule(GetRule(outputRejoinderTopic,outputRejoinderRuleID)));
 	}
 	ptr += strlen(ptr);
     if (topicIndex)  ReportBug("topic system failed to clear out topic stack\r\n")
@@ -1473,7 +1476,7 @@ bool ReadUserTopics()
     volleyCount = atoi(word);
 
     ptr = ReadCompiledWord(ptr,word);  //   rejoinder topic name
-	if (*word == '0')  inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER; 
+	if (*word == '0') inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER; 
     else
 	{
 		inputRejoinderTopic  = FindTopicIDByName(word,true);
@@ -1485,6 +1488,39 @@ bool ReadUserTopics()
 		checksum = (unsigned int) FullDecode(word); // topic checksum
 		if (!inputRejoinderTopic) inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER;  // topic changed
 		if (checksum != TI(inputRejoinderTopic)->topicChecksum && TI(inputRejoinderTopic)->topicChecksum && !(GetTopicFlags(inputRejoinderTopic) & TOPIC_SAFE)) inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER;  // topic changed
+	}
+	bool badLayer1 = false;
+	if (*ptr == 'D' && ptr[1] == 'Y') // we have more modern data
+	{
+		ptr += 3;	// skip dy
+		ptr = ReadCompiledWord(ptr,word);
+		unsigned int lev0topics = atoi(word);
+		if (lev0topics != numberOfTopicsInLayer[0]) 
+		{
+			ReportBug("level0 inconsistent")
+			return false;
+		}
+		ptr = ReadCompiledWord(ptr,word);
+		unsigned int lev1topics = atoi(word);
+		ReadCompiledWord(ptr,word);
+		if (lev1topics != numberOfTopicsInLayer[1]) 
+		{
+			ReportBug("level1 inconsistent")
+			return false;
+		}
+		ptr = ReadCompiledWord(ptr,word);
+		unsigned int lev2topics = atoi(word);
+		ReadCompiledWord(ptr,word);
+		ptr = ReadCompiledWord(ptr,word);
+		if (*word != '0' || word[1]) // resume existing layer 2
+		{
+			LoadLayer(2,word,BUILD2);
+		}
+		if (lev2topics != numberOfTopicsInLayer[2]) 
+		{
+			ReportBug("level1 inconsistent")
+			return false;
+		}
 	}
 
     //   pending stack
@@ -1498,8 +1534,11 @@ bool ReadUserTopics()
         unsigned int id = FindTopicIDByName(word,true); 
         if (id) 
 		{
-			originalPendingTopicList[originalPendingTopicIndex++] = id;
-			pendingTopicList[pendingTopicIndex++] = id;
+			if (id <= numberOfTopicsInLayer[2])
+			{
+				originalPendingTopicList[originalPendingTopicIndex++] = id;
+				pendingTopicList[pendingTopicIndex++] = id;
+			}
 		}
     }
 
@@ -1516,6 +1555,7 @@ bool ReadUserTopics()
 		if (!D || !(D->internalBits & TOPIC)) continue; // should never fail unless topic disappears from a refresh
 		unsigned int id = D->x.topicIndex;
 		if (!id) continue;	//   no longer exists
+		if (id > numberOfTopicsInLayer[1] && badLayer1) continue;	// not paged in?
 
 		topicBlock* block = TI(id);
 		at = ReadCompiledWord(at,word); //   blocked status (+ ok - blocked) and maybe safe topic status
@@ -1557,6 +1597,8 @@ bool ReadUserTopics()
 		return false;
 	}
 
+	if (inputRejoinderTopic > numberOfTopicsInLayer[2]) inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER; // wrong layer
+
 	return true;
  }
 
@@ -1564,12 +1606,12 @@ bool ReadUserTopics()
 /// TOPIC INITIALIZATION
 //////////////////////////////////////////////////////
  
-void ResetTopicSystem()
+void ResetTopicSystem(bool safe)
 {
     ResetTopics();
-	topicIndex = 0;
+	if (!safe) topicIndex = 0;
 	disableIndex = 0;
-	pendingTopicIndex = 0;
+	if (!safe) pendingTopicIndex = 0;
 	ruleErased = false;	
 	for (unsigned int i = 1; i <= numberOfTopics; ++i) 
 	{
@@ -1579,7 +1621,7 @@ void ResetTopicSystem()
 		block->topicLastRespondered = 0; 
 		block->topicLastRejoindered = 0; 
 	}
-	currentTopicID = 0;
+	if (!safe) currentTopicID = 0;
 	unusedRejoinder = true; 
 	outputRejoinderTopic = outputRejoinderRuleID = NO_REJOINDER; 
 	inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER; 
@@ -1593,8 +1635,8 @@ void ResetTopics()
  void ResetTopic(unsigned int topic)
 {
 	if (!topic || topic > numberOfTopics) return;
-	if (!*GetTopicName(topic)) return;
 	topicBlock* block = TI(topic);
+	if (!*GetTopicName(topic)) return;
 	if (*block->topicName) // normal fully functional topic
 	{
 		memset(block->topicUsed,0,block->topicBytesRules);
@@ -1604,14 +1646,6 @@ void ResetTopics()
 	}
 }
  
-static void AllocateGlobalTopicMemory(unsigned int total)
-{
-	numberOfTopics = total;
-	total += 2; // reserve the null 0 topic and 1 extra at end for dynamic use
-	topicBlockPtr = (topicBlock*) AllocateString(NULL,total,sizeof(topicBlock),true); // reserved space for each topic to have its data
-	for (unsigned int i = 0; i <= numberOfTopics; ++i) TI(i)->topicName = "";
-}
-
 static WORDP AllocateTopicMemory( unsigned int topic, char* name, uint64 flags, unsigned int topLevelRules, unsigned int gambitCount)
 {
 	topicBlock* block = TI(topic);
@@ -1785,26 +1819,20 @@ void CreateFakeTopics(char* data) // ExtraTopic can be used to test this, naming
 	}
 }
 
-static void LoadTopicData(const char* name,uint64 build,bool plan)
+static void LoadTopicData(const char* name,uint64 build,int layer,bool plan)
 {
 	FILE* in = FopenReadOnly(name); // TOPIC folder
 	if (!in) return;
 
 	char count[MAX_WORD_SIZE];
 	char* ptr = count;
+
 	ReadALine(count,in);
 	ptr = ReadCompiledWord(ptr,tmpWord);	// skip the number of topics
-	if (plan){}
-	else if (build & BUILD0) 
+	if (!plan)
 	{
-		ptr = ReadCompiledWord(ptr,timeStamp0); // Jan04'15
-		ptr = ReadCompiledWord(ptr,buildStamp0);
-
-	}
-	else if (build & BUILD1) 
-	{
-		ptr = ReadCompiledWord(ptr,timeStamp1);
-		ptr = ReadCompiledWord(ptr,buildStamp1);
+		ptr = ReadCompiledWord(ptr,timeStamp[layer]); // Jan04'15
+		ptr = ReadCompiledWord(ptr,buildStamp[layer]);
 	}
 
 	// plan takes 2 lines:
@@ -1831,17 +1859,21 @@ static void LoadTopicData(const char* name,uint64 build,bool plan)
 			myexit("bad plan alignment");
 		}
 		ptr = ReadCompiledWord(ptr,name);
-		if (!topicBlockPtr || !TI(0)->topicName)
+		if (!topicBlockPtrs[0] || !topicBlockPtrs[0]->topicName)
 		{
 			if (build == BUILD0) 
 			{
-				EraseTopicFiles(BUILD0);
+				EraseTopicFiles(BUILD0,"0");
 				printf("\r\n>>>  TOPICS directory bad. Contents erased. :build 0 again.\r\n\r\n");
 			}
-			else 
+			else if (build == BUILD1) 
 			{
 				printf("\r\n>>> TOPICS directory bad. Build1 Contents erased. :build 1 again.\r\n\r\n");
-				EraseTopicFiles(BUILD1);
+				EraseTopicFiles(BUILD1,"1");
+			}
+			else if (build == BUILD2) 
+			{
+				printf("\r\n>>> TOPICS directory bad. Build1 Contents erased. :build 2 again.\r\n\r\n");
 			}
 			return;
 		}
@@ -2307,46 +2339,34 @@ bool ReadUserContext()
 	return true;
 }
 
-static void InitTopicMemory()
+static void InitLayerMemory(char* name, int layer)
 {
-	memset(topicContext,0,sizeof(topicContext));
-	
 	unsigned int total;
-	topicStack[0] = 0;
-	numberOfTopics = 0;
-	FILE* in = FopenReadOnly("TOPIC/script0.txt"); // TOPICS
+	unsigned int counter = 0;
+	char filename[MAX_WORD_SIZE];
+	sprintf(filename,"TOPIC/script%s.txt",name);
+	FILE* in = FopenReadOnly(filename); // TOPICS
 	if (in)
 	{
 		ReadALine(readBuffer,in);
 		ReadInt(readBuffer,total);
 		fclose(in);
-		numberOfTopics += total;
+		counter += total;
 	}
-	in = FopenReadOnly("TOPIC/script1.txt"); // TOPICS
+	sprintf(filename,"TOPIC/plans%s.txt",name);
+	in = FopenReadOnly(filename); 
 	if (in)
 	{
 		ReadALine(readBuffer,in);
 		ReadInt(readBuffer,total);
 		fclose(in);
-		numberOfTopics += total;
+		counter += total;
 	}
-	in = FopenReadOnly("TOPIC/plans0.txt"); // TOPICS
-	if (in)
-	{
-		ReadALine(readBuffer,in);
-		ReadInt(readBuffer,total);
-		fclose(in);
-		numberOfTopics += total;
-	}
-	in = FopenReadOnly("TOPIC/plans1.txt"); // TOPICS
-	if (in)
-	{
-		ReadALine(readBuffer,in);
-		ReadInt(readBuffer,total);
-		fclose(in);
-		numberOfTopics += total;
-	}
-	if (numberOfTopics) AllocateGlobalTopicMemory(numberOfTopics);
+	int priorTopicCount = (layer) ? numberOfTopicsInLayer[layer - 1] : 0;
+	numberOfTopics = numberOfTopicsInLayer[layer] = priorTopicCount + counter;
+	topicBlockPtrs[layer] = (topicBlock*) AllocateString(NULL,counter+1,sizeof(topicBlock),true); // reserved space for each topic to have its data
+	for (unsigned int i = priorTopicCount + 1; i <= numberOfTopics; ++i) TI(i)->topicName = "";
+	if (layer == 0)  TI(0)->topicName = "";
 }
 
 static void AddRecursiveMember(WORDP D, WORDP set)
@@ -2358,6 +2378,10 @@ static void AddRecursiveMember(WORDP D, WORDP set)
 	}
 	if (D->inferMark == inferMark) return; // concept already seen
 	D->inferMark = inferMark;
+	if (D->systemFlags & DELAYED_RECURSIVE_DIRECT_MEMBER)
+	{
+		D->systemFlags ^= DELAYED_RECURSIVE_DIRECT_MEMBER;
+	}
 	FACT* F = GetObjectNondeadHead(D);
 	while (F)
 	{
@@ -2370,6 +2394,7 @@ static void IndirectMembers(WORDP D, uint64 pattern)
 { // we want to recursively get members of this concept, but waited til now for any subset concepts to have been defined
 	if (D->systemFlags & DELAYED_RECURSIVE_DIRECT_MEMBER) // this set should acquire all its indirect members now
 	{
+		D->systemFlags ^= DELAYED_RECURSIVE_DIRECT_MEMBER;
 		NextInferMark();
 		D->inferMark = inferMark;
 		FACT* F = GetObjectNondeadHead(D);
@@ -2381,61 +2406,76 @@ static void IndirectMembers(WORDP D, uint64 pattern)
 	}
 }
 
+topicBlock* TI(int topicid)
+{
+	if (topicid <= numberOfTopicsInLayer[0]) return topicBlockPtrs[0]+topicid;
+	if (topicid <= numberOfTopicsInLayer[1]) return topicBlockPtrs[1]+topicid;
+	if (topicid <= numberOfTopicsInLayer[2]) return topicBlockPtrs[2]+topicid;
+	return NULL;
+}
+	
+FunctionResult LoadLayer(int layer,char* name,int build)
+{
+	if (layer == 2) ReturnToLayer(1,false);
+	
+	char filename[MAX_WORD_SIZE];
+	InitLayerMemory(name,layer);
+	sprintf(filename,"TOPIC/patternWords%s.txt",name );
+	ReadPatternData(filename);
+	sprintf(filename,"TOPIC/keywords%s.txt",name);
+	InitKeywords(filename,build);
+	sprintf(filename,"TOPIC/macros%s.txt",name);
+	InitMacros(filename,build);
+	sprintf(filename,"TOPIC/dict%s.txt",name);
+	ReadFacts(filename,build);
+	sprintf(filename,"TOPIC/facts%s.txt",name );
+	ReadFacts(filename,build);
+	sprintf(filename,"TOPIC/script%s.txt",name);
+	LoadTopicData(filename,build,layer,false);
+	sprintf(filename,"TOPIC/plans%s.txt",name );
+	LoadTopicData(filename,build,layer,true);
+	sprintf(filename,"TOPIC/private%s.txt",name);
+	ReadSubstitutes(filename,DO_PRIVATE,true);
+	sprintf(filename,"TOPIC/canon%s.txt",name );
+	ReadCanonicals(filename);
+	WalkDictionary(IndirectMembers,0); // having read in all concepts, handled delayed word marks
+	
+	if (layer != 2)
+	{
+		char data[MAX_WORD_SIZE];
+		sprintf(data,"Build%s:  dict=%ld  fact=%ld  stext=%ld %s %s\r\n",name,
+			(long int)(dictionaryFree-dictionaryPreBuild[layer]),
+			(long int)(factFree-factsPreBuild[layer]),
+			(long int)(stringsPreBuild[layer]-stringFree),
+			timeStamp[layer],buildStamp[layer]);
+		if (server)  Log(SERVERLOG, "%s",data);
+		else printf("%s",data);
+	}
+	
+	LockLayer(layer);
+	return NOPROBLEM_BIT;
+}
+
 void LoadTopicSystem() // reload all topic data
 {
 	//   purge any prior topic system - except any patternword marks made on basic dictionary will remain (doesnt matter if we have too many marked)
 	ReturnDictionaryToWordNet(); // return dictionary and string space to pretopic conditions
-	*timeStamp0 = *timeStamp1 = 0;
-
+	*timeStamp[0] = *timeStamp[1] = *timeStamp[2] =0;
+	memset(topicContext,0,sizeof(topicContext)); // the history
+	topicStack[0] = 0;
+	currentTopicID = 0;
+	ClearBotVariables();
+	
 	printf("WordNet: dict=%ld  fact=%ld  stext=%ld %s\r\n",(long int)(dictionaryFree-dictionaryBase),(long int)(factFree-factBase),(long int)(stringBase-stringFree),dictionaryTimeStamp);
 
-	InitTopicMemory();
-	ClearBotVariables();
-	WORDP wordnetBase = dictionaryFree;
-	char* preallocate = stringFree;
-
-	InitKeywords("TOPIC/keywords0.txt",BUILD0); 
-	ReadFacts("TOPIC/facts0.txt",BUILD0);
-	InitMacros("TOPIC/macros0.txt",BUILD0);
-	ReadFacts("TOPIC/dict0.txt",BUILD0); //   FROM topic system build of topics
-	ReadPatternData("TOPIC/patternWords0.txt");
-	char* prescript = stringFree;
-	currentTopicID = 0;
-	LoadTopicData("TOPIC/script0.txt",BUILD0,false);
-	LoadTopicData("TOPIC/plans0.txt",BUILD0,true);
-	ReadSubstitutes("TOPIC/private0.txt",DO_PRIVATE,true);
-	ReadCanonicals("TOPIC/canon0.txt");
-	char data[MAX_WORD_SIZE];
-	sprintf(data,"Build0:  dict=%ld  fact=%ld  dtext=%ld stext=%ld %s %s\r\n",(long int)(dictionaryFree-wordnetBase),(long int)(factFree-wordnetFacts),(long int)(preallocate-prescript),(long int)(prescript-stringFree),timeStamp0,buildStamp0);
-	if (server)  Log(SERVERLOG, "%s",data);
-	else printf("%s",data);
-
-	Build0LockDictionary();
-	preallocate = stringFree;
-	ReadPatternData("TOPIC/patternWords1.txt");
-	wordnetBase = dictionaryFree;
-	InitKeywords("TOPIC/keywords1.txt",BUILD1);
-	InitMacros("TOPIC/macros1.txt",BUILD1);
-	ReadFacts("TOPIC/dict1.txt",BUILD1);
-	ReadFacts("TOPIC/facts1.txt",BUILD1);
-	prescript = stringFree;
-	LoadTopicData("TOPIC/script1.txt",BUILD1,false);
-	LoadTopicData("TOPIC/plans1.txt",BUILD1,true);
-	ReadSubstitutes("TOPIC/private1.txt",DO_PRIVATE,true);
-	ReadCanonicals("TOPIC/canon1.txt");
-	
-	WalkDictionary(IndirectMembers,0); // having read in all concepts, handled delayed word marks
-	sprintf(data,"Build1:  dict=%ld  fact=%ld  dtext=%ld stext=%ld %s %s\r\n",(long int)(dictionaryFree-wordnetBase),(long int)(factFree-build0Facts),(long int)(preallocate-prescript),(long int)(prescript-stringFree),timeStamp1,buildStamp1);
-	if (server)  Log(SERVERLOG, "%s",data);
-	else printf("%s",data);
-	ReadLivePosData(); // any needed concepts must have been defined by now.
-
+	LoadLayer(0,"0",BUILD0);
+	ReturnToLayer(0,true); // unlock it to add stuff
+	ReadLivePosData(); // any needed concepts must have been defined by now in level 0 (assumed). Not done in level1
+	LockLayer(0);
+	LoadLayer(1,"1",BUILD1);
 	Callback(FindWord("^csboot"),"()"); // do before world is locked
-	
-	NoteBotVariables();
-	preallocate = stringFree;
+	NoteBotVariables(); // convert user variables read into bot variables
 	// StoreWord("$cs_randindex",0);	// so it is before the freeze WHY!!  cant write on it then
-    FreezeBasicData();
 }
 
 

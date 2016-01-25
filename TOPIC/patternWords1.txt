@@ -37,7 +37,6 @@ does_that_make_sense
 does_it_make_sense_that
 a_little_bird
 a_little_birdie
-Coast_Guard
 any_sense
 kind_of
 you_be_an

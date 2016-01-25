@@ -31,8 +31,6 @@
     black-necked_stork~1nz (^stork~1) large mostly white Australian stork
  Xandra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Xander ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Xenicidae ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Acanthisittidae~1n 
  xanthomonad ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     xanthomonad~1nz (^true_bacteria~1) bacteria producing yellow non-water-soluble pigments
  Xestobium_rufovillosum ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -62,6 +60,8 @@
     class_Xanthophyceae~1n 
  Xyphophorus_helleri ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     helleri~1nz (^cyprinodont~1) freshwater fish of Central America having a long swordlike tail
+ Xenicidae ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+    Acanthisittidae~1n 
  Xenicus_gilviventris ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     rock_wren~2nz (^New_Zealand_wren~1) short-tailed bird resembling a wren
  Xenopus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 

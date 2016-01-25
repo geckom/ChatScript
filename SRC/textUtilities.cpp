@@ -293,6 +293,7 @@ void CloseTextUtilities()
 
 void AcquireDefines(char* fileName)
 { // dictionary entries:  `xxxx (property names)  ``xxxx  (systemflag names)  ``` (parse flags values)  -- and flipped:  `nxxxx and ``nnxxxx and ```nnnxxx with infermrak being ptr to original name
+
 	FILE* in = FopenStaticReadOnly(fileName); // SRC/dictionarySystem.h
 	if (!in) 
 	{
@@ -379,9 +380,12 @@ void AcquireDefines(char* fileName)
             {
                 ptr = ReadCompiledWord(ptr-1,label);
                 value = FindValueByName(label);
+				bool olddict = buildDictionary;
+				buildDictionary = false;
                 if (!value)  value = FindSystemValueByName(label);
 	            if (!value)  value = FindMiscValueByName(label);
 	            if (!value)  value = FindParseValueByName(label);
+				buildDictionary = olddict;
 				if (!value)  ReportBug("missing modifier value for %s\r\n",label)
                 if (orop) result |= value;
                 else if (shiftop) result <<= value;
@@ -557,7 +561,8 @@ uint64 FindSystemValueByName(char* name)
 	WORDP D = FindWord(word);
 	if (!D || !(D->internalBits & DEFINES)) 
 	{
-		if (buildDictionary) ReportBug("Failed to find system value %s",name);
+		if (buildDictionary) 
+			ReportBug("Failed to find system value %s",name);
 		return 0;
 	}
 	return D->properties;
@@ -683,7 +688,7 @@ char GetTemperatureLetter(char* ptr)
 	return 0;
 }
    
-char* GetCurrency(char* ptr,char* &number) // does this point to a currency token, return currency and point to number
+char* GetCurrency(char* ptr,char* &number) // does this point to a currency token, return currency and point to number (NOT PROVEN its a number)
 {
 	if (*ptr == '$') // dollar is prefix
 	{
@@ -709,12 +714,18 @@ char* GetCurrency(char* ptr,char* &number) // does this point to a currency toke
 		number = ptr+2; 
 		return ptr;
 	}
+	else if (!strnicmp(ptr,"yen",3) || !strnicmp(ptr,"eur",3) || !strnicmp(ptr,"usd",3) || !strnicmp(ptr,"gbp",3) || !strnicmp(ptr,"cny",3)) 
+	{
+		number = ptr + 3;
+		return ptr;
+	}
 
 	if (IsDigit(*ptr))  // number first
 	{
 		char* at = ptr;
 		while (IsDigit(*at) || *at == '.') ++at; // get end of number
-		if (*at == '$' ||   (*at == 0xe2 && at[1] == 0x82 && at[2] == 0xac)  || *at == 0xc2 || (*at == 0xc3 && at[1] == 0xb1 ) ) // currency suffix
+		if (*at == '$' ||   (*at == 0xe2 && at[1] == 0x82 && at[2] == 0xac)  || *at == 0xc2 || (*at == 0xc3 && at[1] == 0xb1 ) 
+			|| !strnicmp(at,"yen",3) || !strnicmp(at,"eur",3) || !strnicmp(at,"usd",3) || !strnicmp(at,"gbp",3) || !strnicmp(at,"cny",3)) // currency suffix
 		{
 			number = ptr;
 			return at;
@@ -735,6 +746,20 @@ bool IsLegalName(char* name) // start alpha (or ~) and be alpha _ digit (concept
 		if (!IsLegalNameCharacter(*name)) return false;
 	}
 	return true;
+}
+
+bool IsDigitWithNumberSuffix(char* number)
+{
+	size_t len = strlen(number);
+	char d = number[len-1];
+	bool num = false;
+	if (d == 'k' || d == 'K' || d == 'm' || d == 'M' || d == 'B' || d == 'b' || d == 'G' || d == 'g')
+	{
+		number[len-1] = 0;
+		num = IsDigitWord(number);
+		number[len-1] = d;
+	}
+	return num;
 }
 
 bool IsDigitWord(char* ptr) // digitized number
@@ -795,7 +820,18 @@ unsigned int IsNumber(char* word,bool placeAllowed) // simple digit number or wo
 {
 	if (!*word) return false;
 	if (word[1] && (word[1] == ':' || word[2] == ':')) return false;	// 05:00 // time not allowed
-    if (IsDigitWord(word)) return DIGIT_NUMBER; // a numeric number
+ 	
+	char* number = NULL;
+	char* cur = GetCurrency(word,number);
+	if (cur) 
+	{
+		char c = *cur;
+		*cur = 0;
+		int64 val = Convert2Integer(number);
+		*cur = c;
+		return (val != NOT_A_NUMBER) ? CURRENCY_NUMBER : 0 ;
+	}
+	if (IsDigitWord(word)) return DIGIT_NUMBER; // a numeric number
 	if (*word == '\'' && !strchr(word+1,'\'') && IsDigitWord(word+1)) return DIGIT_NUMBER;	// includes date and feet
     WORDP D;
     D = FindWord(word);
@@ -803,6 +839,7 @@ unsigned int IsNumber(char* word,bool placeAllowed) // simple digit number or wo
 		return (D->systemFlags & ORDINAL) ? PLACETYPE_NUMBER : WORD_NUMBER;   // known number
 	uint64 valx;
 	if (IsRomanNumeral(word,valx)) return ROMAN_NUMBER;
+	if (IsDigitWithNumberSuffix(word)) return WORD_NUMBER;
 
 	char* ptr;
     if (placeAllowed && IsPlaceNumber(word)) return PLACETYPE_NUMBER; // th or first or second etc. but dont call if came from there
@@ -813,9 +850,6 @@ unsigned int IsNumber(char* word,bool placeAllowed) // simple digit number or wo
 		if (D && W && D->properties & NUMBER_BITS && W->properties & NUMBER_BITS && IsPlaceNumber(W->word)) return FRACTION_NUMBER; 
  		if (D && W && D->properties & NUMBER_BITS && W->properties & NUMBER_BITS) return WORD_NUMBER; 
     }
-	char* number = NULL;
-	char* cur = GetCurrency(word,number);
-	if (cur) return (Convert2Integer(number) != NOT_A_NUMBER) ? CURRENCY_NUMBER : 0 ;
 
 	char* hyphen = strchr(word+1,'-');
 	if (!hyphen) hyphen = strchr(word+1,'_'); // two_thirds
@@ -879,8 +913,10 @@ bool IsPlaceNumber(char* word) // place number and fraction numbers
 	else if (strchr(word,'-')) return false;	 // cannot be place number
 
     if (len < 4 && !IsDigit(*word)) return false; // want a number
-
-	return IsNumber(word,false) ? true : false; // show it is correctly a number
+	char num[MAX_WORD_SIZE];
+	strcpy(num,word);
+	num[len-2] = 0;
+	return IsNumber(num,false) ? true : false; // show it is correctly a number
 }
 
 bool IsFloat(char* word, char* end)
@@ -1567,7 +1603,11 @@ Used for function calls, to read their callArgumentList. Arguments are not evalu
     if (*ptr == '^') 
     {
         ptr = ReadCompiledWord(ptr,buffer); // get name and prepare to peek at next token
-		if (IsDigit(*buffer))  strcpy(buffer,callArgumentList[atoi(buffer+1)+fnVarBase]); // use the value and keep going // NEW
+		if (IsDigit(buffer[1]))  
+		{
+			strcpy(buffer,callArgumentList[atoi(buffer+1)+fnVarBase]); // use the value and keep going // NEW
+			return ptr;
+		}
 		else if (*ptr != '(')  return ptr; // not a function call
 		else buffer += strlen(buffer); // read onto end of call
     }
@@ -1646,8 +1686,13 @@ char* ReadCompiledWord(char* ptr, char* word,bool noquote,bool var)
 	}
 	else 
 	{
-		while ((c = *ptr++) && c != ' ' && c != ENDUNIT) 
+		bool quote = false;
+		while ((c = *ptr++) && c != ENDUNIT) 
 		{
+			if (quote) {}
+			else if (c == ' ') break;
+			if (c == '"') quote = !quote;
+
 			if (special) // try to end a variable if not utf8 char or such
 			{
 				if ( !IsAlphaUTF8OrDigit(c) && c != special && c != '_' && c != '-' ) break;
@@ -1877,8 +1922,20 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 	if (c == '$'){;}
 	else if (!IsAlphaUTF8DigitNumeric(c) || c == '.') return NOT_A_NUMBER; // not  0-9 letters + - 
 
+	size_t len = strlen(number);
 	uint64 valx;
 	if (IsRomanNumeral(number,valx)) return (int64) valx;
+	if (IsDigitWithNumberSuffix(number)) // 10K  10M 10B
+	{
+		char d = number[len-1];
+		number[len-1] = 0;
+		int64 answer = Convert2Integer(number);
+		if (d == 'k' || d == 'K') answer *= 1000;
+		else if (d == 'm' || d == 'M') answer *= 1000000;
+		else if (d == 'B' || d == 'b' || d == 'G' || d == 'g') answer *= 1000000000;
+		number[len-1] = d;
+		return answer;
+	}
 	
 	//  grab sign if any
 	char sign = *number;
@@ -1903,7 +1960,6 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
     char* word = copy+1;
 
 	// remove place suffixes
-    size_t len = strlen(word);
 	if (len > 3 && !stricmp(word+len-3,"ies")) // twenties?
 	{
 		char xtra[MAX_WORD_SIZE];
@@ -1946,7 +2002,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 	unsigned int oldlen = len;
     if (len < 3); // cannot have suffix
     else if (word[len-2] == 's' && word[len-1] == 't' && !strstr(word,"first")) word[len -= 2] = 0; // 1st 
-    else if (word[len-2] == 'n' && word[len-1] == 'd' && strstr(word,"second") && strstr(word,"thousand")) word[len -= 2] = 0; // 2nd but not second or thousandf"
+    else if (word[len-2] == 'n' && word[len-1] == 'd' && !strstr(word,"second") && !strstr(word,"thousand")) word[len -= 2] = 0; // 2nd but not second or thousandf"
     else if (word[len-2] == 'r' && word[len-1] == 'd' && !strstr(word,"third")) word[len -= 2] = 0; // 3rd 
 	else if (word[len-2] == 't' && word[len-1] == 'h' && !strstr(word,"fifth")) //  excluding the word "fifth" which is not derived from five
 	{

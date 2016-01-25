@@ -1,5 +1,5 @@
-#ifndef _DICTIONARYSYSTEMH_
-#define _DICTIONARYSYSTEMH_
+#ifndef _DICTIONARYSYSTEM_H
+#define _DICTIONARYSYSTEM_H
 
 #ifdef INFORMATION
 Copyright (C) 2011-2015 by Bruce Wilcox
@@ -54,7 +54,7 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define POSSESSIVE_BITS			( PRONOUN_POSSESSIVE | POSSESSIVE )
 #define DETERMINER_BITS		   ( DETERMINER | PREDETERMINER | POSSESSIVE_BITS ) // come before adjectives/nouns/ adverbs leading to those
 
-//		0x0000000000100000ULL 	// simultaneous conjunction subordinate and pronoun subject
+//		0x0000000000100000ULL 	
 
 // punctuation
 #define COMMA 					0x0000000000080000ULL	
@@ -215,8 +215,10 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define GRADE5_6					0x0000010000000000ULL
 #define GRADE3_4					0x0000020000000000ULL
 #define GRADE1_2  					0x0000040000000000ULL
-#define KINDERGARTEN				0x0000080000000000ULL
+#define KINDERGARTEN				( GRADE1_2 | GRADE3_4 | GRADE5_6 )
 #define AGE_LEARNED ( KINDERGARTEN | GRADE1_2 | GRADE3_4 | GRADE5_6 )  // adult is all the rest  (3 bits)
+
+#define SUBSTITUTE_RECIPIENT		0x0000080000000000ULL
 
 #define NOUN_NODETERMINER			0x0000100000000000ULL	// nouns of location that require no determiner (like "Home is where the heart is") or mass nouns
 
@@ -230,13 +232,13 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define PRONOUN_INDIRECTOBJECT		0x0001000000000000ULL	// can be an indirect object
 #define MODEL_NUMBER				0x0002000000000000ULL  // Noun_number can be a normal number word like "one" or a model number like "Cray-3"
 #define COMMON1						0x0004000000000000ULL 
-#define COMMON2						0x0008000000000000ULL  
-#define COMMON3						( COMMON1 | COMMON2 )
-#define COMMON4						0x0010000000000000ULL	
-#define COMMON5						( COMMON1 |  COMMON4 )
-#define COMMON6						( COMMON2  | COMMON4 )
-#define COMMON7						( COMMON1 |  COMMON2  | COMMON4 )
-#define COMMONNESS					COMMON7  
+#define COMMON2						0x0008000000000000ULL  // above 10 K
+#define COMMON3						( COMMON1 | COMMON2 )  // above 100 K
+#define COMMON4						0x0010000000000000ULL	 // above 1 million
+#define COMMON5						( COMMON1 |  COMMON4 ) // above 10 million
+#define COMMON6						( COMMON2  | COMMON4 )  // above 100 million
+#define COMMON7						( COMMON1 |  COMMON2  | COMMON4 ) // above 1 billion
+#define COMMONNESS					COMMON7  // word frequency in 1 gram
 
 #define MONTH						0x0020000000000000ULL 	// is a month name
 #define SPELLING_EXCEPTION			0x0040000000000000ULL	// dont double final consonant making past tense
@@ -305,9 +307,10 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define USER_FLAG5			0x00010000
 #define USER_FLAG6			0x00020000
 #define USER_FLAG7			0x00040000
-#define USER_FLAG8			0x00080000
-#define USER_FLAGS			0x000FF000 
-#define SYSTEM_FLAGS		0xFFF00FFF // system used top 16 bits and bottom 12
+#define USER_FLAGS			0x000EF000 
+#define SYSTEM_FLAGS		0xFFF80FFF // system used top 17 bits and bottom 12
+
+#define FACTBUILD2			0x00080000
 
 #define JSON_PRIMITIVE_VALUE 0x00001000 // on object side of triple
 #define JSON_STRING_VALUE 0x00002000 // on object side of triple

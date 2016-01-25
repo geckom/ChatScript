@@ -29,7 +29,7 @@ extern char* lastDeprecation;
 extern uint64 buildId;
 
 void ScriptError();
-void EraseTopicFiles(uint64 build);
+void EraseTopicFiles(uint64 build,char* name);
 void InitScriptSystem();
 void SaveCanon(char* word, char* canon);
 
@@ -53,6 +53,6 @@ char* ReadNextSystemToken(FILE* in,char* ptr, char* word, bool separateUnderscor
 char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore=true);
 
 #define BADSCRIPT(...) {ScriptError(); Log((compiling) ? BADSCRIPTLOG : STDUSERLOG , __VA_ARGS__); JumpBack();}
-#define WARNSCRIPT(...) {ScriptWarn(); Log(STDUSERLOG, __VA_ARGS__); }
+#define WARNSCRIPT(...) {if (compiling) {ScriptWarn(); Log(STDUSERLOG, __VA_ARGS__); }} // readpattern calls from functions should not issue warnings
 
 #endif

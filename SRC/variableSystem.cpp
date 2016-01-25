@@ -18,6 +18,7 @@ char impliedOp = 0;					// for impliedSet, what op is in effect += =
 unsigned int wildcardIndex = 0;
 char wildcardOriginalText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  // spot wild cards can be stored
 char wildcardCanonicalText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  // spot wild cards can be stored
+char wildcardConceptText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  // spot wild cards can be stored
 unsigned int wildcardPosition[MAX_WILDCARDS+1]; // spot it started and ended in sentence
 char wildcardSeparator[2];
 
@@ -57,14 +58,16 @@ static void CompleteWildcard()
 	if (wildcardIndex > MAX_WILDCARDS) wildcardIndex = 0; 
 }
 
-void SetWildCard(unsigned int start, unsigned int end, bool inpattern)
+void SetWildCard(unsigned int start, unsigned int end, bool inpattern,char* concept)
 {
 	if (end < start) end = start;				// matched within a token
 	if (end > wordCount && start != end) end = wordCount; // for start==end we allow being off end, eg _>
     wildcardPosition[wildcardIndex] = start | (end << 16);
     *wildcardOriginalText[wildcardIndex] = 0;
     *wildcardCanonicalText[wildcardIndex] = 0;
-	if (start == 0 || wordCount == 0 || (end == 0 && start != 1) ) // null match, like _{ .. }
+	if (concept) strcpy(wildcardConceptText[wildcardIndex], concept);
+	else *wildcardConceptText[wildcardIndex] = 0;
+    if (start == 0 || wordCount == 0 || (end == 0 && start != 1) ) // null match, like _{ .. }
 	{
 		++wildcardIndex;
 		if (wildcardIndex > MAX_WILDCARDS) wildcardIndex = 0; 
@@ -87,6 +90,7 @@ void SetWildCard(unsigned int start, unsigned int end, bool inpattern)
 			if (wordCanonical[i]) strcat(wildcardCanonicalText[wildcardIndex],wordCanonical[i]);
 			else 
 				strcat(wildcardCanonicalText[wildcardIndex],word);
+			*wildcardConceptText[wildcardIndex] = 0;
 		}
  		if (trace & TRACE_OUTPUT && !inpattern && CheckTopicTrace()) Log(STDUSERLOG,"_%d=%s/%s ",wildcardIndex,wildcardOriginalText[wildcardIndex],wildcardCanonicalText[wildcardIndex]);
 		CompleteWildcard();
@@ -98,7 +102,7 @@ void SetWildCardIndexStart(unsigned int index)
 	 wildcardIndex = index;
 }
 
-void SetWildCard(char* value, char* canonicalValue,const char* index,unsigned int position)
+void SetWildCard(char* value, char* canonicalValue,const char* index,unsigned int position,char* concept)
 {
 	// adjust values to assign
 	if (!value) value = "";
@@ -120,6 +124,8 @@ void SetWildCard(char* value, char* canonicalValue,const char* index,unsigned in
 	if (index) wildcardIndex = GetWildcardID((char*)index); 
     strcpy(wildcardOriginalText[wildcardIndex],value);
     strcpy(wildcardCanonicalText[wildcardIndex],(canonicalValue) ? canonicalValue : value);
+	if (concept) strcpy(wildcardConceptText[wildcardIndex],concept);
+	else *wildcardConceptText[wildcardIndex] = 0;
     wildcardPosition[wildcardIndex] = position | (position << 16); 
   
 	CompleteWildcard();
@@ -313,14 +319,14 @@ void ClearBotVariables()
 
 void NoteBotVariables() // system defined variables
 {
-	if (userVariableIndex) printf("Read %s Variables\r\n",StdIntOutput(userVariableIndex));
-	botVariableIndex = userVariableIndex;
-	for (unsigned int i = 0; i < botVariableIndex; ++i)
+	for (unsigned int i = 0; i < userVariableIndex; ++i)
 	{
-		botVariableList[i] = userVariableList[i];
-		baseVariableValues[i] = botVariableList[i]->w.userValue;
+		botVariableList[botVariableIndex] = userVariableList[i];
+		baseVariableValues[botVariableIndex] = userVariableList[i]->w.userValue;
+		RemoveInternalFlag(userVariableList[i],VAR_CHANGED);
+		++botVariableIndex;
 	}
-	ClearUserVariables();
+	userVariableIndex = 0;
 }
 
 void ClearUserVariables(char* above)
@@ -329,7 +335,7 @@ void ClearUserVariables(char* above)
 	while (count)
 	{
 		WORDP D = userVariableList[--count]; // 0 based
-		if (D->w.userValue < above)
+		if (D->w.userValue >= above)
 		{	
 			D->w.userValue = NULL;
 			RemoveInternalFlag(D,VAR_CHANGED);
@@ -351,7 +357,7 @@ void DumpUserVariables()
 	for (unsigned int i = 0; i < botVariableIndex; ++i) 
 	{
 		value = botVariableList[i]->w.userValue;
-		if (value && *value)  Log(STDUSERLOG,"  bot variable: %s = %s\r\n",botVariableList[i],value);
+		if (value && *value)  Log(STDUSERLOG,"  bot variable: %s = %s\r\n",botVariableList[i]->word,value);
 	}
 
 	
@@ -459,7 +465,8 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 
 	if (*word == '@')
 	{
-		if (!*word1 && *op == '=') // null assign to set as a whole
+		if (impliedSet == ALREADY_HANDLED){;}
+		else if (!*word1 && *op == '=') // null assign to set as a whole
 		{
 			if (*originalWord1 == '^') {;} // presume its a factset function and it has done its job - @0 = next(fact @1fact)
 			else
@@ -532,8 +539,11 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 			}
 			else result = FAILRULE_BIT;
 		}
-		factSetNext[impliedSet] = 0; // all changes requires a reset of next ptr
-		impliedSet = ALREADY_HANDLED;
+		if (impliedSet != ALREADY_HANDLED)
+		{
+			factSetNext[impliedSet] = 0; // all changes requires a reset of next ptr
+			impliedSet = ALREADY_HANDLED;
+		}
 		currentFact = NULL;
 	}
 	else if (IsArithmeticOperator(op)) 
@@ -544,7 +554,7 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 		{
 			if (assignFromWild >= 0) // full tranfer of data
 			{
-				SetWildCard(wildcardOriginalText[assignFromWild],wildcardCanonicalText[assignFromWild],word,0); 
+				SetWildCard(wildcardOriginalText[assignFromWild],wildcardCanonicalText[assignFromWild],word,0,wildcardConceptText[assignFromWild]); 
 				wildcardPosition[GetWildcardID(word)] =  wildcardPosition[assignFromWild];
 			}
 			else SetWildCard(word1,word1,word,0); 

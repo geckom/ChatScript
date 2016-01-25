@@ -38,13 +38,13 @@
 #define QUERY_KIND				0x00000200		// is a query item (from LIVEDATA or query:)
 #define LABEL					QUERY_KIND		// transient scriptcompiler use
 #define RENAMED					QUERY_KIND		// _alpha name renames _number or @name renames @n
-#define HAS_GLOSS				0x00000400		// has gloss ptr	
-#define FN_NO_TRACE				0x00000800		//   dont trace this function
+#define HAS_GLOSS				0x00000400		// has gloss ptr (all normal words)	
+#define FN_NO_TRACE				0x00000800		// dont trace this function (on functions only)
 
-#define UTF8					0x00001000		// word has utf8 char in it
+#define UTF8					0x00001000		// word has utf8 char in it (all normal words)
 #define UPPERCASE_HASH			0x00002000		// word has upper case English character in it
 #define VAR_CHANGED				0x00004000		// $variable has changed value this volley
-#define NOTRACE_TOPIC			VAR_CHANGED		// dont trace this topic
+#define NOTRACE_TOPIC			VAR_CHANGED		// dont trace this topic (topic names)
 #define WORDNET_ID				0x00008000		// a wordnet synset header node (MASTER w gloss ) only used when building a dictionary -- or transient flag for unduplicate
 #define MACRO_TRACE				WORDNET_ID		// turn on tracing for this function (only used when live running)
 #define INTERNAL_MARK			0x00010000		// transient marker for Intersect coding and Country testing in :trim
@@ -56,7 +56,7 @@
 #define BUILD0					0x00100000		// comes from build0 data (marker on functions, concepts, topics)
 #define BUILD1					0x00200000		// comes from build1 data
 #define HAS_EXCLUDE				0x00400000		// concept/topic has keywords to exclude
-#define SUBSTITUTE_RECIPIENT	0x00800000		
+#define BUILD2					0x00800000		// comes from dynamic build2 data
 #define FUNCTION_NAME			0x01000000 	//   name of a ^function  (has non-zero ->x.codeIndex if system, else is user but can be patternmacro,outputmacro, or plan) only applicable to ^ words
 #define CONCEPT					0x02000000	// topic or concept has been read via a definition
 #define TOPIC					0x04000000	//  this is a ~xxxx topic name in the system - only applicable to ~ words
@@ -113,13 +113,13 @@
 #define UPPERCASE_LOOKUP 8192
 
 #define NO_EXTENDED_WRITE_FLAGS ( PATTERN_WORD  )
-#define MARK_FLAGS ( KINDERGARTEN | GRADE1_2 | GRADE3_4 | GRADE5_6  | TIMEWORD | ACTUAL_TIME | WEB_URL | LOCATIONWORD )
+#define MARK_FLAGS (  TIMEWORD | ACTUAL_TIME | WEB_URL | LOCATIONWORD )
 
 // postag composites 
-#define FINITE_SET_WORDS ( PREPOSITION | DETERMINER_BITS | CONJUNCTION | AUX_VERB | PRONOUN_BITS )
-#define PART_OF_SPEECH		( FINITE_SET_WORDS  | BASIC_POS   ) 
-#define NORMAL_WORD			( PART_OF_SPEECH | FOREIGN_WORD | INTERJECTION | THERE_EXISTENTIAL )
 #define PUNCTUATION_BITS	( COMMA | PAREN | PUNCTUATION | QUOTE | CURRENCY )
+
+#define NORMAL_WORD		( PARTICLE | ESSENTIAL_FLAGS | FOREIGN_WORD | INTERJECTION | THERE_EXISTENTIAL | TO_INFINITIVE | QWORD | DETERMINER_BITS | POSSESSIVE_BITS | CONJUNCTION | AUX_VERB | PRONOUN_BITS )
+#define PART_OF_SPEECH		( PUNCTUATION_BITS  | NORMAL_WORD   ) 
 
 #define VERB_CONJUGATION_PROPERTIES ( VERB_CONJUGATE1 | VERB_CONJUGATE2 | VERB_CONJUGATE3 ) 
 #define VERB_PHRASAL_PROPERTIES ( INSEPARABLE_PHRASAL_VERB | MUST_BE_SEPARATE_PHRASAL_VERB | SEPARABLE_PHRASAL_VERB | PHRASAL_VERB )
@@ -149,6 +149,8 @@ unsigned char* GetWhereInSentence(WORDP D); // always skips the linking field at
 
 #define OOB_START '['
 #define OOB_END ']'
+void LockLevel();
+void UnlockLevel();
 
 void PrepareConjugates(WORDP D);
 #define PLURALFIELD 0
@@ -193,8 +195,8 @@ extern char language[40];
 extern FACT* factLocked;
 extern char* stringLocked;
 
-extern WORDP dictionaryPreBuild0;
-extern WORDP dictionaryPreBuild1;
+extern WORDP dictionaryPreBuild[NUMBER_OF_LAYERS+1];
+extern char* stringsPreBuild[NUMBER_OF_LAYERS+1];
 extern WORDP dictionaryFree;
 extern char dictionaryTimeStamp[20];
 
@@ -216,6 +218,11 @@ extern WORDP Dauxverb;
 extern WORDP Dchild,Dadult;
 extern WORDP Dtopic;
 extern MEANING Mmoney;
+extern MEANING Musd;
+extern MEANING Meur;
+extern MEANING Mgbp;
+extern MEANING Myen;
+extern MEANING Mcny;
 extern MEANING Mchatoutput;
 extern MEANING Mburst;
 extern MEANING Mpending;
@@ -282,10 +289,8 @@ void LoadDictionary();
 void ExtendDictionary();
 void WordnetLockDictionary();
 void ReturnDictionaryToWordNet();
-void Build0LockDictionary();
-void ReturnDictionaryToBuild0();
-void FreezeBasicData();
-void ReturnToFreeze();
+void LockLayer(int layer);
+void ReturnToLayer(int layer,bool unlocked);
 void DeleteDictionaryEntry(WORDP D);
 void BuildDictionary(char* junk);
 

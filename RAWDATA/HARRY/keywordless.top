@@ -13,7 +13,7 @@ u: (< say _*) keep() repeat() '_0
 u: ( < [~yesanswer ~more]>) ^keep() gambit($$currenttopic) # current topic gets to continue
 
 ?: (what is a _*1 >) keep() $$tmp = _0
-	 $$url = ^"\"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=&explaintext=&format=json&titles=$$tmp\""
+	 $$url = ^"\"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=2&exintro=&explaintext=&format=json&titles=$$tmp\""
 	 $$user_agent = ^"myemail@hotmail.com User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)"
 	 $$tmp = ^jsonopen(GET $$url "" $$user_agent)
 		# ^jsontree($$tmp)
@@ -22,7 +22,7 @@ u: ( < [~yesanswer ~more]>) ^keep() gambit($$currenttopic) # current topic gets 
 		@0object
 			
 ?: (who be _*1  >) keep()  $$tmp = substitute(character '_0 _ %20 )
-	 $$url = ^"\"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=&explaintext=&format=json&titles=$$tmp\""
+	 $$url = ^"\"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=2&exintro=&explaintext=&format=json&titles=$$tmp\""
 	 $$user_agent = ^"myemail@hotmail.com User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)"
 	 $$tmp = ^jsonopen(GET $$url "" $$user_agent)
 		# ^jsontree($$tmp)
@@ -31,7 +31,7 @@ u: ( < [~yesanswer ~more]>) ^keep() gambit($$currenttopic) # current topic gets 
 		@0object
 	
 ?: (who be _*1 _*1 >) keep()  $$tmp = join('_0  %20  '_1)
-	 $$url = ^"\"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=&explaintext=&format=json&titles=$$tmp\""
+	 $$url = ^"\"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=2&exintro=&explaintext=&format=json&titles=$$tmp\""
 	 $$user_agent = ^"myemail@hotmail.com User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)"
 	 $$tmp = ^jsonopen(GET $$url "" $$user_agent)
 		# ^jsontree($$tmp)

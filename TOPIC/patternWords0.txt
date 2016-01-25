@@ -96,6 +96,7 @@ phytogrammetrist
 woodmachinist
 boilermaker
 meter-reader
+solictor
 singer-songwriter
 firewoman
 shopfitter

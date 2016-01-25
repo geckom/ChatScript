@@ -1,6 +1,7 @@
 ﻿ Enloe ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Eleena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ediline ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Endsley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Elfie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  east_by_north ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     EbN~1nz (^point~22) the compass point that is one point north of due east
@@ -42,6 +43,7 @@
     cardiography~1nz (^diagnostic_procedure~1) diagnostic procedure consisting of recording the activity of the heart electronically with a cardiograph
  Etsuko ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Eadwiella ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Ellar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Earl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  ensign ( meanings=3 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     ensign~1nz (^flag~2) colors flown by a ship to show its nationality
@@ -348,7 +350,7 @@
     transport~6n 
  Eschrichtius ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Eschrichtius~1n 
- embrace ( meanings=6 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ embrace ( meanings=6 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     bosom~1nz (^acceptance~2) a close affectionate and protective acceptance
     embracing~1n 
     embrace~3nz (^inclusion~4) the state of taking in or encircling
@@ -391,7 +393,7 @@
     epidermal_cell~1nz (^skin_cell~1) any of the cells making up the epidermis
  Erithacus_svecicus ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     bluethroat~1nz (^thrush~1) songbird of northern Europe and Asia
- evasive ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ evasive ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     evasive~1az deliberately vague or ambiguous
     evasive~2az avoiding or escaping from difficulty or danger especially enemy fire
     evasive~3az 
@@ -631,7 +633,7 @@
  exposure_therapy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     exposure_therapy~1nz (^systematic_desensitisation~1) a form of behavior therapy in which a survivor confronts feelings or phobias or anxieties about a traumatic event and relives it in the therapy situation
  entry ( meanings=6 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
-    entrance~1n 
+    ingress~1n 
     launching~3n 
     entree~2n 
     entry~4nz (^written_account~1) an item inserted in a written record
@@ -650,6 +652,9 @@
     electromagnetic~1az pertaining to or exhibiting magnetism produced by electric charge in motion
     electromagnetic~2az 
  Eginhard ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ expatriation ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    out-migration~1n 
+    deportation~2n 
  electromagnetism ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     electromagnetics~1nz (^physics~1) the branch of physics concerned with electromagnetic phenomena
     electromagnetism~2nz (^magnetic_attraction~1) magnetism produced by an electric current
@@ -733,7 +738,7 @@
  Engel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Elethia ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  exile ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
-    deportation~2n 
+    transportation~1n 
     deportee~1n 
     expatriate~1n 
     expatriate~3v 
@@ -900,7 +905,6 @@
  Ewa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  espresso ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     espresso~1nz (^coffee~3) strong black coffee brewed by forcing hot water under pressure through finely ground coffee beans
- Eudora ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  ECM ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     electronic_countermeasures~1n 
  Elwald ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -926,7 +930,7 @@
  Esmerelda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Eulalie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  emigration ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
-    out-migration~1n 
+    expatriation~1n 
  Eyota ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  ethnic ( meanings=4 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     ethnic~1nz (^individual~1) a person who is a member of an ethnic group
@@ -1102,8 +1106,6 @@
  Erwyna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Elige ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ejnar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- eye_operation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    eye_surgery~1nz (^operation~4) any surgical procedure involving the eyes
  Eckard ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Evelyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  Eryn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -1179,8 +1181,6 @@
     expansion~4nz (^map~2) a function expressed as a sum or product of terms
  Eccleston ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Esta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- expounding ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
-    exposition~3nz (^interpretation~4) a systematic interpretation or explanation of a specific topic
  euglenoid ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     euglenophyte~1n 
  elderberry ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -1292,8 +1292,6 @@
     estimate~3n 
     estimate~4n 
  Elvira ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- Emile ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Emile~1nz (^character~7) the boy whose upbringing was described by Jean-Jacques Rousseau
  Empire_State_Building ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Empire_State_Building~1nz (^skyscraper~1) a skyscraper built in New York City in 1931
  Edgington ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1410,7 +1408,6 @@
  emollient ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:ADJECTIVE ) 
     cream~1n 
     salving~1az having a softening or soothing effect especially to the skin
- Enlow ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Englehart ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Everly ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  emesis_basin ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -1519,7 +1516,7 @@
  Evadeam ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Endicott ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Endecott~1n 
- emerald ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ emerald ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     emerald~1nz (^green~2) the green color of an emerald
     emerald~2nz (^gem~2) a transparent piece of emerald that has been cut and polished and is valued as a precious gem
     emerald~3nz (^beryl~1) a green transparent form of beryl
@@ -1544,6 +1541,7 @@
     Egbert~1nz (^king~5) king of Wessex whose military victories made Wessex the most powerful kingdom in England
  Ethel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Edington ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Eshkol ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Edmonds ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Erendiria ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Emmanuele ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1688,7 +1686,7 @@
     subclass_Euryalida~1n 
  Etha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Edmanda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- easy ( meanings=16 glosses=8 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=easiest 
+ easy ( meanings=16 glosses=8 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=easiest 
     easy~1az obtained with little effort or sacrifice, often obtained illegally
     easy~2az less in demand and therefore readily obtainable
     light~16a 
@@ -1705,8 +1703,6 @@
     easily~3b 
     soft~21b 
     tardily~2b 
- Ellison ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
-    Ralph_Ellison~1n 
  entrepot ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     storage~5n 
     transshipment_center~1n 
@@ -1796,6 +1792,8 @@
     emulation~1nz (^imitation~1) effort to equal or surpass another
     emulation~2nz (^technique~2) technique of one machine obtaining the same results as another
     emulation~3nz (^dream~5) ambition to equal or excel
+ Eckhart ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+    Johannes_Eckhart~1n 
  earth_god ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     earth-god~1nz (^god~2) a god of fertility and vegetation
  extracurricular ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -1845,6 +1843,7 @@
     elision~1nz (^omission~2) a deliberate act of omission
     exclusion~3nz (^situation~4) the state of being excluded
     censure~2n 
+ Ekerd ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  expropriation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     expropriation~1nz (^confiscation~1) taking out of an owner's hands
  Ethen ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2275,12 +2274,14 @@
  Eldridge ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Elkin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Ellinger ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Ellison ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+    Ralph_Ellison~1n 
  Ellsworth ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Oliver_Ellsworth~1n 
  Elmore ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Elms ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
  Embry ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Endsley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Enlow ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Ensor ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Epperson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Erdman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2350,7 +2351,6 @@
  Eiric ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Eirica ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Eithne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Ekerd ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ekhard ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ektor ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Elazar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2384,7 +2384,6 @@
  Elka ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Ella ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  Ellaine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Ellar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ellayne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ellee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Elleen ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2413,6 +2412,8 @@
  Elza ( NOUN_HUMAN NOUN_FIRSTNAME NOUN NOUN_PROPER_SINGULAR ) 
  Eman ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Emesta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Emile ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
+    Emile~1nz (^character~7) the boy whose upbringing was described by Jean-Jacques Rousseau
  Emmalyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Emmanuella ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -2455,7 +2456,6 @@
  Ertha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Ervine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Erwina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Eshkol ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Esiankiki ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Eskame ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Esmeralda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -2473,6 +2473,7 @@
  Ethyl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Etlelooaat ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Etty ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Eudora ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Eugen ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Eugenia ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
     genus_Eugenia~1nz (^magnoliopsid_genus~1) tropical trees and shrubs with aromatic leaves and often valuable hard wood
@@ -2576,9 +2577,6 @@
  effacement ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     self-effacement~1n 
     effacement~2nz (^biological_process~1) shortening of the uterine cervix and thinning of its walls as it is dilated during labor
- expatriation ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    emigration~1n 
-    exile~1n 
  embarkation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     embarkment~1nz (^going~1) the act of passengers and crew getting aboard a ship or aircraft
  embarkment ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -2933,7 +2931,7 @@
     question~5n 
  embryonic_stem-cell_research ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     embryonic_stem-cell_research~1nz (^stem-cell_research~1) biological research on stem cells derived from embryos and on their use in medicine
- experiment ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ experiment ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     experimentation~1n 
     experiment~2nz (^venture~1) a venture at something new or different
     experimentation~2n 
@@ -2962,7 +2960,7 @@
     eye-drop~2n 
  electric_healing ( meanings=1 NOUN NOUN_SINGULAR ) 
     galvanism~1n 
- electric ( meanings=5 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ electric ( meanings=5 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     electric_automobile~1nz (^automobile~1) a car that is powered by electricity
     galvanising~1az affected by emotion as if by electricity
     electric~3az exceptionally tense
@@ -2986,6 +2984,8 @@
     debilitation~1n 
  exenteration ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
     exenteration~1nz (^operation~4) surgical removal of the organs within a body cavity
+ eye_operation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    eye_surgery~1nz (^operation~4) any surgical procedure involving the eyes
  eye_surgery ( meanings=1 NOUN NOUN_SINGULAR ) 
     eye_operation~1n 
  extracapsular_surgery ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -3013,12 +3013,12 @@
  escape_mechanism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     escape_mechanism~1nz (^escape~5) a form of behavior that evades unpleasant realities
  extravagance ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
-    high_life~1nz (^waste~1) excessive spending
+    highlife~1nz (^waste~1) excessive spending
     profligacy~2nz (^shortsightedness~1) the trait of spending extravagantly
     extravagancy~1nz (^inordinateness~1) the quality of exceeding the appropriate limits of decorum or probability or truth
  evildoing ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     transgression~2n 
- evil ( meanings=7 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ evil ( meanings=7 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:ADJECTIVE ) 
     wickedness~1nz (^transgression~2) morally objectionable behavior
     evilness~1nz (^immorality~2) the quality of being morally wrong in principle or practice
     evil~3nz (^bad~1) that which causes harm or destruction or misfortune
@@ -3205,7 +3205,7 @@
     employee-owned_business~1nz (^business~3) a commercial enterprise owned by the people who work for it
  employee-owned_business ( meanings=1 NOUN NOUN_SINGULAR ) 
     employee-owned_enterprise~1n 
- express ( meanings=13 glosses=13 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ express ( meanings=13 glosses=13 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     expressage~1nz (^transportation~3) rapid transport of goods
     limited~1nz (^public_transport~1) public transport consisting of a fast train or bus that makes only a few scheduled stops
     express_mail~1nz (^mail~4) mail that is distributed by a rapid and efficient system
@@ -3238,7 +3238,7 @@
     arming~1nz (^militarization~1) the act of equiping with weapons in preparation for war
  economic_strangulation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     economic_strangulation~1nz (^penalty~1) punishment of a group by cutting off commercial dealings with them
- economic ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ economic ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     economical~1a 
     economic~2az financially rewarding
     economic~3az concerned with worldly necessities of life 
@@ -3460,7 +3460,7 @@
     Eurylaimidae~1nz (^bird_family~1) coextensive with the suborder Eurylaimi
  eastern_kingbird ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     eastern_kingbird~1nz (^Tyrannus_tyrannus~1) a kingbird that breeds in North America and winters in tropical America
- eastern ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) comparative=easterner 
+ eastern ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) comparative=easterner 
     easterly~2a 
     easterly~3a 
     eastern~3az lying toward or situated in the east
@@ -4135,7 +4135,7 @@
     earflap~1n 
  ear_hole ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     ear_hole~1nz (^hole~1) a hole for sound to reach the ears
- early ( meanings=9 glosses=8 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE TIMEWORD (null) ) comparative=earliest 
+ early ( meanings=9 glosses=8 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE TIMEWORD ) comparative=earliest 
     early~1az at or near the beginning of a period of time or course of events or before the usual or expected time
     early~2az being or occurring at an early stage of development
     early~3az of an early stage in the development of a language or literature
@@ -4229,7 +4229,7 @@
     eightpenny~1az used of nail size
  eight-spot ( meanings=1 NOUN NOUN_SINGULAR ) 
     eight~1n 
- elastic ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ elastic ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:ADJECTIVE ) 
     elastic~1nz (^material~1) a fabric made of yarns containing an elastic material
     rubber_band~1nz (^band~1) a narrow band of elastic rubber used to hold things together
     elastic~3az capable of resuming original shape after stretching or compression
@@ -5061,7 +5061,7 @@
     negativity~1nz (^tendency~1) the tendency of an atom or radical to attract electrons in the formation of an ionic bond
  effulgence ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     radiance~1n 
- ebony ( meanings=5 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ ebony ( meanings=5 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     coal_black~1n 
     ebony_tree~1n 
     ebony~3nz (^wood~4) hard dark-colored heartwood of the ebony tree
@@ -5174,7 +5174,7 @@
     essentiality~1nz (^importance~1) basic importance
  exclusive_right ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     privilege~2nz (^right~4) a right reserved exclusively by a particular person or group 
- exclusive ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:ADJECTIVE (null) ) 
+ exclusive ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 posdefault:ADJECTIVE ) 
     scoop~4nz (^account~5) a news report that is reported first by one news organization
     single~4a 
     exclusive~3az excluding much or all
@@ -5190,7 +5190,7 @@
     equal_opportunity~1nz (^civil_right~1) the right to equivalent opportunities for employment regardless of race or color or sex or national origin
  eminent_domain ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     eminent_domain~1nz (^legal_right~1) the right of the state to take private property for public use
- eminent ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ eminent ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     towering~1a 
     high~14a 
     eminent~3az 
@@ -5415,10 +5415,10 @@
     motor_fiber~1nz (^nerve_fiber~1) a nerve fiber that carries impulses toward the muscles or glands
  eighth_cranial_nerve ( meanings=1 NOUN NOUN_SINGULAR ) 
     acoustic_nerve~1n 
- eighth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN (null) ) 
+ eighth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN ) 
  eleventh_cranial_nerve ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     accessory_nerve~1nz (^cranial_nerve~1) arises from two sets of roots that unite to form the nerve
- eleventh ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN (null) ) 
+ eleventh ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN ) 
  encephalon ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) plural=encephala 
     brain~1n 
  epiphysis_cerebri ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -5543,14 +5543,14 @@
     music~3n 
  equidistribution ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     equidistribution~1nz (^distribution~4) a flat distribution having equal frequencies of occurrence
- experience ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ experience ( meanings=8 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     experience~1nz (^education~5) the accumulation of knowledge or skill that results from direct participation in events or activities
     experience~2nz (^content~2) the content of direct observation or participation in an event
     experience~3nz (^natural_event~1) an event as apprehended
-    have~5v 
+    have~5vz undergo
     know~8vz have firsthand knowledge of states, situations, emotions, or sensations
     feel~11vz undergo an emotional sensation or be in a particular state of mind
-    have~9v 
+    receive~9vz go through 
     go_through~5vz go or live through
  experimental_extinction ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     extinction~2nz (^conditioning~1) a conditioning process in which the reinforcer is removed and a conditioned response becomes independent of the conditioned stimulus
@@ -5593,7 +5593,7 @@
     abomination~2n 
  eye-catcher ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR posdefault:NOUN ) 
     eye-catcher~1nz (^center~8) a striking person or thing that attracts attention
- excuse ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ excuse ( meanings=9 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
     apology~1nz (^example~2) a poor example
     excuse~2nz (^line~14) a note explaining an absence
     self-justification~1nz (^defense~6) a defense of some offensive behavior or some failure to keep a promise etc.
@@ -5872,7 +5872,7 @@
  experimenter ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     experimenter~1nz (^researcher~1) a research worker who conducts experiments
     experimenter~2nz (^individual~1) a person who enjoys testing innovative ideas
- esteem ( meanings=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ esteem ( meanings=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
     regard~4n 
     admiration~2n 
     regard~7n 
@@ -5899,7 +5899,7 @@
     electronic_communication~1nz (^transmission~3) communication by computer
  electronic_mail ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     email~1nz (^electronic_communication~1) a system of world-wide electronic communication in which a computer user can compose a message at one terminal that can be regenerated at the recipient's terminal when the recipient logs in
- e-mail ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT VERB_CONJUGATE2 (null) ) 
+ e-mail ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT VERB_CONJUGATE2 ) 
     electronic_mail~1n 
     e-mail~2nz 
     email~3v 
@@ -6175,11 +6175,13 @@
     explicandum~1n 
  explanans ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     explanans~1nz (^statement~4) statements that explain the explicandum
- exposition ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
+ exposition ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     exposition~1nz (^section~4) the section of a movement (especially in sonata form) where the major musical themes first occur
     exposition~2nz (^explanation~2) an account that sets forth the meaning or intent of a writing or discourse
-    expounding~1n 
+    expounding~1nz (^interpretation~4) a systematic interpretation or explanation of a specific topic
     exhibition~2n 
+ expounding ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
+    exposition~3n 
  explicit_definition ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     explicit_definition~1nz (^definition~2) a definition that gives an exact equivalent of the term defined
  explicit ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
@@ -6509,8 +6511,8 @@
     ebbtide~1nz (^tide~1) the tide while water is flowing out
  eagre ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     tidal_bore~1n 
- eager ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) 
-    aegir~1n 
+ eager ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
+    bore~3nz (^tidal_current~1) a high wave caused by tidal flow (as by colliding tidal currents or in a narrow estuary)
     eager~2az having or showing keen interest or intense desire or impatient expectancy
     eager~3az 
  exigency ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -6937,8 +6939,8 @@
     elite~3az 
  elite_group ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     elite~1nz (^upper_class~1) a group or class of persons enjoying superior intellectual or social or economic status
- elect ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN GRADE3_4 ADJECTIVE_POSTPOSITIVE posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) ) 
-    chosen~1nz (^elite_group~1) an exclusive group of people
+ elect ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
+    chosen~1n 
     elect~2az elected but not yet installed in office
     elite~2az selected as the best
     elect~4vz choose
@@ -7377,7 +7379,7 @@
     ex-gambler~1nz (^gambler~1) a former gambler
  ex-mayor ( meanings=1 glosses=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
     ex-mayor~1nz (^mayor~1) a former mayor
- expert ( meanings=4 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ expert ( meanings=4 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:NOUN posdefault:ADJECTIVE ) 
     expert~1nz (^individual~1) a person with special knowledge or ability who performs skillfully
     good~24a 
     technical~5az of or relating to or requiring special knowledge to be understood
@@ -8033,8 +8035,6 @@
     Durkheim~1nz (^sociologist~1) French sociologist and first professor of sociology at the Sorbonne
  Eleonora_Duse ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Duse~1nz (^actress~1) Italian actress best known for her performances in tragic roles
- Eckhart ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Johannes_Eckhart~1n 
  Ederle ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Gertrude_Ederle~1n 
  Edmund_I ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -8347,7 +8347,7 @@
  Emmy_Noether ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Noether~1nz (^mathematician~1) German mathematician
  Edna_O'Brien ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
-    O'brien~1nz (^writer~1) Irish writer
+    O'Brien~1nz (^writer~1) Irish writer
  Eugene_Gladstone_O'Neill ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Eugene_O'Neill~1nz (^playwright~1) United States playwright
  Eugene_Ormandy ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -9522,7 +9522,7 @@
     yerba_santa~1nz (^bush~4) viscid evergreen shrub of western United States with white to deep lilac flowers
  erect_bugle ( meanings=1 NOUN NOUN_SINGULAR ) 
     blue_bugle~1n 
- erect ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ erect ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     tumid~1az of sexual organs
     upright~4a 
     erect~3az 
@@ -10094,6 +10094,9 @@
     east_southeast~1n 
  executor-heir_relation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     executor-heir_relation~1nz (^fiduciary_relation~1) the responsibility of an executor of an estate to act in the best interests of the heir
+ eightieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
+    eightieth~1nz (^rank~5) position 80 in a countable series of things
+    eightieth~2az the ordinal number of eighty in counting order
  equilateral ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     equilateral~1nz (^figure~13) a figure whose sides are all equal
     equilateral~2az having all sides or faces equal
@@ -10991,7 +10994,7 @@
     always~1b 
  eventually ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
     finally~2bz after an unspecified period of time or an especially long delay
- earlier ( meanings=4 glosses=4 MORE_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN GRADE3_4 posdefault:ADJECTIVE TIMEWORD ) comparative=early 
+ earlier ( meanings=4 glosses=4 MORE_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE TIMEWORD ) comparative=early 
     earliest~1az more early than
     before~1bz earlier in time
     to_begin_with~1bz before now
@@ -11006,7 +11009,7 @@
     rapacious~1a 
     greedy~3a 
     sharp-set~1a 
- exuberant ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ exuberant ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     riotous~1az produced or growing in extreme abundance
     overweening~2a 
     ebullient~1a 
@@ -11017,7 +11020,7 @@
     eruptive~1az actively spewing out lava
     igneous~2az produced by the action of fire or intense heat
     eruptive~3az producing or characterized by eruptions
- extinct ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ extinct ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     extinct~1az permanently inactive
     out~2a 
     nonextant~2az no longer in existence
@@ -11028,7 +11031,7 @@
     real~6a 
     existent~4az 
     existent~5az 
- effective ( meanings=7 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ effective ( meanings=7 glosses=5 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE ) 
     effective~1az existing in fact
     efficient~1az able to accomplish a purpose
     good~10a 
@@ -11050,7 +11053,7 @@
  elocutionary ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     elocutionary~1az overly embellished
     elocutionary~2az of or relating to elocution
- excited ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) ) 
+ excited ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     aroused~1a 
     excited~2az in an aroused state
     activated~3a 
@@ -11104,7 +11107,7 @@
  eloquent ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     fluent~1a 
     eloquent~2az 
- embarrassed ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ embarrassed ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     mortified~1az made to feel uncomfortable because of shame or wounded pride
     chagrined~1az feeling or caused to feel uneasy and self-conscious
     embarrassed~3az 
@@ -11118,7 +11121,7 @@
     engrossed~2az written formally in a large clear script, as a deed or other legal document
  enwrapped ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:VERB ) 
     intent~3a 
- enchanting ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ enchanting ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     bewitching~1a 
     enchanting~2az 
  enthralling ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -11195,7 +11198,7 @@
  enumerable ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     countable~1a 
     enumerable~2az 
- elaborate ( meanings=7 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ elaborate ( meanings=7 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     elaborated~1a 
     luxuriant~3a 
     elaborate~3az 
@@ -11217,7 +11220,7 @@
     skirting~1az being all around the edges
  evitable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     avoidable~1a 
- erratic ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ erratic ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     quicksilver~2a 
     temperamental~1a 
     planetary~2a 
@@ -11280,7 +11283,7 @@
     English-speaking~1az able to communicate in English
  expressionless ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     unexpressive~1az deliberately impassive in manner
- efficient ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ efficient ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     effective~2a 
     efficient~2az being effective without wasting time or effort or expense
     efficient~3az 
@@ -11370,7 +11373,7 @@
     down-to-earth~1a 
     earthy~5az of or consisting of or resembling earth
     earthy~6az 
- elated ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ elated ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     elated~1az exultantly proud and joyful
     jubilant~2a 
     elated~3az 
@@ -11508,7 +11511,7 @@
     expansible~1a 
  ex_gratia ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM posdefault:ADJECTIVE  poscondition=?=A ) 
     ex_gratia~1az 
- eligible ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ eligible ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     eligible~1az qualified for or allowed or worthy of being chosen
     eligible~2az 
  entitled ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
@@ -11536,7 +11539,7 @@
     enthralled~1a 
  ensorcelled ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     bewitched~1az under a spell
- encouraging ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ encouraging ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     encouraging~1az giving courage or confidence or hope
     supporting~3az furnishing support and encouragement
     encouraging~3az 
@@ -11575,7 +11578,7 @@
     exogenous~1a 
  end-stopped ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     end-stopped~1az having a rhetorical pause at the end of each line
- energetic ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ energetic ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     energetic~1az possessing or exerting or displaying energy
     up-and-coming~1az working hard to promote an enterprise
     energetic~3az 
@@ -11586,7 +11589,7 @@
     exportable~2az 
  explorative ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     exploratory~1a 
- enhanced ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) ) 
+ enhanced ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     enhanced~1az increased or intensified in value or beauty or quality
     enhanced~2az 
  exaggerated ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -11602,7 +11605,7 @@
     entrepreneurial~1az willing to take risks in order to make a profit
     entrepreneurial~2az of or relating to an entrepreneur
     entrepreneurial~3az 
- enthusiastic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ enthusiastic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     enthusiastic~1az having or showing great excitement and interest
     enthusiastic~2az 
  evangelical ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
@@ -11612,7 +11615,7 @@
  evangelistic ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     evangelical~1az marked by ardent or zealous enthusiasm for a cause
     evangelistic~2az relating to or promoting the preaching and dissemination of the Christian gospel
- envious ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ envious ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     jealous~1a 
     envious~2az 
  entozoic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -11689,7 +11692,7 @@
  expectable ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     expectable~1az to be expected
     expectable~2az 
- expensive ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ expensive ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     expensive~1az high in price or charging high prices
     expensive~2az 
  experienced ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
@@ -11863,7 +11866,7 @@
     maddening~1az extremely annoying or displeasing
  engrossing ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     absorbing~1a 
- entertaining ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ entertaining ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     entertaining~1az agreeably diverting
     entertaining~2az 
  extramural ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -11914,7 +11917,7 @@
     aeolotropic~1a 
  enraptured ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     rapt~1a 
- enormous ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ enormous ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     tremendous~1a 
     enormous~2az 
  elephantine ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -12262,7 +12265,7 @@
  enervated ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     asthenic~2a 
     enervated~2az 
- excellent ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ excellent ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE ) 
     fantabulous~1az very good
     excellent~2az 
  exempt ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
@@ -12289,7 +12292,7 @@
     extraterritorial~1a 
  excogitative ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     excogitative~1az concerned with excogitating or having the power of excogitation
- endurable ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ endurable ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     supportable~1a 
     endurable~2az 
  edental ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -12893,21 +12896,21 @@
  eeriest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=eerier 
  emptier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) comparative=empty 
  emptiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=emptier 
- embarrass ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ embarrass ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     abash~1vz cause to be embarrassed
     block~27v 
  enchant ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     jinx~4v 
     captivate~1v 
     transport~9v 
- encourage ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) (null) ) 
+ encourage ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE1_2 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     encourage~1vz spur on
     encourage~2vz inspire with confidence
     boost~8v 
  energise ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB ) 
     brace~10v 
     excite~3v 
- entertain ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_GERUND VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ entertain ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_GERUND VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     flirt_with~1vz take into consideration, have in view
     harbour~3v 
     entertain~3vz provide entertainment for
@@ -12915,7 +12918,7 @@
     aggravate~1v 
     infuriate~1vz make furious
     aggravate~2v 
- excite ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ excite ( meanings=8 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB ) 
     stimulate~2vz act as a stimulant
     excite~2vz produce a magnetic field in
     energize~2vz raise to a higher energy level
@@ -14021,7 +14024,7 @@
     extrapolate~1vz gain knowledge of by extrapolating
     interpolate~2v 
     generalize~3vz draw from specific cases for more general cases
- empathize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ empathize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     sympathise~1v 
  empathise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     empathize~1v 
@@ -14031,11 +14034,11 @@
  engulf ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     immerse~1v 
     engulf~2vz flow over or cover completely
- espouse ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ espouse ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     embrace~4v 
     adopt~6v 
     wed~2v 
- educate ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ educate ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     prepare~3v 
     educate~2vz give an education to
     school~10vz teach or refine to be discriminative in taste or judgment
@@ -14045,7 +14048,7 @@
     sort_out~1v 
     irradiate~3v 
     edify~1vz make understand
- elucidate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ elucidate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     enlighten~1v 
     clear_up~4vz make clear and comprehensible
  empanel ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -14107,7 +14110,7 @@
  enjoin ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     tell~3v 
     enjoin~2vz issue an injunction
- entreat ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) ) 
+ entreat ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     beseech~1v 
  exhort ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     urge_on~1v 
@@ -14129,31 +14132,31 @@
     escape~15v 
  eschew ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     shun~1vz avoid and stay away from deliberately
- equivocate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT (null) ) 
+ equivocate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT ) 
     beat_around_the_bush~1v 
  exaggerate ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     hyperbolise~1vz to enlarge beyond bounds or the truth
     overdo~1vz do something to an excessive degree
- exuberate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT (null) ) 
+ exuberate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT ) 
     triumph~3v 
- exult ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT (null) ) 
+ exult ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT ) 
     exuberate~1v 
     walk_on_air~1v 
- extol ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ extol ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     laud~1v 
  ensky ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     ensky~1vz exalt to the skies
- excoriate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ excoriate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     decry~1v 
     chafe~5vz tear or wear off the skin or make sore by abrading
  execrate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     anathematize~1v 
     abhor~1v 
- eulogize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ eulogize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     eulogise~1vz praise formally and eloquently
  eulogise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     eulogize~1v 
- explain ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ explain ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     excuse~5vz serve as a reason or cause or justification of
     explicate~2vz make plain and comprehensible
     explain~3vz define
@@ -14163,13 +14166,13 @@
     exonerate~1v 
  extenuate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_DIRECTOBJECT ) 
     palliate~2vz lessen or to try to lessen the seriousness or extent of
- exclaim ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ exclaim ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     cry_out~1vz utter aloud
     proclaim~2vz state or announce
  enthuse ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     enthuse~1vz utter with enthusiasm
     enthuse~2vz cause to feel enthusiasm
- explicate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ explicate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     develop~13v 
     explain~2v 
  evoke ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -14192,13 +14195,13 @@
  exposit ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     expatiate~1v 
     expound~2v 
- expound ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ expound ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     exposit~1v 
     set_forth~1v 
  embroider ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     embellish~2v 
     broider~1vz decorate with needlework
- enunciate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ enunciate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     vocalise~3v 
     pronounce~2v 
  enounce ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
@@ -14383,10 +14386,10 @@
     wring_from~1v 
     wring~5v 
     extort~3vz obtain through intimidation
- envision ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ envision ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     visualise~2v 
     foresee~2vz picture to oneself
- envisage ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ envisage ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     ideate~1v 
  effectuate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     set_up~9v 
@@ -14488,7 +14491,7 @@
     evert~1vz turn inside out
  espy ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 VERB_DIRECTOBJECT ) 
     descry~1v 
- eavesdrop ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT (null) ) 
+ eavesdrop ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     listen_in~2v 
  edulcorate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     dulcorate~1vz make sweeter in taste
@@ -14561,7 +14564,7 @@
  enforce ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     implement~4v 
     impose~3vz compel to behave in a certain way
- exist ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_NOOBJECT PRESENTATION_VERB (null) ) 
+ exist ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_NOOBJECT PRESENTATION_VERB ) 
     be~3vz have an existence, be extant
     subsist~1vz support oneself
  eventuate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT ) 

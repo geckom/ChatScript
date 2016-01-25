@@ -110,23 +110,23 @@
     jumping-off_place~1nz (^beginning~4) a place from which an enterprise or expedition is launched
  pass_completion ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     completion~2nz (^play~6) a successful forward pass in football
- pop ( meanings=19 glosses=19 NOUN_HUMAN NOUN_HE NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=popper 
+ pop ( meanings=19 glosses=14 NOUN_HUMAN NOUN_HE NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=popper 
     pop~1nz (^popular_music_genre~1) music of general appeal to teenagers
     popping~1nz (^sound~5) a sharp explosive sound as from a gunshot or drawing a cork
-    soda_water~1nz (^soft_drink~1) a sweet drink containing carbonated water and flavoring
-    pappa~1nz (^father~2) an informal term for a father
-    popular~1az new and of general appeal (especially among young people)
+    soda~1n 
+    daddy~1n 
+    popular~1a 
     pop~6bz like a pop or with a pop
     pop~7vz burst open with a sharp, explosive sound
     pop~8vz cause to burst with a loud, explosive sound
     pop~9vz fire a weapon with a loud explosive noise
     pop~10vz take drugs, especially orally
-    drink_down~1vz drink down entirely
+    kill~8v 
     pop~12vz hit or strike
     pop~13vz hit a pop-fly
     pop~14vz release suddenly
     pop~15vz put or thrust suddenly and forcefully
-    bug_out~1vz bulge outward
+    start~18v 
     pop_up~1vz appear suddenly or unexpectedly
     pop~18vz make a sharp explosive noise
     pop~19vz cause to make a sharp explosive sound
@@ -135,7 +135,7 @@
     sitting~2n 
  primary_tooth ( meanings=1 NOUN NOUN_SINGULAR ) 
     deciduous_tooth~1n 
- protective ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ protective ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     protective~1az solicitously caring or mindful
     protective~2az intended or adapted to afford protection of some kind
     protective~3az showing care
@@ -172,6 +172,8 @@
     placement~1nz (^contact~1) contact established between applicants and prospective employees
     position~5n 
     arrangement~2n 
+ plumbery ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
+    plumbing~1nz (^craft~1) the occupation of a plumber
  Pied_Piper ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Pied_Piper_of_Hamelin~1n 
  preventive_medicine ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -365,7 +367,7 @@
     PPLO~1nz (^mycoplasma~1) a mycoplasma resistant to antibiotics that causes a kind of pneumonia in humans
  Photoblepharon ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Photoblepharon~1n 
- plan ( meanings=7 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT (null) (null) ) 
+ plan ( meanings=7 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT ) 
     architectural_plan~1nz (^drawing~5) scale drawing of a structure
     design~5n 
     program~2n 
@@ -591,8 +593,6 @@
     lying~1n 
     evasiveness~1nz (^equivocalness~1) intentionally vague or ambiguous
     lie~1n 
- Poecilocapsus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    genus_Poecilocapsus~1n 
  Pacorro ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Parr ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     Catherine_Parr~1n 
@@ -615,7 +615,7 @@
     pick-off~1nz (^baseball_play~1) a baseball play in which a base runner is caught off base and tagged out
  powder_and_shot ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     powder_and_shot~1nz (^ammunition~1) ammunition consisting of gunpowder and bullets for muskets
- point ( meanings=40 glosses=34 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) ) 
+ point ( meanings=40 glosses=34 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     breaker_point~1nz (^contact~3) a contact in the distributor
     point~2nz (^end~9) sharp end
     power_point~1nz (^electric_receptacle~1) a wall socket
@@ -687,6 +687,8 @@
     mental_hygiene~1nz (^psychological_medicine~1) the branch of psychiatry concerned with psychological methods
  pelican ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     pelican~1nz (^pelecaniform_seabird~1) large long-winged warm-water seabird having a large bill with a distensible pouch for fish
+ parvo ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    parvovirus~1n 
  Pfaff ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  philanthropic_foundation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     philanthropic_foundation~1nz (^charity~4) a foundation that provides funds for science or art or education or religion or relief from disease etc.
@@ -916,7 +918,7 @@
  Prior ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  pervaporation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     pervaporation~1nz (^concentration~1) the concentration of a colloidal solution whose colloid will not pass through a semipermeable membrane
- plane ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=planer 
+ plane ( meanings=9 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=planer 
     aeroplane~1n 
     woodworking_plane~1nz (^edge_tool~1) a carpenter's hand tool with an adjustable blade for smoothing or shaping wood
     planer~1n 
@@ -1167,7 +1169,7 @@
  plane_seat ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     plane_seat~1nz (^seat~1) a seat on a commercial airliner
  press_clipping ( meanings=1 NOUN NOUN_SINGULAR ) 
-    cutting~8n 
+    clipping~3n 
  Paschall ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  polonaise ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     polonaise~1nz (^dress~3) a woman's dress with a tight bodice and an overskirt drawn back to reveal a colorful underskirt
@@ -1197,7 +1199,7 @@
     sparrow~1n 
  polyplacophore ( meanings=1 NOUN NOUN_SINGULAR ) 
     chiton~1n 
- push ( meanings=15 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ push ( meanings=15 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pushing~1nz (^propulsion~1) the act of applying force in order to move something away
     push~2nz (^progress~2) an effort to advance
     button~3n 
@@ -1372,7 +1374,7 @@
     penguin~1nz (^sphenisciform_seabird~1) short-legged flightless birds of cold southern especially Antarctic regions having webbed feet and wings modified as flippers
  picture_hat ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     picture_hat~1nz (^woman_'s_hat~1) a woman's dressy hat with a wide brim
- powder ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ powder ( meanings=5 glosses=5 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     powder~1nz (^medicine~3) any of various cosmetic or medical preparations dispensed in the form of a pulverized powder
     pulverisation~3nz (^solid~3) a solid substance in the form of tiny loose particles
     gunpowder~1nz (^explosive~1) a mixture of potassium nitrate, charcoal, and sulfur in a 75:15:10 ratio which is used in gunnery, time fuses, and fireworks
@@ -1572,8 +1574,6 @@
  peg_top ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     peg_top~1nz (^top~4) a pear-shaped top made of wood with a metal center pin
  Pam ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- pie_chart ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    pie_chart~1nz (^chart~2) a circular chart divided into triangular areas proportional to the percentages of the whole
  pernyi_moth ( meanings=1 NOUN NOUN_SINGULAR ) 
     Antheraea_pernyi~1n 
  pants_presser ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -1663,8 +1663,8 @@
     publishing_conglomerate~1n 
  precedency ( meanings=3 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     precession~1n 
-    priority~1n 
-    priority~2n 
+    precedence~2n 
+    precedence~3n 
  Perceval ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Porcellio ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Porcellio~1n 
@@ -1794,6 +1794,9 @@
  preferable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     preferred~1a 
  Pennell ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ prodigality ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    high_life~1n 
+    extravagance~2n 
  Prescot ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  passing ( meanings=12 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 posdefault:VERB ) 
     pass~1n 
@@ -1830,7 +1833,7 @@
     genus_Padda~1n 
  projection_screen ( meanings=1 NOUN NOUN_SINGULAR ) 
     screen~6n 
- proportional ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE (null) ) 
+ proportional ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
     proportional~1nz (^quantity~3) one of the quantities in a mathematical proportion
     relative~4a 
     proportional~3az having a constant ratio
@@ -1890,7 +1893,7 @@
  prison_cell ( meanings=1 NOUN NOUN_SINGULAR ) 
     cell~3n 
  Prantal ( NOUN NOUN_PROPER_SINGULAR ) 
- plum ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN (null) ) 
+ plum ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
     plum~1nz (^position~2) a highly desirable position or assignment
     plum~2nz (^edible_fruit~1) any of numerous varieties of small to medium-sized round or oval fruit having a smooth skin and a single pit
     plum_tree~1nz (^fruit_tree~1) any of several trees producing edible oval fruit having a smooth skin and a single hard stone
@@ -1975,6 +1978,7 @@
  purveyance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     purveyance~1nz (^supply~1) the act of supplying something
  Plourde ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Penton ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Platanistidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Platanistidae~1nz (^mammal_family~1) river dolphins
  path_of_least_resistance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -2104,8 +2108,6 @@
  Prado ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  patellar ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     patellar~1az near or relating to the patella or kneecap
- plowshare ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
-    share~3n 
  Pipracil ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     piperacillin~1n 
  pomfret ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -2171,6 +2173,8 @@
     order_Phasmida~1n 
  plutonium_bomb ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     A-bomb~1nz (^nuclear_weapon~1) a nuclear weapon in which enormous energy is released by nuclear fission
+ personal_care ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    personal_care~1nz (^attention~1) care for someone who is disabled or is otherwise unable to care for themselves
  passenger_car ( meanings=1 NOUN NOUN_SINGULAR ) 
     carriage~4n 
  pandiculation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -2590,7 +2594,7 @@
     punishable~2a 
     penal~2az serving as or designed to impose punishment
     penal~3az of or relating to punishment
- pretend ( meanings=8 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) comparative=pretender 
+ pretend ( meanings=8 glosses=8 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=pretender 
     make-believe~1nz (^pretending~1) the enactment of a pretense
     make-believe~3az imagined as in a play
     profess~1vz state insincerely
@@ -2626,9 +2630,6 @@
  Patria ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Plott_hound ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Plott_hound~1nz (^hound~1) a brindle-coated American hound used in hunting bears and wild boars
- priority ( meanings=2 NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
-    precedence~2n 
-    precedence~3n 
  platyhelminth ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     flatworm~1nz (^worm~1) parasitic or free-living worms having a flattened body
  preformation ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -2649,7 +2650,7 @@
     pummel~1vz strike, usually with the fist
  porcupine_fish ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Diodon_hystrix~1nz (^spiny_puffer~1) spines become erect when the body is inflated
- primrose ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN (null) ) 
+ primrose ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     primula~1nz (^herbaceous_plant~1) any of numerous short-stemmed plants of the genus Primula having tufted basal leaves and showy flowers clustered in umbels or heads
  preceptorship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
     preceptorship~1nz (^position~2) the position of preceptor
@@ -2762,7 +2763,7 @@
  Ptolemy ( meanings=2 NOUN NOUN_PROPER_SINGULAR ) 
     Ptolemaic_dynasty~1n 
     Claudius_Ptolemaeus~1n 
- pink ( meanings=8 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ pink ( meanings=8 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pink~1nz (^chromatic_colour~1) a light shade of red
     pinko~1nz (^collectivist~1) a person with mildly leftist political views
     garden_pink~1nz (^flower~2) any of various flowers of plants of the genus Dianthus cultivated for their fragrant flowers
@@ -2852,7 +2853,7 @@
     agitate~6vz exert oneself continuously, vigorously, or obtrusively to gain an end or engage in a crusade for a certain cause or person
     weigh~3vz to be oppressive or burdensome
     press~23vz be urgent
- possible ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE (null) (null) ) 
+ possible ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE ) 
     possible~1nz (^possible_action~1) something that can be done
     possible~2nz (^applicant~1) an applicant who might be suitable
     potential~3az existing in possibility
@@ -3323,6 +3324,7 @@
     forbearance~2n 
  petiteness ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     minuteness~2n 
+ Pfister ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Pfeiffer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Palen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  parasail ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 ) 
@@ -3444,6 +3446,8 @@
     polychaete_worm~1n 
  Phyllostomatidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Phyllostomidae~1nz (^mammal_family~1) New World leaf-nosed bats
+ prehension ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    taking_hold~1n 
  personal_manner ( meanings=1 NOUN NOUN_SINGULAR ) 
     manner~1n 
  pop_tent ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -3761,8 +3765,6 @@
  plantation ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:NOUN ) 
     orchard~1n 
     plantation~2nz (^land~8) an estate where cash crops are grown on a large scale
- Plantation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Plantation~1nz (^colony~3) a newly established colony 
  Pippin ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
     Pippin~1nz (^dessert_apple~1) any of numerous superior eating apples with yellow or greenish yellow skin flushed with red
  Palmieri ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -3890,6 +3892,9 @@
     order_Pseudoscorpionida~1n 
  plastic_bag ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     plastic_bag~1nz (^bag~3) a bag made of thin plastic material
+ prickleback ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON1 ) 
+    stickleback~1nz (^spiny-finned_fish~1) small pugnacious mostly scaleless spiny-backed fishes of northern fresh and littoral waters having elaborate courtship
+    prickleback~2nz (^blennioid_fish~1) small elongate fishes of shallow northern seas
  Pantoja ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Pilon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  purple_finch ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -4047,8 +4052,6 @@
     practice~2n 
  paintbox ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     paintbox~1nz (^box~2) a box containing a collection of cubes or tubes of artists' paint
- pinochle ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
-    bezique~1nz (^card_game~1) a card game played with a pack of forty-eight cards 
  phase_I ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     phase_I_clinical_trial~1n 
  Palmore ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4061,7 +4064,7 @@
     prefecture~2nz (^administrative_district~1) the district administered by a prefect
  Piper ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
     genus_Piper~1n 
- pipe ( meanings=9 glosses=8 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ pipe ( meanings=9 glosses=8 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pipework~1nz (^wind~4) the flues and stops on a pipe organ
     pipage~1nz (^tube~2) a long tube made of metal or plastic that is used to carry water or oil or gas etc.
     tobacco_pipe~1nz (^tube~2) a tube with a small bowl at one end
@@ -4125,7 +4128,6 @@
  Pender ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Pendergast ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Pendergrass ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Penton ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Pepin ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Pepin_III~1n 
  Peralez ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4144,7 +4146,6 @@
  Petry ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Pettigrew ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Pfeifer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Pfister ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Phares ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Phifer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Phillips ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -4483,7 +4484,7 @@
     pressure~7nz (^distress~4) an oppressive condition of physical or mental or social or economic distress
     coerce~1vz to cause to do through pressure or necessity, by physical, moral or intellectual means :
     blackmail~3vz exert pressure on someone through threats
- pull ( meanings=24 glosses=19 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ pull ( meanings=24 glosses=19 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pulling~1nz (^propulsion~1) the act of pulling
     pull~2nz (^effort~2) a sustained effort
     drag~2nz (^breathing_in~1) a slow inhalation 
@@ -4721,7 +4722,7 @@
     rise~7n 
  plain_sailing ( meanings=1 NOUN NOUN_SINGULAR ) 
     clear_sailing~1n 
- plain ( meanings=12 glosses=9 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_NOOBJECT (null) ) 
+ plain ( meanings=12 glosses=9 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_NOOBJECT ) 
     plain_stitch~1nz (^knitting_stitch~1) a basic knitting stitch
     field~15n 
     unornamented~1az lacking embellishment or ornamentation
@@ -4947,7 +4948,7 @@
     plunge~8vz dash violently or with great speed or impetuosity
     plunk~6v 
     dump~6v 
- prone ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ prone ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     prostrate~2a 
     prone~2az having a tendency 
  pugilism ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -4964,7 +4965,7 @@
     pinball_game~1n 
  paper_chase ( meanings=1 NOUN NOUN_SINGULAR ) 
     hare_and_hounds~1n 
- paper ( meanings=10 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) comparative=paperer 
+ paper ( meanings=10 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) comparative=paperer 
     newspaper~1n 
     paper~2nz (^medium~3) a medium for written communication
     newspaper~2n 
@@ -4989,7 +4990,7 @@
     professional_football~1nz (^sport~1) football played for pay
  perfect_game ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     perfect_game~1nz (^baseball~1) a game in which a pitcher does not allow any opposing player to reach base
- perfect ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=perfecter 
+ perfect ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=perfecter 
     perfect_tense~1nz (^tense~1) a tense of verbs used in describing action that has been completed
     perfect~2az precisely accurate or exact
     unadulterated~1az without qualification
@@ -5008,6 +5009,8 @@
  parliament ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:NOUN ) 
     fantan~1nz (^card_game~1) a card game in which you play your sevens and other cards in sequence in the same suit as the sevens
     parliament~2nz (^legislature~1) a legislative assembly in certain countries
+ pinochle ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
+    bezique~1nz (^card_game~1) a card game played with a pack of forty-eight cards 
  pinocle ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     pinochle~1n 
  penuchle ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -5095,7 +5098,7 @@
  personation ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     enactment~1n 
     impersonation~1n 
- parody ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ parody ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT ) 
     takeoff~2n 
     put-on~3n 
     burlesque~4vz make a parody of
@@ -5187,12 +5190,10 @@
  piloting ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     pilotage~1n 
     pilotage~2n 
- plumbing ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
-    plumbery~1nz (^craft~1) the occupation of a plumber
+ plumbing ( meanings=3 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
+    plumbery~1n 
     bathymetry~1n 
     plumbing_system~1n 
- plumbery ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
-    plumbing~1n 
  pottery ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     pottery~1nz (^craft~1) the craft of making earthenware
     clayware~1n 
@@ -5260,7 +5261,7 @@
     poll~9vz vote in an election at a polling station
  pet_sitting ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     pet_sitting~1nz (^attention~1) the work of a pet sitter
- pet ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=petter 
+ pet ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=petter 
     pet~1nz (^animal~1) a domesticated animal kept for companionship or amusement
     pet~2nz (^irritability~3) a fit of petulance or sulkiness
     favorite~2n 
@@ -5269,8 +5270,6 @@
     pet~6vz stroke or caress gently
  petrissage ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     petrissage~1nz (^massage~1) massage of the skin which is gently lifted and squeezed
- personal_care ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    personal_care~1nz (^attention~1) care for someone who is disabled or is otherwise unable to care for themselves
  personal ( meanings=7 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) 
     personal~1nz (^newspaper_article~1) a short newspaper article about a particular person or group
     personal~2az particular to a given individual
@@ -5385,9 +5384,6 @@
     perversion~1nz (^wrongful_conduct~1) the action of perverting something 
     sexual_perversion~1n 
     perversion~3nz (^curve~5) a curve that reverses the direction of something
- prodigality ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    extravagance~1n 
-    extravagance~2n 
  porno ( meanings=1 NOUN NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN ) 
     porn~1n 
  profligacy ( meanings=2 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -5493,8 +5489,6 @@
     proration~1nz (^coordination~1) the proportional limitation of production or distribution of something to some fractional part of the total capacity of each producer
  power_trip ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     power_trip~1nz (^control~1) a self-aggrandizing action undertaken simply for the pleasure of exercising control over other people
- prehension ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    seizing~1n 
  preservation ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     saving~3n 
     conservation~3n 
@@ -5553,7 +5547,7 @@
  pharyngeal ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     guttural_consonant~1n 
     pharyngeal~2az of or relating to the throat
- peep ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ peep ( meanings=7 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     peek~1n 
     cheep~1nz (^cry~5) the short weak cry of a young bird
     peep~3vz appear as though from hiding
@@ -5779,7 +5773,7 @@
  pampering ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:VERB ) 
     indulging~1n 
     pampering~2az gratifying tastes, appetites, or desires
- pleasing ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB (null) ) 
+ pleasing ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     pleasing~1nz (^gratification~1) the act of one who pleases
     pleasing~2az giving pleasure and satisfaction
     pleasing~3az 
@@ -5909,7 +5903,7 @@
     punctilio~2nz (^etiquette~1) a fine point of etiquette or petty formality
  protagonism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     advocacy~1nz (^support~4) active support of an idea or cause etc.
- pardon ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) ) 
+ pardon ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     forgiveness~1n 
     free_pardon~1nz (^mercifulness~1) the formal act of liberating someone
     amnesty~2nz (^warrant~1) a warrant granting release from punishment for an offense
@@ -5927,7 +5921,7 @@
     nonviolence~1n 
  pre-emptive_strike ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     pre-emptive_strike~1nz (^surprise_attack~1) a surprise attack that is launched in order to prevent the enemy from doing it to you
- permissive ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ permissive ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     permissive~1az granting or inclined or able to grant permission
     permissive~2az not preventive
  psalmody ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -5938,7 +5932,7 @@
  precedence ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     precedency~1nz (^activity~1) the act of preceding in time or order or rank
     anteriority~1nz (^earliness~1) preceding in time
-    precedency~3nz (^high_status~1) status established in order of importance or urgency
+    priority~2nz (^high_status~1) status established in order of importance or urgency
  pounce ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_NOOBJECT ) 
     pounce~1nz (^bounce~1) the act of pouncing
     swoop~5vz move down on as if in an attack
@@ -6026,8 +6020,6 @@
     polyoma_virus~1n 
  polyoma_virus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     polyoma~1nz (^papovavirus~1) a virus the can initiate various kinds of tumors in mice
- parvo ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    parvovirus~1n 
  potato_yellow-dwarf_virus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     potato_yellow-dwarf_virus~1nz (^plant_virus~1) the virus that produces stunting and yellowing of the leaves of potato plants
  potato ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) plural=potatoes 
@@ -6045,7 +6037,7 @@
     phototrophic_bacteria~1n 
  purple_bacteria ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     purple_bacteria~1nz (^phototrophic_bacteria~1) free-living Gram-negative pink to purplish-brown bacteria containing bacteriochlorophyll
- purple ( meanings=8 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ purple ( meanings=8 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     purpleness~1nz (^chromatic_colour~1) a purple color or pigment
     purple~2nz (^noblesse~2) of imperial status
     violet~3az of a color intermediate between red and blue
@@ -6137,9 +6129,6 @@
     platy~1nz (^poeciliid_fish~1) small stocky Mexican fish
  Photoblepharon_palpebratus ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     flashlight_fish~2nz (^spiny-finned_fish~1) fish of deep dark waters having a light organ below each eye
- prickleback ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
-    stickleback~1n 
-    prickleback~2nz (^blennioid_fish~1) small elongate fishes of shallow northern seas
  Petromyzontidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Petromyzontidae~1nz (^fish_family~1) lampreys
  Petromyzon ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -6505,7 +6494,7 @@
     bird_of_Juno~1n 
  peachick ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     pea-chick~1n 
- peacock ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN (null) ) 
+ peacock ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN ) 
     peacock~1nz (^bird_of_Juno~1) male peafowl
     Inachis_io~1nz (^brush-footed_butterfly~1) European butterfly having reddish-brown wings each marked with a purple eyespot
  peahen ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -6763,7 +6752,7 @@
     genus_Polycirrus~1n 
  phylum_Mollusca ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Mollusca~1nz (^phylum~1) gastropods
- periwinkle ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ periwinkle ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     winkle~1nz (^seasnail~1) edible marine gastropod
     winkle~2nz (^seafood~1) small edible marine snail
     Madagascar_periwinkle~1n 
@@ -7242,6 +7231,8 @@
     Mantis_religioso~1n 
  plant_bug ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     leaf_bug~1nz (^bug~3) small bright-colored insect that feeds on plant juices
+ Poecilocapsus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+    genus_Poecilocapsus~1n 
  Poecilocapsus_lineatus ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     four-lined_plant_bug~1nz (^mirid_bug~1) yellow or orange leaf bug with four black stripes down the back
  pond-skater ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -7451,6 +7442,8 @@
     prancer~1nz (^mount~2) a mettlesome or fiery horse
  Plantation_walking_horse ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Walking_horse~1nz (^mount~2) a horse marked by stamina and trained to move at a fast running walk
+ Plantation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
+    Plantation~1nz (^colony~3) a newly established colony 
  polo_pony ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     polo_pony~1nz (^horse~1) a small agile horse specially bred and trained for playing polo
  Przewalski_'s_horse ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -7530,7 +7523,7 @@
  pine_marten ( meanings=1 NOUN NOUN_SINGULAR ) 
     Martes_martes~1n 
  pekan ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
-    Martes_pennanti~1n 
+    fisher~1n 
  pachyderm ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     pachyderm~1nz (^placental_mammal~1) any of various nonruminant hoofed mammals having very thick skin: elephant
  peba ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -7671,7 +7664,7 @@
  parr ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     parr~1nz (^young_fish~1) the young of various fishes
     parr~2nz (^young_fish~1) a young salmon up to 2 years old
- pout ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ pout ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT ) 
     Ameiurus_Melas~1nz (^bullhead_catfish~1) catfish common in eastern United States
     eelpout~2nz (^blennioid_fish~1) marine eellike mostly bottom-dwelling fishes of northern seas
     wry_face~1nz (^face~11) a disdainful grimace
@@ -8320,7 +8313,7 @@
     pharmacy~2nz (^medicine~4) 
  pirogue ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     dugout~3n 
- phone ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ phone ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     earphone~1nz (^electro-acoustic_transducer~1) electro-acoustic transducer for converting electric signals into sounds
     telephone~1n 
     sound~4n 
@@ -8622,7 +8615,7 @@
     padlock~2vz fasten with a padlock
  page_printer ( meanings=1 NOUN NOUN_SINGULAR ) 
     page-at-a-time_printer~1n 
- page ( meanings=7 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ page ( meanings=7 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     page~1nz (^leaf~2) one side of one leaf or the written or pictorial matter it contains
     varlet~1nz (^tender~5) in medieval times a youth acting as a knight's attendant as the first stage in training for knighthood
     page~3nz (^tender~5) a youthful attendant at official functions or ceremonies such as legislative functions and weddings
@@ -8638,7 +8631,7 @@
     palliasse~1nz (^mattress~1) mattress consisting of a thin pad filled with straw or sawdust
  palliasse ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     paillasse~1n 
- paint ( meanings=7 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ paint ( meanings=7 glosses=7 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pigment~1nz (^coat~3) a substance used as a coating to protect or decorate a surface 
     blusher~1nz (^war_paint~1) makeup consisting of a pink or red powder applied to the cheeks
     key~11nz (^space~7) a space (including the foul line) in front of the basket at each end of a basketball court
@@ -9048,7 +9041,7 @@
     peacekeeper~3nz (^soldier~2) a member of a military force that is assigned to preserve peace in a trouble area
  peach_orchard ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     peach_orchard~1nz (^orchard~1) a grove of peach trees
- peach ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) ) 
+ peach ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) 
     salmon_pink~1nz (^pink~1) a shade of pink tinged with yellow
     peach~2nz (^edible_fruit~1) downy juicy fruit with sweet yellowish or whitish flesh
     mantrap~2n 
@@ -9814,6 +9807,8 @@
     conspirator~1n 
     mapper~1nz (^clerk~1) a clerk who marks data on a chart
     schemer~1nz (^contriver~1) a planner who draws up a personal scheme of action
+ plowshare ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
+    share~3n 
  ploughshare ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     plowshare~1n 
  plug_fuse ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -9921,7 +9916,7 @@
     point~3n 
  point-and-shoot_camera ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     point-and-shoot_camera~1nz (^camera~1) a lightweight photographic camera with an autofocus
- pointed ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) ) 
+ pointed ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     pointed~1az direct and obvious in meaning or reference
     pointed~2az having a point
  pointillism ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -10016,7 +10011,7 @@
     ninny~1nz (^simple~1) a stupid foolish person
     crap~2n 
     poop~5vz 
- poor ( meanings=8 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ poor ( meanings=8 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     poor_people~1nz (^people~1) people without possessions or wealth 
     piteous~1az deserving or inciting pity
     poor~3az unsatisfactory
@@ -10147,7 +10142,7 @@
     Grigori_Potyokin~1n 
  potential_divider ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     voltage_divider~1nz (^resistance~4) resistors connected in series across a voltage source
- potential ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ potential ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN posdefault:ADJECTIVE ) 
     potential_drop~1nz (^electrical_phenomenon~1) the difference in electrical charge between two points in a circuit expressed in volts
     potentiality~2nz (^possibleness~1) the inherent capacity for coming into being
     possible~3a 
@@ -10645,7 +10640,7 @@
     Pyramid~1nz (^monument~1) a massive monument with a square base and four triangular sides
  pyramidal_tent ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     pyramidal_tent~1nz (^tent~1) a large tent shaped like a pyramid
- pyramidal ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ pyramidal ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     pyramidic~1a 
  pyrilamine ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 ) 
     pyrilamine~1nz (^antihistamine~1) antihistamine used to treat rhinitis and pruritus
@@ -10674,7 +10669,7 @@
     udometer~1nz (^gauge~1) gauge consisting of an instrument to measure the quantity of precipitation
  platinum_thermometer ( meanings=1 NOUN NOUN_SINGULAR ) 
     resistance_thermometer~1n 
- platinum ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ platinum ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     PT~1nz (^noble_metal~1) a heavy precious metallic element
  positioner ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     rotary_actuator~1n 
@@ -11233,7 +11228,7 @@
     jet_black~1n 
  purplish_red ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     purplish-red~1nz (^red~1) a red with a tinge of purple
- purplish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ purplish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     purple~3a 
     purplish~2az 
  purplish-red ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR NOUN_NODETERMINER posdefault:ADJECTIVE ) 
@@ -11263,7 +11258,7 @@
     pinkness~1nz (^pink~1) the quality of being pink
  purplish_pink ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     solferino~1nz (^pink~1) a pink dye that was discovered in 1859, the year a battle was fought at Solferino
- puce ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ puce ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     puce~1nz (^brown~1) a color varying from dark purplish brown to dark red
  paleness ( meanings=3 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
     pallidity~1n 
@@ -11348,6 +11343,9 @@
     pH~1nz (^hydrogen_ion_concentration~1) the logarithm of the reciprocal of hydrogen-ion concentration in gram atoms per liter
  pelting ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
     rain~1n 
+ priority ( meanings=2 NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
+    precedency~2n 
+    precedency~3n 
  posteriority ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     subsequentness~1n 
     posteriority~2nz (^position~6) the quality of being toward the back or toward the rear end
@@ -11418,7 +11416,7 @@
     profundity~3n 
     profundity~4n 
     profoundness~5nz (^ultimateness~1) extremeness of degree
- petite ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE (null) ) 
+ petite ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
     petite~1nz (^size~1) a garment size for short or slender women
     tiny~1a 
     petite~3az 
@@ -11684,7 +11682,7 @@
     roof_of_the_mouth~1n 
  plasma_membrane ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     cell_membrane~1nz (^semipermeable_membrane~1) a thin membrane enclosing the cytoplasm of a cell
- plasma ( meanings=3 glosses=2 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ plasma ( meanings=3 glosses=2 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     plasm~1n 
     plasma~2nz (^state~7) a fourth state of matter distinct from solid or liquid or gas and present in stars and fusion reactors
     plasma~3nz (^chalcedony~1) a green slightly translucent variety of chalcedony used as a gemstone
@@ -11891,7 +11889,7 @@
     proto-oncogene~1nz (^cistron~1) a normal gene that has the potential to become an oncogene
  packed_cells ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     packed_cells~1nz (^blood_corpuscle~1) a preparation of blood cells separated from the liquid plasma
- packed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ packed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     packed~1az pressed together or compressed
     jammed~1a 
  phagocyte ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
@@ -12486,7 +12484,7 @@
     given~1n 
     stipulation~2n 
     precondition~4vz put into the required condition beforehand
- pathetic ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ pathetic ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     silly~3a 
     pitiful~1az inspiring mixed contempt and pity
     poor~2a 
@@ -12592,8 +12590,8 @@
     opinion~4n 
  popular_opinion ( meanings=1 NOUN NOUN_SINGULAR ) 
     public_opinion~1n 
- popular ( meanings=5 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
-    pop~5a 
+ popular ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
+    pop~5az new and of general appeal (especially among young people)
     democratic~1az representing or appealing to or adapted for the benefit of the people at large
     popular~3az carried on by or for the people at large
     popular~4az regarded with great favor, approval, or affection especially by the general public
@@ -12614,7 +12612,7 @@
     preconception~1n 
  preconceived_notion ( meanings=1 NOUN NOUN_SINGULAR ) 
     preconceived_idea~1n 
- promise ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) ) 
+ promise ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     hope~2nz (^expectation~1) grounds for feeling hopeful about the future
     promise~2nz (^commitment~5) a verbal commitment by one person to another agreeing to do something in the future
     assure~3vz make a promise or commitment
@@ -13102,7 +13100,7 @@
     object_of_a_preposition~1n 
  prepositional ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     prepositional~1az of or relating to or formed with a preposition
- possessive ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ possessive ( meanings=5 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     genitive_case~1n 
     possessive~2az desirous of owning
     possessive~3az having or showing a desire to control or dominate
@@ -13127,7 +13125,7 @@
     word_class~1nz (^grammatical_category~1) one of the traditional categories of words intended to reflect their functions in a grammatical context
  proper_noun ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     proper_name~1nz (^noun~2) a noun that denotes a particular thing
- proper ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE (null) ) 
+ proper ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:ADJECTIVE ) 
     right~10az appropriate for a condition or purpose or occasion or a person's character, needs
     proper~2az limited to the thing specified
     proper~3az marked by suitability or rightness or appropriateness
@@ -13197,7 +13195,7 @@
     player~3n 
  patient_role ( meanings=1 NOUN NOUN_SINGULAR ) 
     patient~1n 
- patient ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:NOUN (null) ) 
+ patient ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE1_2 posdefault:NOUN ) 
     affected_role~1nz (^participant_role~1) the semantic role of an entity that is not the agent but is directly involved in or affected by the happening denoted by the verb in the clause
     patient~2nz (^case~15) a person who requires medical care
     patient~3az enduring trying circumstances with even temper or characterized by such endurance
@@ -13602,7 +13600,7 @@
     photo-offset_printing~1n 
  plaudit ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     eclat~3n 
- praise ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ praise ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     extolment~1nz (^approval~2) an expression of approval and commendation
     praise~2nz (^worship~1) offering words of homage as an act of worship
     praise~3vz express approval of
@@ -13659,7 +13657,7 @@
     preempt~4vz gain possession of by prior right or opportunity, especially so as to obtain the right to buy
     displace~4v 
  philosophizing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
-    philosophizing~1nz (^expounding~1) the exposition of a particular philosophy
+    philosophizing~1nz (^exposition~3) the exposition of a particular philosophy
  preachification ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     preachification~1nz (^moralization~2) moralization delivered tediously in a preachy manner
  press_release ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -13942,6 +13940,8 @@
     Fula~1n 
  pictorial_matter ( meanings=1 NOUN NOUN_SINGULAR ) 
     picture~8n 
+ pie_chart ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    pie_chart~1nz (^chart~2) a circular chart divided into triangular areas proportional to the percentages of the whole
  pie ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
     pie~1nz (^pastry~1) dish baked in pastry-lined pan often with a pastry top
  population_profile ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -14148,10 +14148,10 @@
  prate ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:VERB VERB_NOOBJECT ) 
     idle_talk~1n 
     tittle-tattle~2v 
- prattle ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) (null) ) 
+ prattle ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     prate~1n 
     prate~2v 
- parley ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE5_6 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ parley ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE5_6 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     parley~1nz (^negotiation~2) a negotiation between enemies
     parley~2vz discuss, as between enemies
  pillow_talk ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -14189,7 +14189,7 @@
  previous ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 GRADE3_4 posdefault:ADJECTIVE ) 
     old~2a 
     premature~2az too soon or too hasty
-    late~5a 
+    former~5a 
     previous~4az 
  preliminary_prospectus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     red_herring~2nz (^prospectus~1) a first draft of a prospectus
@@ -14414,7 +14414,7 @@
     plunk_down~1vz set down with or as if with a noise
     plop~4vz drop with the sound of something falling into water
     plop~5vz drop something with a plopping sound
- plump ( meanings=8 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ plump ( meanings=8 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     plump~1nz (^noise~5) the sound of a sudden heavy fall
     chubby~1a 
     plump~3az 
@@ -14425,7 +14425,7 @@
     plummet~2vz drop sharply
  popping ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     pop~2n 
- purr ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ purr ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     purr~1nz (^sound~5) a low vibrating sound typical of a contented cat
     make_vibrant_sounds~1v 
     whir~2v 
@@ -14524,7 +14524,7 @@
     plaintiveness~1nz (^sorrowfulness~1) expressing sorrowfulness
  penitence ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     repentance~1n 
- puppy_love ( meanings=1 NOUN NOUN_SINGULAR ) 
+ puppy_love ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     infatuation~3n 
  philia ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
     warmheartedness~1n 
@@ -14846,7 +14846,7 @@
     skin~7v 
  Prima ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
     Prima~1nz (^dessert_apple~1) used primarily as eating apples
- persimmon ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ persimmon ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     persimmon~1nz (^berry~1) orange fruit resembling a plum
     persimmon_tree~1n 
     persimmon~3az 
@@ -14893,7 +14893,7 @@
  prickly_pear ( meanings=2 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     prickly_pear~1nz (^edible_fruit~1) round or pear-shaped spiny fruit of any of various prickly pear cacti
     prickly_pear_cactus~1n 
- prickly ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=prickliest 
+ prickly ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=prickliest 
     barbed~1a 
     splenetic~1a 
     prickly~3az 
@@ -14917,7 +14917,7 @@
     pine_nut~1nz (^edible_nut~1) edible seed of any of several nut pines especially some pinons of southwestern North America
  pinon ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     pinyon~1n 
- pistachio ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ pistachio ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     pistachio_nut~1n 
     Pistacia_vera~1n 
  pistachio_nut ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -15640,7 +15640,7 @@
     police_state~1nz (^tyranny~1) a country that maintains repressive control over the people by means of police
  patterned_advance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     progression~3nz (^series~5) a series with a definite pattern of advance
- patterned ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB (null) ) 
+ patterned ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     patterned~1az having patterns
     patterned~2az 
  panoply ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
@@ -17110,7 +17110,7 @@
     Pentecostal~1nz (^Protestant~2) any member of a Pentecostal religious body
  percussionist ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     percussionist~1nz (^musician~2) a musician who plays percussion instruments
- perfectionist ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN (null) ) 
+ perfectionist ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     perfectionist~1nz (^compulsive~1) a person who is displeased by anything that does not meet very high standards
  perfecter ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 KINDERGARTEN posdefault:NOUN ) comparative=perfect 
     perfecter~1nz (^skilled_workman~1) a skilled worker who perfects something
@@ -17746,7 +17746,7 @@
     graphic_artist~1n 
  print_seller ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     print_seller~1nz (^art_dealer~1) someone who sells etchings and engravings etc.
- prior ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 posdefault:ADJECTIVE (null) ) 
+ prior ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 posdefault:ADJECTIVE ) 
     prior~1nz (^superior~2) the head of a religious order
     anterior~2a 
     prior~3az 
@@ -18278,7 +18278,7 @@
  Paul_McCartney ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Sir_James_Paul_McCartney~1n 
  President_McKinley ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Mckinley~2nz (^President_of_the_United_States~2) 25th President of the United States
+    McKinley~2nz (^President_of_the_United_States~2) 25th President of the United States
  Peter_Medawar ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Sir_Peter_Brian_Medawar~1n 
  Philipp_Melanchthon ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -19393,7 +19393,7 @@
     genus_Platystemon~1n 
  Platystemon_californicus ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     creamcups~1nz (^poppy~1) California plant with small pale yellow flowers
- puccoon ( meanings=2 NOUN NOUN_SINGULAR COMMON1 (null) ) 
+ puccoon ( meanings=2 NOUN NOUN_SINGULAR COMMON1 ) 
     Sanguinaria_canadensis~1n 
     Lithospermum_caroliniense~1n 
  Papaver_heterophyllum ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -22731,7 +22731,7 @@
     pyuria~1nz (^symptom~2) presence of white blood cells in the urine
  proud_flesh ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     proud_flesh~1nz (^granulation_tissue~1) the swollen tissue around a healing wound or ulcer
- proud ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) 
+ proud ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     majestic~1az having or displaying great dignity or nobility
     proud~2az feeling self-respect or pleasure in something by which you measure your self-worth
     proud~3az 
@@ -23896,7 +23896,7 @@
     playtime~1n 
  paid_vacation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     paid_vacation~1nz (^vacation~2) a vacation from work by an employee with pay granted
- paid ( meanings=3 glosses=3 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN GRADE1_2 posdefault:VERB ) conjugate=pay 
+ paid ( meanings=3 glosses=3 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=pay 
     paid~1az marked by the reception of pay
     nonrecreational~1az involving gainful employment in something often done as a hobby
     gainful~1az yielding a fair profit
@@ -24477,7 +24477,7 @@
  pff ( INTERJECTION ) 
  phew ( INTERJECTION ) 
  phooey ( INTERJECTION ) 
- please ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB ADVERB INTERJECTION COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB (null) ) comparative=pleaser 
+ please ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB ADVERB INTERJECTION COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB ) comparative=pleaser 
     please~1bz used in polite request
     delight~4v 
     please~3vz give satisfaction
@@ -24506,7 +24506,7 @@
     pray~2vz address a deity, a prophet, a saint or an object of worship
  pupal ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     pupal~1az of the insects in the chrysalis or post larval stage
- picosecond ( ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN TIMEWORD (null) ) 
+ picosecond ( ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN TIMEWORD ) 
  parturient ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     parturient~1az giving birth
     parturient~2az of or relating to or giving birth
@@ -24522,7 +24522,7 @@
     gross~5a 
     porcine~3az relating to or suggesting swine
     porcine~4az 
- plentiful ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ plentiful ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     plenteous~1az affording an abundant supply
     plentiful~2az existing in great number or quantity
     bountiful~1az producing in abundance
@@ -24565,7 +24565,7 @@
  plummy ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=plummiest 
     plummy~1az affectedly mellow and rich
     plummy~2az very desirable
- panicky ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ panicky ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     frightened~2a 
     panicky~2az 
  panicked ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -24687,7 +24687,7 @@
     engaging~1az attracting or delighting
     salty~2a 
     zesty~2az having an agreeably pungent taste
- personable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ personable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     personable~1az pleasant in appearance and personality
  prepossessing ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     prepossessing~1az creating a favorable impression
@@ -24737,7 +24737,7 @@
     picturesque~1az suggesting or suitable for a picture
     picturesque~2az strikingly expressive
     picturesque~3az 
- pretty ( meanings=4 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB (null) ) comparative=prettiest 
+ pretty ( meanings=4 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) comparative=prettiest 
     pretty~1az pleasing by delicacy or grace
     pretty~2az unexpectedly bad
     pretty~3az 
@@ -24789,7 +24789,7 @@
  poor-spirited ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL ) 
     pusillanimous~1a 
     poor-spirited~2az 
- plucky ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=pluckiest 
+ plucky ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=pluckiest 
     gutsy~1az marked by courage and determination in the face of difficulties or danger
     spunky~2a 
     plucky~3az 
@@ -24813,7 +24813,7 @@
     prejudiced~2az emanating from a person's emotions and prejudices
  private-enterprise ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     free-enterprise~1a 
- placid ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ placid ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     quiet~6a 
     equable~1a 
     placid~3az 
@@ -24822,7 +24822,7 @@
     tumid~2a 
     bouffant~2a 
     puffy~4az 
- painstaking ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ painstaking ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     scrupulous~1a 
     painstaking~2az 
  perfunctory ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -24892,7 +24892,7 @@
     peacock-blue~1az of bright greenish blue
  pea-green ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     pea-green~1az of a moderate slightly yellowish-green color
- pinkish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ pinkish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     pink~4a 
     pinkish~2az 
  pink-lavender ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -25055,7 +25055,7 @@
     proportionable~2az 
  poker-faced ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     impassive~1a 
- peerless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ peerless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     one_and_only~1a 
     peerless~2az 
  protestant ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -25383,7 +25383,7 @@
  pitiable ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     pathetic~2a 
     wretched~2a 
- pitiful ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ pitiful ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     pitiable~1a 
     pitiable~2a 
     sad~1a 
@@ -25477,7 +25477,7 @@
  pudgy ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=pudgiest 
     podgy~1a 
     pudgy~2az 
- portly ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) comparative=portliest 
+ portly ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=portliest 
     stout~3a 
     portly~2az 
  pinched ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -25554,7 +25554,7 @@
     matey~1a 
  palsy-walsy ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     chummy~2az having the relationship of friends or pals
- productive ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ productive ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     fertile~2a 
     productive~2az producing or capable of producing 
     generative~2a 
@@ -25574,7 +25574,7 @@
     half-time~3b 
  parttime ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     part-time~1a 
- prepared ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) ) 
+ prepared ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     prepared~1az equipped or prepared with necessary intellectual resources
     prepared~2az made ready or fit or suitable beforehand
     fain~1a 
@@ -25627,7 +25627,7 @@
     precipitant~2a 
  petrous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     stonelike~1a 
- padded ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB (null) ) 
+ padded ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     cushiony~1a 
  palatalized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     palatalised~1az produced with the front of the tongue near or touching the hard palate or with the blade of the tongue near the hard palate (as `ch' in `chin' or `j' in `gin')
@@ -25691,7 +25691,7 @@
     picaresque~1az involving clever rogues or adventurers especially as in a type of fiction
  passant ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 KINDERGARTEN ADJECTIVE_POSTPOSITIVE ) 
     passant~1az in walking position with right foreleg raised
- pendulous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ pendulous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     weeping~2az having branches or flower heads that bend downward
  prostrate ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     flat~15a 
@@ -25755,7 +25755,7 @@
     Tartarean~1az of or relating to or characteristic of Hades or Tartarus
  peopled ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     peopled~1az furnished with people
- populous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ populous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     thickly_settled~1a 
  patrimonial ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     ancestral~1a 
@@ -25808,7 +25808,7 @@
     pocket-size~2a 
  pocketable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     pocket-size~1a 
- puny ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=puniest 
+ puny ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=puniest 
     runty~1a 
     puny~2az inferior in strength or significance
     puny~3az 
@@ -25862,7 +25862,7 @@
     prepubescent~1a 
  prepupal ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     prepupal~1az of an inactive stage in the development of some insects, between the larval and the pupal stages
- puerile ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ puerile ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     jejune~2a 
     puerile~2az of or characteristic of a child
     puerile~3az 
@@ -25899,7 +25899,7 @@
  preternatural ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     otherworldly~1a 
     uncanny~2az surpassing the ordinary or normal
- pleasant ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ pleasant ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     pleasant~1az having pleasing manners or behavior
     pleasant~2az affording pleasure
     pleasant~3az 
@@ -26045,10 +26045,10 @@
     prepacked~1az prepared and wrapped beforehand and ready for sale
  prepacked ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     prepackaged~1a 
- patriotic ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ patriotic ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     loyal~3a 
     patriotic~2az 
- peaceful ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ peaceful ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     peaceable~1az not disturbed by strife or turmoil or war
     passive~4az peacefully resistant in response to injustice
     peaceful~3az 
@@ -26169,7 +26169,7 @@
     preset~1az set in advance
  put-up ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     put-up~1az planned secretly
- plausible ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ plausible ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     plausible~1az apparently reasonable and valid, and truthful
     plausible~2az given to or characterized by presenting specious arguments
     plausible~3az 
@@ -26177,7 +26177,7 @@
     enjoyable~1az affording satisfaction or pleasure
     pleasurable~2az 
     pleasurable~3az 
- pleased ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) ) 
+ pleased ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     pleased~1az experiencing or manifesting pleasure
     pleased~2az feeling pleasurable satisfaction over something by which you measures your self-worth
     pleased~3az 
@@ -26191,7 +26191,7 @@
     pyramidical~1a 
  pyramidical ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     pyramidal~1az resembling a pyramid
- pointless ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ pointless ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     unpointed~1az not having a point especially a sharp point
     otiose~3a 
     pointless~3az 
@@ -26276,7 +26276,7 @@
  priggish ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     puritanical~2a 
     priggish~2az 
- prim ( meanings=6 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=primmest 
+ prim ( meanings=6 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=primmest 
     priggish~1a 
     mincing~1a 
     prim~3az 
@@ -26332,7 +26332,7 @@
     prudent~2az 
  prudential ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     prudential~1az arising from or characterized by prudence especially in business matters
- punctual ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ punctual ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     punctual~1az acting or arriving or performed exactly at the time appointed
     punctual~2az 
  punished ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
@@ -26531,7 +26531,7 @@
     pebbly~2az 
  pectinate ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     pectinate~1az like a comb
- pert ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ pert ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     irreverent~3a 
  pentasyllabic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     pentasyllabic~1az having or characterized by or consisting of five syllables
@@ -28876,7 +28876,7 @@
     peel~3v 
     peel_off~4vz peel off the outer layer of something
     peel_off~5vz leave a formation
- presume ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ presume ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_TAKES_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     presume~1vz take liberties or act with too much confidence
     take_for_granted~1vz take to be the case or to be true
     presume~3vz constitute reasonable evidence for
@@ -29225,7 +29225,7 @@
  put_through ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     carry_out~1v 
     put_through~2vz connect by telephone
- polarize ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ polarize ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     polarise~1vz become polarized in a conflict or contrasting situation
     polarise~2vz cause to concentrate about two conflicting or contrasting positions
     polarise~3vz cause to vibrate in a definite pattern
@@ -29308,12 +29308,12 @@
     philosophise~1vz reason philosophically
  philosophise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     philosophize~1v 
- ponder ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB (null) ) 
+ ponder ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB ) 
     speculate~1vz reflect deeply on a subject
  premeditate ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     premeditate~1vz think or reflect beforehand or in advance
     premeditate~2vz consider, ponder, or plan beforehand
- puzzle_out ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 (null) ) 
+ puzzle_out ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     figure_out~1v 
  prorate ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     prorate~1vz divide or assess proportionally
@@ -29330,7 +29330,7 @@
     prioritise~1vz assign a priority to
  prioritise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     prioritize~1v 
- prove ( meanings=9 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT PRESENTATION_VERB (null) (null) ) conjugate=proven 
+ prove ( meanings=9 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT PRESENTATION_VERB ) conjugate=proven 
     shew~1vz establish the validity of something, as by an example, explanation or experiment
     prove~2vz prove formally
     prove~3vz obtain probate of
@@ -29349,7 +29349,7 @@
     tell_apart~2v 
  pick_over ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     sieve_out~1v 
- prefer ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT (null) (null) (null) ) 
+ prefer ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT ) 
     choose~2v 
     prefer~2vz like better
     favour~7v 
@@ -29376,7 +29376,7 @@
     predestine~3vz decree or determine beforehand
  preordain ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     foreordain~1v 
- propose ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ propose ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_GERUND VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     project~3v 
     purport~3v 
     advise~3v 
@@ -29423,7 +29423,7 @@
     dictate~4v 
  point_the_way ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     point_the_way~1vz indicate the right path or direction
- profess ( meanings=7 glosses=6 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ profess ( meanings=7 glosses=6 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pretend~3v 
     profess~2vz confess one's faith in, or allegiance to
     confess~1vz admit 
@@ -29476,7 +29476,7 @@
     put_away~5vz stop using
  plow_ahead ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     go_ahead~1vz proceed 
- provoke ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) ) 
+ provoke ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) 
     stimulate~4v 
     evoke~4v 
     elicit~3v 
@@ -29505,17 +29505,17 @@
     turn_off~2v 
     dishearten~1v 
     put_over~2v 
- preach ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_NOOBJECT (null) (null) ) 
+ preach ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_NOOBJECT ) 
     advocate~3v 
     prophesy~1v 
- prophesy ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ prophesy ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     preach~2vz deliver a sermon
     vaticinate~2v 
- preachify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT (null) (null) ) 
+ preachify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT ) 
     sermonise~1v 
- perjure ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ perjure ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     perjure~1vz knowingly tell an untruth in a legal court and render oneself guilty of perjury
- prevaricate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_NOOBJECT (null) ) 
+ prevaricate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_NOOBJECT ) 
     palter~1vz be deliberately ambiguous or unclear in order to mislead or withhold information
  palter ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_NOOBJECT ) 
     tergiversate~2v 
@@ -29539,12 +29539,12 @@
     put_one_over~1v 
  peer_review ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     referee~4vz evaluate professionally a colleague's work
- proclaim ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) (null) (null) ) 
+ proclaim ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     glorify~4vz praise, glorify, or honor
     promulgate~2v 
     proclaim~3vz declare formally
     predicate~4vz affirm or declare as an attribute or quality of
- promulgate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ promulgate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     promulgate~1vz put a law into effect by formal declaration
     exclaim~2v 
  portend ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -29555,7 +29555,7 @@
  prefigure ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     foretell~1v 
     prefigure~2vz imagine or consider beforehand
- predict ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ predict ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT ) 
     omen~2vz indicate by signs
     forebode~1vz make a prediction about
  propound ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -29625,7 +29625,7 @@
     clock_in~1v 
  punch_out ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     clock_out~1v 
- publish ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ publish ( meanings=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     bring_out~3v 
     write~10v 
     print~8v 
@@ -29638,7 +29638,7 @@
  propagandise ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     propagandize~1v 
     propagandize~2v 
- pronounce ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) (null) (null) ) 
+ pronounce ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     label~7v 
     sound_out~2v 
  promote ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -29647,7 +29647,7 @@
     promote~3vz be changed for a superior chess or checker piece
     elevate~3v 
     encourage~3v 
- portray ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ portray ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     portray~1vz portray in words
     limn~1vz make a portrait of
     present~12v 
@@ -29945,7 +29945,7 @@
  preoccupy ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     preoccupy~1vz engage or engross the interest or attention of beforehand or occupy urgently or obsessively
     preoccupy~2vz occupy or take possession of beforehand or before another or appropriate for use in advance
- pester ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ pester ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT ) 
     beleaguer~2v 
  pour_cold_water_on ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     throw_cold_water_on~1v 
@@ -30032,7 +30032,7 @@
     quiet_down~1v 
  pony_up ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     spit_up~2v 
- possess ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ possess ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     own~2v 
     possess~2vz have as an attribute, knowledge, or skill
     possess~3vz enter into and control, as of emotions or ideas
@@ -30082,7 +30082,7 @@
     dispense_with~2v 
  play_it_by_ear ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
     play_it_by_ear~1vz decide on one's actions as one goes along, depending on the situation
- prosecute ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ prosecute ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     engage~7v 
     prosecute~2vz bring a criminal action against 
     prosecute~3vz conduct a prosecution in a court of law
@@ -30124,9 +30124,9 @@
     pair_off~1v 
  put_behind_bars ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 
     immure~1v 
- punish ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ punish ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 GRADE3_4 posdefault:VERB VERB_DIRECTOBJECT ) 
     penalise~1vz impose a penalty on
- penalize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ penalize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     punish~1v 
  penalise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     penalize~1v 
@@ -30156,7 +30156,7 @@
     play_a_joke_on~2v 
  perpetrate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     commit~6v 
- persecute ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ persecute ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     oppress~2vz cause to suffer
  pal_up ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     pal~2v 
@@ -30220,8 +30220,6 @@
  preshrank ( VERB_PAST VERB ) conjugate=preshrink 
  pejazzle ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pejazzle~1vz 
- pend ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
-    pend~1vz 
  phish ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 VERB_NOOBJECT ) 
     phish~1vz 
  pre-program ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT VERB_CONJUGATE2 ) 
@@ -30230,6 +30228,8 @@
     pigeon-hole~1vz 
  pixelate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     pixelate~1vz 
+ pend ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
+    pend~1vz 
  palp ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     palp~1vz 
  pancreatectomize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -30442,7 +30442,7 @@
     preload~1vz 
  premedicate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     premedicate~1vz 
- preplan ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ preplan ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     preplan~1vz 
  preprint ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     preprint~1vz 

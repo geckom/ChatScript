@@ -14,8 +14,6 @@
     jog~7vz run for exercise
     even_up~1vz even up the edges of a stack of paper, in printing
     ramble_on~1vz continue talking or writing in a desultory manner
- Jeffers ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
-    Robinson_Jeffers~1n 
  jack ( meanings=13 glosses=13 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     jackass~1nz (^ass~2) male donkey
     jack~2nz (^carangid_fish~1) any of several fast-swimming predacious fishes of tropical to warm temperate seas
@@ -163,7 +161,7 @@
     Lightning_Hurler~1n 
  Jolan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jorie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- jerk ( meanings=11 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ jerk ( meanings=11 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     tug~1n 
     saccade~1nz (^motion~2) an abrupt spasmodic movement
     jerk~3nz (^weightlifting~1) raising a weight from shoulder height to above the head by straightening the arms
@@ -225,7 +223,6 @@
  Jazmina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jazmin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Jedaiah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Jamir ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Juma ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jaleesa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Jaquan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -303,7 +300,6 @@
  Judeana ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jefferies ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Juliette ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- Joeliyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jonie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  jump_seat ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     jump_seat~1nz (^seat~1) a folding seat in an automobile
@@ -404,6 +400,7 @@
  Jenise ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeramie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jaydra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Jaantje ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeffrey ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jackqueline ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jerrel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -646,7 +643,6 @@
  Jannie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Joscelyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jarlath ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Jeanmarie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jazmaine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Joeseph ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  judgment_by_default ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -745,7 +741,6 @@
  Johnna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  jati ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     jati~1nz (^caste~3) a Hindu caste or distinctive social group of which there are thousands throughout India
- Jervis ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jess ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  jumpier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=jumpy 
  Jaap ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -784,7 +779,6 @@
  Janell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Jantje ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Julianna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- Jenene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jakinda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jossie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Julissa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -846,6 +840,7 @@
  Jerusha ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jarmann ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Janene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN NOUN_PROPER_SINGULAR ) 
+ Jahnke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  judo ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     judo~1nz (^sport~2) a sport adapted from jujitsu and similar to wrestling
  Jameel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -886,8 +881,6 @@
  Janais ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Junien ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Janzen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- japery ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
-    prank~2n 
  Jerald ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Japera ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jaione ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -978,6 +971,7 @@
  Jeanay ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeanna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Jader ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ Jazzalyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Janett ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  jutting ( meanings=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     jut~1n 
@@ -1052,6 +1046,7 @@
  Jerick ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Japanese_beetle ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Popillia_japonica~1n 
+ Jermane ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  James_Barrie ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Sir_James_Matthew_Barrie~1n 
  jibboom ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -1210,7 +1205,6 @@
     Jacques_Bernoulli~1n 
  jerboa_rat ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     jerboa_rat~1nz (^rat~1) large Australian rat with hind legs adapted for leaping
- Jennavieve ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jed ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Jillayne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jacobsen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1222,12 +1216,13 @@
  Jerome ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Eusebius_Hieronymus~1n 
  Jacks ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Jahnke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Jamison ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Judith_Jamison~1n 
  Jardine ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Jarmon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Jauregui ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Jeffers ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+    Robinson_Jeffers~1n 
  Jenkins ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Jernigan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Jeske ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1245,7 +1240,6 @@
     Casey_Jones~1n 
     Mother_Jones~1n 
  Josephson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Jaantje ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jabbar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jabir ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jackeline ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1290,6 +1284,7 @@
  Jamilla ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jamille ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jamilyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Jamir ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jane ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  Janel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Janine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -1322,7 +1317,6 @@
  Jazlyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jazlynn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jazmine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- Jazzalyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jazzmine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jazzmyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jeanee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1339,12 +1333,14 @@
  Jemma ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jenavieve ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jenda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Jenene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeneva ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jenevieve ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeni ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Jenice ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jenifer ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Jennah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Jennavieve ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jenneva ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jennilee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jennyann ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1366,7 +1362,6 @@
  Jeremy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jericho ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Jericho~1nz (^village~2) a village in Palestine near the north end of the Dead Sea
- Jermane ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jerod ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jerold ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jeronimo ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1379,6 +1374,7 @@
  Jerron ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jerry ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
     Hun~1nz (^German~2) offensive term for a person of German descent
+ Jervis ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Jesse ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  Jessica ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  Jessika ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -1408,6 +1404,7 @@
  Joel ( meanings=2 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     Book_of_Joel~1n 
     Joel~2nz (^prophet~2) a Hebrew minor prophet
+ Joeliyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Joelle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Joelliane ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Joey ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
@@ -1488,6 +1485,7 @@
  Jadwiga ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jama ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeanene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Jeanmarie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeannetta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jeffie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Jenell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1614,7 +1612,7 @@
     juridic~1az relating to the administration of justice or the function of a judge
     judicial~4az belonging or appropriate to the office of a judge
     judicial~5az 
- jest ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ jest ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     joke~2n 
     laugh~1n 
     joke~5v 
@@ -1632,6 +1630,8 @@
  jump_rope ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     jump_rope~1nz (^cardiopulmonary_exercise~1) a child's game or a cardiopulmonary exercise in which the player jumps over a swinging rope
     skipping_rope~1n 
+ japery ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
+    clowning~1n 
  jazz_festival ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     jazz_festival~1nz (^festival~1) a festival that features performances by jazz artists
  jitterbug ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN VERB_NOOBJECT ) 
@@ -1847,7 +1847,7 @@
     jadestone~1n 
     jade-green~1a 
     jade~6az 
-    fag~3v 
+    fatigue~5v 
     tire~3v 
  jennet ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     jenny_ass~1n 
@@ -1872,7 +1872,7 @@
     jawfish~1nz (^percoid_fish~1) small large-mouthed tropical marine fishes common along sandy bottoms
  judge_'s_robe ( meanings=1 NOUN NOUN_SINGULAR ) 
     academic_gown~1n 
- judge ( meanings=7 glosses=6 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT (null) (null) ) 
+ judge ( meanings=7 glosses=6 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) 
     evaluator~1nz (^authority~6) an authority who is able to estimate worth or quality
     jurist~1nz (^adjudicator~1) a public official authorized to decide questions brought before a court of justice
     pass_judgment~1vz form a critical opinion of
@@ -2099,7 +2099,7 @@
     long_plane~1nz (^plane~2) a long carpenter's plane used to shape the edges of boards so they will fit together
  jolly_boat ( meanings=1 NOUN NOUN_SINGULAR ) 
     jolly~1n 
- jolly ( meanings=6 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:ADJECTIVE VERB_NOOBJECT (null) ) comparative=jolliest 
+ jolly ( meanings=6 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:ADJECTIVE VERB_NOOBJECT ) comparative=jolliest 
     jolly_boat~1nz (^yawl~2) a yawl used by a ship's sailors for general work
     jolly~2nz (^party~1) a happy party
     merry~3a 
@@ -2249,7 +2249,7 @@
  juvenility ( meanings=2 NOUN NOUN_SINGULAR COMMON1 ) 
     youthfulness~1n 
     jejuneness~3n 
- jet_black ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER (null) ) 
+ jet_black ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     ebony~1n 
  jade_green ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     jade~2nz (^green~2) a light green color varying from bluish green to yellowish green
@@ -2353,7 +2353,7 @@
     jotter~1nz (^notebook~2) a small notebook for rough notes
  jotting ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
     jot~1n 
- jot ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ jot ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
     jotting~1nz (^note~2) a brief note
     tinge~2n 
     jot_down~1vz write briefly or hurriedly
@@ -2375,10 +2375,10 @@
     job_control~1nz (^program~5) a program that is called to prepare each job to be run
  jabberwocky ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     jabberwocky~1nz (^meaninglessness~2) nonsensical language
- jabber ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ jabber ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     jabbering~1n 
     mouth_off~1v 
- jeer ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE5_6 posdefault:VERB (null) ) 
+ jeer ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 GRADE5_6 posdefault:VERB ) 
     scoff~1n 
     scoff~3v 
  jeering ( meanings=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:VERB ) 
@@ -4785,7 +4785,7 @@
     united~1a 
  jerkwater ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     one-horse~1az small and remote and insignificant
- judgmental ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ judgmental ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     judgmental~1az depending on judgment
     judgmental~2az 
  jubilant ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -4797,7 +4797,7 @@
  jobless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     out_of_work~1a 
     jobless~2az 
- jealous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ jealous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     covetous~2az showing extreme cupidity
     overjealous~1az suspicious or unduly suspicious or fearful of being displaced by a rival
     jealous~3az 
@@ -4837,11 +4837,11 @@
     insipid~1a 
     juvenile~2a 
     insubstantial~2a 
- joyful ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ joyful ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     joyful~1az full of or producing joy
     elated~2a 
     joyful~3az 
- joyous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ joyous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     joyous~1az full of or characterized by joy
     joyous~2az 
  jocund ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -4853,7 +4853,7 @@
  joyless ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     joyless~1az not experiencing or inspiring joy
     joyless~2az 
- juicy ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) comparative=juiciest 
+ juicy ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) comparative=juiciest 
     juicy~1az full of juice
     fat~7a 
     gamy~3a 
@@ -4913,7 +4913,7 @@
     shoddy~3az of inferior workmanship and materials
  jiggered ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     jiggered~1az surprised
- jittery ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ jittery ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     nervy~3a 
     jittery~2az characterized by jerky movements
     jittery~3az 
@@ -5084,7 +5084,7 @@
     leap~8v 
  jell ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 KINDERGARTEN posdefault:VERB VERB_NOOBJECT ) 
     congeal~1vz become gelatinous
- justify ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ justify ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     justify~1vz adjust the spaces between words
     rationalise~4v 
     vindicate~1v 
@@ -5097,7 +5097,7 @@
     laugh_at~1v 
  josh ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     banter~2v 
- jubilate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ jubilate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     rejoice~1v 
     jubilate~2vz celebrate a jubilee
  jolly_along ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 

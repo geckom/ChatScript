@@ -1,5 +1,5 @@
-#ifndef _ENGLISHH_
-#define _ENGLISHH_
+#ifndef _ENGLISH_H
+#define _ENGLISH_H
 #ifdef INFORMATION
 Copyright (C) 2011-2015 by Bruce Wilcox
 

@@ -23,6 +23,7 @@
  Zoie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Zaire ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Congo~2n 
+ Zamarripa ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Zabala ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Zellers ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Zacharias ( meanings=2 glosses=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -77,8 +78,6 @@
     Zamboni~1nz (^machine~2) the trademark for a machine that smooths the ice in an ice-skating rink
  zebra_mussel ( meanings=1 NOUN NOUN_SINGULAR ) 
     Dreissena_polymorpha~1n 
- zalcitabine ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
-    dideoxycytosine~1n 
  Zhou ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Zhou_dynasty~1n 
  Zackary ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -161,7 +160,6 @@
     spice~5v 
  Zack ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Zak ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Zamarripa ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Zamora ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Zander ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Zapata ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -272,6 +270,8 @@
     azithromycin~1n 
  Zinacef ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Ceftin~1n 
+ zalcitabine ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
+    ddC~1n 
  Zestril ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Prinival~1n 
  zoo ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:NOUN ) 
@@ -560,7 +560,7 @@
  Zimbabwean ( meanings=2 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_PROPER_SINGULAR ) 
     Zimbabwean~1nz (^African~1) a native or inhabitant of Zimbabwe
     Zimbabwean~2az of or relating to or characteristic of Zimbabwe or its people
- zany ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=zaniest 
+ zany ( meanings=5 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=zaniest 
     fathead~1n 
     zany~2nz (^clown~1) a buffoon in one of the old comedies
     buffoonish~1a 
@@ -857,7 +857,7 @@
  Zollinger-Ellison_syndrome ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Zollinger-Ellison_syndrome~1nz (^syndrome~2) syndrome consisting of intractable peptic ulceration with gastric hypersecretion and hyperacidity
  Zeitgeist ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Zeitgeist~1nz (^smell~5) the spirit of the time
+    Zeitgeist~1nz (^feeling~6) the spirit of the time
  Zn ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 NOUN_NODETERMINER ) 
     zinc~1n 
  zirconium ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -946,7 +946,7 @@
     peppy~1a 
     lively~5a 
     zippy~3az 
- zealous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ zealous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     avid~1az marked by active interest and enthusiasm
     zealous~2az 
  zaftig ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 

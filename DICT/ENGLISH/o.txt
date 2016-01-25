@@ -101,7 +101,7 @@
  osteoclast ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 ) 
     osteoclast~1nz (^bone_cell~1) cell that functions in the breakdown and resorption of bone tissue
  out-migration ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR posdefault:NOUN ) 
-    expatriation~1nz (^migration~1) migration from a place
+    emigration~1nz (^migration~1) migration from a place
  Osaka ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Osaka~1nz (^city~2) port city on southern Honshu on Osaka Bay
  owlclaws ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -172,11 +172,11 @@
     Octoberfest~1nz (^lager_beer~1) a strong lager made originally in Germany for the Oktoberfest celebration
  order_Testudinata ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     order_Testudines~1nz (^animal_order~1) tortoises and turtles
+ oboli ( NOUN NOUN_PLURAL COMMON1 ) plural=obolus 
  Orsini ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  order_Actiniaria ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     order_Actinaria~1nz (^animal_order~1) sea anemones
  Overbey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Orlee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Odiana ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  oversight ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     lapse~2nz (^mistake~1) a mistake resulting from inattention
@@ -262,7 +262,7 @@
  Odanodan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Oxnaleah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ottokar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- own ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) ) comparative=owner 
+ own ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) comparative=owner 
     ain~1az belonging to or on behalf of a specified person 
     have~11v 
  Obregon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -458,7 +458,7 @@
     Squamata~1nz (^animal_order~1) diapsid reptiles: snakes and lizards
  Orwald ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Overcash ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- orange ( meanings=6 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ orange ( meanings=6 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN posdefault:ADJECTIVE ) 
     orangeness~1nz (^chromatic_colour~1) orange color or pigment
     orange~2nz (^citrous_fruit~1) round yellow to orange fruit of any of several citrus trees
     orange_tree~1nz (^citrus_tree~1) any citrus tree bearing oranges
@@ -562,6 +562,7 @@
  onset ( meanings=2 NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
     attack~5n 
     oncoming~1n 
+ Oberle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Oliana ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Odis ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  overtolerance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -569,6 +570,7 @@
  organism ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
     being~1n 
     organism~2nz (^system~8) a system considered analogous in structure or function to a living body
+ Oved ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Orabelle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Oxley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  orthodontic_braces ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -593,7 +595,7 @@
  orthoptics ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     orthoptics~1nz (^treatment~1) treatment of defects of binocular vision by nonsurgical measures (especially by exercises to strengthen the eye muscles)
  Olivera ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- open ( meanings=37 glosses=30 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE SPELLING_EXCEPTION COMMON4 COMMON2 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) comparative=opener 
+ open ( meanings=37 glosses=30 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE SPELLING_EXCEPTION COMMON4 COMMON2 KINDERGARTEN ADJECTIVE_POSTPOSITIVE posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=opener 
     surface~3nz (^general_knowledge~1) information that has become public
     open~2nz (^tournament~1) a tournament in which both professionals and amateurs may play
     open_air~1nz (^outside~2) where the air is unconfined
@@ -655,6 +657,7 @@
  order_Spirochaetales ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Spirochaetales~1nz (^animal_order~1) higher bacteria
  Olney ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Odum ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  open_secret ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     open_secret~1nz (^secret~3) something that is supposed to be secret but is generally known
  Ober ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -754,7 +757,7 @@
     Odo_of_Lagery~1n 
  onion_yellow_dwarf ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     onion_yellow_dwarf~1nz (^yellow_dwarf~1) the yellow dwarf disease of onion plants
- O'shea ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ O'Shea ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  order_Araneae ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Araneida~1n 
  oscitance ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -847,9 +850,6 @@
  Odontophorus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Odontophorus~1n 
  Ostrander ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- osculation ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
-    buss~1n 
-    osculation~2nz (^contact~9) a contact of two curves (or two surfaces) at which they have a common tangent
  Orlina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Oklahoma ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     OK~2n 
@@ -921,6 +921,10 @@
     Old_World_jay~1nz (^jay~1) a European jay
  Odelinda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Orlan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ orgy ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN ) 
+    saturnalia~1n 
+    orgy~2nz (^religious_rite~1) secret rite in the cults of ancient Greek or Roman deities involving singing and dancing and drinking and sexual activity
+    binge~2n 
  Ori ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  overthrow ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) conjugate=overthrown 
     overthrow~1nz (^conclusion~2) the termination of a ruler or institution
@@ -1144,6 +1148,7 @@
  oculus_dexter ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     OD~1nz (^eye~2) the right eye
  Orourke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Oleda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  orthochromatic_film ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     orthochromatic_film~1nz (^film~2) a photographic film sensitive to green and blue and violet light
  Ocasio ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -1311,6 +1316,8 @@
  order_Sirenia ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Sirenia~1nz (^animal_order~1) an animal order including: manatees
  Oprah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ organ_pipe ( meanings=1 NOUN NOUN_SINGULAR ) 
+    pipe~1n 
  Oliveria ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  order_Coraciiformes ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Coraciiformes~1nz (^animal_order~1) rollers
@@ -1358,6 +1365,7 @@
  optometry ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     optometry~1nz (^practice~3) the practice of an optometrist
  Omar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Oday ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Ovid ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Publius_Ovidius_Naso~1n 
  octameter ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -1423,7 +1431,7 @@
  oldtimer ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     antique~2n 
     old_hand~1n 
- old ( meanings=9 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE (null) (null) ) comparative=oldest 
+ old ( meanings=9 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE ) comparative=oldest 
     old~1nz (^past~2) past times
     previous~1az just preceding something else in time or order
     older~1a 
@@ -1434,13 +1442,10 @@
     quondam~1a 
     old~9az 
  Oneill ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Oberle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Oboyle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Oconner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Odaniel ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Oday ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Oden ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Odum ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Ogden ( meanings=2 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Ogden~1nz (^town~2) a town in northern Utah settled by Mormons
     C._K._Ogden~1n 
@@ -1472,8 +1477,8 @@
     Abdias~1n 
     Abdias~2nz (^prophet~2) a Hebrew minor prophet
  Obie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- O'brian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- O'brien ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ O'Brian ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ O'Brien ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     Edna_O'Brien~1n 
  Ocvran ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Odayle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1493,14 +1498,13 @@
  Ohanzee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ohitekah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ohnicio ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- O'keefe ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ O'Keefe ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Okelani ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Olaf ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Olathe ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Oldwin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Oldwina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Oldwyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Oleda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Oleta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Olina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Olwen ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1522,6 +1526,7 @@
  Orik ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Orla ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Orlaithe ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Orlee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Orlene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Orley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Orlin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1540,7 +1545,7 @@
  Oscar ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Academy_Award~1n 
  Osckar ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- O'shay ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ O'Shay ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Osie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Osip ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Osmin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1558,7 +1563,6 @@
  Ottis ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Ouida ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Ourson ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Oved ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Owain ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Owin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Oxa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -1591,6 +1595,9 @@
     overcapitalization~1n 
  off-speed_pitch ( meanings=1 NOUN NOUN_SINGULAR ) 
     change-of-pace~1n 
+ osculation ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
+    buss~1n 
+    osculation~2nz (^contact~9) a contact of two curves (or two surfaces) at which they have a common tangent
  once-over ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR posdefault:NOUN ) 
     look-over~1nz (^examination~1) a swift cursory examination or inspection
  ophthalmoscopy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -1698,10 +1705,6 @@
     field_sport~1nz (^sport~2) a sport that is played outdoors
  one-hitter ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     1-hitter~1nz (^baseball~1) a game in which a pitcher allows the opposing team only one hit
- orgy ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN ) 
-    bacchanalia~1n 
-    orgy~2nz (^religious_rite~1) secret rite in the cults of ancient Greek or Roman deities involving singing and dancing and drinking and sexual activity
-    splurge~1n 
  Olympian ( meanings=4 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_PROPER_SINGULAR ) 
     Olympic_god~1n 
     Olympian~2nz (^athlete~1) an athlete who participates in the Olympic games
@@ -2153,7 +2156,7 @@
  Old ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     Old~1az of a very early stage in development
  ouzel ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
-    merle~1n 
+    merl~1n 
  Oenanthe ( meanings=2 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Oenanthe~1n 
     genus_Oenanthe~2n 
@@ -2212,7 +2215,7 @@
     order_Chelonia~1n 
  olive_ridley ( meanings=1 NOUN NOUN_SINGULAR ) 
     Lepidochelys_olivacea~1n 
- olive ( meanings=7 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ olive ( meanings=7 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE ) 
     olive~1nz (^chromatic_colour~1) a yellow-green color of low brightness and saturation
     olive~2nz (^relish~3) one-seeded fruit of the European olive tree usually pickled and used as a relish
     olive~3nz (^wood~4) hard yellow often variegated wood of an olive tree
@@ -3203,8 +3206,6 @@
     organic~8az 
  OLED ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     organic_light-emitting_diode~1n 
- organ_pipe ( meanings=1 NOUN NOUN_SINGULAR ) 
-    pipe~1n 
  organ_stop ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     organ_stop~1nz (^pipe~1) a graduated set of organ pipes of like tone quality
  organza ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -3664,7 +3665,7 @@
     ochre~1nz (^orange_yellow~1) a moderate yellow-orange to orange color
     ochre~2nz (^earth_color~1) any of various earths containing silica and alumina and ferric oxide
     ochre~3az of a moderate orange-yellow color
- ochre ( meanings=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ ochre ( meanings=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE ) 
     ocher~1n 
     ocher~2n 
     ocher~3a 
@@ -3689,7 +3690,7 @@
     odor~2n 
  obesity ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     corpulency~1nz (^fat~1) more than average fatness
- overweight ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ overweight ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     adiposis~1nz (^obesity~1) the property of excessive fatness
     heavy~10a 
     overweight~3az 
@@ -3850,7 +3851,7 @@
     external_ear~1n 
  oval_window ( meanings=1 NOUN NOUN_SINGULAR ) 
     fenestra_ovalis~1n 
- oval ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ oval ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:ADJECTIVE ) 
     ellipse~1nz (^conic_section~1) a closed plane curve resulting from the intersection of a circular cone and a plane cutting completely through it
     oviform~1az rounded like an egg
     oval~3az 
@@ -4545,7 +4546,7 @@
     outstroke~1nz (^stroke~8) the stroke of an engine piston moving toward the crankshaft
  occultation ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     eclipse~1n 
- oink ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ oink ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT ) 
     grunt~2nz (^noise~5) the short low gruff noise of the kind made by hogs
     squeal~3vz utter a high-pitched cry, characteristic of pigs
  overspill ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 posdefault:NOUN ) conjugate=overspilt 
@@ -4731,7 +4732,7 @@
     mutual_fund~1nz (^fund~1) a regulated investment company with a pool of assets that regularly sells and redeems its shares
  organized_religion ( meanings=1 NOUN NOUN_SINGULAR ) 
     religion~2n 
- organized ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB (null) ) 
+ organized ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     organized~1az methodical and efficient in arrangement or function
     organized~2az formed into a structured or coherent whole
     organised~1az being a member of or formed into a labor union
@@ -5779,7 +5780,7 @@
     Opuntiales~1nz (^plant_order~1) coextensive with the family Cactaceae: cactuses
  orchid_cactus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     epiphyllum~1nz (^cactus~1) any cactus of the genus Epiphyllum having flattened jointed irregularly branching stems and showy tubular flowers
- orchid ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN (null) ) 
+ orchid ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:NOUN ) 
     orchidaceous_plant~1nz (^flower~2) any of numerous plants of the orchid family usually having flowers of unusual shapes and beautiful colors
  Opuntia ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Opuntia~1n 
@@ -6234,7 +6235,7 @@
     sweet_basil~2nz (^basil~2) annual or perennial of tropical Asia having spikes of small white flowers and aromatic leaves
  obedient_plant ( meanings=1 NOUN NOUN_SINGULAR ) 
     false_dragon_head~1n 
- obedient ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ obedient ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     obedient~1az dutifully complying with the commands or instructions of those in authority
     obedient~2az 
  Orobanchaceae ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -6376,7 +6377,7 @@
     Piperales~1nz (^plant_order~1) Piperaceae
  obtuse_leaf ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     obtuse_leaf~1nz (^simple_leaf~1) a simple leaf having a rounded or blunt tip
- obtuse ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ obtuse ( meanings=5 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     dense~1a 
     purblind~1a 
     obtuse~3az of an angle
@@ -6638,7 +6639,7 @@
  one-fourth ( meanings=1 NOUN NOUN_SINGULAR ) 
     fourth_part~1n 
  one-fifth ( meanings=1 NOUN NOUN_SINGULAR ) 
-    fifth_part~1n 
+    fifth~3n 
  one-sixth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     one-sixth~1nz (^common_fraction~1) one part in six equal parts
  one-seventh ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -6654,7 +6655,7 @@
  one-sixteenth ( meanings=1 NOUN NOUN_SINGULAR ) 
     sixteenth_part~1n 
  one-sixtieth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    one-sixtieth~1nz (^common_fraction~1) one part in sixty equal parts
+    sixtieth~1nz (^common_fraction~1) one part in sixty equal parts
  one-sixty-fourth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     sixty-fourth~1nz (^common_fraction~1) one part in sixty-four equal parts
  one-hundredth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -7082,7 +7083,7 @@
     flimsy~1nz (^typewriter_paper~1) a thin strong lightweight translucent paper used especially for making carbon copies
  opaque_gem ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     opaque_gem~1nz (^stone~7) a gemstone that is opaque
- opaque ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ opaque ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     opaque~1az not transmitting or reflecting light or radiant energy
     unintelligible~1az not clearly understood or expressed
  opopanax ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -7215,7 +7216,6 @@
  oases ( NOUN NOUN_PLURAL COMMON2 posdefault:NOUN ) plural=oasis 
  objets_d'art ( NOUN NOUN_PLURAL posdefault:NOUN ) plural=objet_d'art 
  obligati ( NOUN NOUN_PLURAL COMMON1 ) plural=obligato 
- oboli ( NOUN NOUN_PLURAL COMMON1 ) plural=obolus 
  occipita ( NOUN NOUN_PLURAL COMMON1 ) plural=occiput 
  oceanid ( NOUN NOUN_SINGULAR COMMON1 ) plural=oceanides 
  oceanides ( NOUN NOUN_PLURAL ) plural=oceanid 
@@ -7313,7 +7313,7 @@
  om ( meanings=1 ADVERB INTERJECTION ) 
     om~1bz 
  oof ( INTERJECTION ) 
- ooh ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB INTERJECTION COMMON2 COMMON1 KINDERGARTEN VERB_NOOBJECT (null) ) 
+ ooh ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB INTERJECTION COMMON2 COMMON1 KINDERGARTEN VERB_NOOBJECT ) 
     aah~1vz express admiration and pleasure by uttering `ooh' or `aah'
  oopsey ( INTERJECTION ) 
  oy ( INTERJECTION ) 
@@ -7438,7 +7438,7 @@
  open-minded ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     open-minded~1az ready to entertain new ideas
     open-minded~2az 
- opinionated ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ opinionated ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     opinionative~1a 
     opinionated~2az 
  opinionative ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -7496,7 +7496,7 @@
     unowned~1az having no owner
  olive-brown ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     olive-brown~1az of a brown color with a greenish tinge
- orangish ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 (null) ) 
+ orangish ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     orange~5a 
  orange-red ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     orangish-red~1a 
@@ -7524,7 +7524,7 @@
     orange-colored~1a 
  orange-flowered ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     orange-flowered~1az having orange flowers
- oily ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=oiliest 
+ oily ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=oiliest 
     greasy~1a 
     sebaceous~1a 
     oily~3az coated or covered with oil
@@ -7603,7 +7603,7 @@
  ordained ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     ordained~1az invested with ministerial or priestly functions
     prescribed~4a 
- outstanding ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ outstanding ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     striking~3az having a quality that thrusts itself into attention
     great~4az of major significance or importance
     owing~1az owed as a debt
@@ -7713,7 +7713,7 @@
     operose~2az 
  optional ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE ) 
     optional~1az possible but not necessary
- obligatory ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ obligatory ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     obligatory~1az morally or legally constraining or binding
     obligatory~2az required by obligation or compulsion or convention
  overemotional ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -7791,7 +7791,7 @@
     old-womanish~1a 
  old-womanish ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     old-maidish~1az primly fastidious
- obese ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ obese ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     rotund~1a 
     obese~2az 
  oleaginous ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -7885,7 +7885,7 @@
     precipitous~2a 
  of_import ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     important~2a 
- of ( meanings=1 PARTICLE PREPOSITION EXTENT_ADVERB COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION (null) ) 
+ of ( meanings=1 PARTICLE PREPOSITION EXTENT_ADVERB COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     of~1z 
  of_the_essence ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     all_important~1a 
@@ -7893,7 +7893,7 @@
     evident~1a 
  outbred ( meanings=1 glosses=1 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON2 posdefault:VERB ) conjugate=outbreed 
     outbred~1az bred of parents not closely related
- outgoing ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 (null) ) 
+ outgoing ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 ) 
     outgoing~1az retiring from a position or office
     outgoing~2az leaving a place or a position
     extroverted~3az at ease in talking to others
@@ -7966,7 +7966,7 @@
     overwhelming~3az 
  overstated ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     overdone~2a 
- outrageous ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ outrageous ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     extortionate~1a 
     horrific~2az grossly offensive to decency or morality
     outrageous~3az 
@@ -8002,7 +8002,7 @@
     open-and-shut~1az so obvious as to be easily solved or decided
  obstructed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     obstructed~1az shut off to passage or view or hindered from action
- obnoxious ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ obnoxious ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     objectionable~2az causing disapproval or protest
     obnoxious~2az 
  offenseless ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -8124,7 +8124,7 @@
     ostentatious~3az 
  omissible ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     omissible~1az capable of being left out
- only ( meanings=10 glosses=5 ADJECTIVE ADVERB ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB (null) ) 
+ only ( meanings=10 glosses=5 ADJECTIVE ADVERB ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
     alone~2a 
     solitary~4a 
     only~3az 
@@ -8206,7 +8206,7 @@
     orbiculate~1a 
  oval-shaped ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     egg-shaped~1a 
- oviform ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE (null) ) 
+ oviform ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     oval-shaped~1a 
  olivelike ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     olive-like~1a 
@@ -8713,7 +8713,7 @@
     unco~1bz to a remarkable degree or extent
     outstandingly~2bz in an outstanding manner or to an outstanding degree
  of_late ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    recently~1b 
+    late~10b 
  on_that_point ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
     in_that_respect~1b 
  out_of_doors ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
@@ -9368,7 +9368,7 @@
  obnubilate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     blur~4v 
     obscure~11v 
- opine ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE (null) ) 
+ opine ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE ) 
     guess~3v 
     animadvert~2v 
  outclass ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -9418,7 +9418,7 @@
  objurgate ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     castigate~1v 
     condemn~2v 
- orate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_NOOBJECT (null) (null) ) 
+ orate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_NOOBJECT ) 
     orate~1vz talk pompously
  overstate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     amplify~4v 
@@ -9431,7 +9431,7 @@
     overemphasize~1v 
  overstress ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     overemphasise~1v 
- overpraise ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ overpraise ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     overpraise~1vz praise excessively
  oppugn ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     question~10v 
@@ -9439,7 +9439,7 @@
     obligate~2v 
     accommodate~3vz provide a service or favor for someone
     compel~1v 
- outguess ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ outguess ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     second-guess~2v 
  obfuscate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     obfuscate~1vz make obscure or unclear
@@ -9669,7 +9669,7 @@
     orient~4vz determine one's position with reference to another point
  ogle ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     ogle~1vz look at with amorous intentions
- overhear ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT (null) ) conjugate=overheard 
+ overhear ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_DIRECTOBJECT ) conjugate=overheard 
     take_in~12v 
  overpay ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) conjugate=overpaid 
     overpay~1vz pay too much

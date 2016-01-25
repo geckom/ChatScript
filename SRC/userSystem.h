@@ -43,13 +43,13 @@ extern bool serverRetryOK;
 void ReadNewUser();
 void ReadUserData();
 void WriteUserData(time_t curr);
-char* WriteUserVariables(char* ptr,bool sharefile);
+char* WriteUserVariables(char* ptr,bool sharefile, bool compiling);
 void RecoverUser();
 
 // login
 void ReadComputerID();
 void Login(char* ptr,char* callee,char* ip);
 void PartialLogin(char* caller,char* ip);
-void ResetUser();
+void ResetUserChat();
 void KillShare();
 #endif

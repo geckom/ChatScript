@@ -71,6 +71,7 @@
 #	S/V/O	= test riccochet fact for corresponding label immediately followed by id 0-9 of test value
 
 
+
 ##########
 # simple direct match queries
 # Eg given a sample fact exists (dog love cat)

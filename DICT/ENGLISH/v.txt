@@ -6,7 +6,6 @@
  Verrall ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Vaughan ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Sarah_Vaughan~1n 
- Violette ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Vigue ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Vu ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
  voicemail ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -170,8 +169,6 @@
  Vicenta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Vadit ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Venamin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- vesper_sparrow ( meanings=1 NOUN NOUN_SINGULAR ) 
-    grass_finch~1n 
  Velarde ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  vending ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     hawking~1n 
@@ -215,7 +212,7 @@
  Vemados ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  vacuum_aspiration ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     suction_curettage~1nz (^induced_abortion~1) a method of induced abortion
- venomous ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ venomous ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     vicious~1a 
     deadly~6a 
     venomous~3az 
@@ -383,7 +380,7 @@
  Verl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  very_high_frequency ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     VHF~1nz (^radio_frequency~1) 30 to 300 megahertz
- voice ( meanings=13 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) (null) ) 
+ voice ( meanings=13 glosses=12 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     voice~1nz (^agency~1) a means or agency by which something is expressed or communicated
     voice~2nz (^sound~1) the distinctive quality or pitch or condition of a person's speech
     voice~3nz (^physical_ability~1) the ability to speak
@@ -542,10 +539,6 @@
     valet~2vz serve as a personal attendant to
  viroid ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     virusoid~1n 
- visitation ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
-    visitation~1nz (^visit~4) an official visit for inspection or supervision
-    visitation~2nz (^catastrophe~1) any disaster or catastrophe
-    trial~5n 
  variola_major ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     variola_major_virus~1n 
     smallpox~1nz (^pox~1) a highly contagious viral disease characterized by fever and weakness and skin eruption with pustules that form scabs that slough off leaving scars
@@ -567,6 +560,8 @@
     vault~5vz bound vigorously
     overleap~2v 
  Vania ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Vermont ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+    Green_Mountain_State~1n 
  Vetter ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Varik ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  virilism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -631,6 +626,7 @@
     pneumogastric~1n 
  vibrissa ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) plural=vibrissae 
     whisker~1n 
+ Vann ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  vena_brachialis ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     brachial_vein~1nz (^vein~2) two veins in either arm that accompany the brachial artery and empty into the axillary vein
  Vertebrata ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -700,6 +696,8 @@
  Virgie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Voyles ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Vonda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
+ varied_Lorikeet ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+    Glossopsitta_versicolor~1n 
  Vangorder ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Vedetta ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Vara ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -835,8 +833,6 @@
  variometer ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     variometer~1nz (^measuring_instrument~1) a measuring instrument for measuring variations in a magnetic field
  Vallee ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Vanessa ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
-    genus_Vanessa~1nz (^arthropod_genus~1) painted beauty and red admiral
  Valeraine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  vena_comitans ( meanings=1 NOUN NOUN_SINGULAR ) 
     accompanying_vein~1n 
@@ -880,8 +876,6 @@
  Vena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Vassallo ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  VanBuren ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Vermont ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Green_Mountain_State~1n 
  Valdes ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Valentino ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Valera ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -894,7 +888,6 @@
  Van ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Vang ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Vangundy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Vann ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Vanover ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Vanslyke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Vantassel ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -919,6 +912,7 @@
  Vinyard ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Viola ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
     genus_Viola~1nz (^dilleniid_dicot_genus~1) large genus of flowering herbs of temperate regions
+ Violette ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Visser ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Viveros ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Volkman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -932,6 +926,8 @@
  Van_Aken ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Vanderveer ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Vanesa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Vanessa ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
+    genus_Vanessa~1nz (^arthropod_genus~1) painted beauty and red admiral
  Vanna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Vannie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Vardan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1016,7 +1012,7 @@
     establishment~3n 
  volte-face ( meanings=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
     reversal~1n 
- vertical ( meanings=7 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:ADJECTIVE (null) ) 
+ vertical ( meanings=7 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:ADJECTIVE ) 
     upright~2nz (^structural_member~1) a vertical structural member as a post or stake
     vertical~2nz (^orientation~6) something that is oriented vertically
     vertical~3az of or relating to different levels in a hierarchy 
@@ -1024,7 +1020,7 @@
     erect~2az upright in position or posture
     vertical~6az relating to or involving all stages of a business from production to distribution
     vertical~7az 
- vote ( meanings=10 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ vote ( meanings=10 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     vote~1nz (^group_action~1) the opinion of a group as determined by voting
     balloting~1nz (^choice~1) a choice that is made by counting the number of people in favor of each alternative
     suffrage~1nz (^franchise~1) a legal right guaranteed by the 15th amendment to the US Constitution
@@ -1132,6 +1128,10 @@
     viziership~1nz (^position~2) the position of vizier
  volumetric ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     volumetrical~1a 
+ visitation ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
+    visitation~1nz (^visit~4) an official visit for inspection or supervision
+    visitation~2nz (^catastrophe~1) any disaster or catastrophe
+    trial~5n 
  valvotomy ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     valvulotomy~1n 
  valvulotomy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -1154,7 +1154,7 @@
  venial ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     excusable~1a 
     minor~10a 
- venture ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ venture ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     venture~1nz (^labor~2) any venturesome undertaking especially one with an uncertain outcome
     venture~2nz (^business~3) a commercial undertaking that risks a loss but promises a profit
     speculation~4nz (^investment_funds~1) an investment that is very risky but could yield great profits
@@ -1181,7 +1181,7 @@
     appreciate~5vz hold dear
  value_judgement ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     value_judgment~1nz (^judgment~1) an assessment that reveals more about the values of the person making the assessment than about the reality of what is assessed
- view ( meanings=13 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ view ( meanings=13 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     sight~1n 
     scene~1n 
     view~3nz (^appearance~4) outward appearance
@@ -1311,7 +1311,9 @@
     yolk_sac~2n 
  vesicula_umbilicus ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     umbilical_vesicle~1nz (^sac~1) membranous structure that functions as the circulatory system in mammalian embryos until the heart becomes functional
- vermillion ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 (null) ) 
+ vesper_sparrow ( meanings=1 NOUN NOUN_SINGULAR ) 
+    grass_finch~1n 
+ vermillion ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     vermilion~2a 
     vermillion~2az 
  veery ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -1353,8 +1355,6 @@
     adder~1n 
  Vipera_aspis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     asp~2nz (^viper~1) of southern Europe
- varied_Lorikeet ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Glossopsitta_versicolor~1n 
  varied ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     varied~1az broken away from sameness or identity or duplication
     wide-ranging~1a 
@@ -1959,7 +1959,7 @@
  visible_speech ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     visible_speech~1nz (^spectrograph~1) spectrogram of speech
     visible_speech~2nz (^phonetic_alphabet~1) a phonetic alphabet invented by Melville Bell in the 19th century
- visible ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ visible ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     visible~1az present and easily available
     visible~2az obvious to the eye
     seeable~1az capable of being seen
@@ -1979,7 +1979,7 @@
     V_neck~1nz (^neck~1) the neck of a garment has the shape in front of the letter V
  voile ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     voile~1nz (^material~1) a light semitransparent fabric
- volatile ( meanings=6 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:ADJECTIVE (null) ) 
+ volatile ( meanings=6 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     volatile~1nz (^substance~1) a volatile substance
     volatile~2az tending to vary often or widely
     fickle~2az marked by erratic changeableness in affections or attachments
@@ -2170,13 +2170,13 @@
     vapor_density~1nz (^relative_density~1) the density of a gas relative to the density of hydrogen
  visual_property ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     visual_property~1nz (^property~2) an attribute of vision
- vermilion ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ vermilion ( meanings=3 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
     orange_red~1n 
     cinnabar~3a 
     vermilion~3vz color vermilion
  viridity ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     greenness~1n 
- violet ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN (null) ) 
+ violet ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
     reddish_blue~1nz (^purple~1) a variable color that lies beyond blue in the spectrum
     violet~2nz (^viola~2) any of numerous low-growing violas with small flowers
     purplish~1a 
@@ -5065,7 +5065,7 @@
  volkslieder ( NOUN NOUN_PLURAL COMMON1 ) plural=volkslied 
  vrroom ( NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
  voila ( INTERJECTION ) 
- vain ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ vain ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     sleeveless~1az unproductive of success
     swollen-headed~1az characteristic of false pride
     vain~3az 
@@ -5073,11 +5073,11 @@
     ugly~3a 
     nauseous~2a 
     vile~3az 
- voracious ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ voracious ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     ravenous~1a 
     ravening~2a 
     voracious~3az 
- voluminous ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ voluminous ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     copious~2az large in number or quantity 
     voluminous~2az large in volume or bulk
     twisty~1az marked by repeated turns and bends
@@ -5143,7 +5143,7 @@
     lilac-blue~1az of blue tinged with lavender
  violet-pink ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     lilac-pink~1a 
- vinaceous ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 (null) ) 
+ vinaceous ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     vinaceous~1az of the color of wine
     vinous~1az of or relating to wine
  violet-tinged ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -5176,7 +5176,7 @@
     vibrant~2az of sounds that are strong and resonating
     vivacious~1a 
     vibrant~4az 
- vague ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ vague ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     obscure~1a 
     undefined~1a 
     shadowy~3a 
@@ -5233,7 +5233,7 @@
     verticillated~1a 
  verticillated ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     whorled~1az forming one or more whorls
- vulgar ( meanings=5 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ vulgar ( meanings=5 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     earthy~1a 
     vernacular~3a 
     unwashed~2a 
@@ -5255,7 +5255,7 @@
     confirmable~1a 
     verifiable~2az capable of being verified
     verifiable~3az 
- vigorous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ vigorous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     vigorous~1az characterized by forceful and energetic action or activity
     vigorous~2az strong and active physically or mentally
     vigorous~3az 
@@ -5291,7 +5291,7 @@
     fledged~1a 
  velvety-plumaged ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     velvety-plumaged~1az plumage resembling velvet
- vengeful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ vengeful ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     revengeful~1a 
     vengeful~2az 
  vanilla-scented ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -5318,7 +5318,7 @@
     vinegary~1az having a sour disposition
     acetous~1az tasting or smelling like vinegar
     vinegarish~3az 
- velvety ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ velvety ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     velvet~2a 
     velvet~3a 
     velvety~3az 
@@ -5339,7 +5339,7 @@
     ventricose~1a 
  vitalizing ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     life-giving~1a 
- vast ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ vast ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     immense~1a 
     vast~2az 
  verisimilar ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -5477,7 +5477,7 @@
     vapourish~2az 
  vasiform ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     tubelike~1a 
- vivacious ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ vivacious ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     vibrant~3az vigorous and animated
     vivacious~2az 
  verbalized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
@@ -5948,12 +5948,12 @@
     venesect~1vz practice venesection
  vaccinate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     immunise~1v 
- verbalize ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ verbalize ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     verbalise~1vz convert into a verb
     utter~3v 
     utter~4v 
     verbalise~4vz be verbose
- verbalise ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ verbalise ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     verbalize~1v 
     verbalize~2v 
     verbalize~3v 
@@ -6001,7 +6001,7 @@
  variegate ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     motley~7v 
     variegate~2vz change the appearance of, especially by marking with different colors
- validate ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ validate ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT ) 
     validate~1vz make valid or confirm the validity of
     validate~2vz prove valid
     corroborate~2v 
@@ -6046,23 +6046,23 @@
  vesiculate ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     vesiculate~1vz cause to become vesicular or full of air cells
     vesiculate~2vz become vesicular or full of air cells
- visualize ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ visualize ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     visualise~1vz make visible
     see~11v 
     visualise~3vz form a mental picture of something that is invisible or abstract
     visualise~4vz view the outline of by means of an X-ray
- visualise ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ visualise ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     visualize~1v 
     visualize~2v 
     visualize~3v 
     visualize~4v 
- vex ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ vex ( meanings=5 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     stupefy~2v 
     vex~2vz subject to prolonged examination, discussion, or deliberation
     shake_up~2v 
     worry~5v 
     get_to~2v 
- verify ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ verify ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT ) 
     verify~1vz confirm the truth of
     aver~1vz to declare or affirm solemnly and formally as true
     verify~3vz attach or append a legal verification to
@@ -6071,13 +6071,13 @@
     evaluate~2v 
  view_as ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     deem~1v 
- vocalize ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ vocalize ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     phonate~1vz utter speech sounds
     voice~13v 
     articulate~3v 
     vowelise~1vz pronounce as a vowel
     vocalise~5vz sing with the same vowel
- vocalise ( meanings=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ vocalise ( meanings=5 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     vocalize~1v 
     vocalize~2v 
     vocalize~3v 
@@ -6087,9 +6087,9 @@
     rescind~1v 
     abandon~5v 
     give_up~10v 
- vilify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ vilify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     rail~7v 
- vituperate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT (null) ) 
+ vituperate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     revile~1v 
  vilipend ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     deprecate~1v 
@@ -6097,7 +6097,7 @@
     justify~3vz show to be right by providing justification or proof
     vindicate~2vz clear of accusation, blame, suspicion, or doubt with supporting proof
     vindicate~3vz maintain, uphold, or defend
- vociferate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT (null) (null) ) 
+ vociferate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     shout_out~2vz utter in a very loud voice
  vaticinate ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     vaticinate~1vz foretell through or as if through the power of prophecy
@@ -6160,7 +6160,7 @@
     shoot_down~3v 
  vote_out ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     vote_down~2v 
- victimize ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ victimize ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     victimise~1vz punish unjustly
     diddle~2v 
     victimise~2vz make a victim of
@@ -6173,7 +6173,6 @@
  vegging_out ( VERB_PRESENT_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE VERB_CONJUGATE1 ) conjugate=vegged_out 
  vye ( VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB ) conjugate=vied 
  vied ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 posdefault:VERB ) conjugate=vye 
- VERB_NOBJECT ( VERB_PAST VERB VERB_CONJUGATE1 ) conjugate=come_of_age 
  vaguerize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     vaguerize~1vz 
  vagotomize ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 

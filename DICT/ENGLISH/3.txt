@@ -14,7 +14,7 @@
     Orly_Group~1n 
  366_days ( meanings=1 NOUN NOUN_PLURAL ) 
     leap_year~1n 
- 30 ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER KINDERGARTEN posdefault:NOUN ) 
+ 30 ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER posdefault:NOUN ) 
  3G ( meanings=1 NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
     3G~1nz 
  3G_coverage ( meanings=1 NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
@@ -23,8 +23,6 @@
     three-dimensional~2a 
  3-membered ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     three-membered~1a 
- 32nd ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    32nd~1az the ordinal number of thirty-two in counting order
  3-star ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     3-star~1az 
  3/8 ( NOUN NOUN_NUMBER KINDERGARTEN ) 

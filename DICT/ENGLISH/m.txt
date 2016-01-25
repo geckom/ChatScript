@@ -3,6 +3,7 @@
     John_Mercer~1n 
  Maritimes ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Maritime_Provinces~1n 
+ Montaigu ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Marcie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Malakai ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Monca ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -46,6 +47,13 @@
  Mackie ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  modal_value ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     mode~2nz (^average~2) the most frequent value of a random variable
+ mound ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
+    pitcher~1nz (^position~4) the position on a baseball team of the player who throws the ball for a batter to try to hit
+    hill~1nz (^structure~1) structure consisting of an artificial heap or bank usually of earth or stones
+    hill~2nz (^baseball_equipment~1) the slight elevation on which the pitcher stands
+    cumulus~1nz (^collection~4) a collection of objects laid on top of each other
+    hummock~1nz (^hill~3) a small natural hill
+    mound~6vz form into a rounded elevation
  Micromeria_juliana ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     savory~3nz (^herbaceous_plant~1) dwarf aromatic shrub of Mediterranean regions
  Miah ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -64,7 +72,7 @@
  Mcgee ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  memorandum ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) plural=memoranda 
     memoranda~1nz (^note~2) a written proposal or reminder
- Macarthur ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ MacArthur ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Douglas_MacArthur~1n 
  Markell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Marciano ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -143,15 +151,12 @@
     microscopic_anatomy~1nz (^anatomy~3) the study of microscopic structures of tissues and organs
  Master_of_Fine_Arts ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     MFA~1nz (^master_'s_degree~1) a master's degree in fine arts
- mystify ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB (null) ) 
+ mystify ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     mystify~1vz make mysterious
     gravel~2v 
- Marrero ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mackenzie ( meanings=2 glosses=2 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
     Mackenzie_River~1nz (^river~1) a Canadian river
     Sir_Alexander_Mackenzie~1nz (^adventurer~2) Canadian explorer who explored the Mackenzie River and who was first to cross North America by land north of Mexico (1764-1820)
- military_censorship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    military_censorship~1nz (^security_review~1) all types of censorship conducted by personnel of the armed forces
  Maska ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  MacDubhgall ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  mend ( meanings=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -181,7 +186,7 @@
  microwave_oven ( meanings=1 NOUN NOUN_SINGULAR ) 
     microwave~1n 
  Messinger ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckain ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKain ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marino ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Marini~1n 
  Mont_Blanc ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -255,7 +260,7 @@
  Mannino ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  methadon ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     fixer~1n 
- Mckinney ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKinney ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mendeleyev ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Dmitri_Mendeleev~1n 
  Michaelson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -310,7 +315,7 @@
     direction~2n 
     management~2nz (^organization~7) those in charge of running a business
  Malmuirie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- make ( meanings=51 glosses=36 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT (null) (null) ) conjugate=made 
+ make ( meanings=51 glosses=41 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_VERBINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) conjugate=made 
     shuffling~2nz (^reordering~1) the act of mixing cards haphazardly
     brand~2n 
     make~3vz act in a certain way so as to acquire
@@ -327,20 +332,20 @@
     make~14vz calculate as being
     make~15vz consider as being
     draw~18vz make, formulate, or derive in the mind
-    have~6v 
+    induce~2vz cause to do
     pretend~5v 
     make~19vz assure the success of
     score~17v 
     create~1vz make or cause to be or to become
-    do~3v 
+    do~3vz create or design, often in a certain way
     produce~3v 
     create~3vz create by artistic means
-    do~4v 
+    do~4vz give rise to
     make~26vz compel or make somebody or something to act in a certain way
     make~27vz make by shaping or bringing together constituents
     build~8v 
     cook~4v 
-    have~8v 
+    throw~17v 
     make~31vz gather and light the materials for
     make~32vz perform or carry out
     hit~20v 
@@ -350,9 +355,9 @@
     take~24vz head into a specified direction
     make~38vz appear to begin an activity
     take_in~14v 
-    get~35v 
+    have~15vz achieve a point or goal
     nominate~3vz charge with a function
-    do~8v 
+    do~8vz engage in
     make~43vz carry out or commit
     make~44vz form by assembling individuals or constituents
     make~45vz constitute the essence of
@@ -460,7 +465,8 @@
  Meader ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Moten ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Matney ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- mind ( meanings=13 glosses=11 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ Mcmillon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ mind ( meanings=13 glosses=11 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     nous~1nz (^knowledge~1) that which is responsible for one's thoughts and feelings
     intellect~1nz (^intelligence~2) knowledge and intellectual ability
     mind~3nz (^notice~1) attention
@@ -498,12 +504,12 @@
  Meraz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  monosyllabic_word ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     monosyllable~1nz (^word~1) a word or utterance of one syllable
- Mckeever ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKeever ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mounts ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON4 ) 
  mosquito_boat ( meanings=1 NOUN NOUN_SINGULAR ) 
     motor_torpedo_boat~1n 
  Malia ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Mrs. ( meanings=1 glosses=1 NOUN_TITLE_OF_ADDRESS NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN GRADE1_2 ) plural=Mmes. 
+ Mrs. ( meanings=1 glosses=1 NOUN_TITLE_OF_ADDRESS NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) plural=Mmes. 
     Mrs~1nz (^title~3) a form of address for a married woman
  misestimation ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     miscalculation~1n 
@@ -552,7 +558,7 @@
  McCants ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Muldrow ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcglone ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Macfarlane ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ MacFarlane ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Maclin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Margaret ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Mecham ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -661,7 +667,6 @@
  Manzo ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  mesenteric ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     mesenteric~1az of or relating to or located in a mesentery
- Mullins ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Maines ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  MacNab ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Marvyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -723,11 +728,11 @@
  male_orgasm ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     male_orgasm~1nz (^sexual_climax~1) an orgasm accompanied by the sensation of ejaculation of semen
  Mcabee ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckellar ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKellar ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  MacColl ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mainchin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mcdonald ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- malicious ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ malicious ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     malicious~1az having the nature of or resulting from malice
     malicious~2az 
  moire ( meanings=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -749,7 +754,7 @@
  Mailsi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Maymie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Musgrove ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckee ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKee ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Margawse ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Midkiff ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Maudie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -772,7 +777,7 @@
     genus_Melissa~1nz (^asterid_dicot_genus~1) a genus of Old World mints of the family Labiatae
  miniaturisation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     miniaturization~1nz (^shrinking~1) act of making on a greatly reduced scale
- Macgregor ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ MacGregor ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Rob_Roy~2n 
  Mcvey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marroquin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -822,7 +827,7 @@
  Merci ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Musgoi ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Kola~1nz (^Biu-Mandara~1) a Chadic language spoken south of Lake Chad
- Macdonald ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ MacDonald ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Mullane ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Margrit ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  McClary ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -893,7 +898,7 @@
     genus_Mugil~1n 
  Mausi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Myong ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Mckinsey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKinsey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mago ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mattos ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Meeker ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
@@ -921,7 +926,7 @@
     Coturnix_coturnix~1n 
  Muldoon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Moketaveto ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- male ( meanings=6 glosses=5 NOUN_HUMAN NOUN_HE NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ male ( meanings=6 glosses=5 NOUN_HUMAN NOUN_HE NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     male~1nz (^animal~1) an animal that produces gametes that can fertilize female gametes (ova)
     male_person~1nz (^individual~1) a person who belongs to the sex that cannot have babies
     male~3az being the sex that produces gametes (spermatozoa) that perform the fertilizing function in generation
@@ -977,6 +982,7 @@
  Minick ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Musick ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Mirabelle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Merriweather ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Macrodantin ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     nitrofurantoin~1n 
  market_capitalization ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -997,7 +1003,6 @@
  Mabon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  military_mission ( meanings=1 NOUN NOUN_SINGULAR ) 
     mission~3n 
- Medredydd ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  miracle-worship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     thaumatolatry~1nz (^devotion~2) the worship of miracles
  Martino ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1015,6 +1020,8 @@
     extenuation~1n 
     extenuation~2n 
  Manke ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ medical_diagnosis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    medical_diagnosis~1nz (^diagnosis~1) identification of a disease from its symptoms
  Mulholland ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  medivac ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     medical_evacuation~1n 
@@ -1105,7 +1112,7 @@
     knead~1v 
  measuring_system ( meanings=1 NOUN NOUN_SINGULAR ) 
     measuring_instrument~1n 
- Mckenna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ McKenna ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  muzhik ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     muzjik~1nz (^peasant~1) a Russian peasant
  Moe ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -1115,7 +1122,7 @@
  Maxim ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     Sir_Hiram_Stevens_Maxim~1n 
  Moye ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mcknight ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKnight ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mart ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Magers ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Maddison ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1194,6 +1201,7 @@
     manifold~6vz make multiple copies of
  midsession ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     midsession~1nz 
+ McClean ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mendi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  microcircuit ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     integrated_circuit~1n 
@@ -1239,7 +1247,7 @@
  Meriel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Mcdougal ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mixon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckinley ( meanings=2 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ McKinley ( meanings=2 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Denali~1n 
     William_McKinley~1n 
  Macaca_irus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -1302,7 +1310,7 @@
  Mciver ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Moreira ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcmanus ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- mark ( meanings=28 glosses=15 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ mark ( meanings=28 glosses=15 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     bull_'s_eye~1nz (^success~1) something that exactly succeeds in achieving its goal
     mark~2nz (^effect~1) the impression created by doing something unusual or extraordinary that people notice and remember
     cross~4n 
@@ -1366,7 +1374,7 @@
     musculus_sphincter_ani_externus~1nz (^skeletal_muscle~1) an external ring of striated muscle surrounding the anus
  Mathes ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Maunfeld ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Mckay ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ McKay ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Myra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Minneapolis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Minneapolis~1nz (^city~2) largest city in Minnesota
@@ -1430,6 +1438,7 @@
     tongueless~1a 
     damp~7v 
  Marivel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Marilynn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Muhunnad ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Modraed ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Musette ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -1492,8 +1501,7 @@
     manta~2nz (^blanket~1) a blanket that is used as a cloak or shawl
  Mcjunkin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mikhalis ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Mckinnis ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Massaro ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKinnis ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marchese ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  musk_hog ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     peccary~1nz (^even-toed_ungulate~1) nocturnal gregarious pig-like wild animals of North America and South America
@@ -1556,6 +1564,7 @@
  Mazur ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  meshugaas ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     mishegaas~1nz (^indulgence~2) craziness
+ Mcginty ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mont ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  maturement ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     ripening~1nz (^biological_process~1) coming to full development
@@ -1643,7 +1652,7 @@
  Mignon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Monet ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
     Claude_Monet~1n 
- matter ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_NOOBJECT (null) ) comparative=matte 
+ matter ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_NOOBJECT ) comparative=matte 
     matter~1nz (^physical_entity~1) that which has mass and occupies space
     matter~2nz (^moment~1) having consequence
     affair~1nz (^concern~1) a vaguely specified concern
@@ -1667,7 +1676,7 @@
     pitch~22v 
  Mustelus_norrisi ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Florida_smoothhound~1n 
- Mckayla ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ McKayla ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Mancuso ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Muraenidae ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Muraenidae~1nz (^fish_family~1) marine eels
@@ -1791,7 +1800,7 @@
     medication~1nz (^therapy~1) the act of treating with medicines or remedies
     medicine~3n 
  Mehemet ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- modern ( meanings=7 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE (null) ) 
+ modern ( meanings=7 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     Bodoni_font~1nz (^proportional_font~1) a typeface distinguished by regular shape and hairline serifs and heavy downstrokes
     modern~2nz (^individual~1) a contemporary person
     modern~3az characteristic of present-day art and music and literature and architecture
@@ -1952,7 +1961,7 @@
     maraud~2vz raid and rove in search of booty
  means_test ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     means_test~1nz (^inquiry~1) an inquiry into the financial position of someone applying for financial aid
- Mckibben ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKibben ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Morgan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
  megatherian ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     megatheriid~1n 
@@ -2024,11 +2033,11 @@
  Mullaney ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Master_in_Business_Administration ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     MBA~1nz (^master_'s_degree~1) a master's degree in business
- Mckenzie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
- Millett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKenzie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Mariano ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mishler ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Malyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Marchand ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Michelson ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Albert_Michelson~1n 
  mumble-the-peg ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -2089,7 +2098,7 @@
  Miren ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Mariscal ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Miner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckamey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKamey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Myadestes ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Myadestes~1n 
  Mexican_black_cherry ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
@@ -2196,7 +2205,7 @@
     hacksaw~1nz (^saw~2) saw used with one hand for cutting metal
  merozoite ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 ) 
     merozoite~1nz (^sporozoan~1) a cell that arises from the asexual division of a parent sporozoan during its life cycle
- Mckinnon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKinnon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Malthusianism ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Malthusian_theory~1n 
  Manson ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2221,7 +2230,6 @@
     mainstay~1nz (^forestay~1) the forestay that braces the mainmast
     anchor~2n 
     pillar~4nz (^champion~4) a prominent supporter
- Mcinturff ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  music_of_the_spheres ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     music_of_the_spheres~1nz (^music~3) an inaudible music that Pythagoras thought was produced by the celestial
  Moreley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2342,7 +2350,7 @@
     music~4nz (^sound~2) the sounds produced by singers or musical instruments (or reproductions of such sounds)
     music~5nz (^auditory_communication~1) an artistic form of auditory communication incorporating instrumental or vocal tones in a structured and continuous manner
  Marisela ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- Mckinnie ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKinnie ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marchland ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mcreynolds ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  myelography ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -2461,8 +2469,6 @@
     May~1nz (^Gregorian_calendar_month~1) the month following April and preceding June
  Maryanne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Mcwhorter ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- major_premiss ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    major_premise~1nz (^assumption~5) the premise of a syllogism that contains the major term
  Mcgriff ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Murakami ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  mademoiselle ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) plural=mesdemoiselles 
@@ -2477,7 +2483,6 @@
     missionary_station~1nz (^nongovernmental_organization~1) an organization of missionaries in a foreign land sent to carry on religious work
  Malloy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Maile ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
- Morningstar ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mota ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Mcsweeney ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Morgawse ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -2513,7 +2518,7 @@
  mercy_killing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     euthanasia~1nz (^kill~2) the act of killing someone painlessly
  Matthia ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Mckoy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKoy ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Monserrat ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Mayes ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  meloid ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -2636,7 +2641,7 @@
     Manhattan_Project~2nz (^executive_agency~1) a former United States executive agency that was responsible for developing atomic bombs during World War II
  Mcgrew ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Madsen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckown ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKown ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marginocephalia ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     suborder_Marginocephalia~1n 
  medevac ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
@@ -2825,9 +2830,6 @@
  McClain ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Mcswain ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Morrisey ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- mending ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
-    mend~1n 
-    mending~2nz (^garment~1) garments that must be repaired
  misfeasance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     misfeasance~1nz (^wrongful_conduct~1) doing a proper act in a wrongful or injurious manner
  Mcdowell ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -2853,7 +2855,7 @@
  micrometer_caliper ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     micrometer_gauge~1nz (^calliper~1) caliper for measuring small distances
  McCallum ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- mint ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT (null) ) comparative=minter 
+ mint ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT ) comparative=minter 
     mint~1nz (^complex~1) a plant where money is coined by authority of the government
     mint_candy~1nz (^candy~1) a candy that is flavored with a mint oil
     mint~3nz (^herb~1) the leaves of a mint plant used fresh or candied
@@ -2955,6 +2957,8 @@
     monohybrid_cross~1nz (^cross~1) hybridization using a single trait with two alleles
  Myopus ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Myopus~1n 
+ merle ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
+    ousel~1n 
  Merle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Meliadus ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mabelle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3010,6 +3014,7 @@
  Macon ( meanings=1 glosses=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Macon~1nz (^city~2) a city in central Georgia to the southeast of Atlanta
  Maganhildi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
+ Maryam ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  medial_geniculate_body ( meanings=1 NOUN NOUN_SINGULAR ) 
     corpus_geniculatum_mediale~1n 
  Matilda ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -3170,7 +3175,6 @@
     Canis_niger~1n 
  Mapp ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Mistretta ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Maddalena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Metoyer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Maxie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Malcom ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3210,7 +3214,7 @@
  Mullen ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Manis ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     genus_Manis~1n 
- meter ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ meter ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     meter~1nz (^measuring_instrument~1) any of various measuring instruments for measuring a quantity
     metre~1nz (^rhythmicity~1) rhythm as given by division into parts of equal duration
     measure~8n 
@@ -3259,7 +3263,7 @@
  mineral_jelly ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     petrolatum~1n 
  Morain ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Mckim ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKim ( meanings=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Charles_Follen_McKim~1n 
  meshing ( meanings=3 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     interlock~1n 
@@ -3348,13 +3352,6 @@
  mycobacterium ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) plural=mycobacteria 
     mycobacteria~1nz (^true_bacteria~1) rod-shaped bacteria some saprophytic or causing diseases
  Madel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- mandate ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT ) 
-    mandate~1nz (^commission~3) the commission that is given to a government and its policies through an electoral victory
-    authorization~4n 
-    mandatory~1n 
-    mandate~4vz assign authority to
-    mandate~5vz make mandatory
-    mandate~6vz assign under a mandate
  main ( meanings=6 glosses=4 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) 
     main~1nz (^pipe~2) a principal pipe in a system that distributes water or gas or electricity or that collects sewage
     briny~1nz (^water~3) any very large body of water
@@ -3663,7 +3660,7 @@
     Toni_Morrison~1n 
     Jim_Morrison~1n 
  MacAdhamh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Mckenney ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKenney ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Melrone ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Manuel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Meagan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -3746,7 +3743,7 @@
     swabbing~1n 
  madrasah ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     madrasa~1nz (^religious_school~1) Muslim schools in Bangladesh and Pakistan
- mumble ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ mumble ( meanings=3 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     mumble~1nz (^vocalization~1) a soft indistinct utterance
     mutter~4v 
     gum~9v 
@@ -3762,7 +3759,7 @@
     mulligatawny~1nz (^soup~1) a soup of eastern India that is flavored with curry
  Melastoma ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Melastoma~1n 
- Mckinzie ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKinzie ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  musteline ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     musteline_mammal~1n 
  Magenta ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -3897,6 +3894,8 @@
     deadly~5a 
  Melissa_officinalis ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     beebalm~1nz (^herbaceous_plant~1) bushy perennial Old World mint having small white or yellowish flowers and fragrant lemon-flavored leaves
+ musical_instrument ( meanings=1 NOUN NOUN_SINGULAR ) 
+    instrument~3n 
  Morlee ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  maverick ( meanings=3 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     maverick~1nz (^calf~1) an unbranded range animal 
@@ -3942,12 +3941,6 @@
  Mary_I ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Bloody_Mary~2n 
  Miron ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- military ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:ADJECTIVE ) 
-    war_machine~1nz (^force~8) the military forces of a nation
-    military~2az associated with or performed by members of the armed services as contrasted with civilians
-    military~3az characteristic of or associated with soldiers or the military
-    military~4az of or relating to the study of the principles of warfare
-    military~5az 
  Maghreb ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Mahgrib~1nz (^geographical_region~1) the region of northwest Africa comprising the Atlas Mountains and the coastlands of Morocco and Algeria and Tunisia
  Marlow ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -3960,6 +3953,8 @@
     musical~5az talented in or devoted to music
     musical~6az characterized by or capable of producing music
     musical~7az 
+ make_way ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
+    make_way~1vz get out of the way
  Mulvihill ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  MacDomhnall ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  miniaturization ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -4013,7 +4008,7 @@
     mushroom~5nz (^agaric~1) common name for an edible agaric
     mushroom~6vz grow and spread fast
     mushroom~7vz pick or gather mushrooms
- Mckie ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKie ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  mix-up ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR KINDERGARTEN posdefault:NOUN ) 
     confusion~1nz (^mistake~1) a mistake that results from taking one thing to be another
  Milbyrne ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -4052,7 +4047,7 @@
  maculation ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     spotting~2nz (^dirtying~1) the act of spotting or staining something
     spot~6n 
- Macdougall ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ MacDougall ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Maryilyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Mame ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Morise ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -4066,7 +4061,7 @@
  Mitcbel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  midwife ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) plural=midwives 
     accoucheuse~1n 
- Mckelvey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKelvey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  modernisation ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     modernization~1n 
  marriage_license ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -4110,7 +4105,6 @@
  MacMaureadhaigh ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  MOT_test ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     MOT~1n 
- Makowski ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mazzola ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  muscle_system ( meanings=1 NOUN NOUN_SINGULAR ) 
     muscular_structure~1n 
@@ -4130,6 +4124,7 @@
  Mahoney ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Maier ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mailloux ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Makowski ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Malave ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Maldonado ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mallett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4139,17 +4134,18 @@
  Manahan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Manley ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Manrique ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Marchand ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marcos ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Marez ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marion ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Markley ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Markowitz ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Marrero ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marrs ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Marti ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     Jose_Julian_Marti~1n 
  Martins ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
  Masi ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Massaro ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mather ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mathers ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Matheson ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -4170,7 +4166,6 @@
     Mary_McCarthy~1n 
  McCarty ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  McCaslin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- McClean ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  McCleary ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  McClendon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  McCloskey ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4193,22 +4188,21 @@
  Mcfarland ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcfarlin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcgarry ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mcginty ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcgregor ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Mchugh ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcilwain ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckean ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckeehan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckeon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckeown ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- Mckissick ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Mcinturff ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKean ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKeehan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKeon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKeown ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ McKissick ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mclain ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mclamb ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mclaurin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mclendon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcloughlin ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
  Mcmahon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
- Mcmillon ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcmullan ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcmurry ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mcpeak ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4233,7 +4227,6 @@
     Merida~1nz (^city~2) the capital of the Mexican state of Yucatan
  Merkle ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Merritt ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
- Merriweather ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mertens ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Messina ( meanings=1 glosses=1 NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
     Messina~1nz (^city~2) a port city in northeastern Sicily on the Strait of Messina
@@ -4245,6 +4238,7 @@
  Middendorf ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mier ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mikesell ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Millett ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Milliner ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Million ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Millsap ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4257,6 +4251,7 @@
  Moorman ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Morell ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Morello ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
+ Morningstar ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mortimer ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     Roger_de_Mortimer~1n 
  Mosby ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4268,6 +4263,7 @@
  Mowery ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Muir ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
     John_Muir~1n 
+ Mullins ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Mundy ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Munford ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Munn ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -4308,6 +4304,7 @@
  MacRae ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Madalene ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Madaline ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
+ Maddalena ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Maddie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Madelon ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Madia ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -4417,7 +4414,6 @@
  Marielle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Marika ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Marilyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- Marilynn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Marina ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Mariner ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mariquita ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
@@ -4452,7 +4448,6 @@
  Marwin ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Mary ( meanings=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
     Madonna~2n 
- Maryam ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Maryan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Marybelle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Marybeth ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
@@ -4492,6 +4487,7 @@
  Meadhra ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Medb ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Media ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
+ Medredydd ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Medwine ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Medwyn ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Megan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN ) 
@@ -4599,7 +4595,6 @@
  Monifa ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Monique ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Monnie ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Montaigu ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Montay ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Montrelle ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Moody ( meanings=2 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
@@ -4828,8 +4823,6 @@
     checkup~1n 
  medical_exam ( meanings=1 NOUN NOUN_SINGULAR ) 
     medical_checkup~1n 
- medical_diagnosis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    medical_diagnosis~1nz (^diagnosis~1) identification of a disease from its symptoms
  medical_prognosis ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     prospect~1nz (^medical_diagnosis~1) a prediction of the course of a disease
  monetisation ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -4901,6 +4894,9 @@
     grading~1n 
     marking~3nz (^figure~2) a pattern of marks
     marker~3n 
+ mending ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
+    repair~1n 
+    mending~2nz (^garment~1) garments that must be repaired
  maintenance ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     care~1n 
     criminal_maintenance~1nz (^wrongful_conduct~1) the unauthorized interference in a legal action by a person having no interest in it so as to obstruct justice or promote unnecessary litigation or unsettle the peace of the community
@@ -5071,6 +5067,12 @@
  military_service ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     military_service~1nz (^service~6) land tenure by service in the lord's army
     service~14n 
+ military ( meanings=5 glosses=4 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 GRADE3_4 posdefault:ADJECTIVE ) 
+    war_machine~1nz (^force~8) the military forces of a nation
+    military~2az associated with or performed by members of the armed services as contrasted with civilians
+    military~3az characteristic of or associated with soldiers or the military
+    military~4az of or relating to the study of the principles of warfare
+    military~5az 
  make-work ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     busywork~1nz (^work~1) active work of little value
  magistrature ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -5170,13 +5172,6 @@
     metrazol_shock~1nz (^shock_treatment~1) the administration of sufficient Metrazol to induce convulsions and coma
  materials_handling ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     materials_handling~1nz (^handling~2) act of loading and unloading and moving goods within e.g. a factory especially using mechanical devices
- mound ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
-    pitcher~1nz (^position~4) the position on a baseball team of the player who throws the ball for a batter to try to hit
-    hill~1nz (^structure~1) structure consisting of an artificial heap or bank usually of earth or stones
-    hill~2nz (^baseball_equipment~1) the slight elevation on which the pitcher stands
-    cumulus~1nz (^collection~4) a collection of objects laid on top of each other
-    hummock~1nz (^hill~3) a small natural hill
-    mound~6vz form into a rounded elevation
  missionary_work ( meanings=1 NOUN NOUN_SINGULAR ) 
     mission~1n 
  missionary ( meanings=3 glosses=3 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:ADJECTIVE ) 
@@ -5244,6 +5239,8 @@
     Manhattan~1nz (^borough~2) one of the five boroughs of New York City
  momism ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     overprotection~1n 
+ military_censorship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    military_censorship~1nz (^security_review~1) all types of censorship conducted by personnel of the armed forces
  martial_art ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     martial_art~1nz (^self-protection~1) any of several Oriental arts of weaponless self-defense
  munch ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE3_4 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -5309,7 +5306,7 @@
     molding~3n 
  magnetic_resonance_imaging ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     MRI~1nz (^tomography~1) the use of nuclear magnetic resonance of protons to produce proton density images
- magnetic ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE (null) ) 
+ magnetic ( meanings=6 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE ) 
     charismatic~1a 
     magnetized~1a 
     magnetic~3az determined by earth's magnetic fields
@@ -5479,6 +5476,13 @@
     occupation~4n 
  mismanagement ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     misdirection~2nz (^direction~2) management that is careless or inefficient
+ mandate ( meanings=6 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 posdefault:NOUN VERB_DIRECTOBJECT ) 
+    mandate~1nz (^commission~3) the commission that is given to a government and its policies through an electoral victory
+    authorisation~4n 
+    mandatory~1n 
+    mandate~4vz assign authority to
+    mandate~5vz make mandatory
+    mandate~6vz assign under a mandate
  mollification ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     pacification~2nz (^appeasement~1) the act of appeasing someone or causing someone to be more favorably inclined
     mollification~2nz (^peaceableness~1) a state of being appeased or ameliorated or tempered
@@ -5510,7 +5514,7 @@
     reciprocal~5a 
     common~9a 
     mutual~3az 
- mock ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=mocker 
+ mock ( meanings=4 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=mocker 
     mock~1nz (^derision~1) the act of mocking or ridiculing
     mock~2az constituting a copy or imitation of something
     bemock~1vz treat with contempt
@@ -5523,7 +5527,7 @@
     matriculation~1n 
  malicious_mischief ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     vandalism~1nz (^destruction~1) willful wanton and malicious destruction of the property of others
- manipulative ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ manipulative ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     manipulative~1az skillful in influencing or controlling others to your own advantage
     manipulative~2az 
  mystification ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -5737,9 +5741,7 @@
  mavis ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     Turdus_philomelos~1n 
  merl ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
-    ousel~1n 
- merle ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
-    merl~1n 
+    merle~1n 
  myrtle_warbler ( meanings=1 NOUN NOUN_SINGULAR ) 
     myrtle_bird~1n 
  myrtle ( meanings=3 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -6134,7 +6136,7 @@
     water_hen~2n 
  mud_hen ( meanings=1 NOUN NOUN_SINGULAR ) 
     marsh_hen~2n 
- mew ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ mew ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     Larus_canus~1n 
     meow~1n 
     meow~2v 
@@ -6601,7 +6603,7 @@
  Martes_foina ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     beech_marten~1n 
  Martes_pennanti ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
-    fisher~1nz (^marten_cat~1) large dark brown North American arboreal carnivorous mammal
+    fisher_cat~1nz (^marten_cat~1) large dark brown North American arboreal carnivorous mammal
  Mickey_Mouse ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Mickey_Mouse~1nz (^fictional_animal~1) a fictional mouse created in animated film strips by Walt Disney
  Minnie_Mouse ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -7007,7 +7009,7 @@
     tympan~1n 
  metal_drum ( meanings=1 NOUN NOUN_SINGULAR ) 
     drum~4n 
- metal ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ metal ( meanings=5 glosses=4 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN VERB_DIRECTOBJECT ) 
     alloy~2nz (^mixture~5) a mixture containing two or more metallic elements or metallic and nonmetallic elements usually fused together or dissolving into each other when molten
     metallic_element~1nz (^element~6) any of several chemical elements that are usually shiny solids that conduct heat or electricity and can be formed into sheets etc.
     metallic~3az containing or made of or resembling or characteristic of a metal
@@ -7108,10 +7110,8 @@
  mackintosh ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     mack~1nz (^raincoat~1) a waterproof raincoat made of rubberized fabric
     macintosh~2nz (^material~1) a lightweight waterproof fabric
- mac ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
-    macintosh~1n 
  mack ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
-    mac~1n 
+    macintosh~1n 
  Mackinac_Bridge ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Mackinac_Bridge~1nz (^suspension_bridge~1) a suspension bridge across the channel between the lower and upper peninsulas of Michigan
  mackinaw ( meanings=4 glosses=1 NOUN NOUN_SINGULAR COMMON2 ) 
@@ -7371,7 +7371,7 @@
     marmite~2nz (^soup~1) soup cooked in a large pot
  marocain ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     crepe_marocain~1n 
- maroon ( meanings=7 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) 
+ maroon ( meanings=7 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE VERB_DIRECTOBJECT ) 
     maroon~1nz (^firework~1) an exploding firework used as a warning signal
     maroon~2nz (^purplish_red~1) a dark purplish-red to dark brownish-red color
     maroon~3nz (^unfortunate~1) a person who is stranded 
@@ -7696,7 +7696,7 @@
     messuage~1nz (^home~1) a dwelling house and its adjacent buildings and the adjacent land used by the household
  metal_detector ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     metal_detector~1nz (^sensing_element~1) detector that gives a signal when it detects the presence of metal
- metallic ( meanings=4 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ metallic ( meanings=4 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     metallic~1nz (^thread~2) a yarn made partly or entirely of metal
     metallic~2nz (^material~1) a fabric made of a yarn that is partly or entirely of metal
     metal~3a 
@@ -7782,7 +7782,7 @@
     microdot~1nz (^picture~2) photograph reduced to the size of a dot
  microfiche ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     microfiche~1nz (^microfilm~1) small sheet of microfilm on which many pages of material have been photographed
- microfilm ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT (null) ) 
+ microfilm ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN VERB_DIRECTOBJECT ) 
     microfilm~1nz (^film~2) film on which materials are photographed at greatly reduced size
     microfilm~2vz record on microfilm
  micrometer ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -7803,7 +7803,7 @@
     E-bomb~1nz (^bomb~1) a bomb that explodes in midair and releases a massive burst of electromagnetic energy sufficient to disable computers and telecommunications without killing people or damaging buildings
  microwave_diathermy_machine ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     microwave_diathermy_machine~1nz (^diathermy_machine~1) diathermy machine that uses microwave radiation as the source of heat
- middling ( meanings=3 glosses=1 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADVERB (null) ) 
+ middling ( meanings=3 glosses=1 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADVERB ) 
     middling~1nz (^good~1) any commodity of intermediate quality or size
     average~9a 
     somewhat~1b 
@@ -7931,7 +7931,7 @@
     Rogaine~1nz (^vasodilative~1) a vasodilator used to treat severe hypertension
  minute_gun ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     minute_gun~1nz (^gun~5) gun that is discharged once every minute (usually as part of a military funeral)
- minute ( meanings=9 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN TIMEWORD (null) ) 
+ minute ( meanings=9 glosses=6 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN TIMEWORD ) 
     hour~1nz (^distance~1) distance measured by the time taken to cover it
     minute~2nz (^note~2) a short note
     minute_of_arc~1nz (^angular_unit~1) a unit of angular distance equal to a 60th of a degree
@@ -8334,8 +8334,6 @@
     musette_pipe~1nz (^hautbois~1) a small simple oboe
  museum ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     museum~1nz (^deposit~2) a depository for collecting and displaying objects having scientific or historical or artistic value
- musical_instrument ( meanings=1 NOUN NOUN_SINGULAR ) 
-    instrument~3n 
  music_box ( meanings=1 NOUN NOUN_SINGULAR ) 
     musical_box~1n 
  musical_box ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -8368,7 +8366,7 @@
     mustache~1n 
  mustard_plaster ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     sinapism~1nz (^cataplasm~1) a plaster containing powdered black mustard
- mustard ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ mustard ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     mustard_greens~1n 
     table_mustard~1n 
     mustard~3nz (^cruciferous_plant~1) any of several cruciferous plants of the genus Brassica
@@ -8714,7 +8712,7 @@
     mental_age~1nz (^age~1) the level of intellectual development as measured by an intelligence test
  mustiness ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     must~1n 
- must ( meanings=3 glosses=3 NOUN_ABSTRACT AUX_VERB_FUTURE NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN GRADE5_6 posdefault:NOUN ) comparative=muster 
+ must ( meanings=3 glosses=3 NOUN_ABSTRACT AUX_VERB_FUTURE NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN ) comparative=muster 
     moldiness~1nz (^staleness~1) the quality of smelling or tasting old or stale or mouldy
     must~2nz (^essential~1) a necessary or essential thing
     must~3az highly recommended
@@ -8750,7 +8748,7 @@
     mottle~1nz (^color~3) an irregular arrangement of patches of color
     dapple~2v 
     streak~5v 
- magenta ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ magenta ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     magenta~1nz (^purplish_red~1) a primary subtractive color for light
     magenta~2az of deep purplish red
     magenta~3az 
@@ -8758,7 +8756,7 @@
     lemon_yellow~1n 
     corn~4n 
     maize~3az 
- mauve ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE (null) ) 
+ mauve ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     mauve~1nz (^purple~1) a moderate purple
     mauve~2az of a pale to moderate greyish violet color
     mauve~3az 
@@ -8767,7 +8765,7 @@
     mocha_coffee~1n 
     mocha~3nz (^seasoning~2) a flavoring made from coffee mixed with chocolate
     mocha~4nz (^leather~1) soft suede glove leather from goatskin
- mahogany ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ mahogany ( meanings=4 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     Venetian_red~1n 
     mahogany_tree~1n 
     mahogany~3nz (^wood~4) wood of any of various mahogany trees
@@ -8869,7 +8867,7 @@
     matsyendra~1nz (^asana~1) a religious posture
  mean_distance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     mean_distance~1nz (^distance~1) the arithmetic mean of the maximum and minimum distances of a celestial body from its primary
- mean ( meanings=17 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT (null) (null) ) conjugate=meant 
+ mean ( meanings=17 glosses=10 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 GRADE3_4 posdefault:VERB VERB_TAKES_TOINFINITIVE VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT ) conjugate=meant 
     mean_value~1nz (^average~2) an average of n numbers computed by adding some function of the numbers and dividing by some function of n
     bastardly~1az of no value or worth
     beggarly~1az so small in amount as to deserve contempt
@@ -8922,7 +8920,7 @@
     bulk~3nz (^number~3) the property resulting from being or relating to the greater in number of two parts
     absolute_majority~1nz (^relative_quantity~1) more than half of the votes
     legal_age~1nz (^age~2) the age at which persons are considered competent to manage their own affairs
- minority ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:NOUN (null) ) 
+ minority ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:NOUN ) 
     minority~1nz (^number~3) being or relating to the smaller in number of two parts
     minority~2nz (^social_group~1) a group of people who differ racially or politically from a larger group of which it is a part
     nonage~1nz (^legal_status~1) any age prior to the legal age
@@ -9205,7 +9203,7 @@
     catamenial~1a 
  menstrual_flow ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     menorrhea~1n 
- melancholy ( meanings=6 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE (null) ) 
+ melancholy ( meanings=6 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN posdefault:ADJECTIVE ) 
     black_bile~1n 
     melancholy~2nz (^sadness~2) a feeling of thoughtful sadness
     melancholy~3nz (^depression~7) a constitutional tendency to be gloomy and depressed
@@ -9621,7 +9619,7 @@
     minutia~1nz (^point~8) a small or minor detail
  mitigating_circumstance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     mitigating_circumstance~1nz (^condition~2) a circumstance that does not exonerate a person but which reduces the penalty associated with the offense
- muse ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN (null) ) 
+ muse ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     muse~1nz (^seed~2) the source of an artist's inspiration
     meditate~1v 
  mumpsimus ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -9695,7 +9693,7 @@
     middle_distance~1nz (^scene~3) the part of a scene between the foreground and the background
  microscopic_field ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     microscopic_field~1nz (^field~3) the areas that is visible through a microscope
- microscopic ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ microscopic ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     microscopical~1az so small as to be invisible without a microscope
     microscopic~2az extremely precise with great attention to details
     microscopical~2az visible under a microscope
@@ -9969,7 +9967,7 @@
     Zoroastrianism~1n 
  military_science ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     military_science~1nz (^subject~3) the discipline dealing with the principles of warfare
- message ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ message ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     message~1nz (^communication~1) a communication that is written or spoken or signaled
     subject_matter~1nz (^communication~1) what a communication that is about something is about
     message~3vz send a message
@@ -10059,7 +10057,7 @@
     Master_of_Science~1n 
     Magnolia_State~1n 
     disseminated_sclerosis~1n 
- Ms. ( meanings=1 glosses=1 NOUN_TITLE_OF_ADDRESS NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN GRADE1_2 ) plural=Mses. 
+ Ms. ( meanings=1 glosses=1 NOUN_TITLE_OF_ADDRESS NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) plural=Mses. 
     Ms~1nz (^title~3) a form of address for a woman
  mistranslation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     mistranslation~1nz (^version~5) an incorrect translation
@@ -10379,7 +10377,7 @@
     DMus~1n 
  Master_of_Laws ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     LLM~1nz (^law_degree~1) an advanced law degree
- mention ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT (null) (null) ) 
+ mention ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT ) 
     honorable_mention~1nz (^honor~3) an official recognition of merit
     cite~1nz (^note~4) a short note recognizing a source of information or of a quoted passage
     reference~8nz (^comment~2) a remark that calls attention to something or someone
@@ -10409,8 +10407,10 @@
     threaten~3v 
  moralizing ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:VERB ) 
     moralisation~2n 
- major_premise ( meanings=1 NOUN NOUN_SINGULAR ) 
-    major_premiss~1n 
+ major_premise ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    major_premiss~1nz (^assumption~5) the premise of a syllogism that contains the major term
+ major_premiss ( meanings=1 NOUN NOUN_SINGULAR ) 
+    major_premise~1n 
  minor_premise ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     minor_premiss~1nz (^assumption~5) the premise of a syllogism that contains the minor term
  minor_premiss ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -10878,14 +10878,14 @@
     morphophonemic~1az of or relating to morphophonemics
  murmur_vowel ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     murmur~1n 
- murmur ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ murmur ( meanings=6 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     murmur_vowel~1nz (^schwa~1) a schwa that is incidental to the pronunciation of a consonant
     muttering~1nz (^complaint~3) a complaint uttered in a low and indistinct tone
     mussitation~1nz (^sound~5) a low continuous indistinct sound
     cardiac_murmur~1nz (^symptom~2) an abnormal sound of the heart
     croak~3v 
     murmur~6vz speak softly or indistinctly
- moan ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ moan ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     groan~1n 
     groan~2v 
  mispronunciation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -10937,7 +10937,7 @@
     grumbling~1n 
     murmur~3n 
     whispering~3a 
- mutter ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ mutter ( meanings=4 glosses=1 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE5_6 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     murmuring~1n 
     murmuring~2n 
     grumble~3v 
@@ -11052,7 +11052,7 @@
  monstrosity ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     monstrosity~1nz (^malformation~1) something hideous or frightful
     freak~2n 
- meow ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_NOOBJECT (null) ) 
+ meow ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN posdefault:VERB VERB_NOOBJECT ) 
     miaul~1nz (^cry~5) the sound made by a cat
     mew~3vz cry like a cat
  miaou ( meanings=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
@@ -11060,7 +11060,7 @@
     miaow~2v 
  miaul ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     miaou~1n 
- moo ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT (null) ) 
+ moo ( meanings=2 glosses=1 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_NOOBJECT ) 
     moo~1nz (^cry~5) the sound made by a cow or bull
     low~16v 
  murmuration ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -11089,7 +11089,7 @@
     commemoration~2n 
  Maundy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Maundy~1nz (^ceremony~3) a public ceremony on Maundy Thursday when the monarch distributes Maundy money
- mile ( meanings=8 glosses=8 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN (null) ) 
+ mile ( meanings=8 glosses=8 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     mile~1nz (^track_event~1) a footrace extending one mile
     international_mile~1nz (^linear_measure~1) a unit of length equal to 1,760 yards or 5,280 feet
     Swedish_mile~1nz (^linear_measure~1) a Swedish unit of length equivalent to 10 km
@@ -11277,7 +11277,7 @@
     marrowfat_pea~1nz (^pea~1) a variety of large pea that is commonly processed and sold in cans
  mushy_peas ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     mushy_peas~1nz (^side_order~1) marrowfat peas that have been soaked overnight and then boiled
- mushy ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) comparative=mushiest 
+ mushy ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=mushiest 
     schmalzy~1a 
     mushy~2az having the consistency of mush
     mushy~3az 
@@ -11348,7 +11348,7 @@
     medlar~2nz (^edible_fruit~1) a South African globular fruit with brown leathery skin and pithy flesh having a sweet-acid taste
     medlar_tree~1n 
     wild_medlar_tree~1n 
- mulberry ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ mulberry ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     mulberry~1nz (^berry~1) sweet usually dark purple blackberry-like fruit of any of several mulberry trees of the genus Morus
     mulberry_tree~1n 
  monkey_bread ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -12504,7 +12504,7 @@
  Mount_McKinley ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Mt_._McKinley~1nz (^mountain_peak~1) a mountain in south central Alaska
  Mt_._McKinley ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Mckinley~1n 
+    McKinley~1n 
  Mediterranean_Sea ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Mediterranean~1nz (^sea~1) the largest inland sea
  Mekong ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -12823,7 +12823,7 @@
     Mother_Goose~1nz (^character~7) the imaginary author of a collection of nursery rhymes
  Mr._Moto ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Mr._Moto~1nz (^character~7) Japanese sleuth created by John Marquand
- meeter ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 KINDERGARTEN GRADE5_6 ) comparative=meet 
+ meeter ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 KINDERGARTEN ) comparative=meet 
     attendant~2nz (^participant~1) a person who is present and participates in a meeting
  male_person ( meanings=1 NOUN NOUN_SINGULAR ) 
     male~2n 
@@ -13017,7 +13017,7 @@
     reverend~1n 
  merry_andrew ( meanings=1 NOUN NOUN_SINGULAR ) 
     goofball~1n 
- merry ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE (null) ) comparative=merriest 
+ merry ( meanings=4 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=merriest 
     snappy~1az quick and energetic
     festive~1az offering fun and gaiety
     jovial~1az full of or showing high-spirited merriment
@@ -13082,7 +13082,7 @@
     drum_majorette~2n 
  muttonhead ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     loggerhead~2n 
- midget ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN (null) ) 
+ midget ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     nanus~1nz (^small_person~1) a person who is markedly small
     diminutive~2a 
  manumitter ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -16174,7 +16174,7 @@
     marasca~1n 
  madder_family ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     Rubiaceae~1nz (^asterid_dicot_family~1) widely distributed family of mostly tropical trees and shrubs and herbs
- madder ( meanings=2 glosses=2 MORE_FORM VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=mad 
+ madder ( meanings=2 glosses=2 MORE_FORM VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 KINDERGARTEN posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=mad 
     Rubia_tinctorum~1nz (^rubiaceous_plant~1) Eurasian herb having small yellow flowers and red roots formerly an important source of the dye alizarin
     madder~2vz color a moderate to strong red
  madderwort ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -16559,7 +16559,7 @@
     Morchellaceae~1nz (^fungus_family~1) a family of edible fungi including the true morels
  Morchella ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Morchella~1n 
- morel ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN (null) ) 
+ morel ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     morel~1nz (^mushroom~3) any of various edible mushrooms of the genus Morchella having a brownish spongelike cap
  Morchella_esculenta ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     sponge_morel~1nz (^morel~1) an edible and choice morel with a globular to elongate head with an irregular pattern of pits and ridges
@@ -17141,7 +17141,7 @@
     millennium~2n 
     millenary~4az relating to or consisting of 1000
     millenary~5az of or relating to the doctrine of the millennium
- myriad ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:NOUN (null) ) 
+ myriad ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
     ten_thousand~1n 
     myriad~2nz (^large_indefinite_quantity~1) a large indefinite number
     innumerable~1a 
@@ -17161,7 +17161,7 @@
     great_deal~1n 
  muckle ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     mickle~1n 
- much ( meanings=8 glosses=3 ADJECTIVE ADVERB DETERMINER ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN DETERMINER_SINGULAR posdefault:ADVERB (null) ) comparative=most 
+ much ( meanings=8 glosses=3 ADJECTIVE ADVERB DETERMINER ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN DETERMINER_SINGULAR posdefault:ADVERB ) comparative=most 
     much~1az great in quantity or degree or extent
     practically~1b 
     much~3bz very
@@ -18236,7 +18236,7 @@
     tetradecanoic_acid~1n 
  man-made_fiber ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     synthetic_fiber~1n 
- minium ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN (null) ) 
+ minium ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     red_lead~1n 
  microcosmic_salt ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     microcosmic_salt~1nz (^salt~3) a white salt present in urine and used to test for metal oxides
@@ -18390,7 +18390,7 @@
     Decoration_Day~1n 
  Maundy_Thursday ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Holy_Thursday~1nz (^Christian_holy_day~1) the Thursday before Easter
- month ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE posdefault:NOUN TIMEWORD (null) ) 
+ month ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN TAKES_POSTPOSITIVE_ADJECTIVE posdefault:NOUN TIMEWORD ) 
     month~1nz (^unit_of_time~1) a time unit of approximately 30 days
     calendar_month~1nz (^period~3) one of the twelve divisions of the calendar year
  mid-January ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -18515,9 +18515,9 @@
     graveyard_watch~1n 
  midwatch ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     middle_watch~1n 
- Mmes. ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL KINDERGARTEN GRADE1_2 ) plural=Mrs. 
+ Mmes. ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL KINDERGARTEN ) plural=Mrs. 
  Messrs. ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL KINDERGARTEN ) plural=Mr. 
- Mses. ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL KINDERGARTEN GRADE1_2 ) plural=Ms. 
+ Mses. ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL KINDERGARTEN ) plural=Ms. 
  makuta ( NOUN NOUN_PLURAL COMMON1 ) plural=likuta 
  maloti ( NOUN NOUN_PLURAL COMMON1 posdefault:NOUN ) plural=loti 
  maare ( NOUN NOUN_PLURAL COMMON1 ) plural=maar 
@@ -18717,6 +18717,10 @@
     muzak~1nz 
  mana ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     mana~1nz 
+ motherboard ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
+    motherboard~1nz 
+ malware ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
+    malware~1nz 
  MP3 ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     MP3~1nz 
  MP3-player ( meanings=1 NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
@@ -18770,7 +18774,7 @@
     microwatt~1nz 
  midtown ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     midtown~1nz 
- millenia ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN (null) ) 
+ millenia ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     millenia~1nz 
  mini-game ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     mini-game~1nz 
@@ -18889,8 +18893,8 @@
  mowed ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 GRADE1_2 posdefault:VERB ) conjugate=mow 
  Monseigneur ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
  Mademoiselle ( NOUN_TITLE_OF_ADDRESS NOUN NOUN_PROPER_SINGULAR KINDERGARTEN ) 
- millisecond ( ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN TIMEWORD (null) ) 
- microsecond ( ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN TIMEWORD (null) ) 
+ millisecond ( ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN TIMEWORD ) 
+ microsecond ( ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN posdefault:NOUN TIMEWORD ) 
  moribund ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     moribund~1az being on the point of death
     stagnant~1a 
@@ -18929,7 +18933,7 @@
     monosemous~1az having only one meaning
  manque ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     would-be~1a 
- meager ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ meager ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     meagre~1a 
  meagre ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     meagerly~1a 
@@ -18999,7 +19003,7 @@
     maleficent~2az 
  malefic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     malevolent~1a 
- malign ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=maligner 
+ malign ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=maligner 
     malefic~1a 
     malign~2az evil or harmful in nature or influence
     drag_through_the_mud~1vz speak unfavorably about
@@ -19042,7 +19046,7 @@
  middle-class ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     middle-class~1az occupying a socioeconomic position intermediate between those of the lower classes and the wealthy
     middle-class~2az 
- materialistic ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ materialistic ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     bourgeois~4az conforming to the standards and conventions of the middle class
     mercenary~4a 
     materialistic~3az 
@@ -19152,7 +19156,7 @@
     muddy~1a 
     swampy~1a 
     mucky~3az 
- muddy ( meanings=8 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT (null) ) comparative=muddiest 
+ muddy ( meanings=8 glosses=4 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=muddiest 
     mucky~1az dirty and messy
     mirky~2a 
     dingy~3a 
@@ -19189,7 +19193,7 @@
     one-on-one~1a 
     man-to-man~2az forthright and honest
     man-to-man~3bz directly
- matchless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ matchless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     nonpareil~4a 
  mutually_exclusive ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     contradictory~2az 
@@ -19266,7 +19270,7 @@
  maintained ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ) 
     well-kept~1az kept in good condition
     retained~1az continued in your keeping or use or memory
- mature ( meanings=12 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ mature ( meanings=12 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     matured~1az fully considered and perfected
     fledged~2az having developed feathers or plumage
     mature~3az having reached full natural growth or development
@@ -19319,7 +19323,7 @@
     melodramatic~1az having the excitement and emotional appeal of melodrama
     histrionic~1az characteristic of acting or a stage performance
     melodramatic~3az 
- mellow ( meanings=10 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) 
+ mellow ( meanings=10 glosses=7 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     high~9a 
     mellow~2az having attained to kindliness or gentleness through age and experience
     mellowed~1az having attained to kindliness or gentleness through age and experience
@@ -19384,7 +19388,7 @@
  mismatched ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     uneven~2a 
     mismatched~2az either not matched or unsuitably matched
- mysterious ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ mysterious ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     mystic~2a 
     cryptical~2a 
     mysterious~3az 
@@ -19474,7 +19478,7 @@
     ungenerous~2az lacking in magnanimity
     mean~6a 
     meanspirited~3az 
- mediocre ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ mediocre ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     mediocre~1az poor to middling in quality
     fair~14a 
     second-rate~1az moderate to inferior in quality
@@ -19504,7 +19508,7 @@
     merciful~3az 
  monoploid ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     haploid~2a 
- mischievous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ mischievous ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     mischievous~1az deliberately causing harm or damage
     puckish~1az naughtily or annoyingly playful
     mischievous~3az 
@@ -19524,7 +19528,7 @@
     everyday~3a 
     terrestrial~3a 
     mundane~4az 
- massive ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE (null) ) 
+ massive ( meanings=5 glosses=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     massive~1az consisting of great mass
     monumental~1az imposing in size or bulk or solidity
     massive~3az imposing in scale or scope or degree or power
@@ -19596,7 +19600,7 @@
     lacerated~1a 
  mainstreamed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     mainstreamed~1az placed in regular school classes
- mindless ( meanings=6 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ mindless ( meanings=6 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     mindless~1az requiring little mental effort
     mindless~2az lacking the thinking capacity characteristic of a conscious being
     reasonless~3a 
@@ -19636,7 +19640,7 @@
     microscopic~1a 
     microscopic~3a 
     microscopic~4a 
- miniscule ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ miniscule ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     minuscule~3a 
     miniscule~2az 
  misappropriated ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
@@ -19748,7 +19752,7 @@
     substantive~4a 
     meaty~2az like or containing meat
     meaty~3az 
- meaningless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE (null) ) 
+ meaningless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     nonmeaningful~1a 
     meaningless~2az 
  mensurable ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -19854,7 +19858,7 @@
     monovalent~2az containing only one kind of antibody
  moralistic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     moralistic~1az narrowly and conventionally moral
- many ( meanings=4 glosses=1 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE PREDETERMINER DETERMINER ADJECTIVE_NORMAL COMMON4 COMMON2 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN DETERMINER_PLURAL PRONOUN_PLURAL posdefault:ADJECTIVE (null) ) 
+ many ( meanings=4 glosses=1 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE PREDETERMINER DETERMINER ADJECTIVE_NORMAL COMMON4 COMMON2 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN DETERMINER_PLURAL PRONOUN_PLURAL posdefault:ADJECTIVE ) 
     many~1az a quantifier that can be used with count nouns and is often preceded by `as' or `too' or `so' or `that'
     many~2z 
     many~3z 
@@ -19885,7 +19889,7 @@
     unmotorised~1a 
  moved ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 posdefault:VERB ) 
     stirred~3a 
- motionless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ motionless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     inactive~8a 
     motionless~2az 
  megalomaniacal ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -19970,7 +19974,7 @@
     monotheistic~2az 
  mitigable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     mitigable~1az capable of being alleviated
- mottled ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 (null) ) 
+ mottled ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 ) 
     dappled~1az having spots or patches of color
  marbled ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     marbleized~1a 
@@ -20000,7 +20004,7 @@
     meshugge~1a 
  meshuga ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     meshugga~1a 
- moronic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ moronic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     moronic~1az having a mental age of between eight and twelve years
     moronic~2az 
  modernized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -20092,7 +20096,7 @@
     ill-shapen~1a 
  misshapen ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     malformed~1a 
- malleable ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE (null) ) 
+ malleable ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     ductile~1a 
     ductile~2az easily influenced
     malleable~3az 
@@ -20161,7 +20165,7 @@
     mild-tasting~1az having a mild taste
  meditative ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     pensive~2a 
- messy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE (null) ) comparative=messiest 
+ messy ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) comparative=messiest 
     mussy~1az dirty and disorderly
     messy~2az 
  mussy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -20201,7 +20205,7 @@
     manky~1az inferior and worthless
  multifaceted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     many-sided~3a 
- multifarious ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE (null) ) 
+ multifarious ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     multifaceted~1a 
  megascopic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     gross~9a 
@@ -20217,7 +20221,7 @@
  miry ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     marshy~1a 
     miry~2az 
- moist ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE (null) ) 
+ moist ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ) 
     dampish~1a 
     moist~2az 
  muggy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE5_6 posdefault:ADJECTIVE ) comparative=muggiest 
@@ -21299,7 +21303,7 @@
     fail~9v 
  menstruate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT ) 
     flow~8v 
- mewl ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_NOOBJECT (null) ) 
+ mewl ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     wail~2v 
  martyrize ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     martyrise~1vz torture and torment like a martyr
@@ -21467,7 +21471,7 @@
  metamorphose ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT ) 
     transform~1vz change in outward structure or looks
     transmogrify~1vz change completely the nature or appearance of
- moralize ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) (null) ) 
+ moralize ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     moralise~1vz improve the morals of
     moralise~2v 
     moralise~3vz interpret the moral meaning of
@@ -21572,23 +21576,23 @@
     monumentalise~1vz record or memorialize lastingly with a monument
  monumentalise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     monumentalize~1v 
- misremember ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misremember ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     misremember~1vz remember incorrectly
- misidentify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misidentify ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     mistake~5v 
  misdate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     misdate~1vz assign the wrong date to
- misconstrue ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misconstrue ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     misconceive~1v 
- misinterpret ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misinterpret ( meanings=3 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     misunderstand~1v 
     misread~1vz interpret wrongly
     misinterpret~3vz interpret falsely
- misconceive ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misconceive ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     misinterpret~1v 
- misunderstand ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT (null) ) conjugate=misunderstood 
+ misunderstand ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=misunderstood 
     be_amiss~1vz interpret in the wrong way
- misapprehend ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT (null) ) 
+ misapprehend ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     misconstrue~1v 
  mix_up ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     stump~6v 
@@ -21650,18 +21654,18 @@
     hold~39v 
  misgive ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) 
     misgive~1vz suggest fear or doubt
- misstate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misstate ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     misstate~1vz state something incorrectly
  make_no_bones_about ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
     make_no_bones_about~1vz acknowledge freely and openly
  make_a_clean_breast_of ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     fess_up~1vz admit or acknowledge a wrongdoing or error
- misinform ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misinform ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) 
     mislead~1vz give false or misleading information to
- mislead ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) conjugate=misled 
+ mislead ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) conjugate=misled 
     misinform~1v 
     lead_astray~2v 
- misrepresent ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT (null) ) 
+ misrepresent ( meanings=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     belie~1v 
     falsify~5v 
  make_believe ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_CONJUGATE1 ) 
@@ -21684,7 +21688,7 @@
     muckrake~1vz explore and expose misconduct and scandals concerning public figures
  misspell ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT ) conjugate=misspelt 
     misspell~1vz spell incorrectly
- mispronounce ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 VERB_DIRECTOBJECT (null) ) 
+ mispronounce ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 GRADE5_6 VERB_DIRECTOBJECT ) 
     misspeak~1vz pronounce a word incorrectly
  misspeak ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 VERB_DIRECTOBJECT ) conjugate=misspoken 
     mispronounce~1v 
@@ -21846,7 +21850,7 @@
  molest ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
     chevvy~1v 
     molest~2vz harass or assault sexually
- mourn ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT (null) ) 
+ mourn ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_NOOBJECT ) 
     mourn~1vz feel sadness
     mourn~2vz observe the customs of mourning after the death of a loved one
  moon_around ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
@@ -21913,8 +21917,6 @@
     bolt~16v 
  march_out ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     debouch~2vz march out into open ground
- make_way ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
-    make_way~1vz get out of the way
  misperceive ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     misperceive~1vz perceive incorrectly
  make_noise ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT VERB_CONJUGATE1 ) 
@@ -22010,7 +22012,7 @@
  mimicked ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 posdefault:VERB ) conjugate=mimic 
  mimicking ( VERB_PRESENT_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 posdefault:VERB ) conjugate=mimicked 
  meant ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=mean 
- met ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN GRADE5_6 posdefault:VERB ) conjugate=meet 
+ met ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=meet 
  misdealt ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON1 ) conjugate=misdeal 
  misdid ( VERB_PAST VERB COMMON1 ) conjugate=misdo 
  misdone ( VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON1 ) conjugate=misdid 

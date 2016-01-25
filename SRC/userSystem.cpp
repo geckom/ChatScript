@@ -95,7 +95,7 @@ void ReadComputerID()
 	}
 }
 
-void ResetUser()
+void ResetUserChat()
 {
  	chatbotSaidIndex = humanSaidIndex = 0;
 	setControl = 0;
@@ -365,7 +365,7 @@ void RecoverUser() // regain stuff we loaded from user
 	pendingTopicIndex = originalPendingTopicIndex;
 }
 
-char* WriteUserVariables(char* ptr,bool sharefile)
+char* WriteUserVariables(char* ptr,bool sharefile, bool compiling)
 {
 	if (!ptr) return NULL;
 	unsigned int index = userVariableIndex;
@@ -380,10 +380,19 @@ char* WriteUserVariables(char* ptr,bool sharefile)
 		{
 			char* val = D->w.userValue;
 			while ((val = strchr(val,'\n'))) *val = ' '; //  clean out newlines
-			sprintf(ptr,"%s=%s\r\n",D->word,SafeLine(D->w.userValue));
+			if (!stricmp(D->word,"$cs_trace")) 
+			{
+				sprintf(ptr,"%s=%d\r\n",D->word,trace);
+				trace = 0;
+				echo = false;
+			}
+			else sprintf(ptr,"%s=%s\r\n",D->word,SafeLine(D->w.userValue));
 			ptr += strlen(ptr);
-			ptr =  OverflowProtect(ptr);
-			if (!ptr) return NULL;
+			if (!compiling)
+			{
+				ptr =  OverflowProtect(ptr);
+				if (!ptr) return NULL;
+			}
 		}
         D->w.userValue = NULL;
 		RemoveInternalFlag(D,VAR_CHANGED);
@@ -402,6 +411,12 @@ static bool ReadUserVariables()
         char* ptr = strchr(readBuffer,'=');
         *ptr = 0; // isolate user var name from rest of buffer
         SetUserVariable(readBuffer,ptr+1);
+		if (!stricmp(readBuffer,"$cs_trace")) 
+		{
+			trace = atoi(ptr+1);
+			echo = true;
+		}
+
 		if (trace & TRACE_VARIABLE) Log(STDUSERLOG,"uservar: %s=%s\r\n",readBuffer,ptr+1);
     }
 
@@ -424,7 +439,7 @@ static char* GatherUserData(char* ptr,time_t curr,bool sharefile)
 	char* value = GetUserVariable("$cs_userfactlimit");
 	if (value && *value) count = atoi(value);
 
-	ptr = WriteUserVariables(ptr,sharefile);
+	ptr = WriteUserVariables(ptr,sharefile,false);
 	ptr = WriteUserFacts(ptr,sharefile,count);
 	ptr = WriteUserContext(ptr,sharefile);
 	ptr = WriteRecentMessages(ptr,sharefile);
@@ -547,7 +562,7 @@ void ReadUserData() // passed  buffer with file content (where feasible)
 	responseControl = ALL_RESPONSES;
 	*wildcardSeparator = ' ';
 
-	ResetUser();
+	ResetUserChat();
 	ReadFileData(computerID); // read user file, if any, or get it from cache
 	if (shared) ReadFileData("share");  // read shared file, if any, or get it from cache
 }
@@ -565,10 +580,11 @@ void KillShare()
 void ReadNewUser()
 {
 	if (trace & TRACE_USER) Log(STDUSERLOG,"New User\r\n");
-	ResetUser();
+	ResetUserChat();
 	ClearUserVariables();
 	ClearUserFacts();
-	ResetTopicSystem();
+	ResetTopicSystem(true);
+
 	userFirstLine = 1;
 	volleyCount = 0;
 	// std defaults

@@ -1004,7 +1004,7 @@ part France  ~landmark "Palace of Versailles" (Versailles)
  part Wisconsin ~museum "Circus World Museum"
  part "Palo Alto, California" ~museum "Barbie Doll Museum"
  
-concept: ~currency( lira dinar dollar peso franc centime ruble kroner pound shilling pence euro)
+concept: ~currency MORE( lira dinar dollar peso franc centime ruble kroner pound shilling pence euro)
 
 table: ~currencies (^country ^currency ^exchangerate ) 
 # currency and exchange rate per us $

@@ -329,6 +329,18 @@ static bool AddWord2Scan(int flags,MEANING M,MEANING from,int depth,unsigned int
 		}
         F = GetSubjectNondeadNext(F);
     }
+	
+    // mark all recursive sets of it if a set  -- currently there is no difference between '~dd and ~dd  like in up2set object value
+ //   F = (*D->word == '~') ? GetObjectNondeadHead(D) : NULL;
+  //  while (F)
+   // {
+   //     if (F->verb == Mmember) 
+	//	{
+	//		WORDP D = Meaning2Word(F->subject);
+	//		if (*D->word == '~') AddWord2Scan(flags,F->object,F->subject,depth+1,type); 
+		//}
+      //  F = GetObjectNondeadNext(F);
+  //  }
 
 	// and if item is generic, all synsets
 	if (index == 0 && !(flags & ORIGINALWORD))
@@ -742,7 +754,6 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			unsigned int flags = baseFlags;
 			if (choice[0] == '\'')  //dont expand this beyond its first leve --   $$tmp would come in with its value, which if set would fan out.  '$$tmp gets just its value
 			{
-				if (trace & TRACE_QUERY  && CheckTopicTrace()) Log(STDUSERLOG," don't expand ");
 				flags |= ORIGINALWORD;
 				++choice;
 			}
@@ -833,6 +844,7 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 				{
 					Log(STDUSERLOG,"\r\n");
 					Log(STDUSERTABLOG,"Tag: %s ",buf);
+					if (flags & ORIGINALWORD) Log(STDUSERLOG," don't expand ");
 				}
 				if (!*choice);
 				else if (*choice == '\'') AddWord2Scan(flags, ReadMeaning(choice+1,true,true),0,0,0); // ignore unneeded quote
