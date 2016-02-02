@@ -16,7 +16,7 @@
 #define GETMULTIWORDHEADER(D)  (D->nextNode >> MULTIWORDHEADER_SHIFT)
 #define SETMULTIWORDHEADER(D,n) (  D->nextNode &= NODEBITS, D->nextNode |= n << MULTIWORDHEADER_SHIFT )
 
-#define IS_NEW_WORD(x) (!x || !(x->internalBits & BASE_DEFINED)) // created by user volley
+#define IS_NEW_WORD(x) (!x || x >= dictionaryPreBuild[2]) // created by user volley
 
 #define ALL_OBJECTS ( MAINOBJECT | MAININDIRECTOBJECT | OBJECT2 | INDIRECTOBJECT2 )
 
@@ -50,8 +50,7 @@
 #define INTERNAL_MARK			0x00010000		// transient marker for Intersect coding and Country testing in :trim
 #define FROM_FILE				INTERNAL_MARK	//  for scriptcompiler to tell stuff comes from FILE not DIRECTORY
 #define BEEN_HERE				0x00020000		// used in internal word searches that might recurse
-#define BASE_DEFINED			0x00040000		// word had part of speech bits when dictionary was locked (enables you to tell new properties filled in on old dict entries)
-#define FAKE_NOCONCEPTLIST		BASE_DEFINED	// used on concepts declared NOCONCEPTLIST
+#define FAKE_NOCONCEPTLIST		0x00040000	// used on concepts declared NOCONCEPTLIST
 #define DELETED_MARK			0x00080000		// transient marker for  deleted words in dictionary build - they dont get written out - includes script table macros that are transient
 #define BUILD0					0x00100000		// comes from build0 data (marker on functions, concepts, topics)
 #define BUILD1					0x00200000		// comes from build1 data

@@ -48,9 +48,6 @@
     <ClCompile Include="..\..\src\patternSystem.cpp">
       <Filter>Source Files\chatbot</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\readrawdata.cpp">
-      <Filter>Source Files\chatbot</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\scriptCompile.cpp">
       <Filter>Source Files\chatbot</Filter>
     </ClCompile>
@@ -135,9 +132,6 @@
       <Filter>Source Files\chatbot</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\patternSystem.h">
-      <Filter>Source Files\chatbot</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\readrawdata.h">
       <Filter>Source Files\chatbot</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\scriptCompile.h">

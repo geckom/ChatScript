@@ -114,7 +114,6 @@
     <ClCompile Include="..\..\src\os.cpp" />
     <ClCompile Include="..\..\src\outputSystem.cpp" />
     <ClCompile Include="..\..\src\patternSystem.cpp" />
-    <ClCompile Include="..\..\src\readrawdata.cpp" />
     <ClCompile Include="..\..\src\scriptCompile.cpp" />
     <ClCompile Include="..\..\src\spellcheck.cpp" />
     <ClCompile Include="..\..\src\systemVariables.cpp" />
@@ -144,7 +143,6 @@
     <ClInclude Include="..\..\src\os.h" />
     <ClInclude Include="..\..\src\outputSystem.h" />
     <ClInclude Include="..\..\src\patternSystem.h" />
-    <ClInclude Include="..\..\src\readrawdata.h" />
     <ClInclude Include="..\..\src\scriptCompile.h" />
     <ClInclude Include="..\..\src\spellcheck.h" />
     <ClInclude Include="..\..\src\systemVariables.h" />

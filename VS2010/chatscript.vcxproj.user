@@ -4,7 +4,7 @@
     <LocalDebuggerWorkingDirectory>..</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerCommand>..\chatscript.exe</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>"V$server=qa1.kore.com/api/1.1" </LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>"Vserver=app.kore.com/api" </LocalDebuggerCommandArguments>
     <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

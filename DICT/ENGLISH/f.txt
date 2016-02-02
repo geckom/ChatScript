@@ -5034,12 +5034,7 @@
     fifth_wheel~1nz (^bearing~1) a steering bearing that enables the front axle of a horse-drawn wagon to rotate
     spare~2n 
     deadwood~1nz (^redundancy~2) someone or something that is unwanted and unneeded
- fifth ( meanings=5 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER KINDERGARTEN ) 
-    fifth~1nz (^interval~3) the musical interval between one note and another five notes away from it
-    fifth~2nz (^United_States_liquid_unit~1) a quantity of liquor equal to one fifth of a United States gallon
-    twenty_percent~1nz (^common_fraction~1) one part in five equal parts
-    fifth~4nz (^rank~5) position five in a countable series of things
-    fifth~5az coming next after the fourth and just before the sixth in position
+ fifth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN ) 
  fighter ( meanings=3 NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
     fighter_aircraft~1n 
     hero~3n 
@@ -11784,7 +11779,7 @@
  fourth_part ( meanings=1 NOUN NOUN_SINGULAR ) 
     twenty-five_percent~1n 
  fifth_part ( meanings=1 NOUN NOUN_SINGULAR ) 
-    one-fifth~1n 
+    twenty_percent~1n 
  fuck_all ( meanings=1 NOUN NOUN_SINGULAR ) 
     bugger_all~1n 
  fourteen ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER KINDERGARTEN posdefault:NOUN ) 
@@ -11841,12 +11836,6 @@
     sometime~1a 
     late~5az of the immediate past
     former~6az 
- fortieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
-    fortieth~1nz (^rank~5) position 40 in a countable series of things
-    fortieth~2az the ordinal number of forty in counting order
- fiftieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
-    fiftieth~1nz (^rank~5) position 50 in a countable series of things
-    fiftieth~2az the ordinal number of fifty in counting order
  Fahrenheit_scale ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Fahrenheit_scale~1nz (^temperature_scale~1) a temperature scale that defines the freezing point of water as 32 degrees and the boiling point of water a 212 degrees
  flip_side ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -14134,8 +14123,6 @@
     four_hundred~1az 
  forty-fourth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     forty-fourth~1az the ordinal number of forty-four in counting order
- forty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    forty-fifth~1az the ordinal number of forty-five in counting order
  forty-sixth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     forty-sixth~1az the ordinal number of forty-six in counting order
  forty-seventh ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -14144,8 +14131,6 @@
     forty-eighth~1az the ordinal number of forty-eight in counting order
  forty-ninth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     forty-ninth~1az the ordinal number of forty-nine in counting order
- fifty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    fifty-fifth~1az the ordinal number of fifty-five in counting order
  four-hundredth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     four-hundredth~1az the ordinal number of four hundred in counting order
  five-hundredth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 

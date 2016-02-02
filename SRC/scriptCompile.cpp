@@ -144,7 +144,7 @@ And, if someone wants to back up to allow the old token to be reread, they have 
 comes from the old buffer. Meanwhile the newbuffer continues to have content for when the old buffer runs out.
 #endif
 	
-	//   get next token
+	//   clear peek cache
 	if (!in && !ptr) // clear cache request, next get will be from main buffer (though secondary buffer may still have peek read data)
 	{
 		if (word) *word = 0;
@@ -292,6 +292,8 @@ char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore) //   how w
     if (!ptr)  return 0;
     char* start = word;
     ptr = SkipWhitespace(ptr);
+	FindDeprecated(ptr,"$bot","Deprecated $bot need to be $cs_bot");
+	FindDeprecated(ptr,"$login","Deprecated $login need to be $cs_login");
 	FindDeprecated(ptr,"$userfactlimit","Deprecated $userfactlimit need to be $cs_userfactlimit");
 	FindDeprecated(ptr,"$crashmsg","Deprecated $crashmsg need to be $cs_crashmsg");
 	FindDeprecated(ptr,"$token","Deprecated $token need to be $cs_token");
@@ -2444,6 +2446,18 @@ static char* ReadIf(char* word, char* ptr, FILE* in, char* &data,char* rejoinder
 	patternContext = false;
 	while (ALWAYS)
 	{
+		char* endptr = NULL;
+
+/*
+		char* olddata = data;
+		char patternInfo[4000];
+		data= patternInfo;
+		endptr = ReadPattern(ptr,in,data,false); //   read ( for real in the paren for pattern
+		*data = 0;
+		ReadNextSystemToken(NULL,NULL,word,false);
+		data = olddata;
+		ptr = patternInfo;
+*/
 		//   read the (
 		ptr = ReadNextSystemToken(in,ptr,word,false); //   the '('
 		MakeLowerCopy(lowercaseForm,word);
@@ -2457,6 +2471,7 @@ static char* ReadIf(char* word, char* ptr, FILE* in, char* &data,char* rejoinder
 		//   The function call returns a status code, you cant do comparison on it
 		//   but both function and existence can be notted- IF (!$var) or IF (!read(xx))
 		//   You can have multiple tests, separated by AND and OR.
+
 pattern: 
 		ptr = ReadNextSystemToken(in,ptr,word,false,false); 
 		if (*word == '~') CheckSetOrTopic(word); 
@@ -2605,6 +2620,12 @@ pattern:
 			goto pattern;	//   handle next element
 		}
 		else BADSCRIPT("IF-12 comparison must close with ) -%s .. Did you make a function call as 1st argument? that's illegal",word)
+		*data = 0;
+
+
+		// now done reading test, go onto body.
+
+		if (endptr) ptr = endptr; // resume from normal reading
 
 		char* ifbase = data;
 		*data++ = 'a'; //   reserve space for offset after the closing ), which is how far to go past body

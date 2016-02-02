@@ -84,7 +84,7 @@ concept: ~agenoun (~aged_adults ~aged_children )
 concept: ~aids_words (AIDS auto_immune HIV immune_deficiency )
 concept: ~air (air~6 atmosphere oxygen )
 concept: ~alarm (alarm burglar_alarm car_horn fire_alarm horn klaxxon siren whistle )
-concept: ~alcoholic_beverage (~beer ~cocktail ~spirits ~wine alcohol~1 booze cocktail libation liquor beer wine alcohol liquor gin rum vodka tequila whiskey ale lager saki brandy cognac moonshine champagne absinthe)
+concept: ~alcoholic_beverage (~beer ~cocktail ~spirits ~wine alcohol~1 booze cocktail libation liquor beer wine alcohol liquor gin rum vodka tequila whiskey ale lager saki brandy Cognac moonshine champagne absinthe)
 concept: ~all_shields (~bodyarmor ~firearmor ~gasarmor bomb_suit helmet spacesuit )
 concept: ~americanindian PROBABLE_NOUN (Abenaki Abnaki Achomawi Akwa'ala Alabama Aleut Aleutian Algonkian Algonkin Algonquian Algonquin American_Indian Amerindian Anasazi Apache Arapaho 
           Arapahoe Arawak Arawakan Aricara Arikara Atakapa Athabascan Athabaskan Athapascan Athapaskan Atsugewi Attacapan Aztec Biloxi Black_Hawk Blackfoot Buffalo_Indian Caddo Cahita 
@@ -388,7 +388,7 @@ concept: ~disabilityhate NOUN NOUN_SINGULAR (cripple mong retard sperg )
 concept: ~diseaselist (AIDS Alzheimer_'s asthma avian_flu bipolar bird_flu Black_Death broken_bone cancer chicken_pox chlamydia cystic_fibrosis dengue depressed depression diphtheria 
           disease Ebola Epstein_barr flu German_measles gonorrhea H1N1 hangnail hemorrhagic_fever herpes infestation~2 influenza lupus Lyme_disease measles meningitis mitochondrial 
           mono mumps obsessive OCD pancreatitis pathological_state~1 pox psoriasis scarlet_fever sexually_transmitted_disease sickness sleep_apnea STD swine_flu syphilis tetanus trichomoniasis 
-          typhoid vertigo whooping_cough yellow_fever AIDS Alzheimer_'s anorexia asthma avian_flu bipolar bird_flu black_death broken_bone bulimia cancer Cancer celebral cerebral chicken_pox chlamydia cystic_fibrosis 
+          typhoid vertigo whooping_cough yellow_fever AIDS Alzheimer_'s anorexia asthma avian_flu bipolar bird_flu black_death broken_bone bulimia cancer Cancer   chicken_pox chlamydia cystic_fibrosis 
           dengue depressed depression diphtheria disease Ebola Epstein_barr flu German_measles gonorrhea H1N1 hangnail hemorrhagic_fever herpes infestation~2 influenza lupus Lyme_disease 
           measles meningitis mitochondrial mono mumps obsessive OCD palsy pancreatitis paralysis pathological_state~1 pox psoriasis scarlet_fever sexually_transmitted_disease sickness 
           sleep_apnea STD swine_flu syphilis tetanus trichomoniasis typhoid vertigo whooping_cough yellow_fever)
@@ -793,7 +793,7 @@ concept: ~health_food_shop (health_food_shop low_fat_food mineral soy sugar_free
 concept: ~height_words (foot inch m meter shorts tall )
 concept: ~heightnoun (centimeter feet height inch meter )
 concept: ~herbivore (~insects african_buffalo ant beaver buffalo bull butterfly cattle ceratops chinchilla cockatoo cow deer earthworms elephant gazelle giraffe goat goose grasshopper 
-          guinea_pig hippopotamus horse kangaroo katydid koala llama manatee mastodon monkey moth panda parakeetparrot rabbit rhinoceros slug snail tortoise worm yak zebra )
+          guinea_pig hippopotamus horse kangaroo katydid koala llama manatee mastodon monkey moth panda parakeet parrot rabbit rhinoceros slug snail tortoise worm yak zebra )
 concept: ~herbspice NOUN NOUN_SINGULAR PROBABLE_NOUN (ajwain akudjura alkanet allspice anardana anise aniseed_myrtle annatto apple_mint asafoetida asarabacca avocado_leaf barberry basil 
           bay_leaf bergamot black_cardamom black_mustard blue_fenugreek blue_melilot boldo borage brow_mustard calendula camphor_laurel candle_nut Capers caraway cardamom carob cassia 
           catnip cayenne cayenne_pepper celery_seed charoli chervil chicory chili_pepper chipotle chives Cicely cilantro cinnamon clove coriander coriander_seed costmary cudweed cumin 
@@ -1399,7 +1399,7 @@ concept: ~occupation_inventor PROBABLE_NOUN (inventor tinkerer )
 concept: ~occupation_jobless PROBABLE_NOUN (bum hobo jobless unemployed vagrant )
 concept: ~occupation_law PROBABLE_NOUN (~occupation_lawyer  bail_agent beat_cop civil_investigator cop correctional_services detective guard investigator judge law 
           magistrate  patrolman police police_officer policeman policewoman security_officer sheriff traffic_officer )
-concept: ~occupation_lawyer (advocate arbitrator attorney jurist lawyer   mediator patent_attorney  barrister solictor )
+concept: ~occupation_lawyer (advocate arbitrator attorney jurist lawyer   mediator patent_attorney  barrister solicitor )
 concept: ~occupation_magic PROBABLE_NOUN (astrologer psychic soothsayer thaumaturgist warlock witch wizard )
 concept: ~occupation_male PROBABLE_NOUN (air_host airline_steward bachelor barman businessman chairman Chairman clergyman coachman comedian congressman conquistador cowboy doorman gunman 
           headmaster heir hero horseman host hunter milkman millionaire proprietor salesman schoolboy sorcerer steward taskmaster testator traitor villain waiter warlock workman )
@@ -1450,7 +1450,7 @@ concept: ~occupation_transport PROBABLE_NOUN (automotive_body_repairer automotiv
 concept: ~occupation_writer PROBABLE_NOUN (art_editor author biographer bookbinder copy_writer copywriter editor journalist librarian military_writer novelist photojournalist poet publisher 
           reporter science_fiction_writer screenwriter speechwriter sports_writer technical_illustrator technical_writer writer )
 concept: ~oldlist (ancient antique archaic first historical old original quaint second-hand start used vintage )
-concept: ~omnivore (aardvark badger bear bluejay catfish chicken chipmunk cockroach coyote crane dolphin emu flamingo fly fox goose hedgehog human hummingbird I lemur magpiecrow mouse 
+concept: ~omnivore (aardvark badger bear bluejay catfish chicken chipmunk cockroach coyote crane dolphin emu flamingo fly fox goose hedgehog human hummingbird I lemur magpie crow mouse 
           opossum oriole ostrich otter person pig raccoon rat raven roadrunner robin seagull shark skunk sloth squirrel starling swan wasp whale woodpecker yellow_jacket you )
 concept: ~opinion (~opinion_verbs attitude_toward belief_about conviction feel_about impression_of notion_of opinion position_on sentiment slant_on stance_on stand_on standpoint take_on 
           think_about think_of think_to thought view viewpoint )

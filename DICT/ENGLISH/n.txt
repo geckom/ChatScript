@@ -6575,9 +6575,6 @@
     north_by_west~1n 
  nurse-patient_relation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     nurse-patient_relation~1nz (^medical_relation~1) the responsibility of a nurse to act in the best interests of the patient
- ninetieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
-    ninetieth~1nz (^rank~5) position 90 in a countable series of things
-    ninetieth~2az the ordinal number of ninety in counting order
  natural_shape ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     natural_shape~1nz (^shape~1) a shape created by natural forces
  nonagon ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -8290,8 +8287,6 @@
     xcviii~1az being eight more than ninety
  ninety-nine ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     ic~1az being nine more than ninety
- ninety-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    ninety-fifth~1az the ordinal number of ninety-five in counting order
  nth ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     n-th~1a 
  n-th ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -8998,6 +8993,7 @@
     nyctophilic~1az 
  nyctophobic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     nyctophobic~1az 
+ nineth ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ORDINAL KINDERGARTEN ) 
  nearer ( meanings=2 MORE_FORM ADJECTIVE ADVERB PREPOSITION ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB ) comparative=near 
     closer~1b 
     nearer~2z 

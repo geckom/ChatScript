@@ -2377,8 +2377,6 @@
  tumulus ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     barrow~2n 
  Tiponi ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
- Tuesday ( meanings=1 glosses=1 NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN TIMEWORD ) 
-    Tues~1nz (^weekday~1) the third day of the week
  Tomas ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Trevls ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  tonsillectomy ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -14582,8 +14580,8 @@
     xxv~1az being five more than twenty
  three-fourths ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     three-fourths~1nz (^common_fraction~1) three of four equal parts
- twenty_percent ( meanings=1 NOUN NOUN_SINGULAR ) 
-    fifth_part~1n 
+ twenty_percent ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
+    fifth_part~1nz (^common_fraction~1) one part in five equal parts
  tenth_part ( meanings=1 NOUN NOUN_SINGULAR ) 
     ten_percent~1n 
  ten_percent ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -14712,12 +14710,6 @@
     time_sharing~1nz (^sharing~4) the use of a central computer by many users simultaneously
  temporal_relation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     temporal_relation~1nz (^relation~1) a relation involving time
- twentieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON2 KINDERGARTEN ) 
-    twentieth~1nz (^rank~5) position 20 in a countable series of things
-    twentieth~2az coming next after the nineteenth in position
- thirtieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN ) 
-    thirtieth~1nz (^rank~5) position 30 in a countable series of things
-    thirtieth~2az coming next after the twenty-ninth in position
  temperature_scale ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     temperature_scale~1nz (^metric~1) a system of measuring temperature
  tertium_quid ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -15724,6 +15716,8 @@
     TT~3n 
  Tabernacles ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
     Succoth~1n 
+ Tuesday ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR KINDERGARTEN TIMEWORD ) 
+    Tues~1nz (^weekday~1) the third day of the week
  Tues ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Tuesday~1n 
  Thursday ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON1 KINDERGARTEN TIMEWORD ) 
@@ -15768,6 +15762,7 @@
     year~3n 
  twentieth_century ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     twentieth_century~1nz (^century~2) the century from 1901 to 2000
+ twentieth ( ADJECTIVE ADJECTIVE_NUMBER COMMON4 COMMON2 ORDINAL KINDERGARTEN ) 
  Tishri ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Tishri~1nz (^Jewish_calendar_month~1) the first month of the civil year
  Tebet ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -17326,8 +17321,6 @@
     ccc~1az 
  twenty-fourth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL KINDERGARTEN ) 
     twenty-fourth~1az coming next after the twenty-third in position
- twenty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL KINDERGARTEN ) 
-    twenty-fifth~1az coming next after the twenty-fourth in position
  twenty-sixth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL KINDERGARTEN ) 
     twenty-sixth~1az coming next after the twenty-fifth in position
  twenty-seventh ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL KINDERGARTEN ) 
@@ -17338,8 +17331,6 @@
     twenty-ninth~1az coming next after the twenty-eighth in position
  thirty-fourth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     thirty-fourth~1az the ordinal number of thirty-four in counting order
- thirty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    thirty-fifth~1az the ordinal number of thirty-five in counting order
  thirty-sixth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     thirty-sixth~1az the ordinal number of thirty-six in counting order
  thirty-seventh ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 

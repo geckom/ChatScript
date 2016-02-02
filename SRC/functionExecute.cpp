@@ -383,6 +383,10 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 		result = UNDEFINED_FUNCTION;
 		return ptr; 
 	}
+	if (!stricmp(name,"^show_failed_response"))
+	{
+		int xx = 0;
+	}
 	result = NOPROBLEM_BIT;
 	ptr = SkipWhitespace(ptr);
 	if (*ptr != '(') // should have been
@@ -455,6 +459,7 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 
 		unsigned int argflags = D->x.macroFlags;
 		unsigned int j = 0;
+		char argcopy[MAX_WORD_SIZE];
         while (ptr && *ptr && *ptr != ')') //   ptr is after opening (and before an arg but may have white space
         {
 			char* arg = callArgumentList[callArgumentIndex++];
@@ -472,6 +477,7 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 				bool stripQuotes =  (argflags & ( 1 << j)) ? 1 : 0; // want to use quotes 
 				// arguments to user functions are not evaluated, they will be used, in place, in the function.
 				// EXCEPT evaluation of ^arguments must be immediate to maintain current context- both ^arg and ^"xxx" stuff
+				if (trace) ReadCompiledWord(ptr,argcopy); // for tracing
 				ptr = ReadArgument(ptr,arg); //   ptr returns on next significant char
 				if (*arg == '"' && stripQuotes)
 				{
@@ -489,11 +495,7 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 					}
 				}
 			}
-			if (*arg == 0) // no argument found should not happen?
-			{
-				--callArgumentIndex;
-				break;
-			}
+			if (*arg == 0) strcpy(arg,"null");// no argument found - caller had null data in argument
 
 			//   within a function, seeing function argument as an argument (limit 9 calling Arguments)
 			//   switch to incoming arg now, later callArgumentBase will be wrong
@@ -514,18 +516,20 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 				strcpy(arg,currentOutputBase);
 				FreeOutputBuffer();
 			}
-			if (!stricmp(arg,"null")) *arg = 0;	 // pass NOTHING as the value
 			if ((trace & (TRACE_OUTPUT|TRACE_USERFN) || D->internalBits & MACRO_TRACE && !(D->internalBits & FN_NO_TRACE))  && CheckTopicTrace())
 			{
-				Log(STDUSERLOG, "%s",arg);
+				if (*argcopy == '^') Log(STDUSERLOG, "%s",argcopy);
+				else Log(STDUSERLOG, "%s",arg);
 				if (*arg == '$') Log(STDUSERLOG,"(%s)",GetUserVariable(arg));
 				else if (*arg == '_' && IsDigit(arg[1])) 
 				{
 					int id = GetWildcardID(arg);
 					if (id >= 0) Log(STDUSERLOG,"(%s)",wildcardOriginalText[id]);
 				}
+				else if (*argcopy == '^') Log(STDUSERLOG, "(%s)",arg);
 				Log(STDUSERLOG, ", ");
 			}
+			if (!stricmp(arg,"null")) *arg = 0;	 // pass NOTHING as the value
 			++j;
 		}
 		while ((callArgumentIndex - oldArgumentIndex) < args) // fill in defaulted args to null
@@ -1272,19 +1276,9 @@ static FunctionResult PopTopicCode(char* buffer) // reconsider BUG
 	return NOPROBLEM_BIT;
 }
 
-static FunctionResult RefineCode(char* buffer) 
+static FunctionResult DoRefine(char* buffer,char* arg1, bool fail, bool all) 
 {
 	FunctionResult result = NOPROBLEM_BIT;
- 
-	char* arg1 = ARGUMENT(1); // nothing or FAIL or label of rule or topic.label - given rule, we go to next level always
-	char* arg2 = ARGUMENT(2); 
-	bool fail = false;
-	if (!stricmp(arg1,"FAIL")) 
-	{
-		fail = true; 
-		strcpy(arg1,arg2); // promote any 2nd argument
-	}
-	
 	char* rule;
     int id = currentRuleID;
 	unsigned int topic = currentTopicID;
@@ -1325,11 +1319,13 @@ static FunctionResult RefineCode(char* buffer)
 			if (*label) Log(STDUSERTABLOG, "try %s: \\",label); // the \\ will block linefeed on next Log call
 			else Log(STDUSERTABLOG, "try  \\");
 		}
-		ChangeDepth(1,"RefineCode");
+		ChangeDepth(1,"DoRefineCode");
  		result = TestRule(id,currentRule,buffer);
-		ChangeDepth(-1,"RefineCode");
-	    if (result != FAIL_MATCH) break;
+		ChangeDepth(-1,"DoRefineCode");
+	    if (all && result != NOPROBLEM_BIT && result != FAIL_MATCH) break; // failure
+		else if (!all && result != FAIL_MATCH) break;
 		else result = NOPROBLEM_BIT;
+
 		char* oldrule = currentRule;
 		while (currentRule && *currentRule)
 		{
@@ -1341,8 +1337,27 @@ static FunctionResult RefineCode(char* buffer)
 	RESTOREOLDCONTEXT()
 
 	trace = oldTrace;
-	if ((!currentRule || level != *currentRule) && fail) result = FAILRULE_BIT;
-	return result; // finding none does not fail unless told to fail
+	// finding none does not fail unless told to fail
+	if (fail && (!currentRule || level != *currentRule)) result = FAILRULE_BIT;
+	return result; 
+}
+
+static FunctionResult RefineCode(char* buffer) 
+{
+	char* arg1 = ARGUMENT(1); // nothing or FAIL or label of rule or topic.label - given rule, we go to next level always
+	char* arg2 = ARGUMENT(2); 
+	bool fail = false;
+	if (!stricmp(arg1,"FAIL")) 
+	{
+		fail = true; 
+		strcpy(arg1,arg2); // promote any 2nd argument
+	}
+	return DoRefine(buffer,arg1,fail,false);
+}
+
+static FunctionResult SequenceCode(char* buffer) 
+{
+	return DoRefine(buffer,ARGUMENT(1),false,true);
 }
 
 static FunctionResult RejoinderCode(char* buffer)
@@ -2106,13 +2121,13 @@ static FunctionResult SetPositionCode(char* buffer)
 		FunctionResult result;
 		ptr = ReadShortCommandArg(ptr,startw,result); // what is being marked
 		if (result != NOPROBLEM_BIT) return result;
-		unsigned int start = atoi(startw);
-		if (start < 1 || start > wordCount) return FAILRULE_BIT;
+		int start = atoi(startw);
+		if (start < 0 || start > (wordCount+1)) return FAILRULE_BIT;
 		char endw[MAX_WORD_SIZE];
 		ptr = ReadShortCommandArg(ptr,endw,result); // what is being marked
 		if (result != NOPROBLEM_BIT) return result;
-		unsigned int end = atoi(endw);
-		if (end < 1 || end > wordCount) return FAILRULE_BIT;
+		int end = atoi(endw);
+		if (end < 0 || end > (wordCount+1)) return FAILRULE_BIT;
 		wildcardPosition[n] = start | (end << 16);
 	}
 	else return FAILRULE_BIT;// set GLOBAL position -- unused at present
@@ -2305,7 +2320,6 @@ static FunctionResult UnmarkCode(char* buffer)
 	if (!startPosition || startPosition > wordCount) return NOPROBLEM_BIT;	// fail silently
 	if (*word == '*') // set unmark EVERYTHING in range 
 	{
-		unmarked[startPosition] = 1;
 		if (trace) Log(STDUSERLOG,"unmark * %d...%d words: ",startPosition,endPosition);
 		for (unsigned int i = startPosition; i <= endPosition; ++i) 
 		{
@@ -3948,8 +3962,8 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 			while (*++ptr && ptr[1]) // leave rest for end
 			{
 				*word = *ptr;
-				if (trace) Log(STDUSERLOG,"burst: %s ",word);
-				if (count) ++counter;
+				if (trace) Log(STDUSERLOG,"[%d]: %s ",counter,word);
+				++counter;
 				//   store piece before scan marker
 				if (impliedWild != ALREADY_HANDLED)  SetWildCard(word,word,0,0);
 				else if (impliedSet != ALREADY_HANDLED)
@@ -3995,8 +4009,8 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 	{
 		*hold = 0;	//   terminate first piece
 		if (*ptr == 0) {;} // null piece - breaking here makes no sense at start
-		else if (count) ++counter;
-		if (trace) Log(STDUSERLOG,"burst: %s ",ptr);
+		if (trace) Log(STDUSERLOG,"%d: %s ",counter,ptr);
+		++counter;
 		//   store piece before scan marker
 		if (count) {;}
 		else if (impliedWild != ALREADY_HANDLED)  SetWildCard(ptr,ptr,0,0);
@@ -8098,7 +8112,7 @@ static void jsonGather(WORDP D, int subject )
 {
 	if (!(subject & (JSON_OBJECT_VALUE |JSON_ARRAY_VALUE)) && subject & JSON_FLAGS) return;
 	FACT* F = GetSubjectNondeadHead(MakeMeaning(D));
-	if (!(F->flags & JSON_FLAGS)) return;	// not a json fact
+	if (!F || !(F->flags & JSON_FLAGS)) return;	// not a json fact
 	while (F) // flip the order
 	{
 		factSet[jsonStore][++jsonIndex] = F;
@@ -8118,7 +8132,7 @@ static FunctionResult JSONGatherCode(char* buffer) // jason FACT cluster by name
 	if (!D) return FAILRULE_BIT;
 	jsonGather(D,0);
 	SET_FACTSET_COUNT(jsonStore,jsonIndex);
-	return jsonIndex ? NOPROBLEM_BIT : FAILRULE_BIT;
+	return NOPROBLEM_BIT;
 }
 
 static FunctionResult JSONParseCode(char* buffer)
@@ -8403,6 +8417,7 @@ SystemFunctionInfo systemFunctionSet[] =
 	{"^rejoinder",RejoinderCode,VARIABLE_ARG_COUNT,0,"try to match a pending rejoinder - not legal in postprocessing"}, 
 	{"^respond",RespondCode,VARIABLE_ARG_COUNT,0,"execute a topic's responders"}, 
 	{"^reuse",ReuseCode,VARIABLE_ARG_COUNT,0,"jump to a rule label or tag and execute output section"}, 
+	{"^sequence",SequenceCode,VARIABLE_ARG_COUNT,0,"execute continuations until one fails in output"}, 
 	{"^setrejoinder",SetRejoinderCode,VARIABLE_ARG_COUNT,0,"Set rejoinder {INPUT OUTPUT} mark to this tag"}, 
 // These can transfer control to another topic: gambit, responder, rejoinder, reuse, refine
 

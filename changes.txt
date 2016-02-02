@@ -1,3 +1,9 @@
+Version 6.1c 
+1. ^sequence added, similar to refine, except instead of only executing one rule, executes all matching rules.
+2. Added :common word1 word2 to tell you the concepts they both particpate in, closest first.
+3. $bot has been renamed $cs_bot and $login has been renamed $cs_login with script errors if you use the older names.
+4. added internal ~timewords as an enumerated concept as well.
+
 Version 6.1b 1/25/2016
 1. variables owned by the bot can be defined (always resident unchanged accessable to all users) - see Advanced Variables in
 	advanced manual

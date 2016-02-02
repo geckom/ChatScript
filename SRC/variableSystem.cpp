@@ -596,7 +596,13 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 		logUpdated = false;
 		if (*word == '$') strcpy(answer,GetUserVariable(word));
 		else if (*word == '_') strcpy(answer,wildcardOriginalText[GetWildcardID(word)]);
-		else if (*word == '@') sprintf(answer,"[%d]",FACTSET_COUNT(GetSetID(word))); // show set count
+		else if (*word == '@') 
+		{
+			int set = GetSetID(word);
+			int count = FACTSET_COUNT(set);
+			unsigned int id = Fact2Index(factSet[set][count]);
+			sprintf(answer,"last value @%d[%d] is %d",set,count,id); // show last item in set
+		}
 		else FreshOutput(word,answer,result,OUTPUT_SILENT,MAX_WORD_SIZE);
 		if (!*answer) 
 		{

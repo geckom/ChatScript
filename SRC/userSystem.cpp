@@ -602,8 +602,8 @@ void ReadNewUser()
 	SetUserVariable("$cs_randindex",word ); 
 	strcpy(word,computerID);
 	*word = GetUppercaseData(*word);
-	SetUserVariable("$bot",word ); 
-	SetUserVariable("$login",loginName);
+	SetUserVariable("$cs_bot",word ); 
+	SetUserVariable("$cs_login",loginName);
 
 	sprintf(readBuffer,"^%s",computerID);
 	WORDP D = FindWord(readBuffer,0,LOWERCASE_LOOKUP);

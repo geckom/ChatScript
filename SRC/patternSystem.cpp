@@ -214,6 +214,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
     if (trace & TRACE_PATTERN  && CheckTopicTrace()) Log(STDUSERTABLOG, "%c ",kind); //   start on new indented line
 	ChangeDepth(1,"Match");
     bool matched;
+	bool noretry = false;
 	unsigned int startNest = functionNest;
 	unsigned int result;
     unsigned int hold;
@@ -289,7 +290,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 			case '@': // factset ref
 				if (word[1] == '_') // set positional reference  @_20+ or @_0-   
 				{
-					if (firstMatched < 0) firstMatched = NORETRY; // cannot retry this match
+					if (firstMatched < 0) firstMatched = NORETRY; // cannot retry this match locally
 	
 					// memorize gap to end based on direction...xxxx
 					if (gap && !reverse) // close to end of sentence 
@@ -452,9 +453,8 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
                 break;
             case '$': // is user variable defined
 				{
-					char word1val[MAX_WORD_SIZE];
-					char word2val[MAX_WORD_SIZE];
- 					matched = (HandleRelation(word,"!=","",false,id,word1val,word2val) & ENDCODES) ? 0 : 1;
+					char* val = GetUserVariable(word);
+					matched = *val ? true : false;
 				}
                 break;
             case '^': //   function call, function argument  or indirect function variable assign ref like ^$$tmp = null
@@ -839,7 +839,17 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 		}
 		if (matched) // perform any memorization
 		{
-			if (oldEnd == positionEnd && oldStart == positionStart); // something like function call, didnt change position
+			if (oldEnd == positionEnd && oldStart == positionStart) // something like function call or variable existence, didnt change position
+			{
+				if (wildcardSelector == WILDSPECIFIC)
+				{
+					if (*word == '$')
+					{
+						char* value = GetUserVariable(word);
+						SetWildCard(value,value, 0,0);  // specific swallow
+					}
+				}
+			}
 			else if (wildcardSelector) //   memorize ONE or TWO things 
 			{
 				if (started == INFINITE_MATCH) started = 1;
@@ -985,10 +995,14 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					else if (positionStart != positionEnd) Log(STDUSERLOG,"(%s-%s)",wordStarts[positionStart],wordStarts[positionEnd]);
 					else Log(STDUSERLOG,"(%s)",wordStarts[positionStart]);
 				}
-				if (*word == '@' && word[1] == '_')
+				else if (*word == '@' && word[1] == '_')
 				{
 					if (positionStart <= 0 || positionStart > wordCount || positionEnd <= 0 || positionEnd > wordCount) Log(STDUSERLOG, "(index:%d)",positionEnd);
 					else Log(STDUSERLOG,"(word:%s index:%d)",wordStarts[positionEnd],positionEnd);
+				}
+				else if (*word == '$' && matched) 
+				{
+					Log(STDUSERLOG,"(%s)",GetUserVariable(word));
 				}
 
 				Log(STDUSERLOG,(success) ? "+ " : "- ");

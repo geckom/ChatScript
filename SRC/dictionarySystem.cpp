@@ -1039,12 +1039,6 @@ void LockLayer(int layer)
 	
 	if (layer < 2) // permanent layers
 	{
-		WORDP D = dictionaryPreBuild[layer] - 1;
-		while (++D < dictionaryFree)
-		{
-			if (D->properties & (PART_OF_SPEECH|TAG_TEST)) AddInternalFlag(D, BASE_DEFINED); // word has known pos meanings before entering user volley
-		}
-
 	#ifndef DISCARDSCRIPTCOMPILER
 		WriteDictDetailsBeforeLayer(layer+1);
 	#endif

@@ -516,7 +516,8 @@ unsigned int EditDistance(WORDP D, unsigned int size, unsigned int inputLen, cha
 	{
 		unsigned int bad = 0;
 		for (unsigned int i = 0; i < size; ++i) if (dictinfo[i] != inputSet[i]) ++bad;
-		if (bad <= 2) return val + 3; // 1 transpose
+		if (size != inputLen){;}
+		else if (bad <= 2) return val + 3; // 1 transpose
 		else if (bad <= 4) return val + 9; // 2 transpose
 		else return val + 38; // many transpose
     }
@@ -824,6 +825,8 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
 					index = 0;
 					min = val;
 				}
+				else if ( val == min && trace == TRACE_SPELLING) Log(STDUSERLOG,"    Equal: %s against %s value: %d\r\n",D->word,originalWord,val);
+
 				if (!(D->internalBits & BEEN_HERE)) 
 				{
 					choices[index++] = D;

@@ -1049,6 +1049,7 @@ FunctionResult TestRule(int ruleID,char* rule,char* buffer)
 	}
 	++ruleCount;
 	unsigned int start = 0;
+	unsigned int oldstart = 0;
 	unsigned int end = 0;
 	unsigned int limit = 100; 
 
@@ -1096,7 +1097,7 @@ retry:
 	
 	if (trace & TRACE_LABEL && *label && !(trace & TRACE_PATTERN)  && CheckTopicTrace())
 	{
-		if (result == NOPROBLEM_BIT) Log(STDUSERTABLOG,"  **Match: %s\r\n",ShowRule(rule));
+		if (result == NOPROBLEM_BIT) Log(STDUSERTABLOG,"  **  Match: %s\r\n",ShowRule(rule));
 		else Log(STDUSERTABLOG,"  **fail: %s\r\n",ShowRule(rule));
 	}
 	if (result == NOPROBLEM_BIT) // generate output
@@ -1104,13 +1105,13 @@ retry:
 		if (trace & (TRACE_PATTERN|TRACE_MATCH|TRACE_SAMPLE)  && CheckTopicTrace() ) //   display the entire matching responder and maybe wildcard bindings
 		{
 			if (!(trace & (TRACE_PATTERN|TRACE_SAMPLE))) Log(STDUSERTABLOG, "Try %s",ShowRule(rule)); 
-			Log(STDUSERTABLOG,"  **Match: %s",ShowRule(rule)); //   show abstract result we will apply
+			Log(STDUSERTABLOG,"  **  Match: %s",ShowRule(rule)); //   show abstract result we will apply
 			if (wildcardIndex)
 			{
 				Log(STDUSERTABLOG,"  Wildcards: ");
 				for (unsigned int i = 0; i < wildcardIndex; ++i)
 				{
-					if (*wildcardOriginalText[i]) Log(STDUSERLOG,"_%d=%s  /  %s ",i,wildcardOriginalText[i],wildcardCanonicalText[i]);
+					if (*wildcardOriginalText[i]) Log(STDUSERLOG,"_%d=%s / %s   ",i,wildcardOriginalText[i],wildcardCanonicalText[i]);
 					else Log(STDUSERLOG,"_%d=  ",i);
 				}
 			}
@@ -1133,9 +1134,15 @@ retry:
 				ReportBug("Exceeeded retry rule limit");
 				goto exit;
 			}
-			if (whenmatched == NORETRY) {}
-			else if (end > start) start = end;	// continue from last match location
-			else if (start > MAX_SENTENCE_LENGTH) start = 0; // never matched internal words - is at infinite start
+			if (whenmatched == NORETRY) 
+			{
+				if (end > 0 && end <= wordCount && end > oldstart) oldstart = start = end; // allow system to retry if marked an end before
+			}
+			else if (end > start) oldstart = start = end;	// continue from last match location
+			else if (start > MAX_SENTENCE_LENGTH) 
+			{
+				start = 0; // never matched internal words - is at infinite start -- WHY allow this?
+			}
 			if (end != NORETRY) goto retry;
 		}
 	}
@@ -1167,7 +1174,7 @@ static FunctionResult FindLinearRule(char type, char* buffer, unsigned int& id,u
 		{
 			if (trace & (TRACE_PATTERN|TRACE_SAMPLE) && CheckTopicTrace()) 
 			{
-				Log(STDUSERTABLOG,"try %d.%d: linear used up  ",TOPLEVELID(ruleID),REJOINDERID(ruleID));
+				Log(STDUSERTABLOG,"try %c%d.%d: linear used up  ",*ptr,TOPLEVELID(ruleID),REJOINDERID(ruleID));
 				if (trace & TRACE_SAMPLE && !TopLevelGambit(ptr) && CheckTopicTrace()) TraceSample(currentTopicID,ruleID);// show the sample as well as the pattern
 				Log(STDUSERLOG,"\r\n");
 			}
@@ -1207,7 +1214,7 @@ static FunctionResult FindRandomRule(char type, char* buffer, unsigned int& id)
 		{
 			if (trace & (TRACE_PATTERN|TRACE_SAMPLE)  && CheckTopicTrace()) 
 			{
-				Log(STDUSERTABLOG,"try %d.%d: random used up   ",TOPLEVELID(ruleID),REJOINDERID(ruleID));
+				Log(STDUSERTABLOG,"try %c%d.%d: random used up   ",*ptr,TOPLEVELID(ruleID),REJOINDERID(ruleID));
 				if (trace & TRACE_SAMPLE && !TopLevelGambit(ptr) && CheckTopicTrace()) TraceSample(currentTopicID,ruleID);// show the sample as well as the pattern
 				Log(STDUSERLOG,"\r\n");
 			}
@@ -1260,7 +1267,7 @@ static FunctionResult FindRandomGambitContinuation(char type, char* buffer, unsi
 		char* ptr = base + block->ruleOffset[gambitID];
 		if (!UsableRule(currentTopicID,gambitID))
 		{
-			if (trace & (TRACE_PATTERN|TRACE_SAMPLE)  && CheckTopicTrace()) Log(STDUSERTABLOG,"try %d.%d: randomcontinuation used up\r\n",TOPLEVELID(gambitID),REJOINDERID(gambitID));
+			if (trace & (TRACE_PATTERN|TRACE_SAMPLE)  && CheckTopicTrace()) Log(STDUSERTABLOG,"try %c%d.%d: randomcontinuation used up\r\n",*ptr,TOPLEVELID(gambitID),REJOINDERID(gambitID));
 			if (*ptr == RANDOM_GAMBIT) available = true; //   we are allowed to use gambits part of this subtopic
 		}
 		else if (*ptr == GAMBIT) 

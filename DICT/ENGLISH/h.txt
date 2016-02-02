@@ -14073,36 +14073,22 @@
     half_dozen~1a 
  hundred_and_one ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     ci~1az 
- hundred-and-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    hundred-and-fifth~1az the ordinal number of one hundred five in counting order
  hundred-and-tenth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-tenth~1az the ordinal number of one hundred ten in counting order
  hundred-and-fifteenth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-fifteenth~1az the ordinal number of one hundred fifteen in counting order
  hundred-and-twentieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-twentieth~1az the ordinal number of one hundred twenty in counting order
- hundred-and-twenty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    hundred-and-twenty-fifth~1az the ordinal number of one hundred twenty-five in counting order
  hundred-and-thirtieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-thirtieth~1az the ordinal number of one hundred thirty in counting order
- hundred-and-thirty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    hundred-and-thirty-fifth~1az the ordinal number of one hundred thirty-five in counting order
  hundred-and-fortieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-fortieth~1az the ordinal number of one hundred forty in counting order
- hundred-and-forty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    hundred-and-forty-fifth~1az the ordinal number of one hundred forty-five in counting order
  hundred-and-fiftieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-fiftieth~1az the ordinal number of one hundred fifty in counting order
- hundred-and-fifty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    hundred-and-fifty-fifth~1az the ordinal number of one hundred fifty-five in counting order
  hundred-and-sixtieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-sixtieth~1az the ordinal number of one hundred sixty in counting order
- hundred-and-sixty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    hundred-and-sixty-fifth~1az the ordinal number of one hundred sixty-five in counting order
  hundred-and-seventieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-seventieth~1az the ordinal number of one hundred seventy in counting order
- hundred-and-seventy-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    hundred-and-seventy-fifth~1az the ordinal number of one hundred seventy-five in counting order
  hundred-and-eightieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-eightieth~1az the ordinal number of one hundred eighty in counting order
  hundred-and-ninetieth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 

@@ -32612,10 +32612,6 @@
     scale_factor~1nz (^multiplier~1) a number used as a multiplier in scaling
  sixteenth_part ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     one-sixteenth~1nz (^common_fraction~1) one part in sixteen equal parts
- sixtieth ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
-    one-sixtieth~1n 
-    sixtieth~2nz (^rank~5) position 60 in a countable series of things
-    sixtieth~3az the ordinal number of sixty in counting order
  sweet_Fanny_Adams ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Fanny_Adams~2nz (^nothing~1) little or nothing at all
  significant_digit ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -32830,9 +32826,6 @@
     synchrony~1n 
  synchroneity ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     synchronicity~1n 
- seventieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
-    seventieth~1nz (^rank~5) position 70 in a countable series of things
-    seventieth~2az the ordinal number of seventy in counting order
  scale_of_measurement ( meanings=1 NOUN NOUN_SINGULAR ) 
     scale~10n 
  sliding_scale ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -38475,10 +38468,6 @@
     lxxvii~1az being seven more than seventy
  seventy-nine ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     ilxxx~1az being nine more than seventy
- sixty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    sixty-fifth~1az the ordinal number of sixty-five in counting order
- seventy-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    seventy-fifth~1az the ordinal number of seventy-five in counting order
  scripted ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     scripted~1az written as for a film or play or broadcast
  sinkable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 

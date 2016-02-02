@@ -5177,7 +5177,7 @@
  wedding_ceremony ( meanings=1 NOUN NOUN_SINGULAR ) 
     wedding~2n 
  Winter_Olympic_Games ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Winter_Olympics~1nz (^Olympic_Games~2) an Olympics for winter sports
+    Winter_Olympics~1nz (^Olympiad~1) an Olympics for winter sports
  Winter_Olympics ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Winter_Olympic_Games~1n 
  World_Cup ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 

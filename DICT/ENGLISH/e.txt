@@ -10094,9 +10094,6 @@
     east_southeast~1n 
  executor-heir_relation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     executor-heir_relation~1nz (^fiduciary_relation~1) the responsibility of an executor of an estate to act in the best interests of the heir
- eightieth ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
-    eightieth~1nz (^rank~5) position 80 in a countable series of things
-    eightieth~2az the ordinal number of eighty in counting order
  equilateral ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     equilateral~1nz (^figure~13) a figure whose sides are all equal
     equilateral~2az having all sides or faces equal
@@ -12225,8 +12222,6 @@
     lxxxviii~1az being eight more than eighty
  eighty-nine ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     ixc~1az being nine more than eighty
- eighty-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
-    eighty-fifth~1az the ordinal number of eighty-five in counting order
  eightfold ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     eight-fold~1a 
  eight-fold ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 

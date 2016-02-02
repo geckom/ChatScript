@@ -41,7 +41,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 #elif WIN32
 //#define USERPATHPREFIX 1
 #define DISCARDDATABASE 1
-#define DISCARDDICTIONARYBUILD 1 // only a windows version can build a dictionary from scratch
+//#define DISCARDDICTIONARYBUILD 1 // only a windows version can build a dictionary from scratch
 #elif IOS
 #define DISCARDCOUNTER 1
 #define DISCARDDICTIONARYBUILD 1 

@@ -1,6 +1,6 @@
 #include "common.h"
 #include "evserver.h"
-char* version = "6.1b";
+char* version = "6.1c";
 
 #define MAX_RETRIES 20
 clock_t startTimeInfo;							// start time of current volley

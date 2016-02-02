@@ -42,6 +42,10 @@ static void C_Retry(char* input);
 static MEANING* meaningList; // list of meanings from :concepts
 static MEANING* meaningLimit; // end of meaninglistp
 
+#include <map>
+using namespace std;
+std::map <const char*, int> statistics; // statistics data
+
 ////////////////////////////////////////////////////////
 /// UTILITY ROUTINES
 ////////////////////////////////////////////////////////
@@ -195,6 +199,111 @@ static void C_AutoReply(char* input)
 	strcpy(oktest,input);
 	if (!*oktest)  regression =  false;
 	if (*oktest) Log(STDUSERLOG,"Auto input set to %s\r\n",oktest);
+}  
+
+static void MarkUp(WORDP D) // mark all that can be seen from here going up as member
+{	
+	if (D->inferMark == inferMark) return;
+	D->inferMark = inferMark;
+	FACT* F = GetSubjectHead(D);
+	while (F)
+	{
+		if (F->verb == Mmember)
+		{
+			WORDP D = Meaning2Word(F->object);
+			MarkUp(D);
+		}
+  
+		F = GetSubjectNext(F);
+	}
+}
+
+static void C_Common(char* input)
+{
+	char word[MAX_WORD_SIZE];
+	char word1[MAX_WORD_SIZE];
+	WORDP D;
+	char* ptr = ReadCompiledWord(input,word);
+	ptr = ReadCompiledWord(ptr,word1);
+	if (!*word1) 
+	{
+		Log(STDUSERLOG, "You need to supply at least 2 words.\r\n");
+		return;
+	}
+	while (1)
+	{
+		input = ReadCompiledWord(input,word);
+		D = FindWord(word);
+		if (!D) 
+		{
+			Log(STDUSERLOG, "%s is an unknown word\r\n",word);
+			return;
+		}
+		ReadCompiledWord(input,word1); // read ahead 1
+		if (!*word1) break; //we are on the last word
+		FACT* F = GetSubjectHead(D);
+		NextInferMark();
+		while (F)
+		{
+			if (F->verb == Mmember) MarkUp(Meaning2Word(F->object)); // mark all on this path as seen
+			F = GetSubjectNext(F);
+		}
+	}
+	WORDP words[10000];
+	WORDP found[10000];
+	NextInferMark();
+	unsigned int index = 0;
+	unsigned int at = 0;
+	unsigned int foundIndex = 0;
+	words[index++] = D;	// goes onto stack
+	words[index++] = 0; // end of a level
+	int level = 0;
+	FACT* F;
+	while (at < index)
+	{
+		D = words[at++];	// next one from queue
+		if (D == 0)
+		{
+			if (at != index) words[index++] = 0;
+			++level;
+			found[foundIndex++] = 0; // mark the level
+			continue;
+		}
+		F = GetSubjectHead(D);
+		while (F)
+		{
+			if (F->verb == Mmember) 
+			{
+				D = Meaning2Word(F->object);
+				if (D->inferMark == (inferMark - 1)) found[foundIndex++] = D;
+				if (D->inferMark < inferMark) 
+				{
+					D->inferMark = inferMark;
+					words[index++] = D;
+				}
+			}
+			F = GetSubjectNext(F);
+		}	
+	}
+	Log(STDUSERLOG,"Concept intersection:\r\n");
+	level = 1;
+	bool header = false;
+	for (unsigned int i = 0; i < foundIndex; ++i)
+	{
+		if (found[i] == 0) 
+		{
+			Log(STDUSERLOG,"\r\n");
+			++level;
+			header = false;
+		}
+		else 
+		{
+			if (!header) Log(STDUSERLOG,"%d. ",level);
+			header = true;
+			Log(STDUSERLOG,"%s ",found[i]->word);
+		}
+	}
+	Log(STDUSERLOG,"\r\n");
 }  
 
 static void C_NoReact(char* input)
@@ -4291,11 +4400,6 @@ static void C_Overlap(char* buffer)
 static bool DumpSetPath(MEANING T,unsigned int depth) // once you are IN a set, the path can be this
 {
 	int k = 0;
-	if (depth > 20)
-	{
-		printf("Hierarchy too deep-- recursive?");
-		return false;
-	}	
 	while (++k)
 	{
  		MEANING parent = FindSetParent(T,k); //   next set we are member of
@@ -4317,9 +4421,11 @@ static bool DumpSetPath(MEANING T,unsigned int depth) // once you are IN a set, 
 			if (F) continue;	// exclusion in effect
 		}
 
+ 		WORDP E = Meaning2Word(parent);
+		if (E->inferMark == inferMark) continue;
+		E->inferMark = inferMark;
         Log(STDUSERLOG,"    ");
 		for (unsigned int j = 0; j < depth; ++j) Log(STDUSERLOG,"   "); 
-		WORDP E = Meaning2Word(parent);
 		if (E->internalBits & TOPIC) Log(STDUSERLOG,"T%s \r\n",WriteMeaning(parent)); 
 		else Log(STDUSERLOG,"%s \r\n",WriteMeaning(parent)); 
 		if (!DumpSetPath(parent,depth+1)) return false; // follow up depth first
@@ -4330,15 +4436,11 @@ static bool DumpSetPath(MEANING T,unsigned int depth) // once you are IN a set, 
 static bool DumpUpHierarchy(MEANING T,int depth)
 {
     if (!T) return true;
-	if (depth > 20)
-	{
-		printf("Hierarchy too deep-- recursive?");
-		return false;
-	}
 
     WORDP E = Meaning2Word(T);
-	unsigned int restrict = GETTYPERESTRICTION(T);
+	if (E->inferMark == inferMark) return false;	
 	E->inferMark = inferMark; // came this way
+	unsigned int restrict = GETTYPERESTRICTION(T);
 	unsigned int index = Meaning2Index(T);
     if (depth == 0)  
 	{
@@ -7239,7 +7341,8 @@ static void TrimIt(char* name,uint64 flag)
 	//  7 = tags verify user-bot
 	//  8 = topic indent bot
 	//  9 = generate user log files from system log
-	
+	// 10 = generate statistics from logs
+
 	char prior[MAX_BUFFER_SIZE];
 	FILE* in = FopenReadWritten(name);
 	if (!in) return;
@@ -7420,6 +7523,45 @@ static void TrimIt(char* name,uint64 flag)
 			fclose(out1);
 			continue;
 		}
+		else if (flag == 10) // build stats
+		{
+			while (*why == '~') // do each tag
+			{
+				char tag[MAX_WORD_SIZE];
+				why = ReadCompiledWord(why,tag); // get tag  which is topic.x.y=name or topic.x.y<topic.a.b (reuse) and optional label which is whytag
+				char* dot;
+				dot = strchr(tag,'.'); // split of primary topic from rest of tag
+				unsigned int topicidx = 0;
+				*dot = 0;
+				strcpy(topic,tag); // get the primary topic of the tag
+				*dot = '.';
+				char label[MAX_WORD_SIZE];
+				sprintf(label,"T-%s",topic);
+				WORDP D = StoreWord(label,AS_IS); 
+				statistics[D->word] = statistics[D->word] + 1; // tally hits on topic itself
+				dot = strchr(dot+1,'.'); // 2nd dot
+				while (IsDigit(*++dot)) {;}
+				char c = *dot;
+				*dot = 0;
+				sprintf(label,"R-%s",tag);
+				D = StoreWord(label,AS_IS); 
+				*dot = c;
+
+				char* rest = strchr(dot,'~'); // 2ndary rule?
+				if (rest) // look at indirection rule
+				{
+					char* dot = strchr(rest,'.');
+					dot = strchr(dot+1,'.'); // 2nd dot
+					while (IsDigit(*++dot)) {;}
+					char c = *dot;
+					*dot = 0;
+					sprintf(label,"R-%s",rest);
+					D = StoreWord(label,AS_IS); 
+					*dot = c;
+				}
+			}
+		}
+
 		if (*display) 
 		{
 			if (!header) 
@@ -7486,12 +7628,13 @@ static void C_Trim(char* input) // create simple file of user chat from director
 	}
 	else strcpy(directory,logs);
 
-	unsigned int flag;
+	unsigned int flag = 0;
 	if (!stricmp(word,"bot2user")) flag = 1;
 	else if (!stricmp(word,"useronly") || !stricmp(word,"humanonly")) flag = 6;
 	else if (!stricmp(word,"indenthuman")) flag = 4;
 	else if (!stricmp(word,"indentbot")) flag = 5;
 	else if (!stricmp(word,"usersfromsystem")) flag = 9;
+	else if (!stricmp(word,"statistics")) flag = 10;
 	else flag = atoi(word); 
 	
 	FILE* out = FopenUTF8Write("TMP/tmp.txt");
@@ -7574,6 +7717,7 @@ CommandInfo commandSet[] = // NEW
 
 	{"\r\n---- Script Testing",0,""},  
 	{":autoreply",C_AutoReply,"[OK,Why] use one of those as all input."}, 
+	{":common",C_Common,"What concepts have the two words in common."},
 	{":prepare",C_Prepare,"Show results of tokenization, tagging, and marking on a sentence"},  
 	{":regress",C_Regress,"create or test a regression file"}, 
 	{":source",C_Source,"Switch input to named file"}, 

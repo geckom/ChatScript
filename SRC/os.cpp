@@ -890,7 +890,7 @@ unsigned int Log(unsigned int channel,const char * fmt, ...)
 			for (int i = priordepth+1; i < globalDepth; i++)
 			{
 				*at++ = (i == 4 || i == 9) ? ',' : '.';
-				*at++ = ' ';
+				//*at++ = ' ';
 			}
 			priordepth = globalDepth;
 		}
@@ -912,7 +912,7 @@ unsigned int Log(unsigned int channel,const char * fmt, ...)
 			{
 				if (channel == STDUSERATTNLOG) *at++ = (i == 1) ? '*' : ' ';
 				else *at++ = (i == 4 || i == 9) ? ',' : '.';
-				*at++ = ' ';
+				// *at++ = ' ';
 			}
 			priordepth = globalDepth;
 		}

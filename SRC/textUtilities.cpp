@@ -889,6 +889,7 @@ bool IsPlaceNumber(char* word) // place number and fraction numbers
 	else if (len > 5 && !strcmp(word+len-6,"second") ) return true;
 	else if (len > 4 && !strcmp(word+len-4,"half") ) return true;
 	else if (len > 4 && !strcmp(word+len-5,"third") ) return true;
+	else if (len > 4 && !strcmp(word+len-5,"fifth") ) return true;
 	else if (len > 5 && !strcmp(word+len-6,"thirds") ) return true;
  	else if (len > 6 && !strcmp(word+len-7,"quarter") ) return true;
  	else if (len > 7 && !strcmp(word+len-8,"quarters") ) return true;
@@ -915,8 +916,7 @@ bool IsPlaceNumber(char* word) // place number and fraction numbers
     if (len < 4 && !IsDigit(*word)) return false; // want a number
 	char num[MAX_WORD_SIZE];
 	strcpy(num,word);
-	num[len-2] = 0;
-	return IsNumber(num,false) ? true : false; // show it is correctly a number
+	return IsNumber(num,false) ? true : false; // show it is correctly a number - pass false to avoid recursion from IsNumber
 }
 
 bool IsFloat(char* word, char* end)
@@ -2000,6 +2000,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 		}
 	}
 	unsigned int oldlen = len;
+	// remove 
     if (len < 3); // cannot have suffix
     else if (word[len-2] == 's' && word[len-1] == 't' && !strstr(word,"first")) word[len -= 2] = 0; // 1st 
     else if (word[len-2] == 'n' && word[len-1] == 'd' && !strstr(word,"second") && !strstr(word,"thousand")) word[len -= 2] = 0; // 2nd but not second or thousandf"

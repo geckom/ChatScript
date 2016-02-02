@@ -1710,9 +1710,9 @@
     Olympian~2nz (^athlete~1) an athlete who participates in the Olympic games
     Olympian~3az of or pertaining to the greater gods of ancient Greece whose abode was Mount Olympus
     Olympic~2az of the region of Olympia in Greece or its inhabitants
- Olympic_Games ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
+ Olympic_Games ( meanings=2 NOUN NOUN_PROPER_SINGULAR ) 
     Olympian_Games~1n 
-    Olympiad~1nz (^athletic_competition~1) the modern revival of the ancient games held once every 4 years in a selected country
+    Olympics~1n 
  Olympic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     Olympic~1az of or relating to the Olympic Games
     Olympian~4a 
@@ -4581,9 +4581,9 @@
  orbital_motion ( meanings=1 NOUN NOUN_SINGULAR ) 
     orbital_rotation~1n 
  Olympics ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Olympic_Games~2n 
- Olympiad ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
-    Olympics~1n 
+    Olympiad~1n 
+ Olympiad ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER KINDERGARTEN TIMEWORD ) 
+    Olympic_Games~2nz (^athletic_competition~1) the modern revival of the ancient games held once every 4 years in a selected country
     Olympiad~2nz (^period~3) one of the four-year intervals between Olympic Games
     Olympiad~3nz 
  obstacle_race ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -6638,8 +6638,6 @@
     ounce~1n 
  one-fourth ( meanings=1 NOUN NOUN_SINGULAR ) 
     fourth_part~1n 
- one-fifth ( meanings=1 NOUN NOUN_SINGULAR ) 
-    fifth~3n 
  one-sixth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     one-sixth~1nz (^common_fraction~1) one part in six equal parts
  one-seventh ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -6655,7 +6653,7 @@
  one-sixteenth ( meanings=1 NOUN NOUN_SINGULAR ) 
     sixteenth_part~1n 
  one-sixtieth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
-    sixtieth~1nz (^common_fraction~1) one part in sixty equal parts
+    one-sixtieth~1nz (^common_fraction~1) one part in sixty equal parts
  one-sixty-fourth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     sixty-fourth~1nz (^common_fraction~1) one part in sixty-four equal parts
  one-hundredth ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 

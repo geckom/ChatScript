@@ -332,7 +332,9 @@ void StdNumber(char* word,char* buffer,int controls, bool space) // text numbers
 {
  	if (space) {*buffer++ = ' '; *buffer = 0;}
 	size_t len = strlen(word);
-    if (!IsDigitWord(word) || strchr(word,':')) // either its not a number or its a time - leave unchanged
+	char* ptr = word;
+	while (IsDigit(*++ptr) || *ptr == '.') {;}
+    if ( IsAlphaUTF8(*ptr) ||  !IsDigitWord(word) || strchr(word,':')) // either its not a number or its a time - leave unchanged
     {
         strcpy(buffer,word);  
 
@@ -359,7 +361,7 @@ void StdNumber(char* word,char* buffer,int controls, bool space) // text numbers
     }
 
 	// add commas between number triples
-    char* ptr = word;
+	ptr = word;
     unsigned int offset = len % 3;
     len = (len + 2 - offset) / 3; 
     strncpy(buffer,ptr,offset); 

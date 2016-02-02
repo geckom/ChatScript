@@ -7,6 +7,7 @@ bwregress
 en
 extraSrc
 link-grammar
+private
 LOGS
 TMP
 USERS

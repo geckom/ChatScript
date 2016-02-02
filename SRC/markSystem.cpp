@@ -979,10 +979,11 @@ void MarkAllImpliedWords()
 		unsigned int restriction = (unsigned int)(finalPosValues[i] & BASIC_POS);
 		if (finalPosValues[i] & ADJECTIVE_NOUN) StdMark(MakeTypedMeaning(OL,0,NOUN), i, i,false); //  mark word as a noun
 		else StdMark(MakeTypedMeaning(OL,0,restriction), i, i,false);
+
         if (trace & TRACE_PREPARE || prepareMode == PREPARE_MODE) Log(STDUSERLOG," // "); //   close original meanings lowercase
 
 		markLength = 0;
-		if (IS_NEW_WORD(OU) && (OL || CL)) {;}
+		if (IS_NEW_WORD(OU) && (OL || CL)) {;} // uppercase original was unknown and we have lower case forms, ignore upper.
 		else 
 		{
 			if (finalPosValues[i] & ADJECTIVE_NOUN) StdMark(MakeTypedMeaning(OU,0,NOUN), i, i,false); //  mark word as a noun first, adjective is not normal
@@ -1009,12 +1010,13 @@ void MarkAllImpliedWords()
 			StdMark(MakeTypedMeaning(CL,0,NOUN), i, i,true);
 		}
 		else StdMark(MakeTypedMeaning(CL,0, (unsigned int)(finalPosValues[i] & BASIC_POS)), i, i,true);
+		
 
  		markLength = 0;
 	    if (trace & TRACE_PREPARE || prepareMode == PREPARE_MODE) Log(STDUSERLOG," // "); //   close canonical form lowercase
  		
-		// mark upper case canonical ONLY if existed (someone wants it) - March in lower case is always a problem
-		if (!IS_NEW_WORD(CU)) StdMark(MakeTypedMeaning(CU,0, (unsigned int)(finalPosValues[i] & BASIC_POS)), i, i,true);
+		// mark upper case canonical 
+		StdMark(MakeTypedMeaning(CU,0, NOUN), i, i,true);
 
 		// canonical word is a number (maybe we didn't register original right) eg. "how much is 24 and *seven"
 		if (IsDigit(*wordCanonical[i]) && IsNumber(wordCanonical[i])) MarkFacts(Mnumber,i,i,true);  
