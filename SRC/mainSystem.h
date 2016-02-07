@@ -185,6 +185,7 @@ void PartiallyCloseSystem();
 int main(int argc, char * argv[]);
 void ProcessOOB(char* buffer);
 void ComputeWhy(char* buffer);
+void SaveTracedFunctions();
 
 // Input processing
 void MainLoop();

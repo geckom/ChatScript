@@ -948,6 +948,7 @@ void MarkAllImpliedWords()
 				strcpy(tmp,currency);
 				MarkFacts(Mmoney,i,i); 
 				if (*currency == '$' || !strnicmp(currency,"usd",3)) MarkFacts(Musd,i,i);
+				else if ( !strnicmp(currency,"inr",3)) MarkFacts(Minr,i,i);
 				else if ((*currency == 0xe2 && currency[1] == 0x82 && currency[2] == 0xac) || !strnicmp(currency,"eur",3)) MarkFacts(Meur,i,i);
 				else if ((*currency == 0xc2 && currency[1] == 0xa5) || !strnicmp(currency,"yen",3)) MarkFacts(Myen,i,i);
 				else if ((*currency == 0xc2 && currency[1] == 0xa3 ) || !strnicmp(currency,"gbp",3)) MarkFacts(Mgbp,i,i);

@@ -190,7 +190,7 @@ MEANING Mburst;
 MEANING Mpending;
 MEANING Mkeywordtopics;
 MEANING Mconceptlist;
-MEANING Mmoney,Musd,Meur,Mgbp,Myen,Mcny;
+MEANING Mmoney,Musd,Meur,Mgbp,Myen,Mcny,Minr;
 MEANING Mintersect;
 MEANING MgambitTopics;
 MEANING MadjectiveNoun;
@@ -1059,7 +1059,7 @@ void ReturnToLayer(int layer, bool unlocked)
 	DictionaryRelease(dictionaryPreBuild[layer+1],stringsPreBuild[layer+1]);
 
 #ifndef DISCARDSCRIPTCOMPILER
-	if (!server) ReadDictDetailsBeforeLayer(layer+1);// on server we assume scripts will not damage level0 or earlier data of dictionary
+	if (!server) ReadDictDetailsBeforeLayer(layer+1);// on server we assume scripts will not damage level0 or earlier data of dictionary but user doing :trace might
 #endif
 
 	// canonical map in layer 1 is now garbage- 
@@ -2583,6 +2583,7 @@ void ExtendDictionary()
 	Myen = MakeMeaning(BUILDCONCEPT("~yen"));
 	Mcny = MakeMeaning(BUILDCONCEPT("~cny"));
 	Meur = MakeMeaning(BUILDCONCEPT("~eur"));
+	Minr = MakeMeaning(BUILDCONCEPT("~inr"));
 	Mgbp = MakeMeaning(BUILDCONCEPT("~gbp"));
 	Mnumber = MakeMeaning(BUILDCONCEPT("~number"));
 	MadjectiveNoun  = MakeMeaning(BUILDCONCEPT("~adjective_noun"));

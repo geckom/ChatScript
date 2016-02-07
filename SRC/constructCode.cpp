@@ -3,7 +3,7 @@
 int impliedIf = ALREADY_HANDLED;	// testing context of an if
 unsigned int withinLoop = 0;
 
-static char* TestIf(char* ptr,FunctionResult& result)
+static void TestIf(char* ptr,FunctionResult& result)
 { //   word is a stream terminated by )
 	//   if (%rand == 5 ) example of a comparison
 	// if (@14) {} nonempty factset
@@ -139,22 +139,11 @@ resume:
 			goto resume;
 		}
 	}
-	if (*(ptr-2) != ')') // recover end of it .. ) space jump code
-	{
-		char* squiggle = strchr(ptr,'{'); // here is start of the branch
-		if (squiggle)
-		{
-			while (*--squiggle != ')') {;} // back up to close of paren
-			ptr = squiggle + 2;
-		}
-	}
-
 
 	FreeBuffer();
 	FreeBuffer();
 	if (trace & TRACE_OUTPUT &&  (result & ENDCODES) && CheckTopicTrace()) Log(id,"%s\r\n", "FAIL-if");
 	impliedIf = ALREADY_HANDLED;
-	return ptr;
 }
 
 char* HandleIf(char* ptr, char* buffer,FunctionResult& result)
@@ -165,8 +154,59 @@ char* HandleIf(char* ptr, char* buffer,FunctionResult& result)
 	// after { }  chosen branch is offset to jump to end of if
 	while (ALWAYS) //   do test conditions until match
 	{
+		char* endptr;
+
+		if (*ptr == '(') // old format - std if internals
+		{
+			endptr = strchr(ptr,'{') - 3;
+		}
+		else // new format, can use std if or pattern match
+		{
+			endptr = ptr + Decode(ptr);
+			ptr += 3; // skip jump to end of pattern
+		}
+
 		//   Perform TEST condition
-		ptr = TestIf(ptr+2,result); //   skip (space, returns on accelerator
+		if (!strnicmp(ptr,"( pattern ",10)) // pattern if
+		{
+			unsigned int start = 0;
+			unsigned int end = 0;
+			unsigned int wildcardSelector = 0;
+			unsigned int gap = 0;
+			wildcardIndex = 0;
+			bool uppercasem = false;
+			unsigned int positionStart, positionEnd;
+			int whenmatched = 0;
+			++globalDepth; // indent pattern
+			bool failed = false;
+			if (!Match(ptr+10,0,start,'(',true,gap,wildcardSelector,start,end,uppercasem,whenmatched,positionStart,positionEnd)) failed = true;  // skip paren and blank, returns start as the location for retry if appropriate
+			--globalDepth;
+			if (clearUnmarks) // remove transient global disables.
+			{
+				clearUnmarks = false;
+				for (unsigned int i = 1; i <= wordCount; ++i) unmarked[i] = 1;
+			}
+			if (!failed) 
+			{
+				if (trace & (TRACE_PATTERN|TRACE_MATCH|TRACE_SAMPLE)  && CheckTopicTrace() ) //   display the entire matching responder and maybe wildcard bindings
+				{
+					Log(STDUSERTABLOG,"  **  Match: ");
+					if (wildcardIndex)
+					{
+						Log(STDUSERTABLOG,"  Wildcards: ");
+						for (unsigned int i = 0; i < wildcardIndex; ++i)
+						{
+							if (*wildcardOriginalText[i]) Log(STDUSERLOG,"_%d=%s / %s   ",i,wildcardOriginalText[i],wildcardCanonicalText[i]);
+							else Log(STDUSERLOG,"_%d=  ",i);
+						}
+					}
+					Log(STDUSERLOG,"\r\n");
+				}
+			}
+			result = (failed) ? FAILRULE_BIT : NOPROBLEM_BIT;
+		}
+		else TestIf(ptr+2,result); 
+		ptr = endptr; // the end on accelerator of body
 						
 		//   perform SUCCESS branch and then end if
 		if (!(result & ENDCODES)) //   IF test success - we choose this branch

@@ -18,7 +18,6 @@ char impliedOp = 0;					// for impliedSet, what op is in effect += =
 unsigned int wildcardIndex = 0;
 char wildcardOriginalText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  // spot wild cards can be stored
 char wildcardCanonicalText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  // spot wild cards can be stored
-char wildcardConceptText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  // spot wild cards can be stored
 unsigned int wildcardPosition[MAX_WILDCARDS+1]; // spot it started and ended in sentence
 char wildcardSeparator[2];
 
@@ -58,15 +57,13 @@ static void CompleteWildcard()
 	if (wildcardIndex > MAX_WILDCARDS) wildcardIndex = 0; 
 }
 
-void SetWildCard(unsigned int start, unsigned int end, bool inpattern,char* concept)
+void SetWildCard(unsigned int start, unsigned int end, bool inpattern)
 {
 	if (end < start) end = start;				// matched within a token
 	if (end > wordCount && start != end) end = wordCount; // for start==end we allow being off end, eg _>
     wildcardPosition[wildcardIndex] = start | (end << 16);
     *wildcardOriginalText[wildcardIndex] = 0;
     *wildcardCanonicalText[wildcardIndex] = 0;
-	if (concept) strcpy(wildcardConceptText[wildcardIndex], concept);
-	else *wildcardConceptText[wildcardIndex] = 0;
     if (start == 0 || wordCount == 0 || (end == 0 && start != 1) ) // null match, like _{ .. }
 	{
 		++wildcardIndex;
@@ -90,10 +87,47 @@ void SetWildCard(unsigned int start, unsigned int end, bool inpattern,char* conc
 			if (wordCanonical[i]) strcat(wildcardCanonicalText[wildcardIndex],wordCanonical[i]);
 			else 
 				strcat(wildcardCanonicalText[wildcardIndex],word);
-			*wildcardConceptText[wildcardIndex] = 0;
 		}
  		if (trace & TRACE_OUTPUT && !inpattern && CheckTopicTrace()) Log(STDUSERLOG,"_%d=%s/%s ",wildcardIndex,wildcardOriginalText[wildcardIndex],wildcardCanonicalText[wildcardIndex]);
 		CompleteWildcard();
+	}
+}
+
+void SetWildCardGiven(unsigned int start, unsigned int end, bool inpattern, int index)
+{
+	if (end < start) end = start;				// matched within a token
+	if (end > wordCount && start != end) end = wordCount; // for start==end we allow being off end, eg _>
+    wildcardPosition[index] = start | (end << 16);
+    *wildcardOriginalText[index] = 0;
+    *wildcardCanonicalText[index] = 0;
+    if (start == 0 || wordCount == 0 || (end == 0 && start != 1) ) // null match, like _{ .. }
+	{
+	}
+	else // did match
+	{
+		// concatenate the match value
+		bool started = false;
+		for (unsigned int i = start; i <= end; ++i)
+		{
+			char* word = wordStarts[i];
+			// if (*word == ',') continue; // DONT IGNORE COMMAS, needthem
+			if (started) 
+			{
+				strcat(wildcardOriginalText[index],wildcardSeparator);
+				strcat(wildcardCanonicalText[index],wildcardSeparator);
+			}
+			else started = true;
+			strcat(wildcardOriginalText[index],word);
+			if (wordCanonical[i]) strcat(wildcardCanonicalText[index],wordCanonical[i]);
+			else 
+				strcat(wildcardCanonicalText[index],word);
+		}
+ 		if (trace & TRACE_OUTPUT && !inpattern && CheckTopicTrace()) Log(STDUSERLOG,"_%d=%s/%s ",index,wildcardOriginalText[index],wildcardCanonicalText[index]);
+		WORDP D = FindWord(wildcardCanonicalText[index]);
+		if (D && D->properties & D->internalBits & UPPERCASE_HASH)  // but may not be found if original has plural or such or if uses _
+		{
+			strcpy(wildcardCanonicalText[index],D->word);
+		}
 	}
 }
 
@@ -102,7 +136,7 @@ void SetWildCardIndexStart(unsigned int index)
 	 wildcardIndex = index;
 }
 
-void SetWildCard(char* value, char* canonicalValue,const char* index,unsigned int position,char* concept)
+void SetWildCard(char* value, char* canonicalValue,const char* index,unsigned int position)
 {
 	// adjust values to assign
 	if (!value) value = "";
@@ -124,8 +158,6 @@ void SetWildCard(char* value, char* canonicalValue,const char* index,unsigned in
 	if (index) wildcardIndex = GetWildcardID((char*)index); 
     strcpy(wildcardOriginalText[wildcardIndex],value);
     strcpy(wildcardCanonicalText[wildcardIndex],(canonicalValue) ? canonicalValue : value);
-	if (concept) strcpy(wildcardConceptText[wildcardIndex],concept);
-	else *wildcardConceptText[wildcardIndex] = 0;
     wildcardPosition[wildcardIndex] = position | (position << 16); 
   
 	CompleteWildcard();
@@ -399,8 +431,7 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
     char op[MAX_WORD_SIZE];
 	ChangeDepth(1,"PerformAssignment");
 	char* word1 = AllocateBuffer();
-	FACT* F = currentFact;
-	currentFact = NULL;					// did createfact  creat OR find
+	currentFact = NULL;					// No assignment can start with a fact lying around
 	int oldImpliedSet = impliedSet;		// in case nested calls happen
 	int oldImpliedWild = impliedWild;	// in case nested calls happen
     int assignFromWild = ALREADY_HANDLED;
@@ -453,11 +484,8 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 
 		// if he original requested to assign to and the assignment has been done, then we dont need to do anything
 		if ((setToImply != impliedSet && setToImply != ALREADY_HANDLED) || (setToWild != impliedWild  && setToWild != ALREADY_HANDLED) ) currentFact = NULL; // used up
-	//	else if (currentFact && otherassign) sprintf(word1,"%d",currentFactIndex()); WHY DID WE WANT THIS?
-		// A fact was created but not used up by retrieving some field of it. Convert to a reference to fact.
-		else if (currentFact && setToImply == impliedSet && setToWild == impliedWild && (setToWild != ALREADY_HANDLED || setToImply != ALREADY_HANDLED)) sprintf(word1,"%d",currentFactIndex());
-
-		if (!currentFact) currentFact = F; // revert current fact to what it was before now
+		// A fact was created but not used up by retrieving some field of it. Convert to a reference to fact. -- eg $$f = createfact()
+		else if (currentFact && setToImply == impliedSet && setToWild == impliedWild && (setToWild != ALREADY_HANDLED || setToImply != ALREADY_HANDLED || otherassign)) sprintf(word1,"%d",currentFactIndex());
 	}
    	if (!stricmp(word1,"null")) *word1 = 0;
 
@@ -544,7 +572,6 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 			factSetNext[impliedSet] = 0; // all changes requires a reset of next ptr
 			impliedSet = ALREADY_HANDLED;
 		}
-		currentFact = NULL;
 	}
 	else if (IsArithmeticOperator(op)) 
 		Add2UserVariable(word,word1,op,originalWord1);
@@ -554,7 +581,7 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 		{
 			if (assignFromWild >= 0) // full tranfer of data
 			{
-				SetWildCard(wildcardOriginalText[assignFromWild],wildcardCanonicalText[assignFromWild],word,0,wildcardConceptText[assignFromWild]); 
+				SetWildCard(wildcardOriginalText[assignFromWild],wildcardCanonicalText[assignFromWild],word,0); 
 				wildcardPosition[GetWildcardID(word)] =  wildcardPosition[assignFromWild];
 			}
 			else SetWildCard(word1,word1,word,0); 
@@ -600,8 +627,11 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 		{
 			int set = GetSetID(word);
 			int count = FACTSET_COUNT(set);
-			unsigned int id = Fact2Index(factSet[set][count]);
-			sprintf(answer,"last value @%d[%d] is %d",set,count,id); // show last item in set
+			FACT* F = factSet[set][count];
+			unsigned int id = Fact2Index(F);
+			char fact[MAX_WORD_SIZE];
+			WriteFact(F,false,fact,false,false);
+			sprintf(answer,"last value @%d[%d] is %d %s",set,count,id,fact ); // show last item in set
 		}
 		else FreshOutput(word,answer,result,OUTPUT_SILENT,MAX_WORD_SIZE);
 		if (!*answer) 
@@ -610,11 +640,13 @@ char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 			else Log(1,"null \r\n");
 		}
 		else if (logUpdated) Log(STDUSERTABLOG,"=> %s  end-assign\r\n",answer);
+		else if (*originalWord1 == '^') Log(STDUSERTABLOG,"  ... %s %s %s  \r\n",word,op,answer);
 		else Log(1," %s  \r\n",answer);
 		FreeBuffer();
 	}
 
 exit:
+	currentFact = NULL; // any assignment uses up current fact by definition
 	FreeBuffer();
 	ChangeDepth(-1,"PerformAssignment");
 	impliedSet = oldImpliedSet;

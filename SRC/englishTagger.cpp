@@ -526,8 +526,9 @@ static void PerformPosTag(unsigned int start, unsigned int end)
 		if (!*original) continue; // bug?
 		if (tokenControl & ONLY_LOWERCASE && IsUpperCase(*original)) MakeLowerCase(original);
 		
-		// consider proper name merging as an idiom
-		if (capState[i] && tokenControl & STRICT_CASING && i != start && capState[i+1]) // require at least 2 caps in a row at start to be a title 
+/* SHOULD BE CONTROLLABLE AND ONLY UNDER THE PROPER NAME MERGING CODE
+	// consider proper name merging as an idiom
+		if (capState[i] && tokenControl & STRICT_CASING && i != start && i != end && capState[i+1]) // require at least 2 caps in a row at start to be a title 
 		{
 			// merge in
 			--i;
@@ -551,9 +552,11 @@ static void PerformPosTag(unsigned int start, unsigned int end)
 			posValues[i] = allOriginalWordBits[i] = NOUN_PROPER_SINGULAR;
 			WORDP entry = StoreWord(wordStarts[i]);
 			canonicalUpper[i] = originalUpper[i] = entry;
+			canonicalLower[] = originalLower[i] = NULL;
 			canSysFlags[i] = entry->systemFlags;
 			continue;
 		}
+*/
 
 		WORDP entry;
 		WORDP canonical;
@@ -565,11 +568,15 @@ static void PerformPosTag(unsigned int start, unsigned int end)
 		{
 			originalUpper[i] = entry;
 			canonicalUpper[i] = canonical;
+			originalLower[i] = NULL;
+			canonicalLower[i] = NULL;
 		}
 		else
 		{
 			originalLower[i] = entry;
 			canonicalLower[i] = canonical;
+			originalUpper[i] = NULL;
+			canonicalUpper[i] = NULL;
 		}
 		parseFlags[i] = canonical->parseBits;
 		if (flags & POSSESSIVE && *entry->word == '\'') // is this a possessive quotemark or a QUOTE?
@@ -712,7 +719,6 @@ static void PerformPosTag(unsigned int start, unsigned int end)
 		noparse = true;
 		tokenFlags |= FOREIGN_TOKENS;
 	}
-	
 	if (!noparse) SetCanonicalValue(start,end); // dont process with gesture data intruding
 
 	if (trace & TRACE_PREPARE || prepareMode == PREPARE_MODE || prepareMode == POS_MODE) 

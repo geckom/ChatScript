@@ -1119,7 +1119,7 @@ static void C_TestPattern(char* input)
 			return;
 		}
 		ReadNextSystemToken(NULL,NULL,data,false,false); // flush cache
-		ptr = ReadPattern(readBuffer, NULL, pack,false); // swallows the pattern
+		ptr = ReadPattern(readBuffer, NULL, pack,false,false); // swallows the pattern
 	}
 
 	//   var assign?
@@ -4714,7 +4714,6 @@ static void ClearTracedFunction(WORDP D,uint64 junk)
 	if (D->internalBits & MACRO_TRACE) D->internalBits ^= MACRO_TRACE;
 }
 
-
 static void TracedTopic(WORDP D,uint64 junk)
 {
 	if (D->internalBits & TOPIC) 
@@ -5762,7 +5761,7 @@ static void C_Do(char* input)
 	{
 		FunctionResult result;
 		FreshOutput(data,answer,result);
-		Log(STDUSERLOG,"   result: %s  output: %s\r\n",ResultCode(result),answer);
+		if (trace) Log(STDUSERLOG,"   result: %s  output: %s\r\n",ResultCode(result),answer);
 		AddResponse(answer,responseControl);
 	}
 #else
@@ -6290,6 +6289,7 @@ static void C_Trace(char* input)
 		Log(STDUSERLOG," trace set to %d (0x%x)\n",trace,trace);
 		if (trace) ShowTrace(trace,true);
 	}
+	SaveTracedFunctions();
 } 
 
 void C_Why(char* buffer)

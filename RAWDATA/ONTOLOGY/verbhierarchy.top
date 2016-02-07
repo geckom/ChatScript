@@ -17,11 +17,12 @@ concept: ~act (act attempt can commit dedicate devote do intend labor perform re
 concept: ~active_verbs (~AFFECT_OBJECT_VERBS ~ANIMATE_MOVE_VERBS ~BODY_VERBS ~CONTROLLING_VERBS ~HEALTH_VERBS ~POSSESSION_VERBS ~SPECIAL_ACTIVITIES_VERBS )
 concept: ~add_magnetism (magnetise magnetize )
 concept: ~add_smell (aromatise aromatize odorize odourise )
-concept: ~affect_object_verbs (~ALTER_AGE ~ALTER_CHEMISTRY_VERBS ~ALTER_CLEANLINESS_VERBS ~ALTER_COMPLEXITY_VERBS ~ALTER_CONTAINER_VERBS ~ALTER_ELECTRICITY_VERBS ~ALTER_ESTHETICS_VERBS ~ALTER_FUNCTIONALITY_VERBS 
+concept: ~affect_object_verbs (~alter ~ALTER_AGE ~ALTER_CHEMISTRY_VERBS ~ALTER_CLEANLINESS_VERBS ~ALTER_COMPLEXITY_VERBS ~ALTER_CONTAINER_VERBS ~ALTER_ELECTRICITY_VERBS ~ALTER_ESTHETICS_VERBS ~ALTER_FUNCTIONALITY_VERBS 
           ~ALTER_LOCATION_VERBS ~ALTER_MAGNETISM_VERBS ~ALTER_MOISTURE_VERBS ~ALTER_ORIENTATION ~ALTER_QUANTITY_VERBS ~ALTER_RADIATION ~ALTER_SHARPNESS_VERBS ~ALTER_SIZE_VERBS ~ALTER_SMELL_VERBS 
           ~ALTER_STRENGTH_VERBS ~ALTER_TEMPERATURE_VERBS ~ALTER_TIGHTNESS_VERBS ~ATTACHMENT_VERBS ~CREATION_VERBS ~EXTINGUISH ~GENERIC_EFFECT ~SUBSTITUTE abate advance air alter 
           appreciate awake blur climb develop differ ease fade focus footstep fray fuse hatch loop natural process rid rocket shift short-circuit 
           short soar spare sprout staunch steep straighten subside surge taper tire turn vary )
+concept: ~alter (adjust alter  amend renovate revise modify revamp reshape reconstruct recast  change update)
 concept: ~affection (buss canoodle caress cuddle embrace fondle hug kiss nuzzle pet polarize stroke )
 concept: ~alter_age (age mature )
 concept: ~alter_chemistry_verbs (~ALTER_CONCENTRATION_HIGHER ~ALTER_CONCENTRATION_LOWER ~ALTER_PH_HIGHER ~ALTER_PH_LOWER ~RUST denature )
@@ -281,6 +282,7 @@ concept: ~include (admit include invite open welcome )
 concept: ~increase_containment (cram fill inflate load pack stuff )
 concept: ~increase_count (accrete accumulate add aggravate amass amplify append augment double enrich gain grow improve increase multiply proliferate 
           quadruple refill replenish skyrocket swell )
+concept: ~augment (~increase_count insert append attach )
 concept: ~increase_speed (accelerate )
 concept: ~increase_verbs (~INCREASE_COUNT ~INCREASE_SPEED )
 concept: ~ingesting_verbs (~ABSORB ~GENERIC_INGESTION ~INHALE ~SWALLOWING_VERBS )
@@ -485,3 +487,6 @@ concept: ~won (best overcome score vanquish win )
 concept: ~worship (commune meditate pray tithe worship )
 concept: ~writing (annotate author cable chronicle e-mail fax jot netmail parody publish rewrite scrawl scribble script telex touch-type transcribe tweet 
           typewrite type wire write )
+concept: ~comment (comment annotate describe)
+concept: ~ask (ask request )
+concept: ~post (post put place)

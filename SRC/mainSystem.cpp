@@ -1,6 +1,6 @@
 #include "common.h"
 #include "evserver.h"
-char* version = "6.1c";
+char* version = "6.1d";
 
 #define MAX_RETRIES 20
 clock_t startTimeInfo;							// start time of current volley
@@ -22,6 +22,10 @@ char* readBuffer;								// main scratch reading buffer (files, etc)
 bool readingDocument = false;
 bool redo = false; // retry backwards any amount
 bool oobExists = false;
+
+#define MAX_TRACED_FUNCTIONS 50
+static char tracedFunctions[MAX_TRACED_FUNCTIONS][100];
+static unsigned int tracedFunctionsIndex = 0;
 
 unsigned int startSystem;						// time chatscript started
 unsigned int choiceCount = 0;
@@ -365,7 +369,7 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
 	if (userfiles) memcpy((void*)&userFileSystem,userfiles,sizeof(userFileSystem));
 	for (unsigned int i = 0; i <= MAX_WILDCARDS; ++i)
 	{
-		*wildcardOriginalText[i] =  *wildcardCanonicalText[i] = *wildcardConceptText[i] = 0; 
+		*wildcardOriginalText[i] =  *wildcardCanonicalText[i]  = 0; 
 		wildcardPosition[i] = 0;
 	}
 	strcpy(users,"USERS");
@@ -577,6 +581,15 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
  			myexit("build1 complete");
 		}  
 #endif
+#ifndef DISCARDTESTING
+		if (!strnicmp(argv[i],"debug=",6))
+		{
+			char* ptr = SkipWhitespace(argv[i]+6);
+			commandLineCompile = true;
+			if (*ptr == ':') DoCommand(ptr,mainOutputBuffer);
+ 			myexit("test complete");
+		}  
+#endif
 		if (!stricmp(argv[i],"trace")) trace = (unsigned int) -1; // make trace work on login
 	}
 
@@ -622,6 +635,30 @@ void CloseSystem()
 #endif
 }
 
+static void CheckTracedFunction(WORDP D, uint64 junk)
+{
+	if (tracedFunctionsIndex >= MAX_TRACED_FUNCTIONS || !D->word) return;
+	if (*D->word == '^' && D->internalBits & (MACRO_TRACE | FN_NO_TRACE))
+		sprintf(tracedFunctions[tracedFunctionsIndex++],"%s %d",D->word,D->internalBits);
+	else if (*D->word == '~' && D->internalBits & NOTRACE_TOPIC) sprintf(tracedFunctions[tracedFunctionsIndex++],"%s %d",D->word,D->internalBits);
+}
+
+void SaveTracedFunctions()
+{
+	tracedFunctionsIndex = 0;
+	WalkDictionary(CheckTracedFunction,0);
+}
+
+static void RestoreTracedFunctions()
+{
+	for (unsigned int i = 0; i <  tracedFunctionsIndex; ++i)
+	{
+		char word[MAX_WORD_SIZE];
+		char* ptr = ReadCompiledWord(tracedFunctions[i],word);
+		WORDP D = FindWord(word);
+		if (D) D->internalBits = atoi(ptr);
+	}
+}
 
 ////////////////////////////////////////////////////////
 /// INPUT PROCESSING
@@ -1115,6 +1152,8 @@ int PerformChat(char* user, char* usee, char* incoming,char* ip,char* output)
 	inputRetryRejoinderTopic = inputRejoinderTopic;
 	inputRetryRejoinderRuleID = inputRejoinderRuleID;
 	lastInputSubstitution[0] = 0;
+
+	RestoreTracedFunctions();
 
 	unsigned int ok = true;
     if (!*incoming && !hadIncoming)  //   begin a conversation - bot goes first

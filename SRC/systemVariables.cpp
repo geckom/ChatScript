@@ -82,7 +82,7 @@ static char* Sdate(char* value)
  	char* x = GetTimeInfo() + 8;
     ReadCompiledWord(x,systemValue);
     if (regression) return "1";
-    return (systemValue[0] != '0') ? systemValue : (systemValue+1); //   1 or 2 digit date
+    return systemValue; //   1 or 2 digit date
 }
 
 static char* SdayOfWeek(char* value)

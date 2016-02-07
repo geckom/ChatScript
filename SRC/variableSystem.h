@@ -25,7 +25,6 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 extern  unsigned int wildcardIndex;
 extern char wildcardOriginalText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  //   spot wild cards can be stored
 extern char wildcardCanonicalText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  //   spot wild cards can be stored
-extern char wildcardConceptText[MAX_WILDCARDS+1][MAX_USERVAR_SIZE+1];  //   spot wild cards can be stored
 extern unsigned int wildcardPosition[MAX_WILDCARDS+1]; //   spot it started and ended in sentence (16bit end 16bit start)
 extern int impliedSet;
 extern int impliedWild;
@@ -38,8 +37,9 @@ extern char wildcardSeparator[2];
 
 // wildcard accessors
 char* GetwildcardText(unsigned int i, bool canon);
-void SetWildCard(char* value,char* canonicalVale,const char* index,unsigned int position,char* concept = NULL);
-void SetWildCard(unsigned int start, unsigned int end, bool inpattern = false, char* concept = NULL);
+void SetWildCard(char* value,char* canonicalVale,const char* index,unsigned int position);
+void SetWildCard(unsigned int start, unsigned int end, bool inpattern = false);
+void SetWildCardGiven(unsigned int start, unsigned int end, bool inpattern, int index);
 void SetWildCardIndexStart(unsigned int);
 int GetWildcardID(char* x);
 

@@ -799,8 +799,6 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
         if (flags & DETERMINER) pos &= -1 ^ (VERB|CONJUNCTION|PREPOSITION|DETERMINER);  
     }
     posflags &= pos; //   if pos types are known and restricted and dont match
-	unsigned int bestFound = 10000;
-	WORDP bestD = NULL;
 	static int range[] = {0,-1,1};
 	for (unsigned int i = 0; i < 3; ++i)
 	{
@@ -834,12 +832,6 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
 					AddInternalFlag(D,BEEN_HERE);
 				}
 			}
-			else if (val < bestFound && val <= 40 && D->word[0] == originalWord[0]) // its what we would HAVE to consider if we cant find something close
-			{
-				if (trace == TRACE_SPELLING) Log(STDUSERLOG,"    Consider: %s against %s value: %d\r\n",D->word,originalWord,val);
-				bestFound = val;
-				bestD = D;
-			}
 		}
 	}
 	// try endings ing, s, etc
@@ -864,15 +856,7 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
 		}
 	}
 
-    if (!index) 
-	{
-		if (bestD && *bestD->word == *originalWord) 
-		{
-			if (trace == TRACE_SPELLING) Log(STDUSERLOG,"    Best spell: %s\r\n",bestD->word);
-			return bestD->word; // no whole found take CLOSEST! if it starts ok
-		}
-		return NULL; 
-	}
+    if (!index)  return NULL; 
 
 	// take our guesses, and pick the most common (earliest learned or most frequently used) word
     uint64 commonmin = 0;
@@ -895,14 +879,9 @@ char* SpellFix(char* originalWord,unsigned int start,uint64 posflags)
         }
         bestGuess[bestGuessindex++] = choices[j];
     }
-	if (bestGuessindex == 0 && index == 2) 
-	{
-		if (trace == TRACE_SPELLING) Log(STDUSERLOG,"    Pick of 2 spell: %s\r\n",bestD->word);
-		return choices[0]->word;	// pick one, what do we have to lose
-	}
 	if (bestGuessindex) 
 	{
-		if (trace == TRACE_SPELLING) Log(STDUSERLOG,"    Pick spell: %s\r\n",bestD->word);
+		if (trace == TRACE_SPELLING) Log(STDUSERLOG,"    Pick spell: %s\r\n",bestGuess[0]->word);
 		return bestGuess[0]->word; 
 	}
 	return NULL;

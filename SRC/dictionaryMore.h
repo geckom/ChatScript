@@ -218,7 +218,7 @@ extern WORDP Dchild,Dadult;
 extern WORDP Dtopic;
 extern MEANING Mmoney;
 extern MEANING Musd;
-extern MEANING Meur;
+extern MEANING Meur,Minr;
 extern MEANING Mgbp;
 extern MEANING Myen;
 extern MEANING Mcny;

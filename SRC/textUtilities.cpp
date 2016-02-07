@@ -714,7 +714,7 @@ char* GetCurrency(char* ptr,char* &number) // does this point to a currency toke
 		number = ptr+2; 
 		return ptr;
 	}
-	else if (!strnicmp(ptr,"yen",3) || !strnicmp(ptr,"eur",3) || !strnicmp(ptr,"usd",3) || !strnicmp(ptr,"gbp",3) || !strnicmp(ptr,"cny",3)) 
+	else if (!strnicmp(ptr,"yen",3) || !strnicmp(ptr,"eur",3) ||  !strnicmp(ptr,"inr",3) ||!strnicmp(ptr,"usd",3) || !strnicmp(ptr,"gbp",3) || !strnicmp(ptr,"cny",3)) 
 	{
 		number = ptr + 3;
 		return ptr;
@@ -725,7 +725,7 @@ char* GetCurrency(char* ptr,char* &number) // does this point to a currency toke
 		char* at = ptr;
 		while (IsDigit(*at) || *at == '.') ++at; // get end of number
 		if (*at == '$' ||   (*at == 0xe2 && at[1] == 0x82 && at[2] == 0xac)  || *at == 0xc2 || (*at == 0xc3 && at[1] == 0xb1 ) 
-			|| !strnicmp(at,"yen",3) || !strnicmp(at,"eur",3) || !strnicmp(at,"usd",3) || !strnicmp(at,"gbp",3) || !strnicmp(at,"cny",3)) // currency suffix
+			|| !strnicmp(at,"yen",3) || !strnicmp(at,"inr",3) || !strnicmp(at,"eur",3) || !strnicmp(at,"usd",3) || !strnicmp(at,"gbp",3) || !strnicmp(at,"cny",3)) // currency suffix
 		{
 			number = ptr;
 			return at;

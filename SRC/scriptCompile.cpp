@@ -13,6 +13,8 @@ char* lastDeprecation = 0;
 bool compiling = false;			// script compiler in progress
 bool patternContext = false;	// current compiling a pattern
 uint64 buildId; // current build
+char* overrideSystemToken = 0;
+static bool overrriding = false;
 
 #define MAX_WARNINGS 150
 static char warnings[MAX_WARNINGS][MAX_WORD_SIZE];
@@ -123,6 +125,21 @@ static char* FindComparison(char* word)
 	return at;
 }
 
+static void FlipPrivateBuffer(bool status) // full private buffer
+{
+	if (status) 
+	{
+		overrideSystemToken = incomingPtrSys;
+		incomingPtrSys = 0;
+	}
+	else 
+	{
+		incomingPtrSys = 0;
+		overrideSystemToken = 0;
+	}
+	overrriding = status;
+}
+
 char* ReadNextSystemToken(FILE* in,char* ptr, char* word, bool separateUnderscore, bool peek)
 { 
 
@@ -153,13 +170,13 @@ comes from the old buffer. Meanwhile the newbuffer continues to have content for
 	}
 
 	char* result = NULL;
-	if (incomingPtrSys) //  had a prior PEEK, now in cache. use up cached value, unless duplicate peeking
+	if (incomingPtrSys ) //  had a prior PEEK, now in cache. use up cached value, unless duplicate peeking
 	{
 		result = incomingPtrSys; // caller who is peeking will likely ignore this
 		if (!peek)
 		{
 			// he wants reality now...
-			if (*newBuffer) // prior peek was from this buffer, make it real data in real buffer
+			if (*newBuffer && !overrriding) // prior peek was from this buffer, make it real data in real buffer
 			{
 				strcpy(readBuffer,newBuffer);
 				result = (result - newBuffer) + readBuffer; // adjust pointer to current buffer
@@ -181,9 +198,10 @@ comes from the old buffer. Meanwhile the newbuffer continues to have content for
 
 	if (ptr) result = ReadSystemToken(ptr,word,separateUnderscore);
 	bool newline = false;
-	while (!*word) // found no token left in existing buffer
+	while (!*word) // found no token left in existing buffer - we have to juggle buffers now unless running overwrite 
 	{
-		if (!newline && *newBuffer) // use pre-read buffer per normal, it will have a token
+		if (overrriding) break;
+		else if (!newline && *newBuffer) // use pre-read buffer per normal, it will have a token
 		{
 			strcpy(readBuffer,newBuffer);
 			*newBuffer = 0;
@@ -210,14 +228,14 @@ comes from the old buffer. Meanwhile the newbuffer continues to have content for
 				}
 				if (ignoreCount) return NULL;	//EOF before finding closure
 			}
+			result = ReadSystemToken(newBuffer,word,separateUnderscore); // result is ptr into NEWBUFFER
+			newline = true;
 		}
-		result = ReadSystemToken(newBuffer,word,separateUnderscore); // result is ptr into NEWBUFFER
-		newline = true;
 	}
 
 	if (peek) //   save request - newBuffer has implied newline if any
 	{
-		incomingPtrSys = result;  // next location in new buffer
+		incomingPtrSys = result;  // next location in whatever buffer
 		strcpy(lookaheadSys,word); // save next token peeked
 		result = (char*)1;	// NO ONE SHOULD KEEP A PEEKed PTR
 	}
@@ -1356,7 +1374,7 @@ static void ValidateCallArgs(WORDP D,char* arg1, char* arg2,char argset[50][MAX_
 	{
 		unsigned int flags = atoi(argset[9]);
 		if (flags & (USER_FLAG1|USER_FLAG2|USER_FLAG3|USER_FLAG4) && !strstr(arg1,"flag_")) BADSCRIPT("CALL-24 ^query involving USER_FLAG1 must be named xxxflag_")
-		if (!stricmp(arg1,"direct_s"))
+		if (!stricmp(arg1,"direct_s") || !stricmp(arg1,"exact_s"))
 		{
 			if (!*arg2 || *arg2 == '?') BADSCRIPT("CALL-24 Must name subject argument to query")
 			if (*argset[3] && *argset[3] != '?') BADSCRIPT("CALL-25 Cannot name verb argument to query %s - %s",arg1,argset[3])
@@ -1366,7 +1384,7 @@ static void ValidateCallArgs(WORDP D,char* arg1, char* arg2,char argset[50][MAX_
 		}
 		flags = atoi(argset[5]);
 		if (flags & (USER_FLAG1|USER_FLAG2|USER_FLAG3|USER_FLAG4)  && flags < 0x00ffffff) WARNSCRIPT("Did you want a xxxflag_ query with USER_FLAG in 9th position for %s\r\n",arg1)
-		if (!stricmp(arg1,"direct_v"))
+		if (!stricmp(arg1,"direct_v") || !stricmp(arg1,"exact_v"))
 		{
 			if (*arg2 && *arg2 != '?') BADSCRIPT("CALL-29 Cannot name subject argument to query - %s",arg2)
 				if (!*argset[3] || *argset[3] == '?') BADSCRIPT("CALL-30 Must name verb argument to query")
@@ -1375,7 +1393,7 @@ static void ValidateCallArgs(WORDP D,char* arg1, char* arg2,char argset[50][MAX_
 			if (*argset[9] && *argset[9] != '?') 
 				BADSCRIPT("CALL-33 Cannot name match argument to query %s - %s",arg1,argset[9])
 		}
-		if (!stricmp(arg1,"direct_o"))
+		if (!stricmp(arg1,"direct_o") || !stricmp(arg1,"exact_o"))
 		{
 			if (*arg2 && *arg2 != '?') BADSCRIPT("CALL-34 Cannot name subject argument to query -%s",arg2)
 			if (*argset[3] && *argset[3] != '?') BADSCRIPT("CALL-35 Cannot name verb argument to query %s - %s",arg1,argset[3])
@@ -1383,7 +1401,7 @@ static void ValidateCallArgs(WORDP D,char* arg1, char* arg2,char argset[50][MAX_
 			if (*argset[8] && *argset[8] != '?') BADSCRIPT("CALL-37 Cannot name propgation argument to query %s - %s",arg1,argset[8])
 			if (*argset[9] && *argset[9] != '?') BADSCRIPT("CALL-38 Cannot name match argument to query %s - %s",arg1,argset[9])
 		}
-		if (!stricmp(arg1,"direct_sv") )
+		if (!stricmp(arg1,"direct_sv") || !stricmp(arg1,"exact_sv") )
 		{
 			if (!*arg2 || *arg2 == '?') BADSCRIPT("CALL-39 Must name subject argument to query")
 			if (!*argset[3] || *argset[3] == '?') BADSCRIPT("CALL-40 Must name verb argument to query")
@@ -1399,7 +1417,7 @@ static void ValidateCallArgs(WORDP D,char* arg1, char* arg2,char argset[50][MAX_
 			if (*argset[8] && *argset[8] != '?') BADSCRIPT("CALL-47 Cannot name propgation argument to query %s - %s",arg1,argset[8])
 			if (*argset[9] && *argset[9] == '?') BADSCRIPT("CALL-48 Must name match argument to query %s - %s",arg1,argset[9])
 		}
-		if (!stricmp(arg1,"direct_vo"))
+		if (!stricmp(arg1,"direct_vo")|| !stricmp(arg1,"exact_vo"))
 		{
 			if (*arg2 && *arg2 != '?') BADSCRIPT("CALL-49 Cannot name subject argument to query -%s",arg2)
 			if (!*argset[3] || *argset[3] == '?') BADSCRIPT("CALL-50 Must name verb argument to query")
@@ -1407,7 +1425,7 @@ static void ValidateCallArgs(WORDP D,char* arg1, char* arg2,char argset[50][MAX_
 			if (*argset[8] && *argset[8] != '?') BADSCRIPT("CALL-52 Cannot name propgation argument to query %s - %s",arg1,argset[8])
 			if (*argset[9] && *argset[9] != '?') BADSCRIPT("CALL-53 Cannot name match argument to query %s - %s",arg1,argset[9])
 		}
-		if (!stricmp(arg1,"direct_svo"))
+		if (!stricmp(arg1,"direct_svo") || !stricmp(arg1,"exact_svo") )
 		{
 			if (!*arg2 || *arg2 == '?') BADSCRIPT("CALL-54 Must name subject argument to query")
 			if (!*argset[3] || *argset[3] == '?') BADSCRIPT("CALL-55 Must name verb argument to query")
@@ -1786,6 +1804,8 @@ static char* ReadDescribe(char* ptr, FILE* in,uint64 build)
 			ptr -= len; //   let someone else see this starter 
 			break; 
 		}
+		if (*word != '$' && *word != '_' && *word != '^' && *word != '~')
+				BADSCRIPT("Described entity %s is not legal to describe- must be variable or function or concept/topic",word)
 		ptr = ReadNextSystemToken(in,ptr,description,false);
 		char file[MAX_WORD_SIZE];
 		sprintf(file,"TOPIC/describe%s.txt",baseName);
@@ -1797,7 +1817,7 @@ static char* ReadDescribe(char* ptr, FILE* in,uint64 build)
 }
 
 
-char* ReadPattern(char* ptr, FILE* in, char* &data,bool macro)
+char* ReadPattern(char* ptr, FILE* in, char* &data,bool macro, bool ifstatement)
 { //   called from topic or patternmacro
 #ifdef INFORMATION //   meaning of leading characters
 < >	 << >>	sentence start & end boundaries, any 
@@ -1892,7 +1912,10 @@ name of topic  or concept
 			case '_':	//   memorize OR var reference
 				if (quoteSeen && !IsDigit(word[1])) BADSCRIPT("PATTERN-1 Cannot have ' and _ in succession except when quoting a match variable. Need to reverse them")
 				if (memorizeSeen) BADSCRIPT("PATTERN-6 Cannot have two _ in succession")
-				if (!word[1]) BADSCRIPT("PATTERN-7 Must attach _ to next token. If you mean _ match, use escaped _. \r\n %s",ptr)
+				if (!word[1]) // allow separation which will be implied as needed
+				{
+					if (!ifstatement) BADSCRIPT("PATTERN-7 Must attach _ to next token. If you mean _ match, use escaped _. \r\n %s",ptr)
+				}
 				if (IsDigit(word[1])) // match variable
 				{
 					if (GetWildcardID(word) < 0) BADSCRIPT("PATTERN-8 _%d is max match reference - %s",MAX_WILDCARDS-1,word)
@@ -1971,7 +1994,7 @@ name of topic  or concept
 				break;
 			case ')':	//   sequential pattern unit end
 				if (quoteSeen) BADSCRIPT("PATTERN-26 Quoting ) is meaningless.");
-				if (memorizeSeen) BADSCRIPT("PATTERN-27 Cannot use _ before  )")
+				if (memorizeSeen && !ifstatement) BADSCRIPT("PATTERN-27 Cannot use _ before  )")
 				if (variableGapSeen && nestIndex > 1) 
 					BADSCRIPT("PATTERN-26 Cannot have wildcard followed by )")
 				if (nestKind[--nestIndex] != '(') BADSCRIPT("PATTERN-9 ) is not closing corresponding (")
@@ -2242,6 +2265,7 @@ name of topic  or concept
 		if (memorizeSeen) 
 		{
 			*data++ = '_';
+			if (ifstatement) *data++ = ' ';
 			memorizeSeen = false;
 		}
 
@@ -2406,6 +2430,172 @@ static char* ReadChoice(char* word, char* ptr, FILE* in, char* &data,char* rejoi
 	return ptr;
 }
 
+static char* ReadIfTest(char* ptr, FILE* in, char* &data)
+{
+	char word[MAX_WORD_SIZE];
+	int paren = 0;
+	//   read the (
+	ptr = ReadNextSystemToken(in,ptr,word,false); //   the '('
+	MakeLowerCopy(lowercaseForm,word);
+	if (!*word || TopLevelUnit(word) || TopLevelRule(lowercaseForm) || Rejoinder(lowercaseForm)) BADSCRIPT("IF-1 Incomplete IF statement - %s",word)
+	if (*word != '(') BADSCRIPT("IF-2 Missing (for IF test - %s",word)
+	++paren;
+	*data++ = '(';
+	*data++ = ' ';
+	//   test is either a function call OR an equality comparison OR an IN relation OR an existence test
+	//   the followup will be either (or  < > ==  or  IN  or )
+	//   The function call returns a status code, you cant do comparison on it
+	//   but both function and existence can be notted- IF (!$var) or IF (!read(xx))
+	//   You can have multiple tests, separated by AND and OR.
+	pattern: 
+	ptr = ReadNextSystemToken(in,ptr,word,false,false); 
+	if (*word == '~') CheckSetOrTopic(word); 
+	// separate ! from things if not  != and !?
+	if (*word == '!' && word[1] && word[1] != '=' && word[1] != '?') 
+	{
+		while (*--ptr != '!' && *ptr);
+		++ptr;
+		word[1] = 0;
+	}
+	char* equal = strchr(word+1,'='); // actually a test joined on?
+	if (equal)
+	{
+		if (equal[1] == '=' && equal[2]) // break it off
+		{
+			ptr -= strlen(equal);
+			memmove(ptr+3,ptr+2,strlen(ptr+2)+1);
+			ptr[2] = ' ';
+			*equal = 0;
+		}
+		else if ((*(equal-1) == '!' || *(equal-1) == '>' || *(equal-1) == '<') && equal[1]) // break it off
+		{
+			ptr -= strlen(equal-1);
+			memmove(ptr+3,ptr+2,strlen(ptr+2)+1);
+			ptr[2] = ' ';
+			*(equal-1) = 0;
+		}
+	}
+	char* question = strchr(word+1,'?');
+	if (question && word[1])
+	{
+		ptr -= strlen(question);
+		memmove(ptr+1,ptr,strlen(ptr) + 1);
+		*ptr = ' ';
+		*question = 0;
+	}
+
+	bool notted = false;
+	if (*word == '!' && !word[1]) 
+	{
+		notted = true;
+		*data++ = '!';
+		*data++ = ' ';
+		ptr = ReadNextSystemToken(in,ptr,word,false,false); 
+	}
+	if (*word == '\'' && !word[1]) 
+	{
+		*data++ = '\'';
+		ptr = ReadNextSystemToken(in,ptr,word,false,false); 
+		if (*word != '_') BADSCRIPT("IF-3 Can only quote _matchvar in IF test")
+	}
+	if (*word == '!') BADSCRIPT("IF-4 Cannot do two ! in a row")
+	ReadNextSystemToken(in,ptr,nextToken,false,true); 
+	MakeLowerCase(nextToken);
+	
+	if (*nextToken != '(' && *word == '^' && word[1] != '"' && IsAlphaUTF8(word[1])) BADSCRIPT("%s is not the name of a local function argument",word)
+	if (*nextToken == '(')  // function call?
+	{
+		if (*word != '^') //     a call w/o its ^
+		{
+			char rename[MAX_WORD_SIZE];
+			*rename = '^';
+			strcpy(rename+1,word);	//   in case user omitted the ^
+			strcpy(word,rename);
+		}
+		ptr = ReadCall(word,ptr,in,data,true);  //   read call
+		ReadNextSystemToken(in,ptr,nextToken,false,true); 
+		if (RelationToken(nextToken))
+		{
+			if (notted) BADSCRIPT("IF-5 cannot do ! in front of comparison %s",nextToken)
+			*data++ = ' ';
+			ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow operator
+			strcpy(data,word);
+			data += strlen(word);
+			*data++ = ' ';
+			ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow value
+			strcpy(data,word);
+			data += strlen(word);
+		}
+	}
+	else if (*nextToken == '!' && nextToken[1] == '?')
+	{
+		if (notted) BADSCRIPT("IF-6 cannot do ! in front of query %s",nextToken)
+		if (*word == '\'' && word[1] == '_') {;}
+		else if (*word != '@' &&*word != '$' && *word != '_' && *word != '^' && *word != '%') 
+			BADSCRIPT("IF test query must be with $var, _# or '_#, %sysvar, @1subject or ^fnarg -%s",word)
+		strcpy(data,word);
+		data += strlen(word);
+		*data++ = ' ';
+		ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow operator
+		strcpy(data,word);
+		data += strlen(word);
+		*data++ = ' ';
+		ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow value
+		if (*word == '^' && !IsDigit(word[1]))  BADSCRIPT("IF-7 not allowed 2nd function call in relation - %s",word)
+		if (*word == '~') CheckSetOrTopic(word); 
+		strcpy(data,word);
+		data += strlen(word);
+	}
+	else if (RelationToken(nextToken))
+	{
+		if (notted && *nextToken != '?') BADSCRIPT("IF-8 cannot do ! in front of comparison %s",nextToken)
+		if (*word == '\'' && (word[1] == '$' || word[1] == '_')) {;} // quoted variable
+		else if (*word != '@' && *word != '$' && *word != '_' && *word != '^' && *word != '%' && !IsAlphaUTF8(*word)  && !IsDigit(*word) && *word != '+' && *word != '-') 
+			BADSCRIPT("IF test comparison 1st value must be number, word, $var, _#, sysvar, @1subject or ^fnarg -%s",word)
+		strcpy(data,word);
+		data += strlen(word);
+		*data++ = ' ';
+		ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow operator
+		strcpy(data,word);
+		data += strlen(word);
+		*data++ = ' ';
+		ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow value
+		if (*word == '~') CheckSetOrTopic(word);
+		if (*word == '^' && !IsDigit(word[1])) BADSCRIPT("IF-9 not allowed function call in relation as 2nd arg - %s",word)
+		strcpy(data,word);
+		data += strlen(word);
+	}
+	else if (*nextToken == ')' || !stricmp(nextToken,"and") || !stricmp(nextToken,"or")) //   existence test
+	{
+		if (*word != '$' && *word != '_' && *word != '@' && *word != '^'  && *word != '%' && *word != '?' ) 
+			BADSCRIPT("IF-10 existence test - %s. Must be uservar or systemvar or _#  or ? or @# or ~concept or ^^var ",word)
+		strcpy(data,word);
+		data += strlen(word);
+	}
+	else BADSCRIPT("IF-11 illegal test %s %s . Use (X > Y) or (Foo()) or (X IN Y) or ($var) or (_3)",word,nextToken) 
+	*data++ = ' ';
+	
+	//   check for close or more conditions
+	ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   )
+	if (*word == '~') CheckSetOrTopic(word); 
+	if (*word == ')')
+	{
+		*data++ = ')';
+		*data++ = ' ';
+	}
+	else if (!stricmp(word,"or") || !stricmp(word,"and"))
+	{
+		MakeLowerCopy(data,word);
+		data += strlen(word);
+		*data++ = ' ';
+		goto pattern;	//   handle next element
+	}
+	else BADSCRIPT("IF-12 comparison must close with ) -%s .. Did you make a function call as 1st argument? that's illegal",word)
+	*data = 0;
+	return ptr;
+}
+
+
 static char* ReadBody(char* word, char* ptr, FILE* in, char* &data,char* rejoinders)
 {	//    stored data starts with the {
 	char* body = AllocateBuffer();
@@ -2446,186 +2636,46 @@ static char* ReadIf(char* word, char* ptr, FILE* in, char* &data,char* rejoinder
 	patternContext = false;
 	while (ALWAYS)
 	{
-		char* endptr = NULL;
-
-/*
-		char* olddata = data;
+		// stack up the test info to handle either as pattern or as if
 		char patternInfo[4000];
-		data= patternInfo;
-		endptr = ReadPattern(ptr,in,data,false); //   read ( for real in the paren for pattern
-		*data = 0;
-		ReadNextSystemToken(NULL,NULL,word,false);
-		data = olddata;
+		char token[MAX_WORD_SIZE];
+		char* at = patternInfo;
+		int level = 0;
+		char* endptr = ptr;
+		while (1)
+		{
+			endptr = ReadNextSystemToken(in,endptr,token,false);
+			strcpy(at,token);
+			at += strlen(at);
+			*at++ = ' ';
+			if (*token == '(') ++level;
+			else if (*token == ')')
+			{
+				--level;
+				if (level == 0) break;
+			}
+		}
+		*at = 0;
 		ptr = patternInfo;
-*/
-		//   read the (
-		ptr = ReadNextSystemToken(in,ptr,word,false); //   the '('
-		MakeLowerCopy(lowercaseForm,word);
-		if (!*word || TopLevelUnit(word) || TopLevelRule(lowercaseForm) || Rejoinder(lowercaseForm)) BADSCRIPT("IF-1 Incomplete IF statement - %s",word)
-		if (*word != '(') BADSCRIPT("IF-2 Missing (for IF test - %s",word)
-		++paren;
-		*data++ = '(';
+		FlipPrivateBuffer(true); 
+		char* testbase = data;
+		*data++ = 'a'; //   reserve space for offset past pattern
+		*data++ = 'a'; // next will be (
 		*data++ = ' ';
-		//   test is either a function call OR an equality comparison OR an IN relation OR an existence test
-		//   the followup will be either (or  < > ==  or  IN  or )
-		//   The function call returns a status code, you cant do comparison on it
-		//   but both function and existence can be notted- IF (!$var) or IF (!read(xx))
-		//   You can have multiple tests, separated by AND and OR.
 
-pattern: 
-		ptr = ReadNextSystemToken(in,ptr,word,false,false); 
-		if (*word == '~') CheckSetOrTopic(word); 
-
-		// separate ! from things if not  != and !?
-		if (*word == '!' && word[1] && word[1] != '=' && word[1] != '?') 
+		if (!strnicmp(patternInfo,"( pattern ",10))
 		{
-			while (*--ptr != '!' && *ptr);
-			++ptr;
-			word[1] = 0;
+			patternContext = true;
+			ptr = ReadPattern(ptr,in,data,false,true); //   read ( for real in the paren for pattern
+			patternContext = false;
 		}
-
-		char* equal = strchr(word+1,'='); // actually a test joined on?
-		if (equal)
-		{
-			if (equal[1] == '=' && equal[2]) // break it off
-			{
-				ptr -= strlen(equal);
-				memmove(ptr+3,ptr+2,strlen(ptr+2)+1);
-				ptr[2] = ' ';
-				*equal = 0;
-			}
-			else if ((*(equal-1) == '!' || *(equal-1) == '>' || *(equal-1) == '<') && equal[1]) // break it off
-			{
-				ptr -= strlen(equal-1);
-				memmove(ptr+3,ptr+2,strlen(ptr+2)+1);
-				ptr[2] = ' ';
-				*(equal-1) = 0;
-			}
-		}
-		char* question = strchr(word+1,'?');
-		if (question && word[1])
-		{
-			ptr -= strlen(question);
-			memmove(ptr+1,ptr,strlen(ptr) + 1);
-			*ptr = ' ';
-			*question = 0;
-		}
-
-		bool notted = false;
-		if (*word == '!' && !word[1]) 
-		{
-			notted = true;
-			*data++ = '!';
-			*data++ = ' ';
-			ptr = ReadNextSystemToken(in,ptr,word,false,false); 
-		}
-		if (*word == '\'' && !word[1]) 
-		{
-			*data++ = '\'';
-			ptr = ReadNextSystemToken(in,ptr,word,false,false); 
-			if (*word != '_') BADSCRIPT("IF-3 Can only quote _matchvar in IF test")
-		}
-		if (*word == '!') BADSCRIPT("IF-4 Cannot do two ! in a row")
-		ReadNextSystemToken(in,ptr,nextToken,false,true); 
-		MakeLowerCase(nextToken);
-		
-		if (*nextToken != '(' && *word == '^' && word[1] != '"' && IsAlphaUTF8(word[1])) BADSCRIPT("%s is not the name of a local function argument",word)
-
-		if (*nextToken == '(')  // function call?
-		{
-			if (*word != '^') //     a call w/o its ^
-			{
-				char rename[MAX_WORD_SIZE];
-				*rename = '^';
-				strcpy(rename+1,word);	//   in case user omitted the ^
-				strcpy(word,rename);
-			}
-			ptr = ReadCall(word,ptr,in,data,true);  //   read call
-			ReadNextSystemToken(in,ptr,nextToken,false,true); 
-
-			if (RelationToken(nextToken))
-			{
-				if (notted) BADSCRIPT("IF-5 cannot do ! in front of comparison %s",nextToken)
-				*data++ = ' ';
-				ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow operator
-				strcpy(data,word);
-				data += strlen(word);
-				*data++ = ' ';
-				ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow value
-				strcpy(data,word);
-				data += strlen(word);
-			}
-		}
-		else if (*nextToken == '!' && nextToken[1] == '?')
-		{
-			if (notted) BADSCRIPT("IF-6 cannot do ! in front of query %s",nextToken)
-			if (*word == '\'' && word[1] == '_') {;}
-			else if (*word != '@' &&*word != '$' && *word != '_' && *word != '^' && *word != '%') 
-				BADSCRIPT("IF test query must be with $var, _# or '_#, %sysvar, @1subject or ^fnarg -%s",word)
-			strcpy(data,word);
-			data += strlen(word);
-			*data++ = ' ';
-			ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow operator
-			strcpy(data,word);
-			data += strlen(word);
-			*data++ = ' ';
-			ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow value
-			if (*word == '^' && !IsDigit(word[1]))  BADSCRIPT("IF-7 not allowed 2nd function call in relation - %s",word)
-			if (*word == '~') CheckSetOrTopic(word); 
-			strcpy(data,word);
-			data += strlen(word);
-		}
-		else if (RelationToken(nextToken))
-		{
-			if (notted && *nextToken != '?') BADSCRIPT("IF-8 cannot do ! in front of comparison %s",nextToken)
-			if (*word == '\'' && (word[1] == '$' || word[1] == '_')) {;} // quoted variable
-			else if (*word != '@' && *word != '$' && *word != '_' && *word != '^' && *word != '%' && !IsAlphaUTF8(*word)  && !IsDigit(*word) && *word != '+' && *word != '-') 
-				BADSCRIPT("IF test comparison 1st value must be number, word, $var, _#, sysvar, @1subject or ^fnarg -%s",word)
-			strcpy(data,word);
-			data += strlen(word);
-			*data++ = ' ';
-			ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow operator
-			strcpy(data,word);
-			data += strlen(word);
-			*data++ = ' ';
-			ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   swallow value
-			if (*word == '~') CheckSetOrTopic(word);
-			if (*word == '^' && !IsDigit(word[1])) BADSCRIPT("IF-9 not allowed function call in relation as 2nd arg - %s",word)
-			strcpy(data,word);
-			data += strlen(word);
-		}
-		else if (*nextToken == ')' || !stricmp(nextToken,"and") || !stricmp(nextToken,"or")) //   existence test
-		{
-			if (*word != '$' && *word != '_' && *word != '@' && *word != '^'  && *word != '%' && *word != '?' ) 
-				BADSCRIPT("IF-10 existence test - %s. Must be uservar or systemvar or _#  or ? or @# or ~concept or ^^var ",word)
-			strcpy(data,word);
-			data += strlen(word);
-		}
-		else BADSCRIPT("IF-11 illegal test %s %s . Use (X > Y) or (Foo()) or (X IN Y) or ($var) or (_3)",word,nextToken) 
-		*data++ = ' ';
-		
-		//   check for close or more conditions
-		ptr =  ReadNextSystemToken(in,ptr,word,false,false); //   )
-		if (*word == '~') CheckSetOrTopic(word); 
-		if (*word == ')')
-		{
-			*data++ = ')';
-			*data++ = ' ';
-		}
-		else if (!stricmp(word,"or") || !stricmp(word,"and"))
-		{
-			MakeLowerCopy(data,word);
-			data += strlen(word);
-			*data++ = ' ';
-			goto pattern;	//   handle next element
-		}
-		else BADSCRIPT("IF-12 comparison must close with ) -%s .. Did you make a function call as 1st argument? that's illegal",word)
-		*data = 0;
-
-
+		else 
+			ptr = ReadIfTest(ptr, in, data); // starts by reading the ( and ends having read )
+		Encode((unsigned int)(data-testbase),testbase);	// offset to after pattern
+	
 		// now done reading test, go onto body.
-
-		if (endptr) ptr = endptr; // resume from normal reading
+		ptr = endptr; // resume from normal reading of if test
+		FlipPrivateBuffer(false); 
 
 		char* ifbase = data;
 		*data++ = 'a'; //   reserve space for offset after the closing ), which is how far to go past body
@@ -3022,7 +3072,7 @@ Then one of 3 kinds of character:
 
 			if (*word == '(') //   found pattern, no label
 			{
-				ptr = ReadPattern(ptr-1,in,data,false); //   back up and pass in the paren for pattern
+				ptr = ReadPattern(ptr-1,in,data,false,false); //   back up and pass in the paren for pattern
 				patternDone = true;
 				*word = 0;
 				break;
@@ -3053,7 +3103,7 @@ Then one of 3 kinds of character:
 					data += len;
 					*data++ = ' ';
 					ReadNextSystemToken(NULL,NULL,NULL); // drop lookahead token
-					ptr = ReadPattern(ptr,in,data,false); //   read ( for real in the paren for pattern
+					ptr = ReadPattern(ptr,in,data,false,false); //   read ( for real in the paren for pattern
 					patternDone = true;
 					*word = 0;
 				}
@@ -3226,7 +3276,7 @@ static char* ReadMacro(char* ptr,FILE* in,char* kind,uint64 build)
 	*pack++ = (unsigned char)(functionArgumentCount + 'A'); // some 30 can be had
 	
 	currentFunctionDefinition = D;
-	ptr = ((typeFlags & FUNCTION_BITS) == IS_PATTERN_MACRO) ? ReadPattern(ptr,in,pack,true) : ReadOutput(ptr,in,pack,NULL); 
+	ptr = ((typeFlags & FUNCTION_BITS) == IS_PATTERN_MACRO) ? ReadPattern(ptr,in,pack,true,false) : ReadOutput(ptr,in,pack,NULL); 
 	*pack = 0;
 
 	//   record that it is a macro, with appropriate validation information
@@ -4563,6 +4613,7 @@ static void EmptyVerify(char* name, uint64 junk)
 
 void ReadTopicFiles(char* name,uint64 build,int spell)
 {
+	overrriding = false;
 	if (build == BUILD2) // for dynamic segment, we are allowed full names
 	{
 		strcpy(baseName,name+5);
@@ -4766,7 +4817,7 @@ char* CompileString(char* ptr) // incoming is:  ^"xxx"
 	*pack++ = FUNCTIONSTRING;
 	*pack++ = ':'; // a internal marker that is has in fact been compiled - otherwise it is a format string whose spaces count but cant fully execute
 
-	if (tmp[2] == '(') ReadPattern(tmp+2,NULL,pack,false); // incoming is:  ^"(xxx"
+	if (tmp[2] == '(')  ReadPattern(tmp+2,NULL,pack,false,false); // incoming is:  ^"(xxx"
 	else ReadOutput(tmp+2,NULL,pack,NULL);
 
 	TrimSpaces(data,false);

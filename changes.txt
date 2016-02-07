@@ -1,3 +1,10 @@
+version 6.1d
+1. new command line parameter debug=   allows you to execute a :debug command on bootup and then exit.
+eg. "debug=:trim USERS 4"
+2. IF tests can now be made of a std rule pattern (including memorization etc) using form
+if (pattern ....)   {}  which means you can match input and even memorize during the if test
+
+
 Version 6.1c 
 1. ^sequence added, similar to refine, except instead of only executing one rule, executes all matching rules.
 2. Added :common word1 word2 to tell you the concepts they both particpate in, closest first.

@@ -9,6 +9,7 @@ bool serverRetryOK = false;
 bool stopUserWrite = false;
 
 static char* backupMessages = NULL;
+static char* outdata; // global xfer for writetracedfunctions
 
 //   replies we have tried already
 char chatbotSaid[MAX_USED+1][SAID_LIMIT+3];  //   tracks last n messages sent to user

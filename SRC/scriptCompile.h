@@ -38,7 +38,7 @@ char* ReadDisplayOutput(char* ptr,char* buffer);
 #ifndef DISCARDSCRIPTCOMPILER
 
 void ReadTopicFiles(char* name,uint64 build, int spell);
-char* ReadPattern(char* ptr, FILE* in, char* &data,bool macro);
+char* ReadPattern(char* ptr, FILE* in, char* &data,bool macro,bool ifstatement);
 char* ReadOutput(char* ptr, FILE* in,char* &data,char* rejoinders,char* existingRead = NULL,WORDP call = NULL);
 char* CompileString(char* ptr);
 void ScriptWarn();

@@ -383,10 +383,6 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 		result = UNDEFINED_FUNCTION;
 		return ptr; 
 	}
-	if (!stricmp(name,"^show_failed_response"))
-	{
-		int xx = 0;
-	}
 	result = NOPROBLEM_BIT;
 	ptr = SkipWhitespace(ptr);
 	if (*ptr != '(') // should have been
@@ -2019,13 +2015,18 @@ static FunctionResult MarkCode(char* buffer)
 			ReadCommandArg(word2,word1,result,0,MAX_WORD_SIZE);
 		}
 	}
-	else if (IsDigit(*ptr) || *ptr == '_') ptr = ReadCompiledWord(ptr,word1);  // the locator, leave it unevaled as number or match var
+	if (IsDigit(*ptr) || *ptr == '_') ptr = ReadCompiledWord(ptr,word1);  // the locator, leave it unevaled as number or match var
 	else ptr = ReadShortCommandArg(ptr,word1,result); // evaluate the locator as a number presumably
 	
 	unsigned startPosition;
 	unsigned endPosition;
 	if (!*word1 || *word1 == ')') startPosition = endPosition = 1; // default mark  (ran out or hit end paren of call
-	else if (IsDigit(*word1)) endPosition = startPosition = atoi(word1); // named number as index
+	else if (IsDigit(*word1)) 
+	{
+		int val = atoi(word1);
+		startPosition = val & 0x0000ffff;
+		endPosition = val >> 16;
+	}
 	else if (*word1 == '_') //  wildcard position designator
 	{
 		startPosition = wildcardPosition[GetWildcardID(word1)] & 0x0000ffff; // the match location
@@ -2294,6 +2295,8 @@ static FunctionResult UnmarkCode(char* buffer)
 	ptr = ReadCompiledWord(ptr,word1);  // the _data
 	unsigned int startPosition = wordCount;
 	unsigned int endPosition = 1;
+	if (*word1 == '^' && IsDigit(word1[1])) strcpy(word1,callArgumentList[atoi(word1+1)+fnVarBase]);
+
 	if (!*word1) 
 	{
 		if (*word == '*') // unmark(*)
@@ -2303,7 +2306,12 @@ static FunctionResult UnmarkCode(char* buffer)
 		}
 		else startPosition = endPosition = 1;
 	}
-	else if (IsDigit(*word1)) startPosition = endPosition = atoi(word1);
+	else if (IsDigit(*word1)) 
+	{
+		int val = atoi(word1);
+		startPosition = val & 0x0000ffff;
+		endPosition = val >> 16;
+	}
 	else if (*word1 == '_') 
 	{
 		startPosition = WILDCARD_START(wildcardPosition[GetWildcardID(word1)]); // the match location
@@ -3206,7 +3214,7 @@ FunctionResult MatchCode(char* buffer)
 		}
 		char junk[MAX_WORD_SIZE];
 		ReadNextSystemToken(NULL,NULL,junk,false,false); // flush cache
-		ReadPattern(ptr, NULL, at,false); // compile the pattern
+		ReadPattern(ptr, NULL, at,false,false); // compile the pattern
 		strcat(at," )");
 		--jumpIndex;
 	#endif
@@ -3914,7 +3922,7 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 
 	//   get string to search for. If quoted, remove the quotes
 	char* scan = ARGUMENT(2);	//   how to burst
-	char* scan1 = NULL;
+	char* scan1 = scan;
 
 	if (!*scan) 
 	{
@@ -3995,15 +4003,25 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 			currentFact = NULL;
 			return NOPROBLEM_BIT;
 		}
+		scan1 = scan;
 	}
 
 	//   loop that splits into pieces and stores them
+	if (!scan[1]) // strip off leading and trailing separators, must occur BETWEEN tokens
+	{
+		while (*ptr == *scan) ++ptr; 
+		while (*ptr == *scan1) ++ptr; 
+		char* end = ptr + strlen(ptr) - 1;
+		while (*end == *scan) *end-- = 0;
+		while (*end == *scan1) *end-- = 0;
+	}
 
 	char* hold = strstr(ptr,scan);
 	char* hold1 = (scan1) ? strstr(ptr,scan1) : NULL;
 	if (!hold) hold = hold1; // only has second
 	if (hold1 && hold1 < hold) hold = hold1; // sooner
 	size_t scanlen = strlen(scan);
+
 	if (impliedSet != ALREADY_HANDLED) SET_FACTSET_COUNT(impliedSet,0);
 	while (hold)
 	{
@@ -4030,10 +4048,16 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 		}
 
 		ptr = hold + scanlen; //   ptr after scan marker
-		hold = strstr(ptr,scan);
-		hold1 = (scan1) ? strstr(ptr,scan1) : NULL;
-		if (!hold) hold = hold1; // only has second
-		if (hold1 && hold1 < hold) hold = hold1; // sooner
+		while (*ptr)
+		{
+			hold = strstr(ptr,scan);
+			hold1 = (scan1) ? strstr(ptr,scan1) : NULL;
+			if (!hold) hold = hold1; // only has second
+			if (hold1 && hold1 < hold) hold = hold1; // sooner
+			if (hold == ptr && !scan[1]) ++ptr;// there is an excess of single splits here
+			else break;
+		}
+
 		if (once) break;
 	}
 
@@ -4044,7 +4068,6 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 		sprintf(result,"%d",counter);
 		ptr = result;
 	}
-	if (trace) Log(STDUSERLOG,"burst: %s ",ptr);
 	if (impliedWild != ALREADY_HANDLED)  
 	{
 		SetWildCard(ptr,ptr,0,0);
@@ -4055,6 +4078,8 @@ static FunctionResult BurstCode(char* buffer) //   take value and break into fac
 		if (*ptr) AddFact(impliedSet,CreateFact(MakeMeaning(StoreWord(ptr)), verb,object,FACTTRANSIENT|FACTDUPLICATE));
 	}
 	else if (!*buffer) strcpy(buffer,ptr);
+
+	if (trace) Log(STDUSERLOG,"%d: %s ",counter,ptr);
 	impliedSet = impliedWild = ALREADY_HANDLED;	//   we did the assignment
 	currentFact = NULL; // should not advertise any created facts
 	return NOPROBLEM_BIT;
@@ -7133,17 +7158,18 @@ static int JSONArgs()
 	bool used = false;
 	jsonPermanent = FACTTRANSIENT; // default
 	char* arg1 = ARGUMENT(1);
-	if (strstr(arg1,"permanent"))  
+	char word[MAX_WORD_SIZE];
+	while (*arg1)
 	{
-		jsonPermanent = 0;
-		used = true;
+		arg1 = ReadCompiledWord(arg1,word);
+		if (!stricmp(word,"permanent"))  
+		{
+			jsonPermanent = 0;
+			used = true;
+		}
+		else if (!stricmp(word,"transient"))  used = true;
+		else if (!stricmp(word,"unique")) used = true;
 	}
-	else if (strstr(arg1,"transient"))  
-	{
-		jsonPermanent = FACTTRANSIENT;
-		used = true;
-	}
-	if (strstr(arg1,"unique")) used = true;
 	if (used) ++index;
 	return index;
 }

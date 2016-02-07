@@ -874,7 +874,6 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 						{
 							strcpy(wildcardOriginalText[wildcardIndex-1],D->word);
 							strcpy(wildcardCanonicalText[wildcardIndex-1],D->word);
-							*wildcardConceptText[wildcardIndex-1] = 0;
 						}
 						else
 						{
@@ -887,7 +886,6 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 							{
 								strcpy(wildcardOriginalText[wildcardIndex-1],D->word);
 								strcpy(wildcardCanonicalText[wildcardIndex-1],D->word);
-								*wildcardConceptText[wildcardIndex-1] = 0;
 							}
 						}
 						uppercasematch = false;
@@ -1003,6 +1001,16 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 				else if (*word == '$' && matched) 
 				{
 					Log(STDUSERLOG,"(%s)",GetUserVariable(word));
+				}
+				else if (*word == '*' && matched && positionStart > 0 && positionStart <= wordCount && positionEnd <= wordCount) 
+				{
+					*word = 0;
+					for (int i = positionStart; i <= positionEnd; ++i) 
+					{
+						if (*word) strcat(word," ");
+						strcat(word,wordStarts[i]);
+					}
+					Log(STDUSERLOG,"(%s)",word);
 				}
 
 				Log(STDUSERLOG,(success) ? "+ " : "- ");

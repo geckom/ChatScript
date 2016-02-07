@@ -28,7 +28,8 @@
 #		s/v/o/p/m/~set/'word  = use a specific argument field: subject/verb/object/progogate/match/factset,named ~set,named word 
 #		S/V/O choice is a fact id
 #			The above is automatically taged using the current tag and is followed by 
-#				q  = queue items (sets will follow to all members recursively)
+#				q  = queue items (sets will follow to all members recursively and wordnet will look at synonyms)
+#				Q  = queue this exact item only
 #				t  = tag(no queue) items
 #				e  = expand tag(no queue) propogate down any set argument
 #				< and >  = tagpropogation on nouns from base. < means propogate up (from left subject to object). > means propogate down (from right object to subject) - Warning: down propogation might be large
@@ -70,7 +71,56 @@
 #   s/o  =  2nd reference to one of this is given riccochet value, should be it as subject or object of the fact. 
 #	S/V/O	= test riccochet fact for corresponding label immediately followed by id 0-9 of test value
 
+##########
+# simple exact match queries - just queues up the word, no synonyms. Fast.
+##########
 
+# find facts given a subject 
+QUERY: exact_s		"1sQ: queue s"							# (dog ? ?)
+# 1. tag subject with 1 and queue that word only
+# 2. walk thru q, looking at facts were q item is subject
+# 3. there are no constraints to match, so all facts are accepted
+
+# find facts given a verb
+QUERY: exact_v		"1vQ: queue v"							# (? love ?)
+# 1. tag verb with 1 and queue that word
+# 2. walk thru q, looking at facts were q item is verb
+# 3. there are no constraints to match, so all facts are accepted
+
+# find facts given an object
+QUERY: exact_o		"1oQ: queue o"							# (? ? cat)
+# 1. tag object with 1 and queue that word
+# 2. walk thru q, looking at facts were q item is object
+# 3. there are no constraints to match, so all facts are accepted
+
+# find facts given subject and verb
+QUERY: exact_sv	"1sQ 2vt: queue s: match v2"			# (dog love ?)
+# 1. tag subject with 1 and queue  that word
+# 2. mark verb with 2 (no queuing)
+# 3. walk thru q, looking at facts where q item is subject
+# 4. accept facts where verb is marked with 2
+
+# find facts given verb and object
+QUERY: exact_vo	"1oQ 2vt: queue o: match v2"			# (? love cat)
+# 1. tag object with 1 and queue exact word
+# 2. mark verb with 2 (no queuing)
+# 3. walk thru q, looking at facts where q item is object
+# 4. accept facts where verb is marked with 2
+
+# find facts given subject and object
+QUERY: exact_so	"1sQ 2ot: queue s: match o2"			# (dog ? cat)
+# 1. tag subject with 1 and queue exactly
+# 2. mark object with 2 (no queuing)
+# 3. walk thru q, looking at facts where q item is subject
+# 4. accept facts where object is marked with 2
+
+# find facts given subject verb and object
+QUERY: exact_svo	"1oQ 2vt 3st: queue o: match v2 s3"	# (dog love cat)
+# 1. tag object with 1 and queue exact
+# 2. mark verb with 2 (no queuing)
+# 3. mark subject with 3 (no queuing)
+# 4. walk thru q, looking at facts where q item is object
+# 5. accept facts where verb is marked with 2 and subject is marked with 3
 
 ##########
 # simple direct match queries

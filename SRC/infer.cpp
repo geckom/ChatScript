@@ -352,6 +352,21 @@ static bool AddWord2Scan(int flags,MEANING M,MEANING from,int depth,unsigned int
 	return true;
 }
 
+static bool AddWordOnly(int flags,char* word,unsigned int type) // mark (and maybe queue) this word 
+{
+    if (queueIndex >= MAX_QUEUE || !*word) return false; 
+
+	// mark word or abandon marking
+    WORDP D = StoreWord(word,AS_IS);
+	if (D->inferMark == saveMark) return false; // marked with a current mark
+	D->inferMark = saveMark; 
+	if (flags & QUEUE) queue[queueIndex++] = MakeMeaning(D);
+
+	if (trace & TRACE_QUERY && CheckTopicTrace())  Log(STDUSERLOG,(flags & QUEUE) ? " %s+" : " %s. ",D->word);
+
+	return true;
+}
+
 static void AddWordOrSet2Scan(unsigned int how, char* word,int depth)
 {
 	++depth;
@@ -534,6 +549,7 @@ static bool ConceptPropogateTest(MEANING M,unsigned int mark,unsigned int depth)
 
 unsigned int Query(char* kind, char* subjectword, char* verbword, char* objectword, unsigned int count, char* fromset, char* toset, char* propogate, char* match)
 {
+
 	if (trace & TRACE_QUERY && CheckTopicTrace()) Log(STDUSERTABLOG,"QUERY: %s ",kind);
 	WORDP C = FindWord(kind,0);
 	if (!C || !(C->internalBits & QUERY_KIND)) 
@@ -626,7 +642,8 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 #		s/v/o/p/m/~set/tick-word  = use subject/verb/object/progogate/match/factset argument as item to process or use named set or given word 
 #	    S/V/O  choice is a fact id
 #			This is automatically marked using the current mark and is followed by 
-#				q  = queue items (sets will follow to all members recursively)
+#				q  = queue items (sets will follow to all members recursively and wordnet identities will propogate up)
+#				Q  = queue this exact word only
 #				t  = tag (no queue) items
 #				e  = expandtag (no queue) (any set gets all things below it tagged)
 #				h  = tag propogation from base (such propogation might be large)
@@ -837,6 +854,16 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 				}
 				qMark = saveMark;	//   if we q more later, use this mark by default
 				if (*choice) AddWordOrSet2Scan(QUEUE|flags,choice,0); //   mark and queue items
+			}
+			else if (*control == 'Q') 
+			{
+				if (trace & TRACE_QUERY  && CheckTopicTrace()) 
+				{
+					Log(STDUSERLOG,"\r\n");
+					Log(STDUSERTABLOG,"Tag+QueueWord: %s ",buf);
+				}
+				qMark = saveMark;	//   if we q more later, use this mark by default
+				if (*choice) AddWordOnly(QUEUE|flags,choice,0); //   mark and queue item
 			}
 			else  if (*control == 't') 
 			{
