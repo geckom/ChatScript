@@ -10001,7 +10001,7 @@
  DoT ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     Transportation~1n 
  Department_of_Veterans_Affairs ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
-    Department_of_Veterans_Affairs~1nz (^executive_department~1) the United States federal department responsible for the interests of military veterans
+    VA~1nz (^executive_department~1) the United States federal department responsible for the interests of military veterans
  Department_of_Commerce_and_Labor ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
     Department_of_Commerce_and_Labor~1nz (^executive_department~1) a former executive department of the United States government
  Department_of_Health_Education_and_Welfare ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 

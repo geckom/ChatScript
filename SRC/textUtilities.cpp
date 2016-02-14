@@ -762,7 +762,7 @@ bool IsDigitWithNumberSuffix(char* number)
 	return num;
 }
 
-bool IsDigitWord(char* ptr) // digitized number
+bool IsDigitWord(char* ptr,bool comma) // digitized number
 {
     //   signing, # marker or currency markers are still numbers
     if (IsNonDigitNumberStarter(*ptr)) ++ptr; //   skip numeric nondigit header (+ - # )
@@ -781,6 +781,7 @@ bool IsDigitWord(char* ptr) // digitized number
 			if (++periods > 1) return false; // too many periods
 		}
 		else if (*ptr == ':');	//   TIME delimiter
+		else if (*ptr == ',' && comma); // allow comma
 		else if (ptr == currency) break; // dont need to see currency end
 		else return false;		//   1800s is done by substitute, so fail this
 		++ptr;
@@ -2201,7 +2202,6 @@ void UpcaseStarters(char* ptr) //   take a multiword phrase with _ and try to ca
 }
 	
 char* documentBuffer = 0;
-time_t docTime;
 
 bool ReadDocument(char* inBuffer,FILE* sourceFile)
 {

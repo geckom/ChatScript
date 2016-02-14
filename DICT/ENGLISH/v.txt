@@ -3262,6 +3262,9 @@
     vicariate~1n 
  var. ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     variant~4n 
+ VA ( meanings=2 NOUN NOUN_PROPER_SINGULAR ) 
+    Department_of_Veterans_Affairs~1n 
+    Virginia~2n 
  Vaudois ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Waldenses~1n 
  Valois ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 

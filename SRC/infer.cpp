@@ -44,8 +44,8 @@ static MEANING queue[MAX_QUEUE+20];
 static unsigned int queueIndex;
 
 // answers from inferences go in these sets
-FACT* factSet[MAX_FIND_SETS][MAX_FIND+1]; 
-unsigned int factSetNext[MAX_FIND_SETS];		// when walking a set over time, which index to continue from
+FACT* factSet[MAX_FIND_SETS+1][MAX_FIND+1]; 
+unsigned int factSetNext[MAX_FIND_SETS+1];		// when walking a set over time, which index to continue from
 
 static void AddSet2Scan(unsigned int flags,WORDP D,int depth);
 
@@ -783,7 +783,7 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 			if (choice[0] == '_') 
 			{
 				int wild = GetWildcardID(choice);
-				if (wild < 0){;}
+				if (wild == ILLEGAL_MATCHVARIABLE){;}
 				else if (flags != 0)
 				{
 					choice = wildcardOriginalText[wild];
@@ -1305,7 +1305,7 @@ nextsearch:  //   can do multiple searches, thought they have the same basemark 
 				if (count == 1 && intersectMark) // create backtract in next set
 				{
 					unsigned int set1 = whichset + 1;
-					if (set1 == MAX_FIND_SETS) set1 = 0;	// wrap around end
+					if (set1 > MAX_FIND_SETS) set1 = 0;	// wrap around end
 					WORDP D = Meaning2Word(INCOMING);
 					unsigned int count = 0;
 					while (D)

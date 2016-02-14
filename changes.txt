@@ -1,11 +1,25 @@
-version 6.1d
+version 6.2 2/14/2016
+1. documented existing assignment abilities:  @3 = @2  @3 -= @2  @3 += @2  @3 = $$factid
+  @3 += $$factid  @3 -= $$factid
+2. new command line parameter timer=15000x10 to control how long a volley can last before being abandoned
+by time. 1st number is millisecond limit, 2nd is a checking frequency (reducing load of getting the time
+frequently)
+3. %maxmatchvariables and %maxfactsets  given the highest legal number for those respective things
+4. UNLIKELY INCOMPATIBLE CHANGE:  previously if you used match variables inside a nested pattern component, e.g.,
+	u: ( _this ( my _*1 ) )
+it would be discarded on return to the top level. THEREFORE except in unusual cases, you would not have nested match
+requests.  NOW... they are not discarded. If the above matches, _0 and _1 are both defined. Same for
+	u: (this _(my _{often} dog))
+which sets 3 match variables
+
+version 6.1d 2/7/2016
 1. new command line parameter debug=   allows you to execute a :debug command on bootup and then exit.
 eg. "debug=:trim USERS 4"
 2. IF tests can now be made of a std rule pattern (including memorization etc) using form
 if (pattern ....)   {}  which means you can match input and even memorize during the if test
 
 
-Version 6.1c 
+Version 6.1c  2/2/2016
 1. ^sequence added, similar to refine, except instead of only executing one rule, executes all matching rules.
 2. Added :common word1 word2 to tell you the concepts they both particpate in, closest first.
 3. $bot has been renamed $cs_bot and $login has been renamed $cs_login with script errors if you use the older names.

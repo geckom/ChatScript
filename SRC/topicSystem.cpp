@@ -733,7 +733,6 @@ void SetTopicDebugMark(unsigned int topic,unsigned int value)
 	if (!topic || topic > numberOfTopics) return;
 	topicBlock* block = TI(topic);
 	block->topicDebug = value;
-	Log(STDUSERLOG," topictrace %s = %d\r\n",GetTopicName(topic),block->topicDebug);
 }
 
 void SetDebugRuleMark(unsigned int topic,unsigned int id)
@@ -1130,8 +1129,11 @@ retry:
 		{
 			if (--limit == 0)
 			{
+				char word[MAX_WORD_SIZE];
+				strncpy(word,rule,40);
+				word[40] = 0;
+				ReportBug("Exceeeded retry rule limit on rule %s", word);
 				result = FAILRULE_BIT;
-				ReportBug("Exceeeded retry rule limit");
 				goto exit;
 			}
 			if (whenmatched == NORETRY) 

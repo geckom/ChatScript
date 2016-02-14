@@ -440,6 +440,32 @@ static char* ShttpResponse(char* value)
     return systemValue;
 }
 
+static char* SmaxMatchVariables(char* value)
+{
+	static char hold[50] = ".";
+	if (value) 
+	{
+		if (*value != '.') regression = *value != '0';
+		return strcpy(hold,value);
+	}
+	if (*hold != '.') return hold;
+	sprintf(systemValue,"%d",MAX_WILDCARDS);
+    return systemValue;
+}
+
+static char* SmaxFactSets(char* value)
+{
+	static char hold[50] = ".";
+	if (value) 
+	{
+		if (*value != '.') regression = *value != '0';
+		return strcpy(hold,value);
+	}
+	if (*hold != '.') return hold;
+	sprintf(systemValue,"%d",MAX_FIND_SETS);
+    return systemValue;
+}
+
 static char* ScrossTalk(char* value)
 {
 	static char hold[4000];
@@ -859,6 +885,8 @@ SYSTEMVARIABLE sysvars[] =
 	{"%freefact",SfreeFact,"number of available unused facts"}, 
 	{"%regression",Sregression,"Boolean - is regression flag on"}, 
 	{"%http_response",ShttpResponse,"http response code from last call to JsonOpen"}, 
+	{"%maxmatchvariables",SmaxMatchVariables,"highest number of legal _match variables"}, 
+	{"%maxfactsets",SmaxFactSets,"highest number of legal @factsets"}, 
 	{"%rule",Srule,"Get a tag to current executing rule or null"}, 
 	{"%server",Sserver,"Port id of server or null if not server"}, 
 	{"%actualtopic",SactualTopic,"Current  topic executing (including system or nostay)"}, 

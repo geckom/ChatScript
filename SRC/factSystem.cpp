@@ -174,7 +174,7 @@ int GetSetID(char* x)
 	unsigned int n = *x - '0';
 	if (IsDigit(*++x)) n = (n * 10) + *x - '0';
 	// allow additional characters naming a field
-	return (n >= MAX_FIND_SETS) ? ILLEGAL_FACTSET : n;
+	return (n > MAX_FIND_SETS) ? ILLEGAL_FACTSET : n;
 }
 
 bool GetSetMod(char* x)
@@ -347,7 +347,7 @@ void KillFact(FACT* F)
 void ResetFactSystem(FACT* locked)
 {
 	while (factFree > locked) FreeFact(factFree--); // restore to end of basic facts
-	for (unsigned int i = 1; i < MAX_FIND_SETS; ++i)  // clear any factset with contaminated data
+	for (unsigned int i = 0; i <= MAX_FIND_SETS; ++i)  // clear any factset with contaminated data
 	{
 		unsigned int limit = FACTSET_COUNT(i);
 		for (unsigned int k = 1; k <= limit; ++k)
@@ -476,7 +476,7 @@ FACT* CreateFact(MEANING subject, MEANING verb, MEANING object, unsigned int pro
 
 bool ExportFacts(char* name, int set,char* append)
 {
-	if (set < 0 || set >= MAX_FIND_SETS) return false;
+	if (set < 0 || set > MAX_FIND_SETS) return false;
 	if ( *name == '"')
 	{
 		++name;
@@ -495,7 +495,7 @@ bool ExportFacts(char* name, int set,char* append)
 		else if ( !(F->flags & FACTDEAD))
 		{
 			unsigned int original = F->flags;
-			F->flags &= -1 & FACTTRANSIENT;	// dont pass transient flag out
+			F->flags &= -1 ^ FACTTRANSIENT;	// dont pass transient flag out
 			fprintf(out,"%s",WriteFact(F,false,word,false,true));
 			F->flags = original;
 		}
@@ -700,13 +700,18 @@ bool ImportFacts(char* name, char* set, char* erase, char* transient)
 	return true;
 }
 
-void WriteFacts(FILE* out,FACT* F) //   write out from here to end
+void WriteFacts(FILE* out,FACT* F, int flags) //   write out from here to end
 { 
 	char word[MAX_WORD_SIZE];
 	if (!out) return;
     while (++F <= factFree) 
 	{
-		if (!(F->flags & (FACTTRANSIENT|FACTDEAD))) fprintf(out,"%s",WriteFact(F,true,word,false,true));
+		if (!(F->flags & (FACTTRANSIENT|FACTDEAD))) 
+		{
+			F->flags |= flags; // used to pass along build2 flag
+			fprintf(out,"%s",WriteFact(F,true,word,false,true));
+			F->flags ^= flags;
+		}
 	}
     fclose(out);
 }
@@ -1031,7 +1036,7 @@ void ReadFacts(const char* name,uint64 build,bool user) //   a facts file may ha
     while (ReadALine(readBuffer, in) >= 0)
     {
 		char* ptr = ReadCompiledWord(readBuffer,word);
-        if (*word == 0 || *word == '#'); //   empty or comment
+		if (*word == 0 || (*word == '#' && word[1] != '#')); //   empty or comment
 		else if (*word == '+') //   dictionary entry
 		{
 			if (!stricmp(word,"+query")) // defining a private query
@@ -1060,7 +1065,7 @@ void ReadFacts(const char* name,uint64 build,bool user) //   a facts file may ha
 				sign = true;
 				++at;
 			}
-			if (IsDigit(*at)) 
+			if (IsDigit(*at)) // # has numeric value, is a rename number
 			{
 				int64 n;
 				ReadInt64(at,n);

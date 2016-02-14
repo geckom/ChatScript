@@ -373,7 +373,7 @@ FunctionResult HandleRelation(char* word1,char* op, char* word2,bool output,unsi
 		if (!*val1 && IsDigit(*val2) && IsNumber(val2) && (*op == '<' || *op == '>')) strcpy(val1,"0");
 		else if (!*val2 && IsDigit(*val1) && IsNumber(val1) && (*op == '<' || *op == '>')) strcpy(val2,"0");
 
-		if (!IsDigitWord(val1) || !IsDigitWord(val2)) //   non-numeric string compare - bug, can be confused if digit starts text string
+		if (!IsDigitWord(val1,true) || !IsDigitWord(val2,true)) //   non-numeric string compare - bug, can be confused if digit starts text string
 		{
 			char* arg1 = val1;
 			char* arg2 = val2;

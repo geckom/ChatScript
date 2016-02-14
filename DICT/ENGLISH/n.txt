@@ -923,7 +923,6 @@
     nontricyclic_drug~1nz (^antidepressant_drug~1) a class of antidepressant drugs that are not tricyclic drugs and do not act by inhibiting MAO
  negative_muon ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     mu-meson~1nz (^lepton~1) an elementary particle with a negative charge and a half-life of 2 microsecond
- Nigel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Newcomer ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  New_World_blackbird ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     blackbird~2n 
@@ -1438,6 +1437,7 @@
  Nieve ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Niewheall ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Nigan ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
+ Nigel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Nighean ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_SHE NOUN NOUN_PROPER_SINGULAR ) 
  Niguel ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  Niichaad ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 

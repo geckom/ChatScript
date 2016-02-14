@@ -217,8 +217,9 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 	bool noretry = false;
 	unsigned int startNest = functionNest;
 	unsigned int result;
-    unsigned int hold;
+	int pendingMatch = -1;
     WORDP D;
+	int hold;
 	unsigned int oldtrace = trace;
 	bool oldecho = echo;
 	bool success = false;
@@ -406,14 +407,19 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					unsigned int count = word[1] - '0';	// how many to swallow
 					if (reverse)
 					{
+						int begin = positionStart -1;
 						at = positionStart; // start here
 						while (count-- && --at >= 1) // can we swallow this (not an ignored word)
 						{
-							if (unmarked[at]) ++count;	// ignore this word
+							if (unmarked[at]) 
+							{
+								++count;	// ignore this word
+								if (at == begin) --begin;	// ignore this as starter
+							}
 						}
 						if (at >= 1 ) // pretend match
 						{ 
-							positionEnd = positionStart - 1 ; // pretend match here -  wildcard covers the gap
+							positionEnd = begin ; // pretend match here -  wildcard covers the gap
 							positionStart = at; 
 							matched = true; 
 						}
@@ -422,14 +428,19 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					else
 					{
 						at = positionEnd; // start here
+						int begin = positionEnd + 1;
 						while (count-- && ++at <= wordCount) // can we swallow this (not an ignored word)
 						{
-							if (unmarked[at]) ++count;	// ignore this word
+							if (unmarked[at]) 
+							{
+								++count;	// ignore this word
+								if (at == begin) ++begin;	// ignore this as starter
+							}
 						}
 						if (at <= wordCount ) // pretend match
 						{ 
-							positionStart = positionEnd + 1 ; // pretend match here -  wildcard covers the gap
-							positionEnd = at; 
+							positionStart = begin; // pretend match here -  wildcard covers the gap
+ 							positionEnd = at; 
 							matched = true; 
 						}
 						else  matched = false;
@@ -599,6 +610,12 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 				ptr = nexTokenStart;
 				hold = wildcardIndex;
 				{
+					if (wildcardSelector & WILDSPECIFIC) 
+					{
+						pendingMatch = wildcardIndex;	// on match later, use this matchvar 
+						SetWildCard(1,1,true); // dummy match
+					}
+
 					int oldgap = gap;
 					unsigned int returnStart = positionStart;
 					unsigned int returnEnd = positionEnd;
@@ -611,7 +628,6 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 					int whenmatched = 0;
 					matched = Match(ptr,depth+1,positionEnd,*word, positionStart == INFINITE_MATCH,gap,wildcardSelector,returnStart,
 						returnEnd,uppercasemat,whenmatched,positionStart,positionEnd,reverse); //   subsection ok - it is allowed to set position vars, if ! get used, they dont matter because we fail
-					wildcardIndex = hold; //   flushes all wildcards swallowed within
 					wildcardSelector = oldselect;
 					if (matched) 
 					{
@@ -648,20 +664,19 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 						if (wildcardSelector & WILDSPECIFIC) //   we need to memorize failure because optional cant fail
 						{
 							wildcardSelector ^= WILDSPECIFIC;
-							SetWildCard(0, wordCount,true); 
+							SetWildCardGiven(0, wordCount,true,pendingMatch); 
 						}
-
+						pendingMatch = -1;
                         if (gap) continue;   //   if we are waiting to close a wildcard, ignore our failed existence entirely
                         statusBits |= NOT_BIT; //   we didnt match and pretend we didnt want to
                     }
-   					else wildcardSelector = 0;
-                }
-                else if (*word == '{') //   was optional, revert the wildcard index (keep position data)
-                {
-                    wildcardIndex = hold;	// drop any wildcards bound (including reserve)
-                    if (!matched) continue; // be transparent in case wildcard pending
-                }
-                else if (wildcardSelector > 0)  wildcardIndex = hold; //   drop back to this index so we can save on it 
+   					else // failure of [ and (
+					{
+						wildcardSelector = 0;
+						wildcardIndex = hold;
+					}
+    				pendingMatch = -1;
+				}
                 break;
             case ')': case ']': case '}' :  //   end sequence/choice/optional
 				ptr = nexTokenStart;
@@ -866,38 +881,45 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
 				if (positionStart == INFINITE_MATCH) positionStart = 1;
 				if (wildcardSelector & WILDSPECIFIC) 
 				{
-					SetWildCard(positionStart,positionEnd,true);  // specific swallow 
+					int windex = wildcardIndex; // track where we do this
+					if (pendingMatch != -1) 
+					{
+						windex = pendingMatch;
+						SetWildCardGiven(positionStart, positionEnd, true, windex);
+					}
+					else SetWildCard(positionStart,positionEnd,true);  // specific swallow 
+					
 					if (uppercasematch)
 					{
-						WORDP D = FindWord(wildcardOriginalText[wildcardIndex-1],0,UPPERCASE_LOOKUP); // find without underscores..
+						WORDP D = FindWord(wildcardOriginalText[windex],0,UPPERCASE_LOOKUP); // find without underscores..
 						if (D) 
 						{
-							strcpy(wildcardOriginalText[wildcardIndex-1],D->word);
-							strcpy(wildcardCanonicalText[wildcardIndex-1],D->word);
+							strcpy(wildcardOriginalText[windex],D->word);
+							strcpy(wildcardCanonicalText[windex],D->word);
 						}
 						else
 						{
 							char word[MAX_WORD_SIZE];
-							strcpy(word,wildcardOriginalText[wildcardIndex-1]);
+							strcpy(word,wildcardOriginalText[windex]);
 							char* at = word;
 							while ((at = strchr(at,' '))) *at = '_';
 							D = FindWord(word,0,UPPERCASE_LOOKUP); // find with underscores..
 							if (D) 
 							{
-								strcpy(wildcardOriginalText[wildcardIndex-1],D->word);
-								strcpy(wildcardCanonicalText[wildcardIndex-1],D->word);
+								strcpy(wildcardOriginalText[windex],D->word);
+								strcpy(wildcardCanonicalText[windex],D->word);
 							}
 						}
 						uppercasematch = false;
 					}
-					else if (strchr(wildcardCanonicalText[wildcardIndex-1],' ')) // is lower case canonical a dictionary word with content?
+					else if (strchr(wildcardCanonicalText[windex],' ')) // is lower case canonical a dictionary word with content?
 					{
 						char word[MAX_WORD_SIZE];
-						strcpy(word,wildcardCanonicalText[wildcardIndex-1]);
+						strcpy(word,wildcardCanonicalText[windex]);
 						char* at = word;
 						while ((at = strchr(at,' '))) *at = '_';
 						WORDP D = FindWord(word,0); // find without underscores..
-						if (D && D->properties & PART_OF_SPEECH)  strcpy(wildcardCanonicalText[wildcardIndex-1],D->word);
+						if (D && D->properties & PART_OF_SPEECH)  strcpy(wildcardCanonicalText[windex],D->word);
 					}
 				}
 				gap = wildcardSelector = 0;
@@ -910,6 +932,7 @@ bool Match(char* ptr, unsigned int depth, int startposition, char kind, bool wil
             positionEnd = oldEnd;
   			if (kind == '(') gap = wildcardSelector = 0; /// should NOT clear this inside a [] or a {} on failure since they must try again
         }
+		pendingMatch = -1;
 
         //   end sequence/choice/optional
         if (*word == ')' || *word ==  ']' || *word == '}') 

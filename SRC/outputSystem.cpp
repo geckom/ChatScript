@@ -164,6 +164,7 @@ static char* ReadMatchVariable(char* input, char* var)
 
 void ReformatString(char* input,char* output, FunctionResult& result,unsigned int controls, bool space) // take ^"xxx" format string and perform substitutions on variables within it
 {
+	controls |= OUTPUT_NOCOMMANUMBER; // never reformat a number from here
 	if (space) {*output++ = ' '; *output = 0;}
 	size_t len = strlen(input);
 	if (!len)

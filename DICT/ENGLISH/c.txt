@@ -3424,7 +3424,7 @@
     Chester~1nz (^city~2) a city of southeastern Pennsylvania on the Delaware river
  Curtice ( NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN NOUN_PROPER_SINGULAR ) 
  calcium ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
-    calcium~1nz (^metal~2) a white metallic element that burns with a brilliant light
+    CA~2nz (^metal~2) a white metallic element that burns with a brilliant light
  caffeine_addict ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     caffein_addict~1nz (^addict~1) someone addicted to caffeine
  Chaparro ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
@@ -20979,8 +20979,11 @@
     Carolina~1n 
  Camellia_State ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Alabama~2n 
- Calif. ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+ CA ( meanings=2 NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
     California~1n 
+    calcium~1n 
+ Calif. ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
+    CA~1n 
  Chula_Vista ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Chula_Vista~1nz (^city~2) an industrial city in southern California near the Mexican border
  City_of_the_Angels ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 

@@ -3,7 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerWorkingDirectory>..</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommand>..\chatscript.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommand>..\chatscript.exe </LocalDebuggerCommand>
     <LocalDebuggerCommandArguments>"Vserver=app.kore.com/api" </LocalDebuggerCommandArguments>
     <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>

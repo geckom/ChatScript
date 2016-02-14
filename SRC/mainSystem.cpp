@@ -1,6 +1,6 @@
 #include "common.h"
 #include "evserver.h"
-char* version = "6.1d";
+char* version = "6.2";
 
 #define MAX_RETRIES 20
 clock_t startTimeInfo;							// start time of current volley
@@ -10,7 +10,10 @@ static char ** argv;
 char* postProcessing = 0;						// copy of output generated during MAIN control. Postprocessing can prepend to it
 unsigned int tokenCount;						// for document performc
 bool callback = false;						// when input is callback,alarm,loopback, dont want to enable :retry for that...
-
+int timerLimit = 0;						// limit time per volley
+int timerCheckRate = 0;					// how often to check calls for time
+int volleyStartTime = 0;
+int timerCheckInstance = 0;
 char users[100];
 char logs[100];
 char* authorizations = 0;	// for allowing debug commands
@@ -581,6 +584,16 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
  			myexit("build1 complete");
 		}  
 #endif
+		if (!strnicmp(argv[i],"timer=",6))
+		{
+			char* x = strchr(argv[i]+6,'x'); // 15000x10
+			if (x)
+			{
+				*x = 0;
+				timerCheckRate = atoi(x+1);
+			}
+			timerLimit = atoi(argv[i]+6);
+		}
 #ifndef DISCARDTESTING
 		if (!strnicmp(argv[i],"debug=",6))
 		{
@@ -640,7 +653,8 @@ static void CheckTracedFunction(WORDP D, uint64 junk)
 	if (tracedFunctionsIndex >= MAX_TRACED_FUNCTIONS || !D->word) return;
 	if (*D->word == '^' && D->internalBits & (MACRO_TRACE | FN_NO_TRACE))
 		sprintf(tracedFunctions[tracedFunctionsIndex++],"%s %d",D->word,D->internalBits);
-	else if (*D->word == '~' && D->internalBits & NOTRACE_TOPIC) sprintf(tracedFunctions[tracedFunctionsIndex++],"%s %d",D->word,D->internalBits);
+	else if (*D->word == '~' && D->internalBits & NOTRACE_TOPIC) 
+		sprintf(tracedFunctions[tracedFunctionsIndex++],"%s %d",D->word,D->internalBits);
 }
 
 void SaveTracedFunctions()
@@ -1052,12 +1066,10 @@ int PerformChatGivenTopic(char* user, char* usee, char* incoming,char* ip,char* 
 
 int PerformChat(char* user, char* usee, char* incoming,char* ip,char* output)
 { //   primary entrypoint for chatbot -- null incoming treated as conversation start.
-	
-	if (!documentMode)
-	{
-		docTime = ElapsedMilliseconds();
-		tokenCount = 0;
-	}
+	volleyStartTime = ElapsedMilliseconds(); // time limit control
+	timerCheckInstance = 0;
+
+	if (!documentMode) tokenCount = 0;
 	InitJSONNames(); // reset indices for this volley
 	mainInputBuffer = incoming;
 	mainOutputBuffer = output;
@@ -1378,7 +1390,7 @@ bool PrepassSentence(char* prepassTopic)
 			ChangeDepth(-1,"PrepassSentence");
 			if (pushed) PopTopic();
 			//   subtopic ending is not a failure.
-			if (result & (ENDSENTENCE_BIT | FAILSENTENCE_BIT| ENDINPUT_BIT)) 
+			if (result & (ENDSENTENCE_BIT | FAILSENTENCE_BIT| ENDINPUT_BIT | FAILINPUT_BIT )) 
 			{
 				if (result & ENDINPUT_BIT) nextInput = "";
 				--inputSentenceCount; // abort this input
@@ -1549,7 +1561,7 @@ void AddBotUsed(const char* reply,unsigned int len)
 bool HasAlreadySaid(char* msg)
 {
     if (!*msg) return true; 
-    if (Repeatable(currentRule) || GetTopicFlags(currentTopicID) & TOPIC_REPEAT) return false;
+    if (!currentRule || Repeatable(currentRule) || GetTopicFlags(currentTopicID) & TOPIC_REPEAT) return false;
 	msg = TrimSpaces(msg);
 	size_t actual = strlen(msg);
     for (unsigned int i = 0; i < chatbotSaidIndex; ++i) // said in previous recent  volleys
@@ -1637,7 +1649,7 @@ bool AddResponse(char* msg, unsigned int responseControl)
     if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDUSERTABLOG,"Message: %s\r\n",buffer);
 
     SaveResponse(buffer);
-    memset(msg,0,len+1); // erase all of original message, +  1 extra as leading space
+    if (!timerLimit || timerCheckInstance != TIMEOUT_INSTANCE) memset(msg,0,len+1); // erase all of original message, +  1 extra as leading space
 	FreeBuffer();
     return true;
 }
@@ -1648,6 +1660,12 @@ char* ConcatResult()
   	unsigned int oldtrace = trace;
 	trace = 0;
 	result[0] = 0;
+	if (timerLimit && timerCheckInstance == TIMEOUT_INSTANCE)
+	{
+		responseIndex = 0;
+		currentRule = 0;
+		AddResponse("Time limit exceeded.", 0);
+	}
 	for (unsigned int i = 0; i < responseIndex; ++i) 
     {
 		unsigned int order = responseOrder[i];

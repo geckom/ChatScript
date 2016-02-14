@@ -3008,7 +3008,7 @@ void MarkTags(unsigned int i)
 			else if (bit & MARK_FLAGS)  MarkFacts(sysMeanings[j],start,stop);
 			bit >>= 1;
 		}
-		unsigned int age = originalLower[i]->systemFlags & AGE_LEARNED;
+		uint64 age = originalLower[i]->systemFlags & AGE_LEARNED;
 		if (!age){;}
 		else if (age == KINDERGARTEN)  MarkFacts(MakeMeaning(StoreWord("~KINDERGARTEN")),start,stop);
 		else if (age == GRADE1_2)  MarkFacts(MakeMeaning(StoreWord("~GRADE1_2")),start,stop);

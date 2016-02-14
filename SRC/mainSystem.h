@@ -33,6 +33,8 @@ typedef struct RESPONSE
 
 #define MAX_MESSAGE     1500
 
+#define TIMEOUT_INSTANCE 1000000
+
 #define START_BIT 0x8000000000000000ULL	// used looping thru bit masks
 
 // values of prepareMode
@@ -123,6 +125,10 @@ extern PrepareMode prepareMode;
 extern PrepareMode tmpPrepareMode;
 extern unsigned int startSystem;
 extern char oktest[MAX_WORD_SIZE];
+extern int timerLimit;
+extern int timerCheckRate;
+extern int timerCheckInstance;
+extern int volleyStartTime;
 extern bool autonumber;
 extern bool showWhy;
 extern bool showTopic;

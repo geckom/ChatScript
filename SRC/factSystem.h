@@ -75,7 +75,7 @@ char* EatFact(char* ptr,unsigned int flags = 0,bool attribute = false);
 FACT* ReadFact(char* &ptr);
 void ReadFacts(const char* name,uint64 zone,bool user = false);
 char* WriteFact(FACT* F,bool comments,char* buffer,bool ignoreDead = false,bool eol = false);
-void WriteFacts(FILE* out,FACT* from);
+void WriteFacts(FILE* out,FACT* from,int flags = 0);
 bool ReadBinaryFacts(FILE* in);
 void WriteBinaryFacts(FILE* out,FACT* F);
 void ClearUserFacts();

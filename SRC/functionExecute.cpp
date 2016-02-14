@@ -189,7 +189,7 @@ static void RestoreMark()
 	WORDP oldD = Index2Word(i[3]);
 	
 	// trim dead facts at ends of sets
-	for (unsigned int store = 0; store < MAX_FIND_SETS; ++store)
+	for (unsigned int store = 0; store <= MAX_FIND_SETS; ++store)
 	{
 		unsigned int count = FACTSET_COUNT(store) + 1;
 		while (--count >= 1)
@@ -214,7 +214,7 @@ void RefreshMark()
 	WORDP oldD = Index2Word(i[3]);
 
 	// trim dead facts at ends of sets
-	for (unsigned int store = 0; store < MAX_FIND_SETS; ++store)
+	for (unsigned int store = 0; store <= MAX_FIND_SETS; ++store)
 	{
 		unsigned int count = FACTSET_COUNT(store) + 1;
 		while (--count >= 1)
@@ -390,6 +390,26 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 		result = FAILRULE_BIT;
 		return ptr;
 	}
+
+	if (timerLimit) // check for violating time restriction
+	{
+		if (timerCheckInstance == TIMEOUT_INSTANCE) 
+		{
+			result = FAILINPUT_BIT;
+			return ptr;	// force it to fail all the time
+		}
+		if (++timerCheckInstance >= timerCheckRate)
+		{
+			timerCheckInstance = 0;
+			if ((ElapsedMilliseconds() - volleyStartTime) >= timerLimit) 
+			{
+				result = FAILINPUT_BIT; // time out NOW
+				timerCheckInstance = TIMEOUT_INSTANCE;	// force it to fail all the time
+				return ptr;
+			}
+		}
+	}
+
 	char* paren = ptr;
 	ptr = SkipWhitespace(ptr+1); // aim to next major thing after ( 
 	bool oldecho = echo; 
@@ -576,7 +596,6 @@ char* DoFunction(char* name,char* ptr,char* buffer,FunctionResult &result) // Do
 		else Log(STDUSERTABLOG,"%s (%s) => %s\r\n",ResultCode(result),name,buffer);
 	}
 	if (D->internalBits & MACRO_TRACE) echo = oldecho; // allow eval call to change tracing status
-
 	if (ptr && *ptr == ')') // skip ) and space if there is one...
 	{
 		if (ptr[1] == ' ') return ptr+2; // if this is a pattern comparison, this will NOT be a space, but will be a comparison op instead missing it
@@ -2039,7 +2058,7 @@ static FunctionResult MarkCode(char* buffer)
 
 	if (*word == '*') // enable all - mark (* _0)
 	{
-		if (trace) Log(STDUSERLOG,"mark * %d...%d words: ",startPosition,endPosition);
+		if (trace && TRACE_OUTPUT) Log(STDUSERLOG,"mark * %d...%d words: ",startPosition,endPosition);
 		for (unsigned int i = startPosition; i <= endPosition; ++i) 
 		{
 			if (showMark) Log(ECHOSTDUSERLOG,"Mark * $d(%s_: \r\n",i,wordStarts[i]);
@@ -2062,7 +2081,7 @@ static FunctionResult MarkCode(char* buffer)
 	}
 	NextInferMark();
 	if (showMark) Log(ECHOSTDUSERLOG,"Mark %s: \r\n",D->word);
-	if (trace) Log(STDUSERLOG,"mark all @word %d ",D->word);
+	if (trace && TRACE_OUTPUT) Log(STDUSERLOG,"mark all @word %d ",D->word);
 	MarkFacts(M,startPosition,endPosition);
 	if (showMark) Log(ECHOSTDUSERLOG,"------\r\n");
 
@@ -2328,13 +2347,13 @@ static FunctionResult UnmarkCode(char* buffer)
 	if (!startPosition || startPosition > wordCount) return NOPROBLEM_BIT;	// fail silently
 	if (*word == '*') // set unmark EVERYTHING in range 
 	{
-		if (trace) Log(STDUSERLOG,"unmark * %d...%d words: ",startPosition,endPosition);
+		if (trace && TRACE_OUTPUT) Log(STDUSERLOG,"unmark * %d...%d words: ",startPosition,endPosition);
 		for (unsigned int i = startPosition; i <= endPosition; ++i) 
 		{
-			if (trace) Log(STDUSERLOG,"%s ",wordStarts[i]);
+			if (trace && TRACE_OUTPUT) Log(STDUSERLOG,"%s ",wordStarts[i]);
 			unmarked[i] = 1;
 		}
-		if (trace) Log(STDUSERLOG,"\r\n");
+		if (trace && TRACE_OUTPUT) Log(STDUSERLOG,"\r\n");
 	}
 	else
 	{
@@ -2407,7 +2426,7 @@ static FunctionResult SetWildcardIndexCode(char* buffer)
 {
 	char* arg1 = ARGUMENT(1);
 	int index = GetWildcardID(arg1);
-	if (index < 0) return FAILRULE_BIT;
+	if (index == ILLEGAL_MATCHVARIABLE) return FAILRULE_BIT;
 	SetWildCardIndexStart(index); // start here
 	return NOPROBLEM_BIT;
 }
@@ -4739,7 +4758,7 @@ static FunctionResult English_POSCode(char* buffer)
 	else if (!stricmp(arg1,"determiner")) //   DETERMINER noun
 	{
 		size_t len = strlen(arg2);
-		if (arg2[len-1] == 'g' && English_GetInfinitive(arg2,false)) //   no determiner on gerund
+		if (arg2[len-1] == 'g' && arg2[len-2] == 'n' && arg2[len-3] == 'i' && English_GetInfinitive(arg2,false)) //   no determiner on gerund
 		{
 			strcpy(buffer,arg2);
 			return NOPROBLEM_BIT;
@@ -4820,7 +4839,8 @@ static FunctionResult English_POSCode(char* buffer)
 		{
 			float val = (float) atof(arg2);
 			*period = 0;
-			int vali = atoi(arg2);
+			int64 vali;
+			ReadInt64(arg2,vali);
 			if ((float) vali == val) strcpy(buffer,arg2);
 		}
 		return NOPROBLEM_BIT;
@@ -5119,6 +5139,7 @@ static FunctionResult GetPropertyCodes(char* who,char* ptr, uint64 &val, uint64 
 		char arg[MAX_WORD_SIZE];
 		ptr = ReadCompiledWord(ptr,arg);
 		if (!*arg || *arg == ')') break;
+		if (*arg == '^') strcpy(arg,callArgumentList[atoi(arg+1)+fnVarBase]);
 		if (!stricmp(arg,"CONCEPT"))  
 		{
 			if (*who != '~') return FAILRULE_BIT; // must be a concept name
@@ -5213,7 +5234,7 @@ static FunctionResult AddPropertyCode(char* buffer)
 			else if (arg3 == 'o') D = Meaning2Word(F->object);
 			else
 			{
-				F->flags |= val;
+				F->flags |= sysval;
 				if (trace & TRACE_INFER && CheckTopicTrace()) TraceFact(F);
 			}
 			if (D)

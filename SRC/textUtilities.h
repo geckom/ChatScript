@@ -74,7 +74,6 @@ extern bool newline;
 extern bool showBadUTF;
 extern char* userRecordSourceBuffer;
 extern char tmpWord[MAX_WORD_SIZE];
-extern time_t docTime;
 extern bool singleSource;
 extern bool echoDocument;
 extern char* documentBuffer;
@@ -122,7 +121,7 @@ extern unsigned int endSentence;
 bool IsArithmeticOperator(char* word);
 unsigned IsNumber(char* word,bool placeAllowed = true); // returns kind of number
 bool IsPlaceNumber(char* word);
-bool IsDigitWord(char* word);
+bool IsDigitWord(char* word,bool comma = false);
 bool IsDigitWithNumberSuffix(char* number);
 bool IsUrl(char* word, char* end);
 unsigned int IsMadeOfInitials(char * word,char* end);

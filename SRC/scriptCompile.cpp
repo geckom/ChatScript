@@ -3617,6 +3617,11 @@ static char* ReadKeyword(char* word,char* ptr,bool &notted, bool &quoted, MEANIN
 			}
 			else // ordinary word or concept-- see if it makes sense
 			{
+				char end = word[strlen(word)-1];
+				if (!IsAlphaUTF8OrDigit(end) && end != '"')  
+				{
+					if (end != '.' || strlen(word) > 6) WARNSCRIPT("last character of keyword %s is punctuation. Is this intended? %s\r\n",word)
+				}
 				M = ReadMeaning(word);
 				D = Meaning2Word(M);
 					
@@ -4484,15 +4489,15 @@ static void WriteDictionaryChange(FILE* dictout, uint64 build)
 			continue;		// dont write topic names or concept names, let keywords do that and  no variables
 		if (D->internalBits & FUNCTION_BITS) continue;	 // functions written out in macros file.
 
-		if (D->internalBits & QUERY_KIND && D->internalBits & build && *D->word != '@') 
+		if (D->internalBits & QUERY_KIND && D->internalBits & build && *D->word != '@' && *D->word != '#' && *D->word != '_') 
 		{
-			fprintf(dictout,"+query %s \"%s\" \r\n",D->word,D->w.userValue); // query defn
+			fprintf(dictout,"+query %s \"%s\" \r\n",D->word,D->w.userValue); // query defn , not a rename
 			continue;
 		}
 
 		uint64 prop = D->properties;
 		uint64 flags = D->systemFlags;
-		if ((*D->word == '_' || *D->word == '@' ) && D->internalBits & RENAMED) 
+		if ((*D->word == '_' || *D->word == '@' || *D->word == '#' ) && D->internalBits & RENAMED) 
 		{
 			if (!notPrior) continue;	// written out before
 		}
@@ -4526,7 +4531,7 @@ static void WriteDictionaryChange(FILE* dictout, uint64 build)
 
 		// if the ONLY change is an existing word got made into a concept, dont write it out anymore
 		if (!D->properties && !D->systemFlags && D->internalBits & CONCEPT && D <= dictionaryPreBuild[0] ) {;}  // preexisting word a concept
-		else if (D->properties || D->systemFlags || notPrior ||  ((*D->word == '_' || *D->word == '@') && D->internalBits & RENAMED))  // there were changes
+		else if (D->properties || D->systemFlags || notPrior ||  ((*D->word == '_' || *D->word == '@' || *D->word == '#') && D->internalBits & RENAMED))  // there were changes
 		{
 			fprintf(dictout,"+ %s ",D->word);
 			if ((*D->word == '_' || (*D->word == '@')) && D->internalBits & RENAMED) fprintf(dictout,"%d",(unsigned int)D->properties); // rename value
@@ -4569,7 +4574,7 @@ static void WriteExtendedFacts(FILE* factout,FILE* dictout,uint64 build)
 	WriteDictionaryChange(dictout,build);
 	if (build == BUILD0) WriteFacts(factout,factsPreBuild[0]);
 	else if (build == BUILD1) WriteFacts(factout,factsPreBuild[1]);
-	else if (build == BUILD2) WriteFacts(factout,factsPreBuild[2]);
+	else if (build == BUILD2) WriteFacts(factout,factsPreBuild[2],FACTBUILD2);
 }
 
 static void ClearTopicConcept(WORDP D, uint64 build)

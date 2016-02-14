@@ -204,6 +204,8 @@ static char* predefinedSets[] = //  some internally mapped concepts not includin
 {
 	 "~repeatme","~repeatinput1","~repeatinput2","~repeatinput3","~repeatinput4","~repeatinput5","~repeatinput6","~uppercase","~utf8","~sentenceend",
 	"~pos","~sys","~grammar_role","~daynumber","~yearnumber","~dateinfo","~email_url","~fahrenheit","~celsius","~kelvin",
+	"~KINDERGARTEN","~GRADE1_2","~GRADE3_4","~GRADE5_6",
+
     NULL
 };
 
@@ -915,7 +917,7 @@ void ShowStats(bool reset)
 		if (textUsed > maxText) maxText = textUsed;
 		if (ruleCount > maxRules) maxRules = ruleCount;
 
-		unsigned int diff = (unsigned int) (ElapsedMilliseconds() - docTime);
+		unsigned int diff = (unsigned int) (ElapsedMilliseconds() - volleyStartTime);
 		unsigned int mspl = (inputSentenceCount) ? (diff/inputSentenceCount) : 0;
 		float fract = (float)(diff/1000.0); // part of seccond
 		float time = (float)(tokenCount/fract);

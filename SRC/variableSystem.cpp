@@ -38,11 +38,11 @@ void InitVariableSystem()
 
 int GetWildcardID(char* x) // wildcard id is "_10" or "_3"
 {
-	if (!IsDigit(x[1])) return -1;
+	if (!IsDigit(x[1])) return ILLEGAL_MATCHVARIABLE;
 	unsigned int n = x[1] - '0';
 	char c = x[2];
 	if (IsDigit(c)) n =  (n * 10) + (c - '0');
-	return (n > MAX_WILDCARDS) ? -1 : n; 
+	return (n > MAX_WILDCARDS) ? ILLEGAL_MATCHVARIABLE : n; 
 }
 
 static void CompleteWildcard()
@@ -429,15 +429,33 @@ void DumpUserVariables()
 char* PerformAssignment(char* word,char* ptr,FunctionResult &result)
 {// assign to and from  $var, _var, ^var, @set, and %sysvar
     char op[MAX_WORD_SIZE];
-	ChangeDepth(1,"PerformAssignment");
-	char* word1 = AllocateBuffer();
 	currentFact = NULL;					// No assignment can start with a fact lying around
 	int oldImpliedSet = impliedSet;		// in case nested calls happen
 	int oldImpliedWild = impliedWild;	// in case nested calls happen
     int assignFromWild = ALREADY_HANDLED;
 	result = NOPROBLEM_BIT;
-	impliedSet = (*word == '@') ? GetSetID(word) : ALREADY_HANDLED;			// if a set save location
-	impliedWild = (*word == '_') ? GetWildcardID(word) : ALREADY_HANDLED;	// if a wildcard save location
+	impliedSet = ALREADY_HANDLED;
+	if (*word == '@')
+	{
+		impliedSet = GetSetID(word);
+		if (impliedSet == ILLEGAL_FACTSET)
+		{
+			result = FAILRULE_BIT;
+			return ptr;
+		}
+	}
+	impliedWild = ALREADY_HANDLED;
+	if (*word == '_')  
+	{
+		impliedWild = GetWildcardID(word);	// if a wildcard save location
+		if (impliedWild == ILLEGAL_MATCHVARIABLE) 
+		{
+			result = FAILRULE_BIT;
+			return ptr;
+		}
+	}
+	ChangeDepth(1,"PerformAssignment");
+	char* word1 = AllocateBuffer();
 	int setToImply = impliedSet; // what he originally requested
 	int setToWild = impliedWild; // what he originally requested
 	bool otherassign = (*word != '@') && (*word != '_');

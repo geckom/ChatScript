@@ -15,15 +15,15 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 #endif
 
 #define MAX_FIND 5000
-#define MAX_FIND_SETS 21
+#define MAX_FIND_SETS 20
 
 #define ILLEGAL_FACTSET -1
 
 #define FACTSET_COUNT(x) ( (unsigned int) ( (uintptr_t) factSet[x][0]  ))
 #define SET_FACTSET_COUNT(x,y) factSet[x][0] = (FACT*) ((uint64)y)
 
-extern FACT* factSet[MAX_FIND_SETS][MAX_FIND+1];
-extern unsigned int factSetNext[MAX_FIND_SETS];
+extern FACT* factSet[MAX_FIND_SETS+1][MAX_FIND+1];
+extern unsigned int factSetNext[MAX_FIND_SETS+1];
 
 extern unsigned int inferMark;
 

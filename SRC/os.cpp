@@ -845,8 +845,7 @@ void ChangeDepth(int value,char* where)
 
 unsigned int Log(unsigned int channel,const char * fmt, ...)
 {
-	static unsigned int id = 1000;
-	if (quitting) return id;
+	static unsigned int id = 1000;	if (quitting) return id;
 	logged = true;
 	bool localecho = false;
 	if (channel == ECHOSTDUSERLOG)

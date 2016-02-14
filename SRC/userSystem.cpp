@@ -100,7 +100,7 @@ void ResetUserChat()
 {
  	chatbotSaidIndex = humanSaidIndex = 0;
 	setControl = 0;
-	for (unsigned int i = 1; i < MAX_FIND_SETS; ++i) SET_FACTSET_COUNT(i,0);
+	for (unsigned int i = 0; i <= MAX_FIND_SETS; ++i) SET_FACTSET_COUNT(i,0);
 }
 
 static char* SafeLine(char* line) // erase cr/nl to keep reads safe
@@ -136,7 +136,7 @@ static char* WriteUserFacts(char* ptr,bool sharefile, int limit)
 	ptr += strlen(ptr);
 	unsigned int i;
     unsigned int count;
-	if (!shared || sharefile)  for (i = 0; i < MAX_FIND_SETS; ++i) 
+	if (!shared || sharefile)  for (i = 0; i <= MAX_FIND_SETS; ++i) 
     {
 		if (!(setControl & (uint64) (1 << i))) continue; // purely transient stuff
 
@@ -178,12 +178,12 @@ static char* WriteUserFacts(char* ptr,bool sharefile, int limit)
 	strcpy(ptr,"#`end fact sets\r\n");
 	ptr += strlen(ptr);
 
-	// most recent facts, in order, but not those written out already as part of fact set (in case FACTDUPLICATE is on, dont want to recreate)
+	// most recent facts, in order, but not those written out already as part of fact set (in case FACTDUPLICATE is on, dont want to recreate and not build2 layer facts)
 	FACT* F = factFree+1;
 	while (limit && --F > factLocked) // backwards down to base system facts
 	{
 		if (shared && !sharefile)  continue;
-		if (!(F->flags & (FACTDEAD|FACTTRANSIENT|MARKED_FACT))) --limit; // we will write this
+		if (!(F->flags & (FACTDEAD|FACTTRANSIENT|MARKED_FACT|FACTBUILD2))) --limit; // we will write this
 	}
 
 	--F;  

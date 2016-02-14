@@ -4979,7 +4979,7 @@
  Ocean_State ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Little_Rhody~1n 
  Old_Dominion ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    Virginia~2n 
+    VA~2n 
  Old_Dominion_State ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Old_Dominion~1n 
  onomatomania ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 

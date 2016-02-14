@@ -842,7 +842,7 @@ static void ReadNextDocument(char* name,uint64 value) // ReadDocument(inBuffer,s
 	readingDocument = true;
 	SetBaseMemory();
 	inputSentenceCount = 0;
-	docTime = ElapsedMilliseconds();
+	volleyStartTime = ElapsedMilliseconds();
 	tokenCount = 0;
 	ShowStats(true);
 	SetUserVariable("$$document",name);
@@ -861,7 +861,7 @@ static void ReadNextDocument(char* name,uint64 value) // ReadDocument(inBuffer,s
 		bool oldecho = echo;
 		echo = true;
 
-		unsigned int diff = (unsigned int) (ElapsedMilliseconds() - docTime);
+		unsigned int diff = (unsigned int) (ElapsedMilliseconds() - volleyStartTime);
 		unsigned int mspl = diff/inputSentenceCount;
 		float fract = (float)(diff/1000.0); // part of seccond
 		float time = (float)(tokenCount/fract);
@@ -4720,7 +4720,10 @@ static void TracedTopic(WORDP D,uint64 junk)
 	{
 		unsigned int topic = FindTopicIDByName(D->word);
 		topicBlock* block = TI(topic);
-		if (block->topicDebug) Log(STDUSERLOG,"%s %d\r\n",D->word,block->topicDebug);
+		if (block->topicDebug) 
+			Log(STDUSERLOG,"%s %d\r\n",D->word,block->topicDebug);
+		if (D->internalBits & NOTRACE_TOPIC) 
+			Log(STDUSERLOG,"Not tracing %s\r\n",D->word);
 	}
 }
 
@@ -5492,7 +5495,7 @@ static void C_List(char* input)
 	if (all || strchr(input,'@'))
 	{
 		count = 0;
-		for (unsigned int i = 0; i < MAX_FIND_SETS; ++i)
+		for (unsigned int i = 0; i <= MAX_FIND_SETS; ++i)
 		{
 			char word[MAX_WORD_SIZE];
 			sprintf(word,"@%d",i);
@@ -5709,7 +5712,7 @@ static void C_UserFacts(char* input)
 {
 	if (!factLocked) return; // no user facts yet
 	char* buffer = AllocateBuffer();
-	for (unsigned int i = 1; i < MAX_FIND_SETS; ++i) 
+	for (unsigned int i = 0; i <= MAX_FIND_SETS; ++i) 
     {
 		if (!(setControl & (uint64) (1 << i))) continue; // purely transient stuff
 		unsigned int count = FACTSET_COUNT(i);
@@ -6226,23 +6229,16 @@ static void C_Trace(char* input)
 		else if (!stricmp(word,"end")) break; // safe end
 		else if (*word == '!') // NOT tracing a topic 
 		{
-			if (word[1]) // ! jammed against topic, separate it
-			{
-				input -= strlen(word+1); 
-				word[1] = 0;
-			}
-			input = ReadCompiledWord(input,word);
-			SetTopicDebugMark(FindTopicIDByName(word),0);
-			return;
+			if (word[1]) memmove(word,word+1,strlen(word));  // ! jammed against topic, separate it
+			else input = ReadCompiledWord(input,word);
+			WORDP D = FindWord(word);
+			if (D) D->internalBits |= NOTRACE_TOPIC;
+			SetTopicDebugMark(FindTopicIDByName(word),0); // clear any explicit trace on it
 		}
 		else if (*word == '^')
 		{
 			WORDP FN = FindWord(word);
-			if (FN) 
-			{
-				FN->internalBits ^= MACRO_TRACE;
-				Log(STDUSERLOG,"Tracing function %s = %d\r\n",word, (FN->internalBits & MACRO_TRACE) ? -1 : 0);
-			}
+			if (FN) FN->internalBits ^= MACRO_TRACE;
 			else Log(STDUSERLOG,"No such function %s\r\n",word);
 		}
 		else if (*word == '~') // tracing a topic or rule by label
