@@ -3620,7 +3620,7 @@ static char* ReadKeyword(char* word,char* ptr,bool &notted, bool &quoted, MEANIN
 				char end = word[strlen(word)-1];
 				if (!IsAlphaUTF8OrDigit(end) && end != '"')  
 				{
-					if (end != '.' || strlen(word) > 6) WARNSCRIPT("last character of keyword %s is punctuation. Is this intended? %s\r\n",word)
+					if (end != '.' || strlen(word) > 6) WARNSCRIPT("last character of keyword %s is punctuation. Is this intended? \r\n",word)
 				}
 				M = ReadMeaning(word);
 				D = Meaning2Word(M);
